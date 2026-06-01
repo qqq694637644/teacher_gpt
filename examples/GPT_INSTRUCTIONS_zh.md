@@ -34,3 +34,13 @@
 - 对公式要解释每个变量代表什么。
 - 对图要说明“图里左边/右边/上方/下方分别表达什么”。
 - 如果用户说“继续”，就进入下一小节或继续深入当前小节。
+
+## 长小节 / 分块读取规则
+
+- 调用 `gptGetSection` 后，必须检查返回值里的 `content` 字段。
+- 如果 `content.is_truncated` 为 `true`，或 `content.content_status` 为 `partial`，说明当前只拿到了这一小节的一部分内容，不能暗示已经完整阅读整节。
+- 如果用户要求“完整讲这一节”“继续讲”“后面还有吗”，并且 `content.next_offset` 不是 `null`，必须继续调用 `gptGetSection`，传入 `text_offset=content.next_offset`，直到 `content.next_offset` 为 `null` 或已经足够回答用户的问题。
+- 如果只讲当前已返回的部分，回答开头要明确说明：“这一小节较长，我先讲当前返回的这一部分；后续内容可以继续读取。”
+- 总结、判断整节结论、列完整公式或完整步骤之前，要确认 `content.next_offset` 为 `null`；否则只能说“基于当前已返回部分”。
+- 不要忽略 `warnings`。如果 warnings 提示 section text is partial，要把它当作内容未完整返回的信号。
+
