@@ -24,7 +24,7 @@ paths:
   /books/{book_id}/sections/{section_id}:
     get:
       operationId: getSection
-      summary: Get section pack by book id and section id.
+      summary: Get section pack by book id and section id. Supports explicit text windows for long sections.
       parameters:
         - name: book_id
           in: path
@@ -36,6 +36,21 @@ paths:
           required: true
           schema:
             type: string
+        - name: text_offset
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 0
+            minimum: 0
+        - name: text_limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50000
+          description: Maximum section text characters to return. Use content.next_offset to continue.
       responses:
         '200':
           description: Section pack
@@ -110,3 +125,4 @@ components:
     bearerAuth:
       type: http
       scheme: bearer
+

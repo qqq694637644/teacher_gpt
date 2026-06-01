@@ -72,6 +72,16 @@ class ExampleRef(BaseModel):
     text: str | None = None
 
 
+class SectionContentMeta(BaseModel):
+    content_status: Literal["complete", "partial"] = "complete"
+    is_truncated: bool = False
+    text_offset: int = Field(default=0, ge=0)
+    text_limit: int | None = Field(default=None, ge=1)
+    total_chars: int = Field(default=0, ge=0)
+    returned_chars: int = Field(default=0, ge=0)
+    next_offset: int | None = Field(default=None, ge=0)
+
+
 class SectionPack(BaseModel):
     book_id: str
     section_id: str
@@ -83,6 +93,7 @@ class SectionPack(BaseModel):
     section_type: Literal["official", "derived", "alias", "manual"] = "official"
     summary: str | None = None
     text_blocks: list[TextBlock] = Field(default_factory=list)
+    content: SectionContentMeta = Field(default_factory=SectionContentMeta)
     figures: list[FigureRef] = Field(default_factory=list)
     equations: list[EquationRef] = Field(default_factory=list)
     examples: list[ExampleRef] = Field(default_factory=list)
