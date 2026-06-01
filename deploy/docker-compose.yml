@@ -1,0 +1,17 @@
+services:
+  teaching-gpt-backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      TEACHING_GPT_DATA_DIR: /app/data
+      TEACHING_GPT_PUBLIC_BASE_URL: http://localhost:8000
+      TEACHING_GPT_DEFAULT_BOOK_ID: dip4e
+      TEACHING_GPT_API_KEY: change-me-to-a-long-random-secret
+      TEACHING_GPT_REQUIRE_API_KEY: "true"
+      TEACHING_GPT_PROTECT_ASSETS: "false"
+      TEACHING_GPT_RENDER_DPI: "180"
+    volumes:
+      - ../data:/app/data

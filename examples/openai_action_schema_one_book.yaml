@@ -1,0 +1,300 @@
+openapi: 3.1.0
+info:
+  title: One-Book Teaching GPT Backend
+  version: 0.1.0
+  description: Actions schema for one textbook GPT. The backend uses TEACHING_GPT_DEFAULT_BOOK_ID.
+servers:
+  - url: https://YOUR-DOMAIN.example.com
+security:
+  - bearerAuth: []
+paths:
+  /gpt/toc:
+    get:
+      operationId: gptGetTableOfContents
+      summary: Get the table of contents for the GPT's bound textbook.
+      responses:
+        '200':
+          description: Table of contents.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TocResponse'
+  /gpt/sections/{section_id}:
+    get:
+      operationId: gptGetSection
+      summary: Get a structured section pack by section id, such as 2.4.4.
+      parameters:
+        - name: section_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Section id or alias, e.g. 2.4.4.
+      responses:
+        '200':
+          description: Section pack including text, figures, equations, examples, pages, and context.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SectionPack'
+        '404':
+          description: Section not found.
+  /gpt/search:
+    get:
+      operationId: gptSearchBook
+      summary: Search concepts, headings, or keywords in the GPT's bound textbook.
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+          description: User query, such as 图像插值 or image interpolation.
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 8
+            minimum: 1
+            maximum: 20
+      responses:
+        '200':
+          description: Search results.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /gpt/figures/{figure_id}:
+    get:
+      operationId: gptGetFigure
+      summary: Get a figure by id, such as 2.27 or Fig 2.27.
+      parameters:
+        - name: figure_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Figure id, e.g. 2.27.
+      responses:
+        '200':
+          description: Figure metadata, caption, related sections, and image/page URL.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FigureResponse'
+        '404':
+          description: Figure not found.
+  /gpt/sections/{section_id}/prerequisites:
+    get:
+      operationId: gptGetPrerequisites
+      summary: Get prerequisite sections for a section.
+      parameters:
+        - name: section_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 5
+            minimum: 1
+            maximum: 10
+      responses:
+        '200':
+          description: Prerequisite section list.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PrerequisitesResponse'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  schemas:
+    TocResponse:
+      type: object
+      properties:
+        book_id:
+          type: string
+        title:
+          type: string
+          nullable: true
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/TocItem'
+    TocItem:
+      type: object
+      properties:
+        section_id:
+          type: string
+        title:
+          type: string
+        level:
+          type: integer
+        page_start:
+          type: integer
+          nullable: true
+        page_end:
+          type: integer
+          nullable: true
+    SectionPack:
+      type: object
+      properties:
+        book_id:
+          type: string
+        section_id:
+          type: string
+        resolved_section_id:
+          type: string
+          nullable: true
+        parent_section_id:
+          type: string
+          nullable: true
+        title:
+          type: string
+        page_start:
+          type: integer
+          nullable: true
+        page_end:
+          type: integer
+          nullable: true
+        section_type:
+          type: string
+        summary:
+          type: string
+          nullable: true
+        text_blocks:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+              text:
+                type: string
+              page_number:
+                type: integer
+                nullable: true
+        figures:
+          type: array
+          items:
+            $ref: '#/components/schemas/FigureRef'
+        equations:
+          type: array
+          items:
+            type: object
+        examples:
+          type: array
+          items:
+            type: object
+        source_pages:
+          type: array
+          items:
+            type: object
+            properties:
+              page_index:
+                type: integer
+              page_number:
+                type: integer
+              image_url:
+                type: string
+                nullable: true
+        previous_sections:
+          type: array
+          items:
+            type: string
+        next_sections:
+          type: array
+          items:
+            type: string
+        prerequisites:
+          type: array
+          items:
+            type: string
+        warnings:
+          type: array
+          items:
+            type: string
+    FigureRef:
+      type: object
+      properties:
+        figure_id:
+          type: string
+        label:
+          type: string
+          nullable: true
+        caption:
+          type: string
+          nullable: true
+        page_index:
+          type: integer
+          nullable: true
+        page_number:
+          type: integer
+          nullable: true
+        image_url:
+          type: string
+          nullable: true
+        page_image_url:
+          type: string
+          nullable: true
+        context:
+          type: string
+          nullable: true
+    FigureResponse:
+      allOf:
+        - $ref: '#/components/schemas/FigureRef'
+        - type: object
+          properties:
+            book_id:
+              type: string
+            related_section_ids:
+              type: array
+              items:
+                type: string
+    SearchResponse:
+      type: object
+      properties:
+        book_id:
+          type: string
+        query:
+          type: string
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchResult'
+    SearchResult:
+      type: object
+      properties:
+        section_id:
+          type: string
+        title:
+          type: string
+        page_start:
+          type: integer
+          nullable: true
+        page_end:
+          type: integer
+          nullable: true
+        score:
+          type: number
+        snippet:
+          type: string
+          nullable: true
+    PrerequisitesResponse:
+      type: object
+      properties:
+        book_id:
+          type: string
+        section_id:
+          type: string
+        prerequisites:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchResult'

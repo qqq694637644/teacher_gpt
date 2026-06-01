@@ -1,0 +1,112 @@
+openapi: 3.1.0
+info:
+  title: Multi-Book Teaching GPT Backend
+  version: 0.1.0
+  description: Actions schema for a backend shared by multiple textbook GPTs.
+servers:
+  - url: https://YOUR-DOMAIN.example.com
+security:
+  - bearerAuth: []
+paths:
+  /books/{book_id}/toc:
+    get:
+      operationId: getTableOfContents
+      summary: Get the table of contents for a book.
+      parameters:
+        - name: book_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: TOC
+  /books/{book_id}/sections/{section_id}:
+    get:
+      operationId: getSection
+      summary: Get section pack by book id and section id.
+      parameters:
+        - name: book_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: section_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Section pack
+  /books/{book_id}/search:
+    get:
+      operationId: searchBook
+      summary: Search a book.
+      parameters:
+        - name: book_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 8
+      responses:
+        '200':
+          description: Search results
+  /books/{book_id}/figures/{figure_id}:
+    get:
+      operationId: getFigure
+      summary: Get figure by id.
+      parameters:
+        - name: book_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: figure_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Figure metadata
+  /books/{book_id}/sections/{section_id}/prerequisites:
+    get:
+      operationId: getPrerequisites
+      summary: Get prerequisite sections.
+      parameters:
+        - name: book_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: section_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 5
+      responses:
+        '200':
+          description: Prerequisite sections
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
