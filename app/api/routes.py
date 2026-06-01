@@ -87,10 +87,26 @@ async def get_toc(book_id: str, service: BookService = Depends(book_service)) ->
 async def get_section(
     book_id: str,
     section_id: str,
+    text_offset: int = Query(
+        default=0,
+        ge=0,
+        description="Character offset into section text_blocks for continuing a long section.",
+    ),
+    text_limit: int | None = Query(
+        default=None,
+        ge=1,
+        le=50000,
+        description="Maximum section text characters to return. Omit for the full stored section.",
+    ),
     service: SectionService = Depends(section_service),
 ) -> SectionPack:
     try:
-        return service.get_section(book_id, section_id)
+        return service.get_section(
+            book_id,
+            section_id,
+            text_offset=text_offset,
+            text_limit=text_limit,
+        )
     except BookNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
     except SectionNotFoundError as exc:
@@ -186,10 +202,26 @@ async def gpt_get_toc(
 )
 async def gpt_get_section(
     section_id: str,
+    text_offset: int = Query(
+        default=0,
+        ge=0,
+        description="Character offset into section text_blocks for continuing a long section.",
+    ),
+    text_limit: int = Query(
+        default=12000,
+        ge=1,
+        le=50000,
+        description="Maximum section text characters to return. Use content.next_offset to continue.",
+    ),
     settings: Settings = Depends(get_settings),
     service: SectionService = Depends(section_service),
 ) -> SectionPack:
-    return service.get_section(settings.default_book_id, section_id)
+    return service.get_section(
+        settings.default_book_id,
+        section_id,
+        text_offset=text_offset,
+        text_limit=text_limit,
+    )
 
 
 @router.get(

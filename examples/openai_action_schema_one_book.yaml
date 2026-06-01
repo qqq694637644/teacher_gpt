@@ -22,7 +22,7 @@ paths:
   /gpt/sections/{section_id}:
     get:
       operationId: gptGetSection
-      summary: Get a structured section pack by section id, such as 2.4.4.
+      summary: Get a structured section pack by section id, such as 2.4.4. Long sections are returned in explicit text windows.
       parameters:
         - name: section_id
           in: path
@@ -30,6 +30,23 @@ paths:
           schema:
             type: string
           description: Section id or alias, e.g. 2.4.4.
+        - name: text_offset
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 0
+            minimum: 0
+          description: Character offset into section text_blocks for continuing a long section.
+        - name: text_limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 12000
+            minimum: 1
+            maximum: 50000
+          description: Maximum section text characters to return. Use content.next_offset to continue.
       responses:
         '200':
           description: Section pack including text, figures, equations, examples, pages, and context.
@@ -181,6 +198,8 @@ components:
               page_number:
                 type: integer
                 nullable: true
+        content:
+          $ref: '#/components/schemas/SectionContentMeta'
         figures:
           type: array
           items:
@@ -221,6 +240,31 @@ components:
           type: array
           items:
             type: string
+    SectionContentMeta:
+      type: object
+      properties:
+        content_status:
+          type: string
+          enum: [complete, partial]
+        is_truncated:
+          type: boolean
+        text_offset:
+          type: integer
+          minimum: 0
+        text_limit:
+          type: integer
+          nullable: true
+          minimum: 1
+        total_chars:
+          type: integer
+          minimum: 0
+        returned_chars:
+          type: integer
+          minimum: 0
+        next_offset:
+          type: integer
+          nullable: true
+          minimum: 0
     FigureRef:
       type: object
       properties:
@@ -298,3 +342,4 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/SearchResult'
+
