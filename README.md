@@ -5,7 +5,7 @@
 它的职责是：
 
 - 离线解析 PDF 教材。
-- 抽取每页文本。
+- 抽取每页文本及行级版面信息（字体、字号、位置）。
 - 建立目录、小节、派生小节、图、公式、例题索引。
 - 给 OpenAI 自定义 GPT 的 Actions 提供接口。
 - GPT 调接口拿到结构化 `SectionPack` 后，再开始讲解。
@@ -106,6 +106,8 @@ python scripts/ingest_book.py \
 - `book_id` 是这本书的稳定 ID。
 - `--aliases` 用于解决“用户习惯小节号”和“自动派生小节号”不一致的问题。
 - 对于你前面举的例子，`examples/aliases_dip4e.json` 把 `2.4.4` 映射到自动派生的 `2.4.5`，用于兼容“2.4.4 = Image Interpolation”的讲解习惯。
+- 派生小节必须同时满足文本形态和版面样式条件，不再仅凭大写比例判断。
+- 小节边界使用页码和行索引锚定；图、公式和例题从切分后的小节文本提取。
 
 导入后会生成：
 
@@ -253,6 +255,15 @@ GET /gpt/sections/{section_id}
   "page_start": 77,
   "page_end": 78,
   "summary": "...",
+  "content": {
+    "window_status": "complete",
+    "is_truncated": false,
+    "text_offset": 0,
+    "text_limit": null,
+    "total_chars": 1234,
+    "returned_chars": 1234,
+    "next_offset": null
+  },
   "text_blocks": [
     {"type": "paragraph", "text": "..."}
   ],
@@ -318,7 +329,7 @@ GPT Action 接口需要鉴权
 图相关回答仅依据图注、页码和附近文本
 ```
 
-本次数据格式不兼容旧的图片字段。开发阶段不会静默忽略未知字段；升级后应重新导入教材，旧 JSON 中残留的 `image_url`、`page_image_url` 或 `image_path` 会直接触发校验错误。
+本次数据格式不兼容旧的图片字段和旧的纯文本页面记录。开发阶段不会静默忽略未知字段；升级后必须使用 `--overwrite` 重新导入教材，以生成行级版面锚点。旧 JSON 中残留的 `image_url`、`page_image_url` 或 `image_path` 会直接触发校验错误。
 
 ---
 
@@ -350,7 +361,7 @@ GPT Action 接口需要鉴权
 ## 长小节 / 分块读取规则
 
 - 调用 `gptGetSection` 后，必须检查返回值里的 `content` 字段。
-- 如果 `content.is_truncated` 为 `true`，或 `content.content_status` 为 `partial`，说明当前只拿到了这一小节的一部分内容，不能暗示已经完整阅读整节。
+- 如果 `content.is_truncated` 为 `true`，或 `content.window_status` 为 `partial`，说明当前只拿到了这一小节的一部分内容，不能暗示已经完整阅读整节。`window_status` 只描述本次传输窗口，不代表教材结构识别一定正确。
 - 如果用户要求“完整讲这一节”“继续讲”“后面还有吗”，并且 `content.next_offset` 不是 `null`，必须继续调用 `gptGetSection`，传入 `text_offset=content.next_offset`，直到 `content.next_offset` 为 `null` 或已经足够回答用户的问题。
 - 如果只讲当前已返回的部分，回答开头要明确说明：“这一小节较长，我先讲当前返回的这一部分；后续内容可以继续读取。”
 - 总结、判断整节结论、列完整公式或完整步骤之前，要确认 `content.next_offset` 为 `null`；否则只能说“基于当前已返回部分”。

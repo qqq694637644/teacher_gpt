@@ -3,7 +3,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, RedirectResponse
 
 from app.api.routes import router
-from app.core.errors import BookNotFoundError, FigureNotFoundError, SectionNotFoundError
+from app.core.errors import (
+    BookNotFoundError,
+    DataVersionError,
+    FigureNotFoundError,
+    SectionNotFoundError,
+)
 from app.core.config import get_settings
 
 
@@ -37,6 +42,10 @@ def create_app() -> FastAPI:
     @app.exception_handler(FigureNotFoundError)
     async def figure_not_found_handler(request: Request, exc: FigureNotFoundError) -> JSONResponse:
         return JSONResponse(status_code=404, content={"detail": f"Figure not found: {exc}"})
+
+    @app.exception_handler(DataVersionError)
+    async def data_version_handler(request: Request, exc: DataVersionError) -> JSONResponse:
+        return JSONResponse(status_code=409, content={"detail": str(exc)})
 
     @app.get("/", include_in_schema=False)
     async def root() -> RedirectResponse:

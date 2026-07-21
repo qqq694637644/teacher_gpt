@@ -13,6 +13,7 @@ class SectionService:
         self.store = store or JsonStore()
 
     def resolve_section_id(self, book_id: str, section_id: str) -> tuple[str, bool]:
+        self.store.require_current_version(book_id)
         aliases = self.store.load_json(book_id, "section_aliases.json", default={})
         if section_id in aliases:
             return str(aliases[section_id]), True
@@ -43,6 +44,7 @@ class SectionService:
         return SectionPack(**pack_data)
 
     def get_raw_section_map(self, book_id: str) -> dict:
+        self.store.require_current_version(book_id)
         return self.store.load_json(book_id, "section_map.json", default={})
 
     def _apply_text_window(
@@ -70,7 +72,7 @@ class SectionService:
 
         pack["text_blocks"] = sliced_blocks
         pack["content"] = {
-            "content_status": "partial" if is_truncated else "complete",
+            "window_status": "partial" if is_truncated else "complete",
             "is_truncated": is_truncated,
             "text_offset": safe_offset,
             "text_limit": text_limit,

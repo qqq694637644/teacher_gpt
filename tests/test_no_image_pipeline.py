@@ -22,11 +22,15 @@ def test_openapi_has_no_image_transport_contract() -> None:
     assert "render_pages" not in serialized
     assert "image_url" not in serialized
     assert "page_image_url" not in serialized
+    assert "content_status" not in serialized
+    assert "window_status" in serialized
+    assert "data_version" in serialized
 
 
 def test_figure_service_rejects_legacy_image_fields(tmp_path) -> None:
     settings = Settings(data_dir=tmp_path)
     store = JsonStore(settings)
+    store.save_json("book", "book_meta.json", {"book_id": "book", "version": "2"})
     store.save_json(
         "book",
         "figure_map.json",
@@ -63,6 +67,11 @@ def test_ingestion_writes_text_metadata_without_image_assets(tmp_path) -> None:
     assert result["page_count"] == 1
     assert not (book_dir / "pages").exists()
     assert not (book_dir / "figures").exists()
+    meta = json.loads((book_dir / "book_meta.json").read_text(encoding="utf-8"))
+    assert meta["version"] == "2"
+    pages = json.loads((book_dir / "page_text.json").read_text(encoding="utf-8"))["pages"]
+    assert pages[0]["lines"]
+    assert "font_size" in pages[0]["lines"][0]
 
     for json_path in book_dir.rglob("*.json"):
         payload = json.loads(json_path.read_text(encoding="utf-8"))

@@ -168,6 +168,9 @@ components:
     SectionPack:
       type: object
       properties:
+        data_version:
+          type: string
+          enum: ['2']
         book_id:
           type: string
         section_id:
@@ -245,9 +248,10 @@ components:
     SectionContentMeta:
       type: object
       properties:
-        content_status:
+        window_status:
           type: string
           enum: [complete, partial]
+          description: Whether the requested response text window is complete; this is not a structural-quality signal.
         is_truncated:
           type: boolean
         text_offset:

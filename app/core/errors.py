@@ -8,3 +8,7 @@ class SectionNotFoundError(KeyError):
 
 class FigureNotFoundError(KeyError):
     pass
+
+
+class DataVersionError(RuntimeError):
+    pass

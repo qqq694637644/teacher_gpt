@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from app.models.schemas import PrerequisitesResponse, SearchResponse, SearchResult
+from app.models.schemas import PrerequisitesResponse, SearchResponse, SearchResult, SectionPack
 from app.services.section_service import SectionService
 from app.services.storage import JsonStore
 from app.utils.text import compact_snippet, lexical_score
@@ -16,11 +16,12 @@ class SearchService:
         results: list[SearchResult] = []
         for section_id, meta in section_map.items():
             try:
-                pack = self.store.load_json(book_id, f"section_packs/{section_id}.json")
+                raw_pack = self.store.load_json(book_id, f"section_packs/{section_id}.json")
             except FileNotFoundError:
                 continue
-            text = "\n".join(block.get("text", "") for block in pack.get("text_blocks", []))
-            title = meta.get("title") or pack.get("title") or section_id
+            pack = SectionPack.model_validate(raw_pack)
+            text = "\n".join(block.text for block in pack.text_blocks)
+            title = meta.get("title") or pack.title or section_id
             score = lexical_score(query, title, text)
             if score <= 0:
                 continue

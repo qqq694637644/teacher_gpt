@@ -20,7 +20,7 @@ class BookMeta(ApiModel):
     page_count: int | None = None
     created_at: str | None = None
     updated_at: str | None = None
-    version: str = "1"
+    version: Literal["2"] = "2"
     notes: str | None = None
 
 
@@ -76,7 +76,7 @@ class ExampleRef(ApiModel):
 
 
 class SectionContentMeta(ApiModel):
-    content_status: Literal["complete", "partial"] = "complete"
+    window_status: Literal["complete", "partial"] = "complete"
     is_truncated: bool = False
     text_offset: int = Field(default=0, ge=0)
     text_limit: int | None = Field(default=None, ge=1)
@@ -86,6 +86,7 @@ class SectionContentMeta(ApiModel):
 
 
 class SectionPack(ApiModel):
+    data_version: Literal["2"]
     book_id: str
     section_id: str
     resolved_section_id: str | None = Field(default=None)
