@@ -5,6 +5,7 @@ Version 3 is a breaking redesign for one personal-use textbook GPT.
 The original PDF in GPT file search is the only source of textbook content and page visuals. This backend returns strict, page-by-page retrieval plans for a requested section or learning-unit ID. It does not return textbook text, images, summaries, search results, prerequisites, or inferred content.
 
 - Architecture: `ARCHITECTURE_REFACTOR.md`
+- Catalog build workflow and lessons: `CATALOG_BUILD_WORKFLOW.md`
 - GPT Builder instructions: `PROMPT.md`
 - Curated Action schema: `examples/openai_action_schema_one_book.yaml`
 
@@ -99,6 +100,8 @@ A partial catalog is not a runnable deployment.
 ## Offline build workflow
 
 The source PDF is intentionally not committed to Git.
+
+For the full generation rationale, automation/manual-review boundary, failure modes, and reproducibility requirements, see `CATALOG_BUILD_WORKFLOW.md`.
 
 ### 0. Verify the exact source file
 
@@ -244,6 +247,7 @@ scripts/
 tests/
 PROMPT.md
 ARCHITECTURE_REFACTOR.md
+CATALOG_BUILD_WORKFLOW.md
 ```
 
 ## Removed Version 2 capabilities

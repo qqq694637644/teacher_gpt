@@ -2,6 +2,8 @@
 
 Version 3 runtime data for the reviewed DIP4E source PDF is committed here.
 
+The generation, review, validation, and reproducibility process is documented in `CATALOG_BUILD_WORKFLOW.md` at the repository root.
+
 Runtime and audit files:
 
 ```text

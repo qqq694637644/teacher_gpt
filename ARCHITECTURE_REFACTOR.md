@@ -2,7 +2,7 @@
 
 ## 1. 文档状态
 
-- 状态：已决策，待实现
+- 状态：已实现并通过源 PDF 验证
 - 使用范围：个人学习，一本固定教材
 - 数据版本：`3`
 - 更新方式：破坏式替换
@@ -56,7 +56,7 @@ printed_page_label: "105"
 
 三套编号不是靠运行时猜偏移量得到，而是从 PDF 页面标签读取并在构建阶段固化。
 
-使用已实现的版面候选规则检查整本 PDF，得到 102 个带教材印刷编号的标题和 434 个标题候选。其中两个候选是正式章节开始前的作者姓名，不归属任何印刷章节；其余 432 个候选必须逐项出现在 Manifest。候选数量不是学习单元数量；候选必须经过结构树审核后才能进入 Manifest。
+初版只识别普通小标题样式时得到 434 个候选；补充 12 个章首页标题后，完整候选集为 446 个，其中包括 114 个印刷节点候选和 332 个未编号候选。两个未编号候选是正式章节开始前的作者姓名，不归属任何印刷章节；其余 444 个候选必须逐项出现在 Manifest。候选数量不是学习单元数量；候选必须经过结构树审核后才能进入 Manifest。
 
 ### 2.2 统一编号规则
 
@@ -923,17 +923,19 @@ Step 9 必须确认印刷页 106 出现 VECTOR AND MATRIX OPERATIONS，并把它
 
 ## 14. 实施顺序
 
-1. 固化 Version 3 schema 和严格校验。
-2. 编写全书页面标签提取和验证。
-3. 生成全书候选标题、Figure、Equation、Example。
-4. 人工审核完整 Manifest。
-5. 为每个学习单元编写逐页 retrieval plan。
-6. 编译完整索引；未完成不得发布。
-7. 删除 Version 2 代码、数据和 API。
-8. 只实现 `gptGetSectionLocator` 和 `healthCheck`。
-9. 替换 OpenAPI schema。
-10. 使用根目录 `PROMPT.md` 配置 GPT Builder。
-11. 对全书学习单元执行验收测试。
+实际落地流程和经验详见 `CATALOG_BUILD_WORKFLOW.md`。当前实施顺序为：
+
+1. 固化 Version 3 schema、页面分类和严格失败规则。
+2. 锁定源 PDF 的 SHA-256、页数和页面标签。
+3. 提取行级版面事实，以及标题、Figure、Equation、Example、Table 候选。
+4. 用确定性规则生成完整标题树、页面范围、内容窗口、逐页查询和证据。
+5. 只人工审核层级模糊、纯图、留白、parent-only 和查询歧义等异常，不逐页手填完整 Manifest。
+6. 编译完整索引，并回查源 PDF 验证每个标题、锚点、边界和查询文本。
+7. 按章分片 Manifest 和 compiled index，拒绝缺失、重复或额外 shard。
+8. 执行 schema、单元测试、真实 catalog 启动和全量可重复性比较；未完成不得发布。
+9. 删除 Version 2 代码、数据和 API，只保留 `gptGetSectionLocator` 和 `healthCheck`。
+10. 替换 OpenAPI schema，并使用根目录 `PROMPT.md` 配置 GPT Builder。
+11. 在真实 GPT 文件库中执行 file-search 验收；不得用本地 PDF 验证替代该状态。
 12. 整体替换部署，不并行运行旧版本。
 
 ---
