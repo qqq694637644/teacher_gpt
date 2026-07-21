@@ -1,358 +1,342 @@
-# Teacher GPT 破坏式架构重构设计
+# Teacher GPT Version 3 破坏式重构设计
 
 ## 1. 文档状态
 
-- 状态：已决策，待实施
-- 适用项目：`teacher_gpt`
-- 目标版本：Data/API Version 3
-- 更新类型：破坏式更新
-- 兼容策略：**不兼容旧接口、旧数据、旧配置和旧 GPT Instructions**
-- 核心场景：个人使用，一本固定教材，由 GPT 文件库中的原始 PDF 提供正文与页面视觉内容
+- 状态：已决策，待实现
+- 使用范围：个人学习，一本固定教材
+- 数据版本：`3`
+- 更新方式：破坏式替换
+- 兼容策略：不兼容 Version 2
+- GPT Builder 唯一提示词来源：仓库根目录 `PROMPT.md`
+- 教材文件：`Digital Image ProcessingRafael.pdf`
 
-本次重构不提供迁移适配层、旧字段别名、旧接口转发、双版本并存、自动数据升级或静默字段清理。旧数据必须删除并按新格式重新构建；旧 GPT Action schema 必须替换。
-
----
-
-## 2. 重构背景
-
-当前项目把自己设计成教材内容后端：解析 PDF 全文，自动生成章节和派生小节，保存 `SectionPack`，再由 GPT Action 返回正文、图注、公式、例题和页码。
-
-实际测试证明，这个职责划分不适合当前 GPT Action 使用方式：
-
-1. GPT 文件库已经能够对原始 PDF 做页面级检索和多模态查看。
-2. GPT Action 更适合提供小而确定的结构化定位信息，不适合复制整本教材正文。
-3. 自动解析器会把未编号标题强行编号，导致教材正式编号与 Action 编号冲突。
-4. 章节边界、公式定位和 Example 定位无法靠全文语义搜索稳定解决。
-5. `page_number` 同时承担 PDF 页和教材印刷页语义，接口含义不明确。
-6. Action 和 PDF 同时保存教材内容，会产生两个相互冲突的事实源。
-
-自测中最关键的问题是：
-
-- 用户所说的 `2.6.6 Spatial Operations` 被 Action 解释为 `Logical Operations`。
-- `Spatial Operations` 内部未编号标题被自动生成连续章节编号。
-- Figure 2.41 可以定位，但缺少明确的印刷页字段。
-- Equation 2-47 和 Example 2.9 缺少专用精确定位接口。
-- 单独搜索页码 105 会召回错误页面，必须组合图号、公式号、标题和页脚标记进行核验。
-
-因此项目必须从“教材内容后端”重构为“教材坐标与定位后端”。
+Version 3 不提供旧接口转发、旧字段别名、旧数据迁移、双版本模型、自动修复或静默兼容。旧部署必须整体删除后重新生成索引和部署。
 
 ---
 
-## 3. 新的职责边界
+## 2. 已验证事实
+
+本设计不是从假设出发，而是基于已上传 PDF、本地逐页检查和用户提供的真实 `file_search` 调用记录。
+
+### 2.1 PDF 基本信息
+
+已上传文件：
+
+```text
+Digital Image ProcessingRafael.pdf
+```
+
+本地检查结果：
+
+```text
+物理页总数：1022
+PDF 标题：Digital Image Processing, 4e
+作者：Rafael C. Gonzalez
+```
+
+PDF 内置页面标签规则：
+
+```text
+pdf_page_index 0       → Cover
+pdf_page_index 1       → IFC
+pdf_page_index 2       → 1
+...
+pdf_page_index 1020    → 1019
+pdf_page_index 1021    → Back Cover
+```
+
+因此 Figure 2.41 所在页可以确定为：
+
+```text
+pdf_page_index: 106
+pdf_page_number: 107
+printed_page_label: "105"
+```
+
+三套编号不是靠运行时猜偏移量得到，而是从 PDF 页面标签读取并在构建阶段固化。
+
+### 2.2 2.6.6 的真实身份
+
+PDF 正文只印刷了父节编号：
+
+```text
+2.6 Introduction to the Basic Mathematical Tools Used in Digital Image Processing
+```
+
+`SPATIAL OPERATIONS` 是该节中的未编号标题。PDF 并没有印刷 `2.6.6`。
+
+因此 Version 3 明确定义：
+
+```text
+section_id = 项目为学习流程定义的稳定学习单元 ID
+printed_parent_section_id = 教材实际印刷的父节编号
+source_heading = 教材页面中的原始标题
+source_heading_numbered = 原始标题是否带印刷编号
+```
+
+Spatial Operations 的权威记录应为：
+
+```json
+{
+  "section_id": "2.6.6",
+  "title": "Spatial Operations",
+  "printed_parent_section_id": "2.6",
+  "source_heading": "SPATIAL OPERATIONS",
+  "source_heading_numbered": false
+}
+```
+
+不得再声称 `2.6.6` 是教材正式印刷编号，也不得由解析器根据标题出现顺序自动生成该 ID。该 ID 由人工审核的 Manifest 明确定义。
+
+### 2.3 Spatial Operations 的页面边界
+
+本地文本与页面渲染共同确认：
+
+```text
+印刷页 98：页面底部开始 SPATIAL OPERATIONS
+印刷页 99：Single-Pixel Operations、Neighborhood Operations
+印刷页 100：Geometric Transformations 开始
+印刷页 101：公式 (2-44)、(2-45)
+印刷页 102：正向映射、逆向映射、Table 2.3
+印刷页 103：Example 2.9，随后 Image Registration 开始
+印刷页 104：Figure 2.40、公式 (2-46)
+印刷页 105：Figure 2.41、公式 (2-47)
+印刷页 106：Example 2.10，随后进入 VECTOR AND MATRIX OPERATIONS
+```
+
+所以该学习单元覆盖印刷页 `98` 到 `106`，但第一页和最后一页都只覆盖页面的一部分。
+
+### 2.4 已验证的逐页查询锚点
+
+下列组合在本地 PDF 文本中能够唯一锁定目标页。真实 `file_search` 仍可能把错误候选排在前面，因此“唯一文本交集”不等于“第一候选必定正确”。
+
+| 印刷页 | PDF index | 已验证组合 |
+|---|---:|---|
+| 98 | 99 | `SPATIAL OPERATIONS` + `FIGURE 2.37` |
+| 99 | 100 | `Single-Pixel Operations` + `Neighborhood Operations` + `(2-42)` + `(2-43)` |
+| 100 | 101 | `Geometric Transformations` + `FIGURE 2.39` |
+| 101 | 102 | `(2-44)` + `homogeneous coordinates` + `intensity interpolation` |
+| 102 | 103 | `inverse mapping` + `TABLE 2.3` + `MATLAB` |
+| 103 | 104 | `EXAMPLE 2.9` + `Image Registration` |
+| 104 | 105 | `FIGURE 2.40` + `(2-46)` |
+| 105 | 106 | `FIGURE 2.41` + `(2-47)` |
+| 106 | 107 | `EXAMPLE 2.10` + `VECTOR AND MATRIX OPERATIONS` |
+
+### 2.5 `DIP4E_GLOBAL_Print_Ready.indb N` 的边界
+
+用户提供的真实 `file_search.msearch` 结果中包含：
+
+```text
+DIP4E_GLOBAL_Print_Ready.indb 105
+```
+
+它对文件库检索有效。但是在本地 PyMuPDF 文本提取和页面渲染中没有看到该字符串。
+
+所以它只能归类为：
+
+```text
+retrieval-only anchor
+```
+
+不能归类为：
+
+```text
+required visual evidence
+```
+
+GPT 可以用它搜索，但不能声称在页面视觉中看到了该标记，也不能把它作为必须肉眼确认的条件。
+
+### 2.6 真实文件工具行为
+
+当前环境中实际暴露的是：
+
+```text
+file_search.msearch
+file_search.mclick
+```
+
+`file_library` 是数据源过滤条件，不是工具命名空间：
+
+```json
+{
+  "source_filter": ["file_library"]
+}
+```
+
+已知事实：
+
+- GPT 主动提交查询词；
+- 一次搜索可以提交多个查询；
+- 返回多个候选文本块；
+- 候选可能跨越相邻页面；
+- 候选没有结构化页码字段；
+- 页面视觉预览可能与搜索结果一起出现，但不是每个候选都保证有；
+- 第一候选可能错误；
+- `+()` 不是严格布尔 AND；
+- `mclick` 展开的是候选指针，不是 PDF 页号；
+- 没有 `open_page`、`next_page` 或 `previous_page` 接口。
+
+PROMPT 和 Action 契约必须严格基于这些能力，不得编造页面随机访问接口。
+
+---
+
+## 3. 新职责边界
 
 ### 3.1 原始 PDF
 
-原始 PDF 上传到 GPT 文件库，作为唯一教材事实源，负责：
+原始 PDF 放在 GPT 文件库，是教材内容和视觉内容的唯一事实源，负责：
 
 - 正文；
-- 页面视觉内容；
-- 图、表和子图布局；
-- 公式排版；
-- 图注与正文关系；
-- 页面中的标题层级；
-- 相邻页面的内容关系。
+- 公式；
+- 图、表和页面布局；
+- 图内标签；
+- 子图空间关系；
+- 标题实际位置；
+- 页面视觉证据。
 
-后端不再保存或返回完整教材正文。
+### 3.2 Action 后端
 
-### 3.2 GPT Action 后端
+Action 只负责：
 
-Action 后端只负责：
+- 学习单元 ID；
+- 原始标题与印刷父节；
+- 页面范围；
+- 每页的检索查询；
+- 每页必须核验的可见证据；
+- 每页覆盖的子标题、Figure、Equation 和 Example；
+- 严格的不存在错误。
 
-- 正式章节 ID 和标题；
-- 正式章节起止页；
-- PDF 页、查看器页和印刷页映射；
-- 未编号子标题及其所属正式章节；
-- Figure、Equation、Example 所在页；
-- 用于文件库检索的页面锚点；
-- 用于拒绝错误页面的核验条件；
-- 对不存在对象返回明确错误。
-
-Action 不负责解释教材，也不返回教材完整内容。
+Action 不返回教材正文，不解释公式，不描述图像。
 
 ### 3.3 GPT
 
 GPT 负责：
 
-1. 根据用户问题调用精确 Locator 接口；
-2. 使用 Action 返回的检索查询定位原始 PDF 页面；
-3. 核验候选页面是否满足关键锚点；
-4. 拒绝不匹配页面；
-5. 阅读原始页面并进行教学讲解；
-6. 无法可靠定位时明确说明失败，不猜测。
-
-### 3.4 目标架构
-
-```text
-用户问题
-   ↓
-GPT
-   ├─ 调用 Locator Action 获取坐标、锚点、核验条件
-   ├─ 在文件库中搜索原始 PDF
-   ├─ 核验候选页面
-   └─ 基于原始页面回答
-
-原始 PDF ───────────────→ GPT 文件库
-
-人工审核的 Manifest
-   ↓
-离线编译
-   ↓
-Compiled Locator Index
-   ↓
-FastAPI Locator API
-```
+1. 调用 Action 获取逐页检索计划；
+2. 使用 `file_search.msearch` 搜索文件库；
+3. 检查多个候选，不默认第一候选正确；
+4. 在可用时用 `file_search.mclick` 展开候选；
+5. 根据视觉预览和候选文本核验页面；
+6. 阅读原始 PDF 后讲解；
+7. 无法核验时明确报告缺失页，不猜测。
 
 核心原则：
 
-> PDF 是事实源，Action 是导航器，GPT 是阅读器和教师。
+> PDF 是事实源，Action 是逐页导航计划，GPT 是阅读器和教师。
 
 ---
 
-## 4. 明确废弃的旧设计
+## 4. 使用范围决定的架构收缩
 
-以下能力在 Version 3 中全部删除，不保留兼容入口。
+当前学习方式只会按章节或学习单元提问，不处理脱离章节的概念问答。
 
-### 4.1 删除 `SectionPack` 内容模型
+因此 Version 3 不建设未使用的公开接口：
 
-删除：
+- 不公开 Figure Locator；
+- 不公开 Equation Locator；
+- 不公开 Example Locator；
+- 不公开 Page Locator；
+- 不公开全文搜索；
+- 不公开概念搜索。
 
-- `text_blocks`；
-- `content.offset`；
-- `content.limit`；
-- `content.next_offset`；
-- `content.is_truncated`；
-- `content.window_status`；
-- `source_pages` 旧结构；
-- `previous_sections`；
-- `next_sections`；
-- Action 返回的完整章节正文。
+Figure、Equation、Example 和页面信息仍然进入 Manifest，但只作为 Section Locator 的逐页检索锚点和覆盖清单。
 
-原因：正文由原始 PDF 提供，Action 不再复制教材内容。
-
-### 4.2 删除旧章节接口
-
-删除：
+公开 Action 只保留：
 
 ```text
-GET /gpt/sections/{section_id}
-GET /books/{book_id}/sections/{section_id}
+GET /health
+GET /gpt/section-locators/{section_id}
 ```
 
-不得让旧路径转发到新 Locator 接口。
-
-### 4.3 删除全文搜索接口
-
-删除：
+对应 operationId：
 
 ```text
-GET /gpt/search
-GET /books/{book_id}/search
+healthCheck
+gptGetSectionLocator
 ```
 
-新的搜索只能搜索定位索引，不扫描章节正文，不返回长文本 snippet。
-
-### 4.4 删除 prerequisites 接口
-
-删除：
-
-```text
-GET /gpt/sections/{section_id}/prerequisites
-GET /books/{book_id}/sections/{section_id}/prerequisites
-```
-
-当前 prerequisites 只是按章节顺序推断，不是可信教材知识结构，不属于定位后端职责。
-
-### 4.5 删除运行时 PDF 导入接口
-
-删除：
-
-```text
-POST /books/{book_id}/ingest
-```
-
-PDF 处理改为开发时离线工具，不暴露给 GPT Action。
-
-### 4.6 删除旧数据文件
-
-Version 3 不读取以下文件：
-
-```text
-book_meta.json
-toc.json
-section_map.json
-section_aliases.json
-figure_map.json
-page_text.json
-section_packs/*.json
-```
-
-旧数据目录不能被自动升级。部署 Version 3 前必须删除旧数据并生成新的 compiled index。
-
-### 4.7 删除自动派生章节编号
-
-禁止：
-
-```text
-发现大写标题
-→ 对上一个章节编号加一
-→ 生成新的正式 section_id
-```
-
-未编号标题永远不能进入教材正式章节编号体系。
-
-### 4.8 删除章节别名兼容
-
-删除 `section_aliases` 和 `aliases_dip4e.json` 兼容机制。
-
-不存在“把错误自动编号映射回用户习惯编号”的兜底。正式章节编号必须在权威 Manifest 中直接正确。
-
-### 4.9 删除模糊关联
-
-删除 Figure 的 `related_section_ids`。
-
-每个 Figure、Equation 和 Example 只保存经确认的权威 `section_id`。无法确认时构建失败，不通过相似文本匹配返回多个猜测章节。
-
-### 4.10 删除模糊页码字段
-
-删除所有单独的：
-
-```json
-{"page_number": 107}
-```
-
-不得保留字段别名或自动解释旧语义。
-
-### 4.11 删除内容完整性状态
-
-删除：
-
-- `complete`；
-- `content_status`；
-- 基于返回字符数的完整性判断；
-- 章节正文传输窗口状态。
-
-Action 不返回正文，因此不声明正文是否完整。
+用户未给出学习单元 ID 时，GPT 应要求用户提供 ID，不建设模糊标题搜索作为兜底。
 
 ---
 
-## 5. 权威数据源：Book Manifest
+## 5. 整本书一次性索引
 
-### 5.1 设计原则
+采用完整索引模式，不发布部分索引。
 
-一本固定教材、个人使用场景下，最终结构必须由人工可审查的 Manifest 定义。
+### 5.1 覆盖范围
 
-自动 PDF 提取只生成候选数据，不能直接发布为运行时索引。
+发布 Version 3 前必须完成：
 
-建议文件：
+- 全部 1022 个物理页的页面引用；
+- PDF 页面标签映射；
+- 第 1–12 章全部学习单元；
+- 每个学习单元的起止位置；
+- 每个学习单元的逐页检索计划；
+- 每页可见核验条件；
+- Figure、Equation、Example 的页面归属；
+- Bibliography 和 Index 的页面映射。
+
+封面、IFC 和 Back Cover 可以进入页面映射，但不作为学习单元。
+
+### 5.2 不存在的语义
+
+由于只发布完整索引，因此：
 
 ```text
-data/dip4e/book_manifest.yaml
+SECTION_NOT_FOUND
 ```
 
-Manifest 是唯一权威来源，包含：
+可以严格表示：该学习单元 ID 不存在。
 
-- 教材信息；
-- 页面映射；
-- 正式章节；
-- 未编号子标题；
-- Figure；
-- Equation；
-- Example；
-- 页面锚点；
-- 核验条件。
+Version 3 不需要：
 
-### 5.2 正式章节与未编号标题分离
-
-正式章节示例：
-
-```yaml
-sections:
-  - section_id: "2.6.6"
-    title: "Spatial Operations"
-    parent_section_id: "2.6"
-    page_range:
-      printed_page_start: "98"
-      printed_page_end: "106"
-      pdf_page_index_start: 99
-      pdf_page_index_end: 107
-      pdf_page_number_start: 100
-      pdf_page_number_end: 108
+```text
+OBJECT_NOT_INDEXED
+coverage.status
+partial coverage
 ```
 
-未编号标题示例：
-
-```yaml
-subheadings:
-  - heading_id: "2.6.6#single-pixel-operations"
-    title: "Single-Pixel Operations"
-    section_id: "2.6.6"
-    printed_page_label: "99"
-
-  - heading_id: "2.6.6#image-registration"
-    title: "Image Registration"
-    section_id: "2.6.6"
-    printed_page_label: "103"
-```
-
-`heading_id` 是内部稳定标识，不是教材正式编号，不能向用户表现为 `2.6.7`、`2.6.8` 等章节。
-
-### 5.3 三套页码
-
-每个页面统一保存：
-
-```yaml
-page:
-  pdf_page_index: 106
-  pdf_page_number: 107
-  printed_page_label: "105"
-```
-
-语义：
-
-- `pdf_page_index`：程序使用的 0-based PDF 索引；
-- `pdf_page_number`：PDF 查看器使用的 1-based 物理页码；
-- `printed_page_label`：教材页面上实际印刷的页码。
-
-`printed_page_label` 必须是字符串，以支持罗马数字、附录页和无纯数字页码。
-
-禁止在运行时通过固定偏移临时推导印刷页。
-
-### 5.4 Page Locator
-
-每页保存能够稳定检索和核验的锚点：
-
-```yaml
-pages:
-  - pdf_page_index: 106
-    pdf_page_number: 107
-    printed_page_label: "105"
-    running_header: "2.6 Introduction to the Basic Mathematical Tools Used in Digital Image Processing"
-    footer_anchor: "DIP4E_GLOBAL_Print_Ready.indb 105"
-    anchors:
-      - type: figure
-        value: "FIGURE 2.41"
-      - type: equation
-        value: "(2-47)"
-      - type: heading
-        value: "Image Registration"
-```
-
-锚点优先级：
-
-1. Figure / Example 编号；
-2. Equation 编号；
-3. 页面内部唯一标题；
-4. 页脚 `indb` 标记；
-5. 页眉；
-6. 少量唯一正文短语。
-
-单独的数字页码不得作为唯一检索条件。
+编译未完成时应用不得启动。
 
 ---
 
-## 6. Version 3 运行时数据模型
+## 6. 仓库中的权威文件
 
-### 6.1 公共 PageReference
+原始 PDF 不提交仓库。Manifest 和 compiled index 在后续索引阶段生成并提交仓库。
+
+目标路径：
+
+```text
+catalog/
+  dip4e/
+    manifest.yaml
+    compiled_locator_index.json
+    validation_report.json
+```
+
+不用 `data/`，因为当前 `.gitignore` 忽略 `data/`。
+
+文件职责：
+
+- `manifest.yaml`：人工审核的权威数据；
+- `compiled_locator_index.json`：运行时唯一输入；
+- `validation_report.json`：构建证据和检查结果。
+
+运行时不读取 PDF，不读取候选提取文件，也不读取旧 JSON。
+
+---
+
+## 7. 数据模型
+
+所有模型使用严格校验：
+
+```text
+extra = forbid
+```
+
+未知字段、旧字段、缺失字段、重复 ID、断裂引用和页码冲突必须直接失败。
+
+### 7.1 PageReference
 
 ```json
 {
@@ -362,46 +346,99 @@ pages:
 }
 ```
 
-三个字段全部必填，不允许 `null`，不接受未知字段。
+规则：
 
-### 6.2 RetrievalQuery
+- `pdf_page_index` 为 0-based；
+- `pdf_page_number` 必须等于 index + 1；
+- `printed_page_label` 来自 PDF page label；
+- 三个字段全部必填；
+- 不接受旧字段 `page_index` 或 `page_number`。
 
-```json
-{
-  "query": "FIGURE 2.41 (2-47) DIP4E_GLOBAL_Print_Ready.indb 105",
-  "purpose": "primary"
-}
-```
-
-`purpose` 只能是：
-
-- `primary`；
-- `secondary`；
-- `adjacent_page`。
-
-### 6.3 VerificationRequirement
+### 7.2 EvidenceRequirement
 
 ```json
 {
-  "type": "contains_figure",
-  "value": "2.41",
-  "required": true
+  "kind": "contains_figure",
+  "value": "2.41"
 }
 ```
 
-用于告诉 GPT 如何拒绝错误候选页面。
+允许的 `kind`：
 
-允许的类型至少包括：
+```text
+printed_page_equals
+contains_heading
+contains_figure
+contains_equation
+contains_example
+running_header_contains
+```
 
-- `printed_page_equals`；
-- `contains_figure`；
-- `contains_equation`；
-- `contains_example`；
-- `contains_heading`；
-- `running_header_contains`；
-- `footer_anchor_contains`。
+这里只允许可从候选文本或页面视觉确认的证据。
 
-### 6.4 SectionLocator
+禁止把 `DIP4E_GLOBAL_Print_Ready.indb N` 作为 EvidenceRequirement。
+
+### 7.3 PageCoverage
+
+```json
+{
+  "subheadings": ["Image Registration"],
+  "figure_ids": ["2.41"],
+  "equation_ids": ["2-47"],
+  "example_ids": []
+}
+```
+
+这只是告诉 GPT 该页预计覆盖什么，不是教材内容本身。
+
+### 7.4 PageRetrievalStep
+
+```json
+{
+  "sequence": 8,
+  "page_role": "body",
+  "page": {
+    "pdf_page_index": 106,
+    "pdf_page_number": 107,
+    "printed_page_label": "105"
+  },
+  "content_window": {
+    "start_at": null,
+    "end_before": null
+  },
+  "queries": [
+    "+(FIGURE 2.41) +(2-47) +(Image Registration) +(DIP4E_GLOBAL_Print_Ready.indb 105) --QDF=0",
+    "Figure 2.41 rotated image equation 2-47 printed page 105 --QDF=0"
+  ],
+  "required_evidence": [
+    {"kind": "printed_page_equals", "value": "105"},
+    {"kind": "contains_figure", "value": "2.41"},
+    {"kind": "contains_equation", "value": "2-47"}
+  ],
+  "coverage": {
+    "subheadings": ["Image Registration"],
+    "figure_ids": ["2.41"],
+    "equation_ids": ["2-47"],
+    "example_ids": []
+  }
+}
+```
+
+规则：
+
+- 每一物理页一个 step；
+- `sequence` 从 1 连续递增；
+- `page_role` 只能是 `start`、`body` 或 `end`；
+- `content_window.start_at` 指定当前学习单元在该页从哪个可见锚点开始，包含该锚点；
+- `content_window.end_before` 指定在该页遇到哪个可见锚点前结束，不包含该锚点；
+- 完整覆盖整页时两个字段都为 `null`；
+- 每步至少两个查询：primary 和 secondary，按数组顺序使用；
+- 查询字符串是针对当前 `file_search.msearch` 的完整字符串；
+- `--QDF=0` 直接写入查询；
+- required evidence 必须全部满足；
+- 搜索候选排序不参与正确性判断。
+
+### 7.5 SectionLocator
 
 ```json
 {
@@ -409,580 +446,456 @@ pages:
   "book_id": "dip4e",
   "section_id": "2.6.6",
   "title": "Spatial Operations",
-  "parent_section_id": "2.6",
+  "printed_parent_section_id": "2.6",
+  "source_heading": "SPATIAL OPERATIONS",
+  "source_heading_numbered": false,
   "page_range": {
-    "printed_page_start": "98",
-    "printed_page_end": "106",
     "pdf_page_index_start": 99,
     "pdf_page_index_end": 107,
     "pdf_page_number_start": 100,
-    "pdf_page_number_end": 108
+    "pdf_page_number_end": 108,
+    "printed_page_start": "98",
+    "printed_page_end": "106"
   },
-  "subheadings": [
-    {
-      "heading_id": "2.6.6#single-pixel-operations",
-      "title": "Single-Pixel Operations",
-      "page": {
-        "pdf_page_index": 100,
-        "pdf_page_number": 101,
-        "printed_page_label": "99"
-      }
-    }
+  "outline": [
+    "Single-Pixel Operations",
+    "Neighborhood Operations",
+    "Geometric Transformations",
+    "Image Registration"
   ],
-  "figure_ids": ["2.38", "2.39", "2.40", "2.41", "2.42"],
-  "equation_ids": ["2-42", "2-43", "2-44", "2-45", "2-46", "2-47"],
-  "example_ids": ["2.9", "2.10"],
-  "retrieval_queries": [],
-  "verification_requirements": []
+  "retrieval_plan": []
 }
 ```
 
-不包含正文，不包含分页窗口，不包含完整性字段。
+`retrieval_plan` 必须包含页面范围内每一个物理页，不能只给章节开始页或几个代表页。
 
-### 6.5 FigureLocator
+Section Locator 不包含：
 
-```json
-{
-  "data_version": "3",
-  "book_id": "dip4e",
-  "figure_id": "2.41",
-  "section_id": "2.6.6",
-  "page": {
-    "pdf_page_index": 106,
-    "pdf_page_number": 107,
-    "printed_page_label": "105"
-  },
-  "caption_anchor": "FIGURE 2.41",
-  "nearby_anchor_ids": ["equation:2-47", "heading:2.6.6#image-registration"],
-  "retrieval_queries": [
-    {
-      "query": "FIGURE 2.41 (2-47) DIP4E_GLOBAL_Print_Ready.indb 105",
-      "purpose": "primary"
-    }
-  ],
-  "verification_requirements": [
-    {"type": "contains_figure", "value": "2.41", "required": true},
-    {"type": "printed_page_equals", "value": "105", "required": true},
-    {"type": "contains_equation", "value": "2-47", "required": false}
-  ]
-}
-```
-
-### 6.6 EquationLocator
-
-```json
-{
-  "data_version": "3",
-  "book_id": "dip4e",
-  "equation_id": "2-47",
-  "section_id": "2.6.6",
-  "page": {
-    "pdf_page_index": 106,
-    "pdf_page_number": 107,
-    "printed_page_label": "105"
-  },
-  "nearby_figure_ids": ["2.41"],
-  "nearby_heading_ids": ["2.6.6#image-registration"],
-  "retrieval_queries": [],
-  "verification_requirements": []
-}
-```
-
-公式编号使用精确键查找，不走语义搜索。
-
-### 6.7 ExampleLocator
-
-```json
-{
-  "data_version": "3",
-  "book_id": "dip4e",
-  "example_id": "2.9",
-  "section_id": "2.6.6",
-  "title": "Image rotation and intensity interpolation",
-  "page": {
-    "pdf_page_index": 104,
-    "pdf_page_number": 105,
-    "printed_page_label": "103"
-  },
-  "nearby_heading_ids": [
-    "2.6.6#geometric-transformations",
-    "2.6.6#image-registration"
-  ],
-  "retrieval_queries": [],
-  "verification_requirements": []
-}
-```
-
-### 6.8 严格模型规则
-
-所有运行时模型必须：
-
-- `extra="forbid"`；
-- 必填字段缺失时启动失败；
-- ID 重复时编译失败；
-- 引用不存在对象时编译失败；
-- 旧字段出现时直接失败；
-- 不静默丢弃数据；
-- 不自动填充旧字段；
-- 不基于近似值返回相似对象。
+- 正文；
+- summary；
+- content_status；
+- complete；
+- warnings 兜底；
+- previous/next section；
+- prerequisites；
+- image URL；
+- related_section_ids；
+- confidence 小数。
 
 ---
 
-## 7. Version 3 Action API
+## 8. 2.6.6 的最终逐页计划
 
-个人使用只保留单教材 `/gpt` API，不再同时维护多教材公开路径。
+该计划作为 Version 3 首个验收样本。
 
-### 7.1 保留
+### Step 1：印刷页 98
+
+```text
+primary:
++(SPATIAL OPERATIONS) +(FIGURE 2.37) +(DIP4E_GLOBAL_Print_Ready.indb 98) --QDF=0
+
+secondary:
+Spatial operations are performed directly on the pixels Figure 2.37 printed page 98 --QDF=0
+
+required:
+printed page 98
+heading SPATIAL OPERATIONS
+
+content window:
+start_at heading SPATIAL OPERATIONS
+end_before null
+```
+
+### Step 2：印刷页 99
+
+```text
+primary:
++(Single-Pixel Operations) +(Neighborhood Operations) +(2-42) +(2-43) --QDF=0
+
+secondary:
+Single-Pixel Operations Neighborhood Operations Figure 2.38 printed page 99 --QDF=0
+
+required:
+printed page 99
+heading Single-Pixel Operations
+heading Neighborhood Operations
+equation 2-42
+equation 2-43
+```
+
+### Step 3：印刷页 100
+
+```text
+primary:
++(Geometric Transformations) +(FIGURE 2.39) +(DIP4E_GLOBAL_Print_Ready.indb 100) --QDF=0
+
+secondary:
+Geometric Transformations Figure 2.39 printed page 100 --QDF=0
+
+required:
+printed page 100
+heading Geometric Transformations
+figure 2.39
+```
+
+### Step 4：印刷页 101
+
+```text
+primary:
++(2-44) +(homogeneous coordinates) +(intensity interpolation) --QDF=0
+
+secondary:
+affine transformation equation 2-44 equation 2-45 printed page 101 --QDF=0
+
+required:
+printed page 101
+equation 2-44
+equation 2-45
+```
+
+### Step 5：印刷页 102
+
+```text
+primary:
++(inverse mapping) +(TABLE 2.3) +(MATLAB) --QDF=0
+
+secondary:
+forward mapping inverse mapping affine transformations printed page 102 --QDF=0
+
+required:
+printed page 102
+Table 2.3
+text inverse mapping
+```
+
+### Step 6：印刷页 103
+
+```text
+primary:
++(EXAMPLE 2.9) +(Image Registration) +(DIP4E_GLOBAL_Print_Ready.indb 103) --QDF=0
+
+secondary:
+Example 2.9 image rotation intensity interpolation Image Registration page 103 --QDF=0
+
+required:
+printed page 103
+Example 2.9
+heading Image Registration
+```
+
+### Step 7：印刷页 104
+
+```text
+primary:
++(FIGURE 2.40) +(2-46) +(DIP4E_GLOBAL_Print_Ready.indb 104) --QDF=0
+
+secondary:
+Figure 2.40 image rotation tie points equation 2-46 page 104 --QDF=0
+
+required:
+printed page 104
+figure 2.40
+equation 2-46
+```
+
+### Step 8：印刷页 105
+
+使用用户提供的真实成功查询：
+
+```text
+primary:
++(FIGURE 2.41) +(2-47) +(Image Registration) +(DIP4E_GLOBAL_Print_Ready.indb 105) --QDF=0
+
+secondary:
+Figure 2.41 rotated image equation 2-47 printed page 105 --QDF=0
+
+required:
+printed page 105
+figure 2.41
+equation 2-47
+```
+
+### Step 9：印刷页 106
+
+```text
+primary:
++(EXAMPLE 2.10) +(VECTOR AND MATRIX OPERATIONS) +(DIP4E_GLOBAL_Print_Ready.indb 106) --QDF=0
+
+secondary:
+Example 2.10 image registration Vector and Matrix Operations page 106 --QDF=0
+
+required:
+printed page 106
+Example 2.10
+heading VECTOR AND MATRIX OPERATIONS
+
+content window:
+start_at null
+end_before heading VECTOR AND MATRIX OPERATIONS
+```
+
+最后一步同时验证当前学习单元的结束边界。GPT 只讲到该标题之前，不把 Vector and Matrix Operations 内容并入 2.6.6。
+
+---
+
+## 9. Action API
+
+### 9.1 获取学习单元定位计划
+
+```text
+GET /gpt/section-locators/{section_id}
+operationId: gptGetSectionLocator
+```
+
+规则：
+
+- `section_id` 精确匹配；
+- 不做 alias；
+- 不做模糊匹配；
+- 不自动顺延编号；
+- 不返回相似 ID；
+- 不存在返回 `SECTION_NOT_FOUND`；
+- 数据版本不为 3 时服务启动失败。
+
+### 9.2 健康检查
 
 ```text
 GET /health
+operationId: healthCheck
 ```
 
-### 7.2 新增
-
-```text
-GET /gpt/locators/sections/{section_id}
-GET /gpt/locators/figures/{figure_id}
-GET /gpt/locators/equations/{equation_id}
-GET /gpt/locators/examples/{example_id}
-GET /gpt/locators/pages/by-printed-label/{printed_page_label}
-GET /gpt/locators/pages/by-pdf-index/{pdf_page_index}
-GET /gpt/locators/search?q={query}
-```
-
-建议 Operation ID：
-
-```text
-gptGetSectionLocator
-gptGetFigureLocator
-gptGetEquationLocator
-gptGetExampleLocator
-gptGetPrintedPageLocator
-gptGetPdfPageLocator
-gptSearchLocators
-```
-
-### 7.3 精确匹配规则
-
-- Section ID 必须精确匹配。
-- Figure ID 必须精确匹配规范化后的 `2.41`。
-- Equation ID 必须精确匹配规范化后的 `2-47`。
-- Example ID 必须精确匹配规范化后的 `2.9`。
-- 不存在返回 404。
-- 不自动改成相近 ID。
-- 不返回“可能是”列表作为兜底。
-
-输入可以做有限的表面规范化，例如去除 `Figure`、`Fig.`、`Eq.` 或外层括号，但规范化后仍必须进行精确键查找。
-
-### 7.4 Locator 搜索
-
-`gptSearchLocators` 只搜索：
-
-- 正式章节 ID 和标题；
-- 未编号标题；
-- Figure ID；
-- Equation ID；
-- Example ID 和标题；
-- Page anchors。
-
-禁止搜索教材全文，不返回大段正文。
-
-### 7.5 错误响应
-
-错误响应必须明确区分：
-
-- `BOOK_INDEX_NOT_LOADED`；
-- `SECTION_NOT_FOUND`；
-- `FIGURE_NOT_FOUND`；
-- `EQUATION_NOT_FOUND`；
-- `EXAMPLE_NOT_FOUND`；
-- `PRINTED_PAGE_NOT_FOUND`；
-- `PDF_PAGE_INDEX_NOT_FOUND`；
-- `INDEX_SCHEMA_INVALID`。
-
-开发阶段不得用空数组或空对象伪装成功。
-
----
-
-## 8. 离线构建流程
-
-### 8.1 目录结构
-
-目标结构：
-
-```text
-app/
-  api/
-    routes.py
-  models/
-    manifest.py
-    locator.py
-  repositories/
-    locator_repository.py
-  services/
-    locator_service.py
-
-tools/
-  extract_candidates.py
-  validate_manifest.py
-  compile_locator_index.py
-
-data/
-  dip4e/
-    book_manifest.yaml
-    compiled_locator_index.json
-    validation_report.json
-
-tests/
-  test_manifest_validation.py
-  test_section_locators.py
-  test_figure_locators.py
-  test_equation_locators.py
-  test_example_locators.py
-  test_page_locators.py
-  test_acceptance_cases.py
-```
-
-### 8.2 `extract_candidates.py`
-
-从 PDF 中提取候选信息：
-
-- 页面文本；
-- 字体、字号、粗体和位置；
-- 候选正式标题；
-- 候选未编号标题；
-- Figure 编号和图注；
-- Equation 编号；
-- Example 编号；
-- 页眉；
-- 页脚印刷标记；
-- PDF 页与印刷页候选映射。
-
-输出仅供人工审查，例如：
-
-```text
-build/dip4e/candidates.json
-```
-
-候选文件不能被运行时 API 直接加载。
-
-### 8.3 `validate_manifest.py`
-
-验证：
-
-- 所有 ID 唯一；
-- 正式章节边界有效；
-- 起始页不大于结束页；
-- 三套页码映射一致；
-- 每个子标题引用存在的 section；
-- 每个 Figure、Equation、Example 引用存在的 section 和 page；
-- `nearby_*_ids` 指向存在对象；
-- 每个 Locator 至少有一个 primary retrieval query；
-- 必填核验条件存在；
-- Manifest 不包含任何 Version 2 字段。
-
-任何错误均以非零状态退出。
-
-### 8.4 `compile_locator_index.py`
-
-读取并验证 Manifest，生成唯一运行时文件：
-
-```text
-data/dip4e/compiled_locator_index.json
-```
-
-编译结果应按对象类型建立精确查找表：
+健康响应必须包含：
 
 ```json
 {
+  "status": "ok",
   "data_version": "3",
-  "book": {},
-  "sections": {},
-  "subheadings": {},
-  "figures": {},
-  "equations": {},
-  "examples": {},
-  "pages_by_pdf_index": {},
-  "pages_by_printed_label": {},
-  "search_entries": []
+  "book_id": "dip4e",
+  "section_count": 0,
+  "page_count": 1022
 }
 ```
 
-运行时只读取该文件。
-
-### 8.5 启动行为
-
-应用启动时必须完整校验 compiled index。
-
-出现以下情况直接启动失败：
-
-- 文件不存在；
-- `data_version` 不是 `3`；
-- 结构不合法；
-- 包含未知字段；
-- 引用断裂；
-- ID 冲突；
-- 页码映射冲突。
-
-不得在请求时才懒加载并吞掉错误。
+`section_count` 示例值由 compiled index 实际生成，不能写死。
 
 ---
 
-## 9. GPT Instructions 重写要求
+## 10. 离线构建流程
 
-旧 Instructions 中关于 `SectionPack`、分块读取、`next_offset` 和 Action 正文的规则全部删除。
+### 10.1 候选提取
 
-新调用规则：
+离线工具读取 PDF，生成候选：
 
-1. 用户引用章节、Figure、Equation、Example 或页码时，先调用对应 Locator Action。
-2. 不允许只使用普通数字页码搜索 PDF。
-3. 优先使用 Locator 返回的 primary query。
-4. 对候选页面逐项检查 required verification requirements。
-5. 任一 required 条件不满足时，拒绝该候选页面。
-6. 第一组查询失败时使用 secondary query。
-7. 可以检查相邻页，但不能把相邻页内容冒充目标页。
-8. 仍无法确认时明确说明无法可靠定位。
-9. Action 只提供导航，不作为教材内容引用来源。
-10. 教材内容、图像描述和公式解释必须来自原始 PDF 页面。
+- PDF 页面标签；
+- 正式印刷章节；
+- 未编号标题；
+- Figure 编号；
+- Equation 编号；
+- Example 编号；
+- 页眉；
+- 可用于查询的短语；
+- 标题坐标和字体信息。
 
-示例：Figure 2.41 至少检查：
+候选结果不能由运行时加载。
 
-- 页面包含 `FIGURE 2.41`；
-- 印刷页为 `105`；
-- 页面属于 2.6 节；
-- 如可见，公式 `(2-47)` 应在附近。
+### 10.2 人工审核 Manifest
 
----
+人工确认：
 
-## 10. 实施顺序
+- 学习单元 ID；
+- 原始标题；
+- 印刷父节；
+- 起止位置；
+- 每页 coverage；
+- primary/secondary queries；
+- required evidence。
 
-本重构一次性切换，不做渐进兼容。
+解析器不得自行决定最终学习单元编号。
 
-### 阶段 1：定义新契约
+### 10.3 编译与验证
 
-- 新建 Version 3 Pydantic 模型；
-- 编写 Manifest schema；
-- 编写 compiled index schema；
-- 编写新的 Action OpenAPI；
-- 删除所有 Version 2 model 和 route。
+编译器必须检查：
 
-完成条件：应用代码中不存在 `SectionPack`、正文窗口和旧 Action Operation ID。
+- 1022 个物理页全部有 PageReference；
+- PDF 页码和标签与源 PDF 一致；
+- 所有学习单元 ID 唯一；
+- 所有学习单元页面范围有效；
+- retrieval plan 覆盖范围内每一页；
+- step sequence 连续；
+- 每步至少两个查询；
+- 每步至少一个 required evidence；
+- start/end 页面必须提供与实际边界一致的 content window；
+- 每个 Figure、Equation、Example 归属页面有效；
+- 不存在 Version 2 字段；
+- 不存在 alias；
+- 不存在未知字段。
 
-### 阶段 2：建立第 2 章权威 Manifest
+任何错误都以非零状态退出，不生成 compiled index。
 
-优先覆盖：
+### 10.4 运行时
 
-- `2.6.6 Spatial Operations`；
-- 印刷页 98–106；
-- Figure 2.37–2.42；
-- Equation 2-42–2-47；
-- Example 2.9–2.10；
-- 四个内部子标题；
-- 三套页码映射；
-- 每页强锚点。
+运行时只加载：
 
-完成条件：现有十项自测使用新 Locator API 后达到预期。
+```text
+catalog/dip4e/compiled_locator_index.json
+```
 
-### 阶段 3：离线工具
-
-- 提取候选；
-- Manifest 校验；
-- 编译索引；
-- 生成验证报告。
-
-完成条件：错误 Manifest 无法生成 compiled index。
-
-### 阶段 4：运行时瘦身
-
-删除：
-
-- `pdf_ingestor.py` 运行时依赖；
-- `section_service.py`；
-- `figure_service.py` 旧实现；
-- `search_service.py` 全文搜索；
-- `storage.py` 旧数据目录逻辑；
-- ingest API；
-- 多教材 Action API；
-- 旧 schema 和旧 GPT Instructions。
-
-替换为：
-
-- `LocatorRepository`；
-- `LocatorService`；
-- Version 3 routes。
-
-### 阶段 5：部署切换
-
-- 停止旧服务；
-- 删除旧数据目录；
-- 部署 Version 3；
-- 替换 GPT Action schema；
-- 替换 GPT Instructions；
-- 上传或确认原始 PDF 在 GPT 文件库中；
-- 执行验收测试。
-
-不得同时运行 Version 2 和 Version 3。
+文件缺失、版本错误或校验失败时，应用直接启动失败。
 
 ---
 
-## 11. 破坏式更新清单
+## 11. 明确删除的 Version 2 能力
 
-实施 PR 必须明确包含以下破坏性变化：
+全部删除，不留 deprecated 入口：
 
-- [ ] 删除所有 Version 2 API 路径；
-- [ ] 删除所有 Version 2 schema；
-- [ ] 删除旧 JSON 数据读取；
-- [ ] 删除 aliases；
-- [ ] 删除自动派生正式章节编号；
-- [ ] 删除 Action 正文返回；
-- [ ] 删除全文搜索；
-- [ ] 删除 prerequisites；
-- [ ] 删除 ingest API；
-- [ ] 删除旧 GPT Instructions；
-- [ ] 删除旧 OpenAPI 示例；
-- [ ] `data_version` 改为 `3`；
-- [ ] 旧字段出现时直接失败；
-- [ ] 旧 compiled/data 文件出现时直接失败；
-- [ ] README 只描述新架构。
+- `SectionPack`；
+- `text_blocks`；
+- `content.offset/limit/next_offset`；
+- 章节正文返回；
+- 全文搜索；
+- prerequisites；
+- PDF ingest API；
+- 多教材 API；
+- Figure API；
+- 自动派生正式章节编号；
+- section aliases；
+- `related_section_ids`；
+- `page_index` / `page_number` 旧字段；
+- `content_status` / `complete`；
+- 旧 JSON 数据读取；
+- `examples/GPT_INSTRUCTIONS_zh.md`；
+- Version 2 OpenAPI schema；
+- Version 2 operationId。
 
 明确禁止：
 
-- `deprecated` 旧端点；
-- 301/307 转发；
-- 旧响应字段别名；
-- Version 2/3 联合模型；
-- `Union[OldModel, NewModel]`；
-- 启动时自动迁移；
-- 找不到新字段时从旧字段推导；
-- 捕获校验错误后继续运行；
-- 为旧 GPT Action 保留 operationId。
+- 旧端点转发；
+- `Union[V2, V3]`；
+- 字段别名；
+- 自动迁移；
+- 校验失败后继续运行；
+- 找不到字段时推导默认值；
+- 模糊相似匹配兜底。
 
 ---
 
-## 12. 验收测试
+## 12. `PROMPT.md` 契约
 
-### 12.1 Section Locator
+根目录 `PROMPT.md` 是唯一可粘贴到 GPT Builder Instructions 的文件。
 
-请求：
+它必须：
+
+- 少于 8000 个字符；
+- 只引用 `gptGetSectionLocator`；
+- 只引用真实文件工具 `file_search.msearch` 和可选的 `file_search.mclick`；
+- 使用 `source_filter: ["file_library"]`；
+- 不编造按页打开接口；
+- 不默认第一候选正确；
+- 不把 `+()` 当严格 AND；
+- 按 retrieval plan 覆盖每一页；
+- 严格遵守每页的 `content_window`，不把边界外内容并入当前学习单元；
+- required evidence 全部满足后才确认页面；
+- 区分检索锚点与可见证据；
+- Action/PDF 冲突时明确报告；
+- 无法核验所有页时不得声称完整讲解；
+- 不出现 Version 2 operationId、SectionPack 或 next_offset。
+
+---
+
+## 13. 验收测试
+
+### 13.1 PDF 映射
+
+必须验证：
 
 ```text
-gptGetSectionLocator("2.6.6")
+page_count = 1022
+index 0 → Cover
+index 1 → IFC
+index 2 → 1
+index 106 → 105
+index 1020 → 1019
+index 1021 → Back Cover
 ```
+
+### 13.2 2.6.6 身份
 
 必须返回：
 
-- title = `Spatial Operations`；
-- printed range = `98`–`106`；
-- 正确 PDF index 和 viewer number；
-- Single-Pixel Operations；
-- Neighborhood Operations；
-- Geometric Transformations；
-- Image Registration；
-- Figure 2.38–2.42；
-- Equation 2-42–2-47；
-- Example 2.9–2.10。
-
-不得返回 `Logical Operations`，不得把内部标题生成正式章节编号。
-
-### 12.2 Figure Locator
-
-请求：
-
 ```text
-gptGetFigureLocator("2.41")
+section_id = 2.6.6
+title = Spatial Operations
+printed_parent_section_id = 2.6
+source_heading_numbered = false
+printed pages = 98–106
 ```
 
-必须返回：
+不得返回 Logical Operations。
 
-- section = `2.6.6`；
-- printed page = `105`；
-- pdf index = `106`；
-- pdf number = `107`；
-- primary query 包含 Figure 2.41、Equation 2-47 和页脚锚点；
-- required verification 包含 Figure 2.41 和印刷页 105。
+### 13.3 逐页计划
 
-不得返回无关的 section `11.6`。
+必须有 9 个 step，对应印刷页 98–106，不能遗漏中间页。
 
-### 12.3 Equation Locator
+### 13.4 Figure 2.41 页面
 
-请求：
+Step 8 必须返回：
 
 ```text
-gptGetEquationLocator("2-47")
+pdf index 106
+pdf number 107
+printed label 105
+Figure 2.41
+Equation 2-47
 ```
 
-必须精确返回印刷页 105 和附近 Figure 2.41，不得走全文语义匹配。
+### 13.5 页面边界
 
-### 12.4 Example Locator
+Step 1 必须确认 SPATIAL OPERATIONS 在印刷页 98 开始。
 
-请求：
+Step 9 必须确认印刷页 106 出现 VECTOR AND MATRIX OPERATIONS，并把它作为当前学习单元结束边界。
 
-```text
-gptGetExampleLocator("2.9")
-```
+### 13.6 严格失败
 
-必须返回印刷页 103、所属 section 2.6.6，以及附近的 Geometric Transformations 和 Image Registration。
+以下情况必须失败：
 
-### 12.5 Page Locator
-
-请求印刷页 `105` 时必须返回明确的三套页码、Figure 2.41、Equation 2-47 和页脚锚点。
-
-不接受含义不明的 `page=105`。
-
-### 12.6 不存在对象
-
-Figure 2.99、Equation 2-999、Example 2.99 和不存在章节必须返回明确 404，不允许猜测相似对象。
-
-### 12.7 严格失败
-
-以下情况测试必须失败：
-
-- compiled index 使用 `data_version: "2"`；
-- 出现 Version 2 字段；
-- 未知字段；
-- page 只提供 `page_number`；
-- Figure 引用不存在 section；
-- Equation 引用不存在 page；
-- 正式 section ID 重复；
-- 同一 printed page 映射到冲突的 PDF page；
-- Manifest 中存在自动 alias。
+- compiled index 不是 Version 3；
+- 页面总数不是 1022；
+- 页面标签不匹配源 PDF；
+- retrieval plan 少页；
+- step 没有 secondary query；
+- `DIP4E...indb` 被设为 required visual evidence；
+- 出现旧字段；
+- 出现 alias；
+- 出现未知字段；
+- PROMPT 超过 8000 字符；
+- PROMPT 引用不存在的 `file_library.open_page`；
+- PROMPT 引用 Version 2 Action。
 
 ---
 
-## 13. 本次重构不做的事情
+## 14. 实施顺序
 
-个人使用场景下暂不设计：
-
-- 多租户；
-- 多用户权限；
-- 数据库；
-- 向量数据库；
-- 高并发；
-- 分布式缓存；
-- 图片 CDN；
-- 批量 PNG 渲染；
-- 通用 PDF 版面识别平台；
-- 自动适配任意教材；
-- 置信度概率校准；
-- Version 2 数据迁移工具。
-
-如未来需要按需渲染单页，应作为独立的新工具重新设计，不恢复旧图片传输管线。
+1. 固化 Version 3 schema 和严格校验。
+2. 编写全书页面标签提取和验证。
+3. 生成全书候选标题、Figure、Equation、Example。
+4. 人工审核完整 Manifest。
+5. 为每个学习单元编写逐页 retrieval plan。
+6. 编译完整索引；未完成不得发布。
+7. 删除 Version 2 代码、数据和 API。
+8. 只实现 `gptGetSectionLocator` 和 `healthCheck`。
+9. 替换 OpenAPI schema。
+10. 使用根目录 `PROMPT.md` 配置 GPT Builder。
+11. 对全书学习单元执行验收测试。
+12. 整体替换部署，不并行运行旧版本。
 
 ---
 
-## 14. 决策摘要
+## 15. 最终决策
 
-1. 原始 PDF 是唯一教材事实源。
-2. Action 只输出坐标、锚点和核验要求。
-3. 正式章节只能来自人工审核的 Manifest。
-4. 未编号子标题使用内部 heading ID，不生成正式章节编号。
-5. 所有页码必须明确区分 PDF index、PDF number 和 printed label。
-6. Section、Figure、Equation、Example 和 Page 都有专用 Locator。
-7. Action 不返回完整正文，不判断正文完整性。
-8. 运行时只读取编译后的 Version 3 locator index。
-9. 所有 schema 严格拒绝未知字段和旧字段。
-10. 本次更新不提供任何兼容层，旧部署必须整体替换。
+Version 3 不再尝试成为通用 PDF 解析平台，也不复制教材正文。
 
-最终目标：
+它只做一件事：
 
-> 将项目从“自动解析并复制教材内容的后端”改造成“人工可校正、精确、严格失败的教材坐标系统”。
+> 对一个经过人工审核的学习单元，返回覆盖每一页的文件库检索计划和可见核验条件。
+
+这项能力必须完整、可验证、严格失败；未完成全书索引之前不发布。

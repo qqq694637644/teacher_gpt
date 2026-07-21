@@ -1,5 +1,7 @@
 # Teaching GPT Backend
 
+> Version 3 的破坏式重构目标见根目录 `ARCHITECTURE_REFACTOR.md`。根目录 `PROMPT.md` 是 Version 3 唯一的 GPT Builder Instructions 来源。当前应用代码仍是 Version 2，在 Locator API 完成前不得把 Version 3 Prompt 配到现有 Action。
+
 这是一个“**一本教材一个 GPT**”的 Python 后端项目。
 
 它的职责是：
@@ -23,6 +25,8 @@ GPT = 教学对话层 + 工具调用层
 
 ```text
 teaching_gpt_backend/
+├── ARCHITECTURE_REFACTOR.md
+├── PROMPT.md
 ├── app/
 │   ├── main.py
 │   ├── api/routes.py
@@ -43,7 +47,6 @@ teaching_gpt_backend/
 │   ├── ingest_book.py
 │   └── print_action_schema.py
 ├── examples/
-│   ├── GPT_INSTRUCTIONS_zh.md
 │   ├── openai_action_schema_one_book.yaml
 │   ├── openai_action_schema_multi_book.yaml
 │   └── aliases_dip4e.json
@@ -183,7 +186,7 @@ servers:
 GPT Builder 中：
 
 1. 创建一个 GPT。
-2. Instructions 粘贴 `examples/GPT_INSTRUCTIONS_zh.md` 的内容，并根据当前教材微调。
+2. Version 3 完成部署后，Instructions 使用根目录 `PROMPT.md`；不得同时保留其他提示词版本。
 3. Actions 里导入 `openai_action_schema_one_book.yaml`。
 4. Authentication 设置为 Bearer/API Key。
 5. Key 值填你的 `TEACHING_GPT_API_KEY`。
