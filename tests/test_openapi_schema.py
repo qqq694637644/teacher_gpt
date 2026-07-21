@@ -30,16 +30,13 @@ def test_curated_action_schema_matches_public_operations() -> None:
     schema = yaml.safe_load(path.read_text(encoding="utf-8"))
 
     assert schema["openapi"] == "3.1.0"
-    assert set(schema["paths"]) == {
-        "/health",
-        "/gpt/section-locators/{section_id}",
-    }
+    assert set(schema["paths"]) == {"/gpt/section-locators/{section_id}"}
     operations = {
         operation["operationId"]
         for route in schema["paths"].values()
         for operation in route.values()
     }
-    assert operations == {"healthCheck", "gptGetSectionLocator"}
+    assert operations == {"gptGetSectionLocator"}
     serialized = path.read_text(encoding="utf-8")
     for forbidden in (
         "SectionPack",
@@ -78,10 +75,7 @@ def test_real_api_responses_validate_against_curated_action_schema(tmp_path) -> 
     with TestClient(
         create_app(Settings(locator_index_path=index_path, require_api_key=False))
     ) as client:
-        health = client.get("/health")
         locator = client.get("/gpt/section-locators/2.6.5")
 
-    health.raise_for_status()
     locator.raise_for_status()
-    _response_validator(curated, "HealthResponse").validate(health.json())
     _response_validator(curated, "SectionLocator").validate(locator.json())

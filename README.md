@@ -48,17 +48,16 @@ Sibling headings must use the same `source_level`. Child headings must be exactl
 
 ## Runtime API
 
-Only two routes are registered:
+The backend registers two routes:
 
 ```text
 GET /health
 GET /gpt/section-locators/{section_id}
 ```
 
-The Action operation IDs are:
+Only the locator route is exported to GPT Actions:
 
 ```text
-healthCheck
 gptGetSectionLocator
 ```
 

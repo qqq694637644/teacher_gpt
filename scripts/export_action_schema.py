@@ -18,6 +18,11 @@ OUTPUT_PATH = PROJECT_ROOT / "examples" / "openai_action_schema_one_book.yaml"
 def main() -> None:
     schema = app.openapi()
     schema["servers"] = [{"url": "https://YOUR_DOMAIN"}]
+    schema["paths"] = {
+        "/gpt/section-locators/{section_id}": schema["paths"][
+            "/gpt/section-locators/{section_id}"
+        ]
+    }
 
     for path_item in schema["paths"].values():
         for operation in path_item.values():
