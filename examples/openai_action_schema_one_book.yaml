@@ -1,296 +1,432 @@
 openapi: 3.1.0
 info:
   title: Teacher GPT Locator API
+  description: Strict one-book GPT Action API. It returns page-by-page retrieval plans for the original PDF and never returns
+    textbook content.
   version: 3.0.0
-  description: Returns strict page-by-page retrieval plans for one indexed textbook.
-servers:
-  - url: https://YOUR_DOMAIN
 paths:
   /health:
     get:
+      tags:
+      - system
+      summary: Health
       operationId: healthCheck
-      summary: Check the loaded Version 3 locator index.
       responses:
         '200':
-          description: Locator index is loaded and complete.
+          description: Successful Response
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/HealthResponse'
   /gpt/section-locators/{section_id}:
     get:
+      tags:
+      - gpt
+      summary: Get Section Locator
       operationId: gptGetSectionLocator
-      summary: Get the complete page-by-page retrieval plan for an exact section ID.
       parameters:
-        - name: section_id
-          in: path
-          required: true
-          description: Exact printed section or generated learning-unit ID, such as 2.6 or 2.6.5.1.
-          schema:
-            type: string
-            pattern: '^\d+(?:\.\d+)*$'
+      - name: section_id
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Section Id
       responses:
         '200':
-          description: Strict Version 3 section locator.
+          description: Successful Response
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/SectionLocator'
         '404':
-          description: The exact section ID does not exist.
+          description: Section id does not exist.
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
 components:
   schemas:
-    HealthResponse:
-      type: object
-      additionalProperties: false
-      required: [status, data_version, book_id, section_count, page_count]
-      properties:
-        status:
-          type: string
-          const: ok
-        data_version:
-          type: string
-          const: '3'
-        book_id:
-          type: string
-        section_count:
-          type: integer
-          minimum: 1
-        page_count:
-          type: integer
-          minimum: 1
-    PageReference:
-      type: object
-      additionalProperties: false
-      required: [pdf_page_index, pdf_page_number, printed_page_label]
-      properties:
-        pdf_page_index:
-          type: integer
-          minimum: 0
-        pdf_page_number:
-          type: integer
-          minimum: 1
-        printed_page_label:
-          type: string
-          minLength: 1
-    PageRange:
-      type: object
-      additionalProperties: false
-      required:
-        - pdf_page_index_start
-        - pdf_page_index_end
-        - pdf_page_number_start
-        - pdf_page_number_end
-        - printed_page_start
-        - printed_page_end
-      properties:
-        pdf_page_index_start:
-          type: integer
-          minimum: 0
-        pdf_page_index_end:
-          type: integer
-          minimum: 0
-        pdf_page_number_start:
-          type: integer
-          minimum: 1
-        pdf_page_number_end:
-          type: integer
-          minimum: 1
-        printed_page_start:
-          type: string
-        printed_page_end:
-          type: string
-    HeadingLocation:
-      type: object
-      additionalProperties: false
-      required: [page, bbox]
-      properties:
-        page:
-          $ref: '#/components/schemas/PageReference'
-        bbox:
-          type: array
-          minItems: 4
-          maxItems: 4
-          prefixItems:
-            - {type: number}
-            - {type: number}
-            - {type: number}
-            - {type: number}
     BoundaryAnchor:
-      type: object
-      additionalProperties: false
-      required: [kind, value]
-      properties:
-        kind:
-          type: string
-          enum: [heading, figure, equation, example, table, text]
-        value:
-          type: string
-          minLength: 1
-    ContentWindow:
-      type: object
-      additionalProperties: false
-      required: [start_at, end_before]
-      properties:
-        start_at:
-          anyOf:
-            - $ref: '#/components/schemas/BoundaryAnchor'
-            - type: 'null'
-        end_before:
-          anyOf:
-            - $ref: '#/components/schemas/BoundaryAnchor'
-            - type: 'null'
-    EvidenceRequirement:
-      type: object
-      additionalProperties: false
-      required: [kind, value, verification_mode]
       properties:
         kind:
           type: string
           enum:
-            - printed_page_equals
-            - contains_heading
-            - contains_figure
-            - contains_equation
-            - contains_example
-            - contains_table
-            - contains_text
-            - running_header_contains
+          - heading
+          - figure
+          - equation
+          - example
+          - table
+          - text
+          title: Kind
         value:
           type: string
           minLength: 1
+          title: Value
+      additionalProperties: false
+      type: object
+      required:
+      - kind
+      - value
+      title: BoundaryAnchor
+    ContentWindow:
+      properties:
+        start_at:
+          anyOf:
+          - $ref: '#/components/schemas/BoundaryAnchor'
+          - type: 'null'
+        end_before:
+          anyOf:
+          - $ref: '#/components/schemas/BoundaryAnchor'
+          - type: 'null'
+      additionalProperties: false
+      type: object
+      title: ContentWindow
+    ErrorResponse:
+      properties:
+        error_code:
+          type: string
+          const: SECTION_NOT_FOUND
+          title: Error Code
+        detail:
+          type: string
+          title: Detail
+      additionalProperties: false
+      type: object
+      required:
+      - error_code
+      - detail
+      title: ErrorResponse
+    EvidenceRequirement:
+      properties:
+        kind:
+          type: string
+          enum:
+          - printed_page_equals
+          - contains_heading
+          - contains_figure
+          - contains_equation
+          - contains_example
+          - contains_table
+          - contains_text
+          - running_header_contains
+          title: Kind
+        value:
+          type: string
+          minLength: 1
+          title: Value
         verification_mode:
           type: string
-          enum: [visual_required, text_or_visual]
-    PageCoverage:
-      type: object
+          enum:
+          - visual_required
+          - text_or_visual
+          title: Verification Mode
       additionalProperties: false
-      required: [subheadings, figure_ids, equation_ids, example_ids, table_ids]
+      type: object
+      required:
+      - kind
+      - value
+      - verification_mode
+      title: EvidenceRequirement
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    HeadingLocation:
+      properties:
+        page:
+          $ref: '#/components/schemas/PageReference'
+        bbox:
+          prefixItems:
+          - type: number
+          - type: number
+          - type: number
+          - type: number
+          type: array
+          maxItems: 4
+          minItems: 4
+          title: Bbox
+      additionalProperties: false
+      type: object
+      required:
+      - page
+      - bbox
+      title: HeadingLocation
+    HealthResponse:
+      properties:
+        status:
+          type: string
+          const: ok
+          title: Status
+          default: ok
+        data_version:
+          type: string
+          const: '3'
+          title: Data Version
+          default: '3'
+        book_id:
+          type: string
+          title: Book Id
+        section_count:
+          type: integer
+          minimum: 1.0
+          title: Section Count
+        page_count:
+          type: integer
+          minimum: 1.0
+          title: Page Count
+      additionalProperties: false
+      type: object
+      required:
+      - book_id
+      - section_count
+      - page_count
+      title: HealthResponse
+    PageCoverage:
       properties:
         subheadings:
+          items:
+            type: string
           type: array
-          items: {type: string}
+          title: Subheadings
         figure_ids:
+          items:
+            type: string
           type: array
-          items: {type: string}
+          title: Figure Ids
         equation_ids:
+          items:
+            type: string
           type: array
-          items: {type: string}
+          title: Equation Ids
         example_ids:
+          items:
+            type: string
           type: array
-          items: {type: string}
+          title: Example Ids
         table_ids:
+          items:
+            type: string
           type: array
-          items: {type: string}
-    PageRetrievalStep:
-      type: object
+          title: Table Ids
       additionalProperties: false
+      type: object
+      title: PageCoverage
+    PageRange:
+      properties:
+        pdf_page_index_start:
+          type: integer
+          minimum: 0.0
+          title: Pdf Page Index Start
+        pdf_page_index_end:
+          type: integer
+          minimum: 0.0
+          title: Pdf Page Index End
+        pdf_page_number_start:
+          type: integer
+          minimum: 1.0
+          title: Pdf Page Number Start
+        pdf_page_number_end:
+          type: integer
+          minimum: 1.0
+          title: Pdf Page Number End
+        printed_page_start:
+          type: string
+          minLength: 1
+          title: Printed Page Start
+        printed_page_end:
+          type: string
+          minLength: 1
+          title: Printed Page End
+      additionalProperties: false
+      type: object
       required:
-        - sequence
-        - page_role
-        - page
-        - content_window
-        - queries
-        - required_evidence
-        - coverage
+      - pdf_page_index_start
+      - pdf_page_index_end
+      - pdf_page_number_start
+      - pdf_page_number_end
+      - printed_page_start
+      - printed_page_end
+      title: PageRange
+    PageReference:
+      properties:
+        pdf_page_index:
+          type: integer
+          minimum: 0.0
+          title: Pdf Page Index
+        pdf_page_number:
+          type: integer
+          minimum: 1.0
+          title: Pdf Page Number
+        printed_page_label:
+          type: string
+          minLength: 1
+          title: Printed Page Label
+      additionalProperties: false
+      type: object
+      required:
+      - pdf_page_index
+      - pdf_page_number
+      - printed_page_label
+      title: PageReference
+    PageRetrievalStep:
       properties:
         sequence:
           type: integer
-          minimum: 1
+          minimum: 1.0
+          title: Sequence
         page_role:
           type: string
-          enum: [start, body, end, single]
+          enum:
+          - start
+          - body
+          - end
+          - single
+          title: Page Role
         page:
           $ref: '#/components/schemas/PageReference'
         content_window:
           $ref: '#/components/schemas/ContentWindow'
         queries:
-          type: array
-          minItems: 2
-          maxItems: 4
           items:
             type: string
-        required_evidence:
           type: array
-          minItems: 1
+          maxItems: 4
+          minItems: 2
+          title: Queries
+        required_evidence:
           items:
             $ref: '#/components/schemas/EvidenceRequirement'
+          type: array
+          minItems: 1
+          title: Required Evidence
         coverage:
           $ref: '#/components/schemas/PageCoverage'
-    SectionLocator:
-      type: object
       additionalProperties: false
+      type: object
       required:
-        - data_version
-        - book_id
-        - section_kind
-        - section_id
-        - printed_section_id
-        - parent_section_id
-        - title
-        - source_heading
-        - source_heading_numbered
-        - source_location
-        - source_level
-        - hierarchy_depth
-        - page_range
-        - outline
-        - retrieval_plan
+      - sequence
+      - page_role
+      - page
+      - queries
+      - required_evidence
+      title: PageRetrievalStep
+    SectionLocator:
       properties:
         data_version:
           type: string
           const: '3'
+          title: Data Version
+          default: '3'
         book_id:
           type: string
+          minLength: 1
+          title: Book Id
         section_kind:
           type: string
-          enum: [printed, learning_unit]
+          enum:
+          - printed
+          - learning_unit
+          title: Section Kind
         section_id:
           type: string
-          pattern: '^\d+(?:\.\d+)*$'
+          pattern: ^\d+(?:\.\d+)*$
+          title: Section Id
         printed_section_id:
           type: string
-          pattern: '^\d+(?:\.\d+)*$'
+          pattern: ^\d+(?:\.\d+)*$
+          title: Printed Section Id
         parent_section_id:
           anyOf:
-            - type: string
-              pattern: '^\d+(?:\.\d+)*$'
-            - type: 'null'
+          - type: string
+            pattern: ^\d+(?:\.\d+)*$
+          - type: 'null'
+          title: Parent Section Id
         title:
           type: string
+          minLength: 1
+          title: Title
         source_heading:
           type: string
+          minLength: 1
+          title: Source Heading
         source_heading_numbered:
           type: boolean
+          title: Source Heading Numbered
         source_location:
           $ref: '#/components/schemas/HeadingLocation'
         source_level:
           type: integer
-          minimum: 0
+          minimum: 0.0
+          title: Source Level
         hierarchy_depth:
           type: integer
-          minimum: 1
+          minimum: 1.0
+          title: Hierarchy Depth
         page_range:
           $ref: '#/components/schemas/PageRange'
         outline:
+          items:
+            type: string
           type: array
-          items: {type: string}
+          title: Outline
         retrieval_plan:
-          type: array
-          minItems: 1
           items:
             $ref: '#/components/schemas/PageRetrievalStep'
-    ErrorResponse:
-      type: object
+          type: array
+          minItems: 1
+          title: Retrieval Plan
       additionalProperties: false
-      required: [error_code, detail]
+      type: object
+      required:
+      - book_id
+      - section_kind
+      - section_id
+      - printed_section_id
+      - title
+      - source_heading
+      - source_heading_numbered
+      - source_location
+      - source_level
+      - hierarchy_depth
+      - page_range
+      - retrieval_plan
+      title: SectionLocator
+    ValidationError:
       properties:
-        error_code:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
           type: string
-          const: SECTION_NOT_FOUND
-        detail:
+          title: Message
+        type:
           type: string
+          title: Error Type
+        input:
+          title: Input
+        ctx:
+          type: object
+          title: Context
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+servers:
+- url: https://YOUR_DOMAIN

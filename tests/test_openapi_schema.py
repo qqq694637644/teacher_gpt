@@ -8,6 +8,7 @@ from jsonschema import Draft202012Validator
 from app.core.config import Settings
 from app.main import create_app
 from app.services.index_compiler import LocatorIndexCompiler
+from scripts.export_action_schema import prepare_action_schema
 from tests.helpers import complete_manifest
 
 
@@ -52,6 +53,18 @@ def test_curated_action_schema_matches_public_operations() -> None:
     section = schema["components"]["schemas"]["SectionLocator"]
     assert "source_location" in section["required"]
     assert "source_level" in section["required"]
+
+
+def test_committed_action_schema_is_generated_from_live_backend(tmp_path) -> None:
+    live = create_app(
+        Settings(locator_index_path=tmp_path / "unused.json", require_api_key=True)
+    ).openapi()
+    expected = prepare_action_schema(live, server_url="https://YOUR_DOMAIN")
+    committed = yaml.safe_load(
+        Path("examples/openai_action_schema_one_book.yaml").read_text(encoding="utf-8")
+    )
+
+    assert committed == expected
 
 
 def _response_validator(curated: dict, schema_name: str) -> Draft202012Validator:
