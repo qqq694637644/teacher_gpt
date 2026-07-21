@@ -147,11 +147,8 @@ components:
         page:
           $ref: '#/components/schemas/PageReference'
         bbox:
-          prefixItems:
-          - type: number
-          - type: number
-          - type: number
-          - type: number
+          items:
+            type: number
           type: array
           maxItems: 4
           minItems: 4

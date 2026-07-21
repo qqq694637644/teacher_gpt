@@ -53,7 +53,7 @@ class PageRange(StrictModel):
 
 class HeadingLocation(StrictModel):
     page: PageReference
-    bbox: tuple[float, float, float, float]
+    bbox: Annotated[list[float], Field(min_length=4, max_length=4)]
 
     @model_validator(mode="after")
     def validate_bbox(self) -> HeadingLocation:
