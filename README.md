@@ -184,27 +184,19 @@ python -m pytest -q
 python -m ruff check .
 ```
 
-## Export the GPT Action schema from the running backend
-
-Start the backend first, then fetch its real `/openapi.json` and write the Action schema to a file:
+## Generate the GPT Action schema
 
 ```bash
-python scripts/export_action_schema.py \
-  --backend-url http://127.0.0.1:8000 \
-  --server-url https://YOUR_PUBLIC_API_DOMAIN \
-  --output examples/openai_action_schema_one_book.yaml
+python scripts/export_action_schema.py
 ```
 
-`--backend-url` is the address the script calls. `--server-url` is the public HTTPS address written into the schema for GPT Actions; these may be different when exporting from a local process for a deployed API.
+The script imports the local FastAPI application and always writes:
 
-The exporter:
+```text
+examples/openai_action_schema_one_book.yaml
+```
 
-- calls `GET /openapi.json` on the running backend;
-- rejects unexpected public paths or operation IDs;
-- removes `Authorization` and `X-API-Key` header parameters because GPT Action authentication supplies them separately;
-- writes YAML or JSON atomically according to the output extension.
-
-When `--output` is omitted, the default file is `examples/openai_action_schema_one_book.yaml`. When `--server-url` is omitted, the backend URL is written into the schema.
+It does not call or inspect a backend URL. The file uses JSON syntax, which is valid YAML/OpenAPI. The generated schema uses the placeholder server `https://YOUR_DOMAIN`; replace that value with the deployed API domain before importing it into GPT Builder.
 
 The server can start only after a complete compiled index exists:
 
