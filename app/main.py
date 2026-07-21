@@ -24,12 +24,14 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         env_file_path = Path(".env").resolve()
         logger.info(
             "API auth configuration: require_api_key=%s api_key_loaded=%s "
-            "api_key_is_default=%s api_key_length=%s api_key_fingerprint=%s "
+            "api_key_is_default=%s api_key_length=%s api_key=%s "
+            "api_key_fingerprint=%s "
             "env_file=%s env_file_exists=%s",
             resolved_settings.require_api_key,
             bool(resolved_settings.api_key),
             resolved_settings.api_key == "change-me",
             len(resolved_settings.api_key),
+            resolved_settings.api_key,
             api_key_fingerprint(resolved_settings.api_key),
             env_file_path,
             env_file_path.is_file(),

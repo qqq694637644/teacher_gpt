@@ -56,8 +56,10 @@ async def require_api_key(
         "configured_key_loaded": bool(settings.api_key),
         "configured_key_is_default": settings.api_key == "change-me",
         "configured_key_length": len(settings.api_key),
+        "configured_key": settings.api_key,
         "configured_key_fingerprint": api_key_fingerprint(settings.api_key),
         "credential_length": len(token) if token else 0,
+        "credential": token or "missing",
         "credential_fingerprint": api_key_fingerprint(token) if token else "missing",
         "matched": matched,
     }
@@ -71,8 +73,10 @@ async def require_api_key(
         "configured_key_loaded=%(configured_key_loaded)s "
         "configured_key_is_default=%(configured_key_is_default)s "
         "configured_key_length=%(configured_key_length)s "
+        "configured_key=%(configured_key)s "
         "configured_key_fingerprint=%(configured_key_fingerprint)s "
         "credential_length=%(credential_length)s "
+        "credential=%(credential)s "
         "credential_fingerprint=%(credential_fingerprint)s matched=%(matched)s"
     )
     if matched:
