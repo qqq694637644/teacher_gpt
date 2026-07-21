@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import re
+from collections import defaultdict
 from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
@@ -22,6 +24,12 @@ class PageReference(StrictModel):
         if self.pdf_page_number != self.pdf_page_index + 1:
             raise ValueError("pdf_page_number must equal pdf_page_index + 1")
         return self
+
+
+class PageClassification(StrictModel):
+    page: PageReference
+    category: Literal["front_matter", "body", "back_matter"]
+    reason: str = Field(min_length=1)
 
 
 class PageRange(StrictModel):
@@ -90,6 +98,13 @@ class ContentWindow(StrictModel):
 class EvidenceRequirement(StrictModel):
     kind: EvidenceKind
     value: str = Field(min_length=1)
+    verification_mode: Literal["visual_required", "text_or_visual"]
+
+    @model_validator(mode="after")
+    def validate_mode(self) -> EvidenceRequirement:
+        if self.kind == "printed_page_equals" and self.verification_mode != "visual_required":
+            raise ValueError("printed_page_equals evidence must require visual verification")
+        return self
 
 
 class PageCoverage(StrictModel):
@@ -97,6 +112,7 @@ class PageCoverage(StrictModel):
     figure_ids: list[str] = Field(default_factory=list)
     equation_ids: list[str] = Field(default_factory=list)
     example_ids: list[str] = Field(default_factory=list)
+    table_ids: list[str] = Field(default_factory=list)
 
 
 class PageRetrievalStep(StrictModel):
@@ -125,7 +141,6 @@ class PageRetrievalStep(StrictModel):
             raise ValueError(
                 "required_evidence must contain exactly one printed_page_equals matching the page"
             )
-        evidence = {(item.kind, item.value) for item in self.required_evidence}
         if any(RETRIEVAL_ONLY_ANCHOR in item.value for item in self.required_evidence):
             raise ValueError("retrieval-only indb anchors cannot be required evidence")
         for boundary in (self.content_window.start_at, self.content_window.end_before):
@@ -134,8 +149,15 @@ class PageRetrievalStep(StrictModel):
             if RETRIEVAL_ONLY_ANCHOR in boundary.value:
                 raise ValueError("retrieval-only indb anchors cannot define content windows")
             required_kind = BOUNDARY_TO_EVIDENCE[boundary.kind]
-            if (required_kind, boundary.value) not in evidence:
+            matching = [
+                item
+                for item in self.required_evidence
+                if item.kind == required_kind and item.value == boundary.value
+            ]
+            if not matching:
                 raise ValueError("content-window boundary must have matching required evidence")
+            if matching[0].verification_mode != "visual_required":
+                raise ValueError("content-window boundaries must require visual verification")
         return self
 
 
@@ -223,6 +245,7 @@ class CompiledLocatorIndex(StrictModel):
     index_status: Literal["complete"]
     book: BookMetadata
     pages: list[PageReference]
+    page_classifications: list[PageClassification]
     sections: dict[str, SectionLocator]
 
     @model_validator(mode="after")
@@ -237,6 +260,13 @@ class CompiledLocatorIndex(StrictModel):
             raise ValueError("printed_page_label values must be unique")
         if not self.sections:
             raise ValueError("complete index must contain sections")
+        if len(self.page_classifications) != len(self.pages):
+            raise ValueError("page_classifications must contain every PDF page")
+        for expected, classification in zip(self.pages, self.page_classifications, strict=True):
+            if classification.page != expected:
+                raise ValueError("page_classifications must use canonical pages in order")
+
+        children: dict[str, list[SectionLocator]] = defaultdict(list)
         for section_id, locator in self.sections.items():
             if section_id != locator.section_id:
                 raise ValueError(f"section key does not match locator id: {section_id}")
@@ -249,6 +279,8 @@ class CompiledLocatorIndex(StrictModel):
                 raise ValueError(
                     f"section {section_id} references missing parent {locator.parent_section_id}"
                 )
+            if locator.parent_section_id is not None:
+                children[locator.parent_section_id].append(locator)
             printed = self.sections.get(locator.printed_section_id)
             if printed is None or printed.section_kind != "printed":
                 raise ValueError(
@@ -264,6 +296,128 @@ class CompiledLocatorIndex(StrictModel):
                     raise ValueError(
                         f"section {section_id} contains a page reference that differs from pages[]"
                     )
+
+        for parent_id, child_locators in children.items():
+            parent = self.sections[parent_id]
+            ordered = sorted(
+                child_locators,
+                key=lambda item: (
+                    item.source_location.page.pdf_page_index,
+                    item.source_location.bbox[1],
+                    item.source_location.bbox[0],
+                ),
+            )
+            for child in ordered:
+                if not self._range_contains(parent.page_range, child.page_range):
+                    raise ValueError(
+                        f"child section {child.section_id} is outside parent range {parent_id}"
+                    )
+                printed = self.sections[child.printed_section_id]
+                if child.section_kind == "learning_unit" and not self._range_contains(
+                    printed.page_range, child.page_range
+                ):
+                    raise ValueError(
+                        f"learning unit {child.section_id} is outside printed section range"
+                    )
+            for previous, current in zip(ordered, ordered[1:]):
+                gap = (
+                    current.page_range.pdf_page_index_start - previous.page_range.pdf_page_index_end
+                )
+                if gap not in (0, 1):
+                    raise ValueError(
+                        f"sibling ranges have an unexplained gap or overlap: "
+                        f"{previous.section_id}, {current.section_id}"
+                    )
+                if gap == 0:
+                    previous_last = previous.retrieval_plan[-1]
+                    current_first = current.retrieval_plan[0]
+                    expected = ("heading", current.source_heading)
+                    previous_boundary = previous_last.content_window.end_before
+                    current_boundary = current_first.content_window.start_at
+                    if (
+                        previous_boundary is None
+                        or (previous_boundary.kind, previous_boundary.value) != expected
+                        or current_boundary is None
+                        or (current_boundary.kind, current_boundary.value) != expected
+                    ):
+                        raise ValueError(
+                            f"same-page sibling boundary is not explicit: "
+                            f"{previous.section_id}, {current.section_id}"
+                        )
+
+        body_pages = {
+            item.page.pdf_page_index
+            for item in self.page_classifications
+            if item.category == "body"
+        }
+        content_pages: set[int] = set()
+        for section_id, locator in self.sections.items():
+            child_locators = children.get(section_id, [])
+            locator_pages = set(
+                range(
+                    locator.page_range.pdf_page_index_start,
+                    locator.page_range.pdf_page_index_end + 1,
+                )
+            )
+            if locator.section_kind == "learning_unit" or not child_locators:
+                content_pages.update(locator_pages)
+                continue
+
+            child_pages: set[int] = set()
+            for child in child_locators:
+                child_pages.update(
+                    range(
+                        child.page_range.pdf_page_index_start,
+                        child.page_range.pdf_page_index_end + 1,
+                    )
+                )
+            content_pages.update(locator_pages - child_pages)
+        uncovered = sorted(body_pages - content_pages)
+        if uncovered:
+            raise ValueError(
+                "body pages are not covered by a learning unit, leaf printed section, "
+                "or explicit parent-only content: "
+                f"{uncovered[:20]}"
+            )
+        return self
+
+    @staticmethod
+    def _range_contains(parent: PageRange, child: PageRange) -> bool:
+        return (
+            parent.pdf_page_index_start <= child.pdf_page_index_start
+            and child.pdf_page_index_end <= parent.pdf_page_index_end
+        )
+
+
+class LocatorSectionShard(StrictModel):
+    data_version: Literal["3"] = DATA_VERSION
+    sections: dict[str, SectionLocator]
+
+    @model_validator(mode="after")
+    def validate_sections(self) -> LocatorSectionShard:
+        if not self.sections:
+            raise ValueError("section shard must contain sections")
+        for section_id, locator in self.sections.items():
+            if section_id != locator.section_id:
+                raise ValueError(f"section shard key does not match locator id: {section_id}")
+        return self
+
+
+class CompiledLocatorIndexPackage(StrictModel):
+    data_version: Literal["3"] = DATA_VERSION
+    index_status: Literal["complete"]
+    book: BookMetadata
+    pages: list[PageReference]
+    page_classifications: list[PageClassification]
+    section_shards: Annotated[list[str], Field(min_length=1)]
+
+    @model_validator(mode="after")
+    def validate_shards(self) -> CompiledLocatorIndexPackage:
+        if len(self.section_shards) != len(set(self.section_shards)):
+            raise ValueError("section_shards must be unique")
+        for name in self.section_shards:
+            if re.fullmatch(r"compiled_locator_index\.sections\.\d{2}\.json", name) is None:
+                raise ValueError(f"invalid section shard filename: {name}")
         return self
 
 

@@ -15,6 +15,7 @@ NUMBERED_HEADING_RE = re.compile(r"^(?P<id>\d+(?:\.\d+)*)\s+(?P<title>.+)$")
 FIGURE_RE = re.compile(r"\bFIGURE\s+(\d+(?:\.\d+)+)\b", re.IGNORECASE)
 EQUATION_RE = re.compile(r"\((\d+-\d+)\)")
 EXAMPLE_RE = re.compile(r"\bEXAMPLE\s+(\d+(?:\.\d+)*)\b", re.IGNORECASE)
+TABLE_RE = re.compile(r"\bTABLE\s+(\d+(?:\.\d+)*)\b", re.IGNORECASE)
 HEADING_FONT = "Futura-Heavy"
 HEADING_COLOR = 28319
 
@@ -45,6 +46,7 @@ class HeadingCandidate:
 
 def clean_text(value: str) -> str:
     safe = value.encode("utf-8", errors="ignore").decode("utf-8")
+    safe = "".join(character for character in safe if character >= " " or character in "\t\n")
     return re.sub(r"\s+", " ", safe).strip()
 
 
@@ -156,8 +158,54 @@ def merge_wrapped_heading_lines(lines: list[TextLine]) -> list[TextLine]:
     return merged
 
 
-def extract_heading_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
+def extract_chapter_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
     candidates: list[HeadingCandidate] = []
+    for level, raw_title, pdf_page_number, _destination in doc.get_toc(simple=False):
+        title = clean_text(raw_title)
+        match = re.match(r"^(?P<id>\d+)\s+(?P<title>.+)$", title)
+        if level != 1 or match is None:
+            continue
+        chapter_id = match.group("id")
+        if not 1 <= int(chapter_id) <= 12:
+            continue
+
+        page_index = int(pdf_page_number) - 1
+        page = doc[page_index]
+        lines = extract_lines(page)
+        title_lines = [
+            line
+            for line in lines
+            if "Palatino-MediumItalic" in line.font_names and 23.5 <= line.max_font_size <= 24.5
+        ]
+        number_lines = [
+            line for line in lines if line.text == chapter_id and line.max_font_size >= 100
+        ]
+        if not title_lines or not number_lines:
+            raise ValueError(f"cannot locate chapter heading layout for chapter {chapter_id}")
+
+        bbox = (
+            min(number_lines[0].bbox[0], *(line.bbox[0] for line in title_lines)),
+            min(number_lines[0].bbox[1], *(line.bbox[1] for line in title_lines)),
+            max(number_lines[0].bbox[2], *(line.bbox[2] for line in title_lines)),
+            max(number_lines[0].bbox[3], *(line.bbox[3] for line in title_lines)),
+        )
+        candidates.append(
+            HeadingCandidate(
+                text=f"{chapter_id} {match.group('title')}",
+                printed_section_id=chapter_id,
+                pdf_page_index=page_index,
+                pdf_page_number=page_index + 1,
+                printed_page_label=clean_text(page.get_label()),
+                bbox=tuple(round(value, 3) for value in bbox),
+                numbered=True,
+                style_signature="chapter-number+Palatino-MediumItalic-24",
+            )
+        )
+    return candidates
+
+
+def extract_heading_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
+    candidates: list[HeadingCandidate] = extract_chapter_candidates(doc)
     current_printed_section_id: str | None = None
     for page_index in range(doc.page_count):
         page = doc[page_index]
@@ -181,24 +229,63 @@ def extract_heading_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
                     ),
                 )
             )
-    return candidates
+    return sorted(candidates, key=lambda item: (item.pdf_page_index, item.bbox[1], item.bbox[0]))
 
 
 def extract_page_anchors(doc: fitz.Document) -> list[dict[str, Any]]:
     anchors: list[dict[str, Any]] = []
+    chapter_headings: dict[int, list[HeadingCandidate]] = {}
+    for candidate in extract_chapter_candidates(doc):
+        chapter_headings.setdefault(candidate.pdf_page_index, []).append(candidate)
     for page_index in range(doc.page_count):
         page = doc[page_index]
-        text = clean_text(page.get_text("text"))
-        figures = list(dict.fromkeys(FIGURE_RE.findall(text)))
-        equations = list(dict.fromkeys(EQUATION_RE.findall(text)))
-        examples = list(dict.fromkeys(EXAMPLE_RE.findall(text)))
+        lines = extract_lines(page)
+        text = clean_text("\n".join(line.text for line in lines))
+
+        def records(pattern: re.Pattern[str]) -> list[dict[str, Any]]:
+            found: list[dict[str, Any]] = []
+            seen: set[tuple[str, tuple[float, float, float, float]]] = set()
+            for line in lines:
+                for match in pattern.finditer(line.text):
+                    key = (match.group(1), line.bbox)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    found.append({"id": match.group(1), "bbox": list(line.bbox)})
+            return found
+
+        figure_records = records(FIGURE_RE)
+        equation_records = records(EQUATION_RE)
+        example_records = records(EXAMPLE_RE)
+        table_records = records(TABLE_RE)
+        heading_records = [
+            {"text": heading.text, "bbox": list(heading.bbox)}
+            for heading in merge_wrapped_heading_lines(lines)
+        ]
+        heading_records.extend(
+            {"text": heading.text, "bbox": list(heading.bbox)}
+            for heading in chapter_headings.get(page_index, [])
+        )
+        text_records = [{"text": line.text, "bbox": list(line.bbox)} for line in lines]
+        running_header = clean_text(
+            page.get_textbox(fitz.Rect(0, 0, page.rect.width, min(85, page.rect.height)))
+        )
         anchors.append(
             {
                 "pdf_page_index": page_index,
                 "printed_page_label": clean_text(page.get_label()),
-                "figure_ids": figures,
-                "equation_ids": equations,
-                "example_ids": examples,
+                "heading_records": heading_records,
+                "text_records": text_records,
+                "figure_records": figure_records,
+                "equation_records": equation_records,
+                "example_records": example_records,
+                "table_records": table_records,
+                "figure_ids": list(dict.fromkeys(item["id"] for item in figure_records)),
+                "equation_ids": list(dict.fromkeys(item["id"] for item in equation_records)),
+                "example_ids": list(dict.fromkeys(item["id"] for item in example_records)),
+                "table_ids": list(dict.fromkeys(item["id"] for item in table_records)),
+                "normalized_text": text,
+                "running_header": running_header,
             }
         )
     return anchors

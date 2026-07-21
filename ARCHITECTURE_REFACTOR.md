@@ -389,7 +389,8 @@ extra = forbid
 ```json
 {
   "kind": "contains_figure",
-  "value": "2.41"
+  "value": "2.41",
+  "verification_mode": "text_or_visual"
 }
 ```
 
@@ -406,7 +407,12 @@ contains_text
 running_header_contains
 ```
 
-这里只允许可从候选文本或页面视觉确认的证据。
+`verification_mode` 只能是：
+
+- `visual_required`：必须在目标物理页的视觉预览中确认；
+- `text_or_visual`：候选文本或目标页视觉均可辅助确认。
+
+`printed_page_equals` 和所有非空 `content_window` 边界证据必须是 `visual_required`。
 
 禁止把 `DIP4E_GLOBAL_Print_Ready.indb N` 作为 EvidenceRequirement。
 
@@ -417,7 +423,8 @@ running_header_contains
   "subheadings": ["Image Registration"],
   "figure_ids": ["2.41"],
   "equation_ids": ["2-47"],
-  "example_ids": []
+  "example_ids": [],
+  "table_ids": []
 }
 ```
 
@@ -443,15 +450,16 @@ running_header_contains
     "Figure 2.41 rotated image equation 2-47 printed page 105 --QDF=0"
   ],
   "required_evidence": [
-    {"kind": "printed_page_equals", "value": "105"},
-    {"kind": "contains_figure", "value": "2.41"},
-    {"kind": "contains_equation", "value": "2-47"}
+    {"kind": "printed_page_equals", "value": "105", "verification_mode": "visual_required"},
+    {"kind": "contains_figure", "value": "2.41", "verification_mode": "text_or_visual"},
+    {"kind": "contains_equation", "value": "2-47", "verification_mode": "text_or_visual"}
   ],
   "coverage": {
     "subheadings": ["Image Registration"],
     "figure_ids": ["2.41"],
     "equation_ids": ["2-47"],
-    "example_ids": []
+    "example_ids": [],
+    "table_ids": []
   }
 }
 ```
@@ -468,6 +476,8 @@ running_header_contains
 - 查询字符串是针对当前 `file_search.msearch` 的完整字符串；
 - `--QDF=0` 直接写入查询；
 - required evidence 必须全部满足；
+- 跨页候选文本不能满足 `printed_page_equals` 或页面边界证据；
+- 本地编译器验证锚点确实位于目标源 PDF 页面和 `content_window` 内，但不会把这等同于真实 file-search 召回测试；
 - 搜索候选排序不参与正确性判断。
 
 ### 7.5 SectionLocator

@@ -50,6 +50,7 @@ class LocatorIndexCompiler:
             index_status="complete",
             book=manifest.book,
             pages=manifest.pages,
+            page_classifications=manifest.page_classifications,
             sections=sections,
         )
 

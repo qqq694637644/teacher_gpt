@@ -1,0 +1,2586 @@
+data_version: '3'
+printed_sections:
+- printed_section_id: '1'
+  parent_printed_section_id: null
+  title: Introduction
+  source_heading: 1 Introduction
+  source_location:
+    page:
+      pdf_page_index: 18
+      pdf_page_number: 19
+      printed_page_label: '17'
+    bbox:
+    - 80.635
+    - 72.448
+    - 295.505
+    - 236.456
+  page_range:
+    pdf_page_index_start: 18
+    pdf_page_index_end: 47
+    pdf_page_number_start: 19
+    pdf_page_number_end: 48
+    printed_page_start: '17'
+    printed_page_end: '46'
+  outline:
+  - '1.1'
+  - '1.2'
+  - '1.3'
+  - '1.4'
+  - '1.5'
+  retrieval_plan:
+  - page:
+      pdf_page_index: 18
+      pdf_page_number: 19
+      printed_page_label: '17'
+    content_window:
+      start_at:
+        kind: heading
+        value: 1 Introduction
+      end_before: null
+    queries:
+    - +(1 Introduction) +(printed page 17) --QDF=0
+    - Introduction reported. The material in this chapter is extensively illustrated with a range of images that are represen-
+      printed page 17 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '17'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: reported. The material in this chapter is extensively illustrated with a range of images that are represen-
+      verification_mode: text_or_visual
+    - kind: contains_heading
+      value: 1 Introduction
+      verification_mode: visual_required
+    coverage:
+      subheadings:
+      - 1 Introduction
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 19
+      pdf_page_number: 20
+      printed_page_label: '18'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(intensity values of f are all finite, discrete quantities, we call the image a digital image.) +(printed page 18)
+      --QDF=0
+    - Introduction intensity values of f are all finite, discrete quantities, we call the image a digital image. printed page
+      18 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '18'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: intensity values of f are all finite, discrete quantities, we call the image a digital image.
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - 1.1 WHAT IS DIGITAL IMAGE PROCESSING?
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 20
+      pdf_page_number: 21
+      printed_page_label: '19'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(evident shortly, digital image processing, as we have deﬁned it, is used routinely in a) +(printed page 19) --QDF=0
+    - Introduction evident shortly, digital image processing, as we have deﬁned it, is used routinely in a printed page 19
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '19'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: evident shortly, digital image processing, as we have deﬁned it, is used routinely in a
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - 1.2 THE ORIGINS OF DIGITAL IMAGE PROCESSING
+      figure_ids:
+      - '1.1'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 21
+      pdf_page_number: 22
+      printed_page_label: '20'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(of gray. This capability was increased to 15 levels in 1929. Figure 1.3 is typical of the) +(printed page 20) --QDF=0
+    - Introduction of gray. This capability was increased to 15 levels in 1929. Figure 1.3 is typical of the printed page
+      20 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '20'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: of gray. This capability was increased to 15 levels in 1929. Figure 1.3 is typical of the
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.2'
+      - '1.3'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 22
+      pdf_page_number: 23
+      printed_page_label: '21'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(two ideas are the foundation of a central processing unit (CPU), which is at the heart) +(printed page 21) --QDF=0
+    - Introduction two ideas are the foundation of a central processing unit (CPU), which is at the heart printed page 21
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '21'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: two ideas are the foundation of a central processing unit (CPU), which is at the heart
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.4'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 23
+      pdf_page_number: 24
+      printed_page_label: '22'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(inventions, nearly 100 years apart, led to some of the most important applications of) +(printed page 22) --QDF=0
+    - Introduction inventions, nearly 100 years apart, led to some of the most important applications of printed page 22 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '22'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: inventions, nearly 100 years apart, led to some of the most important applications of
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.4'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 24
+      pdf_page_number: 25
+      printed_page_label: '23'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(way by digital image processing. We can cover only a few of these applications in the) +(printed page 23) --QDF=0
+    - Introduction way by digital image processing. We can cover only a few of these applications in the printed page 23 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '23'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: way by digital image processing. We can cover only a few of these applications in the
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - 1.3 EXAMPLES OF FIELDS THAT USE DIGITAL IMAGE PROCESSING
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 25
+      pdf_page_number: 26
+      printed_page_label: '24'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(nomical observations. In nuclear medicine, the approach is to inject a patient with a) +(printed page 24) --QDF=0
+    - Introduction nomical observations. In nuclear medicine, the approach is to inject a patient with a printed page 24 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '24'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: nomical observations. In nuclear medicine, the approach is to inject a patient with a
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - GAMMA-RAY IMAGING
+      - X-RAY IMAGING
+      figure_ids:
+      - '1.6'
+      - '1.5'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 26
+      pdf_page_number: 27
+      printed_page_label: '25'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(much in the same way that light develops photographic film. In digital radiography,) +(printed page 25) --QDF=0
+    - Introduction much in the same way that light develops photographic film. In digital radiography, printed page 25 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '25'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: much in the same way that light develops photographic film. In digital radiography,
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.7'
+      - '1.6'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 27
+      pdf_page_number: 28
+      printed_page_label: '26'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(by a light-sensitive digitizing system. We will discuss digitization in more detail in) +(printed page 26) --QDF=0
+    - Introduction by a light-sensitive digitizing system. We will discuss digitization in more detail in printed page 26
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '26'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: by a light-sensitive digitizing system. We will discuss digitization in more detail in
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.7'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 28
+      pdf_page_number: 29
+      printed_page_label: '27'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(excited electron relaxes to a lower level and emits light in the form of a lower-energy) +(printed page 27) --QDF=0
+    - Introduction excited electron relaxes to a lower level and emits light in the form of a lower-energy printed page 27
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '27'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: excited electron relaxes to a lower level and emits light in the form of a lower-energy
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - IMAGING IN THE ULTRAVIOLET BAND
+      figure_ids:
+      - '1.7'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 29
+      pdf_page_number: 30
+      printed_page_label: '28'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(iar in all our activities, it is not surprising that imaging in this band outweighs by far) +(printed page 28) --QDF=0
+    - Introduction iar in all our activities, it is not surprising that imaging in this band outweighs by far printed page
+      28 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '28'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: iar in all our activities, it is not surprising that imaging in this band outweighs by far
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - IMAGING IN THE VISIBLE AND INFRARED BANDS
+      figure_ids:
+      - '1.9'
+      - '1.8'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 30
+      pdf_page_number: 31
+      printed_page_label: '29'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(tral imaging, consider Fig. 1.10, which shows one image for each of the spectral bands) +(printed page 29) --QDF=0
+    - Introduction tral imaging, consider Fig. 1.10, which shows one image for each of the spectral bands printed page 29
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '29'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: tral imaging, consider Fig. 1.10, which shows one image for each of the spectral bands
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.9'
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '1.1'
+  - page:
+      pdf_page_index: 31
+      pdf_page_number: 32
+      printed_page_label: '30'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(imaging from satellites. For example, Fig. 1.11 is an image of Hurricane Katrina, one) +(printed page 30) --QDF=0
+    - Introduction imaging from satellites. For example, Fig. 1.11 is an image of Hurricane Katrina, one printed page 30 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '30'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: imaging from satellites. For example, Fig. 1.11 is an image of Hurricane Katrina, one
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.10'
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '1.1'
+  - page:
+      pdf_page_index: 32
+      pdf_page_number: 33
+      printed_page_label: '31'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(other small speckle detail is debris. The objective in this type of inspection is to ﬁnd) +(printed page 31) --QDF=0
+    - Introduction other small speckle detail is debris. The objective in this type of inspection is to ﬁnd printed page 31
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '31'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: other small speckle detail is debris. The objective in this type of inspection is to ﬁnd
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.14'
+      - '1.11'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 33
+      pdf_page_number: 34
+      printed_page_label: '32'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints are rou-) +(printed page 32) --QDF=0
+    - Introduction ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints are rou- printed page 32 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '32'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints are rou-
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.15'
+      - '1.12'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 34
+      pdf_page_number: 35
+      printed_page_label: '33'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(feature of imaging radar is its ability to collect data over virtually any region at any) +(printed page 33) --QDF=0
+    - Introduction feature of imaging radar is its ability to collect data over virtually any region at any printed page 33
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '33'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: feature of imaging radar is its ability to collect data over virtually any region at any
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - IMAGING IN THE MICROWAVE BAND
+      figure_ids:
+      - '1.13'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 35
+      pdf_page_number: 36
+      printed_page_label: '34'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a clear plastic product. (e) Cereal. (f) Image of intraocular)
+      +(printed page 34) --QDF=0
+    - Introduction troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a clear plastic product. (e) Cereal. (f) Image
+      of intraocular printed page 34 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '34'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a clear plastic product. (e) Cereal. (f) Image of
+        intraocular
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - IMAGING IN THE RADIO BAND
+      figure_ids:
+      - '1.16'
+      - '1.14'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 36
+      pdf_page_number: 37
+      printed_page_label: '35'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(in most of the bands discussed earlier. Observe that each image gives a totally dif-) +(printed page 35) --QDF=0
+    - Introduction in most of the bands discussed earlier. Observe that each image gives a totally dif- printed page 35 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '35'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: in most of the bands discussed earlier. Observe that each image gives a totally dif-
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - OTHER IMAGING MODALITIES
+      figure_ids:
+      - '1.17'
+      - '1.15'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 37
+      pdf_page_number: 38
+      printed_page_label: '36'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(eral and oil exploration. For image acquisition over land, one of the main approaches) +(printed page 36) --QDF=0
+    - Introduction eral and oil exploration. For image acquisition over land, one of the main approaches printed page 36 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '36'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: eral and oil exploration. For image acquisition over land, one of the main approaches
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.16'
+      - '1.17'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 38
+      pdf_page_number: 39
+      printed_page_label: '37'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(for these “bright spots” to ﬁnd oil and gas. The layers above also are bright, but their) +(printed page 37) --QDF=0
+    - Introduction for these “bright spots” to ﬁnd oil and gas. The layers above also are bright, but their printed page 37
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '37'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: for these “bright spots” to ﬁnd oil and gas. The layers above also are bright, but their
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.19'
+      - '1.18'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 39
+      pdf_page_number: 40
+      printed_page_label: '38'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(tron microscopy. Electron microscopes function as their optical counterparts, except) +(printed page 38) --QDF=0
+    - Introduction tron microscopy. Electron microscopes function as their optical counterparts, except printed page 38 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '38'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: tron microscopy. Electron microscopes function as their optical counterparts, except
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.20'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 40
+      pdf_page_number: 41
+      printed_page_label: '39'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(mathematical rules. For instance, tiling is one of the simplest ways to generate a frac-) +(printed page 39) --QDF=0
+    - Introduction mathematical rules. For instance, tiling is one of the simplest ways to generate a frac- printed page 39
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '39'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: mathematical rules. For instance, tiling is one of the simplest ways to generate a frac-
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.21'
+      - '1.22'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 41
+      pdf_page_number: 42
+      printed_page_label: '40'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(shattered pieces on the lower left). (b) 2500 × SEM image of a damaged integrated circuit.) +(printed page 40) --QDF=0
+    - Introduction shattered pieces on the lower left). (b) 2500 × SEM image of a damaged integrated circuit. printed page
+      40 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '40'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: shattered pieces on the lower left). (b) 2500 × SEM image of a damaged integrated circuit.
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.21'
+      - '1.22'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 42
+      pdf_page_number: 43
+      printed_page_label: '41'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(being given an image that is already in digital form. Generally, the image acquisition) +(printed page 41) --QDF=0
+    - Introduction being given an image that is already in digital form. Generally, the image acquisition printed page 41
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '41'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: being given an image that is already in digital form. Generally, the image acquisition
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - 1.4 FUNDAMENTAL STEPS IN DIGITAL IMAGE PROCESSING
+      figure_ids:
+      - '1.23'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 43
+      pdf_page_number: 44
+      printed_page_label: '42'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(in a digital domain. Color is used also as the basis for extracting features of interest) +(printed page 42) --QDF=0
+    - Introduction in a digital domain. Color is used also as the basis for extracting features of interest printed page 42
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '42'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: in a digital domain. Color is used also as the basis for extracting features of interest
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 44
+      pdf_page_number: 45
+      printed_page_label: '43'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(object based on its feature descriptors. In the last chapter of the book, we will discuss) +(printed page 43) --QDF=0
+    - Introduction object based on its feature descriptors. In the last chapter of the book, we will discuss printed page
+      43 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '43'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: object based on its feature descriptors. In the last chapter of the book, we will discuss
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 45
+      pdf_page_number: 46
+      printed_page_label: '44'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(puts (e.g., digitizing and averaging video images at 30 frames/s) that the typical main) +(printed page 44) --QDF=0
+    - Introduction puts (e.g., digitizing and averaging video images at 30 frames/s) that the typical main printed page 44
+      --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '44'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: puts (e.g., digitizing and averaging video images at 30 frames/s) that the typical main
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - 1.5 COMPONENTS OF AN IMAGE PROCESSING SYSTEM
+      figure_ids:
+      - '1.24'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 46
+      pdf_page_number: 47
+      printed_page_label: '45'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(ing processing; (2) on-line storage for relatively fast recall; and (3) archival storage,) +(printed page 45) --QDF=0
+    - Introduction ing processing; (2) on-line storage for relatively fast recall; and (3) archival storage, printed page
+      45 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '45'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: ing processing; (2) on-line storage for relatively fast recall; and (3) archival storage,
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.24'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 47
+      pdf_page_number: 48
+      printed_page_label: '46'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(Although the coverage of these topics in this chapter was necessarily incomplete due to space limitations, it should)
+      +(printed page 46) --QDF=0
+    - Introduction Although the coverage of these topics in this chapter was necessarily incomplete due to space limitations,
+      it should printed page 46 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '46'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: Although the coverage of these topics in this chapter was necessarily incomplete due to space limitations, it
+        should
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  learning_units: []
+- printed_section_id: '1.1'
+  parent_printed_section_id: '1'
+  title: What Is Digital Image Processing?
+  source_heading: 1.1 WHAT IS DIGITAL IMAGE PROCESSING?
+  source_location:
+    page:
+      pdf_page_index: 19
+      pdf_page_number: 20
+      printed_page_label: '18'
+    bbox:
+    - 118.682
+    - 50.22
+    - 353.534
+    - 61.32
+  page_range:
+    pdf_page_index_start: 19
+    pdf_page_index_end: 20
+    pdf_page_number_start: 20
+    pdf_page_number_end: 21
+    printed_page_start: '18'
+    printed_page_end: '19'
+  outline: []
+  retrieval_plan:
+  - page:
+      pdf_page_index: 19
+      pdf_page_number: 20
+      printed_page_label: '18'
+    content_window:
+      start_at:
+        kind: heading
+        value: 1.1 WHAT IS DIGITAL IMAGE PROCESSING?
+      end_before: null
+    queries:
+    - +(1.1 WHAT IS DIGITAL IMAGE PROCESSING?) +(printed page 18) --QDF=0
+    - What Is Digital Image Processing? intensity values of f are all finite, discrete quantities, we call the image a digital
+      image. printed page 18 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '18'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: intensity values of f are all finite, discrete quantities, we call the image a digital image.
+      verification_mode: text_or_visual
+    - kind: contains_heading
+      value: 1.1 WHAT IS DIGITAL IMAGE PROCESSING?
+      verification_mode: visual_required
+    coverage:
+      subheadings:
+      - 1.1 WHAT IS DIGITAL IMAGE PROCESSING?
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 20
+      pdf_page_number: 21
+      printed_page_label: '19'
+    content_window:
+      start_at: null
+      end_before:
+        kind: heading
+        value: 1.2 THE ORIGINS OF DIGITAL IMAGE PROCESSING
+    queries:
+    - +(evident shortly, digital image processing, as we have deﬁned it, is used routinely in a) +(printed page 19) --QDF=0
+    - What Is Digital Image Processing? evident shortly, digital image processing, as we have deﬁned it, is used routinely
+      in a printed page 19 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '19'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: evident shortly, digital image processing, as we have deﬁned it, is used routinely in a
+      verification_mode: text_or_visual
+    - kind: contains_heading
+      value: 1.2 THE ORIGINS OF DIGITAL IMAGE PROCESSING
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  learning_units: []
+- printed_section_id: '1.2'
+  parent_printed_section_id: '1'
+  title: The Origins of Digital Image Processing
+  source_heading: 1.2 THE ORIGINS OF DIGITAL IMAGE PROCESSING
+  source_location:
+    page:
+      pdf_page_index: 20
+      pdf_page_number: 21
+      printed_page_label: '19'
+    bbox:
+    - 133.682
+    - 301.82
+    - 405.194
+    - 312.92
+  page_range:
+    pdf_page_index_start: 20
+    pdf_page_index_end: 24
+    pdf_page_number_start: 21
+    pdf_page_number_end: 25
+    printed_page_start: '19'
+    printed_page_end: '23'
+  outline: []
+  retrieval_plan:
+  - page:
+      pdf_page_index: 20
+      pdf_page_number: 21
+      printed_page_label: '19'
+    content_window:
+      start_at:
+        kind: heading
+        value: 1.2 THE ORIGINS OF DIGITAL IMAGE PROCESSING
+      end_before: null
+    queries:
+    - +(1.2 THE ORIGINS OF DIGITAL IMAGE PROCESSING) +(printed page 19) --QDF=0
+    - The Origins of Digital Image Processing pictures were related to the selection of printing procedures and the distribution
+      of printed page 19 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '19'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: pictures were related to the selection of printing procedures and the distribution of
+      verification_mode: text_or_visual
+    - kind: contains_heading
+      value: 1.2 THE ORIGINS OF DIGITAL IMAGE PROCESSING
+      verification_mode: visual_required
+    coverage:
+      subheadings:
+      - 1.2 THE ORIGINS OF DIGITAL IMAGE PROCESSING
+      figure_ids:
+      - '1.1'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 21
+      pdf_page_number: 22
+      printed_page_label: '20'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(of gray. This capability was increased to 15 levels in 1929. Figure 1.3 is typical of the) +(printed page 20) --QDF=0
+    - The Origins of Digital Image Processing of gray. This capability was increased to 15 levels in 1929. Figure 1.3 is typical
+      of the printed page 20 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '20'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: of gray. This capability was increased to 15 levels in 1929. Figure 1.3 is typical of the
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.2'
+      - '1.3'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 22
+      pdf_page_number: 23
+      printed_page_label: '21'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(two ideas are the foundation of a central processing unit (CPU), which is at the heart) +(printed page 21) --QDF=0
+    - The Origins of Digital Image Processing two ideas are the foundation of a central processing unit (CPU), which is at
+      the heart printed page 21 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '21'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: two ideas are the foundation of a central processing unit (CPU), which is at the heart
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.4'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 23
+      pdf_page_number: 24
+      printed_page_label: '22'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(inventions, nearly 100 years apart, led to some of the most important applications of) +(printed page 22) --QDF=0
+    - The Origins of Digital Image Processing inventions, nearly 100 years apart, led to some of the most important applications
+      of printed page 22 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '22'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: inventions, nearly 100 years apart, led to some of the most important applications of
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.4'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 24
+      pdf_page_number: 25
+      printed_page_label: '23'
+    content_window:
+      start_at: null
+      end_before:
+        kind: heading
+        value: 1.3 EXAMPLES OF FIELDS THAT USE DIGITAL IMAGE PROCESSING
+    queries:
+    - +(tioned at the beginning of this chapter is in solving problems dealing with machine) +(printed page 23) --QDF=0
+    - The Origins of Digital Image Processing tioned at the beginning of this chapter is in solving problems dealing with
+      machine printed page 23 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '23'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: tioned at the beginning of this chapter is in solving problems dealing with machine
+      verification_mode: text_or_visual
+    - kind: contains_heading
+      value: 1.3 EXAMPLES OF FIELDS THAT USE DIGITAL IMAGE PROCESSING
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  learning_units: []
+- printed_section_id: '1.3'
+  parent_printed_section_id: '1'
+  title: Examples of Fields That Use Digital Image Processing
+  source_heading: 1.3 EXAMPLES OF FIELDS THAT USE DIGITAL IMAGE PROCESSING
+  source_location:
+    page:
+      pdf_page_index: 24
+      pdf_page_number: 25
+      printed_page_label: '23'
+    bbox:
+    - 133.682
+    - 270.62
+    - 480.602
+    - 281.72
+  page_range:
+    pdf_page_index_start: 24
+    pdf_page_index_end: 41
+    pdf_page_number_start: 25
+    pdf_page_number_end: 42
+    printed_page_start: '23'
+    printed_page_end: '40'
+  outline:
+  - Gamma-ray Imaging
+  - X-ray Imaging
+  - Imaging in the Ultraviolet Band
+  - Imaging in the Visible and Infrared Bands
+  - Imaging in the Microwave Band
+  - Imaging in the Radio Band
+  - Other Imaging Modalities
+  retrieval_plan:
+  - page:
+      pdf_page_index: 24
+      pdf_page_number: 25
+      printed_page_label: '23'
+    content_window:
+      start_at:
+        kind: heading
+        value: 1.3 EXAMPLES OF FIELDS THAT USE DIGITAL IMAGE PROCESSING
+      end_before: null
+    queries:
+    - +(1.3 EXAMPLES OF FIELDS THAT USE DIGITAL IMAGE PROCESSING) +(printed page 23) --QDF=0
+    - Examples of Fields That Use Digital Image Processing way by digital image processing. We can cover only a few of these
+      applications in the printed page 23 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '23'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: way by digital image processing. We can cover only a few of these applications in the
+      verification_mode: text_or_visual
+    - kind: contains_heading
+      value: 1.3 EXAMPLES OF FIELDS THAT USE DIGITAL IMAGE PROCESSING
+      verification_mode: visual_required
+    coverage:
+      subheadings:
+      - 1.3 EXAMPLES OF FIELDS THAT USE DIGITAL IMAGE PROCESSING
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 25
+      pdf_page_number: 26
+      printed_page_label: '24'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(nomical observations. In nuclear medicine, the approach is to inject a patient with a) +(printed page 24) --QDF=0
+    - Examples of Fields That Use Digital Image Processing nomical observations. In nuclear medicine, the approach is to inject
+      a patient with a printed page 24 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '24'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: nomical observations. In nuclear medicine, the approach is to inject a patient with a
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - GAMMA-RAY IMAGING
+      - X-RAY IMAGING
+      figure_ids:
+      - '1.6'
+      - '1.5'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 26
+      pdf_page_number: 27
+      printed_page_label: '25'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(much in the same way that light develops photographic film. In digital radiography,) +(printed page 25) --QDF=0
+    - Examples of Fields That Use Digital Image Processing much in the same way that light develops photographic film. In
+      digital radiography, printed page 25 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '25'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: much in the same way that light develops photographic film. In digital radiography,
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.7'
+      - '1.6'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 27
+      pdf_page_number: 28
+      printed_page_label: '26'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(by a light-sensitive digitizing system. We will discuss digitization in more detail in) +(printed page 26) --QDF=0
+    - Examples of Fields That Use Digital Image Processing by a light-sensitive digitizing system. We will discuss digitization
+      in more detail in printed page 26 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '26'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: by a light-sensitive digitizing system. We will discuss digitization in more detail in
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.7'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 28
+      pdf_page_number: 29
+      printed_page_label: '27'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(excited electron relaxes to a lower level and emits light in the form of a lower-energy) +(printed page 27) --QDF=0
+    - Examples of Fields That Use Digital Image Processing excited electron relaxes to a lower level and emits light in the
+      form of a lower-energy printed page 27 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '27'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: excited electron relaxes to a lower level and emits light in the form of a lower-energy
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - IMAGING IN THE ULTRAVIOLET BAND
+      figure_ids:
+      - '1.7'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 29
+      pdf_page_number: 30
+      printed_page_label: '28'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(iar in all our activities, it is not surprising that imaging in this band outweighs by far) +(printed page 28) --QDF=0
+    - Examples of Fields That Use Digital Image Processing iar in all our activities, it is not surprising that imaging in
+      this band outweighs by far printed page 28 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '28'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: iar in all our activities, it is not surprising that imaging in this band outweighs by far
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - IMAGING IN THE VISIBLE AND INFRARED BANDS
+      figure_ids:
+      - '1.9'
+      - '1.8'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 30
+      pdf_page_number: 31
+      printed_page_label: '29'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(tral imaging, consider Fig. 1.10, which shows one image for each of the spectral bands) +(printed page 29) --QDF=0
+    - Examples of Fields That Use Digital Image Processing tral imaging, consider Fig. 1.10, which shows one image for each
+      of the spectral bands printed page 29 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '29'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: tral imaging, consider Fig. 1.10, which shows one image for each of the spectral bands
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.9'
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '1.1'
+  - page:
+      pdf_page_index: 31
+      pdf_page_number: 32
+      printed_page_label: '30'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(imaging from satellites. For example, Fig. 1.11 is an image of Hurricane Katrina, one) +(printed page 30) --QDF=0
+    - Examples of Fields That Use Digital Image Processing imaging from satellites. For example, Fig. 1.11 is an image of
+      Hurricane Katrina, one printed page 30 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '30'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: imaging from satellites. For example, Fig. 1.11 is an image of Hurricane Katrina, one
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.10'
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '1.1'
+  - page:
+      pdf_page_index: 32
+      pdf_page_number: 33
+      printed_page_label: '31'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(other small speckle detail is debris. The objective in this type of inspection is to ﬁnd) +(printed page 31) --QDF=0
+    - Examples of Fields That Use Digital Image Processing other small speckle detail is debris. The objective in this type
+      of inspection is to ﬁnd printed page 31 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '31'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: other small speckle detail is debris. The objective in this type of inspection is to ﬁnd
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.14'
+      - '1.11'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 33
+      pdf_page_number: 34
+      printed_page_label: '32'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints are rou-) +(printed page 32) --QDF=0
+    - Examples of Fields That Use Digital Image Processing ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints
+      are rou- printed page 32 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '32'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints are rou-
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.15'
+      - '1.12'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 34
+      pdf_page_number: 35
+      printed_page_label: '33'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(feature of imaging radar is its ability to collect data over virtually any region at any) +(printed page 33) --QDF=0
+    - Examples of Fields That Use Digital Image Processing feature of imaging radar is its ability to collect data over virtually
+      any region at any printed page 33 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '33'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: feature of imaging radar is its ability to collect data over virtually any region at any
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - IMAGING IN THE MICROWAVE BAND
+      figure_ids:
+      - '1.13'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 35
+      pdf_page_number: 36
+      printed_page_label: '34'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a clear plastic product. (e) Cereal. (f) Image of intraocular)
+      +(printed page 34) --QDF=0
+    - Examples of Fields That Use Digital Image Processing troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a
+      clear plastic product. (e) Cereal. (f) Image of intraocular printed page 34 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '34'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a clear plastic product. (e) Cereal. (f) Image of
+        intraocular
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - IMAGING IN THE RADIO BAND
+      figure_ids:
+      - '1.16'
+      - '1.14'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 36
+      pdf_page_number: 37
+      printed_page_label: '35'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(in most of the bands discussed earlier. Observe that each image gives a totally dif-) +(printed page 35) --QDF=0
+    - Examples of Fields That Use Digital Image Processing in most of the bands discussed earlier. Observe that each image
+      gives a totally dif- printed page 35 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '35'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: in most of the bands discussed earlier. Observe that each image gives a totally dif-
+      verification_mode: text_or_visual
+    coverage:
+      subheadings:
+      - OTHER IMAGING MODALITIES
+      figure_ids:
+      - '1.17'
+      - '1.15'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 37
+      pdf_page_number: 38
+      printed_page_label: '36'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(eral and oil exploration. For image acquisition over land, one of the main approaches) +(printed page 36) --QDF=0
+    - Examples of Fields That Use Digital Image Processing eral and oil exploration. For image acquisition over land, one
+      of the main approaches printed page 36 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '36'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: eral and oil exploration. For image acquisition over land, one of the main approaches
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.16'
+      - '1.17'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 38
+      pdf_page_number: 39
+      printed_page_label: '37'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(for these “bright spots” to ﬁnd oil and gas. The layers above also are bright, but their) +(printed page 37) --QDF=0
+    - Examples of Fields That Use Digital Image Processing for these “bright spots” to ﬁnd oil and gas. The layers above also
+      are bright, but their printed page 37 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '37'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: for these “bright spots” to ﬁnd oil and gas. The layers above also are bright, but their
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.19'
+      - '1.18'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 39
+      pdf_page_number: 40
+      printed_page_label: '38'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(tron microscopy. Electron microscopes function as their optical counterparts, except) +(printed page 38) --QDF=0
+    - Examples of Fields That Use Digital Image Processing tron microscopy. Electron microscopes function as their optical
+      counterparts, except printed page 38 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '38'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: tron microscopy. Electron microscopes function as their optical counterparts, except
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.20'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 40
+      pdf_page_number: 41
+      printed_page_label: '39'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(mathematical rules. For instance, tiling is one of the simplest ways to generate a frac-) +(printed page 39) --QDF=0
+    - Examples of Fields That Use Digital Image Processing mathematical rules. For instance, tiling is one of the simplest
+      ways to generate a frac- printed page 39 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '39'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: mathematical rules. For instance, tiling is one of the simplest ways to generate a frac-
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.21'
+      - '1.22'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 41
+      pdf_page_number: 42
+      printed_page_label: '40'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(shattered pieces on the lower left). (b) 2500 × SEM image of a damaged integrated circuit.) +(printed page 40) --QDF=0
+    - Examples of Fields That Use Digital Image Processing shattered pieces on the lower left). (b) 2500 × SEM image of a
+      damaged integrated circuit. printed page 40 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '40'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: shattered pieces on the lower left). (b) 2500 × SEM image of a damaged integrated circuit.
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.21'
+      - '1.22'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  learning_units:
+  - title: Gamma-ray Imaging
+    source_heading: GAMMA-RAY IMAGING
+    source_heading_numbered: false
+    source_location:
+      page:
+        pdf_page_index: 25
+        pdf_page_number: 26
+        printed_page_label: '24'
+      bbox:
+      - 120.733
+      - 219.02
+      - 245.053
+      - 230.12
+    source_level: 1
+    page_range:
+      pdf_page_index_start: 25
+      pdf_page_index_end: 25
+      pdf_page_number_start: 26
+      pdf_page_number_end: 26
+      printed_page_start: '24'
+      printed_page_end: '24'
+    outline: []
+    retrieval_plan:
+    - page:
+        pdf_page_index: 25
+        pdf_page_number: 26
+        printed_page_label: '24'
+      content_window:
+        start_at:
+          kind: heading
+          value: GAMMA-RAY IMAGING
+        end_before:
+          kind: heading
+          value: X-RAY IMAGING
+      queries:
+      - +(GAMMA-RAY IMAGING) +(printed page 24) --QDF=0
+      - Gamma-ray Imaging nomical observations. In nuclear medicine, the approach is to inject a patient with a printed page
+        24 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '24'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: nomical observations. In nuclear medicine, the approach is to inject a patient with a
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: GAMMA-RAY IMAGING
+        verification_mode: visual_required
+      - kind: contains_heading
+        value: X-RAY IMAGING
+        verification_mode: visual_required
+      coverage:
+        subheadings:
+        - GAMMA-RAY IMAGING
+        figure_ids:
+        - '1.6'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    children: []
+  - title: X-ray Imaging
+    source_heading: X-RAY IMAGING
+    source_heading_numbered: false
+    source_location:
+      page:
+        pdf_page_index: 25
+        pdf_page_number: 26
+        printed_page_label: '24'
+      bbox:
+      - 120.186
+      - 511.02
+      - 206.826
+      - 522.12
+    source_level: 1
+    page_range:
+      pdf_page_index_start: 25
+      pdf_page_index_end: 28
+      pdf_page_number_start: 26
+      pdf_page_number_end: 29
+      printed_page_start: '24'
+      printed_page_end: '27'
+    outline: []
+    retrieval_plan:
+    - page:
+        pdf_page_index: 25
+        pdf_page_number: 26
+        printed_page_label: '24'
+      content_window:
+        start_at:
+          kind: heading
+          value: X-RAY IMAGING
+        end_before: null
+      queries:
+      - +(X-RAY IMAGING) +(printed page 24) --QDF=0
+      - X-ray Imaging industry and other areas, such as astronomy. X-rays for medical and industrial imag- printed page 24
+        --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '24'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: industry and other areas, such as astronomy. X-rays for medical and industrial imag-
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: X-RAY IMAGING
+        verification_mode: visual_required
+      coverage:
+        subheadings:
+        - X-RAY IMAGING
+        figure_ids: []
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 26
+        pdf_page_number: 27
+        printed_page_label: '25'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(much in the same way that light develops photographic film. In digital radiography,) +(printed page 25) --QDF=0
+      - X-ray Imaging much in the same way that light develops photographic film. In digital radiography, printed page 25
+        --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '25'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: much in the same way that light develops photographic film. In digital radiography,
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.7'
+        - '1.6'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 27
+        pdf_page_number: 28
+        printed_page_label: '26'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(by a light-sensitive digitizing system. We will discuss digitization in more detail in) +(printed page 26) --QDF=0
+      - X-ray Imaging by a light-sensitive digitizing system. We will discuss digitization in more detail in printed page
+        26 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '26'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: by a light-sensitive digitizing system. We will discuss digitization in more detail in
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.7'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 28
+        pdf_page_number: 29
+        printed_page_label: '27'
+      content_window:
+        start_at: null
+        end_before:
+          kind: heading
+          value: IMAGING IN THE ULTRAVIOLET BAND
+      queries:
+      - +(of the blood vessels and enables a radiologist to see any irregularities or blockages.) +(printed page 27) --QDF=0
+      - X-ray Imaging of the blood vessels and enables a radiologist to see any irregularities or blockages. printed page
+        27 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '27'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: of the blood vessels and enables a radiologist to see any irregularities or blockages.
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: IMAGING IN THE ULTRAVIOLET BAND
+        verification_mode: visual_required
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.7'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    children: []
+  - title: Imaging in the Ultraviolet Band
+    source_heading: IMAGING IN THE ULTRAVIOLET BAND
+    source_heading_numbered: false
+    source_location:
+      page:
+        pdf_page_index: 28
+        pdf_page_number: 29
+        printed_page_label: '27'
+      bbox:
+      - 135.934
+      - 424.82
+      - 331.366
+      - 435.92
+    source_level: 1
+    page_range:
+      pdf_page_index_start: 28
+      pdf_page_index_end: 29
+      pdf_page_number_start: 29
+      pdf_page_number_end: 30
+      printed_page_start: '27'
+      printed_page_end: '28'
+    outline: []
+    retrieval_plan:
+    - page:
+        pdf_page_index: 28
+        pdf_page_number: 29
+        printed_page_label: '27'
+      content_window:
+        start_at:
+          kind: heading
+          value: IMAGING IN THE ULTRAVIOLET BAND
+        end_before: null
+      queries:
+      - +(IMAGING IN THE ULTRAVIOLET BAND) +(printed page 27) --QDF=0
+      - Imaging in the Ultraviolet Band excited electron relaxes to a lower level and emits light in the form of a lower-energy
+        printed page 27 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '27'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: excited electron relaxes to a lower level and emits light in the form of a lower-energy
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: IMAGING IN THE ULTRAVIOLET BAND
+        verification_mode: visual_required
+      coverage:
+        subheadings:
+        - IMAGING IN THE ULTRAVIOLET BAND
+        figure_ids: []
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 29
+        pdf_page_number: 30
+        printed_page_label: '28'
+      content_window:
+        start_at: null
+        end_before:
+          kind: heading
+          value: IMAGING IN THE VISIBLE AND INFRARED BANDS
+      queries:
+      - +((a) and (b) courtesy of Dr. Michael W. Davidson, Florida State University, (c) NASA.)) +(printed page 28) --QDF=0
+      - Imaging in the Ultraviolet Band (a) and (b) courtesy of Dr. Michael W. Davidson, Florida State University, (c) NASA.)
+        printed page 28 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '28'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: (a) and (b) courtesy of Dr. Michael W. Davidson, Florida State University, (c) NASA.)
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: IMAGING IN THE VISIBLE AND INFRARED BANDS
+        verification_mode: visual_required
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.8'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    children: []
+  - title: Imaging in the Visible and Infrared Bands
+    source_heading: IMAGING IN THE VISIBLE AND INFRARED BANDS
+    source_heading_numbered: false
+    source_location:
+      page:
+        pdf_page_index: 29
+        pdf_page_number: 30
+        printed_page_label: '28'
+      bbox:
+      - 120.935
+      - 443.62
+      - 377.447
+      - 454.72
+    source_level: 1
+    page_range:
+      pdf_page_index_start: 29
+      pdf_page_index_end: 34
+      pdf_page_number_start: 30
+      pdf_page_number_end: 35
+      printed_page_start: '28'
+      printed_page_end: '33'
+    outline: []
+    retrieval_plan:
+    - page:
+        pdf_page_index: 29
+        pdf_page_number: 30
+        printed_page_label: '28'
+      content_window:
+        start_at:
+          kind: heading
+          value: IMAGING IN THE VISIBLE AND INFRARED BANDS
+        end_before: null
+      queries:
+      - +(IMAGING IN THE VISIBLE AND INFRARED BANDS) +(printed page 28) --QDF=0
+      - Imaging in the Visible and Infrared Bands iar in all our activities, it is not surprising that imaging in this band
+        outweighs by far printed page 28 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '28'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: iar in all our activities, it is not surprising that imaging in this band outweighs by far
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: IMAGING IN THE VISIBLE AND INFRARED BANDS
+        verification_mode: visual_required
+      coverage:
+        subheadings:
+        - IMAGING IN THE VISIBLE AND INFRARED BANDS
+        figure_ids:
+        - '1.9'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 30
+        pdf_page_number: 31
+        printed_page_label: '29'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(tral imaging, consider Fig. 1.10, which shows one image for each of the spectral bands) +(printed page 29) --QDF=0
+      - Imaging in the Visible and Infrared Bands tral imaging, consider Fig. 1.10, which shows one image for each of the
+        spectral bands printed page 29 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '29'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: tral imaging, consider Fig. 1.10, which shows one image for each of the spectral bands
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.9'
+        equation_ids: []
+        example_ids: []
+        table_ids:
+        - '1.1'
+    - page:
+        pdf_page_index: 31
+        pdf_page_number: 32
+        printed_page_label: '30'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(imaging from satellites. For example, Fig. 1.11 is an image of Hurricane Katrina, one) +(printed page 30) --QDF=0
+      - Imaging in the Visible and Infrared Bands imaging from satellites. For example, Fig. 1.11 is an image of Hurricane
+        Katrina, one printed page 30 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '30'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: imaging from satellites. For example, Fig. 1.11 is an image of Hurricane Katrina, one
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.10'
+        equation_ids: []
+        example_ids: []
+        table_ids:
+        - '1.1'
+    - page:
+        pdf_page_index: 32
+        pdf_page_number: 33
+        printed_page_label: '31'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(other small speckle detail is debris. The objective in this type of inspection is to ﬁnd) +(printed page 31) --QDF=0
+      - Imaging in the Visible and Infrared Bands other small speckle detail is debris. The objective in this type of inspection
+        is to ﬁnd printed page 31 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '31'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: other small speckle detail is debris. The objective in this type of inspection is to ﬁnd
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.14'
+        - '1.11'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 33
+        pdf_page_number: 34
+        printed_page_label: '32'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints are rou-) +(printed page 32) --QDF=0
+      - Imaging in the Visible and Infrared Bands ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints
+        are rou- printed page 32 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '32'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: ible spectrum. Figure 1.15(a) shows a thumb print. Images of ﬁngerprints are rou-
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.15'
+        - '1.12'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 34
+        pdf_page_number: 35
+        printed_page_label: '33'
+      content_window:
+        start_at: null
+        end_before:
+          kind: heading
+          value: IMAGING IN THE MICROWAVE BAND
+      queries:
+      - +(ber for the purpose of tracking and identifying currency bills. The two vehicle images) +(printed page 33) --QDF=0
+      - Imaging in the Visible and Infrared Bands ber for the purpose of tracking and identifying currency bills. The two
+        vehicle images printed page 33 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '33'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: ber for the purpose of tracking and identifying currency bills. The two vehicle images
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: IMAGING IN THE MICROWAVE BAND
+        verification_mode: visual_required
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.13'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    children: []
+  - title: Imaging in the Microwave Band
+    source_heading: IMAGING IN THE MICROWAVE BAND
+    source_heading_numbered: false
+    source_location:
+      page:
+        pdf_page_index: 34
+        pdf_page_number: 35
+        printed_page_label: '33'
+      bbox:
+      - 135.935
+      - 500.22
+      - 331.103
+      - 511.32
+    source_level: 1
+    page_range:
+      pdf_page_index_start: 34
+      pdf_page_index_end: 35
+      pdf_page_number_start: 35
+      pdf_page_number_end: 36
+      printed_page_start: '33'
+      printed_page_end: '34'
+    outline: []
+    retrieval_plan:
+    - page:
+        pdf_page_index: 34
+        pdf_page_number: 35
+        printed_page_label: '33'
+      content_window:
+        start_at:
+          kind: heading
+          value: IMAGING IN THE MICROWAVE BAND
+        end_before: null
+      queries:
+      - +(IMAGING IN THE MICROWAVE BAND) +(printed page 33) --QDF=0
+      - Imaging in the Microwave Band feature of imaging radar is its ability to collect data over virtually any region at
+        any printed page 33 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '33'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: feature of imaging radar is its ability to collect data over virtually any region at any
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: IMAGING IN THE MICROWAVE BAND
+        verification_mode: visual_required
+      coverage:
+        subheadings:
+        - IMAGING IN THE MICROWAVE BAND
+        figure_ids: []
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 35
+        pdf_page_number: 36
+        printed_page_label: '34'
+      content_window:
+        start_at: null
+        end_before:
+          kind: heading
+          value: IMAGING IN THE RADIO BAND
+      queries:
+      - +(troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a clear plastic product. (e) Cereal. (f) Image of intraocular)
+        +(printed page 34) --QDF=0
+      - Imaging in the Microwave Band troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a clear plastic product.
+        (e) Cereal. (f) Image of intraocular printed page 34 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '34'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: troller. (b) Packaged pills. (c) Bottles. (d) Air bubbles in a clear plastic product. (e) Cereal. (f) Image
+          of intraocular
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: IMAGING IN THE RADIO BAND
+        verification_mode: visual_required
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.16'
+        - '1.14'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    children: []
+  - title: Imaging in the Radio Band
+    source_heading: IMAGING IN THE RADIO BAND
+    source_heading_numbered: false
+    source_location:
+      page:
+        pdf_page_index: 35
+        pdf_page_number: 36
+        printed_page_label: '34'
+      bbox:
+      - 120.935
+      - 548.12
+      - 284.003
+      - 559.22
+    source_level: 1
+    page_range:
+      pdf_page_index_start: 35
+      pdf_page_index_end: 36
+      pdf_page_number_start: 36
+      pdf_page_number_end: 37
+      printed_page_start: '34'
+      printed_page_end: '35'
+    outline: []
+    retrieval_plan:
+    - page:
+        pdf_page_index: 35
+        pdf_page_number: 36
+        printed_page_label: '34'
+      content_window:
+        start_at:
+          kind: heading
+          value: IMAGING IN THE RADIO BAND
+        end_before: null
+      queries:
+      - +(IMAGING IN THE RADIO BAND) +(printed page 34) --QDF=0
+      - Imaging in the Radio Band radio waves are used in magnetic resonance imaging (MRI). This technique places a printed
+        page 34 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '34'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: radio waves are used in magnetic resonance imaging (MRI). This technique places a
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: IMAGING IN THE RADIO BAND
+        verification_mode: visual_required
+      coverage:
+        subheadings:
+        - IMAGING IN THE RADIO BAND
+        figure_ids: []
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 36
+        pdf_page_number: 37
+        printed_page_label: '35'
+      content_window:
+        start_at: null
+        end_before:
+          kind: heading
+          value: OTHER IMAGING MODALITIES
+      queries:
+      - +(in most of the bands discussed earlier. Observe that each image gives a totally dif-) +(printed page 35) --QDF=0
+      - Imaging in the Radio Band in most of the bands discussed earlier. Observe that each image gives a totally dif- printed
+        page 35 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '35'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: in most of the bands discussed earlier. Observe that each image gives a totally dif-
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: OTHER IMAGING MODALITIES
+        verification_mode: visual_required
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.17'
+        - '1.15'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    children: []
+  - title: Other Imaging Modalities
+    source_heading: OTHER IMAGING MODALITIES
+    source_heading_numbered: false
+    source_location:
+      page:
+        pdf_page_index: 36
+        pdf_page_number: 37
+        printed_page_label: '35'
+      bbox:
+      - 135.733
+      - 560.32
+      - 292.969
+      - 571.42
+    source_level: 1
+    page_range:
+      pdf_page_index_start: 36
+      pdf_page_index_end: 41
+      pdf_page_number_start: 37
+      pdf_page_number_end: 42
+      printed_page_start: '35'
+      printed_page_end: '40'
+    outline: []
+    retrieval_plan:
+    - page:
+        pdf_page_index: 36
+        pdf_page_number: 37
+        printed_page_label: '35'
+      content_window:
+        start_at:
+          kind: heading
+          value: OTHER IMAGING MODALITIES
+        end_before: null
+      queries:
+      - +(OTHER IMAGING MODALITIES) +(printed page 35) --QDF=0
+      - Other Imaging Modalities number of other imaging modalities that are also important. Specifically, we discuss printed
+        page 35 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '35'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: number of other imaging modalities that are also important. Specifically, we discuss
+        verification_mode: text_or_visual
+      - kind: contains_heading
+        value: OTHER IMAGING MODALITIES
+        verification_mode: visual_required
+      coverage:
+        subheadings:
+        - OTHER IMAGING MODALITIES
+        figure_ids: []
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 37
+        pdf_page_number: 38
+        printed_page_label: '36'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(eral and oil exploration. For image acquisition over land, one of the main approaches) +(printed page 36) --QDF=0
+      - Other Imaging Modalities eral and oil exploration. For image acquisition over land, one of the main approaches printed
+        page 36 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '36'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: eral and oil exploration. For image acquisition over land, one of the main approaches
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.16'
+        - '1.17'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 38
+        pdf_page_number: 39
+        printed_page_label: '37'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(for these “bright spots” to ﬁnd oil and gas. The layers above also are bright, but their) +(printed page 37) --QDF=0
+      - Other Imaging Modalities for these “bright spots” to ﬁnd oil and gas. The layers above also are bright, but their
+        printed page 37 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '37'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: for these “bright spots” to ﬁnd oil and gas. The layers above also are bright, but their
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.19'
+        - '1.18'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 39
+        pdf_page_number: 40
+        printed_page_label: '38'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(tron microscopy. Electron microscopes function as their optical counterparts, except) +(printed page 38) --QDF=0
+      - Other Imaging Modalities tron microscopy. Electron microscopes function as their optical counterparts, except printed
+        page 38 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '38'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: tron microscopy. Electron microscopes function as their optical counterparts, except
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.20'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 40
+        pdf_page_number: 41
+        printed_page_label: '39'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(mathematical rules. For instance, tiling is one of the simplest ways to generate a frac-) +(printed page 39) --QDF=0
+      - Other Imaging Modalities mathematical rules. For instance, tiling is one of the simplest ways to generate a frac-
+        printed page 39 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '39'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: mathematical rules. For instance, tiling is one of the simplest ways to generate a frac-
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.21'
+        - '1.22'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    - page:
+        pdf_page_index: 41
+        pdf_page_number: 42
+        printed_page_label: '40'
+      content_window:
+        start_at: null
+        end_before: null
+      queries:
+      - +(shattered pieces on the lower left). (b) 2500 × SEM image of a damaged integrated circuit.) +(printed page 40) --QDF=0
+      - Other Imaging Modalities shattered pieces on the lower left). (b) 2500 × SEM image of a damaged integrated circuit.
+        printed page 40 --QDF=0
+      required_evidence:
+      - kind: printed_page_equals
+        value: '40'
+        verification_mode: visual_required
+      - kind: contains_text
+        value: shattered pieces on the lower left). (b) 2500 × SEM image of a damaged integrated circuit.
+        verification_mode: text_or_visual
+      coverage:
+        subheadings: []
+        figure_ids:
+        - '1.21'
+        - '1.22'
+        equation_ids: []
+        example_ids: []
+        table_ids: []
+    children: []
+- printed_section_id: '1.4'
+  parent_printed_section_id: '1'
+  title: Fundamental Steps in Digital Image Processing
+  source_heading: 1.4 FUNDAMENTAL STEPS IN DIGITAL IMAGE PROCESSING
+  source_location:
+    page:
+      pdf_page_index: 42
+      pdf_page_number: 43
+      printed_page_label: '41'
+    bbox:
+    - 133.682
+    - 49.62
+    - 447.638
+    - 60.72
+  page_range:
+    pdf_page_index_start: 42
+    pdf_page_index_end: 44
+    pdf_page_number_start: 43
+    pdf_page_number_end: 45
+    printed_page_start: '41'
+    printed_page_end: '43'
+  outline: []
+  retrieval_plan:
+  - page:
+      pdf_page_index: 42
+      pdf_page_number: 43
+      printed_page_label: '41'
+    content_window:
+      start_at:
+        kind: heading
+        value: 1.4 FUNDAMENTAL STEPS IN DIGITAL IMAGE PROCESSING
+      end_before: null
+    queries:
+    - +(1.4 FUNDAMENTAL STEPS IN DIGITAL IMAGE PROCESSING) +(printed page 41) --QDF=0
+    - Fundamental Steps in Digital Image Processing being given an image that is already in digital form. Generally, the image
+      acquisition printed page 41 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '41'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: being given an image that is already in digital form. Generally, the image acquisition
+      verification_mode: text_or_visual
+    - kind: contains_heading
+      value: 1.4 FUNDAMENTAL STEPS IN DIGITAL IMAGE PROCESSING
+      verification_mode: visual_required
+    coverage:
+      subheadings:
+      - 1.4 FUNDAMENTAL STEPS IN DIGITAL IMAGE PROCESSING
+      figure_ids:
+      - '1.23'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 43
+      pdf_page_number: 44
+      printed_page_label: '42'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(in a digital domain. Color is used also as the basis for extracting features of interest) +(printed page 42) --QDF=0
+    - Fundamental Steps in Digital Image Processing in a digital domain. Color is used also as the basis for extracting features
+      of interest printed page 42 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '42'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: in a digital domain. Color is used also as the basis for extracting features of interest
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 44
+      pdf_page_number: 45
+      printed_page_label: '43'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(object based on its feature descriptors. In the last chapter of the book, we will discuss) +(printed page 43) --QDF=0
+    - Fundamental Steps in Digital Image Processing object based on its feature descriptors. In the last chapter of the book,
+      we will discuss printed page 43 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '43'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: object based on its feature descriptors. In the last chapter of the book, we will discuss
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  learning_units: []
+- printed_section_id: '1.5'
+  parent_printed_section_id: '1'
+  title: Components of an Image Processing System
+  source_heading: 1.5 COMPONENTS OF AN IMAGE PROCESSING SYSTEM
+  source_location:
+    page:
+      pdf_page_index: 45
+      pdf_page_number: 46
+      printed_page_label: '44'
+    bbox:
+    - 118.682
+    - 49.62
+    - 420.602
+    - 60.72
+  page_range:
+    pdf_page_index_start: 45
+    pdf_page_index_end: 47
+    pdf_page_number_start: 46
+    pdf_page_number_end: 48
+    printed_page_start: '44'
+    printed_page_end: '46'
+  outline: []
+  retrieval_plan:
+  - page:
+      pdf_page_index: 45
+      pdf_page_number: 46
+      printed_page_label: '44'
+    content_window:
+      start_at:
+        kind: heading
+        value: 1.5 COMPONENTS OF AN IMAGE PROCESSING SYSTEM
+      end_before: null
+    queries:
+    - +(1.5 COMPONENTS OF AN IMAGE PROCESSING SYSTEM) +(printed page 44) --QDF=0
+    - Components of an Image Processing System puts (e.g., digitizing and averaging video images at 30 frames/s) that the
+      typical main printed page 44 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '44'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: puts (e.g., digitizing and averaging video images at 30 frames/s) that the typical main
+      verification_mode: text_or_visual
+    - kind: contains_heading
+      value: 1.5 COMPONENTS OF AN IMAGE PROCESSING SYSTEM
+      verification_mode: visual_required
+    coverage:
+      subheadings:
+      - 1.5 COMPONENTS OF AN IMAGE PROCESSING SYSTEM
+      figure_ids:
+      - '1.24'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 46
+      pdf_page_number: 47
+      printed_page_label: '45'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(ing processing; (2) on-line storage for relatively fast recall; and (3) archival storage,) +(printed page 45) --QDF=0
+    - Components of an Image Processing System ing processing; (2) on-line storage for relatively fast recall; and (3) archival
+      storage, printed page 45 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '45'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: ing processing; (2) on-line storage for relatively fast recall; and (3) archival storage,
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids:
+      - '1.24'
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 47
+      pdf_page_number: 48
+      printed_page_label: '46'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(Although the coverage of these topics in this chapter was necessarily incomplete due to space limitations, it should)
+      +(printed page 46) --QDF=0
+    - Components of an Image Processing System Although the coverage of these topics in this chapter was necessarily incomplete
+      due to space limitations, it should printed page 46 --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '46'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: Although the coverage of these topics in this chapter was necessarily incomplete due to space limitations, it
+        should
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  learning_units: []

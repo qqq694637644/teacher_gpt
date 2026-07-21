@@ -147,7 +147,7 @@ components:
     EvidenceRequirement:
       type: object
       additionalProperties: false
-      required: [kind, value]
+      required: [kind, value, verification_mode]
       properties:
         kind:
           type: string
@@ -163,10 +163,13 @@ components:
         value:
           type: string
           minLength: 1
+        verification_mode:
+          type: string
+          enum: [visual_required, text_or_visual]
     PageCoverage:
       type: object
       additionalProperties: false
-      required: [subheadings, figure_ids, equation_ids, example_ids]
+      required: [subheadings, figure_ids, equation_ids, example_ids, table_ids]
       properties:
         subheadings:
           type: array
@@ -178,6 +181,9 @@ components:
           type: array
           items: {type: string}
         example_ids:
+          type: array
+          items: {type: string}
+        table_ids:
           type: array
           items: {type: string}
     PageRetrievalStep:

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from typing import Annotated, Literal
 
 from pydantic import Field, model_validator
@@ -11,6 +12,7 @@ from app.models.locator import (
     EvidenceRequirement,
     HeadingLocation,
     PageCoverage,
+    PageClassification,
     PageRange,
     PageReference,
     StrictModel,
@@ -23,7 +25,6 @@ class ManifestRetrievalStep(StrictModel):
     queries: Annotated[list[str], Field(min_length=2, max_length=4)]
     required_evidence: Annotated[list[EvidenceRequirement], Field(min_length=1)]
     coverage: PageCoverage = Field(default_factory=PageCoverage)
-    verified: Literal[True]
 
 
 class LearningUnitManifest(StrictModel):
@@ -75,6 +76,7 @@ class BookManifest(StrictModel):
     index_status: Literal["complete"]
     book: BookMetadata
     pages: list[PageReference]
+    page_classifications: list[PageClassification]
     printed_sections: Annotated[list[PrintedSectionManifest], Field(min_length=1)]
 
     @model_validator(mode="after")
@@ -86,6 +88,11 @@ class BookManifest(StrictModel):
         labels = [page.printed_page_label for page in self.pages]
         if len(labels) != len(set(labels)):
             raise ValueError("manifest printed_page_label values must be unique")
+        if len(self.page_classifications) != len(self.pages):
+            raise ValueError("manifest page_classifications must contain every PDF page")
+        for expected, classification in zip(self.pages, self.page_classifications, strict=True):
+            if classification.page != expected:
+                raise ValueError("manifest page classifications must use canonical pages in order")
 
         ids = [section.printed_section_id for section in self.printed_sections]
         if len(ids) != len(set(ids)):
@@ -99,4 +106,27 @@ class BookManifest(StrictModel):
                 )
             if parent is not None and not section.printed_section_id.startswith(f"{parent}."):
                 raise ValueError("printed section id must be nested under its parent id")
+        return self
+
+
+class PrintedSectionManifestShard(StrictModel):
+    data_version: Literal["3"] = DATA_VERSION
+    printed_sections: Annotated[list[PrintedSectionManifest], Field(min_length=1)]
+
+
+class BookManifestPackage(StrictModel):
+    data_version: Literal["3"] = DATA_VERSION
+    index_status: Literal["complete"]
+    book: BookMetadata
+    pages: list[PageReference]
+    page_classifications: list[PageClassification]
+    printed_section_shards: Annotated[list[str], Field(min_length=1)]
+
+    @model_validator(mode="after")
+    def validate_shards(self) -> BookManifestPackage:
+        if len(self.printed_section_shards) != len(set(self.printed_section_shards)):
+            raise ValueError("printed_section_shards must be unique")
+        for name in self.printed_section_shards:
+            if re.fullmatch(r"manifest\.sections\.\d{2}\.yaml", name) is None:
+                raise ValueError(f"invalid manifest shard filename: {name}")
         return self

@@ -11,7 +11,12 @@ from tools.extract_pdf_candidates import (
     is_heading_line,
     page_references,
 )
-from tools.compile_locator_index import manifest_heading_keys, verify_heading_coverage
+from tools.compile_locator_index import (
+    _iter_manifest_steps,
+    manifest_heading_keys,
+    verify_heading_coverage,
+    verify_manifest_anchors,
+)
 from tools.validate_prompt import validate_prompt
 from tests.helpers import complete_manifest
 
@@ -111,3 +116,103 @@ def test_complete_manifest_must_cover_every_source_heading_candidate() -> None:
 
     with pytest.raises(ValueError, match="missing="):
         verify_heading_coverage(manifest, candidates[:-1])
+
+
+def _page_anchors_for_manifest(manifest):
+    heading_y = {}
+
+    def record_units(units):
+        for unit in units:
+            heading_y[(unit.source_location.page.pdf_page_index, unit.source_heading)] = (
+                unit.source_location.bbox[1]
+            )
+            record_units(unit.children)
+
+    for section in manifest.printed_sections:
+        heading_y[(section.source_location.page.pdf_page_index, section.source_heading)] = (
+            section.source_location.bbox[1]
+        )
+        record_units(section.learning_units)
+
+    anchors = [
+        {
+            "pdf_page_index": page.pdf_page_index,
+            "printed_page_label": page.printed_page_label,
+            "heading_records": [],
+            "text_records": [],
+            "figure_records": [],
+            "equation_records": [],
+            "example_records": [],
+            "table_records": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": [],
+            "normalized_text": "",
+            "running_header": "",
+        }
+        for page in manifest.pages
+    ]
+    for _section_id, _source_heading, steps in _iter_manifest_steps(manifest):
+        for step in steps:
+            anchor = anchors[step.page.pdf_page_index]
+            for heading in step.coverage.subheadings:
+                y = heading_y.get((step.page.pdf_page_index, heading), 50)
+                anchor["heading_records"].append({"text": heading, "bbox": [0, y, 1, y + 1]})
+            for evidence in step.required_evidence:
+                if evidence.kind in {"contains_heading", "contains_text"}:
+                    anchor["normalized_text"] += f" {evidence.value}"
+                if evidence.kind == "contains_text":
+                    anchor["text_records"].append({"text": evidence.value, "bbox": [0, 10, 1, 11]})
+                if evidence.kind == "contains_heading":
+                    y = heading_y.get((step.page.pdf_page_index, evidence.value), 50)
+                    anchor["heading_records"].append(
+                        {"text": evidence.value, "bbox": [0, y, 1, y + 1]}
+                    )
+    return anchors
+
+
+def test_source_anchor_verifier_rejects_wrong_figure_and_query() -> None:
+    manifest = complete_manifest()
+    anchors = _page_anchors_for_manifest(manifest)
+    raw = manifest.model_dump(mode="json")
+    step = raw["printed_sections"][1]["learning_units"][4]["retrieval_plan"][0]
+    step["coverage"]["figure_ids"] = ["99.99"]
+    step["queries"] = [
+        "completely wrong query printed page 100 --QDF=0",
+        "another wrong query printed page 100 --QDF=0",
+    ]
+    broken = type(manifest).model_validate(raw)
+
+    with pytest.raises(ValueError, match="coverage anchors do not exist"):
+        verify_manifest_anchors(broken, anchors)
+
+
+def test_source_anchor_verifier_rejects_unanchored_queries() -> None:
+    manifest = complete_manifest()
+    anchors = _page_anchors_for_manifest(manifest)
+    raw = manifest.model_dump(mode="json")
+    step = raw["printed_sections"][1]["learning_units"][4]["retrieval_plan"][0]
+    step["queries"] = [
+        "completely wrong query printed page 100 --QDF=0",
+        "another wrong query printed page 100 --QDF=0",
+    ]
+    broken = type(manifest).model_validate(raw)
+
+    with pytest.raises(ValueError, match="no source-PDF anchor"):
+        verify_manifest_anchors(broken, anchors)
+
+
+def test_source_anchor_verifier_rejects_coverage_outside_content_window() -> None:
+    manifest = complete_manifest()
+    anchors = _page_anchors_for_manifest(manifest)
+    raw = manifest.model_dump(mode="json")
+    step = raw["printed_sections"][1]["learning_units"][0]["retrieval_plan"][0]
+    step["coverage"]["figure_ids"] = ["9.9"]
+    page_anchor = anchors[step["page"]["pdf_page_index"]]
+    page_anchor["figure_ids"].append("9.9")
+    page_anchor["figure_records"].append({"id": "9.9", "bbox": [0, 50, 1, 51]})
+    broken = type(manifest).model_validate(raw)
+
+    with pytest.raises(ValueError, match="coverage anchors do not exist"):
+        verify_manifest_anchors(broken, anchors)
