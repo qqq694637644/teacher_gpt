@@ -2,8 +2,6 @@ from pathlib import Path
 from tempfile import NamedTemporaryFile
 
 from fastapi import APIRouter, Depends, File, HTTPException, Query, UploadFile, status
-from fastapi.responses import FileResponse
-
 from app.core.config import Settings, get_settings
 from app.core.errors import BookNotFoundError, FigureNotFoundError, SectionNotFoundError
 from app.core.security import require_api_key
@@ -17,7 +15,6 @@ from app.models.schemas import (
     SectionPack,
     TocResponse,
 )
-from app.services.assets import AssetService
 from app.services.book_service import BookService
 from app.services.figure_service import FigureService
 from app.services.pdf_ingestor import PDFIngestor
@@ -41,10 +38,6 @@ def figure_service() -> FigureService:
 
 def search_service() -> SearchService:
     return SearchService()
-
-
-def asset_service() -> AssetService:
-    return AssetService()
 
 
 @router.get("/health", response_model=HealthResponse, tags=["system"], operation_id="healthCheck")
@@ -283,7 +276,6 @@ async def upload_and_ingest_book(
     title: str | None = Query(default=None),
     author: str | None = Query(default=None),
     overwrite: bool = Query(default=False),
-    render_pages: bool = Query(default=True),
     file: UploadFile = File(...),
 ) -> IngestResponse:
     if not file.filename.lower().endswith(".pdf"):
@@ -298,24 +290,8 @@ async def upload_and_ingest_book(
             pdf_path=tmp_path,
             title=title,
             author=author,
-            render_pages=render_pages,
             overwrite=overwrite,
         )
         return IngestResponse(**result)
     finally:
         tmp_path.unlink(missing_ok=True)
-
-
-@router.get("/assets/books/{book_id}/{kind}/{filename}", include_in_schema=False)
-async def get_asset(
-    book_id: str,
-    kind: str,
-    filename: str,
-    settings: Settings = Depends(get_settings),
-    service: AssetService = Depends(asset_service),
-    _auth: None = Depends(require_api_key) if get_settings().protect_assets else None,
-) -> FileResponse:
-    # In most GPT deployments, assets are public so ChatGPT can load images from returned URLs.
-    path = service.resolve_asset_path(book_id, kind, filename)
-    media_type = "image/png" if path.suffix.lower() == ".png" else "application/octet-stream"
-    return FileResponse(path, media_type=media_type)

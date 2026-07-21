@@ -1,3 +1,6 @@
+import pytest
+from pydantic import ValidationError
+
 from app.core.config import Settings
 from app.services.section_service import SectionService
 from app.services.storage import JsonStore
@@ -22,10 +25,16 @@ def _write_pack(store: JsonStore, book_id: str) -> None:
                 {"type": "paragraph", "text": "abcdefghij", "page_number": 1},
                 {"type": "paragraph", "text": "klmnopqrst", "page_number": 1},
             ],
-            "figures": [],
+            "figures": [
+                {
+                    "figure_id": "1.1",
+                    "caption": "Figure metadata.",
+                    "page_number": 1,
+                }
+            ],
             "equations": [],
             "examples": [],
-            "source_pages": [{"page_index": 0, "page_number": 1, "image_url": None}],
+            "source_pages": [{"page_index": 0, "page_number": 1}],
             "previous_sections": [],
             "next_sections": [],
             "prerequisites": [],
@@ -35,7 +44,7 @@ def _write_pack(store: JsonStore, book_id: str) -> None:
 
 
 def test_get_section_marks_partial_text_window(tmp_path):
-    settings = Settings(data_dir=tmp_path, public_base_url="http://testserver")
+    settings = Settings(data_dir=tmp_path)
     store = JsonStore(settings)
     _write_pack(store, "book")
 
@@ -51,7 +60,7 @@ def test_get_section_marks_partial_text_window(tmp_path):
 
 
 def test_get_section_continues_from_next_offset(tmp_path):
-    settings = Settings(data_dir=tmp_path, public_base_url="http://testserver")
+    settings = Settings(data_dir=tmp_path)
     store = JsonStore(settings)
     _write_pack(store, "book")
 
@@ -66,7 +75,7 @@ def test_get_section_continues_from_next_offset(tmp_path):
 
 
 def test_get_section_without_text_limit_is_complete(tmp_path):
-    settings = Settings(data_dir=tmp_path, public_base_url="http://testserver")
+    settings = Settings(data_dir=tmp_path)
     store = JsonStore(settings)
     _write_pack(store, "book")
 
@@ -78,3 +87,15 @@ def test_get_section_without_text_limit_is_complete(tmp_path):
     assert pack.content.returned_chars == 20
     assert pack.content.next_offset is None
     assert "".join(block.text for block in pack.text_blocks) == "abcdefghijklmnopqrst"
+
+
+def test_get_section_rejects_legacy_image_fields(tmp_path):
+    settings = Settings(data_dir=tmp_path)
+    store = JsonStore(settings)
+    _write_pack(store, "book")
+    raw = store.load_json("book", "section_packs/1.1.json")
+    raw["source_pages"][0]["image_url"] = "https://legacy.example/page.png"
+    store.save_json("book", "section_packs/1.1.json", raw)
+
+    with pytest.raises(ValidationError, match="image_url"):
+        SectionService(store=store).get_section("book", "1.1")

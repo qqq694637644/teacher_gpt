@@ -49,7 +49,7 @@ paths:
           description: Maximum section text characters to return. Use content.next_offset to continue.
       responses:
         '200':
-          description: Section pack including text, figures, equations, examples, pages, and context.
+          description: Section pack including text, figure captions, equations, examples, pages, and context.
           content:
             application/json:
               schema:
@@ -95,7 +95,7 @@ paths:
           description: Figure id, e.g. 2.27.
       responses:
         '200':
-          description: Figure metadata, caption, related sections, and image/page URL.
+          description: Figure metadata, caption, nearby text context, and related sections.
           content:
             application/json:
               schema:
@@ -160,6 +160,11 @@ components:
         page_end:
           type: integer
           nullable: true
+        parent_section_id:
+          type: string
+          nullable: true
+        section_type:
+          type: string
     SectionPack:
       type: object
       properties:
@@ -221,9 +226,6 @@ components:
                 type: integer
               page_number:
                 type: integer
-              image_url:
-                type: string
-                nullable: true
         previous_sections:
           type: array
           items:
@@ -281,12 +283,6 @@ components:
           nullable: true
         page_number:
           type: integer
-          nullable: true
-        image_url:
-          type: string
-          nullable: true
-        page_image_url:
-          type: string
           nullable: true
         context:
           type: string

@@ -33,7 +33,6 @@ def main() -> None:
     parser.add_argument("--author", default=None, help="Book author")
     parser.add_argument("--aliases", default=None, help="Optional JSON mapping aliases, e.g. {'2.4.4':'2.4.5'}")
     parser.add_argument("--overwrite", action="store_true", help="Delete existing book folder before ingesting")
-    parser.add_argument("--no-render", action="store_true", help="Do not render page images")
     args = parser.parse_args()
 
     aliases = None
@@ -45,7 +44,6 @@ def main() -> None:
         pdf_path=args.pdf,
         title=args.title,
         author=args.author,
-        render_pages=not args.no_render,
         overwrite=args.overwrite,
         aliases=aliases,
     )
