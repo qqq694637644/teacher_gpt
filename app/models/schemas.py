@@ -1,14 +1,18 @@
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 
-class HealthResponse(BaseModel):
+class ApiModel(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+
+class HealthResponse(ApiModel):
     status: str = "ok"
     default_book_id: str
 
 
-class BookMeta(BaseModel):
+class BookMeta(ApiModel):
     book_id: str
     title: str | None = None
     author: str | None = None
@@ -20,33 +24,35 @@ class BookMeta(BaseModel):
     notes: str | None = None
 
 
-class TocItem(BaseModel):
+class TocItem(ApiModel):
     section_id: str
     title: str
     level: int = 1
     page_start: int | None = None
     page_end: int | None = None
+    parent_section_id: str | None = None
+    section_type: Literal["official", "derived", "alias", "manual"] = "official"
     children: list["TocItem"] = Field(default_factory=list)
 
 
-class TocResponse(BaseModel):
+class TocResponse(ApiModel):
     book_id: str
     title: str | None = None
     items: list[TocItem]
 
 
-class SourcePage(BaseModel):
+class SourcePage(ApiModel):
     page_index: int = Field(description="0-based PDF page index")
     page_number: int = Field(description="1-based PDF page number")
 
 
-class TextBlock(BaseModel):
+class TextBlock(ApiModel):
     type: Literal["paragraph", "heading", "note"] = "paragraph"
     text: str
     page_number: int | None = None
 
 
-class FigureRef(BaseModel):
+class FigureRef(ApiModel):
     figure_id: str
     label: str | None = None
     caption: str | None = None
@@ -55,21 +61,21 @@ class FigureRef(BaseModel):
     context: str | None = None
 
 
-class EquationRef(BaseModel):
+class EquationRef(ApiModel):
     equation_id: str
     text: str | None = None
     page_number: int | None = None
     context: str | None = None
 
 
-class ExampleRef(BaseModel):
+class ExampleRef(ApiModel):
     example_id: str
     title: str | None = None
     page_number: int | None = None
     text: str | None = None
 
 
-class SectionContentMeta(BaseModel):
+class SectionContentMeta(ApiModel):
     content_status: Literal["complete", "partial"] = "complete"
     is_truncated: bool = False
     text_offset: int = Field(default=0, ge=0)
@@ -79,7 +85,7 @@ class SectionContentMeta(BaseModel):
     next_offset: int | None = Field(default=None, ge=0)
 
 
-class SectionPack(BaseModel):
+class SectionPack(ApiModel):
     book_id: str
     section_id: str
     resolved_section_id: str | None = Field(default=None)
@@ -101,7 +107,7 @@ class SectionPack(BaseModel):
     warnings: list[str] = Field(default_factory=list)
 
 
-class SearchResult(BaseModel):
+class SearchResult(ApiModel):
     section_id: str
     title: str
     page_start: int | None = None
@@ -110,13 +116,13 @@ class SearchResult(BaseModel):
     snippet: str | None = None
 
 
-class SearchResponse(BaseModel):
+class SearchResponse(ApiModel):
     book_id: str
     query: str
     results: list[SearchResult]
 
 
-class PrerequisitesResponse(BaseModel):
+class PrerequisitesResponse(ApiModel):
     book_id: str
     section_id: str
     prerequisites: list[SearchResult]
@@ -127,7 +133,7 @@ class FigureResponse(FigureRef):
     related_section_ids: list[str] = Field(default_factory=list)
 
 
-class IngestResponse(BaseModel):
+class IngestResponse(ApiModel):
     book_id: str
     title: str | None = None
     page_count: int

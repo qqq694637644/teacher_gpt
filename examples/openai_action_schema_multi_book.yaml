@@ -197,6 +197,11 @@ components:
         page_end:
           type: integer
           nullable: true
+        parent_section_id:
+          type: string
+          nullable: true
+        section_type:
+          type: string
     SectionPack:
       type: object
       properties:

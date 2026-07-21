@@ -1,6 +1,8 @@
 import json
 
 import fitz
+import pytest
+from pydantic import ValidationError
 
 from app.core.config import Settings
 from app.main import create_app
@@ -22,7 +24,7 @@ def test_openapi_has_no_image_transport_contract() -> None:
     assert "page_image_url" not in serialized
 
 
-def test_figure_service_drops_legacy_image_fields(tmp_path) -> None:
+def test_figure_service_rejects_legacy_image_fields(tmp_path) -> None:
     settings = Settings(data_dir=tmp_path)
     store = JsonStore(settings)
     store.save_json(
@@ -42,11 +44,8 @@ def test_figure_service_drops_legacy_image_fields(tmp_path) -> None:
         },
     )
 
-    payload = FigureService(store=store).get_figure("book", "Fig 1.1").model_dump()
-
-    assert payload["caption"] == "A figure caption."
-    assert payload["context"] == "Nearby textbook text."
-    assert LEGACY_IMAGE_KEYS.isdisjoint(payload)
+    with pytest.raises(ValidationError, match="image_url|page_image_url|image_path"):
+        FigureService(store=store).get_figure("book", "Fig 1.1")
 
 
 def test_ingestion_writes_text_metadata_without_image_assets(tmp_path) -> None:

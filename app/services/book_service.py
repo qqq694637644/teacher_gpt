@@ -23,11 +23,4 @@ class BookService:
 
     @staticmethod
     def _to_toc_item(item: dict) -> TocItem:
-        return TocItem(
-            section_id=item["section_id"],
-            title=item.get("title") or "",
-            level=item.get("level") or 1,
-            page_start=item.get("page_start"),
-            page_end=item.get("page_end"),
-            children=[],
-        )
+        return TocItem.model_validate({**item, "children": item.get("children", [])})
