@@ -38,7 +38,6 @@ class TocResponse(BaseModel):
 class SourcePage(BaseModel):
     page_index: int = Field(description="0-based PDF page index")
     page_number: int = Field(description="1-based PDF page number")
-    image_url: str | None = None
 
 
 class TextBlock(BaseModel):
@@ -53,8 +52,6 @@ class FigureRef(BaseModel):
     caption: str | None = None
     page_index: int | None = None
     page_number: int | None = None
-    image_url: str | None = None
-    page_image_url: str | None = None
     context: str | None = None
 
 

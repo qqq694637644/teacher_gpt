@@ -32,3 +32,6 @@ include = ["app*"]
 
 [tool.ruff]
 line-length = 100
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/*.py" = ["E402"]

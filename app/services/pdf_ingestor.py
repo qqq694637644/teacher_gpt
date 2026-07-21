@@ -46,7 +46,6 @@ class PDFIngestor:
     - section_packs/*.json
     - page_text.json
     - figure_map.json
-    - pages/page_XXXX.png
     """
 
     def __init__(self, settings: Settings | None = None):
@@ -60,7 +59,6 @@ class PDFIngestor:
         pdf_path: str | Path,
         title: str | None = None,
         author: str | None = None,
-        render_pages: bool = True,
         overwrite: bool = False,
         aliases: dict[str, str] | None = None,
     ) -> dict[str, Any]:
@@ -72,8 +70,6 @@ class PDFIngestor:
         if book_dir.exists() and overwrite:
             shutil.rmtree(book_dir)
         book_dir.mkdir(parents=True, exist_ok=True)
-        (book_dir / "pages").mkdir(exist_ok=True)
-        (book_dir / "figures").mkdir(exist_ok=True)
         (book_dir / "section_packs").mkdir(exist_ok=True)
 
         target_pdf = book_dir / "original.pdf"
@@ -84,7 +80,7 @@ class PDFIngestor:
         doc = fitz.open(target_pdf)
         try:
             page_count = doc.page_count
-            page_records = self._extract_pages(doc, book_id=book_id, render_pages=render_pages)
+            page_records = self._extract_pages(doc)
             official_sections = self._extract_official_sections(doc, page_count)
             if not official_sections:
                 warnings.append("No PDF outline or numbered headings were detected. Search still works by pages.")
@@ -133,28 +129,16 @@ class PDFIngestor:
         finally:
             doc.close()
 
-    def _extract_pages(self, doc: fitz.Document, *, book_id: str, render_pages: bool) -> list[dict[str, Any]]:
+    def _extract_pages(self, doc: fitz.Document) -> list[dict[str, Any]]:
         pages: list[dict[str, Any]] = []
-        book_dir = self.store.book_dir(book_id)
-        dpi = self.settings.render_dpi
-        matrix = fitz.Matrix(dpi / 72.0, dpi / 72.0)
         for page_index in range(doc.page_count):
             page = doc.load_page(page_index)
             text = normalize_text(page.get_text("text"))
-            image_rel = None
-            if render_pages:
-                image_name = f"page_{page_index + 1:04d}.png"
-                image_path = book_dir / "pages" / image_name
-                if not image_path.exists():
-                    pix = page.get_pixmap(matrix=matrix, alpha=False)
-                    pix.save(image_path)
-                image_rel = f"pages/{image_name}"
             pages.append(
                 {
                     "page_index": page_index,
                     "page_number": page_index + 1,
                     "text": text,
-                    "image_path": image_rel,
                 }
             )
         return pages
@@ -337,7 +321,6 @@ class PDFIngestor:
         figure_map: dict[str, Any] = {}
         for record in page_records:
             page_number = int(record["page_number"])
-            page_image_url = self._asset_url_from_rel_path(record.get("image_path"))
             for fig in extract_figures_from_page(record.get("text", "")):
                 fig_id = fig["figure_id"]
                 related = [s.section_id for s in sections if s.page_start <= page_number <= s.page_end]
@@ -347,9 +330,6 @@ class PDFIngestor:
                     "caption": fig.get("caption"),
                     "page_index": page_number - 1,
                     "page_number": page_number,
-                    "image_path": None,
-                    "image_url": None,
-                    "page_image_url": page_image_url,
                     "context": self._page_context_around(record.get("text", ""), f"FIGURE {fig_id}"),
                     "related_section_ids": related,
                 }
@@ -411,12 +391,10 @@ class PDFIngestor:
             paragraphs = split_paragraphs(section_text)
             source_pages = []
             for page_number in range(section.page_start, section.page_end + 1):
-                record = page_records[page_number - 1]
                 source_pages.append(
                     {
                         "page_index": page_number - 1,
                         "page_number": page_number,
-                        "image_url": self._asset_url_from_rel_path(record.get("image_path")),
                     }
                 )
             figures = [
@@ -486,14 +464,6 @@ class PDFIngestor:
             if idx > 0:
                 text = text[:idx]
         return normalize_text(text)
-
-    def _asset_url_from_rel_path(self, rel_path: str | None) -> str | None:
-        if not rel_path:
-            return None
-        # The caller will use the URL in a book-specific context, but the stored rel_path lacks book_id.
-        # During ingestion this helper is used only before book_id is needed in JSON. Final URLs are rebuilt
-        # by runtime services too, so this placeholder is overwritten there when necessary.
-        return None
 
     @staticmethod
     def _page_context_around(text: str, needle: str, radius: int = 650) -> str:

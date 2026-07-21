@@ -22,10 +22,25 @@ def _write_pack(store: JsonStore, book_id: str) -> None:
                 {"type": "paragraph", "text": "abcdefghij", "page_number": 1},
                 {"type": "paragraph", "text": "klmnopqrst", "page_number": 1},
             ],
-            "figures": [],
+            "figures": [
+                {
+                    "figure_id": "1.1",
+                    "caption": "Legacy figure metadata.",
+                    "page_number": 1,
+                    "image_url": "https://legacy.example/figure.png",
+                    "page_image_url": "https://legacy.example/page.png",
+                    "image_path": "figures/figure.png",
+                }
+            ],
             "equations": [],
             "examples": [],
-            "source_pages": [{"page_index": 0, "page_number": 1, "image_url": None}],
+            "source_pages": [
+                {
+                    "page_index": 0,
+                    "page_number": 1,
+                    "image_url": "https://legacy.example/page.png",
+                }
+            ],
             "previous_sections": [],
             "next_sections": [],
             "prerequisites": [],
@@ -35,7 +50,7 @@ def _write_pack(store: JsonStore, book_id: str) -> None:
 
 
 def test_get_section_marks_partial_text_window(tmp_path):
-    settings = Settings(data_dir=tmp_path, public_base_url="http://testserver")
+    settings = Settings(data_dir=tmp_path)
     store = JsonStore(settings)
     _write_pack(store, "book")
 
@@ -48,10 +63,15 @@ def test_get_section_marks_partial_text_window(tmp_path):
     assert pack.content.next_offset == 12
     assert "".join(block.text for block in pack.text_blocks) == "abcdefghijkl"
     assert pack.warnings
+    payload = pack.model_dump()
+    assert "image_url" not in payload["source_pages"][0]
+    assert "image_url" not in payload["figures"][0]
+    assert "page_image_url" not in payload["figures"][0]
+    assert "image_path" not in payload["figures"][0]
 
 
 def test_get_section_continues_from_next_offset(tmp_path):
-    settings = Settings(data_dir=tmp_path, public_base_url="http://testserver")
+    settings = Settings(data_dir=tmp_path)
     store = JsonStore(settings)
     _write_pack(store, "book")
 
@@ -66,7 +86,7 @@ def test_get_section_continues_from_next_offset(tmp_path):
 
 
 def test_get_section_without_text_limit_is_complete(tmp_path):
-    settings = Settings(data_dir=tmp_path, public_base_url="http://testserver")
+    settings = Settings(data_dir=tmp_path)
     store = JsonStore(settings)
     _write_pack(store, "book")
 

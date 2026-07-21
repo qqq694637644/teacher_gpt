@@ -5,7 +5,6 @@
 它的职责是：
 
 - 离线解析 PDF 教材。
-- 渲染每页图片。
 - 抽取每页文本。
 - 建立目录、小节、派生小节、图、公式、例题索引。
 - 给 OpenAI 自定义 GPT 的 Actions 提供接口。
@@ -15,7 +14,7 @@
 
 ```text
 GPT = 教学对话层 + 工具调用层
-后端 = 教材解析层 + 章节定位层 + 图文检索层
+后端 = 教材解析层 + 章节定位层 + 文本与图注检索层
 ```
 
 ---
@@ -38,7 +37,6 @@ teaching_gpt_backend/
 │   │   ├── section_service.py
 │   │   ├── figure_service.py
 │   │   ├── search_service.py
-│   │   ├── assets.py
 │   │   └── storage.py
 │   └── utils/text.py
 ├── scripts/
@@ -73,7 +71,6 @@ cp .env.example .env
 ```text
 TEACHING_GPT_API_KEY=你的长随机密钥
 TEACHING_GPT_DEFAULT_BOOK_ID=dip4e
-TEACHING_GPT_PUBLIC_BASE_URL=http://localhost:8000
 ```
 
 启动：
@@ -109,7 +106,6 @@ python scripts/ingest_book.py \
 - `book_id` 是这本书的稳定 ID。
 - `--aliases` 用于解决“用户习惯小节号”和“自动派生小节号”不一致的问题。
 - 对于你前面举的例子，`examples/aliases_dip4e.json` 把 `2.4.4` 映射到自动派生的 `2.4.5`，用于兼容“2.4.4 = Image Interpolation”的讲解习惯。
-- 如果你不想渲染页图，可以加 `--no-render`，但教学 GPT 通常需要图片，所以建议保留渲染。
 
 导入后会生成：
 
@@ -122,9 +118,7 @@ data/books/dip4e/
 ├── section_aliases.json
 ├── figure_map.json
 ├── page_text.json
-├── section_packs/
-├── pages/
-└── figures/
+└── section_packs/
 ```
 
 ---
@@ -158,7 +152,7 @@ curl -H "Authorization: Bearer abc123" \
   "http://localhost:8000/gpt/search?q=image%20interpolation"
 ```
 
-获取图：
+获取图注与附近文本：
 
 ```bash
 curl -H "Authorization: Bearer abc123" \
@@ -266,7 +260,8 @@ GET /gpt/sections/{section_id}
     {
       "figure_id": "2.27",
       "caption": "...",
-      "page_image_url": "https://.../assets/books/dip4e/pages/page_0078.png"
+      "page_number": 78,
+      "context": "..."
     }
   ],
   "equations": [
@@ -276,7 +271,7 @@ GET /gpt/sections/{section_id}
     {"example_id": "2.4", "title": "..."}
   ],
   "source_pages": [
-    {"page_number": 78, "image_url": "https://..."}
+    {"page_index": 77, "page_number": 78}
   ],
   "previous_sections": ["..."],
   "next_sections": ["..."],
@@ -311,17 +306,16 @@ MVP 可以直接用 JSON 文件存储。后面数据量变大时，建议迁移�
 
 ```text
 PostgreSQL：book / section / figure metadata
-对象存储：PDF / page image / figure image
+对象存储：原始 PDF（如需保留）
 pgvector 或 Qdrant：语义检索
 Redis：热门小节缓存
-CDN：页面图片和图像
 ```
 
-图片 URL 对 GPT 很重要。生产环境推荐：
+GPT Action 返回纯文本结构化数据，不通过后端传输图片。生产环境推荐：
 
 ```text
 GPT Action 接口需要鉴权
-图片资产可以用 CDN 或签名 URL
+图相关回答仅依据图注、页码和附近文本
 ```
 
 ---
@@ -332,7 +326,6 @@ GPT Action 接口需要鉴权
 
 - PDF 导入
 - 页面文本抽取
-- 页面图片渲染
 - TOC 提取
 - 派生小节提取
 - 小节包生成
@@ -347,7 +340,6 @@ GPT Action 接口需要鉴权
 
 需要后续增强的点：
 
-- 更精确的 figure 自动裁剪。
 - 更强的公式 OCR / LaTeX 提取。
 - 向量检索。
 - 用户学习进度。
