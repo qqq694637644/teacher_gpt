@@ -4,7 +4,12 @@ import re
 from difflib import SequenceMatcher
 
 _SECTION_ID_RE = re.compile(r"^(?P<id>\d+(?:\.\d+)*)(?:\s+|\t+)(?P<title>.+?)\s*$")
-_FIGURE_RE = re.compile(r"\b(?:FIGURE|Figure|Fig\.)\s+(?P<id>\d+(?:\.\d+)+)\b[:\s]*(?P<caption>.*)")
+_FIGURE_RE = re.compile(
+    r"^\s*(?:FIGURE|Figure)\s+(?P<id>\d+(?:\.\d+)+)\b[:\s]*(?P<caption>.*)"
+)
+_FIGURE_REFERENCE_RE = re.compile(
+    r"\b(?:FIGURE|Figure|Fig\.)\s+(?P<id>\d+(?:\.\d+)+)\b"
+)
 _EQUATION_RE = re.compile(r"\((?P<id>\d+\s*-\s*\d+[a-zA-Z]?)\)")
 _EXAMPLE_RE = re.compile(r"\b(?:EXAMPLE|Example)\s+(?P<id>\d+(?:\.\d+)*)\s*:?\s*(?P<title>.*)")
 
@@ -16,6 +21,10 @@ _SKIP_UPPER_HEADINGS = {
     "CONTENTS",
     "PREFACE",
 }
+
+_LOGICAL_DIAGRAM_LABEL_RE = re.compile(
+    r"(?:\b[A-Z]\d+\b.*\b(?:AND|OR|XOR|NOT)\b|\bNOT\s*\([A-Z]\d*\))"
+)
 
 
 def normalize_text(text: str) -> str:
@@ -66,6 +75,8 @@ def is_probable_upper_heading(line: str) -> bool:
         return False
     if parse_section_heading(line):
         return False
+    if _LOGICAL_DIAGRAM_LABEL_RE.search(line):
+        return False
     letters = [c for c in line if c.isalpha()]
     if len(letters) < 4:
         return False
@@ -78,6 +89,34 @@ def is_probable_upper_heading(line: str) -> bool:
     if len(line.split()) < 2 and len(line) < 12:
         return False
     return True
+
+
+def is_probable_heading_text(line: str) -> bool:
+    """Check heading-like text shape before layout evidence is considered."""
+    line = clean_title(line)
+    if not line:
+        return False
+    if len(line) < 4 or len(line) > 100:
+        return False
+    if re.match(r"^(FIGURE|TABLE|EXAMPLE)\b", line, re.IGNORECASE):
+        return False
+    if parse_section_heading(line):
+        return False
+    if _LOGICAL_DIAGRAM_LABEL_RE.search(line):
+        return False
+    if line.endswith((".", ",", ";", "?", "!")):
+        return False
+
+    words = re.findall(r"[A-Za-z]+(?:-[A-Za-z]+)*", line)
+    if len(words) < 2 or len(words) > 12:
+        return False
+    letters = [c for c in line if c.isalpha()]
+    if len(letters) < 4:
+        return False
+
+    upper_ratio = sum(1 for c in letters if c.isupper()) / len(letters)
+    title_ratio = sum(1 for word in words if word[:1].isupper()) / len(words)
+    return upper_ratio >= 0.82 or title_ratio >= 0.6
 
 
 def split_paragraphs(text: str, max_chars: int = 2200) -> list[str]:
@@ -109,7 +148,7 @@ def extract_figures_from_page(text: str) -> list[dict[str, str]]:
     figures: list[dict[str, str]] = []
     lines = [line.strip() for line in normalize_text(text).splitlines() if line.strip()]
     for idx, line in enumerate(lines):
-        match = _FIGURE_RE.search(line)
+        match = _FIGURE_RE.match(line)
         if not match:
             continue
         caption = match.group("caption").strip()
@@ -117,7 +156,11 @@ def extract_figures_from_page(text: str) -> list[dict[str, str]]:
         for follow in lines[idx + 1 : idx + 5]:
             if _FIGURE_RE.search(follow) or _EXAMPLE_RE.search(follow):
                 break
-            if parse_section_heading(follow) or is_probable_upper_heading(follow):
+            if (
+                parse_section_heading(follow)
+                or is_probable_upper_heading(follow)
+                or is_probable_heading_text(follow)
+            ):
                 break
             # Keep short continuation lines; captions in PDFs are often split.
             if len(follow) <= 260:
@@ -131,6 +174,16 @@ def extract_figures_from_page(text: str) -> list[dict[str, str]]:
             }
         )
     return figures
+
+
+def extract_figure_references(text: str) -> list[str]:
+    """Return explicit prose references while ignoring figure-caption headers."""
+    result: list[str] = []
+    for line in normalize_text(text).splitlines():
+        if _FIGURE_RE.match(line):
+            continue
+        result.extend(match.group("id") for match in _FIGURE_REFERENCE_RE.finditer(line))
+    return list(dict.fromkeys(result))
 
 
 def extract_equations_from_text(text: str, page_number: int | None = None) -> list[dict[str, str | int | None]]:

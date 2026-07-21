@@ -3,7 +3,8 @@ from pathlib import Path
 from typing import Any
 
 from app.core.config import Settings, get_settings
-from app.core.errors import BookNotFoundError
+from app.core.data_version import CURRENT_DATA_VERSION
+from app.core.errors import BookNotFoundError, DataVersionError
 
 
 class JsonStore:
@@ -37,6 +38,15 @@ class JsonStore:
                 return default
             raise FileNotFoundError(str(path))
         return json.loads(path.read_text(encoding="utf-8"))
+
+    def require_current_version(self, book_id: str) -> None:
+        meta = self.load_json(book_id, "book_meta.json")
+        actual = str(meta.get("version") or "missing")
+        if actual != CURRENT_DATA_VERSION:
+            raise DataVersionError(
+                f"Book {book_id} uses data version {actual}; expected {CURRENT_DATA_VERSION}. "
+                "Re-ingest the PDF with --overwrite."
+            )
 
     def save_json(self, book_id: str, relative_path: str, data: Any) -> Path:
         path = self.ensure_book_dir(book_id) / relative_path
