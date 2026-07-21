@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "teaching-gpt-backend"
-version = "0.1.0"
-description = "A FastAPI backend for one-textbook-per-GPT teaching assistants."
+version = "3.0.0"
+description = "A strict page-by-page PDF locator API for one textbook GPT."
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name = "Teaching GPT Backend" }]
@@ -14,7 +14,6 @@ dependencies = [
   "uvicorn[standard]>=0.27,<1.0",
   "pydantic>=2.6,<3.0",
   "pydantic-settings>=2.2,<3.0",
-  "python-multipart>=0.0.9,<1.0",
   "PyMuPDF>=1.23,<2.0",
   "PyYAML>=6.0,<7.0"
 ]

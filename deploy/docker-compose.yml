@@ -6,9 +6,6 @@ services:
     ports:
       - "8000:8000"
     environment:
-      TEACHING_GPT_DATA_DIR: /app/data
-      TEACHING_GPT_DEFAULT_BOOK_ID: dip4e
+      TEACHING_GPT_LOCATOR_INDEX_PATH: /app/catalog/dip4e/compiled_locator_index.json
       TEACHING_GPT_API_KEY: change-me-to-a-long-random-secret
       TEACHING_GPT_REQUIRE_API_KEY: "true"
-    volumes:
-      - ../data:/app/data

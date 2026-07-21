@@ -1,6 +1,4 @@
-from fastapi import Depends, Header, HTTPException, status
-
-from app.core.config import Settings, get_settings
+from fastapi import Header, HTTPException, Request, status
 
 
 def _extract_token(authorization: str | None, x_api_key: str | None) -> str | None:
@@ -15,11 +13,11 @@ def _extract_token(authorization: str | None, x_api_key: str | None) -> str | No
 
 
 async def require_api_key(
+    request: Request,
     authorization: str | None = Header(default=None, alias="Authorization"),
     x_api_key: str | None = Header(default=None, alias="X-API-Key"),
-    settings: Settings = Depends(get_settings),
 ) -> None:
-    """FastAPI dependency for protected GPT Action and admin endpoints."""
+    settings = request.app.state.settings
     if not settings.require_api_key:
         return
 

@@ -32,6 +32,7 @@ Digital Image ProcessingRafael.pdf
 物理页总数：1022
 PDF 标题：Digital Image Processing, 4e
 作者：Rafael C. Gonzalez
+SHA-256：7b2b48ed87b454970d0916e1dbd7a5160e33d28db0dcdeba647b61eb5d3b850b
 ```
 
 PDF 内置页面标签规则：
@@ -55,7 +56,9 @@ printed_page_label: "105"
 
 三套编号不是靠运行时猜偏移量得到，而是从 PDF 页面标签读取并在构建阶段固化。
 
-### 2.2 2.6.6 的真实身份
+使用已实现的版面候选规则检查整本 PDF，得到 102 个带教材印刷编号的标题和 434 个标题候选。其中两个候选是正式章节开始前的作者姓名，不归属任何印刷章节；其余 432 个候选必须逐项出现在 Manifest。候选数量不是学习单元数量；候选必须经过结构树审核后才能进入 Manifest。
+
+### 2.2 统一编号规则
 
 PDF 正文只印刷了父节编号：
 
@@ -63,30 +66,57 @@ PDF 正文只印刷了父节编号：
 2.6 Introduction to the Basic Mathematical Tools Used in Digital Image Processing
 ```
 
-`SPATIAL OPERATIONS` 是该节中的未编号标题。PDF 并没有印刷 `2.6.6`。
+`SPATIAL OPERATIONS` 是该节中的未编号标题。PDF 并没有印刷 `2.6.5`。
 
-因此 Version 3 明确定义：
+Version 3 使用四层统一规则：
 
 ```text
-section_id = 项目为学习流程定义的稳定学习单元 ID
-printed_parent_section_id = 教材实际印刷的父节编号
-source_heading = 教材页面中的原始标题
-source_heading_numbered = 原始标题是否带印刷编号
+一级：教材印刷编号原样保留，例如 2、2.6、3.4。
+二级：印刷父节下的同级学习标题按 PDF 出现顺序编号，例如 2.6.1、2.6.2。
+三级：学习单元内部子标题递归编号，例如 2.6.5.1、2.6.5.2。
+四级及以后：继续递归追加序号，例如 2.6.5.3.1。
 ```
 
-Spatial Operations 的权威记录应为：
+Manifest 只保存有序标题树，不允许手写项目学习单元 ID。编译器根据兄弟列表顺序和树深度生成 ID。同一兄弟列表的 `source_level` 必须相同，子节点必须比父节点恰好深一层。
+
+Spatial Operations 的编译结果应为：
 
 ```json
 {
-  "section_id": "2.6.6",
+  "section_kind": "learning_unit",
+  "section_id": "2.6.5",
   "title": "Spatial Operations",
-  "printed_parent_section_id": "2.6",
+  "printed_section_id": "2.6",
+  "parent_section_id": "2.6",
   "source_heading": "SPATIAL OPERATIONS",
-  "source_heading_numbered": false
+  "source_heading_numbered": false,
+  "source_location": {
+    "page": {
+      "pdf_page_index": 99,
+      "pdf_page_number": 100,
+      "printed_page_label": "98"
+    },
+    "bbox": [120.504, 543.32, 232.896, 554.42]
+  },
+  "source_level": 1,
+  "hierarchy_depth": 3
 }
 ```
 
-不得再声称 `2.6.6` 是教材正式印刷编号，也不得由解析器根据标题出现顺序自动生成该 ID。该 ID 由人工审核的 Manifest 明确定义。
+其内部标题编译为 `2.6.5.1` 至 `2.6.5.4`。下一个同级学习单元为 `2.6.6`（Vector and Matrix Operations），子标题不能占用该编号。不得声称 `2.6.5` 是教材印刷编号。
+
+真实 PDF 中 2.6 的顶层顺序已通过版面候选校验：
+
+```text
+2.6.1 Elementwise versus Matrix Operations
+2.6.2 Linear versus Nonlinear Operations
+2.6.3 Arithmetic Operations
+2.6.4 Set and Logical Operations
+2.6.5 Spatial Operations
+2.6.6 Vector and Matrix Operations
+2.6.7 Image Transforms
+2.6.8 Image Intensities as Random Variables
+```
 
 ### 2.3 Spatial Operations 的页面边界
 
@@ -371,6 +401,8 @@ contains_heading
 contains_figure
 contains_equation
 contains_example
+contains_table
+contains_text
 running_header_contains
 ```
 
@@ -428,7 +460,7 @@ running_header_contains
 
 - 每一物理页一个 step；
 - `sequence` 从 1 连续递增；
-- `page_role` 只能是 `start`、`body` 或 `end`；
+- `page_role` 只能是 `start`、`body`、`end` 或单页专用的 `single`；
 - `content_window.start_at` 指定当前学习单元在该页从哪个可见锚点开始，包含该锚点；
 - `content_window.end_before` 指定在该页遇到哪个可见锚点前结束，不包含该锚点；
 - 完整覆盖整页时两个字段都为 `null`；
@@ -444,11 +476,14 @@ running_header_contains
 {
   "data_version": "3",
   "book_id": "dip4e",
-  "section_id": "2.6.6",
+  "section_kind": "learning_unit",
+  "section_id": "2.6.5",
+  "printed_section_id": "2.6",
+  "parent_section_id": "2.6",
   "title": "Spatial Operations",
-  "printed_parent_section_id": "2.6",
   "source_heading": "SPATIAL OPERATIONS",
   "source_heading_numbered": false,
+  "hierarchy_depth": 3,
   "page_range": {
     "pdf_page_index_start": 99,
     "pdf_page_index_end": 107,
@@ -484,7 +519,7 @@ Section Locator 不包含：
 
 ---
 
-## 8. 2.6.6 的最终逐页计划
+## 8. 2.6.5 的最终逐页计划
 
 该计划作为 Version 3 首个验收样本。
 
@@ -634,7 +669,7 @@ start_at null
 end_before heading VECTOR AND MATRIX OPERATIONS
 ```
 
-最后一步同时验证当前学习单元的结束边界。GPT 只讲到该标题之前，不把 Vector and Matrix Operations 内容并入 2.6.6。
+最后一步同时验证当前学习单元的结束边界。GPT 只讲到该标题之前，不把 Vector and Matrix Operations 内容并入 2.6.5。
 
 ---
 
@@ -719,6 +754,8 @@ operationId: healthCheck
 - 1022 个物理页全部有 PageReference；
 - PDF 页码和标签与源 PDF 一致；
 - 所有学习单元 ID 唯一；
+- Manifest 中每个标题的文本、页面、bbox、编号状态和印刷父节与 PDF 候选逐项相同；
+- PDF 中归属于印刷章节的每个标题候选都被 Manifest 覆盖，且 Manifest 不得额外增加标题；
 - 所有学习单元页面范围有效；
 - retrieval plan 覆盖范围内每一页；
 - step sequence 连续；
@@ -818,14 +855,15 @@ index 1020 → 1019
 index 1021 → Back Cover
 ```
 
-### 13.2 2.6.6 身份
+### 13.2 2.6.5 身份
 
 必须返回：
 
 ```text
-section_id = 2.6.6
+section_id = 2.6.5
 title = Spatial Operations
-printed_parent_section_id = 2.6
+printed_section_id = 2.6
+parent_section_id = 2.6
 source_heading_numbered = false
 printed pages = 98–106
 ```

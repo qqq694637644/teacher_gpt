@@ -4,6 +4,7 @@
 This is useful if you deploy the service and want to compare it with the curated
 schemas under examples/.
 """
+
 import sys
 from pathlib import Path as _Path
 
