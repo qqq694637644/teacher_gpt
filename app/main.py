@@ -1,4 +1,6 @@
+import logging
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -7,7 +9,10 @@ from fastapi.responses import JSONResponse, RedirectResponse
 from app.api.routes import router
 from app.core.config import Settings, get_settings
 from app.core.errors import SectionNotFoundError
+from app.core.security import api_key_fingerprint
 from app.repositories.locator_repository import LocatorRepository
+
+logger = logging.getLogger("uvicorn.error")
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:
@@ -16,6 +21,19 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @asynccontextmanager
     async def lifespan(app: FastAPI):
         app.state.settings = resolved_settings
+        env_file_path = Path(".env").resolve()
+        logger.info(
+            "API auth configuration: require_api_key=%s api_key_loaded=%s "
+            "api_key_is_default=%s api_key_length=%s api_key_fingerprint=%s "
+            "env_file=%s env_file_exists=%s",
+            resolved_settings.require_api_key,
+            bool(resolved_settings.api_key),
+            resolved_settings.api_key == "change-me",
+            len(resolved_settings.api_key),
+            api_key_fingerprint(resolved_settings.api_key),
+            env_file_path,
+            env_file_path.is_file(),
+        )
         app.state.locator_repository = LocatorRepository.load(resolved_settings.locator_index_path)
         yield
 
