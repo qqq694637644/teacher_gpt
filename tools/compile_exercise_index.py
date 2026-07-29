@@ -35,6 +35,7 @@ from app.services.exercise_index_compiler import ExerciseIndexCompiler, Referenc
 from tools.compile_locator_index import _boundary_record, _evidence_exists
 from tools.extract_pdf_candidates import (
     COLUMN_SPLIT_RATIO,
+    HEADING_COLOR,
     ExerciseCandidate,
     clean_text,
     extract_exercise_candidates,
@@ -55,6 +56,21 @@ ANCHOR_EVIDENCE_KINDS = {
     "example": "contains_example",
     "table": "contains_table",
 }
+
+
+def _anchor_priority(
+    kind: str,
+    page_index: int,
+    record: dict[str, Any],
+) -> tuple[int, int, float, float]:
+    colors = set(record.get("colors", []))
+    fonts = set(record.get("font_names", []))
+    if kind in {"figure", "table", "example"}:
+        preferred = HEADING_COLOR in colors and any(font.startswith("Futura") for font in fonts)
+    else:
+        preferred = HEADING_COLOR in colors
+    bbox = record.get("bbox", [0.0, 0.0, 0.0, 0.0])
+    return (0 if preferred else 1, page_index, float(bbox[1]), float(bbox[0]))
 
 
 def sha256_json(payload: dict[str, Any]) -> str:
@@ -386,7 +402,10 @@ def build_reference_plans(
         ]
         if not matches:
             raise ValueError(f"cannot resolve {kind} reference {target_id}")
-        page_index, _record = min(matches, key=lambda item: item[0])
+        page_index, _record = min(
+            matches,
+            key=lambda item: _anchor_priority(kind, item[0], item[1]),
+        )
         page = manifest.pages[page_index]
         evidence_kind = ANCHOR_EVIDENCE_KINDS[kind]
         plans[(kind, target_id)] = [
@@ -524,11 +543,17 @@ def main() -> None:
         "raw_reference_retrieval_step_count": (
             compiler.reference_plan_stats.raw_reference_step_count
         ),
-        "pruned_context_reference_count": (
-            compiler.reference_plan_stats.pruned_context_reference_count
+        "selected_context_reference_count": (
+            compiler.reference_plan_stats.selected_context_reference_count
         ),
-        "duplicate_reference_page_count": (
-            compiler.reference_plan_stats.duplicate_reference_page_count
+        "execution_reference_retrieval_step_count_before_merge": (
+            compiler.reference_plan_stats.execution_reference_step_count_before_merge
+        ),
+        "coalesced_reference_step_count": (
+            compiler.reference_plan_stats.coalesced_reference_step_count
+        ),
+        "same_page_distinct_window_step_count": (
+            compiler.reference_plan_stats.same_page_distinct_window_step_count
         ),
         "deduplicated_reference_retrieval_step_count": (
             compiler.reference_plan_stats.deduplicated_reference_step_count

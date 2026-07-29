@@ -188,6 +188,7 @@
           "kind": "figure",
           "target_id": "9.3",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -564,10 +565,19 @@
             "printed_page_label": "692"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "9.2"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "9.3"
+            }
           },
           "queries": [
+            "+(text Sketch the result of eroding Fig. 9.3(a) with each) +(printed page 692) --QDF=0",
+            "+(exercise 9.2) +(printed page 692) --QDF=0",
+            "+(exercise 9.3) +(printed page 692) --QDF=0",
             "+(9.2) +(printed page 692) --QDF=0",
             "+(Sketch the result of eroding Fig. 9.3(a) with each) +(printed page 692) --QDF=0"
           ],
@@ -607,6 +617,7 @@
           "kind": "figure",
           "target_id": "9.3",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -650,6 +661,7 @@
           "kind": "exercise",
           "target_id": "9.2",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1179,6 +1191,7 @@
           "kind": "equation",
           "target_id": "9-3",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1338,10 +1351,19 @@
             "printed_page_label": "693"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "9.12"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "9.13"
+            }
           },
           "queries": [
+            "+(text Show that this deﬁnition is equivalent to the) +(printed page 693) --QDF=0",
+            "+(exercise 9.12) +(printed page 693) --QDF=0",
+            "+(exercise 9.13) +(printed page 693) --QDF=0",
             "+(9.12) +(printed page 693) --QDF=0",
             "+(Show that this deﬁnition is equivalent to the) +(printed page 693) --QDF=0"
           ],
@@ -1383,6 +1405,7 @@
           "kind": "equation",
           "target_id": "9-3",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1426,6 +1449,7 @@
           "kind": "exercise",
           "target_id": "9.12",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1600,6 +1624,7 @@
           "kind": "equation",
           "target_id": "9-6",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1759,10 +1784,19 @@
             "printed_page_label": "693"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "9.14"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "9.15"
+            }
           },
           "queries": [
+            "+(text Show that this deﬁnition and the deﬁnition in) +(printed page 693) --QDF=0",
+            "+(exercise 9.14) +(printed page 693) --QDF=0",
+            "+(exercise 9.15) +(printed page 693) --QDF=0",
             "+(9.14) +(printed page 693) --QDF=0",
             "+(Show that this deﬁnition and the deﬁnition in) +(printed page 693) --QDF=0"
           ],
@@ -1804,6 +1838,7 @@
           "kind": "equation",
           "target_id": "9-6",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1847,6 +1882,7 @@
           "kind": "exercise",
           "target_id": "9.14",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2021,6 +2057,7 @@
           "kind": "equation",
           "target_id": "9-9",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2203,6 +2240,7 @@
           "kind": "figure",
           "target_id": "9.8",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2246,6 +2284,7 @@
           "kind": "figure",
           "target_id": "9.9",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2549,6 +2588,7 @@
           "kind": "equation",
           "target_id": "9-14",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2677,8 +2717,8 @@
           },
           "queries": [
             "+(equation 9-12) +(printed page 645) --QDF=0",
-            "+(9-12) +(equation) +(printed page 645) --QDF=0",
             "+(figure 9.8) +(printed page 645) --QDF=0",
+            "+(9-12) +(equation) +(printed page 645) --QDF=0",
             "+(9.8) +(figure) +(printed page 645) --QDF=0"
           ],
           "required_evidence": [
@@ -2712,6 +2752,7 @@
           "kind": "equation",
           "target_id": "9-12",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2755,6 +2796,7 @@
           "kind": "figure",
           "target_id": "9.8",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2876,10 +2918,19 @@
             "printed_page_label": "694"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "9.21"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "9.22"
+            }
           },
           "queries": [
+            "+(text Eq. (9-12) is valid. (Hint: Start with this equa-) +(printed page 694) --QDF=0",
+            "+(exercise 9.21) +(printed page 694) --QDF=0",
+            "+(exercise 9.22) +(printed page 694) --QDF=0",
             "+(9.21) +(printed page 694) --QDF=0",
             "+(Eq. (9-12) is valid. (Hint: Start with this equa-) +(printed page 694) --QDF=0"
           ],
@@ -2921,6 +2972,7 @@
           "kind": "exercise",
           "target_id": "9.21",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3128,22 +3180,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 650,
-            "pdf_page_number": 651,
-            "printed_page_label": "649"
+            "pdf_page_index": 651,
+            "pdf_page_number": 652,
+            "printed_page_label": "650"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 9.12) +(printed page 649) --QDF=0",
-            "+(9.12) +(figure) +(printed page 649) --QDF=0"
+            "+(figure 9.12) +(printed page 650) --QDF=0",
+            "+(9.12) +(figure) +(printed page 650) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "649",
+              "value": "650",
               "verification_mode": "visual_required"
             },
             {
@@ -3166,27 +3218,28 @@
           "kind": "figure",
           "target_id": "9.12",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 650,
-                "pdf_page_number": 651,
-                "printed_page_label": "649"
+                "pdf_page_index": 651,
+                "pdf_page_number": 652,
+                "printed_page_label": "650"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 9.12) +(printed page 649) --QDF=0",
-                "+(9.12) +(figure) +(printed page 649) --QDF=0"
+                "+(figure 9.12) +(printed page 650) --QDF=0",
+                "+(9.12) +(figure) +(printed page 650) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "649",
+                  "value": "650",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -3282,22 +3335,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 650,
-            "pdf_page_number": 651,
-            "printed_page_label": "649"
+            "pdf_page_index": 651,
+            "pdf_page_number": 652,
+            "printed_page_label": "650"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 9.12) +(printed page 649) --QDF=0",
-            "+(9.12) +(figure) +(printed page 649) --QDF=0"
+            "+(figure 9.12) +(printed page 650) --QDF=0",
+            "+(9.12) +(figure) +(printed page 650) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "649",
+              "value": "650",
               "verification_mode": "visual_required"
             },
             {
@@ -3320,27 +3373,28 @@
           "kind": "figure",
           "target_id": "9.12",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 650,
-                "pdf_page_number": 651,
-                "printed_page_label": "649"
+                "pdf_page_index": 651,
+                "pdf_page_number": 652,
+                "printed_page_label": "650"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 9.12) +(printed page 649) --QDF=0",
-                "+(9.12) +(figure) +(printed page 649) --QDF=0"
+                "+(figure 9.12) +(printed page 650) --QDF=0",
+                "+(9.12) +(figure) +(printed page 650) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "649",
+                  "value": "650",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -3499,17 +3553,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 80,
             "pdf_page_number": 81,
             "printed_page_label": "79"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss several important relationships between pixels in a digital) +(printed page 79) --QDF=0",
+            "+(heading 2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "+(2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "Some Basic Relationships Between Pixels In this section, we discuss several important relationships between pixels in a digital printed page 79 --QDF=0"
           ],
@@ -3544,7 +3603,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 81,
             "pdf_page_number": 82,
@@ -3555,6 +3614,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "+((c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "Some Basic Relationships Between Pixels (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued printed page 80 --QDF=0"
           ],
@@ -3582,7 +3642,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 82,
             "pdf_page_number": 83,
@@ -3593,6 +3653,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "+(because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "Some Basic Relationships Between Pixels because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide printed page 81 --QDF=0"
           ],
@@ -3618,7 +3679,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 83,
             "pdf_page_number": 84,
@@ -3629,6 +3690,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "+(intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "Some Basic Relationships Between Pixels intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges printed page 82 --QDF=0"
           ],
@@ -3660,7 +3722,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 84,
             "pdf_page_number": 85,
@@ -3668,9 +3730,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            }
           },
           "queries": [
+            "+(text length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "+(length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
             "Some Basic Relationships Between Pixels length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of printed page 83 --QDF=0"
           ],
@@ -3705,6 +3772,7 @@
           "kind": "section",
           "target_id": "2.5",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3991,17 +4059,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 80,
             "pdf_page_number": 81,
             "printed_page_label": "79"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss several important relationships between pixels in a digital) +(printed page 79) --QDF=0",
+            "+(heading 2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "+(2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "Some Basic Relationships Between Pixels In this section, we discuss several important relationships between pixels in a digital printed page 79 --QDF=0"
           ],
@@ -4036,7 +4109,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 81,
             "pdf_page_number": 82,
@@ -4047,6 +4120,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "+((c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "Some Basic Relationships Between Pixels (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued printed page 80 --QDF=0"
           ],
@@ -4074,7 +4148,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 82,
             "pdf_page_number": 83,
@@ -4085,6 +4159,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "+(because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "Some Basic Relationships Between Pixels because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide printed page 81 --QDF=0"
           ],
@@ -4110,7 +4185,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 83,
             "pdf_page_number": 84,
@@ -4121,6 +4196,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "+(intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "Some Basic Relationships Between Pixels intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges printed page 82 --QDF=0"
           ],
@@ -4152,7 +4228,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 84,
             "pdf_page_number": 85,
@@ -4160,9 +4236,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            }
           },
           "queries": [
+            "+(text length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "+(length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
             "Some Basic Relationships Between Pixels length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of printed page 83 --QDF=0"
           ],
@@ -4197,6 +4278,7 @@
           "kind": "section",
           "target_id": "2.5",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -4483,17 +4565,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 80,
             "pdf_page_number": 81,
             "printed_page_label": "79"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss several important relationships between pixels in a digital) +(printed page 79) --QDF=0",
+            "+(heading 2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "+(2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "Some Basic Relationships Between Pixels In this section, we discuss several important relationships between pixels in a digital printed page 79 --QDF=0"
           ],
@@ -4528,7 +4615,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 81,
             "pdf_page_number": 82,
@@ -4539,6 +4626,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "+((c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "Some Basic Relationships Between Pixels (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued printed page 80 --QDF=0"
           ],
@@ -4566,7 +4654,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 82,
             "pdf_page_number": 83,
@@ -4577,6 +4665,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "+(because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "Some Basic Relationships Between Pixels because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide printed page 81 --QDF=0"
           ],
@@ -4602,7 +4691,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 83,
             "pdf_page_number": 84,
@@ -4613,6 +4702,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "+(intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "Some Basic Relationships Between Pixels intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges printed page 82 --QDF=0"
           ],
@@ -4644,7 +4734,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 84,
             "pdf_page_number": 85,
@@ -4652,9 +4742,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            }
           },
           "queries": [
+            "+(text length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "+(length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
             "Some Basic Relationships Between Pixels length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of printed page 83 --QDF=0"
           ],
@@ -4689,6 +4784,7 @@
           "kind": "section",
           "target_id": "2.5",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5053,42 +5149,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 93,
-            "pdf_page_number": 94,
-            "printed_page_label": "92"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(equation 2-40) +(printed page 92) --QDF=0",
-            "+(2-40) +(equation) +(printed page 92) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "92",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_equation",
-              "value": "2-40",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 654,
             "pdf_page_number": 655,
             "printed_page_label": "653"
@@ -5120,6 +5180,42 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 93,
+            "pdf_page_number": 94,
+            "printed_page_label": "92"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 2-40) +(printed page 92) --QDF=0",
+            "+(2-40) +(equation) +(printed page 92) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "92",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "2-40",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -5127,6 +5223,7 @@
           "kind": "equation",
           "target_id": "9-18",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5170,6 +5267,7 @@
           "kind": "equation",
           "target_id": "2-40",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5288,42 +5386,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 654,
-            "pdf_page_number": 655,
-            "printed_page_label": "653"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(figure 9.15) +(printed page 653) --QDF=0",
-            "+(9.15) +(figure) +(printed page 653) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "653",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_figure",
-              "value": "9.15",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 655,
             "pdf_page_number": 656,
             "printed_page_label": "654"
@@ -5357,7 +5419,7 @@
           }
         },
         {
-          "sequence": 3,
+          "sequence": 2,
           "page_role": "single",
           "page": {
             "pdf_page_index": 656,
@@ -5391,6 +5453,42 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 654,
+            "pdf_page_number": 655,
+            "printed_page_label": "653"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 9.15) +(printed page 653) --QDF=0",
+            "+(9.15) +(figure) +(printed page 653) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "653",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "9.15",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -5398,6 +5496,7 @@
           "kind": "equation",
           "target_id": "9-19",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5441,6 +5540,7 @@
           "kind": "figure",
           "target_id": "9.17",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5484,6 +5584,7 @@
           "kind": "figure",
           "target_id": "9.15",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5640,6 +5741,7 @@
           "kind": "equation",
           "target_id": "9-19",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5829,22 +5931,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 659,
-            "pdf_page_number": 660,
-            "printed_page_label": "658"
+            "pdf_page_index": 660,
+            "pdf_page_number": 661,
+            "printed_page_label": "659"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 9.21) +(printed page 658) --QDF=0",
-            "+(9.21) +(figure) +(printed page 658) --QDF=0"
+            "+(figure 9.21) +(printed page 659) --QDF=0",
+            "+(9.21) +(figure) +(printed page 659) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "658",
+              "value": "659",
               "verification_mode": "visual_required"
             },
             {
@@ -5903,27 +6005,28 @@
           "kind": "figure",
           "target_id": "9.21",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 659,
-                "pdf_page_number": 660,
-                "printed_page_label": "658"
+                "pdf_page_index": 660,
+                "pdf_page_number": 661,
+                "printed_page_label": "659"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 9.21) +(printed page 658) --QDF=0",
-                "+(9.21) +(figure) +(printed page 658) --QDF=0"
+                "+(figure 9.21) +(printed page 659) --QDF=0",
+                "+(9.21) +(figure) +(printed page 659) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "658",
+                  "value": "659",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -5946,6 +6049,7 @@
           "kind": "figure",
           "target_id": "9.22",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -6054,22 +6158,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 655,
-            "pdf_page_number": 656,
-            "printed_page_label": "654"
+            "pdf_page_index": 656,
+            "pdf_page_number": 657,
+            "printed_page_label": "655"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 9.18) +(printed page 654) --QDF=0",
-            "+(9.18) +(figure) +(printed page 654) --QDF=0"
+            "+(figure 9.18) +(printed page 655) --QDF=0",
+            "+(9.18) +(figure) +(printed page 655) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "654",
+              "value": "655",
               "verification_mode": "visual_required"
             },
             {
@@ -6092,27 +6196,28 @@
           "kind": "figure",
           "target_id": "9.18",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 655,
-                "pdf_page_number": 656,
-                "printed_page_label": "654"
+                "pdf_page_index": 656,
+                "pdf_page_number": 657,
+                "printed_page_label": "655"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 9.18) +(printed page 654) --QDF=0",
-                "+(9.18) +(figure) +(printed page 654) --QDF=0"
+                "+(figure 9.18) +(printed page 655) --QDF=0",
+                "+(9.18) +(figure) +(printed page 655) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "654",
+                  "value": "655",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -6206,17 +6311,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 653,
             "pdf_page_number": 654,
             "printed_page_label": "652"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "9.5 SOME BASIC MORPHOLOGICAL ALGORITHMS"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text practical uses of morphology. When dealing with binary images, one of the principal) +(printed page 652) --QDF=0",
+            "+(heading 9.5 SOME BASIC MORPHOLOGICAL ALGORITHMS) +(printed page 652) --QDF=0",
             "+(9.5 SOME BASIC MORPHOLOGICAL ALGORITHMS) +(printed page 652) --QDF=0",
             "Some Basic Morphological Algorithms practical uses of morphology. When dealing with binary images, one of the principal printed page 652 --QDF=0"
           ],
@@ -6253,7 +6363,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 654,
             "pdf_page_number": 655,
@@ -6264,6 +6374,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text when working with images, we show foreground pixels (1’s) in white and background pixels (0’s) in) +(printed page 653) --QDF=0",
             "+(when working with images, we show foreground pixels (1’s) in white and background pixels (0’s) in) +(printed page 653) --QDF=0",
             "Some Basic Morphological Algorithms when working with images, we show foreground pixels (1’s) in white and background pixels (0’s) in printed page 653 --QDF=0"
           ],
@@ -6299,7 +6410,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 655,
             "pdf_page_number": 656,
@@ -6310,6 +6421,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text thresholding into two levels a scene containing polished spheres (e.g., ball bearings). The dark circular) +(printed page 654) --QDF=0",
             "+(thresholding into two levels a scene containing polished spheres (e.g., ball bearings). The dark circular) +(printed page 654) --QDF=0",
             "Some Basic Morphological Algorithms thresholding into two levels a scene containing polished spheres (e.g., ball bearings). The dark circular printed page 654 --QDF=0"
           ],
@@ -6343,7 +6455,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 656,
             "pdf_page_number": 657,
@@ -6354,6 +6466,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text automated image analysis applications. Let A be a set of foreground pixels consist-) +(printed page 655) --QDF=0",
             "+(automated image analysis applications. Let A be a set of foreground pixels consist-) +(printed page 655) --QDF=0",
             "Some Basic Morphological Algorithms automated image analysis applications. Let A be a set of foreground pixels consist- printed page 655 --QDF=0"
           ],
@@ -6386,7 +6499,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 657,
             "pdf_page_number": 658,
@@ -6397,6 +6510,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text image of a chicken breast that contains bone fragments. It is important to be able to detect such foreign) +(printed page 656) --QDF=0",
             "+(image of a chicken breast that contains bone fragments. It is important to be able to detect such foreign) +(printed page 656) --QDF=0",
             "Some Basic Morphological Algorithms image of a chicken breast that contains bone fragments. It is important to be able to detect such foreign printed page 656 --QDF=0"
           ],
@@ -6430,7 +6544,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 658,
             "pdf_page_number": 659,
@@ -6441,6 +6555,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text needed, further characterization (such as shape) is possible using the techniques discussed in Chapter 11.) +(printed page 657) --QDF=0",
             "+(needed, further characterization (such as shape) is possible using the techniques discussed in Chapter 11.) +(printed page 657) --QDF=0",
             "Some Basic Morphological Algorithms needed, further characterization (such as shape) is possible using the techniques discussed in Chapter 11. printed page 657 --QDF=0"
           ],
@@ -6470,7 +6585,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 659,
             "pdf_page_number": 660,
@@ -6481,6 +6596,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text at its center. As before, the × entries indicate “don’t care” elements. Recall that the) +(printed page 658) --QDF=0",
             "+(at its center. As before, the × entries indicate “don’t care” elements. Recall that the) +(printed page 658) --QDF=0",
             "Some Basic Morphological Algorithms at its center. As before, the × entries indicate “don’t care” elements. Recall that the printed page 658 --QDF=0"
           ],
@@ -6511,7 +6627,7 @@
         },
         {
           "sequence": 8,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 660,
             "pdf_page_number": 661,
@@ -6522,6 +6638,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text show that no set points lie outside these lines, indicating that the set is convex. By) +(printed page 659) --QDF=0",
             "+(show that no set points lie outside these lines, indicating that the set is convex. By) +(printed page 659) --QDF=0",
             "Some Basic Morphological Algorithms show that no set points lie outside these lines, indicating that the set is convex. By printed page 659 --QDF=0"
           ],
@@ -6549,7 +6666,7 @@
         },
         {
           "sequence": 9,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 661,
             "pdf_page_number": 662,
@@ -6560,6 +6677,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text The process is to thin A by one pass with B1, then thin the result with one pass of B2,) +(printed page 660) --QDF=0",
             "+(The process is to thin A by one pass with B1, then thin the result with one pass of B2,) +(printed page 660) --QDF=0",
             "Some Basic Morphological Algorithms The process is to thin A by one pass with B1, then thin the result with one pass of B2, printed page 660 --QDF=0"
           ],
@@ -6597,7 +6715,7 @@
         },
         {
           "sequence": 10,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 662,
             "pdf_page_number": 663,
@@ -6608,6 +6726,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text for thickening is seldom used in practice. Instead, the usual procedure is to thin the) +(printed page 661) --QDF=0",
             "+(for thickening is seldom used in practice. Instead, the usual procedure is to thin the) +(printed page 661) --QDF=0",
             "Some Basic Morphological Algorithms for thickening is seldom used in practice. Instead, the usual procedure is to thin the printed page 661 --QDF=0"
           ],
@@ -6638,7 +6757,7 @@
         },
         {
           "sequence": 11,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 663,
             "pdf_page_number": 664,
@@ -6649,6 +6768,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text k times. K in E q. (9-28) is the last iterative step before A erodes to an empty set. In) +(printed page 662) --QDF=0",
             "+(k times. K in E q. (9-28) is the last iterative step before A erodes to an empty set. In) +(printed page 662) --QDF=0",
             "Some Basic Morphological Algorithms k times. K in E q. (9-28) is the last iterative step before A erodes to an empty set. In printed page 662 --QDF=0"
           ],
@@ -6683,7 +6803,7 @@
         },
         {
           "sequence": 12,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 664,
             "pdf_page_number": 665,
@@ -6694,6 +6814,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text the given set. However, heuristic formulations (see Section 11.2) are needed if, as is usually the case, the) +(printed page 663) --QDF=0",
             "+(the given set. However, heuristic formulations (see Section 11.2) are needed if, as is usually the case, the) +(printed page 663) --QDF=0",
             "Some Basic Morphological Algorithms the given set. However, heuristic formulations (see Section 11.2) are needed if, as is usually the case, the printed page 663 --QDF=0"
           ],
@@ -6727,7 +6848,7 @@
         },
         {
           "sequence": 13,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 665,
             "pdf_page_number": 666,
@@ -6738,6 +6859,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text Finally, the last column shows reconstruction of set A which, according to Eq. (9-32), is the union of the) +(printed page 664) --QDF=0",
             "+(Finally, the last column shows reconstruction of set A which, according to Eq. (9-32), is the union of the) +(printed page 664) --QDF=0",
             "Some Basic Morphological Algorithms Finally, the last column shows reconstruction of set A which, according to Eq. (9-32), is the union of the printed page 664 --QDF=0"
           ],
@@ -6771,7 +6893,7 @@
         },
         {
           "sequence": 14,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 666,
             "pdf_page_number": 667,
@@ -6782,6 +6904,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text that any branch with three or less pixels is to be eliminated. Thinning of a set A, with) +(printed page 665) --QDF=0",
             "+(that any branch with three or less pixels is to be eliminated. Thinning of a set A, with) +(printed page 665) --QDF=0",
             "Some Basic Morphological Algorithms that any branch with three or less pixels is to be eliminated. Thinning of a set A, with printed page 665 --QDF=0"
           ],
@@ -6812,7 +6935,7 @@
         },
         {
           "sequence": 15,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 667,
             "pdf_page_number": 668,
@@ -6823,6 +6946,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text after each step. As in the case of region filling, this type of conditional dilation pre-) +(printed page 666) --QDF=0",
             "+(after each step. As in the case of region filling, this type of conditional dilation pre-) +(printed page 666) --QDF=0",
             "Some Basic Morphological Algorithms after each step. As in the case of region filling, this type of conditional dilation pre- printed page 666 --QDF=0"
           ],
@@ -6857,6 +6981,7 @@
           "kind": "section",
           "target_id": "9.5",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -7701,6 +7826,7 @@
           "kind": "equation",
           "target_id": "9-45",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -7858,6 +7984,7 @@
           "kind": "equation",
           "target_id": "9-44",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8045,17 +8172,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 668,
             "pdf_page_number": 669,
             "printed_page_label": "667"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "9.6 MORPHOLOGICAL RECONSTRUCTION"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text (as we do here), their practical implementation typically is based on more computationally efﬁcient algorithms) +(printed page 667) --QDF=0",
+            "+(heading 9.6 MORPHOLOGICAL RECONSTRUCTION) +(printed page 667) --QDF=0",
             "+(9.6 MORPHOLOGICAL RECONSTRUCTION) +(printed page 667) --QDF=0",
             "Morphological Reconstruction (as we do here), their practical implementation typically is based on more computationally efﬁcient algorithms printed page 667 --QDF=0"
           ],
@@ -8095,7 +8227,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 669,
             "pdf_page_number": 670,
@@ -8106,6 +8238,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text geodesic dilation of F with respect to G, iterated until stability is achieved; that is,) +(printed page 668) --QDF=0",
             "+(geodesic dilation of F with respect to G, iterated until stability is achieved; that is,) +(printed page 668) --QDF=0",
             "Morphological Reconstruction geodesic dilation of F with respect to G, iterated until stability is achieved; that is, printed page 668 --QDF=0"
           ],
@@ -8142,7 +8275,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 670,
             "pdf_page_number": 671,
@@ -8153,6 +8286,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text and erosion are duals with respect to set complementation (see Problem 9.42).) +(printed page 669) --QDF=0",
             "+(and erosion are duals with respect to set complementation (see Problem 9.42).) +(printed page 669) --QDF=0",
             "Morphological Reconstruction and erosion are duals with respect to set complementation (see Problem 9.42). printed page 669 --QDF=0"
           ],
@@ -8185,7 +8319,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 671,
             "pdf_page_number": 672,
@@ -8196,6 +8330,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text As you will see in Fig. 9.31, Eq. (9-44) can lead to some interesting results. Typically,) +(printed page 670) --QDF=0",
             "+(As you will see in Fig. 9.31, Eq. (9-44) can lead to some interesting results. Typically,) +(printed page 670) --QDF=0",
             "Morphological Reconstruction As you will see in Fig. 9.31, Eq. (9-44) can lead to some interesting results. Typically, printed page 670 --QDF=0"
           ],
@@ -8231,7 +8366,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 672,
             "pdf_page_number": 673,
@@ -8242,6 +8377,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text same structuring element, shown for comparison. (d) Result of opening by reconstruction.) +(printed page 671) --QDF=0",
             "+(same structuring element, shown for comparison. (d) Result of opening by reconstruction.) +(printed page 671) --QDF=0",
             "Morphological Reconstruction same structuring element, shown for comparison. (d) Result of opening by reconstruction. printed page 671 --QDF=0"
           ],
@@ -8274,7 +8410,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 673,
             "pdf_page_number": 674,
@@ -8285,6 +8421,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text used as a signal that partial objects are present in the field of view. As a final illustra-) +(printed page 672) --QDF=0",
             "+(used as a signal that partial objects are present in the field of view. As a final illustra-) +(printed page 672) --QDF=0",
             "Morphological Reconstruction used as a signal that partial objects are present in the field of view. As a final illustra- printed page 672 --QDF=0"
           ],
@@ -8319,7 +8456,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 674,
             "pdf_page_number": 675,
@@ -8327,9 +8464,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "9.7 SUMMARY OF MORPHOLOGICAL OPERATIONS ON BINARY IMAGES"
+            }
           },
           "queries": [
+            "+(text (9-48). If the task at hand were automated character recognition, having an image in) +(printed page 673) --QDF=0",
+            "+(heading 9.7 SUMMARY OF MORPHOLOGICAL OPERATIONS ON BINARY IMAGES) +(printed page 673) --QDF=0",
             "+((9-48). If the task at hand were automated character recognition, having an image in) +(printed page 673) --QDF=0",
             "Morphological Reconstruction (9-48). If the task at hand were automated character recognition, having an image in printed page 673 --QDF=0"
           ],
@@ -8374,10 +8516,19 @@
             "printed_page_label": "696"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "9.41"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "9.42"
+            }
           },
           "queries": [
+            "+(text element is symmetric about its origin, show that:) +(printed page 696) --QDF=0",
+            "+(exercise 9.41) +(printed page 696) --QDF=0",
+            "+(exercise 9.42) +(printed page 696) --QDF=0",
             "+(9.41) +(printed page 696) --QDF=0",
             "+(element is symmetric about its origin, show that:) +(printed page 696) --QDF=0"
           ],
@@ -8417,6 +8568,7 @@
           "kind": "section",
           "target_id": "9.6",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8752,6 +8904,7 @@
           "kind": "exercise",
           "target_id": "9.41",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -9028,17 +9181,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 675,
             "pdf_page_number": 676,
             "printed_page_label": "674"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "9.8 GRAYSCALE MORPHOLOGY"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text in this section, grayscale nonﬂat SEs are not used frequently in practice. Finally, we) +(printed page 674) --QDF=0",
+            "+(heading 9.8 GRAYSCALE MORPHOLOGY) +(printed page 674) --QDF=0",
             "+(9.8 GRAYSCALE MORPHOLOGY) +(printed page 674) --QDF=0",
             "Grayscale Morphology in this section, grayscale nonﬂat SEs are not used frequently in practice. Finally, we printed page 674 --QDF=0"
           ],
@@ -9077,7 +9235,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 676,
             "pdf_page_number": 677,
@@ -9088,6 +9246,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text size as I, with a 1 in each hole) +(printed page 675) --QDF=0",
             "+(size as I, with a 1 in each hole) +(printed page 675) --QDF=0",
             "Grayscale Morphology size as I, with a 1 in each hole printed page 675 --QDF=0"
           ],
@@ -9115,7 +9274,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 677,
             "pdf_page_number": 678,
@@ -9126,6 +9285,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text value of the iterative step af-) +(printed page 676) --QDF=0",
             "+(value of the iterative step af-) +(printed page 676) --QDF=0",
             "Grayscale Morphology value of the iterative step af- printed page 676 --QDF=0"
           ],
@@ -9153,7 +9313,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 678,
             "pdf_page_number": 679,
@@ -9164,6 +9324,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text I, but with all holes ﬁlled. See) +(printed page 677) --QDF=0",
             "+(I, but with all holes ﬁlled. See) +(printed page 677) --QDF=0",
             "Grayscale Morphology I, but with all holes ﬁlled. See printed page 677 --QDF=0"
           ],
@@ -9196,7 +9357,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 679,
             "pdf_page_number": 680,
@@ -9207,6 +9368,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text the eroded small white dots in Fig. 9.37(b), they still are easily visible in the dilated image. The reason is) +(printed page 678) --QDF=0",
             "+(the eroded small white dots in Fig. 9.37(b), they still are easily visible in the dilated image. The reason is) +(printed page 678) --QDF=0",
             "Grayscale Morphology the eroded small white dots in Fig. 9.37(b), they still are easily visible in the dilated image. The reason is printed page 678 --QDF=0"
           ],
@@ -9239,7 +9401,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 680,
             "pdf_page_number": 681,
@@ -9250,6 +9412,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text nonflat SEs. When all the elements of bN are constant (i.e., the SE is flat), Eqs. (9-51)) +(printed page 679) --QDF=0",
             "+(nonflat SEs. When all the elements of bN are constant (i.e., the SE is flat), Eqs. (9-51)) +(printed page 679) --QDF=0",
             "Grayscale Morphology nonflat SEs. When all the elements of bN are constant (i.e., the SE is flat), Eqs. (9-51) printed page 679 --QDF=0"
           ],
@@ -9285,7 +9448,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 681,
             "pdf_page_number": 682,
@@ -9296,6 +9459,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text As before, opening is simply the erosion of f by b, followed by a dilation of the result) +(printed page 680) --QDF=0",
             "+(As before, opening is simply the erosion of f by b, followed by a dilation of the result) +(printed page 680) --QDF=0",
             "Grayscale Morphology As before, opening is simply the erosion of f by b, followed by a dilation of the result printed page 680 --QDF=0"
           ],
@@ -9330,7 +9494,7 @@
         },
         {
           "sequence": 8,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 682,
             "pdf_page_number": 683,
@@ -9341,6 +9505,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text a disk of radius 5 (the small round black dots are larger than the small white dots, so a larger disk was) +(printed page 681) --QDF=0",
             "+(a disk of radius 5 (the small round black dots are larger than the small white dots, so a larger disk was) +(printed page 681) --QDF=0",
             "Grayscale Morphology a disk of radius 5 (the small round black dots are larger than the small white dots, so a larger disk was printed page 681 --QDF=0"
           ],
@@ -9372,7 +9537,7 @@
         },
         {
           "sequence": 9,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 683,
             "pdf_page_number": 684,
@@ -9383,6 +9548,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text tral light region is the object of interest, and that the smaller components are noise.) +(printed page 682) --QDF=0",
             "+(tral light region is the object of interest, and that the smaller components are noise.) +(printed page 682) --QDF=0",
             "Grayscale Morphology tral light region is the object of interest, and that the smaller components are noise. printed page 682 --QDF=0"
           ],
@@ -9415,7 +9581,7 @@
         },
         {
           "sequence": 10,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 684,
             "pdf_page_number": 685,
@@ -9426,6 +9592,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text where b is a suitable structuring element. The overall effect achieved by using this) +(printed page 683) --QDF=0",
             "+(where b is a suitable structuring element. The overall effect achieved by using this) +(printed page 683) --QDF=0",
             "Grayscale Morphology where b is a suitable structuring element. The overall effect achieved by using this printed page 683 --QDF=0"
           ],
@@ -9458,7 +9625,7 @@
         },
         {
           "sequence": 11,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 685,
             "pdf_page_number": 686,
@@ -9469,6 +9636,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text top-hat, respectively, are used frequently when referring to these two transformations.) +(printed page 684) --QDF=0",
             "+(top-hat, respectively, are used frequently when referring to these two transformations.) +(printed page 684) --QDF=0",
             "Grayscale Morphology top-hat, respectively, are used frequently when referring to these two transformations. printed page 684 --QDF=0"
           ],
@@ -9500,7 +9668,7 @@
         },
         {
           "sequence": 12,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 686,
             "pdf_page_number": 687,
@@ -9511,6 +9679,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text ground. The shading pattern is clear in this image. By subtracting this image from the) +(printed page 685) --QDF=0",
             "+(ground. The shading pattern is clear in this image. By subtracting this image from the) +(printed page 685) --QDF=0",
             "Grayscale Morphology ground. The shading pattern is clear in this image. By subtracting this image from the printed page 685 --QDF=0"
           ],
@@ -9540,7 +9709,7 @@
         },
         {
           "sequence": 13,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 687,
             "pdf_page_number": 688,
@@ -9551,6 +9720,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text as we discussed earlier, openings decrease the intensity of light features in an image.) +(printed page 686) --QDF=0",
             "+(as we discussed earlier, openings decrease the intensity of light features in an image.) +(printed page 686) --QDF=0",
             "Grayscale Morphology as we discussed earlier, openings decrease the intensity of light features in an image. printed page 686 --QDF=0"
           ],
@@ -9579,7 +9749,7 @@
         },
         {
           "sequence": 14,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 688,
             "pdf_page_number": 689,
@@ -9590,6 +9760,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text a disk with a radius of 30 pixels, shows that indeed this is the case. (The radius of the) +(printed page 687) --QDF=0",
             "+(a disk with a radius of 30 pixels, shows that indeed this is the case. (The radius of the) +(printed page 687) --QDF=0",
             "Grayscale Morphology a disk with a radius of 30 pixels, shows that indeed this is the case. (The radius of the printed page 687 --QDF=0"
           ],
@@ -9620,7 +9791,7 @@
         },
         {
           "sequence": 15,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 689,
             "pdf_page_number": 690,
@@ -9631,6 +9802,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text element. We see that the geodesic dilation of size 1 is obtained by first computing the) +(printed page 688) --QDF=0",
             "+(element. We see that the geodesic dilation of size 1 is obtained by first computing the) +(printed page 688) --QDF=0",
             "Grayscale Morphology element. We see that the geodesic dilation of size 1 is obtained by first computing the printed page 688 --QDF=0"
           ],
@@ -9665,7 +9837,7 @@
         },
         {
           "sequence": 16,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 690,
             "pdf_page_number": 691,
@@ -9676,6 +9848,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text In this example, we illustrate the use of grayscale reconstruction in several steps. The objective is to) +(printed page 689) --QDF=0",
             "+(In this example, we illustrate the use of grayscale reconstruction in several steps. The objective is to) +(printed page 689) --QDF=0",
             "Grayscale Morphology In this example, we illustrate the use of grayscale reconstruction in several steps. The objective is to printed page 689 --QDF=0"
           ],
@@ -9712,7 +9885,7 @@
         },
         {
           "sequence": 17,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 691,
             "pdf_page_number": 692,
@@ -9723,6 +9896,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text ing element consisting of a horizontal line 71 pixels long in the erosion. (c) Opening of (a) using the same SE.) +(printed page 690) --QDF=0",
             "+(ing element consisting of a horizontal line 71 pixels long in the erosion. (c) Opening of (a) using the same SE.) +(printed page 690) --QDF=0",
             "Grayscale Morphology ing element consisting of a horizontal line 71 pixels long in the erosion. (c) Opening of (a) using the same SE. printed page 690 --QDF=0"
           ],
@@ -9750,7 +9924,7 @@
         },
         {
           "sequence": 18,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 692,
             "pdf_page_number": 693,
@@ -9761,6 +9935,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text The morphological concepts and techniques introduced in this chapter constitute a powerful set of tools for extract-) +(printed page 691) --QDF=0",
             "+(The morphological concepts and techniques introduced in this chapter constitute a powerful set of tools for extract-) +(printed page 691) --QDF=0",
             "Grayscale Morphology The morphological concepts and techniques introduced in this chapter constitute a powerful set of tools for extract- printed page 691 --QDF=0"
           ],
@@ -9790,7 +9965,7 @@
         },
         {
           "sequence": 19,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 693,
             "pdf_page_number": 694,
@@ -9801,6 +9976,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text Solutions to the problems marked with an asterisk (*) are in the DIP4E Student Support Package (consult the book) +(printed page 692) --QDF=0",
             "+(Solutions to the problems marked with an asterisk (*) are in the DIP4E Student Support Package (consult the book) +(printed page 692) --QDF=0",
             "Grayscale Morphology Solutions to the problems marked with an asterisk (*) are in the DIP4E Student Support Package (consult the book printed page 692 --QDF=0"
           ],
@@ -9826,7 +10002,7 @@
         },
         {
           "sequence": 20,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 694,
             "pdf_page_number": 695,
@@ -9837,6 +10013,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (a) Show that the deﬁnition of dilation given in) +(printed page 693) --QDF=0",
             "+((a) Show that the deﬁnition of dilation given in) +(printed page 693) --QDF=0",
             "Grayscale Morphology (a) Show that the deﬁnition of dilation given in printed page 693 --QDF=0"
           ],
@@ -9866,7 +10043,7 @@
         },
         {
           "sequence": 21,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 695,
             "pdf_page_number": 696,
@@ -9877,6 +10054,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text ment shown in the lower right of the image. Sketch) +(printed page 694) --QDF=0",
             "+(ment shown in the lower right of the image. Sketch) +(printed page 694) --QDF=0",
             "Grayscale Morphology ment shown in the lower right of the image. Sketch printed page 694 --QDF=0"
           ],
@@ -9906,7 +10084,7 @@
         },
         {
           "sequence": 22,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 696,
             "pdf_page_number": 697,
@@ -9917,6 +10095,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text 9.33 Discuss what you would expect the result to be in) +(printed page 695) --QDF=0",
             "+(9.33 Discuss what you would expect the result to be in) +(printed page 695) --QDF=0",
             "Grayscale Morphology 9.33 Discuss what you would expect the result to be in printed page 695 --QDF=0"
           ],
@@ -9946,7 +10125,7 @@
         },
         {
           "sequence": 23,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 697,
             "pdf_page_number": 698,
@@ -9957,6 +10136,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text to extract them all. Suppose that you are given a) +(printed page 696) --QDF=0",
             "+(to extract them all. Suppose that you are given a) +(printed page 696) --QDF=0",
             "Grayscale Morphology to extract them all. Suppose that you are given a printed page 696 --QDF=0"
           ],
@@ -9987,7 +10167,7 @@
         },
         {
           "sequence": 24,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 698,
             "pdf_page_number": 699,
@@ -9998,6 +10178,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text ers be inspected by an imaging system. In this con-) +(printed page 697) --QDF=0",
             "+(ers be inspected by an imaging system. In this con-) +(printed page 697) --QDF=0",
             "Grayscale Morphology ers be inspected by an imaging system. In this con- printed page 697 --QDF=0"
           ],
@@ -10023,7 +10204,7 @@
         },
         {
           "sequence": 25,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 699,
             "pdf_page_number": 700,
@@ -10034,6 +10215,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text This page intentionally left blank) +(printed page 698) --QDF=0",
             "+(This page intentionally left blank) +(printed page 698) --QDF=0",
             "Grayscale Morphology This page intentionally left blank printed page 698 --QDF=0"
           ],
@@ -10063,6 +10245,7 @@
           "kind": "section",
           "target_id": "9.8",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -11505,22 +11688,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 688,
-            "pdf_page_number": 689,
-            "printed_page_label": "687"
+            "pdf_page_index": 689,
+            "pdf_page_number": 690,
+            "printed_page_label": "688"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 9.45) +(printed page 687) --QDF=0",
-            "+(9.45) +(figure) +(printed page 687) --QDF=0"
+            "+(figure 9.45) +(printed page 688) --QDF=0",
+            "+(9.45) +(figure) +(printed page 688) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "687",
+              "value": "688",
               "verification_mode": "visual_required"
             },
             {
@@ -11543,27 +11726,28 @@
           "kind": "figure",
           "target_id": "9.45",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 688,
-                "pdf_page_number": 689,
-                "printed_page_label": "687"
+                "pdf_page_index": 689,
+                "pdf_page_number": 690,
+                "printed_page_label": "688"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 9.45) +(printed page 687) --QDF=0",
-                "+(9.45) +(figure) +(printed page 687) --QDF=0"
+                "+(figure 9.45) +(printed page 688) --QDF=0",
+                "+(9.45) +(figure) +(printed page 688) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "687",
+                  "value": "688",
                   "verification_mode": "visual_required"
                 },
                 {

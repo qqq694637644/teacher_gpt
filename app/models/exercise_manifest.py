@@ -25,10 +25,17 @@ class ExerciseReferenceSpec(StrictModel):
     kind: ExerciseReferenceKind
     target_id: str = Field(min_length=1)
     reason: str = Field(min_length=1)
+    selected_context_pages: list[str] = Field(default_factory=list)
 
     @model_validator(mode="after")
     def validate_target_id(self) -> ExerciseReferenceSpec:
         validate_reference_id(self.kind, self.target_id)
+        if len(self.selected_context_pages) != len(set(self.selected_context_pages)):
+            raise ValueError("selected_context_pages must be unique")
+        if any(not value.strip() for value in self.selected_context_pages):
+            raise ValueError("selected_context_pages cannot contain blank labels")
+        if self.selected_context_pages and self.kind != "section":
+            raise ValueError("selected_context_pages is supported only for section references")
         return self
 
 

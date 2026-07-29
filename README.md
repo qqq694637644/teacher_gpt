@@ -226,8 +226,8 @@ order, separates same-page exercises, tracks starred and cross-page problems, an
 extracts explicit textbook references. The compiler verifies the exact PDF, requires
 all chapters that contain a formal `Problems` section (chapters 2-12 in this PDF),
 resolves references against the section index and source anchors,
-trims broad section references to pages that overlap more precise references,
-deduplicates same-page reference evidence into `reference_retrieval_plan`,
+applies only PDF-reviewed `selected_context_pages` declared in the manifest,
+coalesces only reference steps that have the same physical page and identical content window,
 and writes no final output when validation fails.
 
 Running these commands is an offline release step; normal application startup does
@@ -235,9 +235,10 @@ not parse the PDF.
 
 The current reviewed baseline contains 492 exercises in chapters 2-12, 122 starred
 exercises, 28 cross-page exercises, 520 page-retrieval steps, and 412 resolved
-references. It keeps 1,344 raw reference page steps for audit metadata, prunes 11
-broad context references during execution planning, removes 40 duplicate reference
-page executions, and exposes 1,106 deduplicated reference retrieval steps. Chapter 1
+references. It keeps 1,344 raw reference steps for audit metadata, explicitly selects
+context pages for 4 reviewed section references, reduces 1,276 execution candidates
+by 34 exact-window merges,
+preserves 1 same-page distinct-window case, and exposes 1,242 execution steps. Chapter 1
 has no formal `Problems` section in this source PDF. The source
 prints `Fig. 10.10.4(a)` in exercise 10.23; the build records an explicit audited
 normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local source-PDF

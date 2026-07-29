@@ -182,6 +182,7 @@
           "kind": "equation",
           "target_id": "7-23",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -339,6 +340,7 @@
           "kind": "equation",
           "target_id": "7-16",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -568,6 +570,7 @@
           "kind": "example",
           "target_id": "7.3",
           "reason": "Explicit example reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -798,6 +801,7 @@
           "kind": "equation",
           "target_id": "7-4",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -919,10 +923,15 @@
             "printed_page_label": "534"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "exercise",
+              "value": "7.1"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text (c) Using the result of (b), write an orthogonal) +(printed page 534) --QDF=0",
+            "+(exercise 7.1) +(printed page 534) --QDF=0",
             "+(7.1) +(printed page 534) --QDF=0",
             "+((c) Using the result of (b), write an orthogonal) +(printed page 534) --QDF=0"
           ],
@@ -957,6 +966,7 @@
           "kind": "exercise",
           "target_id": "7.1",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1378,10 +1388,19 @@
             "printed_page_label": "535"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "7.12"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "7.13"
+            }
           },
           "queries": [
+            "+(text orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0",
+            "+(exercise 7.12) +(printed page 535) --QDF=0",
+            "+(exercise 7.13) +(printed page 535) --QDF=0",
             "+(7.12) +(printed page 535) --QDF=0",
             "+(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0"
           ],
@@ -1421,6 +1440,7 @@
           "kind": "exercise",
           "target_id": "7.12",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1558,10 +1578,19 @@
             "printed_page_label": "535"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "7.12"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "7.13"
+            }
           },
           "queries": [
+            "+(text orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0",
+            "+(exercise 7.12) +(printed page 535) --QDF=0",
+            "+(exercise 7.13) +(printed page 535) --QDF=0",
             "+(7.12) +(printed page 535) --QDF=0",
             "+(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0"
           ],
@@ -1601,6 +1630,7 @@
           "kind": "exercise",
           "target_id": "7.12",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1838,6 +1868,7 @@
           "kind": "example",
           "target_id": "7.5",
           "reason": "Explicit example reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2104,42 +2135,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 476,
-            "pdf_page_number": 477,
-            "printed_page_label": "475"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(example 7.6) +(printed page 475) --QDF=0",
-            "+(7.6) +(example) +(printed page 475) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "475",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_example",
-              "value": "7.6",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 478,
             "pdf_page_number": 479,
             "printed_page_label": "477"
@@ -2171,6 +2166,42 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 476,
+            "pdf_page_number": 477,
+            "printed_page_label": "475"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(example 7.6) +(printed page 475) --QDF=0",
+            "+(7.6) +(example) +(printed page 475) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "475",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "7.6",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -2178,6 +2209,7 @@
           "kind": "equation",
           "target_id": "7-59",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2221,6 +2253,7 @@
           "kind": "example",
           "target_id": "7.6",
           "reason": "Explicit example reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2377,6 +2410,7 @@
           "kind": "equation",
           "target_id": "7-56",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2533,6 +2567,7 @@
           "kind": "equation",
           "target_id": "7-52",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2689,6 +2724,7 @@
           "kind": "equation",
           "target_id": "7-56",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2918,6 +2954,7 @@
           "kind": "equation",
           "target_id": "7-73",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3074,6 +3111,7 @@
           "kind": "equation",
           "target_id": "7-80",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3304,6 +3342,7 @@
           "kind": "equation",
           "target_id": "7-57",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3571,6 +3610,7 @@
           "kind": "equation",
           "target_id": "7-28",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3614,6 +3654,7 @@
           "kind": "equation",
           "target_id": "7-86",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3990,6 +4031,7 @@
           "kind": "equation",
           "target_id": "7-122",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -4219,6 +4261,7 @@
           "kind": "equation",
           "target_id": "7-140",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -4375,6 +4418,7 @@
           "kind": "equation",
           "target_id": "7-122",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -4604,6 +4648,7 @@
           "kind": "equation",
           "target_id": "7-128",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -4760,6 +4805,7 @@
           "kind": "example",
           "target_id": "7.18",
           "reason": "Explicit example reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -4953,6 +4999,7 @@
           "kind": "equation",
           "target_id": "7-137",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5067,17 +5114,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 537,
             "pdf_page_number": 538,
             "printed_page_label": "536"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "exercise",
+              "value": "7.40"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text The DWT in Eqs. (7-137) and (7-138) is for a) +(printed page 536) --QDF=0",
+            "+(exercise 7.40) +(printed page 536) --QDF=0",
             "+(7.40) +(printed page 536) --QDF=0",
             "+(The DWT in Eqs. (7-137) and (7-138) is for a) +(printed page 536) --QDF=0"
           ],
@@ -5111,7 +5163,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 538,
             "pdf_page_number": 539,
@@ -5119,9 +5171,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "exercise",
+              "value": "7.41"
+            }
           },
           "queries": [
+            "+(text (a) * Rewrite these equations for any starting) +(printed page 537) --QDF=0",
+            "+(exercise 7.41) +(printed page 537) --QDF=0",
             "+((a) * Rewrite these equations for any starting) +(printed page 537) --QDF=0",
             "+((a) * Rewrite these equations for any starting) +(Problems) +(printed page 537) --QDF=0"
           ],
@@ -5156,6 +5213,7 @@
           "kind": "exercise",
           "target_id": "7.40",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5438,6 +5496,7 @@
           "kind": "figure",
           "target_id": "7.24",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5847,6 +5906,7 @@
           "kind": "figure",
           "target_id": "7.30",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,

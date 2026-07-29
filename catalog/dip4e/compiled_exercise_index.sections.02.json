@@ -75,17 +75,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 49,
             "pdf_page_number": 50,
             "printed_page_label": "48"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.1 ELEMENTS OF VISUAL PERCEPTION"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text tion as a first step in our journey through this book is appropriate. In particular, our) +(printed page 48) --QDF=0",
+            "+(heading 2.1 ELEMENTS OF VISUAL PERCEPTION) +(printed page 48) --QDF=0",
             "+(2.1 ELEMENTS OF VISUAL PERCEPTION) +(printed page 48) --QDF=0",
             "Elements of Visual Perception tion as a first step in our journey through this book is appropriate. In particular, our printed page 48 --QDF=0"
           ],
@@ -121,7 +126,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 50,
             "pdf_page_number": 51,
@@ -132,6 +137,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text of receptors in this area causes the so-called blind spot (see Fig. 2.1). Except for this) +(printed page 49) --QDF=0",
             "+(of receptors in this area causes the so-called blind spot (see Fig. 2.1). Except for this) +(printed page 49) --QDF=0",
             "Elements of Visual Perception of receptors in this area causes the so-called blind spot (see Fig. 2.1). Except for this printed page 49 --QDF=0"
           ],
@@ -157,7 +163,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 51,
             "pdf_page_number": 52,
@@ -168,6 +174,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text h =2 5. mm. As indicated earlier in this section, the retinal image is focused primar-) +(printed page 50) --QDF=0",
             "+(h =2 5. mm. As indicated earlier in this section, the retinal image is focused primar-) +(printed page 50) --QDF=0",
             "Elements of Visual Perception h =2 5. mm. As indicated earlier in this section, the retinal image is focused primar- printed page 50 --QDF=0"
           ],
@@ -198,7 +205,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 52,
             "pdf_page_number": 53,
@@ -209,6 +216,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text sity versus subjective brightness, illustrates this characteristic. The long solid curve) +(printed page 51) --QDF=0",
             "+(sity versus subjective brightness, illustrates this characteristic. The long solid curve) +(printed page 51) --QDF=0",
             "Elements of Visual Perception sity versus subjective brightness, illustrates this characteristic. The long solid curve printed page 51 --QDF=0"
           ],
@@ -237,7 +245,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 53,
             "pdf_page_number": 54,
@@ -248,6 +256,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text occupy the entire ﬁeld of view. This area typically is a diffuser, such as opaque glass,) +(printed page 52) --QDF=0",
             "+(occupy the entire ﬁeld of view. This area typically is a diffuser, such as opaque glass,) +(printed page 52) --QDF=0",
             "Elements of Visual Perception occupy the entire ﬁeld of view. This area typically is a diffuser, such as opaque glass, printed page 52 --QDF=0"
           ],
@@ -275,7 +284,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 54,
             "pdf_page_number": 55,
@@ -286,6 +295,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text range of overall intensity discrimination. In fact, as we will show in Section 2.4, the eye) +(printed page 53) --QDF=0",
             "+(range of overall intensity discrimination. In fact, as we will show in Section 2.4, the eye) +(printed page 53) --QDF=0",
             "Elements of Visual Perception range of overall intensity discrimination. In fact, as we will show in Section 2.4, the eye printed page 53 --QDF=0"
           ],
@@ -314,7 +324,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 55,
             "pdf_page_number": 56,
@@ -322,9 +332,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "2.2 LIGHT AND THE ELECTROMAGNETIC SPECTRUM"
+            }
           },
           "queries": [
+            "+(text Finally, all long lines in Fig. 2.9(d) are equidistant and parallel. Yet, the crosshatching) +(printed page 54) --QDF=0",
+            "+(heading 2.2 LIGHT AND THE ELECTROMAGNETIC SPECTRUM) +(printed page 54) --QDF=0",
             "+(Finally, all long lines in Fig. 2.9(d) are equidistant and parallel. Yet, the crosshatching) +(printed page 54) --QDF=0",
             "Elements of Visual Perception Finally, all long lines in Fig. 2.9(d) are equidistant and parallel. Yet, the crosshatching printed page 54 --QDF=0"
           ],
@@ -362,6 +377,7 @@
           "kind": "section",
           "target_id": "2.1",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -729,17 +745,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 49,
             "pdf_page_number": 50,
             "printed_page_label": "48"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.1 ELEMENTS OF VISUAL PERCEPTION"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text tion as a first step in our journey through this book is appropriate. In particular, our) +(printed page 48) --QDF=0",
+            "+(heading 2.1 ELEMENTS OF VISUAL PERCEPTION) +(printed page 48) --QDF=0",
             "+(2.1 ELEMENTS OF VISUAL PERCEPTION) +(printed page 48) --QDF=0",
             "Elements of Visual Perception tion as a first step in our journey through this book is appropriate. In particular, our printed page 48 --QDF=0"
           ],
@@ -775,7 +796,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 50,
             "pdf_page_number": 51,
@@ -786,6 +807,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text of receptors in this area causes the so-called blind spot (see Fig. 2.1). Except for this) +(printed page 49) --QDF=0",
             "+(of receptors in this area causes the so-called blind spot (see Fig. 2.1). Except for this) +(printed page 49) --QDF=0",
             "Elements of Visual Perception of receptors in this area causes the so-called blind spot (see Fig. 2.1). Except for this printed page 49 --QDF=0"
           ],
@@ -811,7 +833,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 51,
             "pdf_page_number": 52,
@@ -822,6 +844,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text h =2 5. mm. As indicated earlier in this section, the retinal image is focused primar-) +(printed page 50) --QDF=0",
             "+(h =2 5. mm. As indicated earlier in this section, the retinal image is focused primar-) +(printed page 50) --QDF=0",
             "Elements of Visual Perception h =2 5. mm. As indicated earlier in this section, the retinal image is focused primar- printed page 50 --QDF=0"
           ],
@@ -852,7 +875,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 52,
             "pdf_page_number": 53,
@@ -863,6 +886,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text sity versus subjective brightness, illustrates this characteristic. The long solid curve) +(printed page 51) --QDF=0",
             "+(sity versus subjective brightness, illustrates this characteristic. The long solid curve) +(printed page 51) --QDF=0",
             "Elements of Visual Perception sity versus subjective brightness, illustrates this characteristic. The long solid curve printed page 51 --QDF=0"
           ],
@@ -891,7 +915,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 53,
             "pdf_page_number": 54,
@@ -902,6 +926,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text occupy the entire ﬁeld of view. This area typically is a diffuser, such as opaque glass,) +(printed page 52) --QDF=0",
             "+(occupy the entire ﬁeld of view. This area typically is a diffuser, such as opaque glass,) +(printed page 52) --QDF=0",
             "Elements of Visual Perception occupy the entire ﬁeld of view. This area typically is a diffuser, such as opaque glass, printed page 52 --QDF=0"
           ],
@@ -929,7 +954,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 54,
             "pdf_page_number": 55,
@@ -940,6 +965,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text range of overall intensity discrimination. In fact, as we will show in Section 2.4, the eye) +(printed page 53) --QDF=0",
             "+(range of overall intensity discrimination. In fact, as we will show in Section 2.4, the eye) +(printed page 53) --QDF=0",
             "Elements of Visual Perception range of overall intensity discrimination. In fact, as we will show in Section 2.4, the eye printed page 53 --QDF=0"
           ],
@@ -968,7 +994,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 55,
             "pdf_page_number": 56,
@@ -976,9 +1002,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "2.2 LIGHT AND THE ELECTROMAGNETIC SPECTRUM"
+            }
           },
           "queries": [
+            "+(text Finally, all long lines in Fig. 2.9(d) are equidistant and parallel. Yet, the crosshatching) +(printed page 54) --QDF=0",
+            "+(heading 2.2 LIGHT AND THE ELECTROMAGNETIC SPECTRUM) +(printed page 54) --QDF=0",
             "+(Finally, all long lines in Fig. 2.9(d) are equidistant and parallel. Yet, the crosshatching) +(printed page 54) --QDF=0",
             "Elements of Visual Perception Finally, all long lines in Fig. 2.9(d) are equidistant and parallel. Yet, the crosshatching printed page 54 --QDF=0"
           ],
@@ -1016,6 +1047,7 @@
           "kind": "section",
           "target_id": "2.1",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1423,6 +1455,7 @@
           "kind": "figure",
           "target_id": "2.10",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1715,6 +1748,7 @@
           "kind": "figure",
           "target_id": "2.3",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1942,6 +1976,7 @@
           "kind": "figure",
           "target_id": "2.3",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2206,7 +2241,7 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 71,
             "pdf_page_number": 72,
@@ -2217,9 +2252,10 @@
             "end_before": null
           },
           "queries": [
+            "+(text given by its 2-D coordinates, is referred to as coordinate indexing, or subscript index-) +(printed page 70) --QDF=0",
+            "+(equation 2-14) +(printed page 70) --QDF=0",
             "+(given by its 2-D coordinates, is referred to as coordinate indexing, or subscript index-) +(printed page 70) --QDF=0",
             "Image Sampling and Quantization given by its 2-D coordinates, is referred to as coordinate indexing, or subscript index- printed page 70 --QDF=0",
-            "+(equation 2-14) +(printed page 70) --QDF=0",
             "+(2-14) +(equation) +(printed page 70) --QDF=0"
           ],
           "required_evidence": [
@@ -2256,7 +2292,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 72,
             "pdf_page_number": 73,
@@ -2267,10 +2303,13 @@
             "end_before": null
           },
           "queries": [
+            "+(text means congruence. However, our interest here is just on converting from linear to coordinate indexing, so we) +(printed page 71) --QDF=0",
+            "+(equation 2-15) +(printed page 71) --QDF=0",
+            "+(equation 2-16) +(printed page 71) --QDF=0",
             "+(means congruence. However, our interest here is just on converting from linear to coordinate indexing, so we) +(printed page 71) --QDF=0",
             "Image Sampling and Quantization means congruence. However, our interest here is just on converting from linear to coordinate indexing, so we printed page 71 --QDF=0",
-            "+(equation 2-15) +(printed page 71) --QDF=0",
-            "+(2-15) +(equation) +(printed page 71) --QDF=0"
+            "+(2-15) +(equation) +(printed page 71) --QDF=0",
+            "+(2-16) +(equation) +(printed page 71) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2315,6 +2354,10 @@
           "kind": "section",
           "target_id": "2.4",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [
+            "70",
+            "71"
+          ],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3024,6 +3067,7 @@
           "kind": "equation",
           "target_id": "2-14",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3067,6 +3111,7 @@
           "kind": "equation",
           "target_id": "2-15",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3110,6 +3155,7 @@
           "kind": "equation",
           "target_id": "2-16",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3333,17 +3379,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 115,
             "pdf_page_number": 116,
             "printed_page_label": "114"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "exercise",
+              "value": "2.12"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text * Suppose that a ﬂat area with center at () +(printed page 114) --QDF=0",
+            "+(exercise 2.12) +(printed page 114) --QDF=0",
             "+(2.12) +(printed page 114) --QDF=0",
             "+(* Suppose that a ﬂat area with center at () +(printed page 114) --QDF=0"
           ],
@@ -3374,7 +3425,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 116,
             "pdf_page_number": 117,
@@ -3382,9 +3433,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "exercise",
+              "value": "2.13"
+            }
           },
           "queries": [
+            "+(text adjacent pixels, what is the highest value of k that) +(printed page 115) --QDF=0",
+            "+(exercise 2.13) +(printed page 115) --QDF=0",
             "+(adjacent pixels, what is the highest value of k that) +(printed page 115) --QDF=0",
             "+(adjacent pixels, what is the highest value of k that) +(Problems) +(printed page 115) --QDF=0"
           ],
@@ -3419,6 +3475,7 @@
           "kind": "exercise",
           "target_id": "2.12",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3585,17 +3642,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 80,
             "pdf_page_number": 81,
             "printed_page_label": "79"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss several important relationships between pixels in a digital) +(printed page 79) --QDF=0",
+            "+(heading 2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "+(2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "Some Basic Relationships Between Pixels In this section, we discuss several important relationships between pixels in a digital printed page 79 --QDF=0"
           ],
@@ -3630,7 +3692,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 81,
             "pdf_page_number": 82,
@@ -3641,6 +3703,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "+((c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "Some Basic Relationships Between Pixels (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued printed page 80 --QDF=0"
           ],
@@ -3668,7 +3731,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 82,
             "pdf_page_number": 83,
@@ -3679,6 +3742,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "+(because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "Some Basic Relationships Between Pixels because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide printed page 81 --QDF=0"
           ],
@@ -3704,7 +3768,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 83,
             "pdf_page_number": 84,
@@ -3715,6 +3779,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "+(intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "Some Basic Relationships Between Pixels intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges printed page 82 --QDF=0"
           ],
@@ -3746,7 +3811,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 84,
             "pdf_page_number": 85,
@@ -3754,9 +3819,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            }
           },
           "queries": [
+            "+(text length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "+(length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
             "Some Basic Relationships Between Pixels length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of printed page 83 --QDF=0"
           ],
@@ -3791,6 +3861,7 @@
           "kind": "section",
           "target_id": "2.5",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -4296,17 +4367,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 80,
             "pdf_page_number": 81,
             "printed_page_label": "79"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss several important relationships between pixels in a digital) +(printed page 79) --QDF=0",
+            "+(heading 2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "+(2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0",
             "Some Basic Relationships Between Pixels In this section, we discuss several important relationships between pixels in a digital printed page 79 --QDF=0"
           ],
@@ -4341,7 +4417,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 81,
             "pdf_page_number": 82,
@@ -4352,6 +4428,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "+((c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued) +(printed page 80) --QDF=0",
             "Some Basic Relationships Between Pixels (c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued printed page 80 --QDF=0"
           ],
@@ -4379,7 +4456,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 82,
             "pdf_page_number": 83,
@@ -4390,6 +4467,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "+(because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide) +(printed page 81) --QDF=0",
             "Some Basic Relationships Between Pixels because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide printed page 81 --QDF=0"
           ],
@@ -4415,7 +4493,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 83,
             "pdf_page_number": 84,
@@ -4426,6 +4504,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "+(intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges) +(printed page 82) --QDF=0",
             "Some Basic Relationships Between Pixels intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges printed page 82 --QDF=0"
           ],
@@ -4457,7 +4536,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 84,
             "pdf_page_number": 85,
@@ -4465,9 +4544,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            }
           },
           "queries": [
+            "+(text length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "+(length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of) +(printed page 83) --QDF=0",
             "Some Basic Relationships Between Pixels length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of printed page 83 --QDF=0"
           ],
@@ -4502,6 +4586,7 @@
           "kind": "section",
           "target_id": "2.5",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -4868,10 +4953,19 @@
             "printed_page_label": "115"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "2.19"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "2.20"
+            }
           },
           "queries": [
+            "+(text distance between p and q is equal to the) +(printed page 115) --QDF=0",
+            "+(exercise 2.19) +(printed page 115) --QDF=0",
+            "+(exercise 2.20) +(printed page 115) --QDF=0",
             "+(2.19) +(printed page 115) --QDF=0",
             "+(distance between p and q is equal to the) +(printed page 115) --QDF=0"
           ],
@@ -4911,6 +5005,7 @@
           "kind": "exercise",
           "target_id": "2.19",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -5041,17 +5136,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 84,
             "pdf_page_number": 85,
             "printed_page_label": "83"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text tools we use throughout the book; and (2) to help you begin developing a “feel” for) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "+(2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tools we use throughout the book; and (2) to help you begin developing a “feel” for printed page 83 --QDF=0"
           ],
@@ -5085,7 +5185,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 85,
             "pdf_page_number": 86,
@@ -5096,6 +5196,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
             "+(original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing original input multiplied by that constant. The first property is called the property printed page 84 --QDF=0"
           ],
@@ -5126,7 +5227,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 86,
             "pdf_page_number": 87,
@@ -5137,6 +5238,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
             "+(As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing As you will see in the next three chapters, linear operations are exceptionally impor- printed page 85 --QDF=0"
           ],
@@ -5167,7 +5269,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 87,
             "pdf_page_number": 88,
@@ -5178,6 +5280,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
             "+(versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is printed page 86 --QDF=0"
           ],
@@ -5213,7 +5316,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 88,
             "pdf_page_number": 89,
@@ -5224,6 +5327,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
             "+(identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing identical for all practical purposes. This is not unexpected, as the difference between the standard devia- printed page 87 --QDF=0"
           ],
@@ -5255,7 +5359,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 89,
             "pdf_page_number": 90,
@@ -5266,6 +5370,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
             "+(in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi printed page 88 --QDF=0"
           ],
@@ -5294,7 +5399,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 90,
             "pdf_page_number": 91,
@@ -5305,6 +5410,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
             "+(effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing effect of subtracting the mask from each sample live image is that the areas that are different between printed page 89 --QDF=0"
           ],
@@ -5334,7 +5440,7 @@
         },
         {
           "sequence": 8,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 91,
             "pdf_page_number": 92,
@@ -5345,6 +5451,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
             "+(tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process printed page 90 --QDF=0"
           ],
@@ -5375,7 +5482,7 @@
         },
         {
           "sequence": 9,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 92,
             "pdf_page_number": 93,
@@ -5386,6 +5493,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
             "+(In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing In this section, we discuss the basics of set theory. We also introduce and illustrate printed page 91 --QDF=0"
           ],
@@ -5421,7 +5529,7 @@
         },
         {
           "sequence": 10,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 93,
             "pdf_page_number": 94,
@@ -5432,6 +5540,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
             "+(This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing This is the set of elements that belong to A, but not to B. We can define Ac in terms printed page 92 --QDF=0"
           ],
@@ -5468,7 +5577,7 @@
         },
         {
           "sequence": 11,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 94,
             "pdf_page_number": 95,
@@ -5479,6 +5588,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
             "+(pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union printed page 93 --QDF=0"
           ],
@@ -5506,7 +5616,7 @@
         },
         {
           "sequence": 12,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 95,
             "pdf_page_number": 96,
@@ -5517,6 +5627,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
             "+(Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form printed page 94 --QDF=0"
           ],
@@ -5551,7 +5662,7 @@
         },
         {
           "sequence": 13,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 96,
             "pdf_page_number": 97,
@@ -5562,6 +5673,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
             "+(which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows printed page 95 --QDF=0"
           ],
@@ -5591,7 +5703,7 @@
         },
         {
           "sequence": 14,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 97,
             "pdf_page_number": 98,
@@ -5602,6 +5714,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
             "+(is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is strict because no member of the set can precede itself (antireflexivity) and, for any printed page 96 --QDF=0"
           ],
@@ -5629,7 +5742,7 @@
         },
         {
           "sequence": 15,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 98,
             "pdf_page_number": 99,
@@ -5640,6 +5753,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
             "+(els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing els in a single image as sets, or (2) we can work with one or more images of the same printed page 97 --QDF=0"
           ],
@@ -5669,7 +5783,7 @@
         },
         {
           "sequence": 16,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 99,
             "pdf_page_number": 100,
@@ -5680,6 +5794,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
             "+(expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing expressions in the last two rows of Fig. 2.37 were constructed using operators from printed page 98 --QDF=0"
           ],
@@ -5711,7 +5826,7 @@
         },
         {
           "sequence": 17,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 100,
             "pdf_page_number": 101,
@@ -5722,6 +5837,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
             "+(The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing The simplest operation we perform on a digital image is to alter the intensity of its printed page 99 --QDF=0"
           ],
@@ -5755,7 +5871,7 @@
         },
         {
           "sequence": 18,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 101,
             "pdf_page_number": 102,
@@ -5766,6 +5882,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
             "+(net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing net effect is to perform local blurring in the original image. This type of process is printed page 100 --QDF=0"
           ],
@@ -5797,7 +5914,7 @@
         },
         {
           "sequence": 19,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 102,
             "pdf_page_number": 103,
@@ -5808,6 +5925,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
             "+(ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi- printed page 101 --QDF=0"
           ],
@@ -5838,7 +5956,7 @@
         },
         {
           "sequence": 20,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 103,
             "pdf_page_number": 104,
@@ -5849,6 +5967,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
             "+(single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing single output pixel value. In addition, it is possible that some output locations may printed page 102 --QDF=0"
           ],
@@ -5878,7 +5997,7 @@
         },
         {
           "sequence": 21,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 104,
             "pdf_page_number": 105,
@@ -5889,6 +6008,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
             "+(crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we printed page 103 --QDF=0"
           ],
@@ -5922,7 +6042,7 @@
         },
         {
           "sequence": 22,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 105,
             "pdf_page_number": 106,
@@ -5933,6 +6053,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
             "+(interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values). printed page 104 --QDF=0"
           ],
@@ -5962,7 +6083,7 @@
         },
         {
           "sequence": 23,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 106,
             "pdf_page_number": 107,
@@ -5973,6 +6094,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
             "+(input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing input and reference images, respectively. If we have four pairs of corresponding tie printed page 105 --QDF=0"
           ],
@@ -6003,7 +6125,7 @@
         },
         {
           "sequence": 24,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 107,
             "pdf_page_number": 108,
@@ -6014,6 +6136,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
             "+(shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in printed page 106 --QDF=0"
           ],
@@ -6050,7 +6173,7 @@
         },
         {
           "sequence": 25,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 108,
             "pdf_page_number": 109,
@@ -6061,6 +6184,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
             "+(2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107 printed page 107 --QDF=0"
           ],
@@ -6091,7 +6215,7 @@
         },
         {
           "sequence": 26,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 109,
             "pdf_page_number": 110,
@@ -6102,6 +6226,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
             "+(image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men- printed page 108 --QDF=0"
           ],
@@ -6135,7 +6260,7 @@
         },
         {
           "sequence": 27,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 110,
             "pdf_page_number": 111,
@@ -6146,6 +6271,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
             "+(All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing All the image processing approaches discussed thus far operate directly on the pixels printed page 109 --QDF=0"
           ],
@@ -6182,7 +6308,7 @@
         },
         {
           "sequence": 28,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 111,
             "pdf_page_number": 112,
@@ -6193,6 +6319,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
             "+(manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu- printed page 110 --QDF=0"
           ],
@@ -6228,7 +6355,7 @@
         },
         {
           "sequence": 29,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 112,
             "pdf_page_number": 113,
@@ -6239,6 +6366,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
             "+((2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing (2-65). We will discuss these and other types of image transforms in later chapters. printed page 111 --QDF=0"
           ],
@@ -6274,7 +6402,7 @@
         },
         {
           "sequence": 30,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 113,
             "pdf_page_number": 114,
@@ -6285,6 +6413,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
             "+(that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing that the intensities are distributed approximately equally on both sides of the mean. printed page 112 --QDF=0"
           ],
@@ -6318,7 +6447,7 @@
         },
         {
           "sequence": 31,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 114,
             "pdf_page_number": 115,
@@ -6329,6 +6458,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
             "+([2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling printed page 113 --QDF=0"
           ],
@@ -6354,7 +6484,7 @@
         },
         {
           "sequence": 32,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 115,
             "pdf_page_number": 116,
@@ -6365,6 +6495,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
             "+(You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing You are preparing a report and have to insert in it printed page 114 --QDF=0"
           ],
@@ -6394,7 +6525,7 @@
         },
         {
           "sequence": 33,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 116,
             "pdf_page_number": 117,
@@ -6405,6 +6536,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
             "+(whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing whose function is to compute the sum of pixel val- printed page 115 --QDF=0"
           ],
@@ -6433,7 +6565,7 @@
         },
         {
           "sequence": 34,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 117,
             "pdf_page_number": 118,
@@ -6444,6 +6576,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text er half are above it. For example, the median of) +(printed page 116) --QDF=0",
             "+(er half are above it. For example, the median of) +(printed page 116) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing er half are above it. For example, the median of printed page 116 --QDF=0"
           ],
@@ -6475,7 +6608,7 @@
         },
         {
           "sequence": 35,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 118,
             "pdf_page_number": 119,
@@ -6486,6 +6619,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
             "+(is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is to look at the screen and reject any sample that printed page 117 --QDF=0"
           ],
@@ -6520,7 +6654,7 @@
         },
         {
           "sequence": 36,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 119,
             "pdf_page_number": 120,
@@ -6531,6 +6665,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
             "+(cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing cost much more than the lenses, so you should use printed page 118 --QDF=0"
           ],
@@ -6560,6 +6695,7 @@
           "kind": "section",
           "target_id": "2.6",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8198,6 +8334,7 @@
           "kind": "equation",
           "target_id": "2-43",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8354,6 +8491,7 @@
           "kind": "equation",
           "target_id": "2-24",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8667,9 +8805,11 @@
           },
           "queries": [
             "+(equation 2-27) +(printed page 86) --QDF=0",
-            "+(2-27) +(equation) +(printed page 86) --QDF=0",
             "+(equation 2-28) +(printed page 86) --QDF=0",
-            "+(2-28) +(equation) +(printed page 86) --QDF=0"
+            "+(example 2.5) +(printed page 86) --QDF=0",
+            "+(2-27) +(equation) +(printed page 86) --QDF=0",
+            "+(2-28) +(equation) +(printed page 86) --QDF=0",
+            "+(2.5) +(example) +(printed page 86) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8707,6 +8847,7 @@
           "kind": "equation",
           "target_id": "2-27",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8750,6 +8891,7 @@
           "kind": "equation",
           "target_id": "2-28",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8793,6 +8935,7 @@
           "kind": "example",
           "target_id": "2.5",
           "reason": "Explicit example reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -9095,6 +9238,7 @@
           "kind": "equation",
           "target_id": "2-32",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -9428,17 +9572,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 84,
             "pdf_page_number": 85,
             "printed_page_label": "83"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text tools we use throughout the book; and (2) to help you begin developing a “feel” for) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "+(2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tools we use throughout the book; and (2) to help you begin developing a “feel” for printed page 83 --QDF=0"
           ],
@@ -9472,7 +9621,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 85,
             "pdf_page_number": 86,
@@ -9483,6 +9632,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
             "+(original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing original input multiplied by that constant. The first property is called the property printed page 84 --QDF=0"
           ],
@@ -9513,7 +9663,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 86,
             "pdf_page_number": 87,
@@ -9524,6 +9674,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
             "+(As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing As you will see in the next three chapters, linear operations are exceptionally impor- printed page 85 --QDF=0"
           ],
@@ -9554,7 +9705,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 87,
             "pdf_page_number": 88,
@@ -9565,6 +9716,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
             "+(versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is printed page 86 --QDF=0"
           ],
@@ -9600,7 +9752,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 88,
             "pdf_page_number": 89,
@@ -9611,6 +9763,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
             "+(identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing identical for all practical purposes. This is not unexpected, as the difference between the standard devia- printed page 87 --QDF=0"
           ],
@@ -9642,7 +9795,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 89,
             "pdf_page_number": 90,
@@ -9653,6 +9806,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
             "+(in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi printed page 88 --QDF=0"
           ],
@@ -9681,7 +9835,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 90,
             "pdf_page_number": 91,
@@ -9692,6 +9846,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
             "+(effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing effect of subtracting the mask from each sample live image is that the areas that are different between printed page 89 --QDF=0"
           ],
@@ -9721,7 +9876,7 @@
         },
         {
           "sequence": 8,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 91,
             "pdf_page_number": 92,
@@ -9732,6 +9887,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
             "+(tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process printed page 90 --QDF=0"
           ],
@@ -9762,7 +9918,7 @@
         },
         {
           "sequence": 9,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 92,
             "pdf_page_number": 93,
@@ -9773,6 +9929,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
             "+(In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing In this section, we discuss the basics of set theory. We also introduce and illustrate printed page 91 --QDF=0"
           ],
@@ -9808,7 +9965,7 @@
         },
         {
           "sequence": 10,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 93,
             "pdf_page_number": 94,
@@ -9819,6 +9976,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
             "+(This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing This is the set of elements that belong to A, but not to B. We can define Ac in terms printed page 92 --QDF=0"
           ],
@@ -9855,7 +10013,7 @@
         },
         {
           "sequence": 11,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 94,
             "pdf_page_number": 95,
@@ -9866,6 +10024,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
             "+(pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union printed page 93 --QDF=0"
           ],
@@ -9893,7 +10052,7 @@
         },
         {
           "sequence": 12,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 95,
             "pdf_page_number": 96,
@@ -9904,6 +10063,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
             "+(Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form printed page 94 --QDF=0"
           ],
@@ -9938,7 +10098,7 @@
         },
         {
           "sequence": 13,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 96,
             "pdf_page_number": 97,
@@ -9949,6 +10109,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
             "+(which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows printed page 95 --QDF=0"
           ],
@@ -9978,7 +10139,7 @@
         },
         {
           "sequence": 14,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 97,
             "pdf_page_number": 98,
@@ -9989,6 +10150,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
             "+(is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is strict because no member of the set can precede itself (antireflexivity) and, for any printed page 96 --QDF=0"
           ],
@@ -10016,7 +10178,7 @@
         },
         {
           "sequence": 15,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 98,
             "pdf_page_number": 99,
@@ -10027,6 +10189,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
             "+(els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing els in a single image as sets, or (2) we can work with one or more images of the same printed page 97 --QDF=0"
           ],
@@ -10056,7 +10219,7 @@
         },
         {
           "sequence": 16,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 99,
             "pdf_page_number": 100,
@@ -10067,6 +10230,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
             "+(expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing expressions in the last two rows of Fig. 2.37 were constructed using operators from printed page 98 --QDF=0"
           ],
@@ -10098,7 +10262,7 @@
         },
         {
           "sequence": 17,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 100,
             "pdf_page_number": 101,
@@ -10109,6 +10273,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
             "+(The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing The simplest operation we perform on a digital image is to alter the intensity of its printed page 99 --QDF=0"
           ],
@@ -10142,7 +10307,7 @@
         },
         {
           "sequence": 18,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 101,
             "pdf_page_number": 102,
@@ -10153,6 +10318,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
             "+(net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing net effect is to perform local blurring in the original image. This type of process is printed page 100 --QDF=0"
           ],
@@ -10184,7 +10350,7 @@
         },
         {
           "sequence": 19,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 102,
             "pdf_page_number": 103,
@@ -10195,6 +10361,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
             "+(ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi- printed page 101 --QDF=0"
           ],
@@ -10225,7 +10392,7 @@
         },
         {
           "sequence": 20,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 103,
             "pdf_page_number": 104,
@@ -10236,6 +10403,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
             "+(single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing single output pixel value. In addition, it is possible that some output locations may printed page 102 --QDF=0"
           ],
@@ -10265,7 +10433,7 @@
         },
         {
           "sequence": 21,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 104,
             "pdf_page_number": 105,
@@ -10276,6 +10444,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
             "+(crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we printed page 103 --QDF=0"
           ],
@@ -10309,7 +10478,7 @@
         },
         {
           "sequence": 22,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 105,
             "pdf_page_number": 106,
@@ -10320,6 +10489,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
             "+(interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values). printed page 104 --QDF=0"
           ],
@@ -10349,7 +10519,7 @@
         },
         {
           "sequence": 23,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 106,
             "pdf_page_number": 107,
@@ -10360,6 +10530,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
             "+(input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing input and reference images, respectively. If we have four pairs of corresponding tie printed page 105 --QDF=0"
           ],
@@ -10390,7 +10561,7 @@
         },
         {
           "sequence": 24,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 107,
             "pdf_page_number": 108,
@@ -10401,6 +10572,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
             "+(shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in printed page 106 --QDF=0"
           ],
@@ -10437,7 +10609,7 @@
         },
         {
           "sequence": 25,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 108,
             "pdf_page_number": 109,
@@ -10448,6 +10620,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
             "+(2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107 printed page 107 --QDF=0"
           ],
@@ -10478,7 +10651,7 @@
         },
         {
           "sequence": 26,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 109,
             "pdf_page_number": 110,
@@ -10489,6 +10662,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
             "+(image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men- printed page 108 --QDF=0"
           ],
@@ -10522,7 +10696,7 @@
         },
         {
           "sequence": 27,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 110,
             "pdf_page_number": 111,
@@ -10533,6 +10707,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
             "+(All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing All the image processing approaches discussed thus far operate directly on the pixels printed page 109 --QDF=0"
           ],
@@ -10569,7 +10744,7 @@
         },
         {
           "sequence": 28,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 111,
             "pdf_page_number": 112,
@@ -10580,6 +10755,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
             "+(manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu- printed page 110 --QDF=0"
           ],
@@ -10615,7 +10791,7 @@
         },
         {
           "sequence": 29,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 112,
             "pdf_page_number": 113,
@@ -10626,6 +10802,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
             "+((2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing (2-65). We will discuss these and other types of image transforms in later chapters. printed page 111 --QDF=0"
           ],
@@ -10661,7 +10838,7 @@
         },
         {
           "sequence": 30,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 113,
             "pdf_page_number": 114,
@@ -10672,6 +10849,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
             "+(that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing that the intensities are distributed approximately equally on both sides of the mean. printed page 112 --QDF=0"
           ],
@@ -10705,7 +10883,7 @@
         },
         {
           "sequence": 31,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 114,
             "pdf_page_number": 115,
@@ -10716,6 +10894,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
             "+([2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling printed page 113 --QDF=0"
           ],
@@ -10741,7 +10920,7 @@
         },
         {
           "sequence": 32,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 115,
             "pdf_page_number": 116,
@@ -10752,6 +10931,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
             "+(You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing You are preparing a report and have to insert in it printed page 114 --QDF=0"
           ],
@@ -10781,7 +10961,7 @@
         },
         {
           "sequence": 33,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 116,
             "pdf_page_number": 117,
@@ -10792,6 +10972,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
             "+(whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing whose function is to compute the sum of pixel val- printed page 115 --QDF=0"
           ],
@@ -10820,7 +11001,7 @@
         },
         {
           "sequence": 34,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 117,
             "pdf_page_number": 118,
@@ -10831,6 +11012,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text er half are above it. For example, the median of) +(printed page 116) --QDF=0",
             "+(er half are above it. For example, the median of) +(printed page 116) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing er half are above it. For example, the median of printed page 116 --QDF=0"
           ],
@@ -10862,7 +11044,7 @@
         },
         {
           "sequence": 35,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 118,
             "pdf_page_number": 119,
@@ -10873,6 +11055,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
             "+(is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is to look at the screen and reject any sample that printed page 117 --QDF=0"
           ],
@@ -10907,7 +11090,7 @@
         },
         {
           "sequence": 36,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 119,
             "pdf_page_number": 120,
@@ -10918,6 +11101,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
             "+(cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing cost much more than the lenses, so you should use printed page 118 --QDF=0"
           ],
@@ -10947,6 +11131,7 @@
           "kind": "section",
           "target_id": "2.6",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -12666,8 +12851,8 @@
           },
           "queries": [
             "+(equation 2-43) +(printed page 99) --QDF=0",
-            "+(2-43) +(equation) +(printed page 99) --QDF=0",
             "+(figure 2.38) +(printed page 99) --QDF=0",
+            "+(2-43) +(equation) +(printed page 99) --QDF=0",
             "+(2.38) +(figure) +(printed page 99) --QDF=0"
           ],
           "required_evidence": [
@@ -12701,6 +12886,7 @@
           "kind": "equation",
           "target_id": "2-43",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -12744,6 +12930,7 @@
           "kind": "figure",
           "target_id": "2.38",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -12862,22 +13049,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 102,
-            "pdf_page_number": 103,
-            "printed_page_label": "101"
+            "pdf_page_index": 103,
+            "pdf_page_number": 104,
+            "printed_page_label": "102"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(table 2.3) +(printed page 101) --QDF=0",
-            "+(2.3) +(table) +(printed page 101) --QDF=0"
+            "+(table 2.3) +(printed page 102) --QDF=0",
+            "+(2.3) +(table) +(printed page 102) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "101",
+              "value": "102",
               "verification_mode": "visual_required"
             },
             {
@@ -12900,27 +13087,28 @@
           "kind": "table",
           "target_id": "2.3",
           "reason": "Explicit table reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 102,
-                "pdf_page_number": 103,
-                "printed_page_label": "101"
+                "pdf_page_index": 103,
+                "pdf_page_number": 104,
+                "printed_page_label": "102"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(table 2.3) +(printed page 101) --QDF=0",
-                "+(2.3) +(table) +(printed page 101) --QDF=0"
+                "+(table 2.3) +(printed page 102) --QDF=0",
+                "+(2.3) +(table) +(printed page 102) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "101",
+                  "value": "102",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -13030,9 +13218,7 @@
           },
           "queries": [
             "+(equation 2-45) +(printed page 101) --QDF=0",
-            "+(2-45) +(equation) +(printed page 101) --QDF=0",
-            "+(table 2.3) +(printed page 101) --QDF=0",
-            "+(2.3) +(table) +(printed page 101) --QDF=0"
+            "+(2-45) +(equation) +(printed page 101) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -13043,6 +13229,37 @@
             {
               "kind": "contains_equation",
               "value": "2-45",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 103,
+            "pdf_page_number": 104,
+            "printed_page_label": "102"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(table 2.3) +(printed page 102) --QDF=0",
+            "+(2.3) +(table) +(printed page 102) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "102",
               "verification_mode": "visual_required"
             },
             {
@@ -13065,6 +13282,7 @@
           "kind": "equation",
           "target_id": "2-45",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13108,27 +13326,28 @@
           "kind": "table",
           "target_id": "2.3",
           "reason": "Explicit table reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 102,
-                "pdf_page_number": 103,
-                "printed_page_label": "101"
+                "pdf_page_index": 103,
+                "pdf_page_number": 104,
+                "printed_page_label": "102"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(table 2.3) +(printed page 101) --QDF=0",
-                "+(2.3) +(table) +(printed page 101) --QDF=0"
+                "+(table 2.3) +(printed page 102) --QDF=0",
+                "+(2.3) +(table) +(printed page 102) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "101",
+                  "value": "102",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -13265,6 +13484,7 @@
           "kind": "equation",
           "target_id": "2-46",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13394,8 +13614,8 @@
           },
           "queries": [
             "+(equation 2-59) +(printed page 109) --QDF=0",
-            "+(2-59) +(equation) +(printed page 109) --QDF=0",
             "+(equation 2-60) +(printed page 109) --QDF=0",
+            "+(2-59) +(equation) +(printed page 109) --QDF=0",
             "+(2-60) +(equation) +(printed page 109) --QDF=0"
           ],
           "required_evidence": [
@@ -13429,6 +13649,7 @@
           "kind": "equation",
           "target_id": "2-59",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13472,6 +13693,7 @@
           "kind": "equation",
           "target_id": "2-60",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13694,10 +13916,19 @@
             "printed_page_label": "114"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "2.6"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "2.7"
+            }
           },
           "queries": [
+            "+(text pairs per mm will this camera be able to resolve?) +(printed page 114) --QDF=0",
+            "+(exercise 2.6) +(printed page 114) --QDF=0",
+            "+(exercise 2.7) +(printed page 114) --QDF=0",
             "+(2.6) +(printed page 114) --QDF=0",
             "+(pairs per mm will this camera be able to resolve?) +(printed page 114) --QDF=0"
           ],
@@ -13737,6 +13968,7 @@
           "kind": "exercise",
           "target_id": "2.6",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,

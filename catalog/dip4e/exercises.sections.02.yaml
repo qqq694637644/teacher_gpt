@@ -51,6 +51,7 @@ exercises:
   - kind: section
     target_id: '2.1'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.2'
   chapter_id: '2'
   exercise_number: 2
@@ -101,6 +102,7 @@ exercises:
   - kind: section
     target_id: '2.1'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.3'
   chapter_id: '2'
   exercise_number: 3
@@ -151,6 +153,7 @@ exercises:
   - kind: figure
     target_id: '2.10'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.4'
   chapter_id: '2'
   exercise_number: 4
@@ -290,6 +293,7 @@ exercises:
   - kind: figure
     target_id: '2.3'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.7'
   chapter_id: '2'
   exercise_number: 7
@@ -387,6 +391,7 @@ exercises:
   - kind: figure
     target_id: '2.3'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.9'
   chapter_id: '2'
   exercise_number: 9
@@ -534,15 +539,21 @@ exercises:
   - kind: section
     target_id: '2.4'
     reason: Explicit section reference in exercise text
+    selected_context_pages:
+    - '70'
+    - '71'
   - kind: equation
     target_id: 2-14
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 2-15
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 2-16
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.12'
   chapter_id: '2'
   exercise_number: 12
@@ -663,6 +674,7 @@ exercises:
   - kind: exercise
     target_id: '2.12'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.14'
   chapter_id: '2'
   exercise_number: 14
@@ -713,6 +725,7 @@ exercises:
   - kind: section
     target_id: '2.5'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.15'
   chapter_id: '2'
   exercise_number: 15
@@ -904,6 +917,7 @@ exercises:
   - kind: section
     target_id: '2.5'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.19'
   chapter_id: '2'
   exercise_number: 19
@@ -1001,6 +1015,7 @@ exercises:
   - kind: exercise
     target_id: '2.19'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.21'
   chapter_id: '2'
   exercise_number: 21
@@ -1051,6 +1066,7 @@ exercises:
   - kind: section
     target_id: '2.6'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.22'
   chapter_id: '2'
   exercise_number: 22
@@ -1102,6 +1118,7 @@ exercises:
   - kind: equation
     target_id: 2-43
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.23'
   chapter_id: '2'
   exercise_number: 23
@@ -1153,6 +1170,7 @@ exercises:
   - kind: equation
     target_id: 2-24
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.24'
   chapter_id: '2'
   exercise_number: 24
@@ -1323,12 +1341,15 @@ exercises:
   - kind: equation
     target_id: 2-27
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 2-28
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: example
     target_id: '2.5'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.27'
   chapter_id: '2'
   exercise_number: 27
@@ -1474,6 +1495,7 @@ exercises:
   - kind: equation
     target_id: 2-32
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.30'
   chapter_id: '2'
   exercise_number: 30
@@ -1665,6 +1687,7 @@ exercises:
   - kind: section
     target_id: '2.6'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.34'
   chapter_id: '2'
   exercise_number: 34
@@ -1786,9 +1809,11 @@ exercises:
   - kind: equation
     target_id: 2-43
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '2.38'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.36'
   chapter_id: '2'
   exercise_number: 36
@@ -1840,6 +1865,7 @@ exercises:
   - kind: table
     target_id: '2.3'
     reason: Explicit table reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.37'
   chapter_id: '2'
   exercise_number: 37
@@ -1892,9 +1918,11 @@ exercises:
   - kind: equation
     target_id: 2-45
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: table
     target_id: '2.3'
     reason: Explicit table reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.38'
   chapter_id: '2'
   exercise_number: 38
@@ -1947,6 +1975,7 @@ exercises:
   - kind: equation
     target_id: 2-46
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.39'
   chapter_id: '2'
   exercise_number: 39
@@ -1999,9 +2028,11 @@ exercises:
   - kind: equation
     target_id: 2-59
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 2-60
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '2.40'
   chapter_id: '2'
   exercise_number: 40
@@ -2117,3 +2148,4 @@ exercises:
   - kind: exercise
     target_id: '2.6'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []

@@ -36,8 +36,9 @@ The source PDF contains formal `Problems` sections in chapters 2-12; chapter 1 h
 exercise shard. The reviewed baseline contains 492 exercises, 122 starred exercises,
 28 cross-page exercises, 520 problem retrieval steps, and 412 resolved references. The
 compiled execution plan preserves 1,344 raw reference page steps as audit metadata,
-trims 11 broad context references, removes 40 duplicate reference page executions, and
-exposes 1,106 deduplicated reference retrieval steps. All chapter number ranges are
+uses explicit PDF-reviewed context-page selections for 4 section references, reduces
+1,276 execution candidates by 34 same-page/same-window merges, preserves 1
+same-page distinct-window case, and exposes 1,242 execution steps. All chapter number ranges are
 continuous and the independent rebuild matched all package and shard files byte-for-byte.
 
 Deployments should set `TEACHING_GPT_EXERCISE_INDEX_PATH` to

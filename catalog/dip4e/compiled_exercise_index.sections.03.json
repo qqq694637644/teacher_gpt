@@ -188,6 +188,7 @@
           "kind": "figure",
           "target_id": "3.2",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -342,6 +343,7 @@
           "kind": "figure",
           "target_id": "3.13",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -786,7 +788,48 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 136,
+            "pdf_page_number": 137,
+            "printed_page_label": "135"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
+            "+(artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
+            "Histogram Processing artifacts created by reversals of intensity. Condition (b) guarantees that the range of printed page 135 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "135",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "artifacts created by reversals of intensity. Condition (b) guarantees that the range of",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.17"
+            ],
+            "equation_ids": [
+              "3-9"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
           "page": {
             "pdf_page_index": 137,
             "pdf_page_number": 138,
@@ -797,9 +840,10 @@
             "end_before": null
           },
           "queries": [
+            "+(text integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
+            "+(equation 3-11) +(printed page 136) --QDF=0",
             "+(integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
             "Histogram Processing integral with respect to its upper limit is the integrand evaluated at the limit. That is, printed page 136 --QDF=0",
-            "+(equation 3-11) +(printed page 136) --QDF=0",
             "+(3-11) +(equation) +(printed page 136) --QDF=0"
           ],
           "required_evidence": [
@@ -839,6 +883,10 @@
           "kind": "section",
           "target_id": "3.3",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [
+            "135",
+            "136"
+          ],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1753,6 +1801,7 @@
           "kind": "equation",
           "target_id": "3-11",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1870,7 +1919,230 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 134,
+            "pdf_page_number": 135,
+            "printed_page_label": "133"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "3.3 HISTOGRAM PROCESSING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text images with four basic intensity characteristics: dark, light, low contrast, and high) +(printed page 133) --QDF=0",
+            "+(heading 3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0",
+            "+(3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0",
+            "Histogram Processing images with four basic intensity characteristics: dark, light, low contrast, and high printed page 133 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "133",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "images with four basic intensity characteristics: dark, light, low contrast, and high",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.3 HISTOGRAM PROCESSING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "3.3 HISTOGRAM PROCESSING"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-6",
+              "3-7"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 135,
+            "pdf_page_number": 136,
+            "printed_page_label": "134"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text contrast and will exhibit a large variety of gray tones. The net effect will be an image) +(printed page 134) --QDF=0",
+            "+(contrast and will exhibit a large variety of gray tones. The net effect will be an image) +(printed page 134) --QDF=0",
+            "Histogram Processing contrast and will exhibit a large variety of gray tones. The net effect will be an image printed page 134 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "134",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "contrast and will exhibit a large variety of gray tones. The net effect will be an image",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "HISTOGRAM EQUALIZATION"
+            ],
+            "figure_ids": [
+              "3.16"
+            ],
+            "equation_ids": [
+              "3-8"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 136,
+            "pdf_page_number": 137,
+            "printed_page_label": "135"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
+            "+(artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
+            "Histogram Processing artifacts created by reversals of intensity. Condition (b) guarantees that the range of printed page 135 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "135",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "artifacts created by reversals of intensity. Condition (b) guarantees that the range of",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.17"
+            ],
+            "equation_ids": [
+              "3-9"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 137,
+            "pdf_page_number": 138,
+            "printed_page_label": "136"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
+            "+(integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
+            "Histogram Processing integral with respect to its upper limit is the integrand evaluated at the limit. That is, printed page 136 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "136",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "integral with respect to its upper limit is the integrand evaluated at the limit. That is,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-10",
+              "3-11",
+              "3-12"
+            ],
+            "example_ids": [
+              "3.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 138,
+            "pdf_page_number": 139,
+            "printed_page_label": "137"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Substituting this result for drds in Eq. (3-10), and noting that all probability values) +(printed page 137) --QDF=0",
+            "+(Substituting this result for drds in Eq. (3-10), and noting that all probability values) +(printed page 137) --QDF=0",
+            "Histogram Processing Substituting this result for drds in Eq. (3-10), and noting that all probability values printed page 137 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "137",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Substituting this result for drds in Eq. (3-10), and noting that all probability values",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.18"
+            ],
+            "equation_ids": [
+              "3-10",
+              "3-13",
+              "3-11"
+            ],
+            "example_ids": [
+              "3.4"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
           "page": {
             "pdf_page_index": 139,
             "pdf_page_number": 140,
@@ -1881,9 +2153,10 @@
             "end_before": null
           },
           "queries": [
+            "+(text Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s) +(printed page 138) --QDF=0",
+            "+(equation 3-15) +(printed page 138) --QDF=0",
             "+(Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s) +(printed page 138) --QDF=0",
             "Histogram Processing Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s printed page 138 --QDF=0",
-            "+(equation 3-15) +(printed page 138) --QDF=0",
             "+(3-15) +(equation) +(printed page 138) --QDF=0"
           ],
           "required_evidence": [
@@ -1921,8 +2194,51 @@
           }
         },
         {
-          "sequence": 2,
-          "page_role": "single",
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 140,
+            "pdf_page_number": 141,
+            "printed_page_label": "139"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that) +(printed page 139) --QDF=0",
+            "+(the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that) +(printed page 139) --QDF=0",
+            "Histogram Processing the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that printed page 139 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "139",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.19"
+            ],
+            "equation_ids": [
+              "3-15"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.1"
+            ]
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
           "page": {
             "pdf_page_index": 141,
             "pdf_page_number": 142,
@@ -1933,9 +2249,10 @@
             "end_before": null
           },
           "queries": [
+            "+(text fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-) +(printed page 140) --QDF=0",
+            "+(equation 3-16) +(printed page 140) --QDF=0",
             "+(fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-) +(printed page 140) --QDF=0",
             "Histogram Processing fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma- printed page 140 --QDF=0",
-            "+(equation 3-16) +(printed page 140) --QDF=0",
             "+(3-16) +(equation) +(printed page 140) --QDF=0"
           ],
           "required_evidence": [
@@ -1971,6 +2288,578 @@
             ],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 142,
+            "pdf_page_number": 143,
+            "printed_page_label": "141"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).) +(printed page 141) --QDF=0",
+            "+(column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).) +(printed page 141) --QDF=0",
+            "Histogram Processing column: histograms of the images in the center column (compare with the histograms in Fig. 3.16). printed page 141 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "141",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.20"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 143,
+            "pdf_page_number": 144,
+            "printed_page_label": "142"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text However, there are applications in which histogram equalization is not suitable. In) +(printed page 142) --QDF=0",
+            "+(However, there are applications in which histogram equalization is not suitable. In) +(printed page 142) --QDF=0",
+            "Histogram Processing However, there are applications in which histogram equalization is not suitable. In printed page 142 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "142",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "However, there are applications in which histogram equalization is not suitable. In",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.21"
+            ],
+            "equation_ids": [
+              "3-15",
+              "3-17",
+              "3-11",
+              "3-18",
+              "3-19"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 144,
+            "pdf_page_number": 145,
+            "printed_page_label": "143"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text where the components of this equation are as before. Similarly, given a specific value) +(printed page 143) --QDF=0",
+            "+(where the components of this equation are as before. Similarly, given a specific value) +(printed page 143) --QDF=0",
+            "Histogram Processing where the components of this equation are as before. Similarly, given a specific value printed page 143 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "143",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "where the components of this equation are as before. Similarly, given a specific value",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-17",
+              "3-18",
+              "3-19",
+              "3-15",
+              "3-20",
+              "3-21",
+              "3-22"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 145,
+            "pdf_page_number": 146,
+            "printed_page_label": "144"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that) +(printed page 144) --QDF=0",
+            "+(be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that) +(printed page 144) --QDF=0",
+            "Histogram Processing be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that printed page 144 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "144",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-23",
+              "3-21",
+              "3-20"
+            ],
+            "example_ids": [
+              "3.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 146,
+            "pdf_page_number": 147,
+            "printed_page_label": "145"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,) +(printed page 145) --QDF=0",
+            "+(Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,) +(printed page 145) --QDF=0",
+            "Histogram Processing Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore, printed page 145 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "145",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.22"
+            ],
+            "equation_ids": [
+              "3-21"
+            ],
+            "example_ids": [
+              "3.7",
+              "3.5"
+            ],
+            "table_ids": [
+              "3.2",
+              "3.3"
+            ]
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 147,
+            "pdf_page_number": 148,
+            "printed_page_label": "146"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-) +(printed page 146) --QDF=0",
+            "+(For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-) +(printed page 146) --QDF=0",
+            "Histogram Processing For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram- printed page 146 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "146",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "3.5",
+              "3.7"
+            ],
+            "table_ids": [
+              "3.3",
+              "3.4",
+              "3.2"
+            ]
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 148,
+            "pdf_page_number": 149,
+            "printed_page_label": "147"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the) +(printed page 147) --QDF=0",
+            "+(obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the) +(printed page 147) --QDF=0",
+            "Histogram Processing obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the printed page 147 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "147",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.23",
+              "3.24"
+            ],
+            "equation_ids": [
+              "3-20"
+            ],
+            "example_ids": [
+              "3.8"
+            ],
+            "table_ids": [
+              "3.4"
+            ]
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 149,
+            "pdf_page_number": 150,
+            "printed_page_label": "148"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.) +(printed page 148) --QDF=0",
+            "+(precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.) +(printed page 148) --QDF=0",
+            "Histogram Processing precisely in this interval, we would expect the result to be an image with a light, washed-out appearance. printed page 148 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "148",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.24",
+              "3.25"
+            ],
+            "equation_ids": [
+              "3-21",
+              "3-23"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 150,
+            "pdf_page_number": 151,
+            "printed_page_label": "149"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text generally fails when the objective is to enhance details over small areas in an image.) +(printed page 149) --QDF=0",
+            "+(generally fails when the objective is to enhance details over small areas in an image.) +(printed page 149) --QDF=0",
+            "Histogram Processing generally fails when the objective is to enhance details over small areas in an image. printed page 149 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "149",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "generally fails when the objective is to enhance details over small areas in an image.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "LOCAL HISTOGRAM PROCESSING"
+            ],
+            "figure_ids": [
+              "3.25"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 151,
+            "pdf_page_number": 152,
+            "printed_page_label": "150"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram) +(printed page 150) --QDF=0",
+            "+(squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram) +(printed page 150) --QDF=0",
+            "Histogram Processing squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram printed page 150 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "150",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "USING HISTOGRAM STATISTICS FOR IMAGE ENHANCEMENT"
+            ],
+            "figure_ids": [
+              "3.26"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.9"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 19,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 152,
+            "pdf_page_number": 153,
+            "printed_page_label": "151"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text the local variance (or standard deviation) is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
+            "+(the local variance (or standard deviation) is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
+            "Histogram Processing the local variance (or standard deviation) is a measure of intensity contrast in that printed page 151 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "151",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the local variance (or standard deviation) is a measure of intensity contrast in that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-24",
+              "3-25",
+              "3-26",
+              "3-27",
+              "3-28"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 20,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 153,
+            "pdf_page_number": 154,
+            "printed_page_label": "152"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the) +(printed page 152) --QDF=0",
+            "+(speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the) +(printed page 152) --QDF=0",
+            "Histogram Processing speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the printed page 152 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "152",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.27"
+            ],
+            "equation_ids": [
+              "3-25",
+              "3-26",
+              "3-29"
+            ],
+            "example_ids": [
+              "3.10"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 21,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 154,
+            "pdf_page_number": 155,
+            "printed_page_label": "153"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING"
+            }
+          },
+          "queries": [
+            "+(text 3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),) +(printed page 153) --QDF=0",
+            "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0",
+            "+(3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),) +(printed page 153) --QDF=0",
+            "Histogram Processing 3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c), printed page 153 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "153",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-29"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -1978,6 +2867,7 @@
           "kind": "section",
           "target_id": "3.3",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2892,6 +3782,7 @@
           "kind": "equation",
           "target_id": "3-15",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2935,6 +3826,7 @@
           "kind": "equation",
           "target_id": "3-16",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -3049,17 +3941,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 84,
             "pdf_page_number": 85,
             "printed_page_label": "83"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text tools we use throughout the book; and (2) to help you begin developing a “feel” for) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "+(2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tools we use throughout the book; and (2) to help you begin developing a “feel” for printed page 83 --QDF=0"
           ],
@@ -3093,7 +3990,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 85,
             "pdf_page_number": 86,
@@ -3104,6 +4001,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
             "+(original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing original input multiplied by that constant. The first property is called the property printed page 84 --QDF=0"
           ],
@@ -3134,7 +4032,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 86,
             "pdf_page_number": 87,
@@ -3145,6 +4043,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
             "+(As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing As you will see in the next three chapters, linear operations are exceptionally impor- printed page 85 --QDF=0"
           ],
@@ -3175,7 +4074,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 87,
             "pdf_page_number": 88,
@@ -3186,6 +4085,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
             "+(versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is printed page 86 --QDF=0"
           ],
@@ -3221,7 +4121,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 88,
             "pdf_page_number": 89,
@@ -3232,6 +4132,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
             "+(identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing identical for all practical purposes. This is not unexpected, as the difference between the standard devia- printed page 87 --QDF=0"
           ],
@@ -3263,7 +4164,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 89,
             "pdf_page_number": 90,
@@ -3274,6 +4175,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
             "+(in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi printed page 88 --QDF=0"
           ],
@@ -3302,7 +4204,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 90,
             "pdf_page_number": 91,
@@ -3313,6 +4215,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
             "+(effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing effect of subtracting the mask from each sample live image is that the areas that are different between printed page 89 --QDF=0"
           ],
@@ -3342,7 +4245,7 @@
         },
         {
           "sequence": 8,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 91,
             "pdf_page_number": 92,
@@ -3353,6 +4256,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
             "+(tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process printed page 90 --QDF=0"
           ],
@@ -3383,7 +4287,7 @@
         },
         {
           "sequence": 9,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 92,
             "pdf_page_number": 93,
@@ -3394,6 +4298,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
             "+(In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing In this section, we discuss the basics of set theory. We also introduce and illustrate printed page 91 --QDF=0"
           ],
@@ -3429,7 +4334,7 @@
         },
         {
           "sequence": 10,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 93,
             "pdf_page_number": 94,
@@ -3440,6 +4345,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
             "+(This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing This is the set of elements that belong to A, but not to B. We can define Ac in terms printed page 92 --QDF=0"
           ],
@@ -3476,7 +4382,7 @@
         },
         {
           "sequence": 11,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 94,
             "pdf_page_number": 95,
@@ -3487,6 +4393,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
             "+(pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union printed page 93 --QDF=0"
           ],
@@ -3514,7 +4421,7 @@
         },
         {
           "sequence": 12,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 95,
             "pdf_page_number": 96,
@@ -3525,6 +4432,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
             "+(Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form printed page 94 --QDF=0"
           ],
@@ -3559,7 +4467,7 @@
         },
         {
           "sequence": 13,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 96,
             "pdf_page_number": 97,
@@ -3570,6 +4478,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
             "+(which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows printed page 95 --QDF=0"
           ],
@@ -3599,7 +4508,7 @@
         },
         {
           "sequence": 14,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 97,
             "pdf_page_number": 98,
@@ -3610,6 +4519,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
             "+(is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is strict because no member of the set can precede itself (antireflexivity) and, for any printed page 96 --QDF=0"
           ],
@@ -3637,7 +4547,7 @@
         },
         {
           "sequence": 15,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 98,
             "pdf_page_number": 99,
@@ -3648,6 +4558,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
             "+(els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing els in a single image as sets, or (2) we can work with one or more images of the same printed page 97 --QDF=0"
           ],
@@ -3677,7 +4588,7 @@
         },
         {
           "sequence": 16,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 99,
             "pdf_page_number": 100,
@@ -3688,6 +4599,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
             "+(expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing expressions in the last two rows of Fig. 2.37 were constructed using operators from printed page 98 --QDF=0"
           ],
@@ -3719,7 +4631,7 @@
         },
         {
           "sequence": 17,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 100,
             "pdf_page_number": 101,
@@ -3730,6 +4642,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
             "+(The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing The simplest operation we perform on a digital image is to alter the intensity of its printed page 99 --QDF=0"
           ],
@@ -3763,7 +4676,7 @@
         },
         {
           "sequence": 18,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 101,
             "pdf_page_number": 102,
@@ -3774,6 +4687,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
             "+(net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing net effect is to perform local blurring in the original image. This type of process is printed page 100 --QDF=0"
           ],
@@ -3805,7 +4719,7 @@
         },
         {
           "sequence": 19,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 102,
             "pdf_page_number": 103,
@@ -3816,6 +4730,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
             "+(ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi- printed page 101 --QDF=0"
           ],
@@ -3846,7 +4761,7 @@
         },
         {
           "sequence": 20,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 103,
             "pdf_page_number": 104,
@@ -3857,6 +4772,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
             "+(single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing single output pixel value. In addition, it is possible that some output locations may printed page 102 --QDF=0"
           ],
@@ -3886,7 +4802,7 @@
         },
         {
           "sequence": 21,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 104,
             "pdf_page_number": 105,
@@ -3897,6 +4813,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
             "+(crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we printed page 103 --QDF=0"
           ],
@@ -3930,7 +4847,7 @@
         },
         {
           "sequence": 22,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 105,
             "pdf_page_number": 106,
@@ -3941,6 +4858,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
             "+(interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values). printed page 104 --QDF=0"
           ],
@@ -3970,7 +4888,7 @@
         },
         {
           "sequence": 23,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 106,
             "pdf_page_number": 107,
@@ -3981,6 +4899,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
             "+(input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing input and reference images, respectively. If we have four pairs of corresponding tie printed page 105 --QDF=0"
           ],
@@ -4011,7 +4930,7 @@
         },
         {
           "sequence": 24,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 107,
             "pdf_page_number": 108,
@@ -4022,6 +4941,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
             "+(shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in printed page 106 --QDF=0"
           ],
@@ -4058,7 +4978,7 @@
         },
         {
           "sequence": 25,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 108,
             "pdf_page_number": 109,
@@ -4069,6 +4989,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
             "+(2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107 printed page 107 --QDF=0"
           ],
@@ -4099,7 +5020,7 @@
         },
         {
           "sequence": 26,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 109,
             "pdf_page_number": 110,
@@ -4110,6 +5031,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
             "+(image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men- printed page 108 --QDF=0"
           ],
@@ -4143,7 +5065,7 @@
         },
         {
           "sequence": 27,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 110,
             "pdf_page_number": 111,
@@ -4154,6 +5076,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
             "+(All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing All the image processing approaches discussed thus far operate directly on the pixels printed page 109 --QDF=0"
           ],
@@ -4190,7 +5113,7 @@
         },
         {
           "sequence": 28,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 111,
             "pdf_page_number": 112,
@@ -4201,6 +5124,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
             "+(manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu- printed page 110 --QDF=0"
           ],
@@ -4236,7 +5160,7 @@
         },
         {
           "sequence": 29,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 112,
             "pdf_page_number": 113,
@@ -4247,6 +5171,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text (2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
             "+((2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing (2-65). We will discuss these and other types of image transforms in later chapters. printed page 111 --QDF=0"
           ],
@@ -4282,7 +5207,7 @@
         },
         {
           "sequence": 30,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 113,
             "pdf_page_number": 114,
@@ -4293,6 +5218,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
             "+(that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing that the intensities are distributed approximately equally on both sides of the mean. printed page 112 --QDF=0"
           ],
@@ -4326,7 +5252,7 @@
         },
         {
           "sequence": 31,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 114,
             "pdf_page_number": 115,
@@ -4337,6 +5263,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
             "+([2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling printed page 113 --QDF=0"
           ],
@@ -4362,7 +5289,7 @@
         },
         {
           "sequence": 32,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 115,
             "pdf_page_number": 116,
@@ -4373,6 +5300,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
             "+(You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing You are preparing a report and have to insert in it printed page 114 --QDF=0"
           ],
@@ -4402,7 +5330,7 @@
         },
         {
           "sequence": 33,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 116,
             "pdf_page_number": 117,
@@ -4413,6 +5341,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
             "+(whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing whose function is to compute the sum of pixel val- printed page 115 --QDF=0"
           ],
@@ -4441,7 +5370,7 @@
         },
         {
           "sequence": 34,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 117,
             "pdf_page_number": 118,
@@ -4452,6 +5381,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text er half are above it. For example, the median of) +(printed page 116) --QDF=0",
             "+(er half are above it. For example, the median of) +(printed page 116) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing er half are above it. For example, the median of printed page 116 --QDF=0"
           ],
@@ -4483,7 +5413,7 @@
         },
         {
           "sequence": 35,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 118,
             "pdf_page_number": 119,
@@ -4494,6 +5424,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
             "+(is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is to look at the screen and reject any sample that printed page 117 --QDF=0"
           ],
@@ -4528,7 +5459,7 @@
         },
         {
           "sequence": 36,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 119,
             "pdf_page_number": 120,
@@ -4539,6 +5470,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
             "+(cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
             "Introduction to the Basic Mathematical Tools Used in Digital Image Processing cost much more than the lenses, so you should use printed page 118 --QDF=0"
           ],
@@ -4568,6 +5500,7 @@
           "kind": "section",
           "target_id": "2.6",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -6315,42 +7248,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 144,
-            "pdf_page_number": 145,
-            "printed_page_label": "143"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(equation 3-21) +(printed page 143) --QDF=0",
-            "+(3-21) +(equation) +(printed page 143) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "143",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_equation",
-              "value": "3-21",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 145,
             "pdf_page_number": 146,
             "printed_page_label": "144"
@@ -6384,25 +7281,61 @@
           }
         },
         {
-          "sequence": 3,
+          "sequence": 2,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 149,
-            "pdf_page_number": 150,
-            "printed_page_label": "148"
+            "pdf_page_index": 144,
+            "pdf_page_number": 145,
+            "printed_page_label": "143"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 3.25) +(printed page 148) --QDF=0",
-            "+(3.25) +(figure) +(printed page 148) --QDF=0"
+            "+(equation 3-21) +(printed page 143) --QDF=0",
+            "+(3-21) +(equation) +(printed page 143) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "148",
+              "value": "143",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "3-21",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 150,
+            "pdf_page_number": 151,
+            "printed_page_label": "149"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 3.25) +(printed page 149) --QDF=0",
+            "+(3.25) +(figure) +(printed page 149) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "149",
               "verification_mode": "visual_required"
             },
             {
@@ -6425,6 +7358,7 @@
           "kind": "equation",
           "target_id": "3-23",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -6468,6 +7402,7 @@
           "kind": "equation",
           "target_id": "3-21",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -6511,27 +7446,28 @@
           "kind": "figure",
           "target_id": "3.25",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 149,
-                "pdf_page_number": 150,
-                "printed_page_label": "148"
+                "pdf_page_index": 150,
+                "pdf_page_number": 151,
+                "printed_page_label": "149"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 3.25) +(printed page 148) --QDF=0",
-                "+(3.25) +(figure) +(printed page 148) --QDF=0"
+                "+(figure 3.25) +(printed page 149) --QDF=0",
+                "+(3.25) +(figure) +(printed page 149) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "148",
+                  "value": "149",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -6625,17 +7561,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 134,
             "pdf_page_number": 135,
             "printed_page_label": "133"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "3.3 HISTOGRAM PROCESSING"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text images with four basic intensity characteristics: dark, light, low contrast, and high) +(printed page 133) --QDF=0",
+            "+(heading 3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0",
             "+(3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0",
             "Histogram Processing images with four basic intensity characteristics: dark, light, low contrast, and high printed page 133 --QDF=0"
           ],
@@ -6671,7 +7612,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 135,
             "pdf_page_number": 136,
@@ -6682,6 +7623,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text contrast and will exhibit a large variety of gray tones. The net effect will be an image) +(printed page 134) --QDF=0",
             "+(contrast and will exhibit a large variety of gray tones. The net effect will be an image) +(printed page 134) --QDF=0",
             "Histogram Processing contrast and will exhibit a large variety of gray tones. The net effect will be an image printed page 134 --QDF=0"
           ],
@@ -6713,7 +7655,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 136,
             "pdf_page_number": 137,
@@ -6724,6 +7666,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
             "+(artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
             "Histogram Processing artifacts created by reversals of intensity. Condition (b) guarantees that the range of printed page 135 --QDF=0"
           ],
@@ -6753,7 +7696,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 137,
             "pdf_page_number": 138,
@@ -6764,6 +7707,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
             "+(integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
             "Histogram Processing integral with respect to its upper limit is the integrand evaluated at the limit. That is, printed page 136 --QDF=0"
           ],
@@ -6795,7 +7739,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 138,
             "pdf_page_number": 139,
@@ -6806,6 +7750,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text Substituting this result for drds in Eq. (3-10), and noting that all probability values) +(printed page 137) --QDF=0",
             "+(Substituting this result for drds in Eq. (3-10), and noting that all probability values) +(printed page 137) --QDF=0",
             "Histogram Processing Substituting this result for drds in Eq. (3-10), and noting that all probability values printed page 137 --QDF=0"
           ],
@@ -6839,7 +7784,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 139,
             "pdf_page_number": 140,
@@ -6850,6 +7795,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s) +(printed page 138) --QDF=0",
             "+(Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s) +(printed page 138) --QDF=0",
             "Histogram Processing Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s printed page 138 --QDF=0"
           ],
@@ -6884,7 +7830,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 140,
             "pdf_page_number": 141,
@@ -6895,6 +7841,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that) +(printed page 139) --QDF=0",
             "+(the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that) +(printed page 139) --QDF=0",
             "Histogram Processing the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that printed page 139 --QDF=0"
           ],
@@ -6926,7 +7873,7 @@
         },
         {
           "sequence": 8,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 141,
             "pdf_page_number": 142,
@@ -6937,6 +7884,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-) +(printed page 140) --QDF=0",
             "+(fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-) +(printed page 140) --QDF=0",
             "Histogram Processing fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma- printed page 140 --QDF=0"
           ],
@@ -6971,7 +7919,7 @@
         },
         {
           "sequence": 9,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 142,
             "pdf_page_number": 143,
@@ -6982,6 +7930,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).) +(printed page 141) --QDF=0",
             "+(column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).) +(printed page 141) --QDF=0",
             "Histogram Processing column: histograms of the images in the center column (compare with the histograms in Fig. 3.16). printed page 141 --QDF=0"
           ],
@@ -7009,7 +7958,7 @@
         },
         {
           "sequence": 10,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 143,
             "pdf_page_number": 144,
@@ -7020,6 +7969,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text However, there are applications in which histogram equalization is not suitable. In) +(printed page 142) --QDF=0",
             "+(However, there are applications in which histogram equalization is not suitable. In) +(printed page 142) --QDF=0",
             "Histogram Processing However, there are applications in which histogram equalization is not suitable. In printed page 142 --QDF=0"
           ],
@@ -7053,7 +8003,7 @@
         },
         {
           "sequence": 11,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 144,
             "pdf_page_number": 145,
@@ -7064,6 +8014,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text where the components of this equation are as before. Similarly, given a specific value) +(printed page 143) --QDF=0",
             "+(where the components of this equation are as before. Similarly, given a specific value) +(printed page 143) --QDF=0",
             "Histogram Processing where the components of this equation are as before. Similarly, given a specific value printed page 143 --QDF=0"
           ],
@@ -7097,7 +8048,7 @@
         },
         {
           "sequence": 12,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 145,
             "pdf_page_number": 146,
@@ -7108,6 +8059,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that) +(printed page 144) --QDF=0",
             "+(be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that) +(printed page 144) --QDF=0",
             "Histogram Processing be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that printed page 144 --QDF=0"
           ],
@@ -7139,7 +8091,7 @@
         },
         {
           "sequence": 13,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 146,
             "pdf_page_number": 147,
@@ -7150,6 +8102,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,) +(printed page 145) --QDF=0",
             "+(Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,) +(printed page 145) --QDF=0",
             "Histogram Processing Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore, printed page 145 --QDF=0"
           ],
@@ -7185,7 +8138,7 @@
         },
         {
           "sequence": 14,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 147,
             "pdf_page_number": 148,
@@ -7196,6 +8149,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-) +(printed page 146) --QDF=0",
             "+(For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-) +(printed page 146) --QDF=0",
             "Histogram Processing For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram- printed page 146 --QDF=0"
           ],
@@ -7228,7 +8182,7 @@
         },
         {
           "sequence": 15,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 148,
             "pdf_page_number": 149,
@@ -7239,6 +8193,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the) +(printed page 147) --QDF=0",
             "+(obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the) +(printed page 147) --QDF=0",
             "Histogram Processing obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the printed page 147 --QDF=0"
           ],
@@ -7273,7 +8228,7 @@
         },
         {
           "sequence": 16,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 149,
             "pdf_page_number": 150,
@@ -7284,6 +8239,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.) +(printed page 148) --QDF=0",
             "+(precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.) +(printed page 148) --QDF=0",
             "Histogram Processing precisely in this interval, we would expect the result to be an image with a light, washed-out appearance. printed page 148 --QDF=0"
           ],
@@ -7315,7 +8271,7 @@
         },
         {
           "sequence": 17,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 150,
             "pdf_page_number": 151,
@@ -7326,6 +8282,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text generally fails when the objective is to enhance details over small areas in an image.) +(printed page 149) --QDF=0",
             "+(generally fails when the objective is to enhance details over small areas in an image.) +(printed page 149) --QDF=0",
             "Histogram Processing generally fails when the objective is to enhance details over small areas in an image. printed page 149 --QDF=0"
           ],
@@ -7355,7 +8312,7 @@
         },
         {
           "sequence": 18,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 151,
             "pdf_page_number": 152,
@@ -7366,6 +8323,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram) +(printed page 150) --QDF=0",
             "+(squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram) +(printed page 150) --QDF=0",
             "Histogram Processing squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram printed page 150 --QDF=0"
           ],
@@ -7397,7 +8355,7 @@
         },
         {
           "sequence": 19,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 152,
             "pdf_page_number": 153,
@@ -7408,6 +8366,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text the local variance (or standard deviation) is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
             "+(the local variance (or standard deviation) is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
             "Histogram Processing the local variance (or standard deviation) is a measure of intensity contrast in that printed page 151 --QDF=0"
           ],
@@ -7439,7 +8398,7 @@
         },
         {
           "sequence": 20,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 153,
             "pdf_page_number": 154,
@@ -7450,6 +8409,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the) +(printed page 152) --QDF=0",
             "+(speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the) +(printed page 152) --QDF=0",
             "Histogram Processing speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the printed page 152 --QDF=0"
           ],
@@ -7483,7 +8443,7 @@
         },
         {
           "sequence": 21,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 154,
             "pdf_page_number": 155,
@@ -7491,9 +8451,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING"
+            }
           },
           "queries": [
+            "+(text 3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),) +(printed page 153) --QDF=0",
+            "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0",
             "+(3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),) +(printed page 153) --QDF=0",
             "Histogram Processing 3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c), printed page 153 --QDF=0"
           ],
@@ -7530,6 +8495,7 @@
           "kind": "section",
           "target_id": "3.3",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8557,6 +9523,7 @@
           "kind": "equation",
           "target_id": "3-35",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -8784,7 +9751,55 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 154,
+            "pdf_page_number": 155,
+            "printed_page_label": "153"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text In this section, we discuss the use of spatial filters for image processing. Spatial filter-) +(printed page 153) --QDF=0",
+            "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0",
+            "+(3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0",
+            "Fundamentals of Spatial Filtering In this section, we discuss the use of spatial filters for image processing. Spatial filter- printed page 153 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "153",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "In this section, we discuss the use of spatial filters for image processing. Spatial filter-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "3.4 FUNDAMENTALS OF SPATIAL FILTERING"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
           "page": {
             "pdf_page_index": 155,
             "pdf_page_number": 156,
@@ -8795,10 +9810,9 @@
             "end_before": null
           },
           "queries": [
+            "+(text of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi-) +(printed page 154) --QDF=0",
             "+(of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi-) +(printed page 154) --QDF=0",
-            "Fundamentals of Spatial Filtering of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi- printed page 154 --QDF=0",
-            "+(figure 3.28) +(printed page 154) --QDF=0",
-            "+(3.28) +(figure) +(printed page 154) --QDF=0"
+            "Fundamentals of Spatial Filtering of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi- printed page 154 --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8810,11 +9824,6 @@
               "kind": "contains_text",
               "value": "of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi-",
               "verification_mode": "text_or_visual"
-            },
-            {
-              "kind": "contains_figure",
-              "value": "3.28",
-              "verification_mode": "visual_required"
             }
           ],
           "coverage": {
@@ -8835,8 +9844,182 @@
           }
         },
         {
-          "sequence": 2,
-          "page_role": "single",
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 156,
+            "pdf_page_number": 157,
+            "printed_page_label": "155"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text form correlation, in which w is positioned so that its center coefficient is coincident) +(printed page 155) --QDF=0",
+            "+(figure 3.28) +(printed page 155) --QDF=0",
+            "+(form correlation, in which w is positioned so that its center coefficient is coincident) +(printed page 155) --QDF=0",
+            "Fundamentals of Spatial Filtering form correlation, in which w is positioned so that its center coefficient is coincident printed page 155 --QDF=0",
+            "+(3.28) +(figure) +(printed page 155) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "155",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "form correlation, in which w is positioned so that its center coefficient is coincident",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "3.28",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.29",
+              "3.28"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 157,
+            "pdf_page_number": 158,
+            "printed_page_label": "156"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text to fully shift w past f so the center coefﬁcient in w visited every pixel in f. Sometimes,) +(printed page 156) --QDF=0",
+            "+(to fully shift w past f so the center coefﬁcient in w visited every pixel in f. Sometimes,) +(printed page 156) --QDF=0",
+            "Fundamentals of Spatial Filtering to fully shift w past f so the center coefﬁcient in w visited every pixel in f. Sometimes, printed page 156 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "156",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "to fully shift w past f so the center coefﬁcient in w visited every pixel in f. Sometimes,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.29"
+            ],
+            "equation_ids": [
+              "3-32"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 158,
+            "pdf_page_number": 159,
+            "printed_page_label": "157"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text † In reality, we are shifting f to the left of w every time we increment x in Eq. (3-32). However, it is more intuitive) +(printed page 157) --QDF=0",
+            "+(† In reality, we are shifting f to the left of w every time we increment x in Eq. (3-32). However, it is more intuitive) +(printed page 157) --QDF=0",
+            "Fundamentals of Spatial Filtering † In reality, we are shifting f to the left of w every time we increment x in Eq. (3-32). However, it is more intuitive printed page 157 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "157",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "† In reality, we are shifting f to the left of w every time we increment x in Eq. (3-32). However, it is more intuitive",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.30"
+            ],
+            "equation_ids": [
+              "3-33",
+              "3-32"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 159,
+            "pdf_page_number": 160,
+            "printed_page_label": "158"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text † As we mentioned earlier, the minimum number of required padding elements for a 2-D correlation is () +(printed page 158) --QDF=0",
+            "+(† As we mentioned earlier, the minimum number of required padding elements for a 2-D correlation is () +(printed page 158) --QDF=0",
+            "Fundamentals of Spatial Filtering † As we mentioned earlier, the minimum number of required padding elements for a 2-D correlation is ( printed page 158 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "158",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "† As we mentioned earlier, the minimum number of required padding elements for a 2-D correlation is (",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.30"
+            ],
+            "equation_ids": [
+              "3-31",
+              "3-34",
+              "3-36",
+              "3-37"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
           "page": {
             "pdf_page_index": 160,
             "pdf_page_number": 161,
@@ -8847,9 +10030,10 @@
             "end_before": null
           },
           "queries": [
+            "+(text just its center) visits every pixel in f. This requires that the starting conﬁguration be) +(printed page 159) --QDF=0",
+            "+(equation 3-35) +(printed page 159) --QDF=0",
             "+(just its center) visits every pixel in f. This requires that the starting conﬁguration be) +(printed page 159) --QDF=0",
             "Fundamentals of Spatial Filtering just its center) visits every pixel in f. This requires that the starting conﬁguration be printed page 159 --QDF=0",
-            "+(equation 3-35) +(printed page 159) --QDF=0",
             "+(3-35) +(equation) +(printed page 159) --QDF=0"
           ],
           "required_evidence": [
@@ -8883,6 +10067,236 @@
               "3.5"
             ]
           }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 161,
+            "pdf_page_number": 162,
+            "printed_page_label": "160"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text cally, these terms are used in the literature to denote a spatial ﬁlter kernel, and not) +(printed page 160) --QDF=0",
+            "+(cally, these terms are used in the literature to denote a spatial ﬁlter kernel, and not) +(printed page 160) --QDF=0",
+            "Fundamentals of Spatial Filtering cally, these terms are used in the literature to denote a spatial ﬁlter kernel, and not printed page 160 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "160",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "cally, these terms are used in the literature to denote a spatial ﬁlter kernel, and not",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.31"
+            ],
+            "equation_ids": [
+              "3-38",
+              "3-36",
+              "3-37",
+              "3-39",
+              "3-40"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.5"
+            ]
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 162,
+            "pdf_page_number": 163,
+            "printed_page_label": "161"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text It turns out that the product of a column vector and a row vector is the same as the) +(printed page 161) --QDF=0",
+            "+(It turns out that the product of a column vector and a row vector is the same as the) +(printed page 161) --QDF=0",
+            "Fundamentals of Spatial Filtering It turns out that the product of a column vector and a row vector is the same as the printed page 161 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "161",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "It turns out that the product of a column vector and a row vector is the same as the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SEPARABLE FILTER KERNELS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-41",
+              "3-42",
+              "3-43",
+              "3-35"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.5"
+            ]
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 163,
+            "pdf_page_number": 164,
+            "printed_page_label": "162"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text execution times can be reduced by a factor of a hundred or more, which is significant.) +(printed page 162) --QDF=0",
+            "+(execution times can be reduced by a factor of a hundred or more, which is significant.) +(printed page 162) --QDF=0",
+            "Fundamentals of Spatial Filtering execution times can be reduced by a factor of a hundred or more, which is significant. printed page 162 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "162",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "execution times can be reduced by a factor of a hundred or more, which is significant.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SOME IMPORTANT COMPARISONS BETWEEN FILTERING IN THE SPATIAL AND FREQUENCY DOMAINS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-44",
+              "3-41"
+            ],
+            "example_ids": [
+              "3.16"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 164,
+            "pdf_page_number": 165,
+            "printed_page_label": "163"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text both positive and negative frequencies, as we will explain in Section 4.3 (see Fig. 4.8). For the moment, we show) +(printed page 163) --QDF=0",
+            "+(both positive and negative frequencies, as we will explain in Section 4.3 (see Fig. 4.8). For the moment, we show) +(printed page 163) --QDF=0",
+            "Fundamentals of Spatial Filtering both positive and negative frequencies, as we will explain in Section 4.3 (see Fig. 4.8). For the moment, we show printed page 163 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "163",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "both positive and negative frequencies, as we will explain in Section 4.3 (see Fig. 4.8). For the moment, we show",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.32"
+            ],
+            "equation_ids": [
+              "3-33"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 165,
+            "pdf_page_number": 166,
+            "printed_page_label": "164"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+            }
+          },
+          "queries": [
+            "+(text evident in the ﬁgure. A central theme of digital ﬁlter design theory is obtaining faith-) +(printed page 164) --QDF=0",
+            "+(heading 3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS) +(printed page 164) --QDF=0",
+            "+(evident in the ﬁgure. A central theme of digital ﬁlter design theory is obtaining faith-) +(printed page 164) --QDF=0",
+            "Fundamentals of Spatial Filtering evident in the ﬁgure. A central theme of digital ﬁlter design theory is obtaining faith- printed page 164 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "164",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "evident in the ﬁgure. A central theme of digital ﬁlter design theory is obtaining faith-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "A WORD ABOUT HOW SPATIAL FILTER KERNELS ARE CONSTRUCTED"
+            ],
+            "figure_ids": [
+              "3.32"
+            ],
+            "equation_ids": [
+              "3-42"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -8890,6 +10304,7 @@
           "kind": "section",
           "target_id": "3.4",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -9418,6 +10833,7 @@
           "kind": "equation",
           "target_id": "3-35",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -9461,27 +10877,28 @@
           "kind": "figure",
           "target_id": "3.28",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 155,
-                "pdf_page_number": 156,
-                "printed_page_label": "154"
+                "pdf_page_index": 156,
+                "pdf_page_number": 157,
+                "printed_page_label": "155"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 3.28) +(printed page 154) --QDF=0",
-                "+(3.28) +(figure) +(printed page 154) --QDF=0"
+                "+(figure 3.28) +(printed page 155) --QDF=0",
+                "+(3.28) +(figure) +(printed page 155) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "154",
+                  "value": "155",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -9577,22 +10994,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 155,
-            "pdf_page_number": 156,
-            "printed_page_label": "154"
+            "pdf_page_index": 156,
+            "pdf_page_number": 157,
+            "printed_page_label": "155"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 3.28) +(printed page 154) --QDF=0",
-            "+(3.28) +(figure) +(printed page 154) --QDF=0"
+            "+(figure 3.28) +(printed page 155) --QDF=0",
+            "+(3.28) +(figure) +(printed page 155) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "154",
+              "value": "155",
               "verification_mode": "visual_required"
             },
             {
@@ -9615,27 +11032,28 @@
           "kind": "figure",
           "target_id": "3.28",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 155,
-                "pdf_page_number": 156,
-                "printed_page_label": "154"
+                "pdf_page_index": 156,
+                "pdf_page_number": 157,
+                "printed_page_label": "155"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 3.28) +(printed page 154) --QDF=0",
-                "+(3.28) +(figure) +(printed page 154) --QDF=0"
+                "+(figure 3.28) +(printed page 155) --QDF=0",
+                "+(3.28) +(figure) +(printed page 155) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "154",
+                  "value": "155",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -9734,22 +11152,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 159,
-            "pdf_page_number": 160,
-            "printed_page_label": "158"
+            "pdf_page_index": 160,
+            "pdf_page_number": 161,
+            "printed_page_label": "159"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(equation 3-36) +(printed page 158) --QDF=0",
-            "+(3-36) +(equation) +(printed page 158) --QDF=0"
+            "+(equation 3-36) +(printed page 159) --QDF=0",
+            "+(3-36) +(equation) +(printed page 159) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "158",
+              "value": "159",
               "verification_mode": "visual_required"
             },
             {
@@ -9772,27 +11190,28 @@
           "kind": "equation",
           "target_id": "3-36",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 159,
-                "pdf_page_number": 160,
-                "printed_page_label": "158"
+                "pdf_page_index": 160,
+                "pdf_page_number": 161,
+                "printed_page_label": "159"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(equation 3-36) +(printed page 158) --QDF=0",
-                "+(3-36) +(equation) +(printed page 158) --QDF=0"
+                "+(equation 3-36) +(printed page 159) --QDF=0",
+                "+(3-36) +(equation) +(printed page 159) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "158",
+                  "value": "159",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -9888,22 +11307,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 158,
-            "pdf_page_number": 159,
-            "printed_page_label": "157"
+            "pdf_page_index": 159,
+            "pdf_page_number": 160,
+            "printed_page_label": "158"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 3.30) +(printed page 157) --QDF=0",
-            "+(3.30) +(figure) +(printed page 157) --QDF=0"
+            "+(figure 3.30) +(printed page 158) --QDF=0",
+            "+(3.30) +(figure) +(printed page 158) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "157",
+              "value": "158",
               "verification_mode": "visual_required"
             },
             {
@@ -9929,10 +11348,19 @@
             "printed_page_label": "198"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "3.18"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "3.19"
+            }
           },
           "queries": [
+            "+(text large ellipse in Fig. 3.28 when the kernel is) +(printed page 198) --QDF=0",
+            "+(exercise 3.18) +(printed page 198) --QDF=0",
+            "+(exercise 3.19) +(printed page 198) --QDF=0",
             "+(3.18) +(printed page 198) --QDF=0",
             "+(large ellipse in Fig. 3.28 when the kernel is) +(printed page 198) --QDF=0"
           ],
@@ -9972,27 +11400,28 @@
           "kind": "figure",
           "target_id": "3.30",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 158,
-                "pdf_page_number": 159,
-                "printed_page_label": "157"
+                "pdf_page_index": 159,
+                "pdf_page_number": 160,
+                "printed_page_label": "158"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 3.30) +(printed page 157) --QDF=0",
-                "+(3.30) +(figure) +(printed page 157) --QDF=0"
+                "+(figure 3.30) +(printed page 158) --QDF=0",
+                "+(3.30) +(figure) +(printed page 158) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "157",
+                  "value": "158",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -10015,6 +11444,7 @@
           "kind": "exercise",
           "target_id": "3.18",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -10294,17 +11724,22 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 154,
             "pdf_page_number": 155,
             "printed_page_label": "153"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING"
+            },
             "end_before": null
           },
           "queries": [
+            "+(text In this section, we discuss the use of spatial filters for image processing. Spatial filter-) +(printed page 153) --QDF=0",
+            "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0",
             "+(3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0",
             "Fundamentals of Spatial Filtering In this section, we discuss the use of spatial filters for image processing. Spatial filter- printed page 153 --QDF=0"
           ],
@@ -10337,7 +11772,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 155,
             "pdf_page_number": 156,
@@ -10348,6 +11783,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi-) +(printed page 154) --QDF=0",
             "+(of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi-) +(printed page 154) --QDF=0",
             "Fundamentals of Spatial Filtering of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi- printed page 154 --QDF=0"
           ],
@@ -10382,7 +11818,7 @@
         },
         {
           "sequence": 3,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 156,
             "pdf_page_number": 157,
@@ -10393,6 +11829,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text form correlation, in which w is positioned so that its center coefficient is coincident) +(printed page 155) --QDF=0",
             "+(form correlation, in which w is positioned so that its center coefficient is coincident) +(printed page 155) --QDF=0",
             "Fundamentals of Spatial Filtering form correlation, in which w is positioned so that its center coefficient is coincident printed page 155 --QDF=0"
           ],
@@ -10421,7 +11858,7 @@
         },
         {
           "sequence": 4,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 157,
             "pdf_page_number": 158,
@@ -10432,6 +11869,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text to fully shift w past f so the center coefﬁcient in w visited every pixel in f. Sometimes,) +(printed page 156) --QDF=0",
             "+(to fully shift w past f so the center coefﬁcient in w visited every pixel in f. Sometimes,) +(printed page 156) --QDF=0",
             "Fundamentals of Spatial Filtering to fully shift w past f so the center coefﬁcient in w visited every pixel in f. Sometimes, printed page 156 --QDF=0"
           ],
@@ -10461,7 +11899,7 @@
         },
         {
           "sequence": 5,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 158,
             "pdf_page_number": 159,
@@ -10472,6 +11910,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text † In reality, we are shifting f to the left of w every time we increment x in Eq. (3-32). However, it is more intuitive) +(printed page 157) --QDF=0",
             "+(† In reality, we are shifting f to the left of w every time we increment x in Eq. (3-32). However, it is more intuitive) +(printed page 157) --QDF=0",
             "Fundamentals of Spatial Filtering † In reality, we are shifting f to the left of w every time we increment x in Eq. (3-32). However, it is more intuitive printed page 157 --QDF=0"
           ],
@@ -10502,7 +11941,7 @@
         },
         {
           "sequence": 6,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 159,
             "pdf_page_number": 160,
@@ -10513,6 +11952,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text † As we mentioned earlier, the minimum number of required padding elements for a 2-D correlation is () +(printed page 158) --QDF=0",
             "+(† As we mentioned earlier, the minimum number of required padding elements for a 2-D correlation is () +(printed page 158) --QDF=0",
             "Fundamentals of Spatial Filtering † As we mentioned earlier, the minimum number of required padding elements for a 2-D correlation is ( printed page 158 --QDF=0"
           ],
@@ -10545,7 +11985,7 @@
         },
         {
           "sequence": 7,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 160,
             "pdf_page_number": 161,
@@ -10556,6 +11996,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text just its center) visits every pixel in f. This requires that the starting conﬁguration be) +(printed page 159) --QDF=0",
             "+(just its center) visits every pixel in f. This requires that the starting conﬁguration be) +(printed page 159) --QDF=0",
             "Fundamentals of Spatial Filtering just its center) visits every pixel in f. This requires that the starting conﬁguration be printed page 159 --QDF=0"
           ],
@@ -10588,7 +12029,7 @@
         },
         {
           "sequence": 8,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 161,
             "pdf_page_number": 162,
@@ -10599,6 +12040,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text cally, these terms are used in the literature to denote a spatial ﬁlter kernel, and not) +(printed page 160) --QDF=0",
             "+(cally, these terms are used in the literature to denote a spatial ﬁlter kernel, and not) +(printed page 160) --QDF=0",
             "Fundamentals of Spatial Filtering cally, these terms are used in the literature to denote a spatial ﬁlter kernel, and not printed page 160 --QDF=0"
           ],
@@ -10634,7 +12076,7 @@
         },
         {
           "sequence": 9,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 162,
             "pdf_page_number": 163,
@@ -10645,6 +12087,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text It turns out that the product of a column vector and a row vector is the same as the) +(printed page 161) --QDF=0",
             "+(It turns out that the product of a column vector and a row vector is the same as the) +(printed page 161) --QDF=0",
             "Fundamentals of Spatial Filtering It turns out that the product of a column vector and a row vector is the same as the printed page 161 --QDF=0"
           ],
@@ -10679,7 +12122,7 @@
         },
         {
           "sequence": 10,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 163,
             "pdf_page_number": 164,
@@ -10690,6 +12133,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text execution times can be reduced by a factor of a hundred or more, which is significant.) +(printed page 162) --QDF=0",
             "+(execution times can be reduced by a factor of a hundred or more, which is significant.) +(printed page 162) --QDF=0",
             "Fundamentals of Spatial Filtering execution times can be reduced by a factor of a hundred or more, which is significant. printed page 162 --QDF=0"
           ],
@@ -10722,7 +12166,7 @@
         },
         {
           "sequence": 11,
-          "page_role": "single",
+          "page_role": "body",
           "page": {
             "pdf_page_index": 164,
             "pdf_page_number": 165,
@@ -10733,6 +12177,7 @@
             "end_before": null
           },
           "queries": [
+            "+(text both positive and negative frequencies, as we will explain in Section 4.3 (see Fig. 4.8). For the moment, we show) +(printed page 163) --QDF=0",
             "+(both positive and negative frequencies, as we will explain in Section 4.3 (see Fig. 4.8). For the moment, we show) +(printed page 163) --QDF=0",
             "Fundamentals of Spatial Filtering both positive and negative frequencies, as we will explain in Section 4.3 (see Fig. 4.8). For the moment, we show printed page 163 --QDF=0"
           ],
@@ -10762,7 +12207,7 @@
         },
         {
           "sequence": 12,
-          "page_role": "single",
+          "page_role": "end",
           "page": {
             "pdf_page_index": 165,
             "pdf_page_number": 166,
@@ -10770,9 +12215,14 @@
           },
           "content_window": {
             "start_at": null,
-            "end_before": null
+            "end_before": {
+              "kind": "heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+            }
           },
           "queries": [
+            "+(text evident in the ﬁgure. A central theme of digital ﬁlter design theory is obtaining faith-) +(printed page 164) --QDF=0",
+            "+(heading 3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS) +(printed page 164) --QDF=0",
             "+(evident in the ﬁgure. A central theme of digital ﬁlter design theory is obtaining faith-) +(printed page 164) --QDF=0",
             "Fundamentals of Spatial Filtering evident in the ﬁgure. A central theme of digital ﬁlter design theory is obtaining faith- printed page 164 --QDF=0"
           ],
@@ -10821,8 +12271,8 @@
           },
           "queries": [
             "+(equation 3-45) +(printed page 167) --QDF=0",
-            "+(3-45) +(equation) +(printed page 167) --QDF=0",
             "+(equation 3-46) +(printed page 167) --QDF=0",
+            "+(3-45) +(equation) +(printed page 167) --QDF=0",
             "+(3-46) +(equation) +(printed page 167) --QDF=0"
           ],
           "required_evidence": [
@@ -10856,6 +12306,7 @@
           "kind": "section",
           "target_id": "3.4",
           "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -11384,6 +12835,7 @@
           "kind": "equation",
           "target_id": "3-45",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -11427,6 +12879,7 @@
           "kind": "equation",
           "target_id": "3-46",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -11543,22 +12996,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 158,
-            "pdf_page_number": 159,
-            "printed_page_label": "157"
+            "pdf_page_index": 159,
+            "pdf_page_number": 160,
+            "printed_page_label": "158"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 3.30) +(printed page 157) --QDF=0",
-            "+(3.30) +(figure) +(printed page 157) --QDF=0"
+            "+(figure 3.30) +(printed page 158) --QDF=0",
+            "+(3.30) +(figure) +(printed page 158) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "157",
+              "value": "158",
               "verification_mode": "visual_required"
             },
             {
@@ -11581,27 +13034,28 @@
           "kind": "figure",
           "target_id": "3.30",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 158,
-                "pdf_page_number": 159,
-                "printed_page_label": "157"
+                "pdf_page_index": 159,
+                "pdf_page_number": 160,
+                "printed_page_label": "158"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 3.30) +(printed page 157) --QDF=0",
-                "+(3.30) +(figure) +(printed page 157) --QDF=0"
+                "+(figure 3.30) +(printed page 158) --QDF=0",
+                "+(3.30) +(figure) +(printed page 158) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "157",
+                  "value": "158",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -11729,6 +13183,7 @@
           "kind": "table",
           "target_id": "3.6",
           "reason": "Explicit table reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -12175,6 +13630,7 @@
           "kind": "figure",
           "target_id": "3.42",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -12657,6 +14113,7 @@
           "kind": "figure",
           "target_id": "3.41",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -12996,42 +14453,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 102,
-            "pdf_page_number": 103,
-            "printed_page_label": "101"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(table 2.3) +(printed page 101) --QDF=0",
-            "+(2.3) +(table) +(printed page 101) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "101",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_table",
-              "value": "2.3",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 180,
             "pdf_page_number": 181,
             "printed_page_label": "179"
@@ -13063,6 +14484,42 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 103,
+            "pdf_page_number": 104,
+            "printed_page_label": "102"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(table 2.3) +(printed page 102) --QDF=0",
+            "+(2.3) +(table) +(printed page 102) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "102",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_table",
+              "value": "2.3",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -13070,6 +14527,7 @@
           "kind": "equation",
           "target_id": "3-50",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13113,27 +14571,28 @@
           "kind": "table",
           "target_id": "2.3",
           "reason": "Explicit table reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 102,
-                "pdf_page_number": 103,
-                "printed_page_label": "101"
+                "pdf_page_index": 103,
+                "pdf_page_number": 104,
+                "printed_page_label": "102"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(table 2.3) +(printed page 101) --QDF=0",
-                "+(2.3) +(table) +(printed page 101) --QDF=0"
+                "+(table 2.3) +(printed page 102) --QDF=0",
+                "+(2.3) +(table) +(printed page 102) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "101",
+                  "value": "102",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -13229,22 +14688,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 181,
-            "pdf_page_number": 182,
-            "printed_page_label": "180"
+            "pdf_page_index": 182,
+            "pdf_page_number": 183,
+            "printed_page_label": "181"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(figure 3.46) +(printed page 180) --QDF=0",
-            "+(3.46) +(figure) +(printed page 180) --QDF=0"
+            "+(figure 3.46) +(printed page 181) --QDF=0",
+            "+(3.46) +(figure) +(printed page 181) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "180",
+              "value": "181",
               "verification_mode": "visual_required"
             },
             {
@@ -13267,27 +14726,28 @@
           "kind": "figure",
           "target_id": "3.46",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 181,
-                "pdf_page_number": 182,
-                "printed_page_label": "180"
+                "pdf_page_index": 182,
+                "pdf_page_number": 183,
+                "printed_page_label": "181"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 3.46) +(printed page 180) --QDF=0",
-                "+(3.46) +(figure) +(printed page 180) --QDF=0"
+                "+(figure 3.46) +(printed page 181) --QDF=0",
+                "+(3.46) +(figure) +(printed page 181) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "180",
+                  "value": "181",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -13459,42 +14919,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 180,
-            "pdf_page_number": 181,
-            "printed_page_label": "179"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(equation 3-53) +(printed page 179) --QDF=0",
-            "+(3-53) +(equation) +(printed page 179) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "179",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_equation",
-              "value": "3-53",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 183,
             "pdf_page_number": 184,
             "printed_page_label": "182"
@@ -13526,6 +14950,42 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 180,
+            "pdf_page_number": 181,
+            "printed_page_label": "179"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 3-53) +(printed page 179) --QDF=0",
+            "+(3-53) +(equation) +(printed page 179) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "179",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "3-53",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -13533,6 +14993,7 @@
           "kind": "equation",
           "target_id": "3-55",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13576,6 +15037,7 @@
           "kind": "equation",
           "target_id": "3-53",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13705,8 +15167,8 @@
           },
           "queries": [
             "+(equation 3-58) +(printed page 185) --QDF=0",
-            "+(3-58) +(equation) +(printed page 185) --QDF=0",
             "+(equation 3-59) +(printed page 185) --QDF=0",
+            "+(3-58) +(equation) +(printed page 185) --QDF=0",
             "+(3-59) +(equation) +(printed page 185) --QDF=0"
           ],
           "required_evidence": [
@@ -13743,10 +15205,19 @@
             "printed_page_label": "200"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "3.39"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "3.40"
+            }
           },
           "queries": [
+            "+(text * Show that the Laplacian deﬁned in Eq. (3-50) is) +(printed page 200) --QDF=0",
+            "+(exercise 3.39) +(printed page 200) --QDF=0",
+            "+(exercise 3.40) +(printed page 200) --QDF=0",
             "+(3.39) +(printed page 200) --QDF=0",
             "+(* Show that the Laplacian deﬁned in Eq. (3-50) is) +(printed page 200) --QDF=0"
           ],
@@ -13790,6 +15261,7 @@
           "kind": "equation",
           "target_id": "3-58",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13833,6 +15305,7 @@
           "kind": "equation",
           "target_id": "3-59",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -13876,6 +15349,7 @@
           "kind": "exercise",
           "target_id": "3.39",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -14086,6 +15560,7 @@
           "kind": "figure",
           "target_id": "3.45",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -14129,6 +15604,7 @@
           "kind": "figure",
           "target_id": "3.50",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -14275,6 +15751,7 @@
           "kind": "figure",
           "target_id": "3.2",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -14396,10 +15873,19 @@
             "printed_page_label": "199"
           },
           "content_window": {
-            "start_at": null,
-            "end_before": null
+            "start_at": {
+              "kind": "exercise",
+              "value": "3.31"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "3.32"
+            }
           },
           "queries": [
+            "+(text values in the original and ﬁltered images is the) +(printed page 199) --QDF=0",
+            "+(exercise 3.31) +(printed page 199) --QDF=0",
+            "+(exercise 3.32) +(printed page 199) --QDF=0",
             "+(3.31) +(printed page 199) --QDF=0",
             "+(values in the original and ﬁltered images is the) +(printed page 199) --QDF=0"
           ],
@@ -14439,6 +15925,7 @@
           "kind": "exercise",
           "target_id": "3.31",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,

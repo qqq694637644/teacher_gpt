@@ -478,6 +478,13 @@
             "minLength": 1,
             "title": "Reason"
           },
+          "selected_context_pages": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Selected Context Pages"
+          },
           "retrieval_plan": {
             "items": {
               "$ref": "#/components/schemas/PageRetrievalStep"
@@ -728,7 +735,6 @@
               "type": "string"
             },
             "type": "array",
-            "maxItems": 4,
             "minItems": 2,
             "title": "Queries"
           },

@@ -65,6 +65,12 @@ REFERENCE_OVERRIDES = {
         ),
     ),
 }
+SELECTED_CONTEXT_PAGE_OVERRIDES = {
+    ("2.11", "section", "2.4"): ["70", "71"],
+    ("3.8", "section", "3.3"): ["135", "136"],
+    ("11.2", "section", "11.2"): ["815", "816"],
+    ("11.22", "section", "11.4"): ["850", "851"],
+}
 
 
 def _page_reference(raw: dict[str, Any]) -> PageReference:
@@ -372,6 +378,10 @@ def _reference_specs(text: str, exercise_id: str) -> list[ExerciseReferenceSpec]
                     kind=kind,
                     target_id=target_id,
                     reason=reason,
+                    selected_context_pages=SELECTED_CONTEXT_PAGE_OVERRIDES.get(
+                        (exercise_id, kind, target_id),
+                        [],
+                    ),
                 )
             )
     return specs

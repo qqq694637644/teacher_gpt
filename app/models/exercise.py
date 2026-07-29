@@ -45,11 +45,18 @@ class ExerciseReferenceTarget(StrictModel):
     kind: ExerciseReferenceKind
     target_id: str = Field(min_length=1)
     reason: str = Field(min_length=1)
+    selected_context_pages: list[str] = Field(default_factory=list)
     retrieval_plan: Annotated[list[PageRetrievalStep], Field(min_length=1)]
 
     @model_validator(mode="after")
     def validate_target_id(self) -> ExerciseReferenceTarget:
         validate_reference_id(self.kind, self.target_id)
+        if len(self.selected_context_pages) != len(set(self.selected_context_pages)):
+            raise ValueError("selected_context_pages must be unique")
+        if any(not value.strip() for value in self.selected_context_pages):
+            raise ValueError("selected_context_pages cannot contain blank labels")
+        if self.selected_context_pages and self.kind != "section":
+            raise ValueError("selected_context_pages is supported only for section references")
         return self
 
 
@@ -123,10 +130,15 @@ class ExerciseLocator(StrictModel):
                 raise ValueError(
                     "reference retrieval plan sequence must be contiguous and start at 1"
                 )
-            if len({step.page.pdf_page_index for step in self.reference_retrieval_plan}) != len(
-                self.reference_retrieval_plan
-            ):
-                raise ValueError("reference retrieval plan must not repeat physical pages")
+            for step in self.reference_retrieval_plan:
+                for evidence in step.required_evidence:
+                    if evidence.kind == "printed_page_equals":
+                        continue
+                    folded_value = evidence.value.casefold()
+                    if not any(folded_value in query.casefold() for query in step.queries):
+                        raise ValueError(
+                            "every non-page reference evidence must have a matching query anchor"
+                        )
         return self
 
 

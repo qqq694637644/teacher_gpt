@@ -105,13 +105,14 @@ def _equation_reference_step() -> PageRetrievalStep:
     )
 
 
-def test_exercise_compiler_prunes_broad_sections_and_deduplicates_pages() -> None:
+def test_exercise_compiler_uses_explicit_context_pages_and_coalesces_exact_windows() -> None:
     raw = complete_exercise_manifest().model_dump(mode="json")
     raw["exercises"][0]["reference_specs"] = [
         {
             "kind": "section",
             "target_id": "2.6",
             "reason": "Broad section context",
+            "selected_context_pages": ["98"],
         },
         {
             "kind": "equation",
@@ -135,6 +136,7 @@ def test_exercise_compiler_prunes_broad_sections_and_deduplicates_pages() -> Non
         ("equation", "2-1"),
     ]
     assert len(locator.reference_targets[0].retrieval_plan) == 4
+    assert locator.reference_targets[0].selected_context_pages == ["98"]
     assert [step.page.pdf_page_index for step in locator.reference_retrieval_plan] == [0]
     assert {
         (item.kind, item.value) for item in locator.reference_retrieval_plan[0].required_evidence
@@ -147,8 +149,10 @@ def test_exercise_compiler_prunes_broad_sections_and_deduplicates_pages() -> Non
         ("contains_equation", "2-1"),
     }
     assert compiler.reference_plan_stats.raw_reference_step_count == 6
-    assert compiler.reference_plan_stats.pruned_context_reference_count == 1
-    assert compiler.reference_plan_stats.duplicate_reference_page_count == 1
+    assert compiler.reference_plan_stats.selected_context_reference_count == 1
+    assert compiler.reference_plan_stats.execution_reference_step_count_before_merge == 3
+    assert compiler.reference_plan_stats.coalesced_reference_step_count == 1
+    assert compiler.reference_plan_stats.same_page_distinct_window_step_count == 0
     assert compiler.reference_plan_stats.deduplicated_reference_step_count == 2
 
 

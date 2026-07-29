@@ -464,7 +464,9 @@ Exercise / Problem
 
 Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。运行时同时保留完整 `reference_targets` 作为审计元数据，并生成去重后的 `reference_retrieval_plan` 作为 GPT 默认执行计划。
 
-去重不是简单删除引用。规则是：同一道题如果同时显式引用宽泛 section 和更精确的 equation、figure、table、example 或 exercise，且精确目标页落在该 section 范围内，则只保留 section 中与精确目标同页的上下文证据，再与精确目标证据合并；如果没有更精确目标，section 仍按原范围保留。同一物理页上的多个目标合并为一个 step，`required_evidence` 和 `coverage` 取并集。
+去重不是简单删除引用。编译器禁止根据“精确目标位于 Section 范围内”自动裁剪 Section。只有经过 PDF 审核并写入 manifest 的 `selected_context_pages` 才会缩小 Section 的执行范围；未显式选择时必须保留完整 Section plan。
+
+聚合只允许合并“同一物理页且 `content_window` 完全相同”的步骤，`required_evidence` 和 `coverage` 取并集。同一页上的不同习题窗口必须保留为多个独立 step，例如 `[4.4, 4.5)` 与 `[4.9, 4.10)` 不能合并。每个非页码 evidence 至少生成一条包含其值的查询，不允许因固定查询数量上限静默丢失目标。
 
 以固定 PDF 中习题 2.11 为例，题干在印刷页 114，提到 Section 2.4 和 Eqs. (2-14)–(2-16)。PDF 原文显示式 (2-14) 和 linear indexing 上下文在印刷页 70，式 (2-15)、(2-16) 在印刷页 71。因此完整 `reference_targets` 仍记录 Section 2.4 的 63–79 页，但 `reference_retrieval_plan` 只执行 70、71 两页，并保留这两页的局部 section 文本证据与公式证据。
 
@@ -485,9 +487,11 @@ query text anchor checks: 1040
 resolved references: 412
 cross-exercise references: 56
 raw reference retrieval steps: 1344
-pruned broad context references: 11
-duplicate reference pages removed from execution: 40
-deduplicated reference retrieval steps: 1106
+selected context references: 4
+execution reference steps before exact-window merge: 1276
+coalesced same-page/same-window steps: 34
+same-page distinct-window steps preserved: 1
+deduplicated reference retrieval steps: 1242
 source_pdf_verification_status: passed
 file_search_retrieval_status: not_tested
 ```

@@ -406,7 +406,15 @@ def extract_page_anchors(doc: fitz.Document) -> list[dict[str, Any]]:
                     if key in seen:
                         continue
                     seen.add(key)
-                    found.append({"id": match.group(1), "bbox": list(line.bbox)})
+                    found.append(
+                        {
+                            "id": match.group(1),
+                            "bbox": list(line.bbox),
+                            "font_names": list(line.font_names),
+                            "max_font_size": line.max_font_size,
+                            "colors": list(line.colors),
+                        }
+                    )
             return found
 
         figure_records = records(FIGURE_RE)

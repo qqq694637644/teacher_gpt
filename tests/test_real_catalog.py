@@ -4,6 +4,7 @@ from fastapi.testclient import TestClient
 
 from app.core.config import Settings
 from app.main import create_app
+from app.repositories.exercise_repository import ExerciseRepository
 
 REAL_INDEX = Path("catalog/dip4e/compiled_locator_index.json")
 REAL_EXERCISE_INDEX = Path("catalog/dip4e/compiled_exercise_index.json")
@@ -62,3 +63,72 @@ def test_real_catalog_starts_and_serves_reviewed_sections() -> None:
     assert chapter_payload["exercise_count"] == 41
     assert chapter_payload["first_exercise"] == "2.1"
     assert chapter_payload["last_exercise"] == "2.41"
+
+
+def test_real_exercise_reference_plans_preserve_reviewed_pdf_context_and_windows() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+
+    exercise_3_8 = index.exercises["3.8"]
+    assert [step.page.printed_page_label for step in exercise_3_8.reference_retrieval_plan] == [
+        "135",
+        "136",
+    ]
+    assert exercise_3_8.reference_targets[0].selected_context_pages == ["135", "136"]
+
+    exercise_11_2 = index.exercises["11.2"]
+    assert [step.page.printed_page_label for step in exercise_11_2.reference_retrieval_plan] == [
+        "815",
+        "816",
+    ]
+    assert exercise_11_2.reference_targets[0].selected_context_pages == ["815", "816"]
+
+    exercise_11_22 = index.exercises["11.22"]
+    assert [step.page.printed_page_label for step in exercise_11_22.reference_retrieval_plan] == [
+        "850",
+        "851",
+    ]
+    table_target = next(
+        target for target in exercise_11_22.reference_targets if target.kind == "table"
+    )
+    assert [step.page.printed_page_label for step in table_target.retrieval_plan] == ["851"]
+
+    exercise_2_20 = index.exercises["2.20"]
+    assert len(exercise_2_20.reference_retrieval_plan) == 1
+    step_2_20 = exercise_2_20.reference_retrieval_plan[0]
+    assert step_2_20.page.printed_page_label == "115"
+    assert step_2_20.content_window.start_at.model_dump() == {
+        "kind": "exercise",
+        "value": "2.19",
+    }
+    assert step_2_20.content_window.end_before.model_dump() == {
+        "kind": "exercise",
+        "value": "2.20",
+    }
+
+    exercise_4_12 = index.exercises["4.12"]
+    page_309_steps = [
+        step
+        for step in exercise_4_12.reference_retrieval_plan
+        if step.page.printed_page_label == "309"
+    ]
+    assert len(page_309_steps) == 2
+    assert {
+        (
+            step.content_window.start_at.value,
+            step.content_window.end_before.value,
+        )
+        for step in page_309_steps
+    } == {("4.4", "4.5"), ("4.9", "4.10")}
+
+    exercise_2_11 = index.exercises["2.11"]
+    assert [step.page.printed_page_label for step in exercise_2_11.reference_retrieval_plan] == [
+        "70",
+        "71",
+    ]
+    page_71 = exercise_2_11.reference_retrieval_plan[1]
+    for evidence in page_71.required_evidence:
+        if evidence.kind == "printed_page_equals":
+            continue
+        assert any(evidence.value.casefold() in query.casefold() for query in page_71.queries)
+    assert any("2-15" in query for query in page_71.queries)
+    assert any("2-16" in query for query in page_71.queries)

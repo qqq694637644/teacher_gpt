@@ -9,10 +9,13 @@ from app.models.exercise import (
     ExerciseLocator,
     ExerciseReferenceTarget,
 )
-from app.models.exercise_manifest import ExerciseManifest, ExerciseManifestNode
+from app.models.exercise_manifest import (
+    ExerciseManifest,
+    ExerciseManifestNode,
+    ExerciseReferenceSpec,
+)
 from app.models.locator import (
     CompiledLocatorIndex,
-    ContentWindow,
     EvidenceRequirement,
     PageCoverage,
     PageRetrievalStep,
@@ -25,8 +28,10 @@ ReferencePlanMap = dict[tuple[str, str], list[PageRetrievalStep]]
 @dataclass(frozen=True)
 class ReferencePlanStats:
     raw_reference_step_count: int = 0
-    pruned_context_reference_count: int = 0
-    duplicate_reference_page_count: int = 0
+    selected_context_reference_count: int = 0
+    execution_reference_step_count_before_merge: int = 0
+    coalesced_reference_step_count: int = 0
+    same_page_distinct_window_step_count: int = 0
     deduplicated_reference_step_count: int = 0
 
 
@@ -49,8 +54,10 @@ class ExerciseIndexCompiler:
 
         resolved_plans = reference_plans or {}
         raw_reference_step_count = 0
-        pruned_context_reference_count = 0
-        duplicate_reference_page_count = 0
+        selected_context_reference_count = 0
+        execution_reference_step_count_before_merge = 0
+        coalesced_reference_step_count = 0
+        same_page_distinct_window_step_count = 0
         deduplicated_reference_step_count = 0
         preliminary: dict[str, ExerciseLocator] = {}
         nodes: dict[str, ExerciseManifestNode] = {}
@@ -75,6 +82,7 @@ class ExerciseIndexCompiler:
         exercises: dict[str, ExerciseLocator] = {}
         for exercise_id, locator in preliminary.items():
             targets: list[ExerciseReferenceTarget] = []
+            execution_targets: list[ExerciseReferenceTarget] = []
             for spec in nodes[exercise_id].reference_specs:
                 if spec.kind == "section":
                     try:
@@ -104,14 +112,35 @@ class ExerciseIndexCompiler:
                         kind=spec.kind,
                         target_id=spec.target_id,
                         reason=spec.reason,
+                        selected_context_pages=spec.selected_context_pages,
                         retrieval_plan=list(plan),
                     )
                 )
+                execution_plan = self._selected_execution_plan(
+                    exercise_id,
+                    spec,
+                    list(plan),
+                )
+                execution_targets.append(
+                    ExerciseReferenceTarget(
+                        kind=spec.kind,
+                        target_id=spec.target_id,
+                        reason=spec.reason,
+                        selected_context_pages=spec.selected_context_pages,
+                        retrieval_plan=execution_plan,
+                    )
+                )
             raw_reference_step_count += sum(len(target.retrieval_plan) for target in targets)
-            duplicate_reference_page_count += self._duplicate_page_count(targets)
-            optimized_targets, pruned_count = self._prune_context_sections(targets)
-            pruned_context_reference_count += pruned_count
-            aggregate_plan = self._merge_reference_targets(optimized_targets)
+            selected_context_reference_count += sum(
+                bool(target.selected_context_pages) for target in execution_targets
+            )
+            execution_step_count = sum(len(target.retrieval_plan) for target in execution_targets)
+            execution_reference_step_count_before_merge += execution_step_count
+            same_page_distinct_window_step_count += self._same_page_distinct_window_count(
+                execution_targets
+            )
+            aggregate_plan = self._merge_reference_targets(execution_targets)
+            coalesced_reference_step_count += execution_step_count - len(aggregate_plan)
             deduplicated_reference_step_count += len(aggregate_plan)
             exercises[exercise_id] = ExerciseLocator.model_validate(
                 {
@@ -125,8 +154,12 @@ class ExerciseIndexCompiler:
 
         self.reference_plan_stats = ReferencePlanStats(
             raw_reference_step_count=raw_reference_step_count,
-            pruned_context_reference_count=pruned_context_reference_count,
-            duplicate_reference_page_count=duplicate_reference_page_count,
+            selected_context_reference_count=selected_context_reference_count,
+            execution_reference_step_count_before_merge=(
+                execution_reference_step_count_before_merge
+            ),
+            coalesced_reference_step_count=coalesced_reference_step_count,
+            same_page_distinct_window_step_count=same_page_distinct_window_step_count,
             deduplicated_reference_step_count=deduplicated_reference_step_count,
         )
 
@@ -182,94 +215,105 @@ class ExerciseIndexCompiler:
         return steps
 
     @staticmethod
-    def _target_chapter(target: ExerciseReferenceTarget) -> str:
-        if target.kind == "equation":
-            return target.target_id.split("-", 1)[0]
-        return target.target_id.split(".", 1)[0]
-
-    @classmethod
-    def _prune_context_sections(
-        cls,
-        targets: list[ExerciseReferenceTarget],
-    ) -> tuple[list[ExerciseReferenceTarget], int]:
-        precise_targets = [target for target in targets if target.kind != "section"]
-        if not precise_targets:
-            return targets, 0
-
-        pruned = 0
-        kept: list[ExerciseReferenceTarget] = []
-        for target in targets:
-            if target.kind != "section":
-                kept.append(target)
-                continue
-            section_pages = {step.page.pdf_page_index for step in target.retrieval_plan}
-            precise_pages_inside: set[int] = set()
-            for precise in precise_targets:
-                precise_pages = {step.page.pdf_page_index for step in precise.retrieval_plan}
-                if (
-                    cls._target_chapter(precise) == cls._target_chapter(target)
-                    and precise_pages <= section_pages
-                ):
-                    precise_pages_inside.update(precise_pages)
-            if precise_pages_inside:
-                pruned += 1
-                kept.append(
-                    target.model_copy(
-                        update={
-                            "retrieval_plan": [
-                                step
-                                for step in target.retrieval_plan
-                                if step.page.pdf_page_index in precise_pages_inside
-                            ]
-                        }
-                    )
-                )
-                continue
-            kept.append(target)
-        return kept, pruned
+    def _selected_execution_plan(
+        exercise_id: str,
+        spec: ExerciseReferenceSpec,
+        plan: list[PageRetrievalStep],
+    ) -> list[PageRetrievalStep]:
+        if not spec.selected_context_pages:
+            return plan
+        selected = set(spec.selected_context_pages)
+        available = {step.page.printed_page_label for step in plan}
+        missing = sorted(selected - available)
+        if missing:
+            raise ValueError(
+                f"exercise {exercise_id} selects pages outside section {spec.target_id}: {missing}"
+            )
+        return [step for step in plan if step.page.printed_page_label in selected]
 
     @staticmethod
-    def _duplicate_page_count(targets: list[ExerciseReferenceTarget]) -> int:
-        pages = [step.page.pdf_page_index for target in targets for step in target.retrieval_plan]
-        return len(pages) - len(set(pages))
+    def _window_key(step: PageRetrievalStep) -> tuple[object, ...]:
+        start = step.content_window.start_at
+        end = step.content_window.end_before
+        return (
+            step.page.pdf_page_index,
+            None if start is None else (start.kind, start.value),
+            None if end is None else (end.kind, end.value),
+        )
+
+    @classmethod
+    def _same_page_distinct_window_count(
+        cls,
+        targets: list[ExerciseReferenceTarget],
+    ) -> int:
+        windows_by_page: dict[int, set[tuple[object, ...]]] = defaultdict(set)
+        for target in targets:
+            for step in target.retrieval_plan:
+                windows_by_page[step.page.pdf_page_index].add(cls._window_key(step))
+        return sum(max(0, len(windows) - 1) for windows in windows_by_page.values())
 
     @classmethod
     def _merge_reference_targets(
         cls,
         targets: list[ExerciseReferenceTarget],
     ) -> list[PageRetrievalStep]:
-        by_page: dict[int, list[PageRetrievalStep]] = defaultdict(list)
+        grouped: dict[tuple[object, ...], list[PageRetrievalStep]] = {}
         for target in targets:
             for step in target.retrieval_plan:
-                by_page[step.page.pdf_page_index].append(step)
+                grouped.setdefault(cls._window_key(step), []).append(step)
 
         merged: list[PageRetrievalStep] = []
-        for sequence, page_index in enumerate(sorted(by_page), start=1):
-            source_steps = by_page[page_index]
+        for sequence, source_steps in enumerate(grouped.values(), start=1):
             first = source_steps[0]
+            evidence = cls._merged_evidence(source_steps)
             merged.append(
                 PageRetrievalStep(
                     sequence=sequence,
-                    page_role="single",
+                    page_role=first.page_role,
                     page=first.page,
-                    content_window=ContentWindow(),
-                    queries=cls._merged_queries(source_steps),
-                    required_evidence=cls._merged_evidence(source_steps),
+                    content_window=first.content_window,
+                    queries=cls._merged_queries(source_steps, evidence),
+                    required_evidence=evidence,
                     coverage=cls._merged_coverage(source_steps),
                 )
             )
         return merged
 
-    @staticmethod
-    def _merged_queries(steps: list[PageRetrievalStep]) -> list[str]:
+    @classmethod
+    def _merged_queries(
+        cls,
+        steps: list[PageRetrievalStep],
+        evidence: list[EvidenceRequirement],
+    ) -> list[str]:
         queries: list[str] = []
+        page_label = steps[0].page.printed_page_label
+        for item in evidence:
+            if item.kind == "printed_page_equals":
+                continue
+            query = cls._evidence_query(item, page_label)
+            if query not in queries:
+                queries.append(query)
         for step in steps:
             for query in step.queries:
                 if query not in queries:
                     queries.append(query)
-                if len(queries) == 4:
-                    return queries
+        if len(queries) == 1:
+            queries.append(f"+(reference) +(printed page {page_label}) --QDF=0")
         return queries
+
+    @staticmethod
+    def _evidence_query(evidence: EvidenceRequirement, page_label: str) -> str:
+        prefixes = {
+            "contains_heading": "heading",
+            "contains_text": "text",
+            "contains_figure": "figure",
+            "contains_equation": "equation",
+            "contains_example": "example",
+            "contains_table": "table",
+            "contains_exercise": "exercise",
+        }
+        prefix = prefixes[evidence.kind]
+        return f"+({prefix} {evidence.value}) +(printed page {page_label}) --QDF=0"
 
     @staticmethod
     def _merged_evidence(steps: list[PageRetrievalStep]) -> list[EvidenceRequirement]:

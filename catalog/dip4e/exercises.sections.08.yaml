@@ -192,6 +192,7 @@ exercises:
   - kind: exercise
     target_id: '8.3'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.5'
   chapter_id: '8'
   exercise_number: 5
@@ -243,6 +244,7 @@ exercises:
   - kind: equation
     target_id: 8-7
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.6'
   chapter_id: '8'
   exercise_number: 6
@@ -504,6 +506,7 @@ exercises:
   - kind: figure
     target_id: '8.8'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.11'
   chapter_id: '8'
   exercise_number: 11
@@ -649,6 +652,7 @@ exercises:
   - kind: equation
     target_id: 8-13
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.14'
   chapter_id: '8'
   exercise_number: 14
@@ -794,6 +798,7 @@ exercises:
   - kind: equation
     target_id: 8-14
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.17'
   chapter_id: '8'
   exercise_number: 17
@@ -986,6 +991,7 @@ exercises:
   - kind: example
     target_id: '8.7'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.21'
   chapter_id: '8'
   exercise_number: 21
@@ -1318,6 +1324,7 @@ exercises:
   - kind: figure
     target_id: '8.36'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.28'
   chapter_id: '8'
   exercise_number: 28
@@ -1364,6 +1371,7 @@ exercises:
   - kind: equation
     target_id: 8-48
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.29'
   chapter_id: '8'
   exercise_number: 29
@@ -1510,9 +1518,11 @@ exercises:
   - kind: equation
     target_id: 8-61
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: table
     target_id: '7.1'
     reason: Explicit table reference in exercise text
+    selected_context_pages: []
 - exercise_id: '8.32'
   chapter_id: '8'
   exercise_number: 32

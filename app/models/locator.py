@@ -131,7 +131,7 @@ class PageRetrievalStep(StrictModel):
     page_role: Literal["start", "body", "end", "single"]
     page: PageReference
     content_window: ContentWindow = Field(default_factory=ContentWindow)
-    queries: Annotated[list[str], Field(min_length=2, max_length=4)]
+    queries: Annotated[list[str], Field(min_length=2)]
     required_evidence: Annotated[list[EvidenceRequirement], Field(min_length=1)]
     coverage: PageCoverage = Field(default_factory=PageCoverage)
 
