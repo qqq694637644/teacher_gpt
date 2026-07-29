@@ -16,8 +16,17 @@ FIGURE_RE = re.compile(r"\bFIGURE\s+(\d+(?:\.\d+)+)\b", re.IGNORECASE)
 EQUATION_RE = re.compile(r"\((\d+-\d+)\)")
 EXAMPLE_RE = re.compile(r"\bEXAMPLE\s+(\d+(?:\.\d+)*)\b", re.IGNORECASE)
 TABLE_RE = re.compile(r"\bTABLE\s+(\d+(?:\.\d+)*)\b", re.IGNORECASE)
+EXERCISE_RE = re.compile(
+    r"^(?P<leading_star>\*)?\s*(?P<id>\d+\.\d+)(?P<trailing_star>\s+\*)?(?=\s|$)"
+)
+PROBLEMS_RE = re.compile(r"^Problems$", re.IGNORECASE)
+TERMINAL_BOUNDARY_RE = re.compile(
+    r"^(?:Summary(?:,\s*References,\s*and\s*Further\s*Reading)?|Problems)$",
+    re.IGNORECASE,
+)
 HEADING_FONT = "Futura-Heavy"
 HEADING_COLOR = 28319
+COLUMN_SPLIT_RATIO = 0.49
 
 
 @dataclass(frozen=True)
@@ -42,6 +51,20 @@ class HeadingCandidate:
     bbox: tuple[float, float, float, float]
     numbered: bool
     style_signature: str
+
+
+@dataclass(frozen=True)
+class ExerciseCandidate:
+    exercise_id: str
+    chapter_id: str
+    exercise_number: int
+    starred: bool
+    source_order: int
+    pdf_page_index: int
+    pdf_page_number: int
+    printed_page_label: str
+    bbox: tuple[float, float, float, float]
+    column: int
 
 
 def clean_text(value: str) -> str:
@@ -204,6 +227,25 @@ def extract_chapter_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
     return candidates
 
 
+def chapter_end_indices(
+    doc: fitz.Document,
+    chapters: list[HeadingCandidate],
+) -> dict[str, int]:
+    top_level_pages = sorted(
+        {
+            int(pdf_page_number) - 1
+            for level, _title, pdf_page_number, _destination in doc.get_toc(simple=False)
+            if level == 1 and int(pdf_page_number) >= 1
+        }
+    )
+    result: dict[str, int] = {}
+    for chapter in chapters:
+        chapter_id = chapter.text.split()[0]
+        next_pages = [page for page in top_level_pages if page > chapter.pdf_page_index]
+        result[chapter_id] = min(next_pages) - 1 if next_pages else doc.page_count - 1
+    return result
+
+
 def extract_heading_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
     candidates: list[HeadingCandidate] = extract_chapter_candidates(doc)
     current_printed_section_id: str | None = None
@@ -211,6 +253,8 @@ def extract_heading_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
         page = doc[page_index]
         heading_lines = merge_wrapped_heading_lines(extract_lines(page))
         for line in heading_lines:
+            if TERMINAL_BOUNDARY_RE.fullmatch(line.text) is not None:
+                continue
             numbered_match = NUMBERED_HEADING_RE.match(line.text)
             if numbered_match:
                 current_printed_section_id = numbered_match.group("id")
@@ -232,20 +276,131 @@ def extract_heading_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
     return sorted(candidates, key=lambda item: (item.pdf_page_index, item.bbox[1], item.bbox[0]))
 
 
+def _column_for_x(page_width: float, x0: float) -> int:
+    return 0 if x0 < page_width * COLUMN_SPLIT_RATIO else 1
+
+
+def _reading_key(line: TextLine, page_width: float) -> tuple[int, float, float]:
+    return (_column_for_x(page_width, line.bbox[0]), line.bbox[1], line.bbox[0])
+
+
+def extract_problem_headings(doc: fitz.Document) -> dict[str, TextLine]:
+    chapters = extract_chapter_candidates(doc)
+    chapter_ends = chapter_end_indices(doc, chapters)
+    headings: dict[str, TextLine] = {}
+    for chapter in chapters:
+        chapter_id = chapter.text.split()[0]
+        for page_index in range(chapter.pdf_page_index, chapter_ends[chapter_id] + 1):
+            match = next(
+                (
+                    line
+                    for line in extract_lines(doc[page_index])
+                    if PROBLEMS_RE.fullmatch(line.text)
+                ),
+                None,
+            )
+            if match is not None:
+                headings[chapter_id] = match
+                break
+    return headings
+
+
+def extract_exercise_candidates(doc: fitz.Document) -> list[ExerciseCandidate]:
+    chapters = extract_chapter_candidates(doc)
+    chapter_ends = chapter_end_indices(doc, chapters)
+    problem_headings = extract_problem_headings(doc)
+    candidates: list[ExerciseCandidate] = []
+    for chapter in chapters:
+        chapter_id = chapter.text.split()[0]
+        chapter_end = chapter_ends[chapter_id]
+        problems_line = problem_headings.get(chapter_id)
+        if problems_line is None:
+            continue
+
+        chapter_candidates: list[tuple[TextLine, bool, int]] = []
+        for page_index in range(problems_line.pdf_page_index, chapter_end + 1):
+            page = doc[page_index]
+            ordered_lines = sorted(
+                extract_lines(page),
+                key=lambda item: _reading_key(item, page.rect.width),
+            )
+            for position, line in enumerate(ordered_lines):
+                if page_index == problems_line.pdf_page_index and _reading_key(
+                    line, page.rect.width
+                ) <= _reading_key(problems_line, page.rect.width):
+                    continue
+                match = EXERCISE_RE.match(line.text)
+                if match is None:
+                    continue
+                if "TimesTen-Bold" not in line.font_names or HEADING_COLOR not in line.colors:
+                    continue
+                exercise_id = match.group("id")
+                prefix, number = exercise_id.split(".", 1)
+                if prefix != chapter_id or not number.isdigit():
+                    continue
+                column = _column_for_x(page.rect.width, line.bbox[0])
+                near_column_margin = (
+                    line.bbox[0] <= page.rect.width * 0.24
+                    if column == 0
+                    else line.bbox[0] <= page.rect.width * 0.74
+                )
+                if not near_column_margin:
+                    continue
+                starred = (
+                    match.group("leading_star") is not None
+                    or match.group("trailing_star") is not None
+                )
+                if not starred and position > 0:
+                    previous = ordered_lines[position - 1]
+                    same_column = _column_for_x(page.rect.width, previous.bbox[0]) == column
+                    close = -2 <= line.bbox[1] - previous.bbox[3] <= 8
+                    starred = same_column and close and previous.text.strip() == "*"
+                chapter_candidates.append((line, starred, int(number)))
+
+        seen: set[str] = set()
+        for source_order, (line, starred, number) in enumerate(chapter_candidates, start=1):
+            exercise_id = f"{chapter_id}.{number}"
+            if exercise_id in seen:
+                raise ValueError(f"duplicate exercise candidate: {exercise_id}")
+            seen.add(exercise_id)
+            page_width = doc[line.pdf_page_index].rect.width
+            candidates.append(
+                ExerciseCandidate(
+                    exercise_id=exercise_id,
+                    chapter_id=chapter_id,
+                    exercise_number=number,
+                    starred=starred,
+                    source_order=source_order,
+                    pdf_page_index=line.pdf_page_index,
+                    pdf_page_number=line.pdf_page_number,
+                    printed_page_label=line.printed_page_label,
+                    bbox=line.bbox,
+                    column=_column_for_x(page_width, line.bbox[0]),
+                )
+            )
+    return candidates
+
+
 def extract_page_anchors(doc: fitz.Document) -> list[dict[str, Any]]:
     anchors: list[dict[str, Any]] = []
     chapter_headings: dict[int, list[HeadingCandidate]] = {}
     for candidate in extract_chapter_candidates(doc):
         chapter_headings.setdefault(candidate.pdf_page_index, []).append(candidate)
+    exercises_by_page: dict[int, list[ExerciseCandidate]] = {}
+    for candidate in extract_exercise_candidates(doc):
+        exercises_by_page.setdefault(candidate.pdf_page_index, []).append(candidate)
     for page_index in range(doc.page_count):
         page = doc[page_index]
         lines = extract_lines(page)
         text = clean_text("\n".join(line.text for line in lines))
 
-        def records(pattern: re.Pattern[str]) -> list[dict[str, Any]]:
+        def records(
+            pattern: re.Pattern[str],
+            source_lines: tuple[TextLine, ...] = tuple(lines),
+        ) -> list[dict[str, Any]]:
             found: list[dict[str, Any]] = []
             seen: set[tuple[str, tuple[float, float, float, float]]] = set()
-            for line in lines:
+            for line in source_lines:
                 for match in pattern.finditer(line.text):
                     key = (match.group(1), line.bbox)
                     if key in seen:
@@ -267,6 +422,15 @@ def extract_page_anchors(doc: fitz.Document) -> list[dict[str, Any]]:
             for heading in chapter_headings.get(page_index, [])
         )
         text_records = [{"text": line.text, "bbox": list(line.bbox)} for line in lines]
+        exercise_records = [
+            {
+                "id": item.exercise_id,
+                "bbox": list(item.bbox),
+                "starred": item.starred,
+                "column": item.column,
+            }
+            for item in exercises_by_page.get(page_index, [])
+        ]
         running_header = clean_text(
             page.get_textbox(fitz.Rect(0, 0, page.rect.width, min(85, page.rect.height)))
         )
@@ -280,6 +444,7 @@ def extract_page_anchors(doc: fitz.Document) -> list[dict[str, Any]]:
                 "equation_records": equation_records,
                 "example_records": example_records,
                 "table_records": table_records,
+                "exercise_records": exercise_records,
                 "figure_ids": list(dict.fromkeys(item["id"] for item in figure_records)),
                 "equation_ids": list(dict.fromkeys(item["id"] for item in equation_records)),
                 "example_ids": list(dict.fromkeys(item["id"] for item in example_records)),
@@ -324,6 +489,9 @@ def extract_candidates(pdf_path: Path) -> dict[str, Any]:
             "heading_candidates": [
                 asdict(candidate) for candidate in extract_heading_candidates(document)
             ],
+            "exercise_candidates": [
+                asdict(candidate) for candidate in extract_exercise_candidates(document)
+            ],
             "page_anchors": extract_page_anchors(document),
         }
     finally:
@@ -348,6 +516,7 @@ def main() -> None:
                 "output": str(args.output),
                 "page_count": payload["source"]["page_count"],
                 "heading_candidates": len(payload["heading_candidates"]),
+                "exercise_candidates": len(payload["exercise_candidates"]),
             },
             ensure_ascii=False,
         )

@@ -1,8 +1,12 @@
 # Teacher GPT Locator API
 
-Version 3 is a breaking redesign for one personal-use textbook GPT.
+Version 3.1 extends the strict one-book locator API with a separate Exercise Locator
+contract. Section and exercise identifiers remain in independent namespaces.
 
-The original PDF in GPT file search is the only source of textbook content and page visuals. This backend returns strict, page-by-page retrieval plans for a requested section or learning-unit ID. It does not return textbook text, images, summaries, search results, prerequisites, or inferred content.
+The original PDF in GPT file search is the only source of textbook content, exercise
+text, and page visuals. This backend returns strict, page-by-page retrieval plans for a
+requested section, learning-unit ID, or exercise ID. It does not return textbook prose,
+images, summaries, search results, or generated answers.
 
 - Architecture: `ARCHITECTURE_REFACTOR.md`
 - Catalog build workflow and lessons: `CATALOG_BUILD_WORKFLOW.md`
@@ -49,20 +53,30 @@ Sibling headings must use the same `source_level`. Child headings must be exactl
 
 ## Runtime API
 
-The backend registers two routes:
+The backend registers four routes:
 
 ```text
 GET /health
 GET /gpt/section-locators/{section_id}
+GET /gpt/exercise-locators/{exercise_id}
+GET /gpt/chapters/{chapter_id}/exercises
 ```
 
-Only the locator route is exported to GPT Actions:
+The three locator routes are exported to GPT Actions:
 
 ```text
 gptGetSectionLocator
+gptGetExerciseLocator
+gptListChapterExercises
 ```
 
 All Version 2 routes were deleted. There are no deprecated redirects or aliases.
+
+The reviewed Exercise Catalog is committed independently from the section catalog.
+Set `TEACHING_GPT_EXERCISE_INDEX_PATH` to its package manifest to enable the exercise
+routes. If the setting is absent, section lookup remains available and exercise routes
+return `EXERCISE_CATALOG_UNAVAILABLE`; if present, a missing, malformed, partial, or
+book-mismatched exercise package prevents startup.
 
 Example:
 
@@ -83,6 +97,17 @@ A locator contains:
 
 It never contains textbook prose.
 
+An exercise locator additionally contains:
+
+- the exact `exercise_id`, chapter, source order, and starred state;
+- one problem retrieval step for every physical page occupied by the exercise;
+- explicit `exercise` content-window boundaries for same-page neighboring problems;
+- required visual evidence for page identity and exercise boundaries;
+- resolved retrieval plans for referenced sections, figures, equations, examples,
+  tables, and other exercises.
+
+It never contains a pre-generated solution.
+
 ## Strict startup behavior
 
 The application loads this file during FastAPI startup:
@@ -96,6 +121,16 @@ The repository includes the reviewed DIP4E catalog, so the default application a
 Startup still fails when the package or any shard is missing, uses another data version, contains unknown fields, has incomplete body-page coverage, has broken parent/child ranges, or does not represent a complete index.
 
 A partial catalog is not a runnable deployment.
+
+The committed exercise runtime entry point is:
+
+```text
+catalog/dip4e/compiled_exercise_index.json
+```
+
+It is also a strict package manifest with one shard per represented chapter. The
+repository validates shard names, chapter ownership, canonical page references,
+exercise ordering, reference integrity, and cross-exercise cycles.
 
 ## Offline build workflow
 
@@ -168,6 +203,41 @@ The generated `validation_report.json` distinguishes `source_pdf_verification_st
 
 It writes no output when validation fails.
 
+### 3a. Build and compile the Exercise Locator catalog
+
+The committed catalog was generated with the deterministic exercise pipeline:
+
+```bash
+python tools/build_dip4e_exercise_manifest.py \
+  "/path/to/Digital Image ProcessingRafael.pdf" \
+  catalog/dip4e/exercises.yaml
+
+python tools/compile_exercise_index.py \
+  catalog/dip4e/exercises.yaml \
+  catalog/dip4e/compiled_locator_index.json \
+  "/path/to/Digital Image ProcessingRafael.pdf" \
+  catalog/dip4e/compiled_exercise_index.json \
+  --report catalog/dip4e/exercise_validation_report.json
+```
+
+The builder detects each chapter's `Problems` region, preserves two-column reading
+order, separates same-page exercises, tracks starred and cross-page problems, and
+extracts explicit textbook references. The compiler verifies the exact PDF, requires
+all chapters that contain a formal `Problems` section (chapters 2-12 in this PDF),
+resolves references against the section index and source anchors,
+and writes no final output when validation fails.
+
+Running these commands is an offline release step; normal application startup does
+not parse the PDF.
+
+The current reviewed baseline contains 492 exercises in chapters 2-12, 122 starred
+exercises, 28 cross-page exercises, 520 page-retrieval steps, and 412 resolved
+references. Chapter 1 has no formal `Problems` section in this source PDF. The source
+prints `Fig. 10.10.4(a)` in exercise 10.23; the build records an explicit audited
+normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local source-PDF
+verification and byte-for-byte repeatability passed; real GPT file-search retrieval
+remains `not_tested`.
+
 ### 4. Validate GPT instructions
 
 ```bash
@@ -204,6 +274,7 @@ The server can start only after a complete compiled index exists:
 
 ```bash
 export TEACHING_GPT_LOCATOR_INDEX_PATH=./catalog/dip4e/compiled_locator_index.json
+export TEACHING_GPT_EXERCISE_INDEX_PATH=./catalog/dip4e/compiled_exercise_index.json
 export TEACHING_GPT_API_KEY=replace-me
 uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
@@ -223,10 +294,14 @@ app/
   api/routes.py
   core/
   models/
+    exercise.py
+    exercise_manifest.py
     locator.py
     manifest.py
   repositories/locator_repository.py
+  repositories/exercise_repository.py
   services/
+    exercise_index_compiler.py
     index_compiler.py
     locator_service.py
 catalog/
@@ -237,9 +312,16 @@ catalog/
     compiled_locator_index.json
     compiled_locator_index.sections.01.json ... compiled_locator_index.sections.12.json
     validation_report.json
+    exercises.yaml
+    exercises.sections.02.yaml ... exercises.sections.12.yaml
+    compiled_exercise_index.json
+    compiled_exercise_index.sections.02.json ... compiled_exercise_index.sections.12.json
+    exercise_validation_report.json
 tools/
   extract_pdf_candidates.py
+  build_dip4e_exercise_manifest.py
   build_dip4e_manifest.py
+  compile_exercise_index.py
   compile_locator_index.py
   validate_prompt.py
 scripts/

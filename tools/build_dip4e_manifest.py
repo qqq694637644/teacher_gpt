@@ -6,7 +6,7 @@ import re
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
@@ -33,6 +33,7 @@ from app.models.manifest import (
     PrintedSectionManifestShard,
 )
 from tools.extract_pdf_candidates import (
+    TERMINAL_BOUNDARY_RE,
     HeadingCandidate,
     clean_text,
     extract_heading_candidates,
@@ -60,6 +61,16 @@ ACRONYMS = {
 
 
 @dataclass
+class SourceBoundary:
+    kind: Literal["heading", "text"]
+    text: str
+    pdf_page_index: int
+    pdf_page_number: int
+    printed_page_label: str
+    bbox: tuple[float, float, float, float]
+
+
+@dataclass
 class SourceNode:
     title: str
     source_heading: str
@@ -67,7 +78,7 @@ class SourceNode:
     source_level: int
     start_index: int
     end_index: int = 0
-    end_before: HeadingCandidate | None = None
+    end_before: SourceBoundary | None = None
     children: list[SourceNode] = field(default_factory=list)
 
 
@@ -125,6 +136,17 @@ def _heading_location(candidate: HeadingCandidate, pages: list[PageReference]) -
     return HeadingLocation(page=pages[candidate.pdf_page_index], bbox=candidate.bbox)
 
 
+def _heading_boundary(candidate: HeadingCandidate) -> SourceBoundary:
+    return SourceBoundary(
+        kind="heading",
+        text=candidate.text,
+        pdf_page_index=candidate.pdf_page_index,
+        pdf_page_number=candidate.pdf_page_number,
+        printed_page_label=candidate.printed_page_label,
+        bbox=candidate.bbox,
+    )
+
+
 def _page_range(start: int, end: int, pages: list[PageReference]) -> PageRange:
     return PageRange(
         pdf_page_index_start=start,
@@ -140,9 +162,7 @@ def _within_window(record: dict[str, Any], *, start_y: float | None, end_y: floa
     y0 = float(record["bbox"][1])
     if start_y is not None and y0 < start_y - 0.5:
         return False
-    if end_y is not None and y0 >= end_y - 0.5:
-        return False
-    return True
+    return not (end_y is not None and y0 >= end_y - 0.5)
 
 
 def _coverage_for_page(
@@ -191,7 +211,7 @@ def _distinctive_text(
         if line.text.startswith(("FIGURE ", "TABLE ", "EXAMPLE ")):
             continue
         phrase = clean_text(line.text)
-        candidates.append((len(set(word.casefold() for word in words[:10])), phrase))
+        candidates.append((len({word.casefold() for word in words[:10]}), phrase))
     if not candidates:
         for line in extract_lines(document[page_index]):
             if start_y is not None and line.bbox[1] < start_y - 0.5:
@@ -218,7 +238,7 @@ def _build_plan(
         start_anchor = BoundaryAnchor(kind="heading", value=node.source_heading) if first else None
         end_anchor = None
         if last and node.end_before is not None and node.end_before.pdf_page_index == page_index:
-            end_anchor = BoundaryAnchor(kind="heading", value=node.end_before.text)
+            end_anchor = BoundaryAnchor(kind=node.end_before.kind, value=node.end_before.text)
 
         start_y = node.source_location.bbox[1] if first else None
         end_y = node.end_before.bbox[1] if end_anchor is not None else None
@@ -245,7 +265,7 @@ def _build_plan(
         if start_anchor is not None:
             evidence.append(
                 EvidenceRequirement(
-                    kind="contains_heading",
+                    kind=("contains_heading" if end_anchor.kind == "heading" else "contains_text"),
                     value=start_anchor.value,
                     verification_mode="visual_required",
                 )
@@ -297,9 +317,9 @@ def _build_unit_manifest(
     )
 
 
-def _has_content_before_heading(document: fitz.Document, candidate: HeadingCandidate) -> bool:
-    for line in extract_lines(document[candidate.pdf_page_index]):
-        if line.bbox[1] >= candidate.bbox[1] - 0.5:
+def _has_content_before_boundary(document: fitz.Document, boundary: SourceBoundary) -> bool:
+    for line in extract_lines(document[boundary.pdf_page_index]):
+        if line.bbox[1] >= boundary.bbox[1] - 0.5:
             continue
         if line.bbox[1] < 85:
             continue
@@ -313,42 +333,41 @@ def _has_content_before_heading(document: fitz.Document, candidate: HeadingCandi
 def _range_end_before_next(
     document: fitz.Document,
     current_start: int,
-    next_candidate: HeadingCandidate,
-) -> tuple[int, HeadingCandidate | None]:
-    if next_candidate.pdf_page_index == current_start:
-        return next_candidate.pdf_page_index, next_candidate
-    if _has_content_before_heading(document, next_candidate):
-        return next_candidate.pdf_page_index, next_candidate
-    return next_candidate.pdf_page_index - 1, None
+    next_boundary: SourceBoundary,
+) -> tuple[int, SourceBoundary | None]:
+    if next_boundary.pdf_page_index == current_start:
+        return next_boundary.pdf_page_index, next_boundary
+    if _has_content_before_boundary(document, next_boundary):
+        return next_boundary.pdf_page_index, next_boundary
+    return next_boundary.pdf_page_index - 1, None
 
 
 def _assign_ranges(
     document: fitz.Document,
     nodes: list[SourceNode],
     parent_end: int,
+    parent_end_before: SourceBoundary | None = None,
 ) -> None:
     for index, node in enumerate(nodes):
         next_node = nodes[index + 1] if index + 1 < len(nodes) else None
         node.end_index = parent_end
-        node.end_before = None
+        node.end_before = parent_end_before if next_node is None else None
         if next_node is not None:
-            next_candidate = HeadingCandidate(
+            next_boundary = SourceBoundary(
+                kind="heading",
                 text=next_node.source_heading,
-                printed_section_id=None,
                 pdf_page_index=next_node.start_index,
                 pdf_page_number=next_node.start_index + 1,
                 printed_page_label=next_node.source_location.page.printed_page_label,
                 bbox=next_node.source_location.bbox,
-                numbered=False,
-                style_signature="manifest-boundary",
             )
             node.end_index, node.end_before = _range_end_before_next(
                 document,
                 node.start_index,
-                next_candidate,
+                next_boundary,
             )
         if node.children:
-            _assign_ranges(document, node.children, node.end_index)
+            _assign_ranges(document, node.children, node.end_index, node.end_before)
 
 
 def _learning_tree(
@@ -356,6 +375,7 @@ def _learning_tree(
     candidates: list[HeadingCandidate],
     pages: list[PageReference],
     section_end: int,
+    section_end_before: SourceBoundary | None,
 ) -> list[SourceNode]:
     roots: list[SourceNode] = []
     current_root: SourceNode | None = None
@@ -375,8 +395,31 @@ def _learning_tree(
         else:
             assert current_root is not None
             current_root.children.append(node)
-    _assign_ranges(document, roots, section_end)
+    _assign_ranges(document, roots, section_end, section_end_before)
     return roots
+
+
+def _terminal_boundaries(
+    document: fitz.Document,
+    chapter_start: int,
+    chapter_end: int,
+) -> list[SourceBoundary]:
+    boundaries: list[SourceBoundary] = []
+    for page_index in range(chapter_start, chapter_end + 1):
+        for line in extract_lines(document[page_index]):
+            if TERMINAL_BOUNDARY_RE.fullmatch(clean_text(line.text)) is None:
+                continue
+            boundaries.append(
+                SourceBoundary(
+                    kind="text",
+                    text=clean_text(line.text),
+                    pdf_page_index=line.pdf_page_index,
+                    pdf_page_number=line.pdf_page_number,
+                    printed_page_label=line.printed_page_label,
+                    bbox=line.bbox,
+                )
+            )
+    return sorted(boundaries, key=lambda item: (item.pdf_page_index, item.bbox[1], item.bbox[0]))
 
 
 def build_manifest(pdf_path: Path) -> BookManifest:
@@ -399,6 +442,8 @@ def build_manifest(pdf_path: Path) -> BookManifest:
         for candidate in candidates:
             if candidate.numbered or candidate.printed_section_id is None:
                 continue
+            if TERMINAL_BOUNDARY_RE.fullmatch(clean_text(candidate.text)) is not None:
+                continue
             unnumbered_by_section.setdefault(candidate.printed_section_id, []).append(candidate)
 
         chapter_end_by_id: dict[str, int] = {}
@@ -419,6 +464,11 @@ def build_manifest(pdf_path: Path) -> BookManifest:
         for chapter in chapter_candidates:
             chapter_id = chapter.text.split()[0]
             chapter_end = chapter_end_by_id[chapter_id]
+            terminal_boundaries = _terminal_boundaries(
+                document,
+                chapter.pdf_page_index,
+                chapter_end,
+            )
             chapter_node = SourceNode(
                 title=_display_title(chapter.text),
                 source_heading=chapter.text,
@@ -455,8 +505,32 @@ def build_manifest(pdf_path: Path) -> BookManifest:
                     section_end, section_end_before = _range_end_before_next(
                         document,
                         section.pdf_page_index,
-                        next_section,
+                        _heading_boundary(next_section),
                     )
+                elif terminal_boundaries:
+                    terminal = next(
+                        (
+                            boundary
+                            for boundary in terminal_boundaries
+                            if (
+                                boundary.pdf_page_index,
+                                boundary.bbox[1],
+                                boundary.bbox[0],
+                            )
+                            > (
+                                section.pdf_page_index,
+                                section.bbox[1],
+                                section.bbox[0],
+                            )
+                        ),
+                        None,
+                    )
+                    if terminal is not None:
+                        section_end, section_end_before = _range_end_before_next(
+                            document,
+                            section.pdf_page_index,
+                            terminal,
+                        )
                 section_node = SourceNode(
                     title=_display_title(section.text),
                     source_heading=section.text,
@@ -471,6 +545,7 @@ def build_manifest(pdf_path: Path) -> BookManifest:
                     unnumbered_by_section.get(section_id, []),
                     pages,
                     section_end,
+                    section_end_before,
                 )
                 printed_sections.append(
                     PrintedSectionManifest(

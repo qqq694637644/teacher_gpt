@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     )
 
     locator_index_path: Path = Field(default=Path("./catalog/dip4e/compiled_locator_index.json"))
+    exercise_index_path: Path | None = Field(default=None)
     api_key: str = Field(default="change-me")
     require_api_key: bool = Field(default=True)
     cors_allow_origins: list[str] = Field(default_factory=lambda: ["*"])

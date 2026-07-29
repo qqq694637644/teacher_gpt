@@ -14,16 +14,16 @@ import fitz
 import yaml
 from pydantic import ValidationError
 
-from app.models.manifest import (
-    BookManifest,
-    BookManifestPackage,
-    PrintedSectionManifestShard,
-)
 from app.models.locator import (
     CompiledLocatorIndexPackage,
     EvidenceRequirement,
     LocatorSectionShard,
     PageCoverage,
+)
+from app.models.manifest import (
+    BookManifest,
+    BookManifestPackage,
+    PrintedSectionManifestShard,
 )
 from app.services.index_compiler import LocatorIndexCompiler
 from tools.extract_pdf_candidates import (
@@ -158,6 +158,8 @@ def _evidence_exists(page_anchor: dict, evidence: EvidenceRequirement) -> bool:
         return value in page_anchor["example_ids"]
     if evidence.kind == "contains_table":
         return value in page_anchor["table_ids"]
+    if evidence.kind == "contains_exercise":
+        return value in {item["id"] for item in page_anchor.get("exercise_records", [])}
     if evidence.kind == "running_header_contains":
         return value.casefold() in page_anchor["running_header"].casefold()
     if evidence.kind == "contains_heading":
@@ -178,6 +180,7 @@ def _boundary_record(page_anchor: dict, boundary) -> dict | None:
         "example": "example_records",
         "table": "table_records",
         "text": "text_records",
+        "exercise": "exercise_records",
     }[boundary.kind]
     value_key = "text" if boundary.kind in {"heading", "text"} else "id"
     expected = clean_text(boundary.value)
@@ -201,9 +204,7 @@ def _coverage_missing(
         y0 = float(record["bbox"][1])
         if start_y is not None and y0 < start_y - 0.5:
             return False
-        if end_y is not None and y0 >= end_y - 0.5:
-            return False
-        return True
+        return not (end_y is not None and y0 >= end_y - 0.5)
 
     actual = {
         "subheadings": {

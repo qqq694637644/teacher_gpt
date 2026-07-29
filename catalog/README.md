@@ -19,3 +19,28 @@ catalog/dip4e/validation_report.json
 `compiled_locator_index.json` remains the configured runtime entry point. `validation_report.json` records hashes for package manifests and every shard, source-PDF checks, and explicitly reports real file-search retrieval as `not_tested` until a separate GPT acceptance run is recorded.
 
 The application intentionally fails if the complete Version 3 index is missing or invalid. Partial indexes and Version 2 data are not accepted.
+
+## Exercise catalog status
+
+The reviewed Exercise Locator artifacts are generated and committed:
+
+```text
+catalog/dip4e/exercises.yaml
+catalog/dip4e/exercises.sections.02.yaml ... exercises.sections.12.yaml
+catalog/dip4e/compiled_exercise_index.json
+catalog/dip4e/compiled_exercise_index.sections.02.json ... sections.12.json
+catalog/dip4e/exercise_validation_report.json
+```
+
+The source PDF contains formal `Problems` sections in chapters 2-12; chapter 1 has no
+exercise shard. The reviewed baseline contains 492 exercises, 122 starred exercises,
+28 cross-page exercises, 520 retrieval steps, and 412 resolved references. All chapter
+number ranges are continuous and the independent rebuild matched all 24 package and
+shard files byte-for-byte.
+
+Deployments should set `TEACHING_GPT_EXERCISE_INDEX_PATH` to
+`catalog/dip4e/compiled_exercise_index.json`. The package is strict: missing or
+malformed shards, chapter mismatches, invalid references, cycles, and a source-book
+mismatch prevent startup. `exercise_validation_report.json` records
+`source_pdf_verification_status: passed` and keeps real GPT file-search retrieval at
+`not_tested` until a separate acceptance run is completed.

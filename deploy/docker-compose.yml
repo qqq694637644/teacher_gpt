@@ -7,5 +7,6 @@ services:
       - "8000:8000"
     environment:
       TEACHING_GPT_LOCATOR_INDEX_PATH: /app/catalog/dip4e/compiled_locator_index.json
+      TEACHING_GPT_EXERCISE_INDEX_PATH: /app/catalog/dip4e/compiled_exercise_index.json
       TEACHING_GPT_API_KEY: change-me-to-a-long-random-secret
       TEACHING_GPT_REQUIRE_API_KEY: "true"
