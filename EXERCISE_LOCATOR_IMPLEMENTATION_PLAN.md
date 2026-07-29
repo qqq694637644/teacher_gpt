@@ -327,7 +327,7 @@ tools/build_dip4e_exercise_manifest.py
 4. 计算题目物理页范围与页内 content window；
 5. 标记 `starred`、跨页和视觉必需状态；
 6. 提取显式引用；
-7. 输出完整 package manifest 和 12 个 chapter shard；
+7. 输出完整 package manifest，以及源 PDF 中所有 `Problems` 章节的 shard；当前教材实际为第 2-12 章，共 11 个；
 8. 不输出不完整或含歧义的运行时数据。
 
 ### 7.5 Exercise Index 编译
@@ -737,7 +737,7 @@ file_search_retrieval_status: passed | failed | not_tested
 
 ### 部分 Catalog 被误发布
 
-控制：package manifest 要求 12 个 chapter shards；启动时验证完整性；CI 增加完整包测试。
+控制：package manifest 要求覆盖源 PDF 中所有 `Problems` 章节；当前教材为 11 个 chapter shards；启动时验证完整性；CI 增加完整包测试。
 
 ---
 
@@ -747,7 +747,7 @@ file_search_retrieval_status: passed | failed | not_tested
 
 - 全书正文 Locator 已按新章末边界重新构建并验证；
 - 全书 Exercise Manifest 和 compiled index 已生成；
-- 12 个章节 shard 完整且通过严格加载；
+- 源 PDF 中所有 `Problems` 章节 shard 完整且通过严格加载；当前教材为第 2-12 章，共 11 个；
 - 所有源 PDF 校验、schema、单元测试、API 测试和 lint 通过；
 - 构建可重复性通过；
 - OpenAPI 只导出真实存在的 Action；

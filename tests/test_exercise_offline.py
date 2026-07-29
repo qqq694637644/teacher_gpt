@@ -17,6 +17,12 @@ from tools.compile_exercise_index import (
     verify_complete_chapters,
     write_compiled_exercise_package,
 )
+from tools.extract_pdf_candidates import (
+    EXERCISE_RE,
+    HEADING_COLOR,
+    TextLine,
+    _column_for_x,
+)
 
 
 def test_exercise_manifest_package_round_trips(tmp_path) -> None:
@@ -72,6 +78,18 @@ def test_reference_parser_extracts_supported_explicit_dependencies() -> None:
     ]
 
 
+def test_reference_parser_applies_audited_source_erratum() -> None:
+    specs = _reference_specs(
+        "Sketch the result using the 3 x 3 Laplacian kernel in Fig. 10.10.4(a).",
+        "10.23",
+    )
+
+    assert len(specs) == 1
+    assert specs[0].kind == "figure"
+    assert specs[0].target_id == "10.4"
+    assert "prints Fig. 10.10.4(a)" in specs[0].reason
+
+
 def test_terminal_boundary_is_inherited_by_last_learning_unit() -> None:
     document = fitz.open()
     page = document.new_page()
@@ -96,5 +114,46 @@ def test_terminal_boundary_is_inherited_by_last_learning_unit() -> None:
 
 
 def test_full_book_guard_rejects_partial_exercise_manifest() -> None:
-    with pytest.raises(ValueError, match="does not cover all chapters"):
-        verify_complete_chapters(complete_exercise_manifest())
+    with pytest.raises(ValueError, match="does not cover all Problems chapters"):
+        verify_complete_chapters(complete_exercise_manifest(), {"2", "3"})
+
+
+def test_full_book_guard_accepts_exact_problems_chapters() -> None:
+    verify_complete_chapters(complete_exercise_manifest(), {"2"})
+
+
+def test_exercise_layout_filter_distinguishes_reference_from_problem_number() -> None:
+    reference = TextLine(
+        text="12.32 is 1. Is this vector augmented? Explain.",
+        pdf_page_index=0,
+        pdf_page_number=1,
+        printed_page_label="1",
+        bbox=(79.0, 400.0, 250.0, 410.0),
+        font_names=("TimesTen-Roman",),
+        max_font_size=9.0,
+        colors=(2301728,),
+    )
+    problem = TextLine(
+        text="12.32 * Show the validity of Eq. (12-106).",
+        pdf_page_index=0,
+        pdf_page_number=1,
+        printed_page_label="1",
+        bbox=(50.0, 287.0, 207.0, 296.0),
+        font_names=("TimesTen-Bold", "TimesTen-Roman"),
+        max_font_size=9.0,
+        colors=(HEADING_COLOR, 2301728),
+    )
+
+    assert EXERCISE_RE.match(reference.text) is not None
+    assert "TimesTen-Bold" not in reference.font_names
+    assert EXERCISE_RE.match(problem.text) is not None
+    assert "TimesTen-Bold" in problem.font_names
+    assert HEADING_COLOR in problem.colors
+    problem_match = EXERCISE_RE.match(problem.text)
+    assert problem_match is not None
+    assert problem_match.group("trailing_star") is not None
+
+
+def test_exercise_column_split_handles_narrow_book_gutter() -> None:
+    assert _column_for_x(533.0, 253.0) == 0
+    assert _column_for_x(533.0, 263.0) == 1

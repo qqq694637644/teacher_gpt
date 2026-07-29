@@ -1,0 +1,3292 @@
+data_version: '3'
+chapter_id: '4'
+exercises:
+- exercise_id: '4.1'
+  chapter_id: '4'
+  exercise_number: 1
+  starred: false
+  source_order: 1
+  problem_page_range:
+    pdf_page_index_start: 309
+    pdf_page_index_end: 309
+    pdf_page_number_start: 310
+    pdf_page_number_end: 310
+    printed_page_start: '308'
+    printed_page_end: '308'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 309
+      pdf_page_number: 310
+      printed_page_label: '308'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.1'
+      end_before:
+        kind: exercise
+        value: '4.2'
+    queries:
+    - +(4.1) +(printed page 308) --QDF=0
+    - +((a) * Give an equation similar to Eq. (4-10), but) +(printed page 308) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '308'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: (a) * Give an equation similar to Eq. (4-10), but
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.1'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.2'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-10
+      - 4-15
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-10
+    reason: Explicit equation reference in exercise text
+  - kind: equation
+    target_id: 4-15
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.2'
+  chapter_id: '4'
+  exercise_number: 2
+  starred: false
+  source_order: 2
+  problem_page_range:
+    pdf_page_index_start: 309
+    pdf_page_index_end: 309
+    pdf_page_number_start: 310
+    pdf_page_number_end: 310
+    printed_page_start: '308'
+    printed_page_end: '308'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 309
+      pdf_page_number: 310
+      printed_page_label: '308'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.2'
+      end_before:
+        kind: exercise
+        value: '4.3'
+    queries:
+    - +(4.2) +(printed page 308) --QDF=0
+    - +(values of t. Explain the reason for any differences) +(printed page 308) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '308'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: values of t. Explain the reason for any differences
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.2'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.3'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids:
+      - '4.1'
+      table_ids: []
+  reference_specs:
+  - kind: example
+    target_id: '4.1'
+    reason: Explicit example reference in exercise text
+- exercise_id: '4.3'
+  chapter_id: '4'
+  exercise_number: 3
+  starred: false
+  source_order: 3
+  problem_page_range:
+    pdf_page_index_start: 309
+    pdf_page_index_end: 309
+    pdf_page_number_start: 310
+    pdf_page_number_end: 310
+    printed_page_start: '308'
+    printed_page_end: '308'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 309
+      pdf_page_number: 310
+      printed_page_label: '308'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.3'
+      end_before: null
+    queries:
+    - +(4.3) +(printed page 308) --QDF=0
+    - +(What is the convolution of two, 1-D impulses:) +(printed page 308) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '308'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: 'What is the convolution of two, 1-D impulses:'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.3'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.4'
+  chapter_id: '4'
+  exercise_number: 4
+  starred: true
+  source_order: 4
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.4'
+      end_before:
+        kind: exercise
+        value: '4.5'
+    queries:
+    - +(4.4) +(printed page 309) --QDF=0
+    - +(so that its origin is moved to the location of the) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: so that its origin is moved to the location of the
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.4'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.5'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.5'
+  chapter_id: '4'
+  exercise_number: 5
+  starred: true
+  source_order: 5
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.5'
+      end_before:
+        kind: exercise
+        value: '4.6'
+    queries:
+    - +(4.5) +(printed page 309) --QDF=0
+    - +(tion of an aliased pair of functions that are not) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: tion of an aliased pair of functions that are not
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.5'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.6'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '4.9'
+    reason: Explicit figure reference in exercise text
+- exercise_id: '4.6'
+  chapter_id: '4'
+  exercise_number: 6
+  starred: false
+  source_order: 6
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.6'
+      end_before:
+        kind: exercise
+        value: '4.7'
+    queries:
+    - +(4.6) +(printed page 309) --QDF=0
+    - +(the Nyquist rate is satisﬁed, and (2) the sam-) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: the Nyquist rate is satisﬁed, and (2) the sam-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.6'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.7'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '4.11'
+    reason: Explicit figure reference in exercise text
+- exercise_id: '4.7'
+  chapter_id: '4'
+  exercise_number: 7
+  starred: false
+  source_order: 7
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.7'
+      end_before:
+        kind: exercise
+        value: '4.8'
+    queries:
+    - +(4.7) +(printed page 309) --QDF=0
+    - +(ity in both directions, what is the highest fre-) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: ity in both directions, what is the highest fre-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.7'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.8'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.8'
+  chapter_id: '4'
+  exercise_number: 8
+  starred: true
+  source_order: 8
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.8'
+      end_before:
+        kind: exercise
+        value: '4.9'
+    queries:
+    - +(4.8) +(printed page 309) --QDF=0
+    - '+(stant. (Hint: Study Example 4.2.)) +(printed page 309) --QDF=0'
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: 'stant. (Hint: Study Example 4.2.)'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.8'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.9'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids:
+      - '4.2'
+      table_ids: []
+  reference_specs:
+  - kind: example
+    target_id: '4.2'
+    reason: Explicit example reference in exercise text
+- exercise_id: '4.9'
+  chapter_id: '4'
+  exercise_number: 9
+  starred: false
+  source_order: 9
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.9'
+      end_before:
+        kind: exercise
+        value: '4.10'
+    queries:
+    - +(4.9) +(printed page 309) --QDF=0
+    - '+((Hint: Make use of the solution to Problem 4.8):) +(printed page 309) --QDF=0'
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: '(Hint: Make use of the solution to Problem 4.8):'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.9'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.10'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: exercise
+    target_id: '4.8'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.10'
+  chapter_id: '4'
+  exercise_number: 10
+  starred: false
+  source_order: 10
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.10'
+      end_before:
+        kind: exercise
+        value: '4.11'
+    queries:
+    - +(4.10) +(printed page 309) --QDF=0
+    - +(in general if ft() is sampled at a rate lower) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: in general if ft() is sampled at a rate lower
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.10'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.11'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '4.6'
+    reason: Explicit figure reference in exercise text
+  - kind: exercise
+    target_id: '4.9'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.11'
+  chapter_id: '4'
+  exercise_number: 11
+  starred: true
+  source_order: 11
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.11'
+      end_before:
+        kind: exercise
+        value: '4.12'
+    queries:
+    - +(4.11) +(printed page 309) --QDF=0
+    - +(one continuous variable, as given in Eqs. (4-25)) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: one continuous variable, as given in Eqs. (4-25)
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.11'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.12'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-25
+      - 4-26
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-25
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.12'
+  chapter_id: '4'
+  exercise_number: 12
+  starred: false
+  source_order: 12
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.12'
+      end_before:
+        kind: exercise
+        value: '4.13'
+    queries:
+    - +(4.12) +(printed page 309) --QDF=0
+    - +(tion of a function with an impulse shifts the func-) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: tion of a function with an impulse shifts the func-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.12'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.13'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-36
+      example_ids:
+      - '4.1'
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-36
+    reason: Explicit equation reference in exercise text
+  - kind: example
+    target_id: '4.1'
+    reason: Explicit example reference in exercise text
+  - kind: exercise
+    target_id: '4.9'
+    reason: Explicit exercise reference in exercise text
+  - kind: exercise
+    target_id: '4.4'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.13'
+  chapter_id: '4'
+  exercise_number: 13
+  starred: true
+  source_order: 13
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.13'
+      end_before:
+        kind: exercise
+        value: '4.14'
+    queries:
+    - +(4.13) +(printed page 309) --QDF=0
+    - +(* Complete the steps that led from Eq. (4-37) to) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: '* Complete the steps that led from Eq. (4-37) to'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.13'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.14'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-37
+      - 4-38
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-37
+    reason: Explicit equation reference in exercise text
+  - kind: equation
+    target_id: 4-38
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.14'
+  chapter_id: '4'
+  exercise_number: 14
+  starred: false
+  source_order: 14
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.14'
+      end_before:
+        kind: exercise
+        value: '4.15'
+    queries:
+    - +(4.14) +(printed page 309) --QDF=0
+    - +(m in Eq. (4-40) is inﬁnitely periodic) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: m in Eq. (4-40) is inﬁnitely periodic
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.14'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.15'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-40
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-40
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.15'
+  chapter_id: '4'
+  exercise_number: 15
+  starred: false
+  source_order: 15
+  problem_page_range:
+    pdf_page_index_start: 310
+    pdf_page_index_end: 310
+    pdf_page_number_start: 311
+    pdf_page_number_end: 311
+    printed_page_start: '309'
+    printed_page_end: '309'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 310
+      pdf_page_number: 311
+      printed_page_label: '309'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.15'
+      end_before: null
+    queries:
+    - +(4.15) +(printed page 309) --QDF=0
+    - +(You will need the following orthogonality prop-) +(printed page 309) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '309'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: You will need the following orthogonality prop-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.15'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-42
+      - 4-43
+      - 4-44
+      - 4-45
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-42
+    reason: Explicit equation reference in exercise text
+  - kind: equation
+    target_id: 4-44
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.16'
+  chapter_id: '4'
+  exercise_number: 16
+  starred: false
+  source_order: 16
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.16'
+      end_before:
+        kind: exercise
+        value: '4.17'
+    queries:
+    - +(4.16) +(printed page 310) --QDF=0
+    - +((4-45) are inﬁnitely periodic with period M; that is,) +(printed page 310) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: (4-45) are inﬁnitely periodic with period M; that is,
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.16'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.17'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-44
+      - 4-45
+      - 4-46
+      - 4-47
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-44
+    reason: Explicit equation reference in exercise text
+  - kind: equation
+    target_id: 4-46
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.17'
+  chapter_id: '4'
+  exercise_number: 17
+  starred: false
+  source_order: 17
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.17'
+      end_before:
+        kind: exercise
+        value: '4.18'
+    queries:
+    - +(4.17) +(printed page 310) --QDF=0
+    - '+(transform pairs. (Hint: It is easier in part (b) to) +(printed page 310) --QDF=0'
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: 'transform pairs. (Hint: It is easier in part (b) to'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.17'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.18'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.18'
+  chapter_id: '4'
+  exercise_number: 18
+  starred: false
+  source_order: 18
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.18'
+      end_before:
+        kind: exercise
+        value: '4.19'
+    queries:
+    - +(4.18) +(printed page 310) --QDF=0
+    - +(ables, but with the right side of Eq. (4-26) multi-) +(printed page 310) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: ables, but with the right side of Eq. (4-26) multi-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.18'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.19'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-25
+      - 4-26
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-25
+    reason: Explicit equation reference in exercise text
+  - kind: equation
+    target_id: 4-26
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.19'
+  chapter_id: '4'
+  exercise_number: 19
+  starred: true
+  source_order: 19
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.19'
+      end_before:
+        kind: exercise
+        value: '4.20'
+    queries:
+    - +(4.19) +(printed page 310) --QDF=0
+    - +(z for the variables on the left side of the expression) +(printed page 310) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: z for the variables on the left side of the expression
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.19'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.20'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-24
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-24
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.20'
+  chapter_id: '4'
+  exercise_number: 20
+  starred: false
+  source_order: 20
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.20'
+      end_before:
+        kind: exercise
+        value: '4.21'
+    queries:
+    - +(4.20) +(printed page 310) --QDF=0
+    - +(so that its origin is located at the location of the) +(printed page 310) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: so that its origin is located at the location of the
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.20'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.21'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: exercise
+    target_id: '4.4'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.21'
+  chapter_id: '4'
+  exercise_number: 21
+  starred: false
+  source_order: 21
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.21'
+      end_before:
+        kind: exercise
+        value: '4.22'
+    queries:
+    - +(4.21) +(printed page 310) --QDF=0
+    - +(image of the same size but having stripes that) +(printed page 310) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: image of the same size but having stripes that
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.21'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.22'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.22'
+  chapter_id: '4'
+  exercise_number: 22
+  starred: false
+  source_order: 22
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.22'
+      end_before:
+        kind: exercise
+        value: '4.23'
+    queries:
+    - +(4.22) +(printed page 310) --QDF=0
+    - +(onto the area deﬁned by the size of the chip you) +(printed page 310) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: onto the area deﬁned by the size of the chip you
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.22'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.23'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.23'
+  chapter_id: '4'
+  exercise_number: 23
+  starred: true
+  source_order: 23
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.23'
+      end_before:
+        kind: exercise
+        value: '4.24'
+    queries:
+    - +(4.23) +(printed page 310) --QDF=0
+    - +(would be free of aliasing if it were zoomed by) +(printed page 310) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: would be free of aliasing if it were zoomed by
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.23'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.24'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: section
+    target_id: '4.5'
+    reason: Explicit section reference in exercise text
+- exercise_id: '4.24'
+  chapter_id: '4'
+  exercise_number: 24
+  starred: false
+  source_order: 24
+  problem_page_range:
+    pdf_page_index_start: 311
+    pdf_page_index_end: 311
+    pdf_page_number_start: 312
+    pdf_page_number_end: 312
+    printed_page_start: '310'
+    printed_page_end: '310'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 311
+      pdf_page_number: 312
+      printed_page_label: '310'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.24'
+      end_before: null
+    queries:
+    - +(4.24) +(printed page 310) --QDF=0
+    - +(With reference to the discussion on linearity in) +(printed page 310) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '310'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: With reference to the discussion on linearity in
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.24'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: section
+    target_id: '2.6'
+    reason: Explicit section reference in exercise text
+- exercise_id: '4.25'
+  chapter_id: '4'
+  exercise_number: 25
+  starred: false
+  source_order: 25
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.25'
+      end_before:
+        kind: exercise
+        value: '4.26'
+    queries:
+    - +(4.25) +(printed page 311) --QDF=0
+    - +(validity of the following translation (shift) prop-) +(printed page 311) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: validity of the following translation (shift) prop-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.25'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.26'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-59
+      - 4-60
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-59
+    reason: Explicit equation reference in exercise text
+  - kind: exercise
+    target_id: '4.11'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.26'
+  chapter_id: '4'
+  exercise_number: 26
+  starred: false
+  source_order: 26
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.26'
+      end_before:
+        kind: exercise
+        value: '4.27'
+    queries:
+    - +(4.26) +(printed page 311) --QDF=0
+    - +(Show the validity of the following 2-D continuous) +(printed page 311) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: Show the validity of the following 2-D continuous
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.26'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.27'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.27'
+  chapter_id: '4'
+  exercise_number: 27
+  starred: false
+  source_order: 27
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.27'
+      end_before:
+        kind: exercise
+        value: '4.28'
+    queries:
+    - +(4.27) +(printed page 311) --QDF=0
+    - '+(form pairs from Table 4.4. (Hint: Study the solu-) +(printed page 311) --QDF=0'
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: 'form pairs from Table 4.4. (Hint: Study the solu-'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.27'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.28'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-71
+      - 4-72
+      example_ids: []
+      table_ids:
+      - '4.4'
+  reference_specs:
+  - kind: equation
+    target_id: 4-71
+    reason: Explicit equation reference in exercise text
+  - kind: table
+    target_id: '4.4'
+    reason: Explicit table reference in exercise text
+  - kind: exercise
+    target_id: '4.17'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.28'
+  chapter_id: '4'
+  exercise_number: 28
+  starred: false
+  source_order: 28
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.28'
+      end_before:
+        kind: exercise
+        value: '4.29'
+    queries:
+    - +(4.28) +(printed page 311) --QDF=0
+    - +(Show the validity of the following 2-D discrete) +(printed page 311) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: Show the validity of the following 2-D discrete
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.28'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.29'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '4.4'
+  reference_specs:
+  - kind: table
+    target_id: '4.4'
+    reason: Explicit table reference in exercise text
+- exercise_id: '4.29'
+  chapter_id: '4'
+  exercise_number: 29
+  starred: false
+  source_order: 29
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.29'
+      end_before:
+        kind: exercise
+        value: '4.30'
+    queries:
+    - +(4.29) +(printed page 311) --QDF=0
+    - +(is included or if it was split as two constants,) +(printed page 311) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: is included or if it was split as two constants,
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.29'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.30'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.30'
+  chapter_id: '4'
+  exercise_number: 30
+  starred: false
+  source_order: 30
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.30'
+      end_before:
+        kind: exercise
+        value: '4.31'
+    queries:
+    - +(4.30) +(printed page 311) --QDF=0
+    - '+(digital sequences (Hint: Think of these as square) +(printed page 311) --QDF=0'
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: 'digital sequences (Hint: Think of these as square'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.30'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.31'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.31'
+  chapter_id: '4'
+  exercise_number: 31
+  starred: false
+  source_order: 31
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.31'
+      end_before:
+        kind: exercise
+        value: '4.32'
+    queries:
+    - +(4.31) +(printed page 311) --QDF=0
+    - +((a) * When M is even, why is the point at M2 in) +(printed page 311) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: (a) * When M is even, why is the point at M2 in
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.31'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.32'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: example
+    target_id: '4.10'
+    reason: Explicit example reference in exercise text
+- exercise_id: '4.32'
+  chapter_id: '4'
+  exercise_number: 32
+  starred: false
+  source_order: 32
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.32'
+      end_before:
+        kind: exercise
+        value: '4.33'
+    queries:
+    - +(4.32) +(printed page 311) --QDF=0
+    - +(centers coincide. Show that this is true also for) +(printed page 311) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: centers coincide. Show that this is true also for
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.32'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.33'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids:
+      - '4.10'
+      table_ids: []
+  reference_specs:
+  - kind: example
+    target_id: '4.10'
+    reason: Explicit example reference in exercise text
+- exercise_id: '4.33'
+  chapter_id: '4'
+  exercise_number: 33
+  starred: false
+  source_order: 33
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.33'
+      end_before:
+        kind: exercise
+        value: '4.34'
+    queries:
+    - +(4.33) +(printed page 311) --QDF=0
+    - +(its ﬁrst element is −1, and we know that in order) +(printed page 311) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: its ﬁrst element is −1, and we know that in order
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.33'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.34'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids:
+      - '4.10'
+      table_ids: []
+  reference_specs:
+  - kind: example
+    target_id: '4.10'
+    reason: Explicit example reference in exercise text
+- exercise_id: '4.34'
+  chapter_id: '4'
+  exercise_number: 34
+  starred: false
+  source_order: 34
+  problem_page_range:
+    pdf_page_index_start: 312
+    pdf_page_index_end: 312
+    pdf_page_number_start: 313
+    pdf_page_number_end: 313
+    printed_page_start: '311'
+    printed_page_end: '311'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 312
+      pdf_page_number: 313
+      printed_page_label: '311'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.34'
+      end_before: null
+    queries:
+    - +(4.34) +(printed page 311) --QDF=0
+    - +((c) Explain why, as stated at the end of the exam-) +(printed page 311) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '311'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: (c) Explain why, as stated at the end of the exam-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.34'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids:
+      - '4.10'
+      table_ids: []
+  reference_specs:
+  - kind: example
+    target_id: '4.10'
+    reason: Explicit example reference in exercise text
+- exercise_id: '4.35'
+  chapter_id: '4'
+  exercise_number: 35
+  starred: false
+  source_order: 35
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.35'
+      end_before:
+        kind: exercise
+        value: '4.36'
+    queries:
+    - +(4.35) +(printed page 312) --QDF=0
+    - +(The following problems are related to the proper-) +(printed page 312) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: The following problems are related to the proper-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.35'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.36'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '4.1'
+  reference_specs:
+  - kind: table
+    target_id: '4.1'
+    reason: Explicit table reference in exercise text
+- exercise_id: '4.36'
+  chapter_id: '4'
+  exercise_number: 36
+  starred: false
+  source_order: 36
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.36'
+      end_before:
+        kind: exercise
+        value: '4.37'
+    queries:
+    - +(4.36) +(printed page 312) --QDF=0
+    - +(of a DFT is proportional to the average value of) +(printed page 312) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: of a DFT is proportional to the average value of
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.36'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.37'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-102
+      - 4-103
+      example_ids: []
+      table_ids:
+      - '4.3'
+  reference_specs:
+  - kind: equation
+    target_id: 4-102
+    reason: Explicit equation reference in exercise text
+  - kind: table
+    target_id: '4.3'
+    reason: Explicit table reference in exercise text
+- exercise_id: '4.37'
+  chapter_id: '4'
+  exercise_number: 37
+  starred: false
+  source_order: 37
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.37'
+      end_before:
+        kind: exercise
+        value: '4.38'
+    queries:
+    - +(4.37) +(printed page 312) --QDF=0
+    - +(Demonstrate the validity of the periodicity prop-) +(printed page 312) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: Demonstrate the validity of the periodicity prop-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.37'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.38'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '4.3'
+  reference_specs:
+  - kind: table
+    target_id: '4.3'
+    reason: Explicit table reference in exercise text
+- exercise_id: '4.38'
+  chapter_id: '4'
+  exercise_number: 38
+  starred: false
+  source_order: 38
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.38'
+      end_before:
+        kind: exercise
+        value: '4.39'
+    queries:
+    - +(4.38) +(printed page 312) --QDF=0
+    - +(With reference to the 2-D discrete convolution) +(printed page 312) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: With reference to the 2-D discrete convolution
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.38'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.39'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-95
+      - 4-96
+      example_ids: []
+      table_ids:
+      - '4.4'
+  reference_specs:
+  - kind: equation
+    target_id: 4-95
+    reason: Explicit equation reference in exercise text
+  - kind: table
+    target_id: '4.4'
+    reason: Explicit table reference in exercise text
+  - kind: exercise
+    target_id: '4.18'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.39'
+  chapter_id: '4'
+  exercise_number: 39
+  starred: false
+  source_order: 39
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.39'
+      end_before:
+        kind: exercise
+        value: '4.40'
+    queries:
+    - +(4.39) +(printed page 312) --QDF=0
+    - +(With reference to the 2-D discrete correlation) +(printed page 312) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: With reference to the 2-D discrete correlation
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.39'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.40'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '4.4'
+  reference_specs:
+  - kind: table
+    target_id: '4.4'
+    reason: Explicit table reference in exercise text
+- exercise_id: '4.40'
+  chapter_id: '4'
+  exercise_number: 40
+  starred: true
+  source_order: 40
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.40'
+      end_before:
+        kind: exercise
+        value: '4.41'
+    queries:
+    - +(4.40) +(printed page 312) --QDF=0
+    - +(* Demonstrate validity of the differentiation pairs) +(printed page 312) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: '* Demonstrate validity of the differentiation pairs'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.40'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.41'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids:
+      - '4.4'
+  reference_specs:
+  - kind: table
+    target_id: '4.4'
+    reason: Explicit table reference in exercise text
+- exercise_id: '4.41'
+  chapter_id: '4'
+  exercise_number: 41
+  starred: false
+  source_order: 41
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.41'
+      end_before:
+        kind: exercise
+        value: '4.42'
+    queries:
+    - +(4.41) +(printed page 312) --QDF=0
+    - +(image, on the left). Do you think it would make a) +(printed page 312) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: image, on the left). Do you think it would make a
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.41'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.42'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: section
+    target_id: '4.6'
+    reason: Explicit section reference in exercise text
+- exercise_id: '4.42'
+  chapter_id: '4'
+  exercise_number: 42
+  starred: true
+  source_order: 42
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.42'
+      end_before:
+        kind: exercise
+        value: '4.43'
+    queries:
+    - +(4.42) +(printed page 312) --QDF=0
+    - +(strength along the vertical and horizontal axes of) +(printed page 312) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: strength along the vertical and horizontal axes of
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.42'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.43'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.43'
+  chapter_id: '4'
+  exercise_number: 43
+  starred: false
+  source_order: 43
+  problem_page_range:
+    pdf_page_index_start: 313
+    pdf_page_index_end: 313
+    pdf_page_number_start: 314
+    pdf_page_number_end: 314
+    printed_page_start: '312'
+    printed_page_end: '312'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 313
+      pdf_page_number: 314
+      printed_page_label: '312'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.43'
+      end_before: null
+    queries:
+    - +(4.43) +(printed page 312) --QDF=0
+    - '+(right was obtained by: (a) multiplying the image) +(printed page 312) --QDF=0'
+    required_evidence:
+    - kind: printed_page_equals
+      value: '312'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: 'right was obtained by: (a) multiplying the image'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.43'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.44'
+  chapter_id: '4'
+  exercise_number: 44
+  starred: true
+  source_order: 44
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.44'
+      end_before:
+        kind: exercise
+        value: '4.45'
+    queries:
+    - +(4.44) +(printed page 313) --QDF=0
+    - +(explain why this operation caused the image to be) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: explain why this operation caused the image to be
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.44'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.45'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-86
+      example_ids: []
+      table_ids:
+      - '4.1'
+  reference_specs:
+  - kind: equation
+    target_id: 4-86
+    reason: Explicit equation reference in exercise text
+  - kind: figure
+    target_id: '4.34'
+    reason: Explicit figure reference in exercise text
+  - kind: table
+    target_id: '4.1'
+    reason: Explicit table reference in exercise text
+- exercise_id: '4.45'
+  chapter_id: '4'
+  exercise_number: 45
+  starred: false
+  source_order: 45
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.45'
+      end_before:
+        kind: exercise
+        value: '4.46'
+    queries:
+    - +(4.45) +(printed page 313) --QDF=0
+    - +(angle by −1 ﬂipped the image with respect to both) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: angle by −1 ﬂipped the image with respect to both
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.45'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.46'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 2-31
+      - 2-32
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 2-31
+    reason: Explicit equation reference in exercise text
+  - kind: figure
+    target_id: '4.34'
+    reason: Explicit figure reference in exercise text
+- exercise_id: '4.46'
+  chapter_id: '4'
+  exercise_number: 46
+  starred: false
+  source_order: 46
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.46'
+      end_before:
+        kind: exercise
+        value: '4.47'
+    queries:
+    - +(4.46) +(printed page 313) --QDF=0
+    - +(What is the source of the nearly periodic bright) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: What is the source of the nearly periodic bright
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.46'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.47'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '4.40'
+    reason: Explicit figure reference in exercise text
+- exercise_id: '4.47'
+  chapter_id: '4'
+  exercise_number: 47
+  starred: true
+  source_order: 47
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.47'
+      end_before:
+        kind: exercise
+        value: '4.48'
+    queries:
+    - +(4.47) +(printed page 313) --QDF=0
+    - +((b) Show that your result is a lowpass ﬁlter trans-) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: (b) Show that your result is a lowpass ﬁlter trans-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.47'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.48'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.48'
+  chapter_id: '4'
+  exercise_number: 48
+  starred: true
+  source_order: 48
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.48'
+      end_before:
+        kind: exercise
+        value: '4.49'
+    queries:
+    - +(4.48) +(printed page 313) --QDF=0
+    - +(* A continuous Gaussian lowpass ﬁlter in the con-) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: '* A continuous Gaussian lowpass ﬁlter in the con-'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.48'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.49'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.49'
+  chapter_id: '4'
+  exercise_number: 49
+  starred: false
+  source_order: 49
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.49'
+      end_before:
+        kind: exercise
+        value: '4.50'
+    queries:
+    - +(4.49) +(printed page 313) --QDF=0
+    - +(for a sufﬁciently large value of K? If so, what) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: for a sufﬁciently large value of K? If so, what
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.49'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.50'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.50'
+  chapter_id: '4'
+  exercise_number: 50
+  starred: false
+  source_order: 50
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.50'
+      end_before:
+        kind: exercise
+        value: '4.51'
+    queries:
+    - +(4.50) +(printed page 313) --QDF=0
+    - +(tives can be approximated by the spatial differ-) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: tives can be approximated by the spatial differ-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.50'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.51'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: section
+    target_id: '3.6'
+    reason: Explicit section reference in exercise text
+  - kind: exercise
+    target_id: '4.47'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.51'
+  chapter_id: '4'
+  exercise_number: 51
+  starred: false
+  source_order: 51
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.51'
+      end_before:
+        kind: exercise
+        value: '4.52'
+    queries:
+    - +(4.51) +(printed page 313) --QDF=0
+    - +(in Fig. 3.45(a). Show that your result behaves as a) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: in Fig. 3.45(a). Show that your result behaves as a
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.51'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.52'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '3.45'
+    reason: Explicit figure reference in exercise text
+  - kind: exercise
+    target_id: '4.47'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.52'
+  chapter_id: '4'
+  exercise_number: 52
+  starred: false
+  source_order: 52
+  problem_page_range:
+    pdf_page_index_start: 314
+    pdf_page_index_end: 314
+    pdf_page_number_start: 315
+    pdf_page_number_end: 315
+    printed_page_start: '313'
+    printed_page_end: '313'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 314
+      pdf_page_number: 315
+      printed_page_label: '313'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.52'
+      end_before: null
+    queries:
+    - +(4.52) +(printed page 313) --QDF=0
+    - +((b) * The result in (a) is valid only for continuous) +(printed page 313) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '313'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: (b) * The result in (a) is valid only for continuous
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.52'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 3-50
+      example_ids:
+      - '4.21'
+      table_ids:
+      - '4.4'
+  reference_specs:
+  - kind: equation
+    target_id: 3-50
+    reason: Explicit equation reference in exercise text
+  - kind: figure
+    target_id: '3.46'
+    reason: Explicit figure reference in exercise text
+  - kind: table
+    target_id: '4.4'
+    reason: Explicit table reference in exercise text
+  - kind: example
+    target_id: '4.21'
+    reason: Explicit example reference in exercise text
+- exercise_id: '4.53'
+  chapter_id: '4'
+  exercise_number: 53
+  starred: true
+  source_order: 53
+  problem_page_range:
+    pdf_page_index_start: 315
+    pdf_page_index_end: 315
+    pdf_page_number_start: 316
+    pdf_page_number_end: 316
+    printed_page_start: '314'
+    printed_page_end: '314'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 315
+      pdf_page_number: 316
+      printed_page_label: '314'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.53'
+      end_before:
+        kind: exercise
+        value: '4.54'
+    queries:
+    - +(4.53) +(printed page 314) --QDF=0
+    - +(* Can you think of a way to use the Fourier trans-) +(printed page 314) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '314'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: '* Can you think of a way to use the Fourier trans-'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.53'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.54'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 3-58
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 3-58
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.54'
+  chapter_id: '4'
+  exercise_number: 54
+  starred: false
+  source_order: 54
+  problem_page_range:
+    pdf_page_index_start: 315
+    pdf_page_index_end: 315
+    pdf_page_number_start: 316
+    pdf_page_number_end: 316
+    printed_page_start: '314'
+    printed_page_end: '314'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 315
+      pdf_page_number: 316
+      printed_page_label: '314'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.54'
+      end_before:
+        kind: exercise
+        value: '4.55'
+    queries:
+    - +(4.54) +(printed page 314) --QDF=0
+    - +(As explained in Eq. (4-118), it is possible to obtain) +(printed page 314) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '314'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: As explained in Eq. (4-118), it is possible to obtain
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.54'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.55'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-118
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-118
+    reason: Explicit equation reference in exercise text
+  - kind: exercise
+    target_id: '4.48'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.55'
+  chapter_id: '4'
+  exercise_number: 55
+  starred: false
+  source_order: 55
+  problem_page_range:
+    pdf_page_index_start: 315
+    pdf_page_index_end: 315
+    pdf_page_number_start: 316
+    pdf_page_number_end: 316
+    printed_page_start: '314'
+    printed_page_end: '314'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 315
+      pdf_page_number: 316
+      printed_page_label: '314'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.55'
+      end_before:
+        kind: exercise
+        value: '4.56'
+    queries:
+    - +(4.55) +(printed page 314) --QDF=0
+    - +(strong spike in the center. Explain the source of) +(printed page 314) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '314'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: strong spike in the center. Explain the source of
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.55'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.56'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '4.52'
+    reason: Explicit figure reference in exercise text
+- exercise_id: '4.56'
+  chapter_id: '4'
+  exercise_number: 56
+  starred: true
+  source_order: 56
+  problem_page_range:
+    pdf_page_index_start: 315
+    pdf_page_index_end: 315
+    pdf_page_number_start: 316
+    pdf_page_number_end: 316
+    printed_page_start: '314'
+    printed_page_end: '314'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 315
+      pdf_page_number: 316
+      printed_page_label: '314'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.56'
+      end_before:
+        kind: exercise
+        value: '4.57'
+    queries:
+    - +(4.56) +(printed page 314) --QDF=0
+    - +(fer function in Eq. (4-121) follows from its low-) +(printed page 314) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '314'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: fer function in Eq. (4-121) follows from its low-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.56'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.57'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-121
+      - 4-117
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-121
+    reason: Explicit equation reference in exercise text
+  - kind: equation
+    target_id: 4-117
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.57'
+  chapter_id: '4'
+  exercise_number: 57
+  starred: false
+  source_order: 57
+  problem_page_range:
+    pdf_page_index_start: 315
+    pdf_page_index_end: 315
+    pdf_page_number_start: 316
+    pdf_page_number_end: 316
+    printed_page_start: '314'
+    printed_page_end: '314'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 315
+      pdf_page_number: 316
+      printed_page_label: '314'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.57'
+      end_before:
+        kind: exercise
+        value: '4.58'
+    queries:
+    - +(4.57) +(printed page 314) --QDF=0
+    - +((b) Do you think the result would have been dif-) +(printed page 314) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '314'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: (b) Do you think the result would have been dif-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.57'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.58'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.58'
+  chapter_id: '4'
+  exercise_number: 58
+  starred: false
+  source_order: 58
+  problem_page_range:
+    pdf_page_index_start: 315
+    pdf_page_index_end: 315
+    pdf_page_number_start: 316
+    pdf_page_number_end: 316
+    printed_page_start: '314'
+    printed_page_end: '314'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 315
+      pdf_page_number: 316
+      printed_page_label: '314'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.58'
+      end_before:
+        kind: exercise
+        value: '4.59'
+    queries:
+    - +(4.58) +(printed page 314) --QDF=0
+    - +(The image on the top left is a segment of an X-ray) +(printed page 314) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '314'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: The image on the top left is a segment of an X-ray
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.58'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.59'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: exercise
+    target_id: '4.49'
+    reason: Explicit exercise reference in exercise text
+- exercise_id: '4.59'
+  chapter_id: '4'
+  exercise_number: 59
+  starred: false
+  source_order: 59
+  problem_page_range:
+    pdf_page_index_start: 315
+    pdf_page_index_end: 316
+    pdf_page_number_start: 316
+    pdf_page_number_end: 317
+    printed_page_start: '314'
+    printed_page_end: '315'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 315
+      pdf_page_number: 316
+      printed_page_label: '314'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.59'
+      end_before: null
+    queries:
+    - +(4.59) +(printed page 314) --QDF=0
+    - +(As illustrated in Fig. 4.57, combining high-fre-) +(printed page 314) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '314'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: As illustrated in Fig. 4.57, combining high-fre-
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.59'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 316
+      pdf_page_number: 317
+      printed_page_label: '315'
+    content_window:
+      start_at: null
+      end_before:
+        kind: exercise
+        value: '4.60'
+    queries:
+    - +((b) If the order does matter, give a rationale for) +(printed page 315) --QDF=0
+    - +((b) If the order does matter, give a rationale for) +(Problems) +(printed page 315) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '315'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: (b) If the order does matter, give a rationale for
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.60'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '4.57'
+    reason: Explicit figure reference in exercise text
+- exercise_id: '4.60'
+  chapter_id: '4'
+  exercise_number: 60
+  starred: false
+  source_order: 60
+  problem_page_range:
+    pdf_page_index_start: 316
+    pdf_page_index_end: 316
+    pdf_page_number_start: 317
+    pdf_page_number_end: 317
+    printed_page_start: '315'
+    printed_page_end: '315'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 316
+      pdf_page_number: 317
+      printed_page_label: '315'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.60'
+      end_before:
+        kind: exercise
+        value: '4.61'
+    queries:
+    - +(4.60) +(printed page 315) --QDF=0
+    - +(same general shape as the function in Fig. 4.59.) +(printed page 315) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '315'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: same general shape as the function in Fig. 4.59.
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.60'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.61'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '4.59'
+    reason: Explicit figure reference in exercise text
+- exercise_id: '4.61'
+  chapter_id: '4'
+  exercise_number: 61
+  starred: false
+  source_order: 61
+  problem_page_range:
+    pdf_page_index_start: 316
+    pdf_page_index_end: 316
+    pdf_page_number_start: 317
+    pdf_page_number_end: 317
+    printed_page_start: '315'
+    printed_page_end: '315'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 316
+      pdf_page_number: 317
+      printed_page_label: '315'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.61'
+      end_before:
+        kind: exercise
+        value: '4.62'
+    queries:
+    - +(4.61) +(printed page 315) --QDF=0
+    - +(ated by an experiment dealing with the analysis of) +(printed page 315) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '315'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: ated by an experiment dealing with the analysis of
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.61'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.62'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []
+- exercise_id: '4.62'
+  chapter_id: '4'
+  exercise_number: 62
+  starred: false
+  source_order: 62
+  problem_page_range:
+    pdf_page_index_start: 316
+    pdf_page_index_end: 316
+    pdf_page_number_start: 317
+    pdf_page_number_end: 317
+    printed_page_start: '315'
+    printed_page_end: '315'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 316
+      pdf_page_number: 317
+      printed_page_label: '315'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.62'
+      end_before:
+        kind: exercise
+        value: '4.63'
+    queries:
+    - +(4.62) +(printed page 315) --QDF=0
+    - +(How would you generate an image of only the) +(printed page 315) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '315'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: How would you generate an image of only the
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.62'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.63'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: figure
+    target_id: '4.64'
+    reason: Explicit figure reference in exercise text
+- exercise_id: '4.63'
+  chapter_id: '4'
+  exercise_number: 63
+  starred: true
+  source_order: 63
+  problem_page_range:
+    pdf_page_index_start: 316
+    pdf_page_index_end: 316
+    pdf_page_number_start: 317
+    pdf_page_number_end: 317
+    printed_page_start: '315'
+    printed_page_end: '315'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 316
+      pdf_page_number: 317
+      printed_page_label: '315'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.63'
+      end_before:
+        kind: exercise
+        value: '4.64'
+    queries:
+    - +(4.63) +(printed page 315) --QDF=0
+    - +(* Show the validity of Eqs. (4-171) and (4-172).) +(printed page 315) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '315'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: '* Show the validity of Eqs. (4-171) and (4-172).'
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.63'
+      verification_mode: visual_required
+    - kind: contains_exercise
+      value: '4.64'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids:
+      - 4-171
+      - 4-172
+      example_ids: []
+      table_ids: []
+  reference_specs:
+  - kind: equation
+    target_id: 4-171
+    reason: Explicit equation reference in exercise text
+- exercise_id: '4.64'
+  chapter_id: '4'
+  exercise_number: 64
+  starred: false
+  source_order: 64
+  problem_page_range:
+    pdf_page_index_start: 316
+    pdf_page_index_end: 317
+    pdf_page_number_start: 317
+    pdf_page_number_end: 318
+    printed_page_start: '315'
+    printed_page_end: '316'
+  problem_retrieval_plan:
+  - page:
+      pdf_page_index: 316
+      pdf_page_number: 317
+      printed_page_label: '315'
+    content_window:
+      start_at:
+        kind: exercise
+        value: '4.64'
+      end_before: null
+    queries:
+    - +(4.64) +(printed page 315) --QDF=0
+    - +(can follow to achieve the desired goal. You may) +(printed page 315) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '315'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: can follow to achieve the desired goal. You may
+      verification_mode: text_or_visual
+    - kind: contains_exercise
+      value: '4.64'
+      verification_mode: visual_required
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  - page:
+      pdf_page_index: 317
+      pdf_page_number: 318
+      printed_page_label: '316'
+    content_window:
+      start_at: null
+      end_before: null
+    queries:
+    - +(This page intentionally left blank) +(printed page 316) --QDF=0
+    - +(This page intentionally left blank) +(Problems) +(printed page 316) --QDF=0
+    required_evidence:
+    - kind: printed_page_equals
+      value: '316'
+      verification_mode: visual_required
+    - kind: contains_text
+      value: This page intentionally left blank
+      verification_mode: text_or_visual
+    coverage:
+      subheadings: []
+      figure_ids: []
+      equation_ids: []
+      example_ids: []
+      table_ids: []
+  reference_specs: []

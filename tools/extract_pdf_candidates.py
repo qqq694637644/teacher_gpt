@@ -16,7 +16,9 @@ FIGURE_RE = re.compile(r"\bFIGURE\s+(\d+(?:\.\d+)+)\b", re.IGNORECASE)
 EQUATION_RE = re.compile(r"\((\d+-\d+)\)")
 EXAMPLE_RE = re.compile(r"\bEXAMPLE\s+(\d+(?:\.\d+)*)\b", re.IGNORECASE)
 TABLE_RE = re.compile(r"\bTABLE\s+(\d+(?:\.\d+)*)\b", re.IGNORECASE)
-EXERCISE_RE = re.compile(r"^(?P<star>\*)?\s*(?P<id>\d+\.\d+)(?=\s|$)")
+EXERCISE_RE = re.compile(
+    r"^(?P<leading_star>\*)?\s*(?P<id>\d+\.\d+)(?P<trailing_star>\s+\*)?(?=\s|$)"
+)
 PROBLEMS_RE = re.compile(r"^Problems$", re.IGNORECASE)
 TERMINAL_BOUNDARY_RE = re.compile(
     r"^(?:Summary(?:,\s*References,\s*and\s*Further\s*Reading)?|Problems)$",
@@ -24,6 +26,7 @@ TERMINAL_BOUNDARY_RE = re.compile(
 )
 HEADING_FONT = "Futura-Heavy"
 HEADING_COLOR = 28319
+COLUMN_SPLIT_RATIO = 0.49
 
 
 @dataclass(frozen=True)
@@ -274,31 +277,45 @@ def extract_heading_candidates(doc: fitz.Document) -> list[HeadingCandidate]:
 
 
 def _column_for_x(page_width: float, x0: float) -> int:
-    return 0 if x0 < page_width / 2 else 1
+    return 0 if x0 < page_width * COLUMN_SPLIT_RATIO else 1
 
 
 def _reading_key(line: TextLine, page_width: float) -> tuple[int, float, float]:
     return (_column_for_x(page_width, line.bbox[0]), line.bbox[1], line.bbox[0])
 
 
+def extract_problem_headings(doc: fitz.Document) -> dict[str, TextLine]:
+    chapters = extract_chapter_candidates(doc)
+    chapter_ends = chapter_end_indices(doc, chapters)
+    headings: dict[str, TextLine] = {}
+    for chapter in chapters:
+        chapter_id = chapter.text.split()[0]
+        for page_index in range(chapter.pdf_page_index, chapter_ends[chapter_id] + 1):
+            match = next(
+                (
+                    line
+                    for line in extract_lines(doc[page_index])
+                    if PROBLEMS_RE.fullmatch(line.text)
+                ),
+                None,
+            )
+            if match is not None:
+                headings[chapter_id] = match
+                break
+    return headings
+
+
 def extract_exercise_candidates(doc: fitz.Document) -> list[ExerciseCandidate]:
     chapters = extract_chapter_candidates(doc)
     chapter_ends = chapter_end_indices(doc, chapters)
+    problem_headings = extract_problem_headings(doc)
     candidates: list[ExerciseCandidate] = []
     for chapter in chapters:
         chapter_id = chapter.text.split()[0]
         chapter_end = chapter_ends[chapter_id]
-
-        problems_line: TextLine | None = None
-        for page_index in range(chapter.pdf_page_index, chapter_end + 1):
-            for line in extract_lines(doc[page_index]):
-                if PROBLEMS_RE.fullmatch(line.text):
-                    problems_line = line
-                    break
-            if problems_line is not None:
-                break
+        problems_line = problem_headings.get(chapter_id)
         if problems_line is None:
-            raise ValueError(f"cannot locate Problems heading for chapter {chapter_id}")
+            continue
 
         chapter_candidates: list[tuple[TextLine, bool, int]] = []
         for page_index in range(problems_line.pdf_page_index, chapter_end + 1):
@@ -315,6 +332,8 @@ def extract_exercise_candidates(doc: fitz.Document) -> list[ExerciseCandidate]:
                 match = EXERCISE_RE.match(line.text)
                 if match is None:
                     continue
+                if "TimesTen-Bold" not in line.font_names or HEADING_COLOR not in line.colors:
+                    continue
                 exercise_id = match.group("id")
                 prefix, number = exercise_id.split(".", 1)
                 if prefix != chapter_id or not number.isdigit():
@@ -327,7 +346,10 @@ def extract_exercise_candidates(doc: fitz.Document) -> list[ExerciseCandidate]:
                 )
                 if not near_column_margin:
                     continue
-                starred = match.group("star") is not None
+                starred = (
+                    match.group("leading_star") is not None
+                    or match.group("trailing_star") is not None
+                )
                 if not starred and position > 0:
                     previous = ordered_lines[position - 1]
                     same_column = _column_for_x(page.rect.width, previous.bbox[0]) == column

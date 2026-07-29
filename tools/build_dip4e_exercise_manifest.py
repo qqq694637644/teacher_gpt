@@ -30,6 +30,7 @@ from app.models.locator import (
 )
 from app.models.manifest import ManifestRetrievalStep
 from tools.extract_pdf_candidates import (
+    COLUMN_SPLIT_RATIO,
     ExerciseCandidate,
     TextLine,
     chapter_end_indices,
@@ -38,11 +39,11 @@ from tools.extract_pdf_candidates import (
     extract_exercise_candidates,
     extract_lines,
     extract_page_anchors,
+    extract_problem_headings,
     page_references,
     sha256_file,
 )
 
-EXPECTED_CHAPTER_IDS = {str(index) for index in range(1, 13)}
 SECTION_REF_RE = re.compile(r"\bSections?\s+(\d+(?:\.\d+)*)", re.IGNORECASE)
 EQUATION_REF_RE = re.compile(
     r"\b(?:Eqs?\.?|Equations?)\s*\((\d+-\d+)\)",
@@ -55,6 +56,15 @@ FIGURE_REF_RE = re.compile(
 TABLE_REF_RE = re.compile(r"\bTables?\s+(\d+(?:\.\d+)*)", re.IGNORECASE)
 EXAMPLE_REF_RE = re.compile(r"\bExamples?\s+(\d+(?:\.\d+)*)", re.IGNORECASE)
 PROBLEM_REF_RE = re.compile(r"\b(?:Problems?|Exercises?)\s+(\d+\.\d+)", re.IGNORECASE)
+REFERENCE_OVERRIDES = {
+    ("figure", "10.10.4"): (
+        "10.4",
+        (
+            "Source exercise 10.23 prints Fig. 10.10.4(a); normalized to Fig. 10.4(a), "
+            "the referenced 3 x 3 Laplacian kernel."
+        ),
+    ),
+}
 
 
 def _page_reference(raw: dict[str, Any]) -> PageReference:
@@ -73,7 +83,7 @@ def _page_range(start: int, end: int, pages: list[PageReference]) -> PageRange:
 
 
 def _column(page_width: float, x0: float) -> int:
-    return 0 if x0 < page_width / 2 else 1
+    return 0 if x0 < page_width * COLUMN_SPLIT_RATIO else 1
 
 
 def _bbox_key(page_width: float, bbox: tuple[float, float, float, float] | list[float]):
@@ -84,11 +94,30 @@ def _line_key(page: fitz.Page, line: TextLine):
     return _bbox_key(page.rect.width, line.bbox)
 
 
+def _at_or_after_boundary(
+    page_width: float,
+    bbox: tuple[float, float, float, float] | list[float],
+    boundary_bbox: tuple[float, float, float, float] | list[float],
+) -> bool:
+    column = _column(page_width, float(bbox[0]))
+    boundary_column = _column(page_width, float(boundary_bbox[0]))
+    if column != boundary_column:
+        return column > boundary_column
+    return float(bbox[1]) >= float(boundary_bbox[1]) - 0.5
+
+
+def _before_boundary(
+    page_width: float,
+    bbox: tuple[float, float, float, float] | list[float],
+    boundary_bbox: tuple[float, float, float, float] | list[float],
+) -> bool:
+    return not _at_or_after_boundary(page_width, bbox, boundary_bbox)
+
+
 def _meaningful_lines_before(document: fitz.Document, candidate: ExerciseCandidate) -> bool:
     page = document[candidate.pdf_page_index]
-    end_key = _bbox_key(page.rect.width, candidate.bbox)
     for line in extract_lines(page):
-        if _line_key(page, line) >= end_key:
+        if not _before_boundary(page.rect.width, line.bbox, candidate.bbox):
             continue
         if line.bbox[1] < 80:
             continue
@@ -125,20 +154,25 @@ def _window_lines(
     end: ExerciseCandidate | None,
 ) -> list[TextLine]:
     page = document[page_index]
-    start_key = _bbox_key(page.rect.width, start.bbox) if start is not None else None
-    end_key = _bbox_key(page.rect.width, end.bbox) if end is not None else None
     lines = []
     for line in extract_lines(page):
-        key = _line_key(page, line)
-        if start_key is not None and key < start_key:
+        if start is not None and not _at_or_after_boundary(
+            page.rect.width,
+            line.bbox,
+            start.bbox,
+        ):
             continue
-        if end_key is not None and key >= end_key:
+        if end is not None and not _before_boundary(
+            page.rect.width,
+            line.bbox,
+            end.bbox,
+        ):
             continue
         lines.append(line)
     return sorted(lines, key=lambda item: _line_key(page, item))
 
 
-def _distinctive_text(lines: list[TextLine], exercise_id: str) -> str:
+def _distinctive_text(lines: list[TextLine], exercise_id: str) -> str | None:
     candidates: list[tuple[int, int, str]] = []
     for line in lines:
         text = clean_text(line.text)
@@ -154,11 +188,29 @@ def _distinctive_text(lines: list[TextLine], exercise_id: str) -> str:
     if not candidates:
         for line in lines:
             text = clean_text(line.text)
-            if len(text) >= 20 and exercise_id not in text:
+            if len(text) >= 12 and exercise_id not in text:
                 candidates.append((1, len(text), text))
-    if not candidates:
-        raise ValueError(f"cannot derive text anchor for exercise {exercise_id}")
-    return max(candidates)[2]
+    return max(candidates)[2] if candidates else None
+
+
+def _content_evidence(
+    text_anchor: str | None,
+    coverage: PageCoverage,
+    start_anchor: BoundaryAnchor | None,
+) -> tuple[str, str]:
+    if text_anchor is not None:
+        return "contains_text", text_anchor
+    for evidence_kind, values in (
+        ("contains_figure", coverage.figure_ids),
+        ("contains_equation", coverage.equation_ids),
+        ("contains_table", coverage.table_ids),
+        ("contains_example", coverage.example_ids),
+    ):
+        if values:
+            return evidence_kind, values[0]
+    if start_anchor is not None:
+        return "contains_exercise", start_anchor.value
+    raise ValueError("exercise continuation page has no reliable content anchor")
 
 
 def _coverage(
@@ -168,16 +220,20 @@ def _coverage(
     start: ExerciseCandidate | None,
     end: ExerciseCandidate | None,
 ) -> PageCoverage:
-    start_key = _bbox_key(page_width, start.bbox) if start is not None else None
-    end_key = _bbox_key(page_width, end.bbox) if end is not None else None
-
     def ids(key: str) -> list[str]:
         values = []
         for record in page_anchor[key]:
-            record_key = _bbox_key(page_width, record["bbox"])
-            if start_key is not None and record_key < start_key:
+            if start is not None and not _at_or_after_boundary(
+                page_width,
+                record["bbox"],
+                start.bbox,
+            ):
                 continue
-            if end_key is not None and record_key >= end_key:
+            if end is not None and not _before_boundary(
+                page_width,
+                record["bbox"],
+                end.bbox,
+            ):
                 continue
             values.append(record["id"])
         return list(dict.fromkeys(values))
@@ -212,7 +268,6 @@ def _build_problem_plan(
             end=end_candidate,
         )
         collected_text.extend(line.text for line in lines)
-        text_anchor = _distinctive_text(lines, current.exercise_id)
         page = pages[page_index]
         start_anchor = BoundaryAnchor(kind="exercise", value=current.exercise_id) if first else None
         end_anchor = (
@@ -220,18 +275,35 @@ def _build_problem_plan(
             if end_candidate is not None
             else None
         )
+        coverage = _coverage(
+            page_anchors[page_index],
+            document[page_index].rect.width,
+            start=start_candidate,
+            end=end_candidate,
+        )
+        text_anchor = _distinctive_text(lines, current.exercise_id)
+        content_kind, content_value = _content_evidence(
+            text_anchor,
+            coverage,
+            start_anchor,
+        )
         evidence = [
             EvidenceRequirement(
                 kind="printed_page_equals",
                 value=page.printed_page_label,
                 verification_mode="visual_required",
             ),
-            EvidenceRequirement(
-                kind="contains_text",
-                value=text_anchor,
-                verification_mode="text_or_visual",
-            ),
         ]
+        if content_kind != "contains_exercise":
+            evidence.append(
+                EvidenceRequirement(
+                    kind=content_kind,
+                    value=content_value,
+                    verification_mode=(
+                        "text_or_visual" if content_kind == "contains_text" else "visual_required"
+                    ),
+                )
+            )
         if start_anchor is not None:
             evidence.append(
                 EvidenceRequirement(
@@ -248,9 +320,18 @@ def _build_problem_plan(
                     verification_mode="visual_required",
                 )
             )
+        primary_anchor = current.exercise_id if first else content_value
+        if content_value != primary_anchor:
+            secondary_query = (
+                f"+({content_value}) +(printed page {page.printed_page_label}) --QDF=0"
+            )
+        else:
+            secondary_query = (
+                f"+({primary_anchor}) +(Problems) +(printed page {page.printed_page_label}) --QDF=0"
+            )
         queries = [
-            f"+({current.exercise_id}) +(printed page {page.printed_page_label}) --QDF=0",
-            f"+({text_anchor}) +(printed page {page.printed_page_label}) --QDF=0",
+            f"+({primary_anchor}) +(printed page {page.printed_page_label}) --QDF=0",
+            secondary_query,
         ]
         steps.append(
             ManifestRetrievalStep(
@@ -258,12 +339,7 @@ def _build_problem_plan(
                 content_window=ContentWindow(start_at=start_anchor, end_before=end_anchor),
                 queries=queries,
                 required_evidence=evidence,
-                coverage=_coverage(
-                    page_anchors[page_index],
-                    document[page_index].rect.width,
-                    start=start_candidate,
-                    end=end_candidate,
-                ),
+                coverage=coverage,
             )
         )
     return steps, clean_text(" ".join(collected_text))
@@ -283,6 +359,10 @@ def _reference_specs(text: str, exercise_id: str) -> list[ExerciseReferenceSpec]
     for kind, pattern in patterns:
         for match in pattern.finditer(text):
             target_id = match.group(1)
+            override = REFERENCE_OVERRIDES.get((kind, target_id))
+            reason = f"Explicit {kind} reference in exercise text"
+            if override is not None:
+                target_id, reason = override
             key = (kind, target_id)
             if key in seen or (kind == "exercise" and target_id == exercise_id):
                 continue
@@ -291,7 +371,7 @@ def _reference_specs(text: str, exercise_id: str) -> list[ExerciseReferenceSpec]
                 ExerciseReferenceSpec(
                     kind=kind,
                     target_id=target_id,
-                    reason=f"Explicit {kind} reference in exercise text",
+                    reason=reason,
                 )
             )
     return specs
@@ -305,14 +385,16 @@ def build_exercise_manifest(pdf_path: Path) -> ExerciseManifest:
         candidates = extract_exercise_candidates(document)
         chapters = extract_chapter_candidates(document)
         chapter_end = chapter_end_indices(document, chapters)
+        expected_chapter_ids = set(extract_problem_headings(document))
         grouped: dict[str, list[ExerciseCandidate]] = {}
         for candidate in candidates:
             grouped.setdefault(candidate.chapter_id, []).append(candidate)
-        if set(grouped) != EXPECTED_CHAPTER_IDS:
-            missing = sorted(EXPECTED_CHAPTER_IDS - set(grouped), key=int)
-            extra = sorted(set(grouped) - EXPECTED_CHAPTER_IDS, key=int)
+        if set(grouped) != expected_chapter_ids:
+            missing = sorted(expected_chapter_ids - set(grouped), key=int)
+            extra = sorted(set(grouped) - expected_chapter_ids, key=int)
             raise ValueError(
-                f"exercise candidates do not cover all chapters; missing={missing}; extra={extra}"
+                "exercise candidates do not cover all Problems chapters; "
+                f"missing={missing}; extra={extra}"
             )
 
         exercises: list[ExerciseManifestNode] = []
