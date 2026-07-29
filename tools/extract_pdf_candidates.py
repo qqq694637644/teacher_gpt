@@ -280,6 +280,74 @@ def _column_for_x(page_width: float, x0: float) -> int:
     return 0 if x0 < page_width * COLUMN_SPLIT_RATIO else 1
 
 
+def _visual_line_compatible(
+    group_bbox: tuple[float, float, float, float],
+    line_bbox: tuple[float, float, float, float],
+) -> bool:
+    group_center = (group_bbox[1] + group_bbox[3]) / 2
+    line_center = (line_bbox[1] + line_bbox[3]) / 2
+    overlap = min(group_bbox[3], line_bbox[3]) - max(group_bbox[1], line_bbox[1])
+    return overlap >= -1.5 and abs(group_center - line_center) <= 5.0
+
+
+def merge_visual_lines(page_width: float, lines: list[TextLine]) -> list[TextLine]:
+    merged: list[TextLine] = []
+    for column in (0, 1):
+        column_lines = sorted(
+            (line for line in lines if _column_for_x(page_width, float(line.bbox[0])) == column),
+            key=lambda item: (float(item.bbox[1]), float(item.bbox[0])),
+        )
+        groups: list[list[TextLine]] = []
+        group_bboxes: list[tuple[float, float, float, float]] = []
+        for line in column_lines:
+            matching_index = next(
+                (
+                    index
+                    for index in range(len(groups) - 1, -1, -1)
+                    if _visual_line_compatible(group_bboxes[index], line.bbox)
+                ),
+                None,
+            )
+            if matching_index is None:
+                groups.append([line])
+                group_bboxes.append(line.bbox)
+                continue
+            groups[matching_index].append(line)
+            bbox = group_bboxes[matching_index]
+            group_bboxes[matching_index] = (
+                min(bbox[0], line.bbox[0]),
+                min(bbox[1], line.bbox[1]),
+                max(bbox[2], line.bbox[2]),
+                max(bbox[3], line.bbox[3]),
+            )
+
+        for group, bbox in zip(groups, group_bboxes, strict=True):
+            ordered = sorted(group, key=lambda item: float(item.bbox[0]))
+            first = ordered[0]
+            merged.append(
+                TextLine(
+                    text=clean_text(" ".join(item.text for item in ordered)),
+                    pdf_page_index=first.pdf_page_index,
+                    pdf_page_number=first.pdf_page_number,
+                    printed_page_label=first.printed_page_label,
+                    bbox=bbox,
+                    font_names=tuple(
+                        sorted({font for item in ordered for font in item.font_names})
+                    ),
+                    max_font_size=max(item.max_font_size for item in ordered),
+                    colors=tuple(sorted({color for item in ordered for color in item.colors})),
+                )
+            )
+    return sorted(
+        merged,
+        key=lambda item: (
+            _column_for_x(page_width, item.bbox[0]),
+            item.bbox[1],
+            item.bbox[0],
+        ),
+    )
+
+
 def _reading_key(line: TextLine, page_width: float) -> tuple[int, float, float]:
     return (_column_for_x(page_width, line.bbox[0]), line.bbox[1], line.bbox[0])
 
@@ -392,7 +460,8 @@ def extract_page_anchors(doc: fitz.Document) -> list[dict[str, Any]]:
     for page_index in range(doc.page_count):
         page = doc[page_index]
         lines = extract_lines(page)
-        text = clean_text("\n".join(line.text for line in lines))
+        visual_lines = merge_visual_lines(float(page.rect.width), lines)
+        text = clean_text("\n".join(line.text for line in visual_lines))
 
         def records(
             pattern: re.Pattern[str],
@@ -429,7 +498,7 @@ def extract_page_anchors(doc: fitz.Document) -> list[dict[str, Any]]:
             {"text": heading.text, "bbox": list(heading.bbox)}
             for heading in chapter_headings.get(page_index, [])
         )
-        text_records = [{"text": line.text, "bbox": list(line.bbox)} for line in lines]
+        text_records = [{"text": line.text, "bbox": list(line.bbox)} for line in visual_lines]
         exercise_records = [
             {
                 "id": item.exercise_id,
@@ -446,6 +515,7 @@ def extract_page_anchors(doc: fitz.Document) -> list[dict[str, Any]]:
             {
                 "pdf_page_index": page_index,
                 "printed_page_label": clean_text(page.get_label()),
+                "page_width": float(page.rect.width),
                 "heading_records": heading_records,
                 "text_records": text_records,
                 "figure_records": figure_records,

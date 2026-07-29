@@ -7075,7 +7075,7 @@
             }
           },
           "queries": [
-            "+(text image so that they will have the specified pz) +(printed page 197) --QDF=0",
+            "+(text image so that they will have the specified pz z) +(printed page 197) --QDF=0",
             "+(exercise 3.12) +(printed page 197) --QDF=0",
             "+(exercise 3.13) +(printed page 197) --QDF=0"
           ],
@@ -7087,7 +7087,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "image so that they will have the speciﬁed pz",
+              "value": "image so that they will have the speciﬁed pz z()",
               "verification_mode": "text_or_visual"
             },
             {
@@ -7149,7 +7149,7 @@
             }
           },
           "queries": [
-            "+(text two end points Does this property always hold) +(printed page 197) --QDF=0",
+            "+(text G 1 sk from Eq 3-23 is the mirror image of) +(printed page 197) --QDF=0",
             "+(exercise 3.13) +(printed page 197) --QDF=0",
             "+(exercise 3.14) +(printed page 197) --QDF=0"
           ],
@@ -7161,7 +7161,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "two end points. Does this property always hold",
+              "value": "[G −1( sk ) from Eq. (3-23)] is the mirror image of",
               "verification_mode": "text_or_visual"
             },
             {
@@ -9366,7 +9366,7 @@
             }
           },
           "queries": [
-            "+(text What is the behavior of Eq 3-35 when a) +(printed page 197) --QDF=0",
+            "+(text What is the behavior of Eq 3-35 when a b 0) +(printed page 197) --QDF=0",
             "+(exercise 3.15) +(printed page 197) --QDF=0",
             "+(exercise 3.16) +(printed page 197) --QDF=0"
           ],
@@ -9378,7 +9378,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "What is the behavior of Eq. (3-35) when a",
+              "value": "What is the behavior of Eq. (3-35) when a = b =0?",
               "verification_mode": "text_or_visual"
             },
             {
@@ -10861,7 +10861,7 @@
             }
           },
           "queries": [
-            "+(text large ellipse in Fig 3.28 when the kernel is) +(printed page 198) --QDF=0",
+            "+(text nel is centered on point 23 of f and then) +(printed page 198) --QDF=0",
             "+(exercise 3.18) +(printed page 198) --QDF=0",
             "+(exercise 3.19) +(printed page 198) --QDF=0"
           ],
@@ -10873,7 +10873,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "large ellipse in Fig. 3.28 when the kernel is",
+              "value": "nel is centered on point (,) 23 of f; and then",
               "verification_mode": "text_or_visual"
             },
             {
@@ -11225,7 +11225,7 @@
             }
           },
           "queries": [
-            "+(text tation when the kernel is centered at point) +(printed page 198) --QDF=0",
+            "+(text 23 2nd row 3rd col of f and then show) +(printed page 198) --QDF=0",
             "+(exercise 3.20) +(printed page 198) --QDF=0",
             "+(exercise 3.21) +(printed page 198) --QDF=0"
           ],
@@ -11237,7 +11237,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "tation when the kernel is centered at point",
+              "value": "(,) 23 (2nd row, 3rd col) of f and then show",
               "verification_mode": "text_or_visual"
             },
             {
@@ -11263,6 +11263,42 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 156,
+            "pdf_page_number": 157,
+            "printed_page_label": "155"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 3.28) +(printed page 155) --QDF=0",
+            "+(3.28) +(figure) +(printed page 155) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "155",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "3.28",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
           "page_role": "single",
           "page": {
             "pdf_page_index": 159,
@@ -11298,7 +11334,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 3,
           "page_role": "single",
           "page": {
             "pdf_page_index": 199,
@@ -11316,7 +11352,7 @@
             }
           },
           "queries": [
-            "+(text large ellipse in Fig 3.28 when the kernel is) +(printed page 198) --QDF=0",
+            "+(text nel is centered on point 23 of f and then) +(printed page 198) --QDF=0",
             "+(exercise 3.18) +(printed page 198) --QDF=0",
             "+(exercise 3.19) +(printed page 198) --QDF=0"
           ],
@@ -11328,7 +11364,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "large ellipse in Fig. 3.28 when the kernel is",
+              "value": "nel is centered on point (,) 23 of f; and then",
               "verification_mode": "text_or_visual"
             },
             {
@@ -11377,7 +11413,7 @@
                 }
               },
               "queries": [
-                "+(text large ellipse in Fig 3.28 when the kernel is) +(printed page 198) --QDF=0",
+                "+(text nel is centered on point 23 of f and then) +(printed page 198) --QDF=0",
                 "+(exercise 3.18) +(printed page 198) --QDF=0",
                 "+(exercise 3.19) +(printed page 198) --QDF=0"
               ],
@@ -11389,7 +11425,7 @@
                 },
                 {
                   "kind": "contains_text",
-                  "value": "large ellipse in Fig. 3.28 when the kernel is",
+                  "value": "nel is centered on point (,) 23 of f; and then",
                   "verification_mode": "text_or_visual"
                 },
                 {
@@ -13090,22 +13126,22 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 169,
-            "pdf_page_number": 170,
-            "printed_page_label": "168"
+            "pdf_page_index": 170,
+            "pdf_page_number": 171,
+            "printed_page_label": "169"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(table 3.6) +(printed page 168) --QDF=0",
-            "+(3.6) +(table) +(printed page 168) --QDF=0"
+            "+(table 3.6) +(printed page 169) --QDF=0",
+            "+(3.6) +(table) +(printed page 169) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "168",
+              "value": "169",
               "verification_mode": "visual_required"
             },
             {
@@ -13134,22 +13170,22 @@
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 169,
-                "pdf_page_number": 170,
-                "printed_page_label": "168"
+                "pdf_page_index": 170,
+                "pdf_page_number": 171,
+                "printed_page_label": "169"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(table 3.6) +(printed page 168) --QDF=0",
-                "+(3.6) +(table) +(printed page 168) --QDF=0"
+                "+(table 3.6) +(printed page 169) --QDF=0",
+                "+(3.6) +(table) +(printed page 169) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "168",
+                  "value": "169",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -17231,6 +17267,78 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
+            "pdf_page_index": 103,
+            "pdf_page_number": 104,
+            "printed_page_label": "102"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(table 2.3) +(printed page 102) --QDF=0",
+            "+(2.3) +(table) +(printed page 102) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "102",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_table",
+              "value": "2.3",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 180,
+            "pdf_page_number": 181,
+            "printed_page_label": "179"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 3-50) +(printed page 179) --QDF=0",
+            "+(3-50) +(equation) +(printed page 179) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "179",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "3-50",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
             "pdf_page_index": 186,
             "pdf_page_number": 187,
             "printed_page_label": "185"
@@ -17269,7 +17377,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 4,
           "page_role": "single",
           "page": {
             "pdf_page_index": 201,

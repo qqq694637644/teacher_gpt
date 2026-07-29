@@ -1,3 +1,5 @@
+from types import SimpleNamespace
+
 import fitz
 import pytest
 import yaml
@@ -21,6 +23,7 @@ from tools.build_dip4e_exercise_manifest import (
 )
 from tools.build_dip4e_manifest import SourceNode, _assign_ranges, _terminal_boundaries
 from tools.compile_exercise_index import (
+    _exercise_evidence_exists,
     load_exercise_manifest,
     verify_complete_chapters,
     write_compiled_exercise_package,
@@ -30,6 +33,7 @@ from tools.extract_pdf_candidates import (
     HEADING_COLOR,
     TextLine,
     _column_for_x,
+    merge_visual_lines,
 )
 
 
@@ -73,11 +77,17 @@ def test_exercise_compiler_resolves_section_and_exercise_references(tmp_path) ->
     assert second.reference_targets[0].kind == "exercise"
     assert second.reference_targets[0].retrieval_plan == first.problem_retrieval_plan
     assert [step.page for step in second.reference_retrieval_plan] == [
-        step.page for step in first.problem_retrieval_plan
+        *[step.page for step in first.problem_retrieval_plan],
+        *[step.page for step in first.reference_retrieval_plan],
     ]
     assert any(
         item.kind == "contains_exercise" and item.value == "2.14"
         for item in second.reference_retrieval_plan[0].required_evidence
+    )
+    assert any(
+        item.kind == "contains_heading"
+        for step in second.reference_retrieval_plan[1:]
+        for item in step.required_evidence
     )
 
     output = tmp_path / "compiled_exercise_index.json"
@@ -157,10 +167,74 @@ def test_exercise_compiler_uses_explicit_context_pages_and_coalesces_exact_windo
     }
     assert compiler.reference_plan_stats.raw_reference_step_count == 6
     assert compiler.reference_plan_stats.selected_context_reference_count == 1
-    assert compiler.reference_plan_stats.execution_reference_step_count_before_merge == 3
-    assert compiler.reference_plan_stats.coalesced_reference_step_count == 1
+    assert compiler.reference_plan_stats.execution_reference_step_count_before_merge == 5
+    assert compiler.reference_plan_stats.coalesced_reference_step_count == 2
     assert compiler.reference_plan_stats.same_page_distinct_window_step_count == 0
-    assert compiler.reference_plan_stats.deduplicated_reference_step_count == 2
+    assert compiler.reference_plan_stats.deduplicated_reference_step_count == 3
+
+
+def test_visual_line_merge_restores_formula_fragment_reading_order() -> None:
+    page = SimpleNamespace(rect=SimpleNamespace(width=533.0))
+    lines = [
+        TextLine(
+            text="in Eqs. (7-16) and",
+            pdf_page_index=0,
+            pdf_page_number=1,
+            printed_page_label="534",
+            bbox=(182.47, 66.36, 268.79, 75.36),
+            font_names=("TimesTen-Roman",),
+            max_font_size=9.0,
+            colors=(2301728,),
+        ),
+        TextLine(
+            text="7.3 * Prove that",
+            pdf_page_index=0,
+            pdf_page_number=1,
+            printed_page_label="534",
+            bbox=(51.15, 66.36, 145.44, 75.36),
+            font_names=("TimesTen-Bold",),
+            max_font_size=9.0,
+            colors=(28319,),
+        ),
+        TextLine(
+            text="=",
+            pdf_page_index=0,
+            pdf_page_number=1,
+            printed_page_label="534",
+            bbox=(151.19, 65.94, 156.13, 74.94),
+            font_names=("Symbol",),
+            max_font_size=9.0,
+            colors=(2301728,),
+        ),
+        TextLine(
+            text="(7-17) for real vectors.",
+            pdf_page_index=0,
+            pdf_page_number=1,
+            printed_page_label="534",
+            bbox=(75.05, 77.36, 236.34, 86.36),
+            font_names=("TimesTen-Roman",),
+            max_font_size=9.0,
+            colors=(2301728,),
+        ),
+    ]
+
+    merged = merge_visual_lines(page.rect.width, lines)
+
+    assert merged[0].text == "7.3 * Prove that = in Eqs. (7-16) and"
+    assert merged[1].text == "(7-17) for real vectors."
+
+
+def test_contains_text_evidence_allows_interleaved_formula_fragments() -> None:
+    evidence = EvidenceRequirement(
+        kind="contains_text",
+        value="Show that e 0 dm t 0 where t0 is a condition",
+        verification_mode="text_or_visual",
+    )
+    page_anchor = {
+        "normalized_text": "Show that e 0 equals dm inserted formula t 0 where t0 is a condition"
+    }
+
+    assert _exercise_evidence_exists(page_anchor, evidence)
 
 
 def test_reference_parser_extracts_supported_explicit_dependencies() -> None:

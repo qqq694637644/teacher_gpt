@@ -222,13 +222,20 @@ python tools/compile_exercise_index.py \
 ```
 
 The builder detects each chapter's `Problems` region, preserves two-column reading
-order, separates same-page exercises, tracks starred and cross-page problems, and
+order, reconstructs same-baseline PDF fragments into visual lines, separates same-page
+exercises, tracks starred and cross-page problems, and
 extracts explicit textbook references. The compiler verifies the exact PDF, requires
 all chapters that contain a formal `Problems` section (chapters 2-12 in this PDF),
 resolves references against the section index and source anchors,
 applies only PDF-reviewed `selected_context_pages` declared in the manifest,
 coalesces only reference steps that have the same physical page and identical content window,
 and writes no final output when validation fails.
+
+Reviewed entity exceptions are explicit: Table 3.6 resolves to printed page 169 and
+Figure 4.11 resolves to printed page 224. Reviewed multi-page Examples use exact page
+ranges, while unreviewed Examples use the next structural boundary. Exercise references
+are compiled with their transitive dependency closure, so the GPT executes one complete
+`reference_retrieval_plan` without recursively calling the Action for referenced problems.
 
 The reference parser expands comma/`and` lists and reviewed numeric ranges for
 Sections, Equations, Figures, Tables, Examples, and Problems. Figure subpart markers
@@ -250,11 +257,12 @@ Running these commands is an offline release step; normal application startup do
 not parse the PDF.
 
 The current reviewed baseline contains 492 exercises in chapters 2-12, 122 starred
-exercises, 28 cross-page exercises, 520 page-retrieval steps, and 476 resolved
-references. It keeps 1,505 raw reference steps for audit metadata, explicitly selects
-context pages for 4 reviewed section references, reduces 1,437 execution candidates
-by 73 exact-window merges, preserves 5 same-page distinct-window cases, and exposes
-1,364 execution steps. The compiled package contains 7,336 queries, with zero
+exercises, 28 cross-page exercises, 520 page-retrieval steps, and 479 resolved
+references. It keeps 1,533 raw reference steps for audit metadata, explicitly selects
+context pages for 4 reviewed section references, expands 4 transitive exercise
+dependencies to a maximum depth of 2, reduces 1,587 execution candidates by 114
+exact-window merges, preserves 18 same-page distinct-window cases, and exposes 1,473
+execution steps. The compiled package contains 7,610 queries, with zero
 unbalanced queries, zero steps lacking a balanced query, and zero queries requiring
 additional NFKC normalization. Chapter 1
 has no formal `Problems` section in this source PDF. The source

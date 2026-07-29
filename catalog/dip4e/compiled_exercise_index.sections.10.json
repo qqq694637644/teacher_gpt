@@ -504,7 +504,7 @@
             }
           },
           "queries": [
-            "+(text one-pixel breaks in these lines Assume that the) +(printed page 804) --QDF=0",
+            "+(text a set of 3 kernels that can be used to detect 3) +(printed page 804) --QDF=0",
             "+(exercise 10.3) +(printed page 804) --QDF=0",
             "+(exercise 10.4) +(printed page 804) --QDF=0"
           ],
@@ -516,7 +516,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "one-pixel breaks in these lines. Assume that the",
+              "value": "a set of 3 × kernels that can be used to detect 3",
               "verification_mode": "text_or_visual"
             },
             {
@@ -2738,7 +2738,7 @@
             }
           },
           "queries": [
-            "+(text mum edge strength of the original image is) +(printed page 806) --QDF=0",
+            "+(text Suppose that an image fxy is convolved with) +(printed page 806) --QDF=0",
             "+(exercise 10.15) +(printed page 806) --QDF=0",
             "+(exercise 10.16) +(printed page 806) --QDF=0"
           ],
@@ -2750,7 +2750,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "mum edge strength of the original image is",
+              "value": "Suppose that an image fxy (,) is convolved with",
               "verification_mode": "text_or_visual"
             },
             {
@@ -3801,7 +3801,7 @@
             }
           },
           "queries": [
-            "+(text In the following assume that G and f are discrete) +(printed page 806) --QDF=0",
+            "+(text Gxy is sampled to produce an array of size) +(printed page 806) --QDF=0",
             "+(exercise 10.20) +(printed page 806) --QDF=0",
             "+(exercise 10.21) +(printed page 806) --QDF=0"
           ],
@@ -3813,7 +3813,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "In the following, assume that G and f are discrete",
+              "value": "Gxy (,) is sampled to produce an array of size",
               "verification_mode": "text_or_visual"
             },
             {
@@ -5050,7 +5050,7 @@
             }
           },
           "queries": [
-            "+(text is sampled to produce an array of) +(printed page 807) --QDF=0",
+            "+(text Gxy is sampled to produce an array of) +(printed page 807) --QDF=0",
             "+(exercise 10.22) +(printed page 807) --QDF=0"
           ],
           "required_evidence": [
@@ -5061,7 +5061,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "(,) is sampled to produce an array of",
+              "value": "Gxy (,) is sampled to produce an array of",
               "verification_mode": "text_or_visual"
             },
             {
@@ -5085,6 +5085,527 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 154,
+            "pdf_page_number": 155,
+            "printed_page_label": "153"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text In this section we discuss the use of spatial filters for image processing Spatial filter) +(printed page 153) --QDF=0",
+            "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "153",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "In this section, we discuss the use of spatial filters for image processing. Spatial filter-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "3.4 FUNDAMENTALS OF SPATIAL FILTERING"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 155,
+            "pdf_page_number": 156,
+            "printed_page_label": "154"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
+            "+(of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "154",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of ﬁltering. It is seldom the case that ﬁltered pixels replace the values of the corresponding location in the origi-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "THE MECHANICS OF LINEAR SPATIAL FILTERING",
+              "SPATIAL CORRELATION AND CONVOLUTION"
+            ],
+            "figure_ids": [
+              "3.28"
+            ],
+            "equation_ids": [
+              "3-30",
+              "3-31",
+              "3-32"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 156,
+            "pdf_page_number": 157,
+            "printed_page_label": "155"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text form correlation in which w is positioned so that its center coefficient is coincident) +(printed page 155) --QDF=0",
+            "+(form correlation in which w is positioned so that its center coefficient is coincident) +(text) +(printed page 155) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "155",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "form correlation, in which w is positioned so that its center coefficient is coincident",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.29",
+              "3.28"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 157,
+            "pdf_page_number": 158,
+            "printed_page_label": "156"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text to fully shift w past f so the center coefficient in w visited every pixel in) +(printed page 156) --QDF=0",
+            "+(to fully shift w past f so the center coefficient in w visited every pixel in) +(text) +(printed page 156) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "156",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "to fully shift w past f so the center coefﬁcient in w visited every pixel in f. Sometimes,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.29"
+            ],
+            "equation_ids": [
+              "3-32"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 158,
+            "pdf_page_number": 159,
+            "printed_page_label": "157"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text In reality we are shifting f to the left of w every time we increment x) +(printed page 157) --QDF=0",
+            "+(In reality we are shifting f to the left of w every time we increment x) +(text) +(printed page 157) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "157",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "† In reality, we are shifting f to the left of w every time we increment x in Eq. (3-32). However, it is more intuitive",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.30"
+            ],
+            "equation_ids": [
+              "3-33",
+              "3-32"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 159,
+            "pdf_page_number": 160,
+            "printed_page_label": "158"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text As we mentioned earlier the minimum number of required padding elements for a 2-D correlation is) +(printed page 158) --QDF=0",
+            "+(As we mentioned earlier the minimum number of required padding elements for a 2-D correlation is) +(text) +(printed page 158) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "158",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "† As we mentioned earlier, the minimum number of required padding elements for a 2-D correlation is (",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.30"
+            ],
+            "equation_ids": [
+              "3-31",
+              "3-34",
+              "3-36",
+              "3-37"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 160,
+            "pdf_page_number": 161,
+            "printed_page_label": "159"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text just its center visits every pixel in f This requires that the starting configuration be) +(printed page 159) --QDF=0",
+            "+(just its center visits every pixel in f This requires that the starting configuration be) +(text) +(printed page 159) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "159",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "just its center) visits every pixel in f. This requires that the starting conﬁguration be",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-35",
+              "3-36",
+              "3-37",
+              "3-34"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.5"
+            ]
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 161,
+            "pdf_page_number": 162,
+            "printed_page_label": "160"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text cally these terms are used in the literature to denote a spatial filter kernel and not) +(printed page 160) --QDF=0",
+            "+(cally these terms are used in the literature to denote a spatial filter kernel and not) +(text) +(printed page 160) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "160",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "cally, these terms are used in the literature to denote a spatial ﬁlter kernel, and not",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.31"
+            ],
+            "equation_ids": [
+              "3-38",
+              "3-36",
+              "3-37",
+              "3-39",
+              "3-40"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.5"
+            ]
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 162,
+            "pdf_page_number": 163,
+            "printed_page_label": "161"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text It turns out that the product of a column vector and a row vector is the) +(printed page 161) --QDF=0",
+            "+(It turns out that the product of a column vector and a row vector is the) +(text) +(printed page 161) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "161",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "It turns out that the product of a column vector and a row vector is the same as the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SEPARABLE FILTER KERNELS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-41",
+              "3-42",
+              "3-43",
+              "3-35"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.5"
+            ]
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 163,
+            "pdf_page_number": 164,
+            "printed_page_label": "162"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text execution times can be reduced by a factor of a hundred or more which is significant) +(printed page 162) --QDF=0",
+            "+(execution times can be reduced by a factor of a hundred or more which is significant) +(text) +(printed page 162) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "162",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "execution times can be reduced by a factor of a hundred or more, which is significant.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SOME IMPORTANT COMPARISONS BETWEEN FILTERING IN THE SPATIAL AND FREQUENCY DOMAINS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-44",
+              "3-41"
+            ],
+            "example_ids": [
+              "3.16"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 164,
+            "pdf_page_number": 165,
+            "printed_page_label": "163"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text both positive and negative frequencies as we will explain in Section 4.3 see Fig 4.8 For) +(printed page 163) --QDF=0",
+            "+(both positive and negative frequencies as we will explain in Section 4.3 see Fig 4.8 For) +(text) +(printed page 163) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "163",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "both positive and negative frequencies, as we will explain in Section 4.3 (see Fig. 4.8). For the moment, we show",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.32"
+            ],
+            "equation_ids": [
+              "3-33"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 165,
+            "pdf_page_number": 166,
+            "printed_page_label": "164"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+            }
+          },
+          "queries": [
+            "+(text evident in the figure A central theme of digital filter design theory is obtaining faith) +(printed page 164) --QDF=0",
+            "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "164",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "evident in the ﬁgure. A central theme of digital ﬁlter design theory is obtaining faith-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "A WORD ABOUT HOW SPATIAL FILTER KERNELS ARE CONSTRUCTED"
+            ],
+            "figure_ids": [
+              "3.32"
+            ],
+            "equation_ids": [
+              "3-42"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
           "page_role": "single",
           "page": {
             "pdf_page_index": 705,
@@ -5125,7 +5646,79 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 14,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 720,
+            "pdf_page_number": 721,
+            "printed_page_label": "719"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 10.14) +(printed page 719) --QDF=0",
+            "+(10.14) +(figure) +(printed page 719) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "719",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "10.14",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 725,
+            "pdf_page_number": 726,
+            "printed_page_label": "724"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 10-27) +(printed page 724) --QDF=0",
+            "+(10-27) +(equation) +(printed page 724) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "724",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "10-27",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
           "page_role": "single",
           "page": {
             "pdf_page_index": 806,
@@ -5178,7 +5771,7 @@
           }
         },
         {
-          "sequence": 3,
+          "sequence": 17,
           "page_role": "single",
           "page": {
             "pdf_page_index": 807,
@@ -5196,7 +5789,7 @@
             }
           },
           "queries": [
-            "+(text In the following assume that G and f are discrete) +(printed page 806) --QDF=0",
+            "+(text Gxy is sampled to produce an array of size) +(printed page 806) --QDF=0",
             "+(exercise 10.20) +(printed page 806) --QDF=0",
             "+(exercise 10.21) +(printed page 806) --QDF=0"
           ],
@@ -5208,7 +5801,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "In the following, assume that G and f are discrete",
+              "value": "Gxy (,) is sampled to produce an array of size",
               "verification_mode": "text_or_visual"
             },
             {
@@ -5259,7 +5852,7 @@
                 }
               },
               "queries": [
-                "+(text In the following assume that G and f are discrete) +(printed page 806) --QDF=0",
+                "+(text Gxy is sampled to produce an array of size) +(printed page 806) --QDF=0",
                 "+(exercise 10.20) +(printed page 806) --QDF=0",
                 "+(exercise 10.21) +(printed page 806) --QDF=0"
               ],
@@ -5271,7 +5864,7 @@
                 },
                 {
                   "kind": "contains_text",
-                  "value": "In the following, assume that G and f are discrete",
+                  "value": "Gxy (,) is sampled to produce an array of size",
                   "verification_mode": "text_or_visual"
                 },
                 {
@@ -5496,7 +6089,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Step 1 is sampled into an array of size n",
+              "value": "Step 1 is sampled into an array of size n ×",
               "verification_mode": "text_or_visual"
             },
             {
@@ -5794,7 +6387,7 @@
             }
           },
           "queries": [
-            "+(text the rationale that led to choosing these values) +(printed page 807) --QDF=0",
+            "+(text and refer to the discussion of lowpass Gaussian) +(printed page 807) --QDF=0",
             "+(exercise 10.24) +(printed page 807) --QDF=0",
             "+(exercise 10.25) +(printed page 807) --QDF=0"
           ],
@@ -5806,7 +6399,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "the rationale that led to choosing these values?",
+              "value": ". and refer to the discussion of lowpass Gaussian",
               "verification_mode": "text_or_visual"
             },
             {
@@ -6368,8 +6961,47 @@
             "end_before": null
           },
           "queries": [
+            "+(figure 10.26) +(printed page 734) --QDF=0",
+            "+(10.26) +(figure) +(printed page 734) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "734",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "10.26",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 735,
+            "pdf_page_number": 736,
+            "printed_page_label": "734"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "example",
+              "value": "10.9"
+            },
+            "end_before": null
+          },
+          "queries": [
             "+(example 10.9) +(printed page 734) --QDF=0",
-            "+(figure 10.26) +(printed page 734) --QDF=0"
+            "+(10.9) +(example) +(printed page 734) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6381,10 +7013,51 @@
               "kind": "contains_example",
               "value": "10.9",
               "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "10.9"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 736,
+            "pdf_page_number": 737,
+            "printed_page_label": "735"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "LINKING EDGE POINTS"
+            }
+          },
+          "queries": [
+            "+(text contours while eliminating all the edges associated with the gray brain matter in the original image) +(printed page 735) --QDF=0",
+            "+(heading LINKING EDGE POINTS) +(printed page 735) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "735",
+              "verification_mode": "visual_required"
             },
             {
-              "kind": "contains_figure",
-              "value": "10.26",
+              "kind": "contains_text",
+              "value": "contours, while eliminating all the edges associated with the gray brain matter in the original image.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "LINKING EDGE POINTS",
               "verification_mode": "visual_required"
             }
           ],
@@ -6406,14 +7079,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 735,
                 "pdf_page_number": 736,
                 "printed_page_label": "734"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "10.9"
+                },
                 "end_before": null
               },
               "queries": [
@@ -6429,6 +7105,52 @@
                 {
                   "kind": "contains_example",
                   "value": "10.9",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "10.9"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 736,
+                "pdf_page_number": 737,
+                "printed_page_label": "735"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "LINKING EDGE POINTS"
+                }
+              },
+              "queries": [
+                "+(text contours while eliminating all the edges associated with the gray brain matter in the original image) +(printed page 735) --QDF=0",
+                "+(heading LINKING EDGE POINTS) +(printed page 735) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "735",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "contours, while eliminating all the edges associated with the gray brain matter in the original image.",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "LINKING EDGE POINTS",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -29089,7 +29811,7 @@
             }
           },
           "queries": [
-            "+(text Show that a maximum value for Eq 10-63) +(printed page 808) --QDF=0",
+            "+(text always exists for k in the range 0 k L 1) +(printed page 808) --QDF=0",
             "+(exercise 10.36) +(printed page 808) --QDF=0",
             "+(exercise 10.37) +(printed page 808) --QDF=0"
           ],
@@ -29101,7 +29823,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Show that a maximum value for Eq. (10-63)",
+              "value": "always exists for k in the range 0 ≤ k ≤ L − 1 .",
               "verification_mode": "text_or_visual"
             },
             {
@@ -29405,7 +30127,7 @@
             }
           },
           "queries": [
-            "+(text same regions The term negative is used here) +(printed page 808) --QDF=0",
+            "+(text image fxy are in the range 01 and that) +(printed page 808) --QDF=0",
             "+(exercise 10.38) +(printed page 808) --QDF=0",
             "+(exercise 10.39) +(printed page 808) --QDF=0"
           ],
@@ -29417,7 +30139,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "same regions. The term negative is used here",
+              "value": "image fxy (,) are in the range [,] 01 and that",
               "verification_mode": "text_or_visual"
             },
             {
@@ -33025,7 +33747,7 @@
             }
           },
           "queries": [
-            "+(text TRUE if all pixels in Ri have the same) +(printed page 809) --QDF=0",
+            "+(text QRi TRUE if all pixels in Ri have the same) +(printed page 809) --QDF=0",
             "+(exercise 10.42) +(printed page 809) --QDF=0",
             "+(exercise 10.43) +(printed page 809) --QDF=0"
           ],
@@ -33037,7 +33759,7 @@
             },
             {
               "kind": "contains_text",
-              "value": ") =TRUE if all pixels in Ri have the same",
+              "value": "QRi ( ) =TRUE if all pixels in Ri have the same",
               "verification_mode": "text_or_visual"
             },
             {
@@ -33731,14 +34453,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 770,
             "pdf_page_number": 771,
             "printed_page_label": "769"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "10.21"
+            },
             "end_before": null
           },
           "queries": [
@@ -33761,6 +34486,52 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [
+              "10.21"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 771,
+            "pdf_page_number": 772,
+            "printed_page_label": "770"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "10.5 REGION SEGMENTATION USING CLUSTERING AND SUPERPIXELS"
+            }
+          },
+          "queries": [
+            "+(text Using any of the white regions in Fig 10.48 as a mask would make it a) +(printed page 770) --QDF=0",
+            "+(heading 10.5 REGION SEGMENTATION USING CLUSTERING AND SUPERPIXELS) +(printed page 770) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "770",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Using any of the white regions in Fig. 10.48 as a mask would make it a relatively simple task to extract",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "10.5 REGION SEGMENTATION USING CLUSTERING AND SUPERPIXELS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -33775,14 +34546,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 770,
                 "pdf_page_number": 771,
                 "printed_page_label": "769"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "10.21"
+                },
                 "end_before": null
               },
               "queries": [
@@ -33798,6 +34572,52 @@
                 {
                   "kind": "contains_example",
                   "value": "10.21",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "10.21"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 771,
+                "pdf_page_number": 772,
+                "printed_page_label": "770"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "10.5 REGION SEGMENTATION USING CLUSTERING AND SUPERPIXELS"
+                }
+              },
+              "queries": [
+                "+(text Using any of the white regions in Fig 10.48 as a mask would make it a) +(printed page 770) --QDF=0",
+                "+(heading 10.5 REGION SEGMENTATION USING CLUSTERING AND SUPERPIXELS) +(printed page 770) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "770",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Using any of the white regions in Fig. 10.48 as a mask would make it a relatively simple task to extract",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "10.5 REGION SEGMENTATION USING CLUSTERING AND SUPERPIXELS",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -33849,7 +34669,7 @@
             }
           },
           "queries": [
-            "+(text the pixels in the second and third rows be labeled) +(printed page 809) --QDF=0",
+            "+(text Let the pixels in the first row of a 3 image like 3) +(printed page 809) --QDF=0",
             "+(exercise 10.44) +(printed page 809) --QDF=0",
             "+(exercise 10.45) +(printed page 809) --QDF=0"
           ],
@@ -33861,7 +34681,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "the pixels in the second and third rows be labeled",
+              "value": "Let the pixels in the ﬁrst row of a 3 × image, like 3",
               "verification_mode": "text_or_visual"
             },
             {
@@ -36793,14 +37613,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 802,
             "pdf_page_number": 803,
             "printed_page_label": "801"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "10.29"
+            },
             "end_before": null
           },
           "queries": [
@@ -36823,13 +37646,51 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
-            "example_ids": [],
+            "example_ids": [
+              "10.29"
+            ],
             "table_ids": []
           }
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 803,
+            "pdf_page_number": 804,
+            "printed_page_label": "802"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text too few frames in the present discussion as the range of u is determined by K) +(printed page 802) --QDF=0",
+            "+(too few frames in the present discussion as the range of u is determined by K) +(text) +(printed page 802) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "802",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(too few frames in the present discussion, as the range of u is determined by K).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "end",
           "page": {
             "pdf_page_index": 804,
             "pdf_page_number": 805,
@@ -36840,14 +37701,19 @@
             "end_before": null
           },
           "queries": [
-            "+(figure 10.66) +(printed page 803) --QDF=0",
-            "+(10.66) +(figure) +(printed page 803) --QDF=0"
+            "+(text Other approaches used to deal with the effects of illumination and reflectance on thresholding are illustrated) +(printed page 803) --QDF=0",
+            "+(figure 10.66) +(printed page 803) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
               "value": "803",
               "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Other approaches used to deal with the effects of illumination and reﬂectance on thresholding are illustrated by",
+              "verification_mode": "text_or_visual"
             },
             {
               "kind": "contains_figure",
@@ -36873,14 +37739,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 802,
                 "pdf_page_number": 803,
                 "printed_page_label": "801"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "10.29"
+                },
                 "end_before": null
               },
               "queries": [
@@ -36897,6 +37766,80 @@
                   "kind": "contains_example",
                   "value": "10.29",
                   "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "10.29"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 803,
+                "pdf_page_number": 804,
+                "printed_page_label": "802"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text too few frames in the present discussion as the range of u is determined by K) +(printed page 802) --QDF=0",
+                "+(too few frames in the present discussion as the range of u is determined by K) +(text) +(printed page 802) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "802",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "(too few frames in the present discussion, as the range of u is determined by K).",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 804,
+                "pdf_page_number": 805,
+                "printed_page_label": "803"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Other approaches used to deal with the effects of illumination and reflectance on thresholding are illustrated) +(printed page 803) --QDF=0",
+                "+(Other approaches used to deal with the effects of illumination and reflectance on thresholding are illustrated) +(text) +(printed page 803) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "803",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Other approaches used to deal with the effects of illumination and reﬂectance on thresholding are illustrated by",
+                  "verification_mode": "text_or_visual"
                 }
               ],
               "coverage": {
@@ -36991,7 +37934,7 @@
             }
           },
           "queries": [
-            "+(text and 10-126 are the same velocity component) +(printed page 810) --QDF=0",
+            "+(text when the signs of Sx 1 and Sx 2 in Eqs 10-125) +(printed page 810) --QDF=0",
             "+(exercise 10.53) +(printed page 810) --QDF=0",
             "+(exercise 10.54) +(printed page 810) --QDF=0"
           ],
@@ -37003,7 +37946,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "and (10-126) are the same, velocity component",
+              "value": "when the signs of Sx 1 and Sx 2 in Eqs. (10-125)",
               "verification_mode": "text_or_visual"
             },
             {

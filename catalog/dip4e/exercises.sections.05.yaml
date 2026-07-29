@@ -788,13 +788,13 @@ exercises:
         value: '5.17'
     queries:
     - +(5.16) +(printed page 394) --QDF=0
-    - +(M is the same integer as before) +(printed page 394) --QDF=0
+    - +(b What would a plot of F uv look like for) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
       verification_mode: visual_required
     - kind: contains_text
-      value: =, M is the same integer as before,
+      value: (b) * What would a plot of F(,) uv look like for
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '5.16'
@@ -1306,13 +1306,13 @@ exercises:
         value: '5.27'
     queries:
     - +(5.26) +(printed page 395) --QDF=0
-    - +(uv first and then use it as the basis for) +(printed page 395) --QDF=0
+    - +(tion H uv first and then use it as the basis for) +(printed page 395) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '395'
       verification_mode: visual_required
     - kind: contains_text
-      value: uv ﬁrst, and then use it as the basis for
+      value: tion H(,) uv ﬁrst, and then use it as the basis for
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '5.26'
@@ -2229,13 +2229,13 @@ exercises:
         value: '5.44'
     queries:
     - +(5.43) +(printed page 397) --QDF=0
-    - +(Show that the Radon transform Eq 5-102 of) +(printed page 397) --QDF=0
+    - +(given by g ru A p exp r 2 Hint Refer to) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'
       verification_mode: visual_required
     - kind: contains_text
-      value: Show that the Radon transform [Eq. (5-102)] of
+      value: 'given by g (,) ru = A p exp( − r 2 ). (Hint: Refer to'
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '5.43'
@@ -2286,13 +2286,13 @@ exercises:
         value: '5.45'
     queries:
     - +(5.44) +(printed page 397) --QDF=0
-    - +(tical line passing through the origin of the) +(printed page 397) --QDF=0
+    - +(of the unit impulse d xy is a straight ver) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'
       verification_mode: visual_required
     - kind: contains_text
-      value: tical line passing through the origin of the
+      value: of the unit impulse d(,) xy is a straight ver-
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '5.44'

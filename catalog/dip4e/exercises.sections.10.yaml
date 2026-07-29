@@ -145,13 +145,13 @@ exercises:
         value: '10.4'
     queries:
     - +(10.3) +(printed page 804) --QDF=0
-    - +(one-pixel breaks in these lines Assume that the) +(printed page 804) --QDF=0
+    - +(a set of 3 kernels that can be used to detect 3) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
       verification_mode: visual_required
     - kind: contains_text
-      value: one-pixel breaks in these lines. Assume that the
+      value: a set of 3 × kernels that can be used to detect 3
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.3'
@@ -825,13 +825,13 @@ exercises:
         value: '10.16'
     queries:
     - +(10.15) +(printed page 806) --QDF=0
-    - +(mum edge strength of the original image is) +(printed page 806) --QDF=0
+    - +(Suppose that an image fxy is convolved with) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
       verification_mode: visual_required
     - kind: contains_text
-      value: mum edge strength of the original image is
+      value: Suppose that an image fxy (,) is convolved with
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.15'
@@ -1097,13 +1097,13 @@ exercises:
         value: '10.21'
     queries:
     - +(10.20) +(printed page 806) --QDF=0
-    - +(In the following assume that G and f are discrete) +(printed page 806) --QDF=0
+    - +(Gxy is sampled to produce an array of size) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
       verification_mode: visual_required
     - kind: contains_text
-      value: In the following, assume that G and f are discrete
+      value: Gxy (,) is sampled to produce an array of size
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.20'
@@ -1178,14 +1178,14 @@ exercises:
         kind: exercise
         value: '10.22'
     queries:
-    - +(is sampled to produce an array of) +(printed page 807) --QDF=0
-    - +(is sampled to produce an array of) +(Problems) +(printed page 807) --QDF=0
+    - +(Gxy is sampled to produce an array of) +(printed page 807) --QDF=0
+    - +(Gxy is sampled to produce an array of) +(Problems) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
       verification_mode: visual_required
     - kind: contains_text
-      value: (,) is sampled to produce an array of
+      value: Gxy (,) is sampled to produce an array of
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.22'
@@ -1247,7 +1247,7 @@ exercises:
       value: '807'
       verification_mode: visual_required
     - kind: contains_text
-      value: Step 1 is sampled into an array of size n
+      value: Step 1 is sampled into an array of size n ×
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.22'
@@ -1343,13 +1343,13 @@ exercises:
         value: '10.25'
     queries:
     - +(10.24) +(printed page 807) --QDF=0
-    - +(the rationale that led to choosing these values) +(printed page 807) --QDF=0
+    - +(and refer to the discussion of lowpass Gaussian) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
       verification_mode: visual_required
     - kind: contains_text
-      value: the rationale that led to choosing these values?
+      value: . and refer to the discussion of lowpass Gaussian
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.24'
@@ -2003,13 +2003,13 @@ exercises:
         value: '10.37'
     queries:
     - +(10.36) +(printed page 808) --QDF=0
-    - +(Show that a maximum value for Eq 10-63) +(printed page 808) --QDF=0
+    - +(always exists for k in the range 0 k L 1) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
       verification_mode: visual_required
     - kind: contains_text
-      value: Show that a maximum value for Eq. (10-63)
+      value: always exists for k in the range 0 ≤ k ≤ L − 1 .
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.36'
@@ -2107,13 +2107,13 @@ exercises:
         value: '10.39'
     queries:
     - +(10.38) +(printed page 808) --QDF=0
-    - +(same regions The term negative is used here) +(printed page 808) --QDF=0
+    - +(image fxy are in the range 01 and that) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
       verification_mode: visual_required
     - kind: contains_text
-      value: same regions. The term negative is used here
+      value: image fxy (,) are in the range [,] 01 and that
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.38'
@@ -2334,13 +2334,13 @@ exercises:
         value: '10.43'
     queries:
     - +(10.42) +(printed page 809) --QDF=0
-    - +(TRUE if all pixels in Ri have the same) +(printed page 809) --QDF=0
+    - +(QRi TRUE if all pixels in Ri have the same) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
       verification_mode: visual_required
     - kind: contains_text
-      value: ) =TRUE if all pixels in Ri have the same
+      value: QRi ( ) =TRUE if all pixels in Ri have the same
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.42'
@@ -2437,13 +2437,13 @@ exercises:
         value: '10.45'
     queries:
     - +(10.44) +(printed page 809) --QDF=0
-    - +(the pixels in the second and third rows be labeled) +(printed page 809) --QDF=0
+    - +(Let the pixels in the first row of a 3 image like 3) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
       verification_mode: visual_required
     - kind: contains_text
-      value: the pixels in the second and third rows be labeled
+      value: Let the pixels in the ﬁrst row of a 3 × image, like 3
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.44'
@@ -2917,13 +2917,13 @@ exercises:
         value: '10.54'
     queries:
     - +(10.53) +(printed page 810) --QDF=0
-    - +(and 10-126 are the same velocity component) +(printed page 810) --QDF=0
+    - +(when the signs of Sx 1 and Sx 2 in Eqs 10-125) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
       verification_mode: visual_required
     - kind: contains_text
-      value: and (10-126) are the same, velocity component
+      value: when the signs of Sx 1 and Sx 2 in Eqs. (10-125)
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.53'

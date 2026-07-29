@@ -1095,7 +1095,7 @@
             }
           },
           "queries": [
-            "+(text Compute Golomb code Gn) +(printed page 633) --QDF=0",
+            "+(text Compute Golomb code Gn 3 for 0 n 15) +(printed page 633) --QDF=0",
             "+(exercise 8.11) +(printed page 633) --QDF=0",
             "+(exercise 8.12) +(printed page 633) --QDF=0"
           ],
@@ -1107,7 +1107,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Compute Golomb code Gn",
+              "value": "Compute Golomb code Gn 3() for 0 ≤ n ≤ 15 .",
               "verification_mode": "text_or_visual"
             },
             {
@@ -1401,7 +1401,7 @@
             }
           },
           "queries": [
-            "+(text Compute exponential Golomb code G) +(printed page 633) --QDF=0",
+            "+(text Compute exponential Golomb code G exp n for) +(printed page 633) --QDF=0",
             "+(exercise 8.14) +(printed page 633) --QDF=0",
             "+(exercise 8.15) +(printed page 633) --QDF=0"
           ],
@@ -1413,7 +1413,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Compute exponential Golomb code G",
+              "value": "Compute exponential Golomb code G exp() n for",
               "verification_mode": "text_or_visual"
             },
             {
@@ -1969,14 +1969,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 566,
             "pdf_page_number": 567,
             "printed_page_label": "565"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "8.7"
+            },
             "end_before": null
           },
           "queries": [
@@ -1999,6 +2002,52 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [
+              "8.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 567,
+            "pdf_page_number": 568,
+            "printed_page_label": "566"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "8.6 RUN-LENGTH CODING"
+            }
+          },
+          "queries": [
+            "+(text strategy for handling dictionary overflow A simple solution is to flush or reinitialize) +(printed page 566) --QDF=0",
+            "+(heading 8.6 RUN-LENGTH CODING) +(printed page 566) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "566",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "strategy for handling dictionary overﬂow. A simple solution is to ﬂush or reinitialize",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "8.6 RUN-LENGTH CODING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -2013,14 +2062,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 566,
                 "pdf_page_number": 567,
                 "printed_page_label": "565"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "8.7"
+                },
                 "end_before": null
               },
               "queries": [
@@ -2036,6 +2088,52 @@
                 {
                   "kind": "contains_example",
                   "value": "8.7",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "8.7"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 567,
+                "pdf_page_number": 568,
+                "printed_page_label": "566"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "8.6 RUN-LENGTH CODING"
+                }
+              },
+              "queries": [
+                "+(text strategy for handling dictionary overflow A simple solution is to flush or reinitialize) +(printed page 566) --QDF=0",
+                "+(heading 8.6 RUN-LENGTH CODING) +(printed page 566) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "566",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "strategy for handling dictionary overﬂow. A simple solution is to ﬂush or reinitialize",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "8.6 RUN-LENGTH CODING",
                   "verification_mode": "visual_required"
                 }
               ],

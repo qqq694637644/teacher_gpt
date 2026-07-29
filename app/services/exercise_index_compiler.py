@@ -35,6 +35,8 @@ class ReferencePlanStats:
     coalesced_reference_step_count: int = 0
     same_page_distinct_window_step_count: int = 0
     deduplicated_reference_step_count: int = 0
+    transitive_exercise_dependency_count: int = 0
+    max_exercise_dependency_depth: int = 0
 
 
 class ExerciseIndexCompiler:
@@ -81,7 +83,8 @@ class ExerciseIndexCompiler:
             preliminary[locator.exercise_id] = locator
             nodes[locator.exercise_id] = node
 
-        exercises: dict[str, ExerciseLocator] = {}
+        direct_targets: dict[str, list[ExerciseReferenceTarget]] = {}
+        direct_execution_targets: dict[str, list[ExerciseReferenceTarget]] = {}
         for exercise_id, locator in preliminary.items():
             targets: list[ExerciseReferenceTarget] = []
             execution_targets: list[ExerciseReferenceTarget] = []
@@ -133,16 +136,68 @@ class ExerciseIndexCompiler:
                         retrieval_plan=execution_plan,
                     )
                 )
+            direct_targets[exercise_id] = targets
+            direct_execution_targets[exercise_id] = execution_targets
             raw_reference_step_count += sum(len(target.retrieval_plan) for target in targets)
             selected_context_reference_count += sum(
                 bool(target.selected_context_pages) for target in execution_targets
             )
-            execution_step_count = sum(len(target.retrieval_plan) for target in execution_targets)
-            execution_reference_step_count_before_merge += execution_step_count
-            same_page_distinct_window_step_count += self._same_page_distinct_window_count(
-                execution_targets
+
+        closure_memo: dict[str, tuple[list[PageRetrievalStep], set[str], int]] = {}
+
+        def dependency_closure(
+            exercise_id: str,
+            visiting: tuple[str, ...] = (),
+        ) -> tuple[list[PageRetrievalStep], set[str], int]:
+            if exercise_id in closure_memo:
+                return closure_memo[exercise_id]
+            if exercise_id in visiting:
+                cycle = " -> ".join((*visiting, exercise_id))
+                raise ValueError(f"exercise dependency cycle detected: {cycle}")
+
+            steps = [
+                step
+                for target in direct_execution_targets[exercise_id]
+                for step in target.retrieval_plan
+            ]
+            dependency_ids: set[str] = set()
+            max_depth = 0
+            for target in direct_targets[exercise_id]:
+                if target.kind != "exercise":
+                    continue
+                dependency_ids.add(target.target_id)
+                child_steps, child_ids, child_depth = dependency_closure(
+                    target.target_id,
+                    (*visiting, exercise_id),
+                )
+                steps.extend(child_steps)
+                dependency_ids.update(child_ids)
+                max_depth = max(max_depth, child_depth + 1)
+            result = (steps, dependency_ids, max_depth)
+            closure_memo[exercise_id] = result
+            return result
+
+        exercises: dict[str, ExerciseLocator] = {}
+        transitive_exercise_dependency_count = 0
+        max_exercise_dependency_depth = 0
+        for exercise_id, locator in preliminary.items():
+            closure_steps, dependency_ids, dependency_depth = dependency_closure(exercise_id)
+            direct_dependency_ids = {
+                target.target_id
+                for target in direct_targets[exercise_id]
+                if target.kind == "exercise"
+            }
+            transitive_exercise_dependency_count += len(dependency_ids - direct_dependency_ids)
+            max_exercise_dependency_depth = max(
+                max_exercise_dependency_depth,
+                dependency_depth,
             )
-            aggregate_plan = self._merge_reference_targets(execution_targets)
+            execution_step_count = len(closure_steps)
+            execution_reference_step_count_before_merge += execution_step_count
+            same_page_distinct_window_step_count += (
+                self._same_page_distinct_window_count_from_steps(closure_steps)
+            )
+            aggregate_plan = self._merge_reference_steps(closure_steps)
             coalesced_reference_step_count += execution_step_count - len(aggregate_plan)
             deduplicated_reference_step_count += len(aggregate_plan)
             exercises[exercise_id] = ExerciseLocator.model_validate(
@@ -151,7 +206,9 @@ class ExerciseIndexCompiler:
                     "reference_retrieval_plan": [
                         step.model_dump(mode="json") for step in aggregate_plan
                     ],
-                    "reference_targets": [target.model_dump(mode="json") for target in targets],
+                    "reference_targets": [
+                        target.model_dump(mode="json") for target in direct_targets[exercise_id]
+                    ],
                 }
             )
 
@@ -164,6 +221,8 @@ class ExerciseIndexCompiler:
             coalesced_reference_step_count=coalesced_reference_step_count,
             same_page_distinct_window_step_count=same_page_distinct_window_step_count,
             deduplicated_reference_step_count=deduplicated_reference_step_count,
+            transitive_exercise_dependency_count=transitive_exercise_dependency_count,
+            max_exercise_dependency_depth=max_exercise_dependency_depth,
         )
 
         grouped: dict[str, list[ExerciseLocator]] = defaultdict(list)
@@ -270,10 +329,18 @@ class ExerciseIndexCompiler:
         cls,
         targets: list[ExerciseReferenceTarget],
     ) -> int:
+        return cls._same_page_distinct_window_count_from_steps(
+            [step for target in targets for step in target.retrieval_plan]
+        )
+
+    @classmethod
+    def _same_page_distinct_window_count_from_steps(
+        cls,
+        steps: list[PageRetrievalStep],
+    ) -> int:
         windows_by_page: dict[int, set[tuple[object, ...]]] = defaultdict(set)
-        for target in targets:
-            for step in target.retrieval_plan:
-                windows_by_page[step.page.pdf_page_index].add(cls._window_key(step))
+        for step in steps:
+            windows_by_page[step.page.pdf_page_index].add(cls._window_key(step))
         return sum(max(0, len(windows) - 1) for windows in windows_by_page.values())
 
     @classmethod
@@ -281,10 +348,18 @@ class ExerciseIndexCompiler:
         cls,
         targets: list[ExerciseReferenceTarget],
     ) -> list[PageRetrievalStep]:
+        return cls._merge_reference_steps(
+            [step for target in targets for step in target.retrieval_plan]
+        )
+
+    @classmethod
+    def _merge_reference_steps(
+        cls,
+        steps: list[PageRetrievalStep],
+    ) -> list[PageRetrievalStep]:
         grouped: dict[tuple[object, ...], list[PageRetrievalStep]] = {}
-        for target in targets:
-            for step in target.retrieval_plan:
-                grouped.setdefault(cls._window_key(step), []).append(step)
+        for step in steps:
+            grouped.setdefault(cls._window_key(step), []).append(step)
 
         merged: list[PageRetrievalStep] = []
         ordered_groups = sorted(

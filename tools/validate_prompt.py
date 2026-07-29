@@ -12,6 +12,7 @@ REQUIRED = {
     "required_evidence",
     "content_window",
     "reference_retrieval_plan",
+    "传递依赖闭包",
     "只传入一条 query",
     "data_version",
     "contains_exercise",

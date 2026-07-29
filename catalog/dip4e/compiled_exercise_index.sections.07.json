@@ -103,7 +103,7 @@
             }
           },
           "queries": [
-            "+(text Prove Eq 7-23) +(printed page 535) --QDF=0",
+            "+(equation 7-23) +(printed page 535) --QDF=0",
             "+(exercise 7.2) +(printed page 535) --QDF=0",
             "+(exercise 7.3) +(printed page 535) --QDF=0"
           ],
@@ -114,9 +114,9 @@
               "verification_mode": "visual_required"
             },
             {
-              "kind": "contains_text",
-              "value": "Prove Eq. (7-23).",
-              "verification_mode": "text_or_visual"
+              "kind": "contains_equation",
+              "value": "7-23",
+              "verification_mode": "visual_required"
             },
             {
               "kind": "contains_exercise",
@@ -261,7 +261,7 @@
             }
           },
           "queries": [
-            "+(text Prove that if A TA I the associated expansion) +(printed page 535) --QDF=0",
+            "+(text Prove that rxu sxu in Eqs 7-16 and) +(printed page 535) --QDF=0",
             "+(exercise 7.3) +(printed page 535) --QDF=0",
             "+(exercise 7.4) +(printed page 535) --QDF=0"
           ],
@@ -273,7 +273,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Prove that if A*TA = I, the associated expansion",
+              "value": "* Prove that rxu (,) = sxu (,) in Eqs. (7-16) and",
               "verification_mode": "text_or_visual"
             },
             {
@@ -335,6 +335,42 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 468,
+            "pdf_page_number": 469,
+            "printed_page_label": "467"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 7-17) +(printed page 467) --QDF=0",
+            "+(7-17) +(equation) +(printed page 467) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "467",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "7-17",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -369,6 +405,50 @@
                 {
                   "kind": "contains_equation",
                   "value": "7-16",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "7-17",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 468,
+                "pdf_page_number": 469,
+                "printed_page_label": "467"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 7-17) +(printed page 467) --QDF=0",
+                "+(7-17) +(equation) +(printed page 467) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "467",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "7-17",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -541,7 +621,10 @@
             "printed_page_label": "472"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "7.3"
+            },
             "end_before": null
           },
           "queries": [
@@ -564,7 +647,9 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
-            "example_ids": [],
+            "example_ids": [
+              "7.3"
+            ],
             "table_ids": []
           }
         }
@@ -585,7 +670,10 @@
                 "printed_page_label": "472"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "7.3"
+                },
                 "end_before": null
               },
               "queries": [
@@ -608,7 +696,9 @@
                 "subheadings": [],
                 "figure_ids": [],
                 "equation_ids": [],
-                "example_ids": [],
+                "example_ids": [
+                  "7.3"
+                ],
                 "table_ids": []
               }
             }
@@ -1182,7 +1272,10 @@
             "printed_page_label": "472"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "7.3"
+            },
             "end_before": null
           },
           "queries": [
@@ -1205,7 +1298,9 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
-            "example_ids": [],
+            "example_ids": [
+              "7.3"
+            ],
             "table_ids": []
           }
         }
@@ -1226,7 +1321,10 @@
                 "printed_page_label": "472"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "7.3"
+                },
                 "end_before": null
               },
               "queries": [
@@ -1249,7 +1347,9 @@
                 "subheadings": [],
                 "figure_ids": [],
                 "equation_ids": [],
-                "example_ids": [],
+                "example_ids": [
+                  "7.3"
+                ],
                 "table_ids": []
               }
             }
@@ -2080,7 +2180,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text Example 7.5 compute the transform of 4) +(printed page 535) --QDF=0",
+            "+(text Prove that A and A in Example 7.5 are biortho) +(printed page 535) --QDF=0",
             "+(exercise 7.16) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
@@ -2091,7 +2191,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Example 7.5, compute the transform of 4",
+              "value": "Prove that A and A in Example 7.5 are biortho-",
               "verification_mode": "text_or_visual"
             },
             {
@@ -2114,14 +2214,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 475,
             "pdf_page_number": 476,
             "printed_page_label": "474"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "7.5"
+            },
             "end_before": null
           },
           "queries": [
@@ -2144,6 +2247,52 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [
+              "7.5"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 476,
+            "pdf_page_number": 477,
+            "printed_page_label": "475"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "example",
+              "value": "7.6"
+            }
+          },
+          "queries": [
+            "+(text Finally we note the bulk of the concepts presented in this section can be general) +(printed page 475) --QDF=0",
+            "+(example 7.6) +(printed page 475) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "475",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Finally, we note the bulk of the concepts presented in this section can be general-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_example",
+              "value": "7.6",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -2158,14 +2307,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 475,
                 "pdf_page_number": 476,
                 "printed_page_label": "474"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "7.5"
+                },
                 "end_before": null
               },
               "queries": [
@@ -2181,6 +2333,52 @@
                 {
                   "kind": "contains_example",
                   "value": "7.5",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "7.5"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 476,
+                "pdf_page_number": 477,
+                "printed_page_label": "475"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "example",
+                  "value": "7.6"
+                }
+              },
+              "queries": [
+                "+(text Finally we note the bulk of the concepts presented in this section can be general) +(printed page 475) --QDF=0",
+                "+(example 7.6) +(printed page 475) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "475",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Finally, we note the bulk of the concepts presented in this section can be general-",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_example",
+                  "value": "7.6",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -2422,14 +2620,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 476,
             "pdf_page_number": 477,
             "printed_page_label": "475"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "7.6"
+            },
             "end_before": null
           },
           "queries": [
@@ -2452,12 +2653,50 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
-            "example_ids": [],
+            "example_ids": [
+              "7.6"
+            ],
             "table_ids": []
           }
         },
         {
           "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 477,
+            "pdf_page_number": 478,
+            "printed_page_label": "476"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text equations as opposed to 1 T in only one of them Eqs 7-54 and 7-55 are) +(printed page 476) --QDF=0",
+            "+(equations as opposed to 1 T in only one of them Eqs 7-54 and 7-55 are) +(text) +(printed page 476) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "476",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "equations as opposed to 1 T in only one of them), Eqs. (7-54) and (7-55) are the familiar Fourier series",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
           "page_role": "single",
           "page": {
             "pdf_page_index": 478,
@@ -2470,7 +2709,7 @@
           },
           "queries": [
             "+(equation 7-59) +(printed page 477) --QDF=0",
-            "+(7-59) +(equation) +(printed page 477) --QDF=0"
+            "+(text The real and imaginary parts of all complex quantities are shown in blue and black respectively) +(printed page 477) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2482,6 +2721,11 @@
               "kind": "contains_equation",
               "value": "7-59",
               "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "The real and imaginary parts of all complex quantities are shown in blue and black, respectively. Continuous",
+              "verification_mode": "text_or_visual"
             }
           ],
           "coverage": {
@@ -2546,14 +2790,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 476,
                 "pdf_page_number": 477,
                 "printed_page_label": "475"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "7.6"
+                },
                 "end_before": null
               },
               "queries": [
@@ -2570,6 +2817,80 @@
                   "kind": "contains_example",
                   "value": "7.6",
                   "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "7.6"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 477,
+                "pdf_page_number": 478,
+                "printed_page_label": "476"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text equations as opposed to 1 T in only one of them Eqs 7-54 and 7-55 are) +(printed page 476) --QDF=0",
+                "+(equations as opposed to 1 T in only one of them Eqs 7-54 and 7-55 are) +(text) +(printed page 476) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "476",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "equations as opposed to 1 T in only one of them), Eqs. (7-54) and (7-55) are the familiar Fourier series",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 478,
+                "pdf_page_number": 479,
+                "printed_page_label": "477"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text The real and imaginary parts of all complex quantities are shown in blue and black respectively) +(printed page 477) --QDF=0",
+                "+(The real and imaginary parts of all complex quantities are shown in blue and black respectively) +(text) +(printed page 477) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "477",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "The real and imaginary parts of all complex quantities are shown in blue and black, respectively. Continuous",
+                  "verification_mode": "text_or_visual"
                 }
               ],
               "coverage": {
@@ -5109,7 +5430,7 @@
             }
           },
           "queries": [
-            "+(text tion Write an expression for c33) +(printed page 536) --QDF=0",
+            "+(text tion Write an expression for c33 x in terms of) +(printed page 536) --QDF=0",
             "+(exercise 7.37) +(printed page 536) --QDF=0",
             "+(exercise 7.38) +(printed page 536) --QDF=0"
           ],
@@ -5121,7 +5442,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "tion. Write an expression for c33",
+              "value": "tion. Write an expression for c33 ,() x in terms of",
               "verification_mode": "text_or_visual"
             },
             {
@@ -5183,7 +5504,7 @@
             }
           },
           "queries": [
-            "+(text express V3 as a function of scaling space V0 and) +(printed page 536) --QDF=0",
+            "+(text ing space V3 that is fx H V 3 Use Eq 7-128 to) +(printed page 536) --QDF=0",
             "+(exercise 7.38) +(printed page 536) --QDF=0",
             "+(exercise 7.39) +(printed page 536) --QDF=0"
           ],
@@ -5195,7 +5516,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "express V3 as a function of scaling space V0 and",
+              "value": "ing space V3—that is, fx () H V 3 Use Eq. (7-128) to .",
               "verification_mode": "text_or_visual"
             },
             {
@@ -5381,14 +5702,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 511,
             "pdf_page_number": 512,
             "printed_page_label": "510"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "7.18"
+            },
             "end_before": null
           },
           "queries": [
@@ -5411,6 +5735,44 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [
+              "7.18"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 512,
+            "pdf_page_number": 513,
+            "printed_page_label": "511"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text in Fig 7.22 f Note the expansion is now beginning to resemble the original function As) +(printed page 511) --QDF=0",
+            "+(in Fig 7.22 f Note the expansion is now beginning to resemble the original function As) +(text) +(printed page 511) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "511",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "in Fig. 7.22(f). Note the expansion is now beginning to resemble the original function. As higher scales",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -5425,14 +5787,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 511,
                 "pdf_page_number": 512,
                 "printed_page_label": "510"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "7.18"
+                },
                 "end_before": null
               },
               "queries": [
@@ -5449,6 +5814,44 @@
                   "kind": "contains_example",
                   "value": "7.18",
                   "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "7.18"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 512,
+                "pdf_page_number": 513,
+                "printed_page_label": "511"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text in Fig 7.22 f Note the expansion is now beginning to resemble the original function As) +(printed page 511) --QDF=0",
+                "+(in Fig 7.22 f Note the expansion is now beginning to resemble the original function As) +(text) +(printed page 511) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "511",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "in Fig. 7.22(f). Note the expansion is now beginning to resemble the original function. As higher scales",
+                  "verification_mode": "text_or_visual"
                 }
               ],
               "coverage": {
@@ -5543,7 +5946,7 @@
             }
           },
           "queries": [
-            "+(text a Rewrite these equations for any starting) +(printed page 537) --QDF=0",
+            "+(text c Use the result from b to compute f 1 from) +(printed page 537) --QDF=0",
             "+(exercise 7.41) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
@@ -5554,7 +5957,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "(a) * Rewrite these equations for any starting",
+              "value": "(c) Use the result from (b) to compute f () 1 from",
               "verification_mode": "text_or_visual"
             },
             {
@@ -5587,8 +5990,7 @@
           },
           "queries": [
             "+(equation 7-137) +(printed page 512) --QDF=0",
-            "+(equation 7-138) +(printed page 512) --QDF=0",
-            "+(example 7.19) +(printed page 512) --QDF=0"
+            "+(equation 7-138) +(printed page 512) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5605,10 +6007,90 @@
               "kind": "contains_equation",
               "value": "7-138",
               "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 513,
+            "pdf_page_number": 514,
+            "printed_page_label": "512"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "example",
+              "value": "7.19"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(example 7.19) +(printed page 512) --QDF=0",
+            "+(7.19) +(example) +(printed page 512) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "512",
+              "verification_mode": "visual_required"
             },
             {
               "kind": "contains_example",
               "value": "7.19",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "7.19"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 514,
+            "pdf_page_number": 515,
+            "printed_page_label": "513"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "The Fast Wavelet Transform"
+            }
+          },
+          "queries": [
+            "+(text Recall from the previous section that Haar transforms are a function of a single transform domain) +(printed page 513) --QDF=0",
+            "+(heading The Fast Wavelet Transform) +(printed page 513) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "513",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Recall from the previous section that Haar transforms are a function of a single transform domain vari-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "The Fast Wavelet Transform",
               "verification_mode": "visual_required"
             }
           ],
@@ -5718,14 +6200,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 513,
                 "pdf_page_number": 514,
                 "printed_page_label": "512"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "7.19"
+                },
                 "end_before": null
               },
               "queries": [
@@ -5741,6 +6226,52 @@
                 {
                   "kind": "contains_example",
                   "value": "7.19",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "7.19"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 514,
+                "pdf_page_number": 515,
+                "printed_page_label": "513"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "The Fast Wavelet Transform"
+                }
+              },
+              "queries": [
+                "+(text Recall from the previous section that Haar transforms are a function of a single transform domain) +(printed page 513) --QDF=0",
+                "+(heading The Fast Wavelet Transform) +(printed page 513) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "513",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Recall from the previous section that Haar transforms are a function of a single transform domain vari-",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "The Fast Wavelet Transform",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -5830,6 +6361,132 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 513,
+            "pdf_page_number": 514,
+            "printed_page_label": "512"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 7-137) +(printed page 512) --QDF=0",
+            "+(equation 7-138) +(printed page 512) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "512",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "7-137",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "7-138",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 513,
+            "pdf_page_number": 514,
+            "printed_page_label": "512"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "example",
+              "value": "7.19"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(example 7.19) +(printed page 512) --QDF=0",
+            "+(7.19) +(example) +(printed page 512) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "512",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "7.19",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "7.19"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 514,
+            "pdf_page_number": 515,
+            "printed_page_label": "513"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "The Fast Wavelet Transform"
+            }
+          },
+          "queries": [
+            "+(text Recall from the previous section that Haar transforms are a function of a single transform domain) +(printed page 513) --QDF=0",
+            "+(heading The Fast Wavelet Transform) +(printed page 513) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "513",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Recall from the previous section that Haar transforms are a function of a single transform domain vari-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "The Fast Wavelet Transform",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
           "page_role": "start",
           "page": {
             "pdf_page_index": 537,
@@ -5876,7 +6533,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 5,
           "page_role": "end",
           "page": {
             "pdf_page_index": 538,
@@ -5891,7 +6548,7 @@
             }
           },
           "queries": [
-            "+(text a Rewrite these equations for any starting) +(printed page 537) --QDF=0",
+            "+(text c Use the result from b to compute f 1 from) +(printed page 537) --QDF=0",
             "+(exercise 7.41) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
@@ -5902,7 +6559,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "(a) * Rewrite these equations for any starting",
+              "value": "(c) Use the result from (b) to compute f () 1 from",
               "verification_mode": "text_or_visual"
             },
             {
@@ -5990,7 +6647,7 @@
                 }
               },
               "queries": [
-                "+(text a Rewrite these equations for any starting) +(printed page 537) --QDF=0",
+                "+(text c Use the result from b to compute f 1 from) +(printed page 537) --QDF=0",
                 "+(exercise 7.41) +(printed page 537) --QDF=0"
               ],
               "required_evidence": [
@@ -6001,7 +6658,7 @@
                 },
                 {
                   "kind": "contains_text",
-                  "value": "(a) * Rewrite these equations for any starting",
+                  "value": "(c) Use the result from (b) to compute f () 1 from",
                   "verification_mode": "text_or_visual"
                 },
                 {

@@ -459,7 +459,7 @@ compiled_exercise_index.sections.02.json ... compiled_exercise_index.sections.12
 exercise_validation_report.json
 ```
 
-习题构建器从每章 `Problems` 区域开始识别题号，使用列位置和 bbox 重建双栏阅读顺序，并为同页相邻题生成 `exercise` 类型的 `start_at` / `end_before`。跨页题的每个物理页都必须有独立 step；题号和边界证据使用 `visual_required`。
+习题构建器从每章 `Problems` 区域开始识别题号，先按列、基线和 x 坐标把同一视觉行上的 PDF 文字与公式碎片重新组合，再重建双栏阅读顺序，并为同页相邻题生成 `exercise` 类型的 `start_at` / `end_before`。跨页题的每个物理页都必须有独立 step；题号和边界证据使用 `visual_required`。Manifest 与源 PDF 校验共享同一视觉行视图；`contains_text` 允许公式碎片插入，但要求规范化文本 token 保持有序子序列。
 
 编译器还会解析题目中的显式依赖：
 
@@ -481,7 +481,9 @@ PDF 断行可能把引用关键词提取成 `Sec- tion`、`Prob- lem`、`Exam- p
 构建器只在“已知引用关键词 + 有界版面噪声 + 合法引用编号”的上下文中恢复
 关键词，不全局删除英文连字符，避免破坏 `one-pixel-thick` 等合法复合词。
 
-Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。运行时同时保留完整 `reference_targets` 作为审计元数据，并生成去重后的 `reference_retrieval_plan` 作为 GPT 默认执行计划。
+Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖先复用目标习题的题目 plan，再递归加入其引用依赖，构成编译期传递闭包。运行时保留直接 `reference_targets` 作为审计元数据，并生成完整、去重后的 `reference_retrieval_plan` 作为 GPT 默认执行计划；GPT 不需要也不应递归调用 Action。
+
+实体标签的第一次文字提及不一定是实体所在页。当前固定 PDF 对 Table 3.6 和 Figure 4.11 使用经过视觉审核的页覆盖，分别定位到印刷页 169 和 224。Example 不是单点锚点：12 个已审核 Example 保存精确跨页范围，其余 Example 根据下一个结构边界生成逐页 plan。
 
 去重不是简单删除引用。编译器禁止根据“精确目标位于 Section 范围内”自动裁剪 Section。只有经过 PDF 审核并写入 manifest 的 `selected_context_pages` 才会缩小 Section 的执行范围；未显式选择时必须保留完整 Section plan。
 
@@ -503,15 +505,17 @@ cross-page exercises: 28
 exercise retrieval steps: 520
 source evidence checks: 1987
 query text anchor checks: 1040
-resolved references: 476
+resolved references: 479
 cross-exercise references: 60
-raw reference retrieval steps: 1505
+raw reference retrieval steps: 1533
 selected context references: 4
-execution reference steps before exact-window merge: 1437
-coalesced same-page/same-window steps: 73
-same-page distinct-window steps preserved: 5
-deduplicated reference retrieval steps: 1364
-compiled queries: 7336
+execution reference steps before exact-window merge: 1587
+coalesced same-page/same-window steps: 114
+same-page distinct-window steps preserved: 18
+deduplicated reference retrieval steps: 1473
+transitive exercise dependencies: 4
+maximum exercise dependency depth: 2
+compiled queries: 7610
 unbalanced compiled queries: 0
 steps without a balanced query: 0
 non-NFKC compiled queries: 0

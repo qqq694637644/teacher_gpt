@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import sys
 import unicodedata
 from pathlib import Path
@@ -26,6 +27,7 @@ from app.models.exercise_manifest import (
     ExerciseManifestShard,
 )
 from app.models.locator import (
+    BoundaryAnchor,
     ContentWindow,
     EvidenceRequirement,
     PageCoverage,
@@ -59,6 +61,28 @@ ANCHOR_EVIDENCE_KINDS = {
     "example": "contains_example",
     "table": "contains_table",
 }
+REFERENCE_PAGE_OVERRIDES = {
+    ("table", "3.6"): "169",
+    ("figure", "4.11"): "224",
+}
+EXAMPLE_PAGE_RANGE_OVERRIDES = {
+    "2.5": ("86", "87"),
+    "4.1": ("211", "212"),
+    "4.2": ("212", "213"),
+    "4.10": ("244", "245"),
+    "4.21": ("290", "291"),
+    "5.15": ("376", "377"),
+    "7.6": ("475", "477"),
+    "7.18": ("510", "511"),
+    "7.19": ("512", "513"),
+    "10.29": ("801", "803"),
+    "11.16": ("863", "865"),
+    "12.7": ("937", "938"),
+}
+BOUNDARY_EVIDENCE_KINDS = {
+    "heading": "contains_heading",
+    "example": "contains_example",
+}
 
 
 def _anchor_priority(
@@ -74,6 +98,304 @@ def _anchor_priority(
         preferred = HEADING_COLOR in colors
     bbox = record.get("bbox", [0.0, 0.0, 0.0, 0.0])
     return (0 if preferred else 1, page_index, float(bbox[1]), float(bbox[0]))
+
+
+def _record_order_key(
+    page_index: int,
+    page_anchor: dict[str, Any],
+    record: dict[str, Any],
+) -> tuple[int, int, float, float]:
+    return (
+        page_index,
+        *_bbox_key(float(page_anchor.get("page_width", 533.0)), record["bbox"]),
+    )
+
+
+def _is_actual_label(kind: str, record: dict[str, Any]) -> bool:
+    return _anchor_priority(kind, 0, record)[0] == 0
+
+
+def _resolve_anchor_match(
+    kind: str,
+    target_id: str,
+    matches: list[tuple[int, dict[str, Any]]],
+    page_anchors: list[dict[str, Any]],
+) -> tuple[int, dict[str, Any]]:
+    override_label = REFERENCE_PAGE_OVERRIDES.get((kind, target_id))
+    if override_label is not None:
+        overridden = [
+            item
+            for item in matches
+            if page_anchors[item[0]]["printed_page_label"] == override_label
+        ]
+        if not overridden:
+            raise ValueError(
+                f"reviewed page override for {kind} {target_id} has no source anchor on "
+                f"printed page {override_label}"
+            )
+        return min(
+            overridden, key=lambda item: _record_order_key(item[0], page_anchors[item[0]], item[1])
+        )
+    return min(matches, key=lambda item: _anchor_priority(kind, item[0], item[1]))
+
+
+def _next_example_boundary(
+    start_page_index: int,
+    start_record: dict[str, Any],
+    page_anchors: list[dict[str, Any]],
+) -> tuple[int, BoundaryAnchor, dict[str, Any]]:
+    start_key = _record_order_key(
+        start_page_index,
+        page_anchors[start_page_index],
+        start_record,
+    )
+    candidates: list[tuple[tuple[int, int, float, float], int, BoundaryAnchor, dict[str, Any]]] = []
+    for page_index in range(start_page_index, len(page_anchors)):
+        page_anchor = page_anchors[page_index]
+        for record in page_anchor["example_records"]:
+            if not _is_actual_label("example", record):
+                continue
+            key = _record_order_key(page_index, page_anchor, record)
+            if key <= start_key:
+                continue
+            candidates.append(
+                (
+                    key,
+                    page_index,
+                    BoundaryAnchor(kind="example", value=record["id"]),
+                    record,
+                )
+            )
+        for record in page_anchor["heading_records"]:
+            key = _record_order_key(page_index, page_anchor, record)
+            if key <= start_key:
+                continue
+            candidates.append(
+                (
+                    key,
+                    page_index,
+                    BoundaryAnchor(kind="heading", value=clean_text(record["text"])),
+                    record,
+                )
+            )
+    if not candidates:
+        raise ValueError("cannot locate the next structural boundary after an Example")
+    _key, page_index, boundary, record = min(candidates, key=lambda item: item[0])
+    return page_index, boundary, record
+
+
+def _reference_record_in_window(
+    page_anchor: dict[str, Any],
+    record: dict[str, Any],
+    *,
+    start_record: dict[str, Any] | None,
+    end_record: dict[str, Any] | None,
+) -> bool:
+    return _record_in_window(
+        record,
+        page_width=float(page_anchor.get("page_width", 533.0)),
+        start_record=start_record,
+        end_record=end_record,
+        reading_order=True,
+    )
+
+
+def _reference_content_evidence(
+    page_anchor: dict[str, Any],
+    *,
+    start_record: dict[str, Any] | None,
+    end_record: dict[str, Any] | None,
+) -> EvidenceRequirement | None:
+    text_candidates: list[tuple[int, int, str]] = []
+    for record in page_anchor["text_records"]:
+        if not _reference_record_in_window(
+            page_anchor,
+            record,
+            start_record=start_record,
+            end_record=end_record,
+        ):
+            continue
+        text = clean_text(record["text"])
+        if not text or text == page_anchor["printed_page_label"]:
+            continue
+        if float(record["bbox"][1]) < 80:
+            continue
+        if text.casefold() == clean_text(page_anchor.get("running_header", "")).casefold():
+            continue
+        if text.startswith(("EXAMPLE ", "FIGURE ", "TABLE ")):
+            continue
+        words = re.findall(r"[A-Za-z][A-Za-z'-]+", text)
+        if len(words) >= 4:
+            text_candidates.append((len({word.casefold() for word in words[:16]}), len(text), text))
+    if text_candidates:
+        return EvidenceRequirement(
+            kind="contains_text",
+            value=max(text_candidates)[2],
+            verification_mode="text_or_visual",
+        )
+
+    for record_key, evidence_kind in (
+        ("figure_records", "contains_figure"),
+        ("equation_records", "contains_equation"),
+        ("table_records", "contains_table"),
+    ):
+        for record in page_anchor[record_key]:
+            if _reference_record_in_window(
+                page_anchor,
+                record,
+                start_record=start_record,
+                end_record=end_record,
+            ):
+                return EvidenceRequirement(
+                    kind=evidence_kind,
+                    value=record["id"],
+                    verification_mode="visual_required",
+                )
+    return None
+
+
+def _ordered_token_subsequence(needle: list[str], haystack: list[str]) -> bool:
+    if not needle:
+        return False
+    position = 0
+    for token in haystack:
+        if token == needle[position]:
+            position += 1
+            if position == len(needle):
+                return True
+    return False
+
+
+def _exercise_evidence_exists(
+    page_anchor: dict[str, Any],
+    evidence: EvidenceRequirement,
+) -> bool:
+    if evidence.kind != "contains_text":
+        return _evidence_exists(page_anchor, evidence)
+    expected = query_safe_anchor(evidence.value, max_tokens=128).casefold().split()
+    actual = query_safe_anchor(page_anchor["normalized_text"], max_tokens=100000).casefold().split()
+    return _ordered_token_subsequence(expected, actual)
+
+
+def _example_reference_plan(
+    manifest: ExerciseManifest,
+    page_anchors: list[dict[str, Any]],
+    target_id: str,
+    start_page_index: int,
+    start_record: dict[str, Any],
+) -> list[PageRetrievalStep]:
+    boundary_page_index, end_boundary, boundary_record = _next_example_boundary(
+        start_page_index,
+        start_record,
+        page_anchors,
+    )
+    reviewed_range = EXAMPLE_PAGE_RANGE_OVERRIDES.get(target_id)
+    if reviewed_range is not None:
+        start_label, end_label = reviewed_range
+        if manifest.pages[start_page_index].printed_page_label != start_label:
+            raise ValueError(
+                f"reviewed Example {target_id} start page mismatch: "
+                f"{manifest.pages[start_page_index].printed_page_label} != {start_label}"
+            )
+        end_page_index = next(
+            (
+                page.pdf_page_index
+                for page in manifest.pages
+                if page.printed_page_label == end_label
+            ),
+            -1,
+        )
+        if end_page_index < start_page_index:
+            raise ValueError(f"invalid reviewed page range for Example {target_id}")
+        include_boundary_page = boundary_page_index == end_page_index
+    else:
+        include_boundary_page = True
+        if boundary_page_index > start_page_index:
+            include_boundary_page = (
+                _reference_content_evidence(
+                    page_anchors[boundary_page_index],
+                    start_record=None,
+                    end_record=boundary_record,
+                )
+                is not None
+            )
+        end_page_index = boundary_page_index if include_boundary_page else boundary_page_index - 1
+    steps: list[PageRetrievalStep] = []
+    for page_index in range(start_page_index, end_page_index + 1):
+        first = page_index == start_page_index
+        last = page_index == end_page_index
+        page_anchor = page_anchors[page_index]
+        page = manifest.pages[page_index]
+        active_start_record = start_record if first else None
+        active_end_record = (
+            boundary_record
+            if last and include_boundary_page and boundary_page_index == end_page_index
+            else None
+        )
+        start_boundary = BoundaryAnchor(kind="example", value=target_id) if first else None
+        final_boundary = end_boundary if active_end_record is not None else None
+        evidence = [
+            EvidenceRequirement(
+                kind="printed_page_equals",
+                value=page.printed_page_label,
+                verification_mode="visual_required",
+            )
+        ]
+        if first:
+            evidence.append(
+                EvidenceRequirement(
+                    kind="contains_example",
+                    value=target_id,
+                    verification_mode="visual_required",
+                )
+            )
+        else:
+            content_evidence = _reference_content_evidence(
+                page_anchor,
+                start_record=active_start_record,
+                end_record=active_end_record,
+            )
+            if content_evidence is None:
+                raise ValueError(
+                    f"Example {target_id} continuation page {page.printed_page_label} "
+                    "has no reliable source anchor"
+                )
+            evidence.append(content_evidence)
+        if final_boundary is not None:
+            evidence.append(
+                EvidenceRequirement(
+                    kind=BOUNDARY_EVIDENCE_KINDS[final_boundary.kind],
+                    value=final_boundary.value,
+                    verification_mode="visual_required",
+                )
+            )
+        total_pages = end_page_index - start_page_index + 1
+        if total_pages == 1:
+            role = "single"
+        elif first:
+            role = "start"
+        elif last:
+            role = "end"
+        else:
+            role = "body"
+        steps.append(
+            PageRetrievalStep(
+                sequence=len(steps) + 1,
+                page_role=role,
+                page=page,
+                content_window=ContentWindow(
+                    start_at=start_boundary,
+                    end_before=final_boundary,
+                ),
+                queries=ExerciseIndexCompiler._safe_queries(
+                    evidence,
+                    page.printed_page_label,
+                ),
+                required_evidence=evidence,
+                coverage=PageCoverage(example_ids=[target_id] if first else []),
+            )
+        )
+    return steps
 
 
 def sha256_json(payload: dict[str, Any]) -> str:
@@ -319,7 +641,7 @@ def verify_manifest_anchors(
                 )
             for evidence in step.required_evidence:
                 evidence_count += 1
-                if not _evidence_exists(page_anchor, evidence):
+                if not _exercise_evidence_exists(page_anchor, evidence):
                     raise ValueError(
                         f"required evidence does not exist for exercise {node.exercise_id} "
                         f"page {step.page.printed_page_label}: {evidence.kind}={evidence.value!r}"
@@ -410,10 +732,21 @@ def build_reference_plans(
         ]
         if not matches:
             raise ValueError(f"cannot resolve {kind} reference {target_id}")
-        page_index, _record = min(
+        page_index, record = _resolve_anchor_match(
+            kind,
+            target_id,
             matches,
-            key=lambda item: _anchor_priority(kind, item[0], item[1]),
+            page_anchors,
         )
+        if kind == "example":
+            plans[(kind, target_id)] = _example_reference_plan(
+                manifest,
+                page_anchors,
+                target_id,
+                page_index,
+                record,
+            )
+            continue
         page = manifest.pages[page_index]
         evidence_kind = ANCHOR_EVIDENCE_KINDS[kind]
         plans[(kind, target_id)] = [
@@ -596,6 +929,12 @@ def main() -> None:
         ),
         "deduplicated_reference_retrieval_step_count": (
             compiler.reference_plan_stats.deduplicated_reference_step_count
+        ),
+        "transitive_exercise_dependency_count": (
+            compiler.reference_plan_stats.transitive_exercise_dependency_count
+        ),
+        "max_exercise_dependency_depth": (
+            compiler.reference_plan_stats.max_exercise_dependency_depth
         ),
         **compiled_query_metrics(compiled),
         "chapter_reports": chapter_reports,

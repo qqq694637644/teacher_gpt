@@ -69,14 +69,14 @@ exercises:
         value: '7.3'
     queries:
     - +(7.2) +(printed page 535) --QDF=0
-    - +(Prove Eq 7-23) +(printed page 535) --QDF=0
+    - +(7-23) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
       verification_mode: visual_required
-    - kind: contains_text
-      value: Prove Eq. (7-23).
-      verification_mode: text_or_visual
+    - kind: contains_equation
+      value: 7-23
+      verification_mode: visual_required
     - kind: contains_exercise
       value: '7.2'
       verification_mode: visual_required
@@ -121,13 +121,13 @@ exercises:
         value: '7.4'
     queries:
     - +(7.3) +(printed page 535) --QDF=0
-    - +(Prove that if A TA I the associated expansion) +(printed page 535) --QDF=0
+    - +(Prove that rxu sxu in Eqs 7-16 and) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
       verification_mode: visual_required
     - kind: contains_text
-      value: Prove that if A*TA = I, the associated expansion
+      value: '* Prove that rxu (,) = sxu (,) in Eqs. (7-16) and'
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.3'
@@ -146,6 +146,10 @@ exercises:
   reference_specs:
   - kind: equation
     target_id: 7-16
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-17
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '7.4'
@@ -771,13 +775,13 @@ exercises:
       end_before: null
     queries:
     - +(7.16) +(printed page 535) --QDF=0
-    - +(Example 7.5 compute the transform of 4) +(printed page 535) --QDF=0
+    - +(Prove that A and A in Example 7.5 are biortho) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
       verification_mode: visual_required
     - kind: contains_text
-      value: Example 7.5, compute the transform of 4
+      value: Prove that A and A in Example 7.5 are biortho-
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.16'
@@ -1848,13 +1852,13 @@ exercises:
         value: '7.38'
     queries:
     - +(7.37) +(printed page 536) --QDF=0
-    - +(tion Write an expression for c33) +(printed page 536) --QDF=0
+    - +(tion Write an expression for c33 x in terms of) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
       verification_mode: visual_required
     - kind: contains_text
-      value: tion. Write an expression for c33
+      value: tion. Write an expression for c33 ,() x in terms of
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.37'
@@ -1895,13 +1899,13 @@ exercises:
         value: '7.39'
     queries:
     - +(7.38) +(printed page 536) --QDF=0
-    - +(express V3 as a function of scaling space V0 and) +(printed page 536) --QDF=0
+    - +(ing space V3 that is fx H V 3 Use Eq 7-128 to) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
       verification_mode: visual_required
     - kind: contains_text
-      value: express V3 as a function of scaling space V0 and
+      value: ing space V3—that is, fx () H V 3 Use Eq. (7-128) to .
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.38'
@@ -2026,14 +2030,14 @@ exercises:
         kind: exercise
         value: '7.41'
     queries:
-    - +(a Rewrite these equations for any starting) +(printed page 537) --QDF=0
-    - +(a Rewrite these equations for any starting) +(Problems) +(printed page 537) --QDF=0
+    - +(c Use the result from b to compute f 1 from) +(printed page 537) --QDF=0
+    - +(c Use the result from b to compute f 1 from) +(Problems) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
       verification_mode: visual_required
     - kind: contains_text
-      value: (a) * Rewrite these equations for any starting
+      value: (c) Use the result from (b) to compute f () 1 from
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.41'

@@ -1358,13 +1358,13 @@ exercises:
         value: '11.28'
     queries:
     - +(11.27) +(printed page 900) --QDF=0
-    - +(the covariance matrix given in Eq 11-52 is) +(printed page 900) --QDF=0
+    - +(For a set of images of size 64 64 assume that) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
       verification_mode: visual_required
     - kind: contains_text
-      value: the covariance matrix given in Eq. (11-52) is
+      value: For a set of images of size 64 × 64 , assume that
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '11.27'

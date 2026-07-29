@@ -27,13 +27,13 @@ exercises:
         value: '4.2'
     queries:
     - +(4.1) +(printed page 308) --QDF=0
-    - +(a Give an equation similar to Eq 4-10 but) +(printed page 308) --QDF=0
+    - +(c Is it correct to say that d t a d a t in) +(printed page 308) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '308'
       verification_mode: visual_required
     - kind: contains_text
-      value: (a) * Give an equation similar to Eq. (4-10), but
+      value: (c) * Is it correct to say that d ( t − a ) = d ( a − t ) in
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '4.1'
@@ -374,13 +374,13 @@ exercises:
         value: '4.9'
     queries:
     - +(4.8) +(printed page 309) --QDF=0
-    - +(stant Hint Study Example 4.2) +(printed page 309) --QDF=0
+    - +(Show that e 0 dm t 0 where t0 is a con) +(printed page 309) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '309'
       verification_mode: visual_required
     - kind: contains_text
-      value: 'stant. (Hint: Study Example 4.2.)'
+      value: '* Show that { e 0 } = dm ( − t 0 ), where t0 is a con-'
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '4.8'
@@ -711,13 +711,13 @@ exercises:
         value: '4.15'
     queries:
     - +(4.14) +(printed page 309) --QDF=0
-    - +(m in Eq 4-40 is infinitely periodic) +(printed page 309) --QDF=0
+    - +(Show that F m in Eq 4-40 is infinitely periodic) +(printed page 309) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '309'
       verification_mode: visual_required
     - kind: contains_text
-      value: m in Eq. (4-40) is inﬁnitely periodic
+      value: Show that F() m in Eq. (4-40) is inﬁnitely periodic
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '4.14'
@@ -1864,13 +1864,13 @@ exercises:
         value: '4.37'
     queries:
     - +(4.36) +(printed page 312) --QDF=0
-    - +(of a DFT is proportional to the average value of) +(printed page 312) --QDF=0
+    - +(image is of size M N Suppose that you pad the) +(printed page 312) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '312'
       verification_mode: visual_required
     - kind: contains_text
-      value: of a DFT is proportional to the average value of
+      value: image is of size M × N . Suppose that you pad the
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '4.36'
@@ -2244,13 +2244,13 @@ exercises:
       end_before: null
     queries:
     - +(4.43) +(printed page 312) --QDF=0
-    - +(right was obtained by a multiplying the image) +(printed page 312) --QDF=0
+    - +(ing the real part of the result by 1xy Explain) +(printed page 312) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '312'
       verification_mode: visual_required
     - kind: contains_text
-      value: 'right was obtained by: (a) multiplying the image'
+      value: ing the real part of the result by ( − 1xy Explain ) + .
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '4.43'

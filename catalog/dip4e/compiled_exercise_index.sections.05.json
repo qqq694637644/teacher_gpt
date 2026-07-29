@@ -2567,7 +2567,7 @@
             }
           },
           "queries": [
-            "+(text M is the same integer as before) +(printed page 394) --QDF=0",
+            "+(text b What would a plot of F uv look like for) +(printed page 394) --QDF=0",
             "+(exercise 5.16) +(printed page 394) --QDF=0",
             "+(exercise 5.17) +(printed page 394) --QDF=0"
           ],
@@ -2579,7 +2579,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "=, M is the same integer as before,",
+              "value": "(b) * What would a plot of F(,) uv look like for",
               "verification_mode": "text_or_visual"
             },
             {
@@ -3186,6 +3186,78 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
+            "pdf_page_index": 209,
+            "pdf_page_number": 210,
+            "printed_page_label": "208"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 4-10) +(printed page 208) --QDF=0",
+            "+(4-10) +(equation) +(printed page 208) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "208",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "4-10",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 210,
+            "pdf_page_number": 211,
+            "printed_page_label": "209"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 4-15) +(printed page 209) --QDF=0",
+            "+(4-15) +(equation) +(printed page 209) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "209",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "4-15",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
             "pdf_page_index": 309,
             "pdf_page_number": 310,
             "printed_page_label": "308"
@@ -3201,7 +3273,7 @@
             }
           },
           "queries": [
-            "+(text a Give an equation similar to Eq 4-10 but) +(printed page 308) --QDF=0",
+            "+(text c Is it correct to say that d t a d a t in) +(printed page 308) --QDF=0",
             "+(exercise 4.1) +(printed page 308) --QDF=0",
             "+(exercise 4.2) +(printed page 308) --QDF=0"
           ],
@@ -3213,7 +3285,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "(a) * Give an equation similar to Eq. (4-10), but",
+              "value": "(c) * Is it correct to say that d ( t − a ) = d ( a − t ) in",
               "verification_mode": "text_or_visual"
             },
             {
@@ -3239,7 +3311,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 4,
           "page_role": "single",
           "page": {
             "pdf_page_index": 351,
@@ -3275,7 +3347,7 @@
           }
         },
         {
-          "sequence": 3,
+          "sequence": 5,
           "page_role": "single",
           "page": {
             "pdf_page_index": 395,
@@ -3459,7 +3531,7 @@
                 }
               },
               "queries": [
-                "+(text a Give an equation similar to Eq 4-10 but) +(printed page 308) --QDF=0",
+                "+(text c Is it correct to say that d t a d a t in) +(printed page 308) --QDF=0",
                 "+(exercise 4.1) +(printed page 308) --QDF=0",
                 "+(exercise 4.2) +(printed page 308) --QDF=0"
               ],
@@ -3471,7 +3543,7 @@
                 },
                 {
                   "kind": "contains_text",
-                  "value": "(a) * Give an equation similar to Eq. (4-10), but",
+                  "value": "(c) * Is it correct to say that d ( t − a ) = d ( a − t ) in",
                   "verification_mode": "text_or_visual"
                 },
                 {
@@ -3723,6 +3795,42 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 351,
+            "pdf_page_number": 352,
+            "printed_page_label": "350"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 5-61) +(printed page 350) --QDF=0",
+            "+(5-61) +(equation) +(printed page 350) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "350",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "5-61",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
           "page_role": "single",
           "page": {
             "pdf_page_index": 395,
@@ -5435,6 +5543,42 @@
         },
         {
           "sequence": 37,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 351,
+            "pdf_page_number": 352,
+            "printed_page_label": "350"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 5-61) +(printed page 350) --QDF=0",
+            "+(5-61) +(equation) +(printed page 350) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "350",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "5-61",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 38,
           "page_role": "single",
           "page": {
             "pdf_page_index": 395,
@@ -7398,7 +7542,7 @@
             }
           },
           "queries": [
-            "+(text uv first and then use it as the basis for) +(printed page 395) --QDF=0",
+            "+(text tion H uv first and then use it as the basis for) +(printed page 395) --QDF=0",
             "+(exercise 5.26) +(printed page 395) --QDF=0",
             "+(exercise 5.27) +(printed page 395) --QDF=0"
           ],
@@ -7410,7 +7554,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "uv ﬁrst, and then use it as the basis for",
+              "value": "tion H(,) uv ﬁrst, and then use it as the basis for",
               "verification_mode": "text_or_visual"
             },
             {
@@ -9471,6 +9615,78 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
+            "pdf_page_index": 180,
+            "pdf_page_number": 181,
+            "printed_page_label": "179"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 3-50) +(printed page 179) --QDF=0",
+            "+(3-50) +(equation) +(printed page 179) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "179",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "3-50",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 182,
+            "pdf_page_number": 183,
+            "printed_page_label": "181"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 3.46) +(printed page 181) --QDF=0",
+            "+(3.46) +(figure) +(printed page 181) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "181",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "3.46",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
             "pdf_page_index": 260,
             "pdf_page_number": 261,
             "printed_page_label": "259"
@@ -9504,7 +9720,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 4,
           "page_role": "start",
           "page": {
             "pdf_page_index": 285,
@@ -9559,7 +9775,7 @@
           }
         },
         {
-          "sequence": 3,
+          "sequence": 5,
           "page_role": "body",
           "page": {
             "pdf_page_index": 286,
@@ -9602,7 +9818,7 @@
           }
         },
         {
-          "sequence": 4,
+          "sequence": 6,
           "page_role": "body",
           "page": {
             "pdf_page_index": 287,
@@ -9644,7 +9860,7 @@
           }
         },
         {
-          "sequence": 5,
+          "sequence": 7,
           "page_role": "body",
           "page": {
             "pdf_page_index": 288,
@@ -9691,7 +9907,7 @@
           }
         },
         {
-          "sequence": 6,
+          "sequence": 8,
           "page_role": "body",
           "page": {
             "pdf_page_index": 289,
@@ -9733,7 +9949,7 @@
           }
         },
         {
-          "sequence": 7,
+          "sequence": 9,
           "page_role": "body",
           "page": {
             "pdf_page_index": 290,
@@ -9775,7 +9991,7 @@
           }
         },
         {
-          "sequence": 8,
+          "sequence": 10,
           "page_role": "body",
           "page": {
             "pdf_page_index": 291,
@@ -9822,7 +10038,48 @@
           }
         },
         {
-          "sequence": 9,
+          "sequence": 11,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 291,
+            "pdf_page_number": 292,
+            "printed_page_label": "290"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "example",
+              "value": "4.21"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(example 4.21) +(printed page 290) --QDF=0",
+            "+(4.21) +(example) +(printed page 290) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "290",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "4.21",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "4.21"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
           "page_role": "body",
           "page": {
             "pdf_page_index": 292,
@@ -9871,7 +10128,51 @@
           }
         },
         {
-          "sequence": 10,
+          "sequence": 13,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 292,
+            "pdf_page_number": 293,
+            "printed_page_label": "291"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "UNSHARP MASKING, HIGH-BOOST FILTERING, AND HIGH- FREQUENCY-EMPHASIS FILTERING"
+            }
+          },
+          "queries": [
+            "+(text encompasses a very small neighborhood while the formulation in Eqs 4-125 and 4-126 encompasses) +(printed page 291) --QDF=0",
+            "+(heading UNSHARP MASKING HIGH-BOOST FILTERING AND HIGH FREQUENCY-EMPHASIS FILTERING) +(printed page 291) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "291",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "encompasses a very small neighborhood, while the formulation in Eqs. (4-125) and (4-126) encompasses",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "UNSHARP MASKING, HIGH-BOOST FILTERING, AND HIGH- FREQUENCY-EMPHASIS FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
           "page_role": "body",
           "page": {
             "pdf_page_index": 293,
@@ -9915,7 +10216,7 @@
           }
         },
         {
-          "sequence": 11,
+          "sequence": 15,
           "page_role": "body",
           "page": {
             "pdf_page_index": 294,
@@ -9961,7 +10262,7 @@
           }
         },
         {
-          "sequence": 12,
+          "sequence": 16,
           "page_role": "body",
           "page": {
             "pdf_page_index": 295,
@@ -10009,7 +10310,7 @@
           }
         },
         {
-          "sequence": 13,
+          "sequence": 17,
           "page_role": "body",
           "page": {
             "pdf_page_index": 296,
@@ -10055,7 +10356,7 @@
           }
         },
         {
-          "sequence": 14,
+          "sequence": 18,
           "page_role": "end",
           "page": {
             "pdf_page_index": 297,
@@ -10105,7 +10406,7 @@
           }
         },
         {
-          "sequence": 15,
+          "sequence": 19,
           "page_role": "single",
           "page": {
             "pdf_page_index": 314,
@@ -10945,6 +11246,850 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
+            "pdf_page_index": 180,
+            "pdf_page_number": 181,
+            "printed_page_label": "179"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 3-50) +(printed page 179) --QDF=0",
+            "+(3-50) +(equation) +(printed page 179) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "179",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "3-50",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 182,
+            "pdf_page_number": 183,
+            "printed_page_label": "181"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 3.46) +(printed page 181) --QDF=0",
+            "+(3.46) +(figure) +(printed page 181) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "181",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "3.46",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 260,
+            "pdf_page_number": 261,
+            "printed_page_label": "259"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(table 4.4) +(printed page 259) --QDF=0",
+            "+(4.4) +(table) +(printed page 259) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "259",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_table",
+              "value": "4.4",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 285,
+            "pdf_page_number": 286,
+            "printed_page_label": "284"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "4.9 IMAGE SHARPENING USING HIGHPASS FILTERS"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text are radially symmetric All filtering in this section is based on the procedure outlined) +(printed page 284) --QDF=0",
+            "+(heading 4.9 IMAGE SHARPENING USING HIGHPASS FILTERS) +(printed page 284) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "284",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "are radially symmetric. All filtering in this section is based on the procedure outlined",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "4.9 IMAGE SHARPENING USING HIGHPASS FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "4.9 IMAGE SHARPENING USING HIGHPASS FILTERS",
+              "IDEAL, GAUSSIAN, AND BUTTERWORTH HIGHPASS FILTERS FROM LOWPASS FILTERS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "4-102",
+              "4-103",
+              "4-118",
+              "4-111",
+              "4-119",
+              "4-112",
+              "4-116"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 286,
+            "pdf_page_number": 287,
+            "printed_page_label": "285"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text and from Eq 4-117 that the transfer function of a Butterworth highpass filter) +(printed page 285) --QDF=0",
+            "+(and from Eq 4-117 that the transfer function of a Butterworth highpass filter) +(text) +(printed page 285) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "285",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "and, from Eq. (4-117), that the transfer function of a Butterworth highpass filter",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.51"
+            ],
+            "equation_ids": [
+              "4-120",
+              "4-117",
+              "4-121",
+              "4-118"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 287,
+            "pdf_page_number": 288,
+            "printed_page_label": "286"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text not part of the data d f Horizontal intensity profiles through the centers of the kernels) +(printed page 286) --QDF=0",
+            "+(not part of the data d f Horizontal intensity profiles through the centers of the kernels) +(text) +(printed page 286) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "286",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "not part of the data.) (d)–(f): Horizontal intensity proﬁles through the centers of the kernels.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.52"
+            ],
+            "equation_ids": [
+              "4-122"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "4.4"
+            ]
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 288,
+            "pdf_page_number": 289,
+            "printed_page_label": "287"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text display the full intensity range of both positive and negative intensities The ringing in Fig 4.54) +(printed page 287) --QDF=0",
+            "+(display the full intensity range of both positive and negative intensities The ringing in Fig 4.54) +(text) +(printed page 287) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "287",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "display the full intensity range of both positive and negative intensities. The ringing in Fig. 4.54(a) shows",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.54",
+              "4.55"
+            ],
+            "equation_ids": [
+              "2-31",
+              "2-32"
+            ],
+            "example_ids": [
+              "4.19",
+              "4.20"
+            ],
+            "table_ids": [
+              "4.6"
+            ]
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 289,
+            "pdf_page_number": 290,
+            "printed_page_label": "288"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text in all cases n 2 for the BHPF Second row Same sequence but using D0) +(printed page 288) --QDF=0",
+            "+(in all cases n 2 for the BHPF Second row Same sequence but using D0) +(text) +(printed page 288) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "288",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "in all cases (n =2 for the BHPF). Second row: Same sequence, but using D0",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.53",
+              "4.54"
+            ],
+            "equation_ids": [
+              "2-31",
+              "2-32"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 290,
+            "pdf_page_number": 291,
+            "printed_page_label": "289"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text attenuated but not completely eliminated except for the DC term which is set to 0 so) +(printed page 289) --QDF=0",
+            "+(attenuated but not completely eliminated except for the DC term which is set to 0 so) +(text) +(printed page 289) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "289",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "attenuated but not completely eliminated, except for the DC term which is set to 0, so that tonality dif-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "THE LAPLACIAN IN THE FREQUENCY DOMAIN"
+            ],
+            "figure_ids": [
+              "4.55"
+            ],
+            "equation_ids": [
+              "4-123"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 291,
+            "pdf_page_number": 292,
+            "printed_page_label": "290"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text 3.46 d which was obtained using the Laplacian kernel in Fig 3.45 b with a 8) +(printed page 290) --QDF=0",
+            "+(3.46 d which was obtained using the Laplacian kernel in Fig 3.45 b with a 8) +(text) +(printed page 290) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "290",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "3.46(d), which was obtained using the Laplacian kernel in Fig. 3.45(b), with a −8 in the center. The sig-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.56"
+            ],
+            "equation_ids": [
+              "4-124",
+              "4-112",
+              "4-125",
+              "3-54",
+              "4-126",
+              "4-127"
+            ],
+            "example_ids": [
+              "4.21"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 291,
+            "pdf_page_number": 292,
+            "printed_page_label": "290"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "example",
+              "value": "4.21"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(example 4.21) +(printed page 290) --QDF=0",
+            "+(4.21) +(example) +(printed page 290) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "290",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "4.21",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "4.21"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 292,
+            "pdf_page_number": 293,
+            "printed_page_label": "291"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text encompasses a very small neighborhood while the formulation in Eqs 4-125 and 4-126 encompasses) +(printed page 291) --QDF=0",
+            "+(encompasses a very small neighborhood while the formulation in Eqs 4-125 and 4-126 encompasses) +(text) +(printed page 291) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "291",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "encompasses a very small neighborhood, while the formulation in Eqs. (4-125) and (4-126) encompasses",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "UNSHARP MASKING, HIGH-BOOST FILTERING, AND HIGH- FREQUENCY-EMPHASIS FILTERING"
+            ],
+            "figure_ids": [
+              "4.56"
+            ],
+            "equation_ids": [
+              "4-125",
+              "4-126",
+              "3-55",
+              "4-128",
+              "4-129",
+              "3-56",
+              "4-130",
+              "4-131"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 292,
+            "pdf_page_number": 293,
+            "printed_page_label": "291"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "UNSHARP MASKING, HIGH-BOOST FILTERING, AND HIGH- FREQUENCY-EMPHASIS FILTERING"
+            }
+          },
+          "queries": [
+            "+(text encompasses a very small neighborhood while the formulation in Eqs 4-125 and 4-126 encompasses) +(printed page 291) --QDF=0",
+            "+(heading UNSHARP MASKING HIGH-BOOST FILTERING AND HIGH FREQUENCY-EMPHASIS FILTERING) +(printed page 291) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "291",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "encompasses a very small neighborhood, while the formulation in Eqs. (4-125) and (4-126) encompasses",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "UNSHARP MASKING, HIGH-BOOST FILTERING, AND HIGH- FREQUENCY-EMPHASIS FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 293,
+            "pdf_page_number": 294,
+            "printed_page_label": "292"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text not be focused in the same manner that optical lenses can and the resulting images generally) +(printed page 292) --QDF=0",
+            "+(not be focused in the same manner that optical lenses can and the resulting images generally) +(text) +(printed page 292) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "292",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "not be focused in the same manner that optical lenses can, and the resulting images generally tend to be",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.57"
+            ],
+            "equation_ids": [
+              "4-118",
+              "4-132",
+              "4-133"
+            ],
+            "example_ids": [
+              "4.22"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 294,
+            "pdf_page_number": 295,
+            "printed_page_label": "293"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text highpass filter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(printed page 293) --QDF=0",
+            "+(highpass filter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(text) +(printed page 293) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "293",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "highpass ﬁlter transfer function. Because the spatial representation of a GHPF function is Gaussian also,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "HOMOMORPHIC FILTERING"
+            ],
+            "figure_ids": [
+              "4.57"
+            ],
+            "equation_ids": [
+              "4-133",
+              "4-134",
+              "4-135",
+              "4-136",
+              "4-137"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 295,
+            "pdf_page_number": 296,
+            "printed_page_label": "294"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Figure 4.58 is a summary of the filtering approach just derived This method is) +(printed page 294) --QDF=0",
+            "+(Figure 4.58 is a summary of the filtering approach just derived This method is) +(text) +(printed page 294) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "294",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 4.58 is a summary of the ﬁltering approach just derived. This method is",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.58"
+            ],
+            "equation_ids": [
+              "4-138",
+              "4-139",
+              "4-140",
+              "4-141",
+              "4-142",
+              "4-143",
+              "4-144",
+              "4-145",
+              "4-146"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 296,
+            "pdf_page_number": 297,
+            "printed_page_label": "295"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text at the junctions of dissimilar objects These characteristics lead to associating the low) +(printed page 295) --QDF=0",
+            "+(at the junctions of dissimilar objects These characteristics lead to associating the low) +(text) +(printed page 295) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "295",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "at the junctions of dissimilar objects. These characteristics lead to associating the low",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.59",
+              "4.58"
+            ],
+            "equation_ids": [
+              "4-138",
+              "4-139",
+              "4-147",
+              "4-112"
+            ],
+            "example_ids": [
+              "4.23"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 297,
+            "pdf_page_number": 298,
+            "printed_page_label": "296"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "4.10 SELECTIVE FILTERING"
+            }
+          },
+          "queries": [
+            "+(text The image is slightly blurred and many of its low-intensity features are obscured by the high) +(printed page 296) --QDF=0",
+            "+(heading 4.10 SELECTIVE FILTERING) +(printed page 296) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "296",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "The image is slightly blurred and many of its low-intensity features are obscured by the high intensity of",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "4.10 SELECTIVE FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.60"
+            ],
+            "equation_ids": [
+              "4-147"
+            ],
+            "example_ids": [
+              "4.23"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 19,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 314,
+            "pdf_page_number": 315,
+            "printed_page_label": "313"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "exercise",
+              "value": "4.52"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text b The result in a is valid only for continuous) +(printed page 313) --QDF=0",
+            "+(exercise 4.52) +(printed page 313) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "313",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(b) * The result in (a) is valid only for continuous",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "4.52",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-50"
+            ],
+            "example_ids": [
+              "4.21"
+            ],
+            "table_ids": [
+              "4.4"
+            ]
+          }
+        },
+        {
+          "sequence": 20,
+          "page_role": "single",
+          "page": {
             "pdf_page_index": 397,
             "pdf_page_number": 398,
             "printed_page_label": "396"
@@ -11670,6 +12815,850 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
+            "pdf_page_index": 180,
+            "pdf_page_number": 181,
+            "printed_page_label": "179"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 3-50) +(printed page 179) --QDF=0",
+            "+(3-50) +(equation) +(printed page 179) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "179",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "3-50",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 182,
+            "pdf_page_number": 183,
+            "printed_page_label": "181"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 3.46) +(printed page 181) --QDF=0",
+            "+(3.46) +(figure) +(printed page 181) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "181",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "3.46",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 260,
+            "pdf_page_number": 261,
+            "printed_page_label": "259"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(table 4.4) +(printed page 259) --QDF=0",
+            "+(4.4) +(table) +(printed page 259) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "259",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_table",
+              "value": "4.4",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 285,
+            "pdf_page_number": 286,
+            "printed_page_label": "284"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "4.9 IMAGE SHARPENING USING HIGHPASS FILTERS"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text are radially symmetric All filtering in this section is based on the procedure outlined) +(printed page 284) --QDF=0",
+            "+(heading 4.9 IMAGE SHARPENING USING HIGHPASS FILTERS) +(printed page 284) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "284",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "are radially symmetric. All filtering in this section is based on the procedure outlined",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "4.9 IMAGE SHARPENING USING HIGHPASS FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "4.9 IMAGE SHARPENING USING HIGHPASS FILTERS",
+              "IDEAL, GAUSSIAN, AND BUTTERWORTH HIGHPASS FILTERS FROM LOWPASS FILTERS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "4-102",
+              "4-103",
+              "4-118",
+              "4-111",
+              "4-119",
+              "4-112",
+              "4-116"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 286,
+            "pdf_page_number": 287,
+            "printed_page_label": "285"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text and from Eq 4-117 that the transfer function of a Butterworth highpass filter) +(printed page 285) --QDF=0",
+            "+(and from Eq 4-117 that the transfer function of a Butterworth highpass filter) +(text) +(printed page 285) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "285",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "and, from Eq. (4-117), that the transfer function of a Butterworth highpass filter",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.51"
+            ],
+            "equation_ids": [
+              "4-120",
+              "4-117",
+              "4-121",
+              "4-118"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 287,
+            "pdf_page_number": 288,
+            "printed_page_label": "286"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text not part of the data d f Horizontal intensity profiles through the centers of the kernels) +(printed page 286) --QDF=0",
+            "+(not part of the data d f Horizontal intensity profiles through the centers of the kernels) +(text) +(printed page 286) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "286",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "not part of the data.) (d)–(f): Horizontal intensity proﬁles through the centers of the kernels.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.52"
+            ],
+            "equation_ids": [
+              "4-122"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "4.4"
+            ]
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 288,
+            "pdf_page_number": 289,
+            "printed_page_label": "287"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text display the full intensity range of both positive and negative intensities The ringing in Fig 4.54) +(printed page 287) --QDF=0",
+            "+(display the full intensity range of both positive and negative intensities The ringing in Fig 4.54) +(text) +(printed page 287) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "287",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "display the full intensity range of both positive and negative intensities. The ringing in Fig. 4.54(a) shows",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.54",
+              "4.55"
+            ],
+            "equation_ids": [
+              "2-31",
+              "2-32"
+            ],
+            "example_ids": [
+              "4.19",
+              "4.20"
+            ],
+            "table_ids": [
+              "4.6"
+            ]
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 289,
+            "pdf_page_number": 290,
+            "printed_page_label": "288"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text in all cases n 2 for the BHPF Second row Same sequence but using D0) +(printed page 288) --QDF=0",
+            "+(in all cases n 2 for the BHPF Second row Same sequence but using D0) +(text) +(printed page 288) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "288",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "in all cases (n =2 for the BHPF). Second row: Same sequence, but using D0",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.53",
+              "4.54"
+            ],
+            "equation_ids": [
+              "2-31",
+              "2-32"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 290,
+            "pdf_page_number": 291,
+            "printed_page_label": "289"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text attenuated but not completely eliminated except for the DC term which is set to 0 so) +(printed page 289) --QDF=0",
+            "+(attenuated but not completely eliminated except for the DC term which is set to 0 so) +(text) +(printed page 289) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "289",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "attenuated but not completely eliminated, except for the DC term which is set to 0, so that tonality dif-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "THE LAPLACIAN IN THE FREQUENCY DOMAIN"
+            ],
+            "figure_ids": [
+              "4.55"
+            ],
+            "equation_ids": [
+              "4-123"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 291,
+            "pdf_page_number": 292,
+            "printed_page_label": "290"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text 3.46 d which was obtained using the Laplacian kernel in Fig 3.45 b with a 8) +(printed page 290) --QDF=0",
+            "+(3.46 d which was obtained using the Laplacian kernel in Fig 3.45 b with a 8) +(text) +(printed page 290) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "290",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "3.46(d), which was obtained using the Laplacian kernel in Fig. 3.45(b), with a −8 in the center. The sig-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.56"
+            ],
+            "equation_ids": [
+              "4-124",
+              "4-112",
+              "4-125",
+              "3-54",
+              "4-126",
+              "4-127"
+            ],
+            "example_ids": [
+              "4.21"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 291,
+            "pdf_page_number": 292,
+            "printed_page_label": "290"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "example",
+              "value": "4.21"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(example 4.21) +(printed page 290) --QDF=0",
+            "+(4.21) +(example) +(printed page 290) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "290",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "4.21",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "4.21"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 292,
+            "pdf_page_number": 293,
+            "printed_page_label": "291"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text encompasses a very small neighborhood while the formulation in Eqs 4-125 and 4-126 encompasses) +(printed page 291) --QDF=0",
+            "+(encompasses a very small neighborhood while the formulation in Eqs 4-125 and 4-126 encompasses) +(text) +(printed page 291) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "291",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "encompasses a very small neighborhood, while the formulation in Eqs. (4-125) and (4-126) encompasses",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "UNSHARP MASKING, HIGH-BOOST FILTERING, AND HIGH- FREQUENCY-EMPHASIS FILTERING"
+            ],
+            "figure_ids": [
+              "4.56"
+            ],
+            "equation_ids": [
+              "4-125",
+              "4-126",
+              "3-55",
+              "4-128",
+              "4-129",
+              "3-56",
+              "4-130",
+              "4-131"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 292,
+            "pdf_page_number": 293,
+            "printed_page_label": "291"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "UNSHARP MASKING, HIGH-BOOST FILTERING, AND HIGH- FREQUENCY-EMPHASIS FILTERING"
+            }
+          },
+          "queries": [
+            "+(text encompasses a very small neighborhood while the formulation in Eqs 4-125 and 4-126 encompasses) +(printed page 291) --QDF=0",
+            "+(heading UNSHARP MASKING HIGH-BOOST FILTERING AND HIGH FREQUENCY-EMPHASIS FILTERING) +(printed page 291) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "291",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "encompasses a very small neighborhood, while the formulation in Eqs. (4-125) and (4-126) encompasses",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "UNSHARP MASKING, HIGH-BOOST FILTERING, AND HIGH- FREQUENCY-EMPHASIS FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 293,
+            "pdf_page_number": 294,
+            "printed_page_label": "292"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text not be focused in the same manner that optical lenses can and the resulting images generally) +(printed page 292) --QDF=0",
+            "+(not be focused in the same manner that optical lenses can and the resulting images generally) +(text) +(printed page 292) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "292",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "not be focused in the same manner that optical lenses can, and the resulting images generally tend to be",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.57"
+            ],
+            "equation_ids": [
+              "4-118",
+              "4-132",
+              "4-133"
+            ],
+            "example_ids": [
+              "4.22"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 294,
+            "pdf_page_number": 295,
+            "printed_page_label": "293"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text highpass filter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(printed page 293) --QDF=0",
+            "+(highpass filter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(text) +(printed page 293) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "293",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "highpass ﬁlter transfer function. Because the spatial representation of a GHPF function is Gaussian also,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "HOMOMORPHIC FILTERING"
+            ],
+            "figure_ids": [
+              "4.57"
+            ],
+            "equation_ids": [
+              "4-133",
+              "4-134",
+              "4-135",
+              "4-136",
+              "4-137"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 295,
+            "pdf_page_number": 296,
+            "printed_page_label": "294"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Figure 4.58 is a summary of the filtering approach just derived This method is) +(printed page 294) --QDF=0",
+            "+(Figure 4.58 is a summary of the filtering approach just derived This method is) +(text) +(printed page 294) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "294",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 4.58 is a summary of the ﬁltering approach just derived. This method is",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.58"
+            ],
+            "equation_ids": [
+              "4-138",
+              "4-139",
+              "4-140",
+              "4-141",
+              "4-142",
+              "4-143",
+              "4-144",
+              "4-145",
+              "4-146"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 296,
+            "pdf_page_number": 297,
+            "printed_page_label": "295"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text at the junctions of dissimilar objects These characteristics lead to associating the low) +(printed page 295) --QDF=0",
+            "+(at the junctions of dissimilar objects These characteristics lead to associating the low) +(text) +(printed page 295) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "295",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "at the junctions of dissimilar objects. These characteristics lead to associating the low",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.59",
+              "4.58"
+            ],
+            "equation_ids": [
+              "4-138",
+              "4-139",
+              "4-147",
+              "4-112"
+            ],
+            "example_ids": [
+              "4.23"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 297,
+            "pdf_page_number": 298,
+            "printed_page_label": "296"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "4.10 SELECTIVE FILTERING"
+            }
+          },
+          "queries": [
+            "+(text The image is slightly blurred and many of its low-intensity features are obscured by the high) +(printed page 296) --QDF=0",
+            "+(heading 4.10 SELECTIVE FILTERING) +(printed page 296) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "296",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "The image is slightly blurred and many of its low-intensity features are obscured by the high intensity of",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "4.10 SELECTIVE FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "4.60"
+            ],
+            "equation_ids": [
+              "4-147"
+            ],
+            "example_ids": [
+              "4.23"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 19,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 314,
+            "pdf_page_number": 315,
+            "printed_page_label": "313"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "exercise",
+              "value": "4.52"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text b The result in a is valid only for continuous) +(printed page 313) --QDF=0",
+            "+(exercise 4.52) +(printed page 313) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "313",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(b) * The result in (a) is valid only for continuous",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "4.52",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-50"
+            ],
+            "example_ids": [
+              "4.21"
+            ],
+            "table_ids": [
+              "4.4"
+            ]
+          }
+        },
+        {
+          "sequence": 20,
+          "page_role": "single",
+          "page": {
             "pdf_page_index": 397,
             "pdf_page_number": 398,
             "printed_page_label": "396"
@@ -12186,6 +14175,42 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
+            "pdf_page_index": 250,
+            "pdf_page_number": 251,
+            "printed_page_label": "249"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 4-89) +(printed page 249) --QDF=0",
+            "+(4-89) +(equation) +(printed page 249) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "249",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "4-89",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
             "pdf_page_index": 319,
             "pdf_page_number": 320,
             "printed_page_label": "318"
@@ -12219,7 +14244,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 3,
           "page_role": "single",
           "page": {
             "pdf_page_index": 352,
@@ -12255,7 +14280,7 @@
           }
         },
         {
-          "sequence": 3,
+          "sequence": 4,
           "page_role": "single",
           "page": {
             "pdf_page_index": 360,
@@ -12291,7 +14316,7 @@
           }
         },
         {
-          "sequence": 4,
+          "sequence": 5,
           "page_role": "single",
           "page": {
             "pdf_page_index": 397,
@@ -13153,7 +15178,7 @@
             }
           },
           "queries": [
-            "+(text Show that the Radon transform Eq 5-102 of) +(printed page 397) --QDF=0",
+            "+(text given by g ru A p exp r 2 Hint Refer to) +(printed page 397) --QDF=0",
             "+(exercise 5.43) +(printed page 397) --QDF=0",
             "+(exercise 5.44) +(printed page 397) --QDF=0"
           ],
@@ -13165,7 +15190,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Show that the Radon transform [Eq. (5-102)] of",
+              "value": "given by g (,) ru = A p exp( − r 2 ). (Hint: Refer to",
               "verification_mode": "text_or_visual"
             },
             {
@@ -13231,14 +15256,17 @@
         },
         {
           "sequence": 2,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 377,
             "pdf_page_number": 378,
             "printed_page_label": "376"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "5.15"
+            },
             "end_before": null
           },
           "queries": [
@@ -13254,6 +15282,52 @@
             {
               "kind": "contains_example",
               "value": "5.15",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "5.15"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 378,
+            "pdf_page_number": 379,
+            "printed_page_label": "377"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "BACKPROJECTIONS"
+            }
+          },
+          "queries": [
+            "+(text sinograms corresponds be readily interpreted for simple regions but become increasingly difficult to read) +(printed page 377) --QDF=0",
+            "+(heading BACKPROJECTIONS) +(printed page 377) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "377",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "sinograms corresponds be readily interpreted for simple regions, but become increasingly difﬁcult to “read”",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "BACKPROJECTIONS",
               "verification_mode": "visual_required"
             }
           ],
@@ -13319,14 +15393,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 377,
                 "pdf_page_number": 378,
                 "printed_page_label": "376"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "5.15"
+                },
                 "end_before": null
               },
               "queries": [
@@ -13342,6 +15419,52 @@
                 {
                   "kind": "contains_example",
                   "value": "5.15",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "5.15"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 378,
+                "pdf_page_number": 379,
+                "printed_page_label": "377"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "BACKPROJECTIONS"
+                }
+              },
+              "queries": [
+                "+(text sinograms corresponds be readily interpreted for simple regions but become increasingly difficult to read) +(printed page 377) --QDF=0",
+                "+(heading BACKPROJECTIONS) +(printed page 377) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "377",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "sinograms corresponds be readily interpreted for simple regions, but become increasingly difﬁcult to “read”",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "BACKPROJECTIONS",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -13393,7 +15516,7 @@
             }
           },
           "queries": [
-            "+(text tical line passing through the origin of the) +(printed page 397) --QDF=0",
+            "+(text of the unit impulse d xy is a straight ver) +(printed page 397) --QDF=0",
             "+(exercise 5.44) +(printed page 397) --QDF=0",
             "+(exercise 5.45) +(printed page 397) --QDF=0"
           ],
@@ -13405,7 +15528,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "tical line passing through the origin of the",
+              "value": "of the unit impulse d(,) xy is a straight ver-",
               "verification_mode": "text_or_visual"
             },
             {

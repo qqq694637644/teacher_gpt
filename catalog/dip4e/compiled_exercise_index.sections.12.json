@@ -874,7 +874,7 @@
             }
           },
           "queries": [
-            "+(text 12-12 satisfies the properties in Eq 12-13) +(printed page 990) --QDF=0",
+            "+(text Show that the distance measure Dab in Eq) +(printed page 990) --QDF=0",
             "+(exercise 12.6) +(printed page 990) --QDF=0",
             "+(exercise 12.7) +(printed page 990) --QDF=0"
           ],
@@ -886,7 +886,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "(12-12) satisﬁes the properties in Eq. (12-13).",
+              "value": "Show that the distance measure Dab (,) in Eq.",
               "verification_mode": "text_or_visual"
             },
             {
@@ -926,13 +926,18 @@
             "end_before": null
           },
           "queries": [
-            "+(equation 12-13) +(printed page 920) --QDF=0",
-            "+(12-13) +(equation) +(printed page 920) --QDF=0"
+            "+(equation 12-12) +(printed page 920) --QDF=0",
+            "+(equation 12-13) +(printed page 920) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
               "value": "920",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "12-12",
               "verification_mode": "visual_required"
             },
             {
@@ -951,6 +956,50 @@
         }
       ],
       "reference_targets": [
+        {
+          "kind": "equation",
+          "target_id": "12-12",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 921,
+                "pdf_page_number": 922,
+                "printed_page_label": "920"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 12-12) +(printed page 920) --QDF=0",
+                "+(12-12) +(equation) +(printed page 920) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "920",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "12-12",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
         {
           "kind": "equation",
           "target_id": "12-13",
@@ -1033,7 +1082,7 @@
             }
           },
           "queries": [
-            "+(text if and only if a and b are identical strings) +(printed page 990) --QDF=0",
+            "+(text Show that b max a b a in Eq 12-14 is 0) +(printed page 990) --QDF=0",
             "+(exercise 12.7) +(printed page 990) --QDF=0",
             "+(exercise 12.8) +(printed page 990) --QDF=0"
           ],
@@ -1045,7 +1094,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "if and only if a and b are identical strings.",
+              "value": "* Show that b = max a , b a in Eq. (12-14) is 0",
               "verification_mode": "text_or_visual"
             },
             {
@@ -1231,14 +1280,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 928,
             "pdf_page_number": 929,
             "printed_page_label": "927"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "12.5"
+            },
             "end_before": null
           },
           "queries": [
@@ -1261,6 +1313,52 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [
+              "12.5"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 929,
+            "pdf_page_number": 930,
+            "printed_page_label": "928"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "example",
+              "value": "12.6"
+            }
+          },
+          "queries": [
+            "+(text Figure 12.20 shows a section of this planar surface Note that the classes were separated effectively) +(printed page 928) --QDF=0",
+            "+(example 12.6) +(printed page 928) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "928",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 12.20 shows a section of this planar surface. Note that the classes were separated effectively.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_example",
+              "value": "12.6",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -1275,14 +1373,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 928,
                 "pdf_page_number": 929,
                 "printed_page_label": "927"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "12.5"
+                },
                 "end_before": null
               },
               "queries": [
@@ -1298,6 +1399,52 @@
                 {
                   "kind": "contains_example",
                   "value": "12.5",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "12.5"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 929,
+                "pdf_page_number": 930,
+                "printed_page_label": "928"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "example",
+                  "value": "12.6"
+                }
+              },
+              "queries": [
+                "+(text Figure 12.20 shows a section of this planar surface Note that the classes were separated effectively) +(printed page 928) --QDF=0",
+                "+(example 12.6) +(printed page 928) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "928",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Figure 12.20 shows a section of this planar surface. Note that the classes were separated effectively.",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_example",
+                  "value": "12.6",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -1876,7 +2023,7 @@
             }
           },
           "queries": [
-            "+(text using a 0-1 loss function Prove that these deci) +(printed page 991) --QDF=0",
+            "+(text Hint The probability of error pe is 1 pc) +(printed page 991) --QDF=0",
             "+(exercise 12.12) +(printed page 991) --QDF=0",
             "+(exercise 12.13) +(printed page 991) --QDF=0"
           ],
@@ -1888,7 +2035,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "using a 0-1 loss function. Prove that these deci-",
+              "value": "(Hint: The probability of error pe () is 1 −pc (),",
               "verification_mode": "text_or_visual"
             },
             {
@@ -1990,14 +2137,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 938,
             "pdf_page_number": 939,
             "printed_page_label": "937"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "12.7"
+            },
             "end_before": null
           },
           "queries": [
@@ -2020,6 +2170,44 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [
+              "12.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 939,
+            "pdf_page_number": 940,
+            "printed_page_label": "938"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Figure 12.24 a shows the boundary defined by this equation As you can see it clearly) +(printed page 938) --QDF=0",
+            "+(Figure 12.24 a shows the boundary defined by this equation As you can see it clearly) +(text) +(printed page 938) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "938",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 12.24(a) shows the boundary deﬁned by this equation. As you can see, it clearly separates the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -2034,14 +2222,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 938,
                 "pdf_page_number": 939,
                 "printed_page_label": "937"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "12.7"
+                },
                 "end_before": null
               },
               "queries": [
@@ -2058,6 +2249,44 @@
                   "kind": "contains_example",
                   "value": "12.7",
                   "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "12.7"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 939,
+                "pdf_page_number": 940,
+                "printed_page_label": "938"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Figure 12.24 a shows the boundary defined by this equation As you can see it clearly) +(printed page 938) --QDF=0",
+                "+(Figure 12.24 a shows the boundary defined by this equation As you can see it clearly) +(text) +(printed page 938) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "938",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Figure 12.24(a) shows the boundary deﬁned by this equation. As you can see, it clearly separates the",
+                  "verification_mode": "text_or_visual"
                 }
               ],
               "coverage": {
@@ -4073,7 +4302,7 @@
             }
           },
           "queries": [
-            "+(text in that equation are computed in forward propaga) +(printed page 992) --QDF=0",
+            "+(text Show that the dimensions of matrix D l in Eq) +(printed page 992) --QDF=0",
             "+(exercise 12.27) +(printed page 992) --QDF=0",
             "+(exercise 12.28) +(printed page 992) --QDF=0"
           ],
@@ -4085,7 +4314,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "in that equation are computed in forward propaga-",
+              "value": "* Show that the dimensions of matrix D() ℓ in Eq.",
               "verification_mode": "text_or_visual"
             },
             {
@@ -4110,8 +4339,90 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 959,
+            "pdf_page_number": 960,
+            "printed_page_label": "958"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 12-79) +(printed page 958) --QDF=0",
+            "+(12-79) +(equation) +(printed page 958) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "958",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "12-79",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "equation",
+          "target_id": "12-79",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 959,
+                "pdf_page_number": 960,
+                "printed_page_label": "958"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 12-79) +(printed page 958) --QDF=0",
+                "+(12-79) +(equation) +(printed page 958) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "958",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "12-79",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
     },
     "12.28": {
       "data_version": "3",

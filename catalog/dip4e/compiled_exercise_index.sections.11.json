@@ -4566,14 +4566,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 826,
             "pdf_page_number": 827,
             "printed_page_label": "825"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "11.2"
+            },
             "end_before": null
           },
           "queries": [
@@ -4596,6 +4599,52 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [
+              "11.2"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 827,
+            "pdf_page_number": 828,
+            "printed_page_label": "826"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "example",
+              "value": "11.3"
+            }
+          },
+          "queries": [
+            "+(text the other sgn expression Also reinitialization means that we start fresh again by examining the next) +(printed page 826) --QDF=0",
+            "+(example 11.3) +(printed page 826) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "826",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the other sgn expression. Also, reinitialization means that we start fresh again by examining the next",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_example",
+              "value": "11.3",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -4610,14 +4659,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 826,
                 "pdf_page_number": 827,
                 "printed_page_label": "825"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "11.2"
+                },
                 "end_before": null
               },
               "queries": [
@@ -4633,6 +4685,52 @@
                 {
                   "kind": "contains_example",
                   "value": "11.2",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.2"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 827,
+                "pdf_page_number": 828,
+                "printed_page_label": "826"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "example",
+                  "value": "11.3"
+                }
+              },
+              "queries": [
+                "+(text the other sgn expression Also reinitialization means that we start fresh again by examining the next) +(printed page 826) --QDF=0",
+                "+(example 11.3) +(printed page 826) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "826",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "the other sgn expression. Also, reinitialization means that we start fresh again by examining the next",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_example",
+                  "value": "11.3",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -12692,14 +12790,17 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
-          "page_role": "single",
+          "page_role": "start",
           "page": {
             "pdf_page_index": 864,
             "pdf_page_number": 865,
             "printed_page_label": "863"
           },
           "content_window": {
-            "start_at": null,
+            "start_at": {
+              "kind": "example",
+              "value": "11.16"
+            },
             "end_before": null
           },
           "queries": [
@@ -12722,6 +12823,88 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [
+              "11.16"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 865,
+            "pdf_page_number": 866,
+            "printed_page_label": "864"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text nothing would be gained Suppose however that we keep and or transmit only the two principal) +(printed page 864) --QDF=0",
+            "+(nothing would be gained Suppose however that we keep and or transmit only the two principal) +(text) +(printed page 864) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "864",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "nothing would be gained. Suppose, however, that we keep and/or transmit only the two principal com-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 866,
+            "pdf_page_number": 867,
+            "printed_page_label": "865"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "example",
+              "value": "11.17"
+            }
+          },
+          "queries": [
+            "+(text between them If they were shown without enhancement the first five images would appear almost all) +(printed page 865) --QDF=0",
+            "+(example 11.17) +(printed page 865) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "865",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "between them. If they were shown without enhancement, the ﬁrst ﬁve images would appear almost all",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_example",
+              "value": "11.17",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -12736,14 +12919,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 864,
                 "pdf_page_number": 865,
                 "printed_page_label": "863"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "11.16"
+                },
                 "end_before": null
               },
               "queries": [
@@ -12759,6 +12945,88 @@
                 {
                   "kind": "contains_example",
                   "value": "11.16",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.16"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 865,
+                "pdf_page_number": 866,
+                "printed_page_label": "864"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text nothing would be gained Suppose however that we keep and or transmit only the two principal) +(printed page 864) --QDF=0",
+                "+(nothing would be gained Suppose however that we keep and or transmit only the two principal) +(text) +(printed page 864) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "864",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "nothing would be gained. Suppose, however, that we keep and/or transmit only the two principal com-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 866,
+                "pdf_page_number": 867,
+                "printed_page_label": "865"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "example",
+                  "value": "11.17"
+                }
+              },
+              "queries": [
+                "+(text between them If they were shown without enhancement the first five images would appear almost all) +(printed page 865) --QDF=0",
+                "+(example 11.17) +(printed page 865) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "865",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "between them. If they were shown without enhancement, the ﬁrst ﬁve images would appear almost all",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_example",
+                  "value": "11.17",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -12810,7 +13078,7 @@
             }
           },
           "queries": [
-            "+(text the covariance matrix given in Eq 11-52 is) +(printed page 900) --QDF=0",
+            "+(text For a set of images of size 64 64 assume that) +(printed page 900) --QDF=0",
             "+(exercise 11.27) +(printed page 900) --QDF=0",
             "+(exercise 11.28) +(printed page 900) --QDF=0"
           ],
@@ -12822,7 +13090,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "the covariance matrix given in Eq. (11-52) is",
+              "value": "For a set of images of size 64 × 64 , assume that",
               "verification_mode": "text_or_visual"
             },
             {

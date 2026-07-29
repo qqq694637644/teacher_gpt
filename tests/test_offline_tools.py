@@ -84,7 +84,7 @@ def test_prompt_validator_rejects_invented_page_tool() -> None:
         "gptGetSectionLocator gptGetExerciseLocator gptListChapterExercises "
         "file_search.msearch file_search.mclick contains_exercise "
         "required_evidence content_window reference_retrieval_plan data_version "
-        "只传入一条 query "
+        "传递依赖闭包 只传入一条 query "
         "EXERCISE_CATALOG_UNAVAILABLE"
     )
     validate_prompt(valid)

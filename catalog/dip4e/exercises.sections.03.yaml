@@ -604,13 +604,13 @@ exercises:
         value: '3.13'
     queries:
     - +(3.12) +(printed page 197) --QDF=0
-    - +(image so that they will have the specified pz) +(printed page 197) --QDF=0
+    - +(image so that they will have the specified pz z) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
       verification_mode: visual_required
     - kind: contains_text
-      value: image so that they will have the speciﬁed pz
+      value: image so that they will have the speciﬁed pz z()
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '3.12'
@@ -651,13 +651,13 @@ exercises:
         value: '3.14'
     queries:
     - +(3.13) +(printed page 197) --QDF=0
-    - +(two end points Does this property always hold) +(printed page 197) --QDF=0
+    - +(G 1 sk from Eq 3-23 is the mirror image of) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
       verification_mode: visual_required
     - kind: contains_text
-      value: two end points. Does this property always hold
+      value: '[G −1( sk ) from Eq. (3-23)] is the mirror image of'
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '3.13'
@@ -763,13 +763,13 @@ exercises:
         value: '3.16'
     queries:
     - +(3.15) +(printed page 197) --QDF=0
-    - +(What is the behavior of Eq 3-35 when a) +(printed page 197) --QDF=0
+    - +(What is the behavior of Eq 3-35 when a b 0) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
       verification_mode: visual_required
     - kind: contains_text
-      value: What is the behavior of Eq. (3-35) when a
+      value: What is the behavior of Eq. (3-35) when a = b =0?
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '3.15'
@@ -946,13 +946,13 @@ exercises:
         value: '3.19'
     queries:
     - +(3.18) +(printed page 198) --QDF=0
-    - +(large ellipse in Fig 3.28 when the kernel is) +(printed page 198) --QDF=0
+    - +(nel is centered on point 23 of f and then) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
       verification_mode: visual_required
     - kind: contains_text
-      value: large ellipse in Fig. 3.28 when the kernel is
+      value: nel is centered on point (,) 23 of f; and then
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '3.18'
@@ -1054,13 +1054,13 @@ exercises:
         value: '3.21'
     queries:
     - +(3.20) +(printed page 198) --QDF=0
-    - +(tation when the kernel is centered at point) +(printed page 198) --QDF=0
+    - +(23 2nd row 3rd col of f and then show) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
       verification_mode: visual_required
     - kind: contains_text
-      value: tation when the kernel is centered at point
+      value: (,) 23 (2nd row, 3rd col) of f and then show
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '3.20'

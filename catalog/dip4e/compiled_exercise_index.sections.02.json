@@ -3215,7 +3215,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text Suppose that a flat area with center at) +(printed page 114) --QDF=0",
+            "+(text Suppose that a flat area with center at x 0 y 0 is) +(printed page 114) --QDF=0",
             "+(exercise 2.12) +(printed page 114) --QDF=0"
           ],
           "required_evidence": [
@@ -3226,7 +3226,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "* Suppose that a ﬂat area with center at (",
+              "value": "* Suppose that a ﬂat area with center at ( x 0 , y 0 is )",
               "verification_mode": "text_or_visual"
             },
             {
@@ -3379,7 +3379,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text Suppose that a flat area with center at) +(printed page 114) --QDF=0",
+            "+(text Suppose that a flat area with center at x 0 y 0 is) +(printed page 114) --QDF=0",
             "+(exercise 2.12) +(printed page 114) --QDF=0"
           ],
           "required_evidence": [
@@ -3390,7 +3390,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "* Suppose that a ﬂat area with center at (",
+              "value": "* Suppose that a ﬂat area with center at ( x 0 , y 0 is )",
               "verification_mode": "text_or_visual"
             },
             {
@@ -3475,7 +3475,7 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Suppose that a flat area with center at) +(printed page 114) --QDF=0",
+                "+(text Suppose that a flat area with center at x 0 y 0 is) +(printed page 114) --QDF=0",
                 "+(exercise 2.12) +(printed page 114) --QDF=0"
               ],
               "required_evidence": [
@@ -3486,7 +3486,7 @@
                 },
                 {
                   "kind": "contains_text",
-                  "value": "* Suppose that a ﬂat area with center at (",
+                  "value": "* Suppose that a ﬂat area with center at ( x 0 , y 0 is )",
                   "verification_mode": "text_or_visual"
                 },
                 {
@@ -4235,7 +4235,7 @@
             }
           },
           "queries": [
-            "+(text hole pixels is not acceptable Hint Use the con) +(printed page 115) --QDF=0",
+            "+(text ground is the subset of pixels of Ru c that are not) +(printed page 115) --QDF=0",
             "+(exercise 2.17) +(printed page 115) --QDF=0",
             "+(exercise 2.18) +(printed page 115) --QDF=0"
           ],
@@ -4247,7 +4247,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "hole pixels” is not acceptable. (Hint: Use the con-",
+              "value": "ground is the subset of pixels of ( Ru ) c that are not",
               "verification_mode": "text_or_visual"
             },
             {
@@ -9044,7 +9044,7 @@
             }
           },
           "queries": [
-            "+(text Show that image averaging can be done recur) +(printed page 116) --QDF=0",
+            "+(text sively That is show that if ak is the average of) +(printed page 116) --QDF=0",
             "+(exercise 2.25) +(printed page 116) --QDF=0",
             "+(exercise 2.26) +(printed page 116) --QDF=0"
           ],
@@ -9056,7 +9056,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "* Show that image averaging can be done recur-",
+              "value": "sively. That is, show that if ak ()is the average of",
               "verification_mode": "text_or_visual"
             },
             {
@@ -9172,9 +9172,52 @@
             "end_before": null
           },
           "queries": [
-            "+(example 2.5) +(printed page 86) --QDF=0",
             "+(equation 2-27) +(printed page 86) --QDF=0",
             "+(equation 2-28) +(printed page 86) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "86",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "2-27",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "2-28",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 87,
+            "pdf_page_number": 88,
+            "printed_page_label": "86"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "example",
+              "value": "2.5"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(example 2.5) +(printed page 86) --QDF=0",
+            "+(2.5) +(example) +(printed page 86) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9186,15 +9229,51 @@
               "kind": "contains_example",
               "value": "2.5",
               "verification_mode": "visual_required"
-            },
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "2.5"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 88,
+            "pdf_page_number": 89,
+            "printed_page_label": "87"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "example",
+              "value": "2.6"
+            }
+          },
+          "queries": [
+            "+(text tions of their noise level is only about 3 intensity levels According to the discussion in) +(printed page 87) --QDF=0",
+            "+(example 2.6) +(printed page 87) --QDF=0"
+          ],
+          "required_evidence": [
             {
-              "kind": "contains_equation",
-              "value": "2-27",
+              "kind": "printed_page_equals",
+              "value": "87",
               "verification_mode": "visual_required"
             },
             {
-              "kind": "contains_equation",
-              "value": "2-28",
+              "kind": "contains_text",
+              "value": "tions of their noise level is only about 3 intensity levels According to the discussion in connection with",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_example",
+              "value": "2.6",
               "verification_mode": "visual_required"
             }
           ],
@@ -9216,14 +9295,17 @@
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 87,
                 "pdf_page_number": 88,
                 "printed_page_label": "86"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "2.5"
+                },
                 "end_before": null
               },
               "queries": [
@@ -9239,6 +9321,52 @@
                 {
                   "kind": "contains_example",
                   "value": "2.5",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "2.5"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 88,
+                "pdf_page_number": 89,
+                "printed_page_label": "87"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "example",
+                  "value": "2.6"
+                }
+              },
+              "queries": [
+                "+(text tions of their noise level is only about 3 intensity levels According to the discussion in) +(printed page 87) --QDF=0",
+                "+(example 2.6) +(printed page 87) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "87",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "tions of their noise level is only about 3 intensity levels According to the discussion in connection with",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_example",
+                  "value": "2.6",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -14326,6 +14454,42 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 52,
+            "pdf_page_number": 53,
+            "printed_page_label": "51"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 2.3) +(printed page 51) --QDF=0",
+            "+(2.3) +(figure) +(printed page 51) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "51",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "2.3",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
           "page_role": "single",
           "page": {
             "pdf_page_index": 115,

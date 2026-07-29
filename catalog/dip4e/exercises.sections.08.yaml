@@ -533,13 +533,13 @@ exercises:
         value: '8.12'
     queries:
     - +(8.11) +(printed page 633) --QDF=0
-    - +(Compute Golomb code Gn) +(printed page 633) --QDF=0
+    - +(Compute Golomb code Gn 3 for 0 n 15) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
       verification_mode: visual_required
     - kind: contains_text
-      value: Compute Golomb code Gn
+      value: Compute Golomb code Gn 3() for 0 ≤ n ≤ 15 .
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '8.11'
@@ -679,13 +679,13 @@ exercises:
         value: '8.15'
     queries:
     - +(8.14) +(printed page 633) --QDF=0
-    - +(Compute exponential Golomb code G) +(printed page 633) --QDF=0
+    - +(Compute exponential Golomb code G exp n for) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
       verification_mode: visual_required
     - kind: contains_text
-      value: Compute exponential Golomb code G
+      value: Compute exponential Golomb code G exp() n for
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '8.14'

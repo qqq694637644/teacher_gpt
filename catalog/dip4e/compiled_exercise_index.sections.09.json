@@ -2977,6 +2977,47 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
+            "pdf_page_index": 646,
+            "pdf_page_number": 647,
+            "printed_page_label": "645"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 9-12) +(printed page 645) --QDF=0",
+            "+(figure 9.8) +(printed page 645) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "645",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "9-12",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "9.8",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
             "pdf_page_index": 695,
             "pdf_page_number": 696,
             "printed_page_label": "694"

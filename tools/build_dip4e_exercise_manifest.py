@@ -41,6 +41,7 @@ from tools.extract_pdf_candidates import (
     extract_lines,
     extract_page_anchors,
     extract_problem_headings,
+    merge_visual_lines,
     page_references,
     sha256_file,
 )
@@ -150,10 +151,6 @@ def _bbox_key(page_width: float, bbox: tuple[float, float, float, float] | list[
     return (_column(page_width, float(bbox[0])), float(bbox[1]), float(bbox[0]))
 
 
-def _line_key(page: fitz.Page, line: TextLine):
-    return _bbox_key(page.rect.width, line.bbox)
-
-
 def _at_or_after_boundary(
     page_width: float,
     bbox: tuple[float, float, float, float] | list[float],
@@ -229,7 +226,7 @@ def _window_lines(
         ):
             continue
         lines.append(line)
-    return sorted(lines, key=lambda item: _line_key(page, item))
+    return merge_visual_lines(float(page.rect.width), lines)
 
 
 def _distinctive_text(lines: list[TextLine], exercise_id: str) -> str | None:

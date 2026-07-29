@@ -578,13 +578,13 @@ exercises:
       end_before: null
     queries:
     - +(2.12) +(printed page 114) --QDF=0
-    - +(Suppose that a flat area with center at) +(printed page 114) --QDF=0
+    - +(Suppose that a flat area with center at x 0 y 0 is) +(printed page 114) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '114'
       verification_mode: visual_required
     - kind: contains_text
-      value: '* Suppose that a ﬂat area with center at ('
+      value: '* Suppose that a ﬂat area with center at ( x 0 , y 0 is )'
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '2.12'
@@ -846,13 +846,13 @@ exercises:
         value: '2.18'
     queries:
     - +(2.17) +(printed page 115) --QDF=0
-    - +(hole pixels is not acceptable Hint Use the con) +(printed page 115) --QDF=0
+    - +(ground is the subset of pixels of Ru c that are not) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
       verification_mode: visual_required
     - kind: contains_text
-      value: 'hole pixels” is not acceptable. (Hint: Use the con-'
+      value: ground is the subset of pixels of ( Ru ) c that are not
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '2.17'
@@ -1271,13 +1271,13 @@ exercises:
         value: '2.26'
     queries:
     - +(2.25) +(printed page 116) --QDF=0
-    - +(Show that image averaging can be done recur) +(printed page 116) --QDF=0
+    - +(sively That is show that if ak is the average of) +(printed page 116) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '116'
       verification_mode: visual_required
     - kind: contains_text
-      value: '* Show that image averaging can be done recur-'
+      value: sively. That is, show that if ak ()is the average of
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '2.25'
