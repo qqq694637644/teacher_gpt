@@ -1,345 +1,416 @@
 openapi: 3.1.0
 info:
-  title: One-Book Teaching GPT Backend
-  version: 0.1.0
-  description: Actions schema for one textbook GPT. The backend uses TEACHING_GPT_DEFAULT_BOOK_ID.
-servers:
-  - url: https://YOUR-DOMAIN.example.com
-security:
-  - bearerAuth: []
+  title: Teacher GPT Locator API
+  description: Strict one-book GPT Action API. It returns page-by-page retrieval plans for the original PDF and never returns
+    textbook content.
+  version: 3.0.0
 paths:
-  /gpt/toc:
+  /gpt/section-locators/{section_id}:
     get:
-      operationId: gptGetTableOfContents
-      summary: Get the table of contents for the GPT's bound textbook.
-      responses:
-        '200':
-          description: Table of contents.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TocResponse'
-  /gpt/sections/{section_id}:
-    get:
-      operationId: gptGetSection
-      summary: Get a structured section pack by section id, such as 2.4.4. Long sections are returned in explicit text windows.
+      tags:
+      - gpt
+      summary: Get Section Locator
+      operationId: gptGetSectionLocator
       parameters:
-        - name: section_id
-          in: path
-          required: true
-          schema:
-            type: string
-          description: Section id or alias, e.g. 2.4.4.
-        - name: text_offset
-          in: query
-          required: false
-          schema:
-            type: integer
-            default: 0
-            minimum: 0
-          description: Character offset into section text_blocks for continuing a long section.
-        - name: text_limit
-          in: query
-          required: false
-          schema:
-            type: integer
-            default: 12000
-            minimum: 1
-            maximum: 50000
-          description: Maximum section text characters to return. Use content.next_offset to continue.
+      - name: section_id
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Section Id
       responses:
         '200':
-          description: Section pack including text, figure captions, equations, examples, pages, and context.
+          description: Successful Response
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/SectionPack'
+                $ref: '#/components/schemas/SectionLocator'
         '404':
-          description: Section not found.
-  /gpt/search:
-    get:
-      operationId: gptSearchBook
-      summary: Search concepts, headings, or keywords in the GPT's bound textbook.
-      parameters:
-        - name: q
-          in: query
-          required: true
-          schema:
-            type: string
-          description: User query, such as 图像插值 or image interpolation.
-        - name: limit
-          in: query
-          required: false
-          schema:
-            type: integer
-            default: 8
-            minimum: 1
-            maximum: 20
-      responses:
-        '200':
-          description: Search results.
+          description: Section id does not exist.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/SearchResponse'
-  /gpt/figures/{figure_id}:
-    get:
-      operationId: gptGetFigure
-      summary: Get a figure by id, such as 2.27 or Fig 2.27.
-      parameters:
-        - name: figure_id
-          in: path
-          required: true
-          schema:
-            type: string
-          description: Figure id, e.g. 2.27.
-      responses:
-        '200':
-          description: Figure metadata, caption, nearby text context, and related sections.
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/FigureResponse'
-        '404':
-          description: Figure not found.
-  /gpt/sections/{section_id}/prerequisites:
-    get:
-      operationId: gptGetPrerequisites
-      summary: Get prerequisite sections for a section.
-      parameters:
-        - name: section_id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: limit
-          in: query
-          required: false
-          schema:
-            type: integer
-            default: 5
-            minimum: 1
-            maximum: 10
-      responses:
-        '200':
-          description: Prerequisite section list.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PrerequisitesResponse'
+                $ref: '#/components/schemas/HTTPValidationError'
 components:
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
   schemas:
-    TocResponse:
-      type: object
+    BoundaryAnchor:
       properties:
+        kind:
+          type: string
+          enum:
+          - heading
+          - figure
+          - equation
+          - example
+          - table
+          - text
+          title: Kind
+        value:
+          type: string
+          minLength: 1
+          title: Value
+      additionalProperties: false
+      type: object
+      required:
+      - kind
+      - value
+      title: BoundaryAnchor
+    ContentWindow:
+      properties:
+        start_at:
+          anyOf:
+          - $ref: '#/components/schemas/BoundaryAnchor'
+          - type: 'null'
+        end_before:
+          anyOf:
+          - $ref: '#/components/schemas/BoundaryAnchor'
+          - type: 'null'
+      additionalProperties: false
+      type: object
+      title: ContentWindow
+    ErrorResponse:
+      properties:
+        error_code:
+          type: string
+          const: SECTION_NOT_FOUND
+          title: Error Code
+        detail:
+          type: string
+          title: Detail
+      additionalProperties: false
+      type: object
+      required:
+      - error_code
+      - detail
+      title: ErrorResponse
+    EvidenceRequirement:
+      properties:
+        kind:
+          type: string
+          enum:
+          - printed_page_equals
+          - contains_heading
+          - contains_figure
+          - contains_equation
+          - contains_example
+          - contains_table
+          - contains_text
+          - running_header_contains
+          title: Kind
+        value:
+          type: string
+          minLength: 1
+          title: Value
+        verification_mode:
+          type: string
+          enum:
+          - visual_required
+          - text_or_visual
+          title: Verification Mode
+      additionalProperties: false
+      type: object
+      required:
+      - kind
+      - value
+      - verification_mode
+      title: EvidenceRequirement
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    HeadingLocation:
+      properties:
+        page:
+          $ref: '#/components/schemas/PageReference'
+        bbox:
+          items:
+            type: number
+          type: array
+          maxItems: 4
+          minItems: 4
+          title: Bbox
+      additionalProperties: false
+      type: object
+      required:
+      - page
+      - bbox
+      title: HeadingLocation
+    HealthResponse:
+      properties:
+        status:
+          type: string
+          const: ok
+          title: Status
+          default: ok
+        data_version:
+          type: string
+          const: '3'
+          title: Data Version
+          default: '3'
         book_id:
           type: string
-        title:
-          type: string
-          nullable: true
-        items:
-          type: array
-          items:
-            $ref: '#/components/schemas/TocItem'
-    TocItem:
+          title: Book Id
+        section_count:
+          type: integer
+          minimum: 1.0
+          title: Section Count
+        page_count:
+          type: integer
+          minimum: 1.0
+          title: Page Count
+      additionalProperties: false
       type: object
+      required:
+      - book_id
+      - section_count
+      - page_count
+      title: HealthResponse
+    PageCoverage:
       properties:
-        section_id:
-          type: string
-        title:
-          type: string
-        level:
-          type: integer
-        page_start:
-          type: integer
-          nullable: true
-        page_end:
-          type: integer
-          nullable: true
-        parent_section_id:
-          type: string
-          nullable: true
-        section_type:
-          type: string
-    SectionPack:
+        subheadings:
+          items:
+            type: string
+          type: array
+          title: Subheadings
+        figure_ids:
+          items:
+            type: string
+          type: array
+          title: Figure Ids
+        equation_ids:
+          items:
+            type: string
+          type: array
+          title: Equation Ids
+        example_ids:
+          items:
+            type: string
+          type: array
+          title: Example Ids
+        table_ids:
+          items:
+            type: string
+          type: array
+          title: Table Ids
+      additionalProperties: false
       type: object
+      title: PageCoverage
+    PageRange:
+      properties:
+        pdf_page_index_start:
+          type: integer
+          minimum: 0.0
+          title: Pdf Page Index Start
+        pdf_page_index_end:
+          type: integer
+          minimum: 0.0
+          title: Pdf Page Index End
+        pdf_page_number_start:
+          type: integer
+          minimum: 1.0
+          title: Pdf Page Number Start
+        pdf_page_number_end:
+          type: integer
+          minimum: 1.0
+          title: Pdf Page Number End
+        printed_page_start:
+          type: string
+          minLength: 1
+          title: Printed Page Start
+        printed_page_end:
+          type: string
+          minLength: 1
+          title: Printed Page End
+      additionalProperties: false
+      type: object
+      required:
+      - pdf_page_index_start
+      - pdf_page_index_end
+      - pdf_page_number_start
+      - pdf_page_number_end
+      - printed_page_start
+      - printed_page_end
+      title: PageRange
+    PageReference:
+      properties:
+        pdf_page_index:
+          type: integer
+          minimum: 0.0
+          title: Pdf Page Index
+        pdf_page_number:
+          type: integer
+          minimum: 1.0
+          title: Pdf Page Number
+        printed_page_label:
+          type: string
+          minLength: 1
+          title: Printed Page Label
+      additionalProperties: false
+      type: object
+      required:
+      - pdf_page_index
+      - pdf_page_number
+      - printed_page_label
+      title: PageReference
+    PageRetrievalStep:
+      properties:
+        sequence:
+          type: integer
+          minimum: 1.0
+          title: Sequence
+        page_role:
+          type: string
+          enum:
+          - start
+          - body
+          - end
+          - single
+          title: Page Role
+        page:
+          $ref: '#/components/schemas/PageReference'
+        content_window:
+          $ref: '#/components/schemas/ContentWindow'
+        queries:
+          items:
+            type: string
+          type: array
+          maxItems: 4
+          minItems: 2
+          title: Queries
+        required_evidence:
+          items:
+            $ref: '#/components/schemas/EvidenceRequirement'
+          type: array
+          minItems: 1
+          title: Required Evidence
+        coverage:
+          $ref: '#/components/schemas/PageCoverage'
+      additionalProperties: false
+      type: object
+      required:
+      - sequence
+      - page_role
+      - page
+      - queries
+      - required_evidence
+      title: PageRetrievalStep
+    SectionLocator:
       properties:
         data_version:
           type: string
-          enum: ['2']
+          const: '3'
+          title: Data Version
+          default: '3'
         book_id:
           type: string
+          minLength: 1
+          title: Book Id
+        section_kind:
+          type: string
+          enum:
+          - printed
+          - learning_unit
+          title: Section Kind
         section_id:
           type: string
-        resolved_section_id:
+          pattern: ^\d+(?:\.\d+)*$
+          title: Section Id
+        printed_section_id:
           type: string
-          nullable: true
+          pattern: ^\d+(?:\.\d+)*$
+          title: Printed Section Id
         parent_section_id:
-          type: string
-          nullable: true
+          anyOf:
+          - type: string
+            pattern: ^\d+(?:\.\d+)*$
+          - type: 'null'
+          title: Parent Section Id
         title:
           type: string
-        page_start:
-          type: integer
-          nullable: true
-        page_end:
-          type: integer
-          nullable: true
-        section_type:
+          minLength: 1
+          title: Title
+        source_heading:
           type: string
-        summary:
-          type: string
-          nullable: true
-        text_blocks:
-          type: array
-          items:
-            type: object
-            properties:
-              type:
-                type: string
-              text:
-                type: string
-              page_number:
-                type: integer
-                nullable: true
-        content:
-          $ref: '#/components/schemas/SectionContentMeta'
-        figures:
-          type: array
-          items:
-            $ref: '#/components/schemas/FigureRef'
-        equations:
-          type: array
-          items:
-            type: object
-        examples:
-          type: array
-          items:
-            type: object
-        source_pages:
-          type: array
-          items:
-            type: object
-            properties:
-              page_index:
-                type: integer
-              page_number:
-                type: integer
-        previous_sections:
-          type: array
-          items:
-            type: string
-        next_sections:
-          type: array
-          items:
-            type: string
-        prerequisites:
-          type: array
-          items:
-            type: string
-        warnings:
-          type: array
-          items:
-            type: string
-    SectionContentMeta:
-      type: object
-      properties:
-        window_status:
-          type: string
-          enum: [complete, partial]
-          description: Whether the requested response text window is complete; this is not a structural-quality signal.
-        is_truncated:
+          minLength: 1
+          title: Source Heading
+        source_heading_numbered:
           type: boolean
-        text_offset:
+          title: Source Heading Numbered
+        source_location:
+          $ref: '#/components/schemas/HeadingLocation'
+        source_level:
           type: integer
-          minimum: 0
-        text_limit:
+          minimum: 0.0
+          title: Source Level
+        hierarchy_depth:
           type: integer
-          nullable: true
-          minimum: 1
-        total_chars:
-          type: integer
-          minimum: 0
-        returned_chars:
-          type: integer
-          minimum: 0
-        next_offset:
-          type: integer
-          nullable: true
-          minimum: 0
-    FigureRef:
-      type: object
-      properties:
-        figure_id:
-          type: string
-        label:
-          type: string
-          nullable: true
-        caption:
-          type: string
-          nullable: true
-        page_index:
-          type: integer
-          nullable: true
-        page_number:
-          type: integer
-          nullable: true
-        context:
-          type: string
-          nullable: true
-    FigureResponse:
-      allOf:
-        - $ref: '#/components/schemas/FigureRef'
-        - type: object
-          properties:
-            book_id:
-              type: string
-            related_section_ids:
-              type: array
-              items:
-                type: string
-    SearchResponse:
-      type: object
-      properties:
-        book_id:
-          type: string
-        query:
-          type: string
-        results:
-          type: array
+          minimum: 1.0
+          title: Hierarchy Depth
+        page_range:
+          $ref: '#/components/schemas/PageRange'
+        outline:
           items:
-            $ref: '#/components/schemas/SearchResult'
-    SearchResult:
-      type: object
-      properties:
-        section_id:
-          type: string
-        title:
-          type: string
-        page_start:
-          type: integer
-          nullable: true
-        page_end:
-          type: integer
-          nullable: true
-        score:
-          type: number
-        snippet:
-          type: string
-          nullable: true
-    PrerequisitesResponse:
-      type: object
-      properties:
-        book_id:
-          type: string
-        section_id:
-          type: string
-        prerequisites:
+            type: string
           type: array
+          title: Outline
+        retrieval_plan:
           items:
-            $ref: '#/components/schemas/SearchResult'
-
+            $ref: '#/components/schemas/PageRetrievalStep'
+          type: array
+          minItems: 1
+          title: Retrieval Plan
+      additionalProperties: false
+      type: object
+      required:
+      - book_id
+      - section_kind
+      - section_id
+      - printed_section_id
+      - title
+      - source_heading
+      - source_heading_numbered
+      - source_location
+      - source_level
+      - hierarchy_depth
+      - page_range
+      - retrieval_plan
+      title: SectionLocator
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+        input:
+          title: Input
+        ctx:
+          type: object
+          title: Context
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+servers:
+- url: https://YOUR_DOMAIN

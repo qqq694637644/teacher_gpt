@@ -9,10 +9,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-COPY pyproject.toml README.md /app/
+COPY pyproject.toml README.md PROMPT.md /app/
 COPY app /app/app
 COPY scripts /app/scripts
+COPY tools /app/tools
 COPY examples /app/examples
+COPY catalog /app/catalog
 
 RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -e .
 

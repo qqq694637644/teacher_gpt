@@ -1,369 +1,267 @@
-# Teaching GPT Backend
+# Teacher GPT Locator API
 
-这是一个“**一本教材一个 GPT**”的 Python 后端项目。
+Version 3 is a breaking redesign for one personal-use textbook GPT.
 
-它的职责是：
+The original PDF in GPT file search is the only source of textbook content and page visuals. This backend returns strict, page-by-page retrieval plans for a requested section or learning-unit ID. It does not return textbook text, images, summaries, search results, prerequisites, or inferred content.
 
-- 离线解析 PDF 教材。
-- 抽取每页文本及行级版面信息（字体、字号、位置）。
-- 建立目录、小节、派生小节、图、公式、例题索引。
-- 给 OpenAI 自定义 GPT 的 Actions 提供接口。
-- GPT 调接口拿到结构化 `SectionPack` 后，再开始讲解。
+- Architecture: `ARCHITECTURE_REFACTOR.md`
+- Catalog build workflow and lessons: `CATALOG_BUILD_WORKFLOW.md`
+- GPT Builder instructions: `PROMPT.md`
+- Curated Action schema: `examples/openai_action_schema_one_book.yaml`
 
-它不是一个普通 PDF Chatbot。核心设计是：
+## Numbering model
 
-```text
-GPT = 教学对话层 + 工具调用层
-后端 = 教材解析层 + 章节定位层 + 文本与图注检索层
+### Printed sections
+
+Printed textbook identifiers are preserved exactly:
+
+```json
+{
+  "section_kind": "printed",
+  "section_id": "2.6",
+  "printed_section_id": "2.6"
+}
 ```
 
----
+### Project learning units
 
-## 1. 项目结构
+The reviewed Manifest stores an ordered heading tree but cannot store project IDs. The compiler assigns IDs from sibling order:
 
 ```text
-teaching_gpt_backend/
-├── app/
-│   ├── main.py
-│   ├── api/routes.py
-│   ├── core/
-│   │   ├── config.py
-│   │   ├── security.py
-│   │   └── errors.py
-│   ├── models/schemas.py
-│   ├── services/
-│   │   ├── pdf_ingestor.py
-│   │   ├── book_service.py
-│   │   ├── section_service.py
-│   │   ├── figure_service.py
-│   │   ├── search_service.py
-│   │   └── storage.py
-│   └── utils/text.py
-├── scripts/
-│   ├── ingest_book.py
-│   └── print_action_schema.py
-├── examples/
-│   ├── GPT_INSTRUCTIONS_zh.md
-│   ├── openai_action_schema_one_book.yaml
-│   ├── openai_action_schema_multi_book.yaml
-│   └── aliases_dip4e.json
-├── deploy/
-│   ├── Dockerfile
-│   └── docker-compose.yml
-├── tests/
-└── pyproject.toml
+2.6.1
+2.6.2
+2.6.3
 ```
 
----
+Children recursively append an ordinal:
 
-## 2. 本地启动
+```text
+2.6.5 Spatial Operations
+├── 2.6.5.1 Single-Pixel Operations
+├── 2.6.5.2 Neighborhood Operations
+├── 2.6.5.3 Geometric Transformations
+└── 2.6.5.4 Image Registration
+```
+
+The next top-level sibling is `2.6.6` (Vector and Matrix Operations); children never consume `2.6.6`.
+
+Sibling headings must use the same `source_level`. Child headings must be exactly one structural level deeper. The Manifest is rejected if it contains a manually supplied project `section_id`.
+
+## Runtime API
+
+The backend registers two routes:
+
+```text
+GET /health
+GET /gpt/section-locators/{section_id}
+```
+
+Only the locator route is exported to GPT Actions:
+
+```text
+gptGetSectionLocator
+```
+
+All Version 2 routes were deleted. There are no deprecated redirects or aliases.
+
+Example:
 
 ```bash
-cd teaching_gpt_backend
+curl -H "Authorization: Bearer $TEACHING_GPT_API_KEY" \
+  http://localhost:8000/gpt/section-locators/2.6.5
+```
+
+A locator contains:
+
+- the exact section ID and printed parent ID;
+- unambiguous PDF index, PDF physical number, and printed page label;
+- one retrieval step for every physical page in the section range;
+- at least two file-search queries per page;
+- required page evidence;
+- first/last-page content boundaries;
+- figures, equations, examples, and subheadings expected on each page.
+
+It never contains textbook prose.
+
+## Strict startup behavior
+
+The application loads this file during FastAPI startup:
+
+```text
+catalog/dip4e/compiled_locator_index.json
+```
+
+The repository includes the reviewed DIP4E catalog, so the default application and Docker configuration can start without a separate indexing step. `compiled_locator_index.json` is a strict package manifest that references one section shard per chapter. The runtime loads every shard and then validates the assembled `CompiledLocatorIndex`; missing, duplicate, malformed, or out-of-range shard data prevents startup.
+
+Startup still fails when the package or any shard is missing, uses another data version, contains unknown fields, has incomplete body-page coverage, has broken parent/child ranges, or does not represent a complete index.
+
+A partial catalog is not a runnable deployment.
+
+## Offline build workflow
+
+The source PDF is intentionally not committed to Git.
+
+For the full generation rationale, automation/manual-review boundary, failure modes, and reproducibility requirements, see `CATALOG_BUILD_WORKFLOW.md`.
+
+### 0. Verify the exact source file
+
+```bash
+python tools/verify_dip4e_source.py "D:\teaching_gpt_backend\1.pdf"
+```
+
+The verifier requires:
+
+- SHA-256 `7b2b48ed87b454970d0916e1dbd7a5160e33d28db0dcdeba647b61eb5d3b850b`;
+- 1022 physical pages;
+- known page-label mappings;
+- the nine Spatial Operations pages and anchors;
+- the complete 2.6 heading order, which assigns Spatial Operations to `2.6.5`.
+
+### 1. Extract candidates
+
+```bash
+python tools/extract_pdf_candidates.py \
+  "/path/to/Digital Image ProcessingRafael.pdf" \
+  build/dip4e/candidates.json
+```
+
+The extractor records:
+
+- the PDF SHA-256 and metadata;
+- all PDF page labels;
+- the PDF outline;
+- layout-derived heading candidates;
+- per-page Figure, Equation, and Example anchors.
+
+Candidate output is not runtime data and cannot be served by the API.
+The verified source currently yields 446 layout heading candidates: 12 chapter headings, 102 numbered section headings, and 332 unnumbered candidates. Two unnumbered author-name headings occur before any printed section and are excluded, leaving 444 catalog headings: 114 printed nodes and 330 learning units.
+
+### 2. Generate and review the complete Manifest
+
+Regenerate the deterministic source manifest:
+
+```bash
+python tools/build_dip4e_manifest.py \
+  "/path/to/Digital Image ProcessingRafael.pdf" \
+  catalog/dip4e/manifest.yaml
+```
+
+The committed Manifest covers all 1022 physical pages through explicit `front_matter`, `body`, and `back_matter` classifications. `manifest.yaml` is a strict package manifest referencing 12 per-chapter YAML shards. After assembly it stores 114 printed section nodes and ordered learning-unit trees. Project IDs are generated by the compiler, not authored in YAML.
+
+Every page retrieval step contains at least two queries and typed required evidence. `printed_page_equals` and content-window boundary evidence are marked `visual_required`; the local compiler validates that their anchors exist in the source PDF but does not claim that GPT file-search retrieval has been tested.
+
+### 3. Compile and verify against the source PDF
+
+```bash
+python tools/compile_locator_index.py \
+  catalog/dip4e/manifest.yaml \
+  "/path/to/Digital Image ProcessingRafael.pdf" \
+  catalog/dip4e/compiled_locator_index.json \
+  --report catalog/dip4e/validation_report.json
+```
+
+The compiler checks the PDF SHA-256, page count, every page label, heading-tree levels, generated ID collisions, parent/child range containment, sibling boundaries, complete body-page coverage, complete retrieval plans, and all strict schemas.
+
+It also compares every Manifest heading text, page index, bounding box, numbered state, and printed parent with every source-PDF heading candidate assigned to a printed section. Figure, Equation, Example, Table, heading, text, and query anchors are checked against the exact source page. Missing, extra, or wrong-page anchors prevent index generation.
+
+The generated `validation_report.json` distinguishes `source_pdf_verification_status: passed` from `file_search_retrieval_status: not_tested`. The latter requires a real GPT file-search acceptance run and is never inferred from the local PDF compiler.
+
+It writes no output when validation fails.
+
+### 4. Validate GPT instructions
+
+```bash
+python tools/validate_prompt.py
+```
+
+`PROMPT.md` must remain under 8000 characters and may reference only the real Action and file-search tools.
+
+## Local development
+
+```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -e .
-cp .env.example .env
+pip install -e ".[dev]"
+python -m pytest -q
+python -m ruff check .
 ```
 
-编辑 `.env`，至少改掉：
-
-```text
-TEACHING_GPT_API_KEY=你的长随机密钥
-TEACHING_GPT_DEFAULT_BOOK_ID=dip4e
-```
-
-启动：
+## Generate the GPT Action schema
 
 ```bash
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+python scripts/export_action_schema.py
 ```
 
-打开：
-
-```text
-http://localhost:8000/docs
-```
-
----
-
-## 3. 导入一本教材 PDF
-
-示例：
-
-```bash
-python scripts/ingest_book.py \
-  --book-id dip4e \
-  --pdf "/path/to/Digital Image ProcessingRafael.pdf" \
-  --title "Digital Image Processing" \
-  --author "Rafael C. Gonzalez, Richard E. Woods" \
-  --aliases examples/aliases_dip4e.json \
-  --overwrite
-```
-
-说明：
-
-- `book_id` 是这本书的稳定 ID。
-- `--aliases` 用于解决“用户习惯小节号”和“自动派生小节号”不一致的问题。
-- 对于你前面举的例子，`examples/aliases_dip4e.json` 把 `2.4.4` 映射到自动派生的 `2.4.5`，用于兼容“2.4.4 = Image Interpolation”的讲解习惯。
-- 派生小节必须同时满足文本形态和版面样式条件，不再仅凭大写比例判断。
-- 小节边界使用页码和行索引锚定；图、公式和例题从切分后的小节文本提取。
-
-导入后会生成：
-
-```text
-data/books/dip4e/
-├── original.pdf
-├── book_meta.json
-├── toc.json
-├── section_map.json
-├── section_aliases.json
-├── figure_map.json
-├── page_text.json
-└── section_packs/
-```
-
----
-
-## 4. 测试接口
-
-假设 `.env` 里：
-
-```text
-TEACHING_GPT_API_KEY=abc123
-```
-
-获取目录：
-
-```bash
-curl -H "Authorization: Bearer abc123" \
-  http://localhost:8000/gpt/toc
-```
-
-获取小节：
-
-```bash
-curl -H "Authorization: Bearer abc123" \
-  http://localhost:8000/gpt/sections/2.4.4
-```
-
-搜索概念：
-
-```bash
-curl -H "Authorization: Bearer abc123" \
-  "http://localhost:8000/gpt/search?q=image%20interpolation"
-```
-
-获取图注与附近文本：
-
-```bash
-curl -H "Authorization: Bearer abc123" \
-  http://localhost:8000/gpt/figures/2.27
-```
-
----
-
-## 5. 给 OpenAI 自定义 GPT 配置 Actions
-
-如果你是“一本教材一个 GPT”，推荐使用：
+The script imports the local FastAPI application and always writes:
 
 ```text
 examples/openai_action_schema_one_book.yaml
 ```
 
-你需要把里面的：
+It does not call or inspect a backend URL. The file uses JSON syntax, which is valid YAML/OpenAPI. The generated schema uses the placeholder server `https://YOUR_DOMAIN`; replace that value with the deployed API domain before importing it into GPT Builder.
 
-```yaml
-servers:
-  - url: https://YOUR-DOMAIN.example.com
-```
-
-改成你的公网后端地址。
-
-GPT Builder 中：
-
-1. 创建一个 GPT。
-2. Instructions 粘贴 `examples/GPT_INSTRUCTIONS_zh.md` 的内容，并根据当前教材微调。
-3. Actions 里导入 `openai_action_schema_one_book.yaml`。
-4. Authentication 设置为 Bearer/API Key。
-5. Key 值填你的 `TEACHING_GPT_API_KEY`。
-
-你的 GPT 以后调用的是：
-
-```text
-/gpt/toc
-/gpt/sections/{section_id}
-/gpt/search
-/gpt/figures/{figure_id}
-/gpt/sections/{section_id}/prerequisites
-```
-
-这些接口会自动使用 `.env` 里的：
-
-```text
-TEACHING_GPT_DEFAULT_BOOK_ID=dip4e
-```
-
-所以 GPT 不需要每次传 `book_id`。
-
----
-
-## 6. 多本书共用一个后端
-
-推荐架构：
-
-```text
-一本教材一个 GPT
-多个 GPT 共用一个 Teaching Backend
-后端用 book_id 区分教材
-```
-
-如果你想让 GPT 显式传 `book_id`，可以用：
-
-```text
-examples/openai_action_schema_multi_book.yaml
-```
-
-对应接口：
-
-```text
-/books/{book_id}/toc
-/books/{book_id}/sections/{section_id}
-/books/{book_id}/search
-/books/{book_id}/figures/{figure_id}
-/books/{book_id}/sections/{section_id}/prerequisites
-```
-
----
-
-## 7. SectionPack 返回结构
-
-核心接口：
-
-```text
-GET /gpt/sections/{section_id}
-```
-
-返回：
-
-```json
-{
-  "book_id": "dip4e",
-  "section_id": "2.4.4",
-  "resolved_section_id": "2.4.5",
-  "title": "Image Interpolation",
-  "page_start": 77,
-  "page_end": 78,
-  "summary": "...",
-  "content": {
-    "window_status": "complete",
-    "is_truncated": false,
-    "text_offset": 0,
-    "text_limit": null,
-    "total_chars": 1234,
-    "returned_chars": 1234,
-    "next_offset": null
-  },
-  "text_blocks": [
-    {"type": "paragraph", "text": "..."}
-  ],
-  "figures": [
-    {
-      "figure_id": "2.27",
-      "caption": "...",
-      "page_number": 78,
-      "context": "..."
-    }
-  ],
-  "equations": [
-    {"equation_id": "2-17", "context": "..."}
-  ],
-  "examples": [
-    {"example_id": "2.4", "title": "..."}
-  ],
-  "source_pages": [
-    {"page_index": 77, "page_number": 78}
-  ],
-  "previous_sections": ["..."],
-  "next_sections": ["..."],
-  "prerequisites": ["..."]
-}
-```
-
-GPT 拿到这个结构后，再按教学模板讲解。
-
----
-
-## 8. Docker 启动
+The server can start only after a complete compiled index exists:
 
 ```bash
-cd teaching_gpt_backend
-cp .env.example .env
-cd deploy
-docker compose up --build
+export TEACHING_GPT_LOCATOR_INDEX_PATH=./catalog/dip4e/compiled_locator_index.json
+export TEACHING_GPT_API_KEY=replace-me
+uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
-服务会在：
+## Docker
+
+```bash
+docker compose -f deploy/docker-compose.yml up --build
+```
+
+The image copies `catalog/` into the container. It intentionally exits during startup if `compiled_locator_index.json` has not been generated and committed.
+
+## Repository layout
 
 ```text
-http://localhost:8000
+app/
+  api/routes.py
+  core/
+  models/
+    locator.py
+    manifest.py
+  repositories/locator_repository.py
+  services/
+    index_compiler.py
+    locator_service.py
+catalog/
+  README.md
+  dip4e/
+    manifest.yaml
+    manifest.sections.01.yaml ... manifest.sections.12.yaml
+    compiled_locator_index.json
+    compiled_locator_index.sections.01.json ... compiled_locator_index.sections.12.json
+    validation_report.json
+tools/
+  extract_pdf_candidates.py
+  build_dip4e_manifest.py
+  compile_locator_index.py
+  validate_prompt.py
+scripts/
+  export_action_schema.py
+tests/
+PROMPT.md
+ARCHITECTURE_REFACTOR.md
+CATALOG_BUILD_WORKFLOW.md
 ```
 
----
+## Removed Version 2 capabilities
 
-## 9. 生产部署建议
+Version 3 physically removes:
 
-MVP 可以直接用 JSON 文件存储。后面数据量变大时，建议迁移为：
+- `SectionPack` and section text windows;
+- runtime PDF ingestion;
+- full-text search;
+- Figure and prerequisite APIs;
+- multi-book routes;
+- aliases and fuzzy ID fallback;
+- derived IDs authored by the parser;
+- image transport fields;
+- old JSON storage and automatic migration.
 
-```text
-PostgreSQL：book / section / figure metadata
-对象存储：原始 PDF（如需保留）
-pgvector 或 Qdrant：语义检索
-Redis：热门小节缓存
-```
-
-GPT Action 返回纯文本结构化数据，不通过后端传输图片。生产环境推荐：
-
-```text
-GPT Action 接口需要鉴权
-图相关回答仅依据图注、页码和附近文本
-```
-
-本次数据格式不兼容旧的图片字段和旧的纯文本页面记录。开发阶段不会静默忽略未知字段；升级后必须使用 `--overwrite` 重新导入教材，以生成行级版面锚点。旧 JSON 中残留的 `image_url`、`page_image_url` 或 `image_path` 会直接触发校验错误。
-
----
-
-## 10. 当前版本边界
-
-这个包已经实现了完整 MVP：
-
-- PDF 导入
-- 页面文本抽取
-- TOC 提取
-- 派生小节提取
-- 小节包生成
-- 图注索引
-- 公式编号索引
-- 例题编号索引
-- GPT Action API
-- One-book GPT API
-- Multi-book API
-- API Key 鉴权
-- Docker 部署
-
-需要后续增强的点：
-
-- 更强的公式 OCR / LaTeX 提取。
-- 向量检索。
-- 用户学习进度。
-- 自动测验和错题本。
-
-## 长小节 / 分块读取规则
-
-- 调用 `gptGetSection` 后，必须检查返回值里的 `content` 字段。
-- 如果 `content.is_truncated` 为 `true`，或 `content.window_status` 为 `partial`，说明当前只拿到了这一小节的一部分内容，不能暗示已经完整阅读整节。`window_status` 只描述本次传输窗口，不代表教材结构识别一定正确。
-- 如果用户要求“完整讲这一节”“继续讲”“后面还有吗”，并且 `content.next_offset` 不是 `null`，必须继续调用 `gptGetSection`，传入 `text_offset=content.next_offset`，直到 `content.next_offset` 为 `null` 或已经足够回答用户的问题。
-- 如果只讲当前已返回的部分，回答开头要明确说明：“这一小节较长，我先讲当前返回的这一部分；后续内容可以继续读取。”
-- 总结、判断整节结论、列完整公式或完整步骤之前，要确认 `content.next_offset` 为 `null`；否则只能说“基于当前已返回部分”。
-- 不要忽略 `warnings`。如果 warnings 提示 section text is partial，要把它当作内容未完整返回的信号。
-
+The only accepted runtime data contract is Version 3.
