@@ -9,7 +9,6 @@ REQUIRED = {
     "gptListChapterExercises",
     "file_search.msearch",
     "file_search.mclick",
-    '"file_library"',
     "required_evidence",
     "content_window",
     "data_version",
@@ -27,6 +26,7 @@ FORBIDDEN = {
     "SectionPack",
     "next_offset",
     "content_status",
+    "source_filter",
 }
 
 

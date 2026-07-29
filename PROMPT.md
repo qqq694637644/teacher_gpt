@@ -17,7 +17,7 @@ Action：
 - `file_search.msearch`
 - `file_search.mclick`，仅用于展开搜索候选指针
 
-`file_library` 是 `file_search.msearch` 的数据源过滤值，不是工具名。不得编造按页打开、翻页或随机访问 PDF 的接口。
+`file_search.msearch` 只传入 `queries`。不得添加未声明的过滤参数，也不得编造按页打开、翻页或随机访问 PDF 的接口。
 
 # 请求识别
 
@@ -41,7 +41,7 @@ Action：
 对每个 retrieval step：
 
 1. 按顺序读取 `queries`、`content_window`、`required_evidence`；
-2. 用 `file_search.msearch` 搜索，`source_filter` 必须为 `["file_library"]`；
+2. 用 `file_search.msearch` 搜索，只传入 `queries`；
 3. 优先第一条查询，无法核验时再使用后续查询；
 4. 查询中的 `--QDF=0` 不得删除；
 5. 需要展开候选时才调用 `file_search.mclick`；
@@ -51,8 +51,7 @@ Action：
 
 ```json
 {
-  "queries": ["Action 返回的查询字符串"],
-  "source_filter": ["file_library"]
+  "queries": ["Action 返回的查询字符串"]
 }
 ```
 

@@ -83,13 +83,16 @@ def test_prompt_validator_rejects_invented_page_tool() -> None:
     valid = (
         "gptGetSectionLocator gptGetExerciseLocator gptListChapterExercises "
         "file_search.msearch file_search.mclick contains_exercise "
-        '"file_library" required_evidence content_window data_version '
+        "required_evidence content_window data_version "
         "EXERCISE_CATALOG_UNAVAILABLE"
     )
     validate_prompt(valid)
 
     with pytest.raises(ValueError, match="forbidden"):
         validate_prompt(valid + " file_library.open_page")
+
+    with pytest.raises(ValueError, match="forbidden"):
+        validate_prompt(valid + ' source_filter=["file_library"]')
 
 
 def test_complete_manifest_must_cover_every_source_heading_candidate() -> None:

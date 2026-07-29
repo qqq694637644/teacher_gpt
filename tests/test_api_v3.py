@@ -1,10 +1,12 @@
 import json
+import logging
 
 import pytest
 from fastapi.testclient import TestClient
 
 from app.core.config import Settings
 from app.core.errors import ExerciseIndexLoadError, LocatorIndexLoadError
+from app.core.security import api_key_fingerprint
 from app.main import create_app
 from app.services.index_compiler import LocatorIndexCompiler
 from tests.helpers import complete_exercise_index, complete_manifest
@@ -142,3 +144,38 @@ def test_application_startup_fails_for_configured_missing_exercise_index(tmp_pat
         TestClient(create_app(settings)),
     ):
         pass
+
+
+def test_api_auth_never_logs_plaintext_credentials(tmp_path, caplog) -> None:
+    configured_key = "configured-super-secret-value-123"
+    invalid_key = "invalid-secret-credential-456"
+    settings = Settings(
+        locator_index_path=write_index(tmp_path),
+        api_key=configured_key,
+        require_api_key=True,
+    )
+    caplog.set_level(logging.INFO, logger="uvicorn.error")
+
+    with TestClient(create_app(settings)) as client:
+        missing = client.get("/gpt/section-locators/2.6.5")
+        via_header = client.get(
+            "/gpt/section-locators/2.6.5",
+            headers={"X-API-Key": configured_key},
+        )
+        via_bearer = client.get(
+            "/gpt/section-locators/2.6.5",
+            headers={"Authorization": f"Bearer {configured_key}"},
+        )
+        invalid = client.get(
+            "/gpt/section-locators/2.6.5",
+            headers={"X-API-Key": invalid_key},
+        )
+
+    assert missing.status_code == 401
+    assert via_header.status_code == 200
+    assert via_bearer.status_code == 200
+    assert invalid.status_code == 401
+    assert configured_key not in caplog.text
+    assert invalid_key not in caplog.text
+    assert api_key_fingerprint(configured_key) in caplog.text
+    assert api_key_fingerprint(invalid_key) in caplog.text
