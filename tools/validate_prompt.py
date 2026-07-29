@@ -11,6 +11,8 @@ REQUIRED = {
     "file_search.mclick",
     "required_evidence",
     "content_window",
+    "reference_retrieval_plan",
+    "只传入一条 query",
     "data_version",
     "contains_exercise",
     "EXERCISE_CATALOG_UNAVAILABLE",

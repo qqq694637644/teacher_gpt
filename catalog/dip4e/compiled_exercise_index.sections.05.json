@@ -3176,97 +3176,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 351,
-            "pdf_page_number": 352,
-            "printed_page_label": "350"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(equation 5-61) +(printed page 350) --QDF=0",
-            "+(5-61) +(equation) +(printed page 350) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "350",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_equation",
-              "value": "5-61",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
-            "pdf_page_index": 395,
-            "pdf_page_number": 396,
-            "printed_page_label": "394"
-          },
-          "content_window": {
-            "start_at": {
-              "kind": "exercise",
-              "value": "5.19"
-            },
-            "end_before": {
-              "kind": "exercise",
-              "value": "5.20"
-            }
-          },
-          "queries": [
-            "+(text (b) * What would the spatial domain system response) +(printed page 394) --QDF=0",
-            "+(exercise 5.19) +(printed page 394) --QDF=0",
-            "+(exercise 5.20) +(printed page 394) --QDF=0",
-            "+(5.19) +(printed page 394) --QDF=0",
-            "+((b) * What would the spatial domain system response) +(printed page 394) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "394",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "(b) * What would the spatial domain system response",
-              "verification_mode": "text_or_visual"
-            },
-            {
-              "kind": "contains_exercise",
-              "value": "5.19",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_exercise",
-              "value": "5.20",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 3,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 309,
             "pdf_page_number": 310,
             "printed_page_label": "308"
@@ -3320,53 +3229,100 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 351,
+            "pdf_page_number": 352,
+            "printed_page_label": "350"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 5-61) +(printed page 350) --QDF=0",
+            "+(5-61) +(equation) +(printed page 350) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "350",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "5-61",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 395,
+            "pdf_page_number": 396,
+            "printed_page_label": "394"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "exercise",
+              "value": "5.19"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "5.20"
+            }
+          },
+          "queries": [
+            "+(text (b) * What would the spatial domain system response) +(printed page 394) --QDF=0",
+            "+(exercise 5.19) +(printed page 394) --QDF=0",
+            "+(exercise 5.20) +(printed page 394) --QDF=0",
+            "+(5.19) +(printed page 394) --QDF=0",
+            "+((b) * What would the spatial domain system response) +(printed page 394) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "394",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(b) * What would the spatial domain system response",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "5.19",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "5.20",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
-        {
-          "kind": "equation",
-          "target_id": "5-61",
-          "reason": "Explicit equation reference in exercise text",
-          "selected_context_pages": [],
-          "retrieval_plan": [
-            {
-              "sequence": 1,
-              "page_role": "single",
-              "page": {
-                "pdf_page_index": 351,
-                "pdf_page_number": 352,
-                "printed_page_label": "350"
-              },
-              "content_window": {
-                "start_at": null,
-                "end_before": null
-              },
-              "queries": [
-                "+(equation 5-61) +(printed page 350) --QDF=0",
-                "+(5-61) +(equation) +(printed page 350) --QDF=0"
-              ],
-              "required_evidence": [
-                {
-                  "kind": "printed_page_equals",
-                  "value": "350",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_equation",
-                  "value": "5-61",
-                  "verification_mode": "visual_required"
-                }
-              ],
-              "coverage": {
-                "subheadings": [],
-                "figure_ids": [],
-                "equation_ids": [],
-                "example_ids": [],
-                "table_ids": []
-              }
-            }
-          ]
-        },
         {
           "kind": "exercise",
           "target_id": "5.19",
@@ -3414,6 +3370,50 @@
                 {
                   "kind": "contains_exercise",
                   "value": "5.20",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "5-61",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 351,
+                "pdf_page_number": 352,
+                "printed_page_label": "350"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 5-61) +(printed page 350) --QDF=0",
+                "+(5-61) +(equation) +(printed page 350) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "350",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "5-61",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -5521,6 +5521,68 @@
       ],
       "reference_targets": [
         {
+          "kind": "exercise",
+          "target_id": "5.21",
+          "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 395,
+                "pdf_page_number": 396,
+                "printed_page_label": "394"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "exercise",
+                  "value": "5.21"
+                },
+                "end_before": {
+                  "kind": "exercise",
+                  "value": "5.22"
+                }
+              },
+              "queries": [
+                "+(5.21) +(printed page 394) --QDF=0",
+                "+(that the input to the system is a binary image con-) +(printed page 394) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "394",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "that the input to the system is a binary image con-",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_exercise",
+                  "value": "5.21",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_exercise",
+                  "value": "5.22",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "5-61"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
           "kind": "section",
           "target_id": "2.6",
           "reason": "Explicit section reference in exercise text",
@@ -7045,68 +7107,6 @@
               }
             }
           ]
-        },
-        {
-          "kind": "exercise",
-          "target_id": "5.21",
-          "reason": "Explicit exercise reference in exercise text",
-          "selected_context_pages": [],
-          "retrieval_plan": [
-            {
-              "sequence": 1,
-              "page_role": "single",
-              "page": {
-                "pdf_page_index": 395,
-                "pdf_page_number": 396,
-                "printed_page_label": "394"
-              },
-              "content_window": {
-                "start_at": {
-                  "kind": "exercise",
-                  "value": "5.21"
-                },
-                "end_before": {
-                  "kind": "exercise",
-                  "value": "5.22"
-                }
-              },
-              "queries": [
-                "+(5.21) +(printed page 394) --QDF=0",
-                "+(that the input to the system is a binary image con-) +(printed page 394) --QDF=0"
-              ],
-              "required_evidence": [
-                {
-                  "kind": "printed_page_equals",
-                  "value": "394",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_text",
-                  "value": "that the input to the system is a binary image con-",
-                  "verification_mode": "text_or_visual"
-                },
-                {
-                  "kind": "contains_exercise",
-                  "value": "5.21",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_exercise",
-                  "value": "5.22",
-                  "verification_mode": "visual_required"
-                }
-              ],
-              "coverage": {
-                "subheadings": [],
-                "figure_ids": [],
-                "equation_ids": [
-                  "5-61"
-                ],
-                "example_ids": [],
-                "table_ids": []
-              }
-            }
-          ]
         }
       ]
     },
@@ -7196,10 +7196,10 @@
             "end_before": null
           },
           "queries": [
-            "+(equation 5-77) +(printed page 356) --QDF=0",
             "+(figure 5.26) +(printed page 356) --QDF=0",
-            "+(5-77) +(equation) +(printed page 356) --QDF=0",
-            "+(5.26) +(figure) +(printed page 356) --QDF=0"
+            "+(equation 5-77) +(printed page 356) --QDF=0",
+            "+(5.26) +(figure) +(printed page 356) --QDF=0",
+            "+(5-77) +(equation) +(printed page 356) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7208,13 +7208,13 @@
               "verification_mode": "visual_required"
             },
             {
-              "kind": "contains_equation",
-              "value": "5-77",
+              "kind": "contains_figure",
+              "value": "5.26",
               "verification_mode": "visual_required"
             },
             {
-              "kind": "contains_figure",
-              "value": "5.26",
+              "kind": "contains_equation",
+              "value": "5-77",
               "verification_mode": "visual_required"
             }
           ],
@@ -7228,50 +7228,6 @@
         }
       ],
       "reference_targets": [
-        {
-          "kind": "equation",
-          "target_id": "5-77",
-          "reason": "Explicit equation reference in exercise text",
-          "selected_context_pages": [],
-          "retrieval_plan": [
-            {
-              "sequence": 1,
-              "page_role": "single",
-              "page": {
-                "pdf_page_index": 357,
-                "pdf_page_number": 358,
-                "printed_page_label": "356"
-              },
-              "content_window": {
-                "start_at": null,
-                "end_before": null
-              },
-              "queries": [
-                "+(equation 5-77) +(printed page 356) --QDF=0",
-                "+(5-77) +(equation) +(printed page 356) --QDF=0"
-              ],
-              "required_evidence": [
-                {
-                  "kind": "printed_page_equals",
-                  "value": "356",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_equation",
-                  "value": "5-77",
-                  "verification_mode": "visual_required"
-                }
-              ],
-              "coverage": {
-                "subheadings": [],
-                "figure_ids": [],
-                "equation_ids": [],
-                "example_ids": [],
-                "table_ids": []
-              }
-            }
-          ]
-        },
         {
           "kind": "figure",
           "target_id": "5.26",
@@ -7303,6 +7259,50 @@
                 {
                   "kind": "contains_figure",
                   "value": "5.26",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "5-77",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 357,
+                "pdf_page_number": 358,
+                "printed_page_label": "356"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 5-77) +(printed page 356) --QDF=0",
+                "+(5-77) +(equation) +(printed page 356) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "356",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "5-77",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -7845,6 +7845,568 @@
             ],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 6,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 357,
+            "pdf_page_number": 358,
+            "printed_page_label": "356"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "5.7 INVERSE FILTERING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text The material in this section is our first step in studying restoration of images degrad-) +(printed page 356) --QDF=0",
+            "+(heading 5.7 INVERSE FILTERING) +(printed page 356) --QDF=0",
+            "+(5.7 INVERSE FILTERING) +(printed page 356) --QDF=0",
+            "Inverse Filtering The material in this section is our first step in studying restoration of images degrad- printed page 356 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "356",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "The material in this section is our first step in studying restoration of images degrad-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "5.7 INVERSE FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "5.7 INVERSE FILTERING"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "5-78"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 358,
+            "pdf_page_number": 359,
+            "printed_page_label": "357"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text small that the result of full inverse ﬁltering [Fig. 5.27(a)] is useless. The reasons for this poor result are) +(printed page 357) --QDF=0",
+            "+(small that the result of full inverse ﬁltering [Fig. 5.27(a)] is useless. The reasons for this poor result are) +(printed page 357) --QDF=0",
+            "Inverse Filtering small that the result of full inverse ﬁltering [Fig. 5.27(a)] is useless. The reasons for this poor result are printed page 357 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "357",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "small that the result of full inverse ﬁltering [Fig. 5.27(a)] is useless. The reasons for this poor result are",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "5-65",
+              "5-2",
+              "5-78",
+              "5-79",
+              "4-92"
+            ],
+            "example_ids": [
+              "5.9"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 359,
+            "pdf_page_number": 360,
+            "printed_page_label": "358"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text rates both the degradation function and statistical characteristics of noise into the) +(printed page 358) --QDF=0",
+            "+(heading 5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING) +(printed page 358) --QDF=0",
+            "+(5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING) +(printed page 358) --QDF=0",
+            "Minimum Mean Square Error (Wiener) Filtering rates both the degradation function and statistical characteristics of noise into the printed page 358 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "358",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "rates both the degradation function and statistical characteristics of noise into the",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "5-80"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 360,
+            "pdf_page_number": 361,
+            "printed_page_label": "359"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text theorem (ﬁrst line of entry 7 in Table 4.4). When the two functions are the same, correlation becomes autocorrela-) +(printed page 359) --QDF=0",
+            "+(theorem (ﬁrst line of entry 7 in Table 4.4). When the two functions are the same, correlation becomes autocorrela-) +(printed page 359) --QDF=0",
+            "Minimum Mean Square Error (Wiener) Filtering theorem (ﬁrst line of entry 7 in Table 4.4). When the two functions are the same, correlation becomes autocorrela- printed page 359 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "359",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "theorem (ﬁrst line of entry 7 in Table 4.4). When the two functions are the same, correlation becomes autocorrela-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "5-80",
+              "5-81",
+              "4-89"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "4.4"
+            ]
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 361,
+            "pdf_page_number": 362,
+            "printed_page_label": "360"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text this image and the original to be “noise,” we can define a signal-to-noise ratio in the) +(printed page 360) --QDF=0",
+            "+(this image and the original to be “noise,” we can define a signal-to-noise ratio in the) +(printed page 360) --QDF=0",
+            "Minimum Mean Square Error (Wiener) Filtering this image and the original to be “noise,” we can define a signal-to-noise ratio in the printed page 360 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "360",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "this image and the original to be “noise,” we can define a signal-to-noise ratio in the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "5-82",
+              "5-80",
+              "5-83",
+              "5-84",
+              "5-81",
+              "5-85"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 362,
+            "pdf_page_number": 363,
+            "printed_page_label": "361"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text The Wiener ﬁlter result in Fig. 5.29(i) is excellent, being quite close visually to the original image in Fig.) +(printed page 361) --QDF=0",
+            "+(The Wiener ﬁlter result in Fig. 5.29(i) is excellent, being quite close visually to the original image in Fig.) +(printed page 361) --QDF=0",
+            "Minimum Mean Square Error (Wiener) Filtering The Wiener ﬁlter result in Fig. 5.29(i) is excellent, being quite close visually to the original image in Fig. printed page 361 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "361",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "The Wiener ﬁlter result in Fig. 5.29(i) is excellent, being quite close visually to the original image in Fig.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "5.28"
+            ],
+            "equation_ids": [
+              "5-85"
+            ],
+            "example_ids": [
+              "5.10",
+              "5.9",
+              "5.11",
+              "5.8"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 363,
+            "pdf_page_number": 364,
+            "printed_page_label": "362"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Wiener ﬁltering. (d)–(f) Same sequence, but with noise variance one order of magnitude less. (g)–(i) Same sequence,) +(printed page 362) --QDF=0",
+            "+(Wiener ﬁltering. (d)–(f) Same sequence, but with noise variance one order of magnitude less. (g)–(i) Same sequence,) +(printed page 362) --QDF=0",
+            "Minimum Mean Square Error (Wiener) Filtering Wiener ﬁltering. (d)–(f) Same sequence, but with noise variance one order of magnitude less. (g)–(i) Same sequence, printed page 362 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "362",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Wiener ﬁltering. (d)–(f) Same sequence, but with noise variance one order of magnitude less. (g)–(i) Same sequence,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "5.29"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 364,
+            "pdf_page_number": 365,
+            "printed_page_label": "363"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "5.9 CONSTRAINED LEAST SQUARES FILTERING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text advantage of formulating the restoration problem in matrix form is that it facilitates) +(printed page 363) --QDF=0",
+            "+(heading 5.9 CONSTRAINED LEAST SQUARES FILTERING) +(printed page 363) --QDF=0",
+            "+(5.9 CONSTRAINED LEAST SQUARES FILTERING) +(printed page 363) --QDF=0",
+            "Constrained Least Squares Filtering advantage of formulating the restoration problem in matrix form is that it facilitates printed page 363 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "363",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "advantage of formulating the restoration problem in matrix form is that it facilitates",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "5.9 CONSTRAINED LEAST SQUARES FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "5.9 CONSTRAINED LEAST SQUARES FILTERING"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "5-85",
+              "4-94",
+              "5-64",
+              "5-86"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 365,
+            "pdf_page_number": 366,
+            "printed_page_label": "364"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text constrained least squares and Wiener results, we see that the former yielded better results (especially in) +(printed page 364) --QDF=0",
+            "+(constrained least squares and Wiener results, we see that the former yielded better results (especially in) +(printed page 364) --QDF=0",
+            "Constrained Least Squares Filtering constrained least squares and Wiener results, we see that the former yielded better results (especially in printed page 364 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "364",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "constrained least squares and Wiener results, we see that the former yielded better results (especially in",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "5.30"
+            ],
+            "equation_ids": [
+              "5-87",
+              "5-88",
+              "3-50",
+              "5-89",
+              "5-90"
+            ],
+            "example_ids": [
+              "5.12"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 366,
+            "pdf_page_number": 367,
+            "printed_page_label": "365"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text blurring on restoration. As noted earlier, you will encounter situations in which the restoration solutions) +(printed page 365) --QDF=0",
+            "+(blurring on restoration. As noted earlier, you will encounter situations in which the restoration solutions) +(printed page 365) --QDF=0",
+            "Constrained Least Squares Filtering blurring on restoration. As noted earlier, you will encounter situations in which the restoration solutions printed page 365 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "365",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "blurring on restoration. As noted earlier, you will encounter situations in which the restoration solutions",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "5.30"
+            ],
+            "equation_ids": [
+              "5-89",
+              "5-85",
+              "5-88",
+              "5-91",
+              "5-92",
+              "5-93"
+            ],
+            "example_ids": [
+              "5.11"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 367,
+            "pdf_page_number": 368,
+            "printed_page_label": "366"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text ties are not difficult to estimate (see Section 5.2), assuming that the noise and image) +(printed page 366) --QDF=0",
+            "+(ties are not difficult to estimate (see Section 5.2), assuming that the noise and image) +(printed page 366) --QDF=0",
+            "Constrained Least Squares Filtering ties are not difficult to estimate (see Section 5.2), assuming that the noise and image printed page 366 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "366",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ties are not difficult to estimate (see Section 5.2), assuming that the noise and image",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "5-91",
+              "5-88",
+              "5-93",
+              "5-89",
+              "5-94",
+              "5-95",
+              "5-96",
+              "5-97",
+              "5-98"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 368,
+            "pdf_page_number": 369,
+            "printed_page_label": "367"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "5.10 GEOMETRIC MEAN FILTER"
+            }
+          },
+          "queries": [
+            "+(text which was obtained by Wiener filtering with K manually specified for best visual results. Figure 5.31(b)) +(printed page 367) --QDF=0",
+            "+(heading 5.10 GEOMETRIC MEAN FILTER) +(printed page 367) --QDF=0",
+            "+(which was obtained by Wiener filtering with K manually specified for best visual results. Figure 5.31(b)) +(printed page 367) --QDF=0",
+            "Constrained Least Squares Filtering which was obtained by Wiener filtering with K manually specified for best visual results. Figure 5.31(b) printed page 367 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "367",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "which was obtained by Wiener filtering with K manually specified for best visual results. Figure 5.31(b)",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "5.10 GEOMETRIC MEAN FILTER",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "5.31"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "5.13"
+            ],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -8081,6 +8643,576 @@
                 ],
                 "example_ids": [
                   "5.8"
+                ],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "target_id": "5.7",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 357,
+                "pdf_page_number": 358,
+                "printed_page_label": "356"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "5.7 INVERSE FILTERING"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(5.7 INVERSE FILTERING) +(printed page 356) --QDF=0",
+                "Inverse Filtering The material in this section is our first step in studying restoration of images degrad- printed page 356 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "356",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "The material in this section is our first step in studying restoration of images degrad-",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "5.7 INVERSE FILTERING",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "5.7 INVERSE FILTERING"
+                ],
+                "figure_ids": [],
+                "equation_ids": [
+                  "5-78"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 358,
+                "pdf_page_number": 359,
+                "printed_page_label": "357"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(small that the result of full inverse ﬁltering [Fig. 5.27(a)] is useless. The reasons for this poor result are) +(printed page 357) --QDF=0",
+                "Inverse Filtering small that the result of full inverse ﬁltering [Fig. 5.27(a)] is useless. The reasons for this poor result are printed page 357 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "357",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "small that the result of full inverse ﬁltering [Fig. 5.27(a)] is useless. The reasons for this poor result are",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "5-65",
+                  "5-2",
+                  "5-78",
+                  "5-79",
+                  "4-92"
+                ],
+                "example_ids": [
+                  "5.9"
+                ],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "target_id": "5.8",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 359,
+                "pdf_page_number": 360,
+                "printed_page_label": "358"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING) +(printed page 358) --QDF=0",
+                "Minimum Mean Square Error (Wiener) Filtering rates both the degradation function and statistical characteristics of noise into the printed page 358 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "358",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "rates both the degradation function and statistical characteristics of noise into the",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "5.8 MINIMUM MEAN SQUARE ERROR (WIENER) FILTERING"
+                ],
+                "figure_ids": [],
+                "equation_ids": [
+                  "5-80"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 360,
+                "pdf_page_number": 361,
+                "printed_page_label": "359"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(theorem (ﬁrst line of entry 7 in Table 4.4). When the two functions are the same, correlation becomes autocorrela-) +(printed page 359) --QDF=0",
+                "Minimum Mean Square Error (Wiener) Filtering theorem (ﬁrst line of entry 7 in Table 4.4). When the two functions are the same, correlation becomes autocorrela- printed page 359 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "359",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "theorem (ﬁrst line of entry 7 in Table 4.4). When the two functions are the same, correlation becomes autocorrela-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "5-80",
+                  "5-81",
+                  "4-89"
+                ],
+                "example_ids": [],
+                "table_ids": [
+                  "4.4"
+                ]
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 361,
+                "pdf_page_number": 362,
+                "printed_page_label": "360"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(this image and the original to be “noise,” we can define a signal-to-noise ratio in the) +(printed page 360) --QDF=0",
+                "Minimum Mean Square Error (Wiener) Filtering this image and the original to be “noise,” we can define a signal-to-noise ratio in the printed page 360 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "360",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "this image and the original to be “noise,” we can define a signal-to-noise ratio in the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "5-82",
+                  "5-80",
+                  "5-83",
+                  "5-84",
+                  "5-81",
+                  "5-85"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 362,
+                "pdf_page_number": 363,
+                "printed_page_label": "361"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(The Wiener ﬁlter result in Fig. 5.29(i) is excellent, being quite close visually to the original image in Fig.) +(printed page 361) --QDF=0",
+                "Minimum Mean Square Error (Wiener) Filtering The Wiener ﬁlter result in Fig. 5.29(i) is excellent, being quite close visually to the original image in Fig. printed page 361 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "361",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "The Wiener ﬁlter result in Fig. 5.29(i) is excellent, being quite close visually to the original image in Fig.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "5.28"
+                ],
+                "equation_ids": [
+                  "5-85"
+                ],
+                "example_ids": [
+                  "5.10",
+                  "5.9",
+                  "5.11",
+                  "5.8"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 363,
+                "pdf_page_number": 364,
+                "printed_page_label": "362"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(Wiener ﬁltering. (d)–(f) Same sequence, but with noise variance one order of magnitude less. (g)–(i) Same sequence,) +(printed page 362) --QDF=0",
+                "Minimum Mean Square Error (Wiener) Filtering Wiener ﬁltering. (d)–(f) Same sequence, but with noise variance one order of magnitude less. (g)–(i) Same sequence, printed page 362 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "362",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Wiener ﬁltering. (d)–(f) Same sequence, but with noise variance one order of magnitude less. (g)–(i) Same sequence,",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "5.29"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "target_id": "5.9",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 364,
+                "pdf_page_number": 365,
+                "printed_page_label": "363"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "5.9 CONSTRAINED LEAST SQUARES FILTERING"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(5.9 CONSTRAINED LEAST SQUARES FILTERING) +(printed page 363) --QDF=0",
+                "Constrained Least Squares Filtering advantage of formulating the restoration problem in matrix form is that it facilitates printed page 363 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "363",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "advantage of formulating the restoration problem in matrix form is that it facilitates",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "5.9 CONSTRAINED LEAST SQUARES FILTERING",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "5.9 CONSTRAINED LEAST SQUARES FILTERING"
+                ],
+                "figure_ids": [],
+                "equation_ids": [
+                  "5-85",
+                  "4-94",
+                  "5-64",
+                  "5-86"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 365,
+                "pdf_page_number": 366,
+                "printed_page_label": "364"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(constrained least squares and Wiener results, we see that the former yielded better results (especially in) +(printed page 364) --QDF=0",
+                "Constrained Least Squares Filtering constrained least squares and Wiener results, we see that the former yielded better results (especially in printed page 364 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "364",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "constrained least squares and Wiener results, we see that the former yielded better results (especially in",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "5.30"
+                ],
+                "equation_ids": [
+                  "5-87",
+                  "5-88",
+                  "3-50",
+                  "5-89",
+                  "5-90"
+                ],
+                "example_ids": [
+                  "5.12"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 366,
+                "pdf_page_number": 367,
+                "printed_page_label": "365"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(blurring on restoration. As noted earlier, you will encounter situations in which the restoration solutions) +(printed page 365) --QDF=0",
+                "Constrained Least Squares Filtering blurring on restoration. As noted earlier, you will encounter situations in which the restoration solutions printed page 365 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "365",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "blurring on restoration. As noted earlier, you will encounter situations in which the restoration solutions",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "5.30"
+                ],
+                "equation_ids": [
+                  "5-89",
+                  "5-85",
+                  "5-88",
+                  "5-91",
+                  "5-92",
+                  "5-93"
+                ],
+                "example_ids": [
+                  "5.11"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 367,
+                "pdf_page_number": 368,
+                "printed_page_label": "366"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(ties are not difficult to estimate (see Section 5.2), assuming that the noise and image) +(printed page 366) --QDF=0",
+                "Constrained Least Squares Filtering ties are not difficult to estimate (see Section 5.2), assuming that the noise and image printed page 366 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "366",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "ties are not difficult to estimate (see Section 5.2), assuming that the noise and image",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "5-91",
+                  "5-88",
+                  "5-93",
+                  "5-89",
+                  "5-94",
+                  "5-95",
+                  "5-96",
+                  "5-97",
+                  "5-98"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 368,
+                "pdf_page_number": 369,
+                "printed_page_label": "367"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "5.10 GEOMETRIC MEAN FILTER"
+                }
+              },
+              "queries": [
+                "+(which was obtained by Wiener filtering with K manually specified for best visual results. Figure 5.31(b)) +(printed page 367) --QDF=0",
+                "Constrained Least Squares Filtering which was obtained by Wiener filtering with K manually specified for best visual results. Figure 5.31(b) printed page 367 --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "367",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "which was obtained by Wiener filtering with K manually specified for best visual results. Figure 5.31(b)",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "5.10 GEOMETRIC MEAN FILTER",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "5.31"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "5.13"
                 ],
                 "table_ids": []
               }
@@ -8384,6 +9516,42 @@
       "reference_retrieval_plan": [
         {
           "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 260,
+            "pdf_page_number": 261,
+            "printed_page_label": "259"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(table 4.4) +(printed page 259) --QDF=0",
+            "+(4.4) +(table) +(printed page 259) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "259",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_table",
+              "value": "4.4",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
           "page_role": "start",
           "page": {
             "pdf_page_index": 285,
@@ -8440,7 +9608,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 3,
           "page_role": "body",
           "page": {
             "pdf_page_index": 286,
@@ -8484,7 +9652,7 @@
           }
         },
         {
-          "sequence": 3,
+          "sequence": 4,
           "page_role": "body",
           "page": {
             "pdf_page_index": 287,
@@ -8527,7 +9695,7 @@
           }
         },
         {
-          "sequence": 4,
+          "sequence": 5,
           "page_role": "body",
           "page": {
             "pdf_page_index": 288,
@@ -8575,7 +9743,7 @@
           }
         },
         {
-          "sequence": 5,
+          "sequence": 6,
           "page_role": "body",
           "page": {
             "pdf_page_index": 289,
@@ -8618,7 +9786,7 @@
           }
         },
         {
-          "sequence": 6,
+          "sequence": 7,
           "page_role": "body",
           "page": {
             "pdf_page_index": 290,
@@ -8661,7 +9829,7 @@
           }
         },
         {
-          "sequence": 7,
+          "sequence": 8,
           "page_role": "body",
           "page": {
             "pdf_page_index": 291,
@@ -8709,7 +9877,7 @@
           }
         },
         {
-          "sequence": 8,
+          "sequence": 9,
           "page_role": "body",
           "page": {
             "pdf_page_index": 292,
@@ -8759,7 +9927,7 @@
           }
         },
         {
-          "sequence": 9,
+          "sequence": 10,
           "page_role": "body",
           "page": {
             "pdf_page_index": 293,
@@ -8804,7 +9972,7 @@
           }
         },
         {
-          "sequence": 10,
+          "sequence": 11,
           "page_role": "body",
           "page": {
             "pdf_page_index": 294,
@@ -8851,7 +10019,7 @@
           }
         },
         {
-          "sequence": 11,
+          "sequence": 12,
           "page_role": "body",
           "page": {
             "pdf_page_index": 295,
@@ -8900,7 +10068,7 @@
           }
         },
         {
-          "sequence": 12,
+          "sequence": 13,
           "page_role": "body",
           "page": {
             "pdf_page_index": 296,
@@ -8947,7 +10115,7 @@
           }
         },
         {
-          "sequence": 13,
+          "sequence": 14,
           "page_role": "end",
           "page": {
             "pdf_page_index": 297,
@@ -8995,42 +10163,6 @@
             "example_ids": [
               "4.23"
             ],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 14,
-          "page_role": "single",
-          "page": {
-            "pdf_page_index": 260,
-            "pdf_page_number": 261,
-            "printed_page_label": "259"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(table 4.4) +(printed page 259) --QDF=0",
-            "+(4.4) +(table) +(printed page 259) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "259",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_table",
-              "value": "4.4",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
             "table_ids": []
           }
         },
@@ -10072,42 +11204,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 365,
-            "pdf_page_number": 366,
-            "printed_page_label": "364"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(equation 5-90) +(printed page 364) --QDF=0",
-            "+(5-90) +(equation) +(printed page 364) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "364",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_equation",
-              "value": "5-90",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 314,
             "pdf_page_number": 315,
             "printed_page_label": "313"
@@ -10148,6 +11244,42 @@
             {
               "kind": "contains_exercise",
               "value": "4.48",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 365,
+            "pdf_page_number": 366,
+            "printed_page_label": "364"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 5-90) +(printed page 364) --QDF=0",
+            "+(5-90) +(equation) +(printed page 364) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "364",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "5-90",
               "verification_mode": "visual_required"
             }
           ],
@@ -10357,8 +11489,10 @@
           "queries": [
             "+(equation 5-98) +(printed page 366) --QDF=0",
             "+(equation 5-96) +(printed page 366) --QDF=0",
+            "+(equation 5-97) +(printed page 366) --QDF=0",
             "+(5-98) +(equation) +(printed page 366) --QDF=0",
-            "+(5-96) +(equation) +(printed page 366) --QDF=0"
+            "+(5-96) +(equation) +(printed page 366) --QDF=0",
+            "+(5-97) +(equation) +(printed page 366) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10374,6 +11508,11 @@
             {
               "kind": "contains_equation",
               "value": "5-96",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "5-97",
               "verification_mode": "visual_required"
             }
           ],
@@ -10462,6 +11601,50 @@
                 {
                   "kind": "contains_equation",
                   "value": "5-96",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "5-97",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 367,
+                "pdf_page_number": 368,
+                "printed_page_label": "366"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 5-97) +(printed page 366) --QDF=0",
+                "+(5-97) +(equation) +(printed page 366) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "366",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "5-97",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -10749,27 +11932,27 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 352,
-            "pdf_page_number": 353,
-            "printed_page_label": "351"
+            "pdf_page_index": 250,
+            "pdf_page_number": 251,
+            "printed_page_label": "249"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(equation 5-65) +(printed page 351) --QDF=0",
-            "+(5-65) +(equation) +(printed page 351) --QDF=0"
+            "+(equation 4-89) +(printed page 249) --QDF=0",
+            "+(4-89) +(equation) +(printed page 249) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "351",
+              "value": "249",
               "verification_mode": "visual_required"
             },
             {
               "kind": "contains_equation",
-              "value": "5-65",
+              "value": "4-89",
               "verification_mode": "visual_required"
             }
           ],
@@ -10816,9 +11999,89 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 352,
+            "pdf_page_number": 353,
+            "printed_page_label": "351"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 5-65) +(printed page 351) --QDF=0",
+            "+(5-65) +(equation) +(printed page 351) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "351",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "5-65",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
+        {
+          "kind": "figure",
+          "target_id": "5.1",
+          "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 319,
+                "pdf_page_number": 320,
+                "printed_page_label": "318"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(figure 5.1) +(printed page 318) --QDF=0",
+                "+(5.1) +(figure) +(printed page 318) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "318",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_figure",
+                  "value": "5.1",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
         {
           "kind": "equation",
           "target_id": "5-65",
@@ -10864,36 +12127,36 @@
           ]
         },
         {
-          "kind": "figure",
-          "target_id": "5.1",
-          "reason": "Explicit figure reference in exercise text",
+          "kind": "equation",
+          "target_id": "4-89",
+          "reason": "Explicit equation reference in exercise text",
           "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 319,
-                "pdf_page_number": 320,
-                "printed_page_label": "318"
+                "pdf_page_index": 250,
+                "pdf_page_number": 251,
+                "printed_page_label": "249"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 5.1) +(printed page 318) --QDF=0",
-                "+(5.1) +(figure) +(printed page 318) --QDF=0"
+                "+(equation 4-89) +(printed page 249) --QDF=0",
+                "+(4-89) +(equation) +(printed page 249) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "318",
+                  "value": "249",
                   "verification_mode": "visual_required"
                 },
                 {
-                  "kind": "contains_figure",
-                  "value": "5.1",
+                  "kind": "contains_equation",
+                  "value": "4-89",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -10987,6 +12250,42 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
+            "pdf_page_index": 319,
+            "pdf_page_number": 320,
+            "printed_page_label": "318"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 5.1) +(printed page 318) --QDF=0",
+            "+(5.1) +(figure) +(printed page 318) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "318",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "5.1",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
             "pdf_page_index": 352,
             "pdf_page_number": 353,
             "printed_page_label": "351"
@@ -11020,7 +12319,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 3,
           "page_role": "single",
           "page": {
             "pdf_page_index": 360,
@@ -11044,42 +12343,6 @@
             {
               "kind": "contains_equation",
               "value": "5-81",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 3,
-          "page_role": "single",
-          "page": {
-            "pdf_page_index": 319,
-            "pdf_page_number": 320,
-            "printed_page_label": "318"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(figure 5.1) +(printed page 318) --QDF=0",
-            "+(5.1) +(figure) +(printed page 318) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "318",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_figure",
-              "value": "5.1",
               "verification_mode": "visual_required"
             }
           ],
@@ -11152,94 +12415,6 @@
       ],
       "reference_targets": [
         {
-          "kind": "equation",
-          "target_id": "5-65",
-          "reason": "Explicit equation reference in exercise text",
-          "selected_context_pages": [],
-          "retrieval_plan": [
-            {
-              "sequence": 1,
-              "page_role": "single",
-              "page": {
-                "pdf_page_index": 352,
-                "pdf_page_number": 353,
-                "printed_page_label": "351"
-              },
-              "content_window": {
-                "start_at": null,
-                "end_before": null
-              },
-              "queries": [
-                "+(equation 5-65) +(printed page 351) --QDF=0",
-                "+(5-65) +(equation) +(printed page 351) --QDF=0"
-              ],
-              "required_evidence": [
-                {
-                  "kind": "printed_page_equals",
-                  "value": "351",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_equation",
-                  "value": "5-65",
-                  "verification_mode": "visual_required"
-                }
-              ],
-              "coverage": {
-                "subheadings": [],
-                "figure_ids": [],
-                "equation_ids": [],
-                "example_ids": [],
-                "table_ids": []
-              }
-            }
-          ]
-        },
-        {
-          "kind": "equation",
-          "target_id": "5-81",
-          "reason": "Explicit equation reference in exercise text",
-          "selected_context_pages": [],
-          "retrieval_plan": [
-            {
-              "sequence": 1,
-              "page_role": "single",
-              "page": {
-                "pdf_page_index": 360,
-                "pdf_page_number": 361,
-                "printed_page_label": "359"
-              },
-              "content_window": {
-                "start_at": null,
-                "end_before": null
-              },
-              "queries": [
-                "+(equation 5-81) +(printed page 359) --QDF=0",
-                "+(5-81) +(equation) +(printed page 359) --QDF=0"
-              ],
-              "required_evidence": [
-                {
-                  "kind": "printed_page_equals",
-                  "value": "359",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_equation",
-                  "value": "5-81",
-                  "verification_mode": "visual_required"
-                }
-              ],
-              "coverage": {
-                "subheadings": [],
-                "figure_ids": [],
-                "equation_ids": [],
-                "example_ids": [],
-                "table_ids": []
-              }
-            }
-          ]
-        },
-        {
           "kind": "figure",
           "target_id": "5.1",
           "reason": "Explicit figure reference in exercise text",
@@ -11270,6 +12445,50 @@
                 {
                   "kind": "contains_figure",
                   "value": "5.1",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "5-65",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 352,
+                "pdf_page_number": 353,
+                "printed_page_label": "351"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 5-65) +(printed page 351) --QDF=0",
+                "+(5-65) +(equation) +(printed page 351) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "351",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "5-65",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -11340,6 +12559,50 @@
                   "5-65",
                   "4-89"
                 ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "5-81",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 360,
+                "pdf_page_number": 361,
+                "printed_page_label": "359"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 5-81) +(printed page 359) --QDF=0",
+                "+(5-81) +(equation) +(printed page 359) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "359",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "5-81",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
                 "example_ids": [],
                 "table_ids": []
               }
@@ -13978,6 +15241,50 @@
       ],
       "reference_targets": [
         {
+          "kind": "equation",
+          "target_id": "5-102",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 376,
+                "pdf_page_number": 377,
+                "printed_page_label": "375"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 5-102) +(printed page 375) --QDF=0",
+                "+(5-102) +(equation) +(printed page 375) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "375",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "5-102",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
           "kind": "section",
           "target_id": "2.6",
           "reason": "Explicit section reference in exercise text",
@@ -15491,50 +16798,6 @@
                   "kind": "contains_text",
                   "value": "cost much more than the lenses, so you should use",
                   "verification_mode": "text_or_visual"
-                }
-              ],
-              "coverage": {
-                "subheadings": [],
-                "figure_ids": [],
-                "equation_ids": [],
-                "example_ids": [],
-                "table_ids": []
-              }
-            }
-          ]
-        },
-        {
-          "kind": "equation",
-          "target_id": "5-102",
-          "reason": "Explicit equation reference in exercise text",
-          "selected_context_pages": [],
-          "retrieval_plan": [
-            {
-              "sequence": 1,
-              "page_role": "single",
-              "page": {
-                "pdf_page_index": 376,
-                "pdf_page_number": 377,
-                "printed_page_label": "375"
-              },
-              "content_window": {
-                "start_at": null,
-                "end_before": null
-              },
-              "queries": [
-                "+(equation 5-102) +(printed page 375) --QDF=0",
-                "+(5-102) +(equation) +(printed page 375) --QDF=0"
-              ],
-              "required_evidence": [
-                {
-                  "kind": "printed_page_equals",
-                  "value": "375",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_equation",
-                  "value": "5-102",
-                  "verification_mode": "visual_required"
                 }
               ],
               "coverage": {

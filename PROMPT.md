@@ -41,8 +41,8 @@ Action：
 对每个 retrieval step：
 
 1. 按顺序读取 `queries`、`content_window`、`required_evidence`；
-2. 用 `file_search.msearch` 搜索，只传入 `queries`；
-3. 优先第一条查询，无法核验时再使用后续查询；
+2. 每次调用 `file_search.msearch` 只传入一条 query，不得把整个 `queries` 数组一次性发送；
+3. 优先第一条查询，无法核验时再按顺序逐条调用后续查询；
 4. 查询中的 `--QDF=0` 不得删除；
 5. 需要展开候选时才调用 `file_search.mclick`；
 6. 不把查询缩减为单独页码或题号。

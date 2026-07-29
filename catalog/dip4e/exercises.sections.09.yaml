@@ -625,13 +625,13 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: equation
-    target_id: 9-3
-    reason: Explicit equation reference in exercise text
-    selected_context_pages: []
   - kind: exercise
     target_id: '9.12'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-3
+    reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '9.14'
   chapter_id: '9'
@@ -733,13 +733,13 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: equation
-    target_id: 9-6
-    reason: Explicit equation reference in exercise text
-    selected_context_pages: []
   - kind: exercise
     target_id: '9.14'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-6
+    reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '9.16'
   chapter_id: '9'
@@ -988,6 +988,10 @@ exercises:
   reference_specs:
   - kind: equation
     target_id: 9-14
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-15
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '9.21'
@@ -1593,10 +1597,6 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: equation
-    target_id: 9-19
-    reason: Explicit equation reference in exercise text
-    selected_context_pages: []
   - kind: figure
     target_id: '9.17'
     reason: Explicit figure reference in exercise text
@@ -1604,6 +1604,10 @@ exercises:
   - kind: figure
     target_id: '9.15'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-19
+    reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '9.33'
   chapter_id: '9'
@@ -1956,6 +1960,10 @@ exercises:
     target_id: 9-45
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
+  - kind: equation
+    target_id: 9-46
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.40'
   chapter_id: '9'
   exercise_number: 40
@@ -2007,6 +2015,10 @@ exercises:
   reference_specs:
   - kind: equation
     target_id: 9-44
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-69
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '9.41'

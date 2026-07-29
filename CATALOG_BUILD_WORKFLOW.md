@@ -238,6 +238,10 @@ content_window.end_before
 
 `+()` 不是严格布尔 AND，第一搜索候选也不保证正确。因此查询只是召回策略，最终仍必须检查 `required_evidence`。
 
+运行时按顺序逐条执行 query；每次 `file_search.msearch` 只发送一条 query，
+不把一个 step 的完整查询数组放进单次调用。这样既不受单次查询数量上限影响，
+也能在某条查询已满足全部 evidence 时停止后续回退查询。
+
 ## 11. 生成并验证核验证据
 
 每个 page step 保存类型化证据，例如：
@@ -462,6 +466,11 @@ Table
 Exercise / Problem
 ```
 
+解析器必须展开 `and`、逗号并列和 `through` / `to` / 连字符范围，例如
+`Eqs. (2-46) and (2-47)`、`Eqs. (6-6)-(6-12)`、`Sections 3.4-3.7`。
+Figure 子图标记 `(a)`、`(b)` 不生成新的主 Figure ID。并列或范围中的每个
+目标都必须进入 `reference_targets` 并通过源 PDF 锚点解析。
+
 Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。运行时同时保留完整 `reference_targets` 作为审计元数据，并生成去重后的 `reference_retrieval_plan` 作为 GPT 默认执行计划。
 
 去重不是简单删除引用。编译器禁止根据“精确目标位于 Section 范围内”自动裁剪 Section。只有经过 PDF 审核并写入 manifest 的 `selected_context_pages` 才会缩小 Section 的执行范围；未显式选择时必须保留完整 Section plan。
@@ -484,14 +493,14 @@ cross-page exercises: 28
 exercise retrieval steps: 520
 source evidence checks: 1987
 query text anchor checks: 1040
-resolved references: 412
-cross-exercise references: 56
-raw reference retrieval steps: 1344
+resolved references: 465
+cross-exercise references: 58
+raw reference retrieval steps: 1406
 selected context references: 4
-execution reference steps before exact-window merge: 1276
-coalesced same-page/same-window steps: 34
-same-page distinct-window steps preserved: 1
-deduplicated reference retrieval steps: 1242
+execution reference steps before exact-window merge: 1338
+coalesced same-page/same-window steps: 72
+same-page distinct-window steps preserved: 4
+deduplicated reference retrieval steps: 1266
 source_pdf_verification_status: passed
 file_search_retrieval_status: not_tested
 ```

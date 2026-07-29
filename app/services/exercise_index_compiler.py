@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from collections import defaultdict
 from dataclasses import dataclass
 
@@ -263,7 +264,11 @@ class ExerciseIndexCompiler:
                 grouped.setdefault(cls._window_key(step), []).append(step)
 
         merged: list[PageRetrievalStep] = []
-        for sequence, source_steps in enumerate(grouped.values(), start=1):
+        ordered_groups = sorted(
+            grouped.values(),
+            key=lambda source_steps: cls._step_sort_key(source_steps[0]),
+        )
+        for sequence, source_steps in enumerate(ordered_groups, start=1):
             first = source_steps[0]
             evidence = cls._merged_evidence(source_steps)
             merged.append(
@@ -278,6 +283,26 @@ class ExerciseIndexCompiler:
                 )
             )
         return merged
+
+    @staticmethod
+    def _step_sort_key(step: PageRetrievalStep) -> tuple[object, ...]:
+        def anchor_key(anchor: object | None) -> tuple[str, str]:
+            if anchor is None:
+                return ("", "")
+            kind = anchor.kind
+            value = anchor.value
+            natural_value = re.sub(
+                r"\d+",
+                lambda match: f"{int(match.group()):010d}",
+                value.casefold(),
+            )
+            return (kind, natural_value)
+
+        return (
+            step.page.pdf_page_index,
+            anchor_key(step.content_window.start_at),
+            anchor_key(step.content_window.end_before),
+        )
 
     @classmethod
     def _merged_queries(

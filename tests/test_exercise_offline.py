@@ -183,6 +183,61 @@ def test_reference_parser_applies_audited_source_erratum() -> None:
     assert "prints Fig. 10.10.4(a)" in specs[0].reason
 
 
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        (
+            "Use Eqs. (2-46) and (2-47).",
+            [("equation", "2-46"), ("equation", "2-47")],
+        ),
+        (
+            "Use Eqs. (4-42) through (4-45).",
+            [
+                ("equation", "4-42"),
+                ("equation", "4-43"),
+                ("equation", "4-44"),
+                ("equation", "4-45"),
+            ],
+        ),
+        (
+            "Apply Eqs. (6-6)-(6-12).",
+            [("equation", f"6-{number}") for number in range(6, 13)],
+        ),
+        (
+            "Review Sections 3.4-3.7.",
+            [("section", f"3.{number}") for number in range(4, 8)],
+        ),
+        (
+            "Compare Sections 2.4 and 2.5.",
+            [("section", "2.4"), ("section", "2.5")],
+        ),
+        (
+            "Use Figs. 2.3(a), 2.4(b), and 2.5(a, b).",
+            [("figure", "2.3"), ("figure", "2.4"), ("figure", "2.5")],
+        ),
+        (
+            ("Compare Tables 11.2 and 11.3, Examples 3.1, 3.2, and 3.3, and Problems 4.4 and 4.9."),
+            [
+                ("table", "11.2"),
+                ("table", "11.3"),
+                ("example", "3.1"),
+                ("example", "3.2"),
+                ("example", "3.3"),
+                ("exercise", "4.4"),
+                ("exercise", "4.9"),
+            ],
+        ),
+    ],
+)
+def test_reference_parser_expands_parallel_and_range_references(
+    text: str,
+    expected: list[tuple[str, str]],
+) -> None:
+    specs = _reference_specs(text, "12.99")
+
+    assert [(item.kind, item.target_id) for item in specs] == expected
+
+
 def test_terminal_boundary_is_inherited_by_last_learning_unit() -> None:
     document = fitz.open()
     page = document.new_page()

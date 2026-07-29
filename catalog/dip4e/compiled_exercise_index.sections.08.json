@@ -3000,42 +3000,6 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 620,
-            "pdf_page_number": 621,
-            "printed_page_label": "619"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(equation 8-61) +(printed page 619) --QDF=0",
-            "+(8-61) +(equation) +(printed page 619) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "619",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_equation",
-              "value": "8-61",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 2,
-          "page_role": "single",
-          "page": {
             "pdf_page_index": 526,
             "pdf_page_number": 527,
             "printed_page_label": "525"
@@ -3057,6 +3021,42 @@
             {
               "kind": "contains_table",
               "value": "7.1",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 620,
+            "pdf_page_number": 621,
+            "printed_page_label": "619"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-61) +(printed page 619) --QDF=0",
+            "+(8-61) +(equation) +(printed page 619) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "619",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-61",
               "verification_mode": "visual_required"
             }
           ],

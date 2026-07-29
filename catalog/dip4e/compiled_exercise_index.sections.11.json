@@ -124,7 +124,7 @@
         },
         {
           "sequence": 2,
-          "page_role": "body",
+          "page_role": "single",
           "page": {
             "pdf_page_index": 816,
             "pdf_page_number": 817,
@@ -135,11 +135,11 @@
             "end_before": null
           },
           "queries": [
-            "+(text labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.) +(printed page 815) --QDF=0",
             "+(figure 11.1) +(printed page 815) --QDF=0",
+            "+(text labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.) +(printed page 815) --QDF=0",
+            "+(11.1) +(figure) +(printed page 815) --QDF=0",
             "+(labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.) +(printed page 815) --QDF=0",
-            "Boundary Preprocessing labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded. printed page 815 --QDF=0",
-            "+(11.1) +(figure) +(printed page 815) --QDF=0"
+            "Boundary Preprocessing labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded. printed page 815 --QDF=0"
           ],
           "required_evidence": [
             {
@@ -148,14 +148,14 @@
               "verification_mode": "visual_required"
             },
             {
-              "kind": "contains_text",
-              "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
-              "verification_mode": "text_or_visual"
-            },
-            {
               "kind": "contains_figure",
               "value": "11.1",
               "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
+              "verification_mode": "text_or_visual"
             }
           ],
           "coverage": {
@@ -832,6 +832,50 @@
         }
       ],
       "reference_targets": [
+        {
+          "kind": "figure",
+          "target_id": "11.1",
+          "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 816,
+                "pdf_page_number": 817,
+                "printed_page_label": "815"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(figure 11.1) +(printed page 815) --QDF=0",
+                "+(11.1) +(figure) +(printed page 815) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "815",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_figure",
+                  "value": "11.1",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
         {
           "kind": "section",
           "target_id": "11.2",
@@ -1565,50 +1609,6 @@
                 "example_ids": [
                   "11.5"
                 ],
-                "table_ids": []
-              }
-            }
-          ]
-        },
-        {
-          "kind": "figure",
-          "target_id": "11.1",
-          "reason": "Explicit figure reference in exercise text",
-          "selected_context_pages": [],
-          "retrieval_plan": [
-            {
-              "sequence": 1,
-              "page_role": "single",
-              "page": {
-                "pdf_page_index": 816,
-                "pdf_page_number": 817,
-                "printed_page_label": "815"
-              },
-              "content_window": {
-                "start_at": null,
-                "end_before": null
-              },
-              "queries": [
-                "+(figure 11.1) +(printed page 815) --QDF=0",
-                "+(11.1) +(figure) +(printed page 815) --QDF=0"
-              ],
-              "required_evidence": [
-                {
-                  "kind": "printed_page_equals",
-                  "value": "815",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_figure",
-                  "value": "11.1",
-                  "verification_mode": "visual_required"
-                }
-              ],
-              "coverage": {
-                "subheadings": [],
-                "figure_ids": [],
-                "equation_ids": [],
-                "example_ids": [],
                 "table_ids": []
               }
             }
@@ -9568,8 +9568,10 @@
           },
           "queries": [
             "+(equation 11-50) +(printed page 862) --QDF=0",
+            "+(equation 11-51) +(printed page 862) --QDF=0",
             "+(equation 11-52) +(printed page 862) --QDF=0",
             "+(11-50) +(equation) +(printed page 862) --QDF=0",
+            "+(11-51) +(equation) +(printed page 862) --QDF=0",
             "+(11-52) +(equation) +(printed page 862) --QDF=0"
           ],
           "required_evidence": [
@@ -9581,6 +9583,11 @@
             {
               "kind": "contains_equation",
               "value": "11-50",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-51",
               "verification_mode": "visual_required"
             },
             {
@@ -9630,6 +9637,50 @@
                 {
                   "kind": "contains_equation",
                   "value": "11-50",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "11-51",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 863,
+                "pdf_page_number": 864,
+                "printed_page_label": "862"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 11-51) +(printed page 862) --QDF=0",
+                "+(11-51) +(equation) +(printed page 862) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "862",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "11-51",
                   "verification_mode": "visual_required"
                 }
               ],

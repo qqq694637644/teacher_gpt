@@ -73,14 +73,24 @@ def test_real_exercise_reference_plans_preserve_reviewed_pdf_context_and_windows
         "135",
         "136",
     ]
-    assert exercise_3_8.reference_targets[0].selected_context_pages == ["135", "136"]
+    section_3_3 = next(
+        target
+        for target in exercise_3_8.reference_targets
+        if target.kind == "section" and target.target_id == "3.3"
+    )
+    assert section_3_3.selected_context_pages == ["135", "136"]
 
     exercise_11_2 = index.exercises["11.2"]
     assert [step.page.printed_page_label for step in exercise_11_2.reference_retrieval_plan] == [
         "815",
         "816",
     ]
-    assert exercise_11_2.reference_targets[0].selected_context_pages == ["815", "816"]
+    section_11_2 = next(
+        target
+        for target in exercise_11_2.reference_targets
+        if target.kind == "section" and target.target_id == "11.2"
+    )
+    assert section_11_2.selected_context_pages == ["815", "816"]
 
     exercise_11_22 = index.exercises["11.22"]
     assert [step.page.printed_page_label for step in exercise_11_22.reference_retrieval_plan] == [
@@ -132,3 +142,42 @@ def test_real_exercise_reference_plans_preserve_reviewed_pdf_context_and_windows
         assert any(evidence.value.casefold() in query.casefold() for query in page_71.queries)
     assert any("2-15" in query for query in page_71.queries)
     assert any("2-16" in query for query in page_71.queries)
+
+
+def test_real_exercise_catalog_expands_parallel_and_range_references() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+
+    expected_equations = {
+        "2.38": ["2-46", "2-47"],
+        "4.11": ["4-25", "4-26"],
+        "4.15": ["4-42", "4-43", "4-44", "4-45"],
+        "4.25": ["4-59", "4-60"],
+        "4.27": ["4-71", "4-72"],
+    }
+    for exercise_id, expected in expected_equations.items():
+        locator = index.exercises[exercise_id]
+        actual = [
+            target.target_id for target in locator.reference_targets if target.kind == "equation"
+        ]
+        assert actual == expected
+        for target_id in expected:
+            target = next(
+                target
+                for target in locator.reference_targets
+                if target.kind == "equation" and target.target_id == target_id
+            )
+            assert target.retrieval_plan
+            matching_steps = [
+                step
+                for step in locator.reference_retrieval_plan
+                if any(
+                    evidence.kind == "contains_equation" and evidence.value == target_id
+                    for evidence in step.required_evidence
+                )
+            ]
+            assert matching_steps
+            assert any(
+                target_id.casefold() in query.casefold()
+                for step in matching_steps
+                for query in step.queries
+            )

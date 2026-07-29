@@ -230,15 +230,19 @@ applies only PDF-reviewed `selected_context_pages` declared in the manifest,
 coalesces only reference steps that have the same physical page and identical content window,
 and writes no final output when validation fails.
 
+The reference parser expands comma/`and` lists and reviewed numeric ranges for
+Sections, Equations, Figures, Tables, Examples, and Problems. Figure subpart markers
+such as `(a)` and `(b)` do not create separate Figure IDs.
+
 Running these commands is an offline release step; normal application startup does
 not parse the PDF.
 
 The current reviewed baseline contains 492 exercises in chapters 2-12, 122 starred
-exercises, 28 cross-page exercises, 520 page-retrieval steps, and 412 resolved
-references. It keeps 1,344 raw reference steps for audit metadata, explicitly selects
-context pages for 4 reviewed section references, reduces 1,276 execution candidates
-by 34 exact-window merges,
-preserves 1 same-page distinct-window case, and exposes 1,242 execution steps. Chapter 1
+exercises, 28 cross-page exercises, 520 page-retrieval steps, and 465 resolved
+references. It keeps 1,406 raw reference steps for audit metadata, explicitly selects
+context pages for 4 reviewed section references, reduces 1,338 execution candidates
+by 72 exact-window merges, preserves 4 same-page distinct-window cases, and exposes
+1,266 execution steps. Chapter 1
 has no formal `Problems` section in this source PDF. The source
 prints `Fig. 10.10.4(a)` in exercise 10.23; the build records an explicit audited
 normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local source-PDF

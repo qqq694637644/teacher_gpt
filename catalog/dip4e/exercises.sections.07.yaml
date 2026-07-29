@@ -347,6 +347,10 @@ exercises:
     target_id: 7-4
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
+  - kind: equation
+    target_id: 7-5
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.8'
   chapter_id: '7'
   exercise_number: 8
@@ -1340,6 +1344,10 @@ exercises:
     target_id: 7-57
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
+  - kind: equation
+    target_id: 7-58
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.28'
   chapter_id: '7'
   exercise_number: 28
@@ -1443,6 +1451,18 @@ exercises:
     selected_context_pages: []
   - kind: equation
     target_id: 7-86
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-87
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-88
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-89
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '7.30'
@@ -1637,6 +1657,10 @@ exercises:
   reference_specs:
   - kind: equation
     target_id: 7-122
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-126
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '7.34'
@@ -2015,6 +2039,10 @@ exercises:
   reference_specs:
   - kind: equation
     target_id: 7-137
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-138
     reason: Explicit equation reference in exercise text
     selected_context_pages: []
 - exercise_id: '7.41'

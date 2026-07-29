@@ -2085,27 +2085,27 @@
           "sequence": 1,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 434,
-            "pdf_page_number": 435,
-            "printed_page_label": "433"
+            "pdf_page_index": 410,
+            "pdf_page_number": 411,
+            "printed_page_label": "409"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(equation 6-41) +(printed page 433) --QDF=0",
-            "+(6-41) +(equation) +(printed page 433) --QDF=0"
+            "+(equation 6-5) +(printed page 409) --QDF=0",
+            "+(6-5) +(equation) +(printed page 409) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "433",
+              "value": "409",
               "verification_mode": "visual_required"
             },
             {
               "kind": "contains_equation",
-              "value": "6-41",
+              "value": "6-5",
               "verification_mode": "visual_required"
             }
           ],
@@ -2157,27 +2157,27 @@
           "sequence": 3,
           "page_role": "single",
           "page": {
-            "pdf_page_index": 410,
-            "pdf_page_number": 411,
-            "printed_page_label": "409"
+            "pdf_page_index": 434,
+            "pdf_page_number": 435,
+            "printed_page_label": "433"
           },
           "content_window": {
             "start_at": null,
             "end_before": null
           },
           "queries": [
-            "+(equation 6-5) +(printed page 409) --QDF=0",
-            "+(6-5) +(equation) +(printed page 409) --QDF=0"
+            "+(equation 6-41) +(printed page 433) --QDF=0",
+            "+(6-41) +(equation) +(printed page 433) --QDF=0"
           ],
           "required_evidence": [
             {
               "kind": "printed_page_equals",
-              "value": "409",
+              "value": "433",
               "verification_mode": "visual_required"
             },
             {
               "kind": "contains_equation",
-              "value": "6-5",
+              "value": "6-41",
               "verification_mode": "visual_required"
             }
           ],
@@ -2414,7 +2414,19 @@
           },
           "queries": [
             "+(equation 6-6) +(printed page 410) --QDF=0",
-            "+(6-6) +(equation) +(printed page 410) --QDF=0"
+            "+(equation 6-7) +(printed page 410) --QDF=0",
+            "+(equation 6-8) +(printed page 410) --QDF=0",
+            "+(equation 6-9) +(printed page 410) --QDF=0",
+            "+(equation 6-10) +(printed page 410) --QDF=0",
+            "+(equation 6-11) +(printed page 410) --QDF=0",
+            "+(equation 6-12) +(printed page 410) --QDF=0",
+            "+(6-6) +(equation) +(printed page 410) --QDF=0",
+            "+(6-7) +(equation) +(printed page 410) --QDF=0",
+            "+(6-8) +(equation) +(printed page 410) --QDF=0",
+            "+(6-9) +(equation) +(printed page 410) --QDF=0",
+            "+(6-10) +(equation) +(printed page 410) --QDF=0",
+            "+(6-11) +(equation) +(printed page 410) --QDF=0",
+            "+(6-12) +(equation) +(printed page 410) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2425,6 +2437,36 @@
             {
               "kind": "contains_equation",
               "value": "6-6",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-7",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-8",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-9",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-10",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-11",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-12",
               "verification_mode": "visual_required"
             }
           ],
@@ -2505,6 +2547,270 @@
                 {
                   "kind": "contains_equation",
                   "value": "6-6",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "6-7",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 411,
+                "pdf_page_number": 412,
+                "printed_page_label": "410"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 6-7) +(printed page 410) --QDF=0",
+                "+(6-7) +(equation) +(printed page 410) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "410",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "6-7",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "6-8",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 411,
+                "pdf_page_number": 412,
+                "printed_page_label": "410"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 6-8) +(printed page 410) --QDF=0",
+                "+(6-8) +(equation) +(printed page 410) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "410",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "6-8",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "6-9",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 411,
+                "pdf_page_number": 412,
+                "printed_page_label": "410"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 6-9) +(printed page 410) --QDF=0",
+                "+(6-9) +(equation) +(printed page 410) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "410",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "6-9",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "6-10",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 411,
+                "pdf_page_number": 412,
+                "printed_page_label": "410"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 6-10) +(printed page 410) --QDF=0",
+                "+(6-10) +(equation) +(printed page 410) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "410",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "6-10",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "6-11",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 411,
+                "pdf_page_number": 412,
+                "printed_page_label": "410"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 6-11) +(printed page 410) --QDF=0",
+                "+(6-11) +(equation) +(printed page 410) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "410",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "6-11",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "equation",
+          "target_id": "6-12",
+          "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 411,
+                "pdf_page_number": 412,
+                "printed_page_label": "410"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(equation 6-12) +(printed page 410) --QDF=0",
+                "+(6-12) +(equation) +(printed page 410) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "410",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_equation",
+                  "value": "6-12",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -3897,6 +4203,50 @@
       ],
       "reference_targets": [
         {
+          "kind": "figure",
+          "target_id": "6.30",
+          "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 435,
+                "pdf_page_number": 436,
+                "printed_page_label": "434"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(figure 6.30) +(printed page 434) --QDF=0",
+                "+(6.30) +(figure) +(printed page 434) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "434",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_figure",
+                  "value": "6.30",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
           "kind": "section",
           "target_id": "6.2",
           "reason": "Explicit section reference in exercise text",
@@ -4575,50 +4925,6 @@
                 {
                   "kind": "contains_heading",
                   "value": "6.3 PSEUDOCOLOR IMAGE PROCESSING",
-                  "verification_mode": "visual_required"
-                }
-              ],
-              "coverage": {
-                "subheadings": [],
-                "figure_ids": [],
-                "equation_ids": [],
-                "example_ids": [],
-                "table_ids": []
-              }
-            }
-          ]
-        },
-        {
-          "kind": "figure",
-          "target_id": "6.30",
-          "reason": "Explicit figure reference in exercise text",
-          "selected_context_pages": [],
-          "retrieval_plan": [
-            {
-              "sequence": 1,
-              "page_role": "single",
-              "page": {
-                "pdf_page_index": 435,
-                "pdf_page_number": 436,
-                "printed_page_label": "434"
-              },
-              "content_window": {
-                "start_at": null,
-                "end_before": null
-              },
-              "queries": [
-                "+(figure 6.30) +(printed page 434) --QDF=0",
-                "+(6.30) +(figure) +(printed page 434) --QDF=0"
-              ],
-              "required_evidence": [
-                {
-                  "kind": "printed_page_equals",
-                  "value": "434",
-                  "verification_mode": "visual_required"
-                },
-                {
-                  "kind": "contains_figure",
-                  "value": "6.30",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -7809,6 +8115,575 @@
           "sequence": 1,
           "page_role": "start",
           "page": {
+            "pdf_page_index": 176,
+            "pdf_page_number": 177,
+            "printed_page_label": "175"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text sharpening can be accomplished by spatial differentiation. In fact, this is the case,) +(printed page 175) --QDF=0",
+            "+(heading 3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
+            "+(3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters sharpening can be accomplished by spatial differentiation. In fact, this is the case, printed page 175 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "175",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "sharpening can be accomplished by spatial differentiation. In fact, this is the case,",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 177,
+            "pdf_page_number": 178,
+            "printed_page_label": "176"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
+            "+(varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass printed page 176 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "176",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "FOUNDATION"
+            ],
+            "figure_ids": [
+              "3.43"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 178,
+            "pdf_page_number": 179,
+            "printed_page_label": "177"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
+            "+(These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44, printed page 177 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "177",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-48",
+              "3-49"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 179,
+            "pdf_page_number": 180,
+            "printed_page_label": "178"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text 3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
+            "+(3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters 3.44(c) that in a step transition a line joining these two values crosses the horizontal printed page 178 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "178",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "3.44(c) that in a step transition a line joining these two values crosses the horizontal",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "USING THE SECOND DERIVATIVE FOR IMAGE SHARPENING—THE LAPLACIAN"
+            ],
+            "figure_ids": [
+              "3.44"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 180,
+            "pdf_page_number": 181,
+            "printed_page_label": "179"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
+            "+(an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla- printed page 179 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "179",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.45"
+            ],
+            "equation_ids": [
+              "3-50",
+              "3-49",
+              "3-51",
+              "3-52",
+              "3-53"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 181,
+            "pdf_page_number": 182,
+            "printed_page_label": "180"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
+            "+(of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are printed page 180 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "180",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.45",
+              "3.46",
+              "3.47"
+            ],
+            "equation_ids": [
+              "3-54",
+              "2-31",
+              "2-32"
+            ],
+            "example_ids": [
+              "3.18"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 182,
+            "pdf_page_number": 183,
+            "printed_page_label": "181"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
+            "+(Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution- printed page 181 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "181",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.46"
+            ],
+            "equation_ids": [
+              "3-54"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 183,
+            "pdf_page_number": 184,
+            "printed_page_label": "182"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
+            "+(sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters sharpen images. This process, called unsharp masking, consists of the following steps: printed page 182 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "182",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "sharpen images. This process, called unsharp masking, consists of the following steps:",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "UNSHARP MASKING AND HIGHBOOST FILTERING"
+            ],
+            "figure_ids": [
+              "3.47"
+            ],
+            "equation_ids": [
+              "3-54",
+              "3-55",
+              "3-56"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 184,
+            "pdf_page_number": 185,
+            "printed_page_label": "183"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
+            "+(Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b) printed page 183 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "183",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.48",
+              "3.49"
+            ],
+            "equation_ids": [
+              "3-55"
+            ],
+            "example_ids": [
+              "3.19"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 185,
+            "pdf_page_number": 186,
+            "printed_page_label": "184"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
+            "+(signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol- printed page 184 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "184",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "USING FIRST-ORDER DERIVATIVES FOR IMAGE SHARPENING—THE GRADIENT"
+            ],
+            "figure_ids": [
+              "3.49"
+            ],
+            "equation_ids": [
+              "3-56",
+              "3-57"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 186,
+            "pdf_page_number": 187,
+            "printed_page_label": "185"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+            "+(mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning printed page 185 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "185",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-58",
+              "3-57",
+              "3-59",
+              "3-48",
+              "3-60",
+              "3-61"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 187,
+            "pdf_page_number": 188,
+            "printed_page_label": "186"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text (integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
+            "+((integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters (integer) center of spatial symmetry. The smallest kernels in which we are interested printed page 186 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "186",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(integer) center of spatial symmetry. The smallest kernels in which we are interested",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.50"
+            ],
+            "equation_ids": [
+              "3-59",
+              "3-60",
+              "3-62",
+              "3-63",
+              "3-64"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 188,
+            "pdf_page_number": 189,
+            "printed_page_label": "187"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
+            "+(not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup- printed page 187 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "187",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.51"
+            ],
+            "equation_ids": [
+              "3-59",
+              "3-65"
+            ],
+            "example_ids": [
+              "3.20"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "start",
+          "page": {
             "pdf_page_index": 446,
             "pdf_page_number": 447,
             "printed_page_label": "445"
@@ -7856,7 +8731,7 @@
           }
         },
         {
-          "sequence": 2,
+          "sequence": 15,
           "page_role": "body",
           "page": {
             "pdf_page_index": 447,
@@ -7900,7 +8775,7 @@
           }
         },
         {
-          "sequence": 3,
+          "sequence": 16,
           "page_role": "body",
           "page": {
             "pdf_page_index": 448,
@@ -7939,7 +8814,7 @@
           }
         },
         {
-          "sequence": 4,
+          "sequence": 17,
           "page_role": "body",
           "page": {
             "pdf_page_index": 449,
@@ -7981,7 +8856,7 @@
           }
         },
         {
-          "sequence": 5,
+          "sequence": 18,
           "page_role": "body",
           "page": {
             "pdf_page_index": 450,
@@ -8023,7 +8898,7 @@
           }
         },
         {
-          "sequence": 6,
+          "sequence": 19,
           "page_role": "body",
           "page": {
             "pdf_page_index": 451,
@@ -8067,7 +8942,7 @@
           }
         },
         {
-          "sequence": 7,
+          "sequence": 20,
           "page_role": "body",
           "page": {
             "pdf_page_index": 452,
@@ -8112,7 +8987,7 @@
           }
         },
         {
-          "sequence": 8,
+          "sequence": 21,
           "page_role": "end",
           "page": {
             "pdf_page_index": 453,
@@ -8163,575 +9038,6 @@
             ],
             "example_ids": [
               "6.16"
-            ],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 9,
-          "page_role": "start",
-          "page": {
-            "pdf_page_index": 176,
-            "pdf_page_number": 177,
-            "printed_page_label": "175"
-          },
-          "content_window": {
-            "start_at": {
-              "kind": "heading",
-              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
-            },
-            "end_before": null
-          },
-          "queries": [
-            "+(text sharpening can be accomplished by spatial differentiation. In fact, this is the case,) +(printed page 175) --QDF=0",
-            "+(heading 3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
-            "+(3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters sharpening can be accomplished by spatial differentiation. In fact, this is the case, printed page 175 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "175",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "sharpening can be accomplished by spatial differentiation. In fact, this is the case,",
-              "verification_mode": "text_or_visual"
-            },
-            {
-              "kind": "contains_heading",
-              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [
-              "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
-            ],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 10,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 177,
-            "pdf_page_number": 178,
-            "printed_page_label": "176"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
-            "+(varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass printed page 176 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "176",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [
-              "FOUNDATION"
-            ],
-            "figure_ids": [
-              "3.43"
-            ],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 11,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 178,
-            "pdf_page_number": 179,
-            "printed_page_label": "177"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
-            "+(These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44, printed page 177 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "177",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [
-              "3-48",
-              "3-49"
-            ],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 12,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 179,
-            "pdf_page_number": 180,
-            "printed_page_label": "178"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text 3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
-            "+(3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters 3.44(c) that in a step transition a line joining these two values crosses the horizontal printed page 178 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "178",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "3.44(c) that in a step transition a line joining these two values crosses the horizontal",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [
-              "USING THE SECOND DERIVATIVE FOR IMAGE SHARPENING—THE LAPLACIAN"
-            ],
-            "figure_ids": [
-              "3.44"
-            ],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 13,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 180,
-            "pdf_page_number": 181,
-            "printed_page_label": "179"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
-            "+(an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla- printed page 179 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "179",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [
-              "3.45"
-            ],
-            "equation_ids": [
-              "3-50",
-              "3-49",
-              "3-51",
-              "3-52",
-              "3-53"
-            ],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 14,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 181,
-            "pdf_page_number": 182,
-            "printed_page_label": "180"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
-            "+(of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are printed page 180 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "180",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [
-              "3.45",
-              "3.46",
-              "3.47"
-            ],
-            "equation_ids": [
-              "3-54",
-              "2-31",
-              "2-32"
-            ],
-            "example_ids": [
-              "3.18"
-            ],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 15,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 182,
-            "pdf_page_number": 183,
-            "printed_page_label": "181"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
-            "+(Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution- printed page 181 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "181",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [
-              "3.46"
-            ],
-            "equation_ids": [
-              "3-54"
-            ],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 16,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 183,
-            "pdf_page_number": 184,
-            "printed_page_label": "182"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
-            "+(sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters sharpen images. This process, called unsharp masking, consists of the following steps: printed page 182 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "182",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "sharpen images. This process, called unsharp masking, consists of the following steps:",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [
-              "UNSHARP MASKING AND HIGHBOOST FILTERING"
-            ],
-            "figure_ids": [
-              "3.47"
-            ],
-            "equation_ids": [
-              "3-54",
-              "3-55",
-              "3-56"
-            ],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 17,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 184,
-            "pdf_page_number": 185,
-            "printed_page_label": "183"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
-            "+(Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b) printed page 183 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "183",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [
-              "3.48",
-              "3.49"
-            ],
-            "equation_ids": [
-              "3-55"
-            ],
-            "example_ids": [
-              "3.19"
-            ],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 18,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 185,
-            "pdf_page_number": 186,
-            "printed_page_label": "184"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
-            "+(signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol- printed page 184 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "184",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [
-              "USING FIRST-ORDER DERIVATIVES FOR IMAGE SHARPENING—THE GRADIENT"
-            ],
-            "figure_ids": [
-              "3.49"
-            ],
-            "equation_ids": [
-              "3-56",
-              "3-57"
-            ],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 19,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 186,
-            "pdf_page_number": 187,
-            "printed_page_label": "185"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-            "+(mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning printed page 185 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "185",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [
-              "3-58",
-              "3-57",
-              "3-59",
-              "3-48",
-              "3-60",
-              "3-61"
-            ],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 20,
-          "page_role": "body",
-          "page": {
-            "pdf_page_index": 187,
-            "pdf_page_number": 188,
-            "printed_page_label": "186"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text (integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
-            "+((integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters (integer) center of spatial symmetry. The smallest kernels in which we are interested printed page 186 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "186",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "(integer) center of spatial symmetry. The smallest kernels in which we are interested",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [
-              "3.50"
-            ],
-            "equation_ids": [
-              "3-59",
-              "3-60",
-              "3-62",
-              "3-63",
-              "3-64"
-            ],
-            "example_ids": [],
-            "table_ids": []
-          }
-        },
-        {
-          "sequence": 21,
-          "page_role": "end",
-          "page": {
-            "pdf_page_index": 188,
-            "pdf_page_number": 189,
-            "printed_page_label": "187"
-          },
-          "content_window": {
-            "start_at": null,
-            "end_before": null
-          },
-          "queries": [
-            "+(text not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
-            "+(not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup- printed page 187 --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "187",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-",
-              "verification_mode": "text_or_visual"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [
-              "3.51"
-            ],
-            "equation_ids": [
-              "3-59",
-              "3-65"
-            ],
-            "example_ids": [
-              "3.20"
             ],
             "table_ids": []
           }
