@@ -34,10 +34,12 @@ from app.repositories.locator_repository import LocatorRepository
 from app.services.exercise_index_compiler import ExerciseIndexCompiler, ReferencePlanMap
 from tools.compile_locator_index import _boundary_record, _evidence_exists
 from tools.extract_pdf_candidates import (
+    COLUMN_SPLIT_RATIO,
     ExerciseCandidate,
     clean_text,
     extract_exercise_candidates,
     extract_page_anchors,
+    extract_problem_headings,
     sha256_file,
 )
 
@@ -53,7 +55,6 @@ ANCHOR_EVIDENCE_KINDS = {
     "example": "contains_example",
     "table": "contains_table",
 }
-EXPECTED_CHAPTER_IDS = {str(index) for index in range(1, 13)}
 
 
 def sha256_json(payload: dict[str, Any]) -> str:
@@ -105,13 +106,17 @@ def exercise_manifest_package_hashes(path: Path) -> dict[str, str]:
     return {file.name: sha256_file(file) for file in files}
 
 
-def verify_complete_chapters(manifest: ExerciseManifest) -> None:
+def verify_complete_chapters(
+    manifest: ExerciseManifest,
+    expected_chapter_ids: set[str],
+) -> None:
     actual = {item.chapter_id for item in manifest.exercises}
-    if actual != EXPECTED_CHAPTER_IDS:
-        missing = sorted(EXPECTED_CHAPTER_IDS - actual, key=int)
-        extra = sorted(actual - EXPECTED_CHAPTER_IDS, key=int)
+    if actual != expected_chapter_ids:
+        missing = sorted(expected_chapter_ids - actual, key=int)
+        extra = sorted(actual - expected_chapter_ids, key=int)
         raise ValueError(
-            f"exercise manifest does not cover all chapters; missing={missing}; extra={extra}"
+            "exercise manifest does not cover all Problems chapters; "
+            f"missing={missing}; extra={extra}"
         )
 
 
@@ -156,7 +161,19 @@ def verify_candidate_coverage(
 
 def _bbox_key(page_width: float, bbox: list[float]) -> tuple[int, float, float]:
     x0 = float(bbox[0])
-    return (0 if x0 < page_width / 2 else 1, float(bbox[1]), x0)
+    return (0 if x0 < page_width * COLUMN_SPLIT_RATIO else 1, float(bbox[1]), x0)
+
+
+def _at_or_after_boundary(
+    page_width: float,
+    bbox: list[float],
+    boundary_bbox: list[float],
+) -> bool:
+    column = 0 if float(bbox[0]) < page_width * COLUMN_SPLIT_RATIO else 1
+    boundary_column = 0 if float(boundary_bbox[0]) < page_width * COLUMN_SPLIT_RATIO else 1
+    if column != boundary_column:
+        return column > boundary_column
+    return float(bbox[1]) >= float(boundary_bbox[1]) - 0.5
 
 
 def _record_in_window(
@@ -168,10 +185,20 @@ def _record_in_window(
     reading_order: bool,
 ) -> bool:
     if reading_order:
-        key = _bbox_key(page_width, record["bbox"])
-        if start_record is not None and key < _bbox_key(page_width, start_record["bbox"]):
+        if start_record is not None and not _at_or_after_boundary(
+            page_width,
+            record["bbox"],
+            start_record["bbox"],
+        ):
             return False
-        return not (end_record is not None and key >= _bbox_key(page_width, end_record["bbox"]))
+        return not (
+            end_record is not None
+            and _at_or_after_boundary(
+                page_width,
+                record["bbox"],
+                end_record["bbox"],
+            )
+        )
     y0 = float(record["bbox"][1])
     if start_record is not None and y0 < float(start_record["bbox"][1]) - 0.5:
         return False
@@ -323,13 +350,19 @@ def verify_source_pdf(
                     f"{label!r} != {page.printed_page_label!r}"
                 )
         candidates = extract_exercise_candidates(document)
+        expected_chapter_ids = set(extract_problem_headings(document))
+        verify_complete_chapters(manifest, expected_chapter_ids)
         page_anchors = extract_page_anchors(document)
         page_widths = [float(document[index].rect.width) for index in range(document.page_count)]
         candidate_counts = verify_candidate_coverage(manifest, candidates)
         anchor_counts = verify_manifest_anchors(manifest, page_anchors, page_widths)
     finally:
         document.close()
-    return page_anchors, {**candidate_counts, **anchor_counts}
+    return page_anchors, {
+        "exercise_chapter_count": len(expected_chapter_ids),
+        **candidate_counts,
+        **anchor_counts,
+    }
 
 
 def build_reference_plans(
@@ -448,7 +481,6 @@ def main() -> None:
     args = parser.parse_args()
 
     manifest = load_exercise_manifest(args.manifest)
-    verify_complete_chapters(manifest)
     section_index = LocatorRepository.load(args.section_index).index
     page_anchors, verification = verify_source_pdf(manifest, args.pdf)
     reference_plans = build_reference_plans(manifest, page_anchors)

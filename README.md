@@ -72,11 +72,11 @@ gptListChapterExercises
 
 All Version 2 routes were deleted. There are no deprecated redirects or aliases.
 
-Exercise support is staged independently from the committed section catalog. Until a
-compiled exercise index is generated and `TEACHING_GPT_EXERCISE_INDEX_PATH` is set,
-the section API remains available and exercise routes return the explicit
-`EXERCISE_CATALOG_UNAVAILABLE` response. If the setting is present, a missing,
-malformed, partial, or book-mismatched exercise package prevents startup.
+The reviewed Exercise Catalog is committed independently from the section catalog.
+Set `TEACHING_GPT_EXERCISE_INDEX_PATH` to its package manifest to enable the exercise
+routes. If the setting is absent, section lookup remains available and exercise routes
+return `EXERCISE_CATALOG_UNAVAILABLE`; if present, a missing, malformed, partial, or
+book-mismatched exercise package prevents startup.
 
 Example:
 
@@ -122,7 +122,7 @@ Startup still fails when the package or any shard is missing, uses another data 
 
 A partial catalog is not a runnable deployment.
 
-When configured, the optional exercise runtime entry point is:
+The committed exercise runtime entry point is:
 
 ```text
 catalog/dip4e/compiled_exercise_index.json
@@ -205,8 +205,7 @@ It writes no output when validation fails.
 
 ### 3a. Build and compile the Exercise Locator catalog
 
-The codebase includes the deterministic exercise pipeline, but the generated catalog
-is intentionally not committed until the real source-PDF build and review are run:
+The committed catalog was generated with the deterministic exercise pipeline:
 
 ```bash
 python tools/build_dip4e_exercise_manifest.py \
@@ -224,11 +223,20 @@ python tools/compile_exercise_index.py \
 The builder detects each chapter's `Problems` region, preserves two-column reading
 order, separates same-page exercises, tracks starred and cross-page problems, and
 extracts explicit textbook references. The compiler verifies the exact PDF, requires
-all 12 chapters, resolves references against the section index and source anchors,
+all chapters that contain a formal `Problems` section (chapters 2-12 in this PDF),
+resolves references against the section index and source anchors,
 and writes no final output when validation fails.
 
 Running these commands is an offline release step; normal application startup does
 not parse the PDF.
+
+The current reviewed baseline contains 492 exercises in chapters 2-12, 122 starred
+exercises, 28 cross-page exercises, 520 page-retrieval steps, and 412 resolved
+references. Chapter 1 has no formal `Problems` section in this source PDF. The source
+prints `Fig. 10.10.4(a)` in exercise 10.23; the build records an explicit audited
+normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local source-PDF
+verification and byte-for-byte repeatability passed; real GPT file-search retrieval
+remains `not_tested`.
 
 ### 4. Validate GPT instructions
 
@@ -304,6 +312,11 @@ catalog/
     compiled_locator_index.json
     compiled_locator_index.sections.01.json ... compiled_locator_index.sections.12.json
     validation_report.json
+    exercises.yaml
+    exercises.sections.02.yaml ... exercises.sections.12.yaml
+    compiled_exercise_index.json
+    compiled_exercise_index.sections.02.json ... compiled_exercise_index.sections.12.json
+    exercise_validation_report.json
 tools/
   extract_pdf_candidates.py
   build_dip4e_exercise_manifest.py

@@ -22,20 +22,25 @@ The application intentionally fails if the complete Version 3 index is missing o
 
 ## Exercise catalog status
 
-The repository contains the Exercise Locator schemas, runtime loader, API, and
-offline builder/compiler code. The real full-book exercise artifacts have not yet
-been generated or committed:
+The reviewed Exercise Locator artifacts are generated and committed:
 
 ```text
 catalog/dip4e/exercises.yaml
-catalog/dip4e/exercises.sections.01.yaml ... exercises.sections.12.yaml
+catalog/dip4e/exercises.sections.02.yaml ... exercises.sections.12.yaml
 catalog/dip4e/compiled_exercise_index.json
-catalog/dip4e/compiled_exercise_index.sections.01.json ... sections.12.json
+catalog/dip4e/compiled_exercise_index.sections.02.json ... sections.12.json
 catalog/dip4e/exercise_validation_report.json
 ```
 
-Until those files pass the source-PDF build and review workflow, deployments should
-leave `TEACHING_GPT_EXERCISE_INDEX_PATH` unset. Exercise endpoints then return
-`EXERCISE_CATALOG_UNAVAILABLE`; the committed section catalog continues to load.
-Once configured, the exercise package is strict: missing or malformed shards, chapter
-mismatches, invalid references, and a source-book mismatch prevent startup.
+The source PDF contains formal `Problems` sections in chapters 2-12; chapter 1 has no
+exercise shard. The reviewed baseline contains 492 exercises, 122 starred exercises,
+28 cross-page exercises, 520 retrieval steps, and 412 resolved references. All chapter
+number ranges are continuous and the independent rebuild matched all 24 package and
+shard files byte-for-byte.
+
+Deployments should set `TEACHING_GPT_EXERCISE_INDEX_PATH` to
+`catalog/dip4e/compiled_exercise_index.json`. The package is strict: missing or
+malformed shards, chapter mismatches, invalid references, cycles, and a source-book
+mismatch prevent startup. `exercise_validation_report.json` records
+`source_pdf_verification_status: passed` and keeps real GPT file-search retrieval at
+`not_tested` until a separate acceptance run is completed.

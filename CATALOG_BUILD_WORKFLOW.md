@@ -443,9 +443,9 @@ file_search_retrieval_status: not_tested
 
 ```text
 exercises.yaml
-exercises.sections.01.yaml ... exercises.sections.12.yaml
+exercises.sections.02.yaml ... exercises.sections.12.yaml
 compiled_exercise_index.json
-compiled_exercise_index.sections.01.json ... compiled_exercise_index.sections.12.json
+compiled_exercise_index.sections.02.json ... compiled_exercise_index.sections.12.json
 exercise_validation_report.json
 ```
 
@@ -464,6 +464,22 @@ Exercise / Problem
 
 Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。缺失引用、跨习题循环、章节不完整、错误 shard 或非规范页面都会阻止输出。
 
-Exercise Catalog 必须覆盖第 1 至第 12 章后才能进入发布流程。构建期不保存题目全文，也不批量生成答案。
+Exercise Catalog 必须覆盖源 PDF 中所有正式 `Problems` 区域后才能进入发布流程。当前固定 PDF 的第 1 章没有课后习题，因此实际范围是第 2 至第 12 章，共 11 个 shard。构建期不保存题目全文，也不批量生成答案。
 
-本次代码接入阶段只实现并测试构建链、schema、运行时 API 和 Prompt，**尚未对真实 PDF 执行上述 Exercise Catalog 命令**。因此仓库暂时没有习题生成产物，当前基线数字也不包含 Exercise Locator。真实构建完成后必须新增习题指标、审核正文章末边界差异，并执行可重复性与 GPT 文件库验收。
+当前 Exercise Catalog 已使用固定 PDF 完整构建并通过源 PDF 校验与独立目录逐字节重建。验收基线为：
+
+```text
+exercise chapters: 11 (chapters 2-12)
+exercises: 492
+starred exercises: 122
+cross-page exercises: 28
+exercise retrieval steps: 520
+source evidence checks: 1987
+query text anchor checks: 1040
+resolved references: 412
+cross-exercise references: 56
+source_pdf_verification_status: passed
+file_search_retrieval_status: not_tested
+```
+
+11 章题号均从 1 连续到章末，无缺号和重复。可重复性验证比较了 24 个 Manifest/compiled package 文件，结果全部逐字节一致。习题 10.23 的源页印成 `Fig. 10.10.4(a)`，上下文是 3 x 3 Laplacian kernel；构建规则以显式勘误映射归一化为 `Fig. 10.4(a)`，并在引用 reason 中保留审计说明。真实 GPT 文件库检索与视觉页验收仍需单独执行。
