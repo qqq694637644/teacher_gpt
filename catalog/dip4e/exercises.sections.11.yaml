@@ -27,7 +27,7 @@ exercises:
         value: '11.2'
     queries:
     - +(11.1) +(printed page 898) --QDF=0
-    - +(is thicker than one pixel in at least one place.) +(printed page 898) --QDF=0
+    - +(is thicker than one pixel in at least one place) +(printed page 898) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '898'
@@ -48,12 +48,14 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: section
-    target_id: '11.2'
-    reason: Explicit section reference in exercise text
   - kind: figure
     target_id: '11.1'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: section
+    target_id: '11.2'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.2'
   chapter_id: '11'
   exercise_number: 2
@@ -80,7 +82,7 @@ exercises:
         value: '11.3'
     queries:
     - +(11.2) +(printed page 898) --QDF=0
-    - +(following, using the same grid as in Fig. 11.2 to) +(printed page 898) --QDF=0
+    - +(following using the same grid as in Fig 11.2 to) +(printed page 898) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '898'
@@ -104,9 +106,13 @@ exercises:
   - kind: section
     target_id: '11.2'
     reason: Explicit section reference in exercise text
+    selected_context_pages:
+    - '815'
+    - '816'
   - kind: figure
     target_id: '11.2'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.3'
   chapter_id: '11'
   exercise_number: 3
@@ -133,7 +139,7 @@ exercises:
         value: '11.4'
     queries:
     - +(11.3) +(printed page 898) --QDF=0
-    - +(answer is yes, prove it. If it is no, give an ex-) +(printed page 898) --QDF=0
+    - +(answer is yes prove it If it is no give an ex) +(printed page 898) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '898'
@@ -180,7 +186,7 @@ exercises:
         value: '11.5'
     queries:
     - +(11.4) +(printed page 898) --QDF=0
-    - +((a) * Show that the ﬁrst difference of a chain code) +(printed page 898) --QDF=0
+    - +(a Show that the first difference of a chain code) +(printed page 898) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '898'
@@ -204,6 +210,7 @@ exercises:
   - kind: section
     target_id: '11.2'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.5'
   chapter_id: '11'
   exercise_number: 5
@@ -277,7 +284,7 @@ exercises:
         value: '11.7'
     queries:
     - +(11.6) +(printed page 898) --QDF=0
-    - +(* Explain why a slope chain code with an angle) +(printed page 898) --QDF=0
+    - +(Explain why a slope chain code with an angle) +(printed page 898) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '898'
@@ -322,7 +329,7 @@ exercises:
       end_before: null
     queries:
     - +(11.7) +(printed page 898) --QDF=0
-    - +(used in a slope chain code. Assume that L is such) +(printed page 898) --QDF=0
+    - +(used in a slope chain code Assume that L is such) +(printed page 898) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '898'
@@ -441,7 +448,7 @@ exercises:
         value: '11.10'
     queries:
     - +(11.9) +(printed page 899) --QDF=0
-    - +(With reference to Example 11.2, start with vertex) +(printed page 899) --QDF=0
+    - +(With reference to Example 11.2 start with vertex) +(printed page 899) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '899'
@@ -466,6 +473,7 @@ exercises:
   - kind: example
     target_id: '11.2'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.10'
   chapter_id: '11'
   exercise_number: 10
@@ -492,7 +500,7 @@ exercises:
         value: '11.11'
     queries:
     - +(11.10) +(printed page 899) --QDF=0
-    - +((b) Show that if each cell corresponds to a pixel) +(printed page 899) --QDF=0
+    - +(b Show that if each cell corresponds to a pixel) +(printed page 899) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '899'
@@ -512,7 +520,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '11.2'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.11'
   chapter_id: '11'
   exercise_number: 11
@@ -563,6 +575,7 @@ exercises:
   - kind: section
     target_id: '11.2'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.12'
   chapter_id: '11'
   exercise_number: 12
@@ -589,7 +602,7 @@ exercises:
         value: '11.13'
     queries:
     - +(11.12) +(printed page 899) --QDF=0
-    - +(line. Start at the corner closest to the origin.) +(printed page 899) --QDF=0
+    - +(line Start at the corner closest to the origin) +(printed page 899) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '899'
@@ -609,7 +622,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '11.2'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.13'
   chapter_id: '11'
   exercise_number: 13
@@ -683,7 +700,7 @@ exercises:
         value: '11.15'
     queries:
     - +(11.14) +(printed page 899) --QDF=0
-    - +(the scale changes are the same in both direc-) +(printed page 899) --QDF=0
+    - +(the scale changes are the same in both direc) +(printed page 899) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '899'
@@ -707,6 +724,7 @@ exercises:
   - kind: figure
     target_id: '11.11'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.15'
   chapter_id: '11'
   exercise_number: 15
@@ -733,7 +751,7 @@ exercises:
         value: '11.16'
     queries:
     - +(11.15) +(printed page 899) --QDF=0
-    - +(Draw the medial axis of:) +(printed page 899) --QDF=0
+    - +(Draw the medial axis of) +(printed page 899) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '899'
@@ -780,7 +798,7 @@ exercises:
         value: '11.17'
     queries:
     - +(11.16) +(printed page 899) --QDF=0
-    - +((a) * What is the order of the shape number?) +(printed page 899) --QDF=0
+    - +(a What is the order of the shape number) +(printed page 899) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '899'
@@ -827,7 +845,7 @@ exercises:
         value: '11.18'
     queries:
     - +(11.17) +(printed page 899) --QDF=0
-    - +(system in Fig. 11.18 have to be set up to obtain) +(printed page 899) --QDF=0
+    - +(system in Fig 11.18 have to be set up to obtain) +(printed page 899) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '899'
@@ -851,9 +869,11 @@ exercises:
   - kind: section
     target_id: '11.3'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '11.18'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.18'
   chapter_id: '11'
   exercise_number: 18
@@ -878,7 +898,7 @@ exercises:
       end_before: null
     queries:
     - +(11.18) +(printed page 899) --QDF=0
-    - +(Show that if you use only two Fourier descrip-) +(printed page 899) --QDF=0
+    - +(Show that if you use only two Fourier descrip) +(printed page 899) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '899'
@@ -900,6 +920,7 @@ exercises:
   - kind: equation
     target_id: 11-10
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.19'
   chapter_id: '11'
   exercise_number: 19
@@ -926,7 +947,7 @@ exercises:
         value: '11.20'
     queries:
     - +(11.19) +(printed page 900) --QDF=0
-    - +(* Give the smallest number of statistical moment) +(printed page 900) --QDF=0
+    - +(Give the smallest number of statistical moment) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -950,6 +971,7 @@ exercises:
   - kind: figure
     target_id: '11.10'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.20'
   chapter_id: '11'
   exercise_number: 20
@@ -1023,7 +1045,7 @@ exercises:
         value: '11.22'
     queries:
     - +(11.21) +(printed page 900) --QDF=0
-    - +(* Propose a set of descriptors capable of differen-) +(printed page 900) --QDF=0
+    - +(Propose a set of descriptors capable of differen) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -1070,7 +1092,7 @@ exercises:
         value: '11.23'
     queries:
     - +(11.22) +(printed page 900) --QDF=0
-    - +((c) Use your matrix from (b) to compute the six) +(printed page 900) --QDF=0
+    - +(c Use your matrix from b to compute the six) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -1095,9 +1117,13 @@ exercises:
   - kind: section
     target_id: '11.4'
     reason: Explicit section reference in exercise text
+    selected_context_pages:
+    - '850'
+    - '851'
   - kind: table
     target_id: '11.3'
     reason: Explicit table reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.23'
   chapter_id: '11'
   exercise_number: 23
@@ -1124,7 +1150,7 @@ exercises:
         value: '11.24'
     queries:
     - +(11.23) +(printed page 900) --QDF=0
-    - +(alternating black and white squares, each of size) +(printed page 900) --QDF=0
+    - +(alternating black and white squares each of size) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -1171,7 +1197,7 @@ exercises:
         value: '11.25'
     queries:
     - +(11.24) +(printed page 900) --QDF=0
-    - +((a) * The position operator Q is deﬁned as “one) +(printed page 900) --QDF=0
+    - +(a The position operator Q is defined as one) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -1218,7 +1244,7 @@ exercises:
         value: '11.26'
     queries:
     - +(11.25) +(printed page 900) --QDF=0
-    - +((a) * Prove the validity of Eqs. (11-50) and (11-51).) +(printed page 900) --QDF=0
+    - +(a Prove the validity of Eqs 11-50 and 11-51) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -1245,9 +1271,15 @@ exercises:
   - kind: equation
     target_id: 11-50
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 11-51
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 11-52
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.26'
   chapter_id: '11'
   exercise_number: 26
@@ -1299,6 +1331,7 @@ exercises:
   - kind: example
     target_id: '11.16'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.27'
   chapter_id: '11'
   exercise_number: 27
@@ -1325,13 +1358,13 @@ exercises:
         value: '11.28'
     queries:
     - +(11.27) +(printed page 900) --QDF=0
-    - +(the covariance matrix given in Eq. (11-52) is) +(printed page 900) --QDF=0
+    - +(For a set of images of size 64 64 assume that) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
       verification_mode: visual_required
     - kind: contains_text
-      value: the covariance matrix given in Eq. (11-52) is
+      value: For a set of images of size 64 × 64 , assume that
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '11.27'
@@ -1351,9 +1384,11 @@ exercises:
   - kind: equation
     target_id: 11-52
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 11-54
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.28'
   chapter_id: '11'
   exercise_number: 28
@@ -1380,7 +1415,7 @@ exercises:
         value: '11.29'
     queries:
     - +(11.28) +(printed page 900) --QDF=0
-    - +(sion of Eq. (11-4), to be equal to the eigen axes of) +(printed page 900) --QDF=0
+    - +(sion of Eq 11-4 to be equal to the eigen axes of) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -1405,6 +1440,7 @@ exercises:
   - kind: equation
     target_id: 11-4
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.29'
   chapter_id: '11'
   exercise_number: 29
@@ -1478,7 +1514,7 @@ exercises:
         value: '11.31'
     queries:
     - +(11.30) +(printed page 900) --QDF=0
-    - +((a) * What is the cause of nearly identical clusters) +(printed page 900) --QDF=0
+    - +(a What is the cause of nearly identical clusters) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -1502,6 +1538,7 @@ exercises:
   - kind: figure
     target_id: '11.46'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.31'
   chapter_id: '11'
   exercise_number: 31
@@ -1570,7 +1607,7 @@ exercises:
         value: '11.33'
     queries:
     - +(11.32) +(printed page 901) --QDF=0
-    - +(border of the small image are 0. Is region R1 an) +(printed page 901) --QDF=0
+    - +(border of the small image are 0 Is region R1 an) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'
@@ -1594,6 +1631,7 @@ exercises:
   - kind: figure
     target_id: '11.51'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.33'
   chapter_id: '11'
   exercise_number: 33
@@ -1620,7 +1658,7 @@ exercises:
         value: '11.34'
     queries:
     - +(11.33) +(printed page 901) --QDF=0
-    - +(stable extremal regions in Section 11.6, can the) +(printed page 901) --QDF=0
+    - +(stable extremal regions in Section 11.6 can the) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'
@@ -1644,6 +1682,7 @@ exercises:
   - kind: section
     target_id: '11.6'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.34'
   chapter_id: '11'
   exercise_number: 34
@@ -1670,7 +1709,7 @@ exercises:
         value: '11.35'
     queries:
     - +(11.34) +(printed page 901) --QDF=0
-    - +(SIFT, the form of this equation is used to estab-) +(printed page 901) --QDF=0
+    - +(SIFT the form of this equation is used to estab) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'
@@ -1695,6 +1734,7 @@ exercises:
   - kind: equation
     target_id: 11-70
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.35'
   chapter_id: '11'
   exercise_number: 35
@@ -1721,7 +1761,7 @@ exercises:
         value: '11.36'
     queries:
     - +(11.35) +(printed page 901) --QDF=0
-    - +(in Section 11.7, assume that the input image is) +(printed page 901) --QDF=0
+    - +(in Section 11.7 assume that the input image is) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'
@@ -1745,6 +1785,7 @@ exercises:
   - kind: section
     target_id: '11.7'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.36'
   chapter_id: '11'
   exercise_number: 36
@@ -1771,7 +1812,7 @@ exercises:
         value: '11.37'
     queries:
     - +(11.36) +(printed page 901) --QDF=0
-    - +(by 2 and then smoothing it with the same kernel.) +(printed page 901) --QDF=0
+    - +(by 2 and then smoothing it with the same kernel) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'
@@ -1818,7 +1859,7 @@ exercises:
         value: '11.38'
     queries:
     - +(11.37) +(printed page 901) --QDF=0
-    - +((a) * Show how to obtain Eq. (11-74) from Eq.) +(printed page 901) --QDF=0
+    - +(a Show how to obtain Eq 11-74 from Eq) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'
@@ -1845,12 +1886,15 @@ exercises:
   - kind: equation
     target_id: 11-74
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 11-71
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 11-75
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.38'
   chapter_id: '11'
   exercise_number: 38
@@ -1877,7 +1921,7 @@ exercises:
         value: '11.39'
     queries:
     - +(11.38) +(printed page 901) --QDF=0
-    - +(on the material you have learned up to this point,) +(printed page 901) --QDF=0
+    - +(on the material you have learned up to this point) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'
@@ -1922,7 +1966,7 @@ exercises:
       end_before: null
     queries:
     - +(11.39) +(printed page 901) --QDF=0
-    - +(els, such as the one shown in the ﬁgure below.) +(printed page 901) --QDF=0
+    - +(els such as the one shown in the figure below) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'
@@ -1947,8 +1991,8 @@ exercises:
       start_at: null
       end_before: null
     queries:
-    - +(pied by bubbles to the total area of the image;) +(printed page 902) --QDF=0
-    - +(pied by bubbles to the total area of the image;) +(Problems) +(printed page 902) --QDF=0
+    - +(pied by bubbles to the total area of the image) +(printed page 902) --QDF=0
+    - +(pied by bubbles to the total area of the image) +(Problems) +(printed page 902) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '902'

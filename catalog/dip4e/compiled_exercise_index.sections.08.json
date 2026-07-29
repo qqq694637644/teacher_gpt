@@ -38,8 +38,9 @@
             }
           },
           "queries": [
-            "+(8.1) +(printed page 632) --QDF=0",
-            "+((b) Can such an image contain spatial or tempo-) +(printed page 632) --QDF=0"
+            "+(text b Can such an image contain spatial or tempo) +(printed page 632) --QDF=0",
+            "+(exercise 8.1) +(printed page 632) --QDF=0",
+            "+(exercise 8.2) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -72,6 +73,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.2": {
@@ -110,8 +112,9 @@
             }
           },
           "queries": [
-            "+(8.2) +(printed page 632) --QDF=0",
-            "+(xk and rk represent the kth run’s starting coordi-) +(printed page 632) --QDF=0"
+            "+(text xk and rk represent the kth run s starting coordi) +(printed page 632) --QDF=0",
+            "+(exercise 8.2) +(printed page 632) --QDF=0",
+            "+(exercise 8.3) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -144,6 +147,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.3": {
@@ -182,8 +186,9 @@
             }
           },
           "queries": [
-            "+(8.3) +(printed page 632) --QDF=0",
-            "+(error and rms signal-to-noise ratios for the quan-) +(printed page 632) --QDF=0"
+            "+(text error and rms signal-to-noise ratios for the quan) +(printed page 632) --QDF=0",
+            "+(exercise 8.3) +(printed page 632) --QDF=0",
+            "+(exercise 8.4) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -216,6 +221,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.4": {
@@ -254,8 +260,9 @@
             }
           },
           "queries": [
-            "+(8.4) +(printed page 632) --QDF=0",
-            "+(value and the four least signiﬁcant bits of the pre-) +(printed page 632) --QDF=0"
+            "+(text value and the four least significant bits of the pre) +(printed page 632) --QDF=0",
+            "+(exercise 8.4) +(printed page 632) --QDF=0",
+            "+(exercise 8.5) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -288,11 +295,67 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 633,
+            "pdf_page_number": 634,
+            "printed_page_label": "632"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "exercise",
+              "value": "8.3"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "8.4"
+            }
+          },
+          "queries": [
+            "+(text error and rms signal-to-noise ratios for the quan) +(printed page 632) --QDF=0",
+            "+(exercise 8.3) +(printed page 632) --QDF=0",
+            "+(exercise 8.4) +(printed page 632) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "632",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "error and rms signal-to-noise ratios for the quan-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "8.3",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "8.4",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "exercise",
           "target_id": "8.3",
           "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -313,8 +376,9 @@
                 }
               },
               "queries": [
-                "+(8.3) +(printed page 632) --QDF=0",
-                "+(error and rms signal-to-noise ratios for the quan-) +(printed page 632) --QDF=0"
+                "+(text error and rms signal-to-noise ratios for the quan) +(printed page 632) --QDF=0",
+                "+(exercise 8.3) +(printed page 632) --QDF=0",
+                "+(exercise 8.4) +(printed page 632) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -386,8 +450,9 @@
             }
           },
           "queries": [
-            "+(8.5) +(printed page 632) --QDF=0",
-            "+((c) If a greater level of lossless compression is) +(printed page 632) --QDF=0"
+            "+(text c If a greater level of lossless compression is) +(printed page 632) --QDF=0",
+            "+(exercise 8.5) +(printed page 632) --QDF=0",
+            "+(exercise 8.6) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -422,11 +487,50 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 547,
+            "pdf_page_number": 548,
+            "printed_page_label": "546"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-7) +(printed page 546) --QDF=0",
+            "+(8-7) +(equation) +(printed page 546) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "546",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-7",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
           "target_id": "8-7",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -504,8 +608,9 @@
             }
           },
           "queries": [
-            "+(8.6) +(printed page 632) --QDF=0",
-            "+(needed to relate these units to the base-2 unit of) +(printed page 632) --QDF=0"
+            "+(text needed to relate these units to the base-2 unit of) +(printed page 632) --QDF=0",
+            "+(exercise 8.6) +(printed page 632) --QDF=0",
+            "+(exercise 8.7) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -538,6 +643,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.7": {
@@ -576,8 +682,9 @@
             }
           },
           "queries": [
-            "+(8.7) +(printed page 632) --QDF=0",
-            "+(which is achieved if and only if all source symbols) +(printed page 632) --QDF=0"
+            "+(text which is achieved if and only if all source symbols) +(printed page 632) --QDF=0",
+            "+(exercise 8.7) +(printed page 632) --QDF=0",
+            "+(exercise 8.8) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -610,6 +717,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.8": {
@@ -648,8 +756,9 @@
             }
           },
           "queries": [
-            "+(8.8) +(printed page 632) --QDF=0",
-            "+((a) How many unique Huffman codes are there) +(printed page 632) --QDF=0"
+            "+(text a How many unique Huffman codes are there) +(printed page 632) --QDF=0",
+            "+(exercise 8.8) +(printed page 632) --QDF=0",
+            "+(exercise 8.9) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -682,6 +791,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.9": {
@@ -717,8 +827,8 @@
             "end_before": null
           },
           "queries": [
-            "+(8.9) +(printed page 632) --QDF=0",
-            "+(sider the image to be produced by the sec-) +(printed page 632) --QDF=0"
+            "+(text sider the image to be produced by the sec) +(printed page 632) --QDF=0",
+            "+(exercise 8.9) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -761,8 +871,8 @@
             }
           },
           "queries": [
-            "+(entropy of the image when looked at as pairs) +(printed page 633) --QDF=0",
-            "+(entropy of the image when looked at as pairs) +(Problems) +(printed page 633) --QDF=0"
+            "+(text entropy of the image when looked at as pairs) +(printed page 633) --QDF=0",
+            "+(exercise 8.10) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -790,6 +900,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.10": {
@@ -828,8 +939,9 @@
             }
           },
           "queries": [
-            "+(8.10) +(printed page 633) --QDF=0",
-            "+(Using the Huffman code in Fig. 8.8, decode the) +(printed page 633) --QDF=0"
+            "+(text Using the Huffman code in Fig 8.8 decode the) +(printed page 633) --QDF=0",
+            "+(exercise 8.10) +(printed page 633) --QDF=0",
+            "+(exercise 8.11) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -862,11 +974,50 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 557,
+            "pdf_page_number": 558,
+            "printed_page_label": "556"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 8.8) +(printed page 556) --QDF=0",
+            "+(8.8) +(figure) +(printed page 556) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "556",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "8.8",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "figure",
           "target_id": "8.8",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -944,8 +1095,9 @@
             }
           },
           "queries": [
-            "+(8.11) +(printed page 633) --QDF=0",
-            "+(Compute Golomb code Gn) +(printed page 633) --QDF=0"
+            "+(text Compute Golomb code Gn 3 for 0 n 15) +(printed page 633) --QDF=0",
+            "+(exercise 8.11) +(printed page 633) --QDF=0",
+            "+(exercise 8.12) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -955,7 +1107,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Compute Golomb code Gn",
+              "value": "Compute Golomb code Gn 3() for 0 ≤ n ≤ 15 .",
               "verification_mode": "text_or_visual"
             },
             {
@@ -978,6 +1130,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.12": {
@@ -1016,8 +1169,9 @@
             }
           },
           "queries": [
-            "+(8.12) +(printed page 633) --QDF=0",
-            "+(Write a general procedure for decoding Golomb) +(printed page 633) --QDF=0"
+            "+(text Write a general procedure for decoding Golomb) +(printed page 633) --QDF=0",
+            "+(exercise 8.12) +(printed page 633) --QDF=0",
+            "+(exercise 8.13) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1050,6 +1204,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.13": {
@@ -1088,8 +1243,9 @@
             }
           },
           "queries": [
-            "+(8.13) +(printed page 633) --QDF=0",
-            "+(Why is it not possible to compute the Huffman) +(printed page 633) --QDF=0"
+            "+(text Why is it not possible to compute the Huffman) +(printed page 633) --QDF=0",
+            "+(exercise 8.13) +(printed page 633) --QDF=0",
+            "+(exercise 8.14) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1124,11 +1280,50 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 559,
+            "pdf_page_number": 560,
+            "printed_page_label": "558"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-13) +(printed page 558) --QDF=0",
+            "+(8-13) +(equation) +(printed page 558) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "558",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-13",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
           "target_id": "8-13",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1206,8 +1401,9 @@
             }
           },
           "queries": [
-            "+(8.14) +(printed page 633) --QDF=0",
-            "+(Compute exponential Golomb code G) +(printed page 633) --QDF=0"
+            "+(text Compute exponential Golomb code G exp n for) +(printed page 633) --QDF=0",
+            "+(exercise 8.14) +(printed page 633) --QDF=0",
+            "+(exercise 8.15) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1217,7 +1413,7 @@
             },
             {
               "kind": "contains_text",
-              "value": "Compute exponential Golomb code G",
+              "value": "Compute exponential Golomb code G exp() n for",
               "verification_mode": "text_or_visual"
             },
             {
@@ -1240,6 +1436,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.15": {
@@ -1278,8 +1475,9 @@
             }
           },
           "queries": [
-            "+(8.15) +(printed page 633) --QDF=0",
-            "+(* Write a general procedure for decoding exponen-) +(printed page 633) --QDF=0"
+            "+(text Write a general procedure for decoding exponen) +(printed page 633) --QDF=0",
+            "+(exercise 8.15) +(printed page 633) --QDF=0",
+            "+(exercise 8.16) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1312,6 +1510,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.16": {
@@ -1350,8 +1549,9 @@
             }
           },
           "queries": [
-            "+(8.16) +(printed page 633) --QDF=0",
-            "+(Plot the optimal Golomb coding parameter m as) +(printed page 633) --QDF=0"
+            "+(text Plot the optimal Golomb coding parameter m as) +(printed page 633) --QDF=0",
+            "+(exercise 8.16) +(printed page 633) --QDF=0",
+            "+(exercise 8.17) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1386,11 +1586,50 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 559,
+            "pdf_page_number": 560,
+            "printed_page_label": "558"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-14) +(printed page 558) --QDF=0",
+            "+(8-14) +(equation) +(printed page 558) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "558",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-14",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
           "target_id": "8-14",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -1468,8 +1707,9 @@
             }
           },
           "queries": [
-            "+(8.17) +(printed page 633) --QDF=0",
-            "+(Given a four-symbol source {a, b, c, d} with source) +(printed page 633) --QDF=0"
+            "+(text Given a four-symbol source a b c d with source) +(printed page 633) --QDF=0",
+            "+(exercise 8.17) +(printed page 633) --QDF=0",
+            "+(exercise 8.18) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1502,6 +1742,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.18": {
@@ -1540,8 +1781,9 @@
             }
           },
           "queries": [
-            "+(8.18) +(printed page 633) --QDF=0",
-            "+(* The arithmetic decoding process is the reverse) +(printed page 633) --QDF=0"
+            "+(text The arithmetic decoding process is the reverse) +(printed page 633) --QDF=0",
+            "+(exercise 8.18) +(printed page 633) --QDF=0",
+            "+(exercise 8.19) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1574,6 +1816,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.19": {
@@ -1612,8 +1855,9 @@
             }
           },
           "queries": [
-            "+(8.19) +(printed page 633) --QDF=0",
-            "+(Use the LZW coding algorithm to encode the) +(printed page 633) --QDF=0"
+            "+(text Use the LZW coding algorithm to encode the) +(printed page 633) --QDF=0",
+            "+(exercise 8.19) +(printed page 633) --QDF=0",
+            "+(exercise 8.20) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1646,6 +1890,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.20": {
@@ -1684,8 +1929,9 @@
             }
           },
           "queries": [
-            "+(8.20) +(printed page 633) --QDF=0",
-            "+(tionary that was used during the encoding is not) +(printed page 633) --QDF=0"
+            "+(text tionary that was used during the encoding is not) +(printed page 633) --QDF=0",
+            "+(exercise 8.20) +(printed page 633) --QDF=0",
+            "+(exercise 8.21) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1720,22 +1966,113 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 566,
+            "pdf_page_number": 567,
+            "printed_page_label": "565"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "example",
+              "value": "8.7"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(example 8.7) +(printed page 565) --QDF=0",
+            "+(8.7) +(example) +(printed page 565) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "565",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "8.7",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "8.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 567,
+            "pdf_page_number": 568,
+            "printed_page_label": "566"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "8.6 RUN-LENGTH CODING"
+            }
+          },
+          "queries": [
+            "+(text strategy for handling dictionary overflow A simple solution is to flush or reinitialize) +(printed page 566) --QDF=0",
+            "+(heading 8.6 RUN-LENGTH CODING) +(printed page 566) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "566",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "strategy for handling dictionary overﬂow. A simple solution is to ﬂush or reinitialize",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "8.6 RUN-LENGTH CODING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "example",
           "target_id": "8.7",
           "reason": "Explicit example reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
-              "page_role": "single",
+              "page_role": "start",
               "page": {
                 "pdf_page_index": 566,
                 "pdf_page_number": 567,
                 "printed_page_label": "565"
               },
               "content_window": {
-                "start_at": null,
+                "start_at": {
+                  "kind": "example",
+                  "value": "8.7"
+                },
                 "end_before": null
               },
               "queries": [
@@ -1751,6 +2088,52 @@
                 {
                   "kind": "contains_example",
                   "value": "8.7",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "8.7"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 567,
+                "pdf_page_number": 568,
+                "printed_page_label": "566"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "8.6 RUN-LENGTH CODING"
+                }
+              },
+              "queries": [
+                "+(text strategy for handling dictionary overflow A simple solution is to flush or reinitialize) +(printed page 566) --QDF=0",
+                "+(heading 8.6 RUN-LENGTH CODING) +(printed page 566) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "566",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "strategy for handling dictionary overﬂow. A simple solution is to ﬂush or reinitialize",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "8.6 RUN-LENGTH CODING",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -1802,8 +2185,9 @@
             }
           },
           "queries": [
-            "+(8.21) +(printed page 633) --QDF=0",
-            "+(Decode the BMP encoded sequence {3, 4, 5, 6, 0, 3,) +(printed page 633) --QDF=0"
+            "+(text Decode the BMP encoded sequence 3 4 5 6 0 3) +(printed page 633) --QDF=0",
+            "+(exercise 8.21) +(printed page 633) --QDF=0",
+            "+(exercise 8.22) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1836,6 +2220,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.22": {
@@ -1874,8 +2259,9 @@
             }
           },
           "queries": [
-            "+(8.22) +(printed page 633) --QDF=0",
-            "+(Gray-coded number to its binary equivalent) +(printed page 633) --QDF=0"
+            "+(text Gray-coded number to its binary equivalent) +(printed page 633) --QDF=0",
+            "+(exercise 8.22) +(printed page 633) --QDF=0",
+            "+(exercise 8.23) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1908,6 +2294,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.23": {
@@ -1946,8 +2333,9 @@
             }
           },
           "queries": [
-            "+(8.23) +(printed page 633) --QDF=0",
-            "+(located on the ﬁrst pixel of the second line seg-) +(printed page 633) --QDF=0"
+            "+(text located on the first pixel of the second line seg) +(printed page 633) --QDF=0",
+            "+(exercise 8.23) +(printed page 633) --QDF=0",
+            "+(exercise 8.24) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1980,6 +2368,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.24": {
@@ -2018,8 +2407,9 @@
             }
           },
           "queries": [
-            "+(8.24) +(printed page 633) --QDF=0",
-            "+((a) List all the members of JPEG DC coefﬁcient) +(printed page 633) --QDF=0"
+            "+(text a List all the members of JPEG DC coefficient) +(printed page 633) --QDF=0",
+            "+(exercise 8.24) +(printed page 633) --QDF=0",
+            "+(exercise 8.25) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2052,6 +2442,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.25": {
@@ -2090,8 +2481,9 @@
             }
           },
           "queries": [
-            "+(8.25) +(printed page 633) --QDF=0",
-            "+(placement of 8 pixels? What would it become for) +(printed page 633) --QDF=0"
+            "+(text placement of 8 pixels What would it become for) +(printed page 633) --QDF=0",
+            "+(exercise 8.25) +(printed page 633) --QDF=0",
+            "+(exercise 8.26) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2124,6 +2516,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.26": {
@@ -2162,8 +2555,9 @@
             }
           },
           "queries": [
-            "+(8.26) +(printed page 633) --QDF=0",
-            "+(What are the advantages of using B-frames for) +(printed page 633) --QDF=0"
+            "+(text What are the advantages of using B-frames for) +(printed page 633) --QDF=0",
+            "+(exercise 8.26) +(printed page 633) --QDF=0",
+            "+(exercise 8.27) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2196,6 +2590,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.27": {
@@ -2234,8 +2629,9 @@
             }
           },
           "queries": [
-            "+(8.27) +(printed page 633) --QDF=0",
-            "+(* Draw the block diagram of the companion) +(printed page 633) --QDF=0"
+            "+(text Draw the block diagram of the companion) +(printed page 633) --QDF=0",
+            "+(exercise 8.27) +(printed page 633) --QDF=0",
+            "+(exercise 8.28) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2268,32 +2664,71 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 606,
+            "pdf_page_number": 607,
+            "printed_page_label": "605"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 8.36) +(printed page 605) --QDF=0",
+            "+(8.36) +(figure) +(printed page 605) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "605",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "8.36",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "figure",
           "target_id": "8.36",
           "reason": "Explicit figure reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 605,
-                "pdf_page_number": 606,
-                "printed_page_label": "604"
+                "pdf_page_index": 606,
+                "pdf_page_number": 607,
+                "printed_page_label": "605"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(figure 8.36) +(printed page 604) --QDF=0",
-                "+(8.36) +(figure) +(printed page 604) --QDF=0"
+                "+(figure 8.36) +(printed page 605) --QDF=0",
+                "+(8.36) +(figure) +(printed page 605) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "604",
+                  "value": "605",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -2347,8 +2782,8 @@
             "end_before": null
           },
           "queries": [
-            "+(8.28) +(printed page 633) --QDF=0",
-            "+(the form of Eq. (8-48) with rh= 0 is to be DPCM) +(printed page 633) --QDF=0"
+            "+(text the form of Eq 8-48 with rh 0 is to be DPCM) +(printed page 633) --QDF=0",
+            "+(exercise 8.28) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2378,11 +2813,50 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 611,
+            "pdf_page_number": 612,
+            "printed_page_label": "610"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-48) +(printed page 610) --QDF=0",
+            "+(8-48) +(equation) +(printed page 610) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "610",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-48",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
           "target_id": "8-48",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2460,8 +2934,9 @@
             }
           },
           "queries": [
-            "+(8.29) +(printed page 634) --QDF=0",
-            "+(tion levels for L = 4 and the uniform probability) +(printed page 634) --QDF=0"
+            "+(text tion levels for L 4 and the uniform probability) +(printed page 634) --QDF=0",
+            "+(exercise 8.29) +(printed page 634) --QDF=0",
+            "+(exercise 8.30) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2494,6 +2969,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.30": {
@@ -2532,8 +3008,9 @@
             }
           },
           "queries": [
-            "+(8.30) +(printed page 634) --QDF=0",
-            "+(average) for the next 1 min, with the ﬁrst and last) +(printed page 634) --QDF=0"
+            "+(text average for the next 1 min with the first and last) +(printed page 634) --QDF=0",
+            "+(exercise 8.30) +(printed page 634) --QDF=0",
+            "+(exercise 8.31) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2566,6 +3043,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.31": {
@@ -2604,8 +3082,9 @@
             }
           },
           "queries": [
-            "+(8.31) +(printed page 634) --QDF=0",
-            "+(deﬁned by Eq. (8-61) is equivalent to the tradi-) +(printed page 634) --QDF=0"
+            "+(text defined by Eq 8-61 is equivalent to the tradi) +(printed page 634) --QDF=0",
+            "+(exercise 8.31) +(printed page 634) --QDF=0",
+            "+(exercise 8.32) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2642,11 +3121,86 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 526,
+            "pdf_page_number": 527,
+            "printed_page_label": "525"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(table 7.1) +(printed page 525) --QDF=0",
+            "+(7.1) +(table) +(printed page 525) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "525",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_table",
+              "value": "7.1",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 620,
+            "pdf_page_number": 621,
+            "printed_page_label": "619"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-61) +(printed page 619) --QDF=0",
+            "+(8-61) +(equation) +(printed page 619) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "619",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-61",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
           "target_id": "8-61",
           "reason": "Explicit equation reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
@@ -2690,27 +3244,28 @@
           "kind": "table",
           "target_id": "7.1",
           "reason": "Explicit table reference in exercise text",
+          "selected_context_pages": [],
           "retrieval_plan": [
             {
               "sequence": 1,
               "page_role": "single",
               "page": {
-                "pdf_page_index": 525,
-                "pdf_page_number": 526,
-                "printed_page_label": "524"
+                "pdf_page_index": 526,
+                "pdf_page_number": 527,
+                "printed_page_label": "525"
               },
               "content_window": {
                 "start_at": null,
                 "end_before": null
               },
               "queries": [
-                "+(table 7.1) +(printed page 524) --QDF=0",
-                "+(7.1) +(table) +(printed page 524) --QDF=0"
+                "+(table 7.1) +(printed page 525) --QDF=0",
+                "+(7.1) +(table) +(printed page 525) --QDF=0"
               ],
               "required_evidence": [
                 {
                   "kind": "printed_page_equals",
-                  "value": "524",
+                  "value": "525",
                   "verification_mode": "visual_required"
                 },
                 {
@@ -2767,8 +3322,9 @@
             }
           },
           "queries": [
-            "+(8.32) +(printed page 634) --QDF=0",
-            "+(ted to the mantissa and exponent of the 2LL sub-) +(printed page 634) --QDF=0"
+            "+(text ted to the mantissa and exponent of the 2LL sub) +(printed page 634) --QDF=0",
+            "+(exercise 8.32) +(printed page 634) --QDF=0",
+            "+(exercise 8.33) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2801,6 +3357,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.33": {
@@ -2839,8 +3396,9 @@
             }
           },
           "queries": [
-            "+(8.33) +(printed page 634) --QDF=0",
-            "+(How would you add a visible watermark to an) +(printed page 634) --QDF=0"
+            "+(text How would you add a visible watermark to an) +(printed page 634) --QDF=0",
+            "+(exercise 8.33) +(printed page 634) --QDF=0",
+            "+(exercise 8.34) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2873,6 +3431,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.34": {
@@ -2911,8 +3470,9 @@
             }
           },
           "queries": [
-            "+(8.34) +(printed page 634) --QDF=0",
-            "+(* Design an invisible watermarking system based) +(printed page 634) --QDF=0"
+            "+(text Design an invisible watermarking system based) +(printed page 634) --QDF=0",
+            "+(exercise 8.34) +(printed page 634) --QDF=0",
+            "+(exercise 8.35) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2945,6 +3505,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.35": {
@@ -2980,8 +3541,8 @@
             "end_before": null
           },
           "queries": [
-            "+(8.35) +(printed page 634) --QDF=0",
-            "+(Design an invisible watermarking system based) +(printed page 634) --QDF=0"
+            "+(text Design an invisible watermarking system based) +(printed page 634) --QDF=0",
+            "+(exercise 8.35) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3009,6 +3570,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     }
   }

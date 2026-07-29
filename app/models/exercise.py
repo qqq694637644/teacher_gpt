@@ -13,6 +13,8 @@ from app.models.locator import (
     PageReference,
     PageRetrievalStep,
     StrictModel,
+    query_parentheses_balanced,
+    query_safe_anchor,
 )
 
 EXERCISE_ID_PATTERN = r"^\d+\.\d+$"
@@ -45,11 +47,18 @@ class ExerciseReferenceTarget(StrictModel):
     kind: ExerciseReferenceKind
     target_id: str = Field(min_length=1)
     reason: str = Field(min_length=1)
+    selected_context_pages: list[str] = Field(default_factory=list)
     retrieval_plan: Annotated[list[PageRetrievalStep], Field(min_length=1)]
 
     @model_validator(mode="after")
     def validate_target_id(self) -> ExerciseReferenceTarget:
         validate_reference_id(self.kind, self.target_id)
+        if len(self.selected_context_pages) != len(set(self.selected_context_pages)):
+            raise ValueError("selected_context_pages must be unique")
+        if any(not value.strip() for value in self.selected_context_pages):
+            raise ValueError("selected_context_pages cannot contain blank labels")
+        if self.selected_context_pages and self.kind != "section":
+            raise ValueError("selected_context_pages is supported only for section references")
         return self
 
 
@@ -63,6 +72,7 @@ class ExerciseLocator(StrictModel):
     source_order: int = Field(ge=1)
     problem_page_range: PageRange
     problem_retrieval_plan: Annotated[list[PageRetrievalStep], Field(min_length=1)]
+    reference_retrieval_plan: list[PageRetrievalStep] = Field(default_factory=list)
     reference_targets: list[ExerciseReferenceTarget] = Field(default_factory=list)
 
     @model_validator(mode="after")
@@ -115,6 +125,25 @@ class ExerciseLocator(StrictModel):
             raise ValueError("exercise reference targets must be unique")
         if ("exercise", self.exercise_id) in references:
             raise ValueError("exercise cannot reference itself")
+        all_plans = [self.problem_retrieval_plan, self.reference_retrieval_plan]
+        all_plans.extend(target.retrieval_plan for target in self.reference_targets)
+        for plan_to_validate in all_plans:
+            for step in plan_to_validate:
+                if any(not query_parentheses_balanced(query) for query in step.queries):
+                    raise ValueError("exercise retrieval queries must have balanced parentheses")
+                for evidence in step.required_evidence:
+                    if evidence.kind == "printed_page_equals":
+                        continue
+                    folded_anchor = query_safe_anchor(evidence.value).casefold()
+                    if not any(folded_anchor in query.casefold() for query in step.queries):
+                        raise ValueError(
+                            "every non-page exercise evidence must have a matching safe query anchor"
+                        )
+
+        if self.reference_retrieval_plan and [
+            step.sequence for step in self.reference_retrieval_plan
+        ] != list(range(1, len(self.reference_retrieval_plan) + 1)):
+            raise ValueError("reference retrieval plan sequence must be contiguous and start at 1")
         return self
 
 
@@ -184,6 +213,12 @@ class CompiledExerciseIndex(StrictModel):
                 if target.kind == "exercise" and target.target_id not in self.exercises:
                     raise ValueError(
                         f"exercise {exercise_id} references missing exercise {target.target_id}"
+                    )
+            for step in locator.reference_retrieval_plan:
+                canonical = self.pages[step.page.pdf_page_index]
+                if step.page != canonical:
+                    raise ValueError(
+                        f"exercise {exercise_id} contains a noncanonical aggregate reference page"
                     )
             grouped[locator.chapter_id].append(locator)
 

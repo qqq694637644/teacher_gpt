@@ -32,6 +32,17 @@ def test_exercise_locator_requires_visual_exercise_start_boundary() -> None:
         ExerciseLocator.model_validate(raw)
 
 
+def test_exercise_locator_rejects_unbalanced_query_parentheses() -> None:
+    index = complete_exercise_index()
+    raw = index.exercises["2.14"].model_dump(mode="json")
+    raw["problem_retrieval_plan"][0]["queries"][0] = (
+        "+(text broken (anchor) +(printed page 98) --QDF=0"
+    )
+
+    with pytest.raises(ValidationError, match="balanced parentheses"):
+        ExerciseLocator.model_validate(raw)
+
+
 def test_compiled_exercise_index_rejects_missing_cross_exercise_reference() -> None:
     index = complete_exercise_index()
     raw = index.model_dump(mode="json")

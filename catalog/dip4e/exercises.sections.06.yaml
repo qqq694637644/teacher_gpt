@@ -27,7 +27,7 @@ exercises:
         value: '6.2'
     queries:
     - +(6.1) +(printed page 458) --QDF=0
-    - +(blue (Z) light required to generate the point labeled) +(printed page 458) --QDF=0
+    - +(blue Z light required to generate the point labeled) +(printed page 458) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '458'
@@ -51,6 +51,7 @@ exercises:
   - kind: figure
     target_id: '6.5'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.2'
   chapter_id: '6'
   exercise_number: 2
@@ -101,6 +102,7 @@ exercises:
   - kind: figure
     target_id: '6.5'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.3'
   chapter_id: '6'
   exercise_number: 3
@@ -151,6 +153,7 @@ exercises:
   - kind: figure
     target_id: '6.5'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.4'
   chapter_id: '6'
   exercise_number: 4
@@ -219,7 +222,7 @@ exercises:
         value: '6.6'
     queries:
     - +(6.5) +(printed page 459) --QDF=0
-    - +(son see in the middle column of this image?) +(printed page 459) --QDF=0
+    - +(son see in the middle column of this image) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -266,7 +269,7 @@ exercises:
         value: '6.7'
     queries:
     - +(6.6) +(printed page 459) --QDF=0
-    - +(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0
+    - +(monitor All colors are at maximum intensity and) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -360,7 +363,7 @@ exercises:
         value: '6.9'
     queries:
     - +(6.8) +(printed page 459) --QDF=0
-    - +((a) * Describe how the gray levels vary in each of) +(printed page 459) --QDF=0
+    - +(a Describe how the gray levels vary in each of) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -384,6 +387,7 @@ exercises:
   - kind: figure
     target_id: '6.8'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.9'
   chapter_id: '6'
   exercise_number: 9
@@ -410,7 +414,7 @@ exercises:
         value: '6.10'
     queries:
     - +(6.9) +(printed page 459) --QDF=0
-    - +(fed into the red, green, and blue inputs of) +(printed page 459) --QDF=0
+    - +(fed into the red green and blue inputs of) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -434,6 +438,7 @@ exercises:
   - kind: exercise
     target_id: '6.6'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.10'
   chapter_id: '6'
   exercise_number: 10
@@ -460,7 +465,7 @@ exercises:
         value: '6.11'
     queries:
     - +(6.10) +(printed page 459) --QDF=0
-    - +(Problem 6.6 as they would appear on a mono-) +(printed page 459) --QDF=0
+    - +(Problem 6.6 as they would appear on a mono) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -484,6 +489,7 @@ exercises:
   - kind: exercise
     target_id: '6.6'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.11'
   chapter_id: '6'
   exercise_number: 11
@@ -510,7 +516,7 @@ exercises:
         value: '6.12'
     queries:
     - +(6.11) +(printed page 459) --QDF=0
-    - +(band starts at a dark purple on the left and pro-) +(printed page 459) --QDF=0
+    - +(band starts at a dark purple on the left and pro) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -534,6 +540,7 @@ exercises:
   - kind: figure
     target_id: '6.2'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.12'
   chapter_id: '6'
   exercise_number: 12
@@ -560,7 +567,7 @@ exercises:
         value: '6.13'
     queries:
     - +(6.12) +(printed page 459) --QDF=0
-    - '+(ﬁxed and given. (Hint: Use the HSI color model.)) +(printed page 459) --QDF=0'
+    - +(fixed and given Hint Use the HSI color model) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -584,6 +591,7 @@ exercises:
   - kind: figure
     target_id: '6.11'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.13'
   chapter_id: '6'
   exercise_number: 13
@@ -608,7 +616,7 @@ exercises:
       end_before: null
     queries:
     - +(6.13) +(printed page 459) --QDF=0
-    - +(are sufﬁcient. If you cannot assign a speciﬁc gray) +(printed page 459) --QDF=0
+    - +(are sufficient If you cannot assign a specific gray) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -676,6 +684,7 @@ exercises:
   - kind: figure
     target_id: '6.14'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.15'
   chapter_id: '6'
   exercise_number: 15
@@ -726,6 +735,7 @@ exercises:
   - kind: exercise
     target_id: '6.6'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.16'
   chapter_id: '6'
   exercise_number: 16
@@ -752,7 +762,7 @@ exercises:
         value: '6.17'
     queries:
     - +(6.16) +(printed page 460) --QDF=0
-    - +(of Eq. (6-41) from the RGB counterpart in) +(printed page 460) --QDF=0
+    - +(of Eq 6-41 from the RGB counterpart in) +(printed page 460) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '460'
@@ -779,12 +789,15 @@ exercises:
   - kind: equation
     target_id: 6-41
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 6-40
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 6-5
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.17'
   chapter_id: '6'
   exercise_number: 17
@@ -811,7 +824,7 @@ exercises:
         value: '6.18'
     queries:
     - +(6.17) +(printed page 460) --QDF=0
-    - '+((Hint: The intensity of the CMYK image is) +(printed page 460) --QDF=0'
+    - +(Hint The intensity of the CMYK image is) +(printed page 460) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '460'
@@ -838,9 +851,35 @@ exercises:
   - kind: equation
     target_id: 6-6
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 6-7
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 6-8
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 6-9
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 6-10
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 6-11
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 6-12
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 6-42
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.18'
   chapter_id: '6'
   exercise_number: 18
@@ -867,7 +906,7 @@ exercises:
         value: '6.19'
     queries:
     - +(6.18) +(printed page 460) --QDF=0
-    - +((a) * Why does the image in Fig. 6.25(e) exhibit) +(printed page 460) --QDF=0
+    - +(a Why does the image in Fig 6.25 e exhibit) +(printed page 460) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '460'
@@ -891,6 +930,7 @@ exercises:
   - kind: figure
     target_id: '6.25'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.19'
   chapter_id: '6'
   exercise_number: 19
@@ -917,7 +957,7 @@ exercises:
         value: '6.20'
     queries:
     - +(6.19) +(printed page 460) --QDF=0
-    - +(* Show that the saturation component of the com-) +(printed page 460) --QDF=0
+    - +(Show that the saturation component of the com) +(printed page 460) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '460'
@@ -964,7 +1004,7 @@ exercises:
         value: '6.21'
     queries:
     - +(6.20) +(printed page 460) --QDF=0
-    - +(tion in Fig. 6.31(b) using the HSI color model.) +(printed page 460) --QDF=0
+    - +(tion in Fig 6.31 b using the HSI color model) +(printed page 460) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '460'
@@ -988,6 +1028,7 @@ exercises:
   - kind: figure
     target_id: '6.31'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.21'
   chapter_id: '6'
   exercise_number: 21
@@ -1014,7 +1055,7 @@ exercises:
         value: '6.22'
     queries:
     - +(6.21) +(printed page 460) --QDF=0
-    - +(* Derive the CMY transformations to generate the) +(printed page 460) --QDF=0
+    - +(Derive the CMY transformations to generate the) +(printed page 460) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '460'
@@ -1106,7 +1147,7 @@ exercises:
       end_before: null
     queries:
     - +(6.23) +(printed page 460) --QDF=0
-    - +(* Assume that the monitor and printer of an imag-) +(printed page 460) --QDF=0
+    - +(Assume that the monitor and printer of an imag) +(printed page 460) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '460'
@@ -1124,12 +1165,14 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: section
-    target_id: '6.2'
-    reason: Explicit section reference in exercise text
   - kind: figure
     target_id: '6.30'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: section
+    target_id: '6.2'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.24'
   chapter_id: '6'
   exercise_number: 24
@@ -1156,7 +1199,7 @@ exercises:
         value: '6.25'
     queries:
     - +(6.24) +(printed page 461) --QDF=0
-    - +(* Given an image in the RGB, CMY, or CMYK) +(printed page 461) --QDF=0
+    - +(Given an image in the RGB CMY or CMYK) +(printed page 461) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '461'
@@ -1180,6 +1223,7 @@ exercises:
   - kind: section
     target_id: '3.3'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.25'
   chapter_id: '6'
   exercise_number: 25
@@ -1206,7 +1250,7 @@ exercises:
         value: '6.26'
     queries:
     - +(6.25) +(printed page 461) --QDF=0
-    - +(and blue, and each of the colors is at maximum) +(printed page 461) --QDF=0
+    - +(and blue and each of the colors is at maximum) +(printed page 461) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '461'
@@ -1253,7 +1297,7 @@ exercises:
         value: '6.27'
     queries:
     - +(6.26) +(printed page 461) --QDF=0
-    - +((b) If the box is aligned with the axes this pro-) +(printed page 461) --QDF=0
+    - +(b If the box is aligned with the axes this pro) +(printed page 461) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '461'
@@ -1277,6 +1321,7 @@ exercises:
   - kind: section
     target_id: '6.7'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.27'
   chapter_id: '6'
   exercise_number: 27
@@ -1303,7 +1348,7 @@ exercises:
         value: '6.28'
     queries:
     - +(6.27) +(printed page 461) --QDF=0
-    - +(Show that Eq. (6-49) reduces to Eq. (6-48) when) +(printed page 461) --QDF=0
+    - +(Show that Eq 6-49 reduces to Eq 6-48 when) +(printed page 461) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '461'
@@ -1329,9 +1374,11 @@ exercises:
   - kind: equation
     target_id: 6-49
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 6-48
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '6.28'
   chapter_id: '6'
   exercise_number: 28
@@ -1403,7 +1450,7 @@ exercises:
       end_before: null
     queries:
     - +(6.29) +(printed page 461) --QDF=0
-    - +(at times yield erroneous results. Speciﬁcally, it is) +(printed page 461) --QDF=0
+    - +(at times yield erroneous results Specifically it is) +(printed page 461) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '461'
@@ -1447,6 +1494,8 @@ exercises:
   - kind: section
     target_id: '6.7'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
   - kind: section
     target_id: '3.6'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []

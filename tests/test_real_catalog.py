@@ -1,12 +1,17 @@
+import json
+import unicodedata
 from pathlib import Path
 
 from fastapi.testclient import TestClient
 
 from app.core.config import Settings
 from app.main import create_app
+from app.models.locator import query_parentheses_balanced, query_safe_anchor
+from app.repositories.exercise_repository import ExerciseRepository
 
 REAL_INDEX = Path("catalog/dip4e/compiled_locator_index.json")
 REAL_EXERCISE_INDEX = Path("catalog/dip4e/compiled_exercise_index.json")
+REAL_EXERCISE_REPORT = Path("catalog/dip4e/exercise_validation_report.json")
 
 
 def test_real_catalog_starts_and_serves_reviewed_sections() -> None:
@@ -62,3 +67,302 @@ def test_real_catalog_starts_and_serves_reviewed_sections() -> None:
     assert chapter_payload["exercise_count"] == 41
     assert chapter_payload["first_exercise"] == "2.1"
     assert chapter_payload["last_exercise"] == "2.41"
+
+
+def test_real_exercise_reference_plans_preserve_reviewed_pdf_context_and_windows() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+
+    exercise_3_8 = index.exercises["3.8"]
+    assert [step.page.printed_page_label for step in exercise_3_8.reference_retrieval_plan] == [
+        "135",
+        "136",
+    ]
+    section_3_3 = next(
+        target
+        for target in exercise_3_8.reference_targets
+        if target.kind == "section" and target.target_id == "3.3"
+    )
+    assert section_3_3.selected_context_pages == ["135", "136"]
+
+    exercise_11_2 = index.exercises["11.2"]
+    assert [step.page.printed_page_label for step in exercise_11_2.reference_retrieval_plan] == [
+        "815",
+        "816",
+    ]
+    section_11_2 = next(
+        target
+        for target in exercise_11_2.reference_targets
+        if target.kind == "section" and target.target_id == "11.2"
+    )
+    assert section_11_2.selected_context_pages == ["815", "816"]
+
+    exercise_11_22 = index.exercises["11.22"]
+    assert [step.page.printed_page_label for step in exercise_11_22.reference_retrieval_plan] == [
+        "850",
+        "851",
+    ]
+    table_target = next(
+        target for target in exercise_11_22.reference_targets if target.kind == "table"
+    )
+    assert [step.page.printed_page_label for step in table_target.retrieval_plan] == ["851"]
+
+    exercise_2_20 = index.exercises["2.20"]
+    assert len(exercise_2_20.reference_retrieval_plan) == 1
+    step_2_20 = exercise_2_20.reference_retrieval_plan[0]
+    assert step_2_20.page.printed_page_label == "115"
+    assert step_2_20.content_window.start_at.model_dump() == {
+        "kind": "exercise",
+        "value": "2.19",
+    }
+    assert step_2_20.content_window.end_before.model_dump() == {
+        "kind": "exercise",
+        "value": "2.20",
+    }
+
+    exercise_4_12 = index.exercises["4.12"]
+    page_309_steps = [
+        step
+        for step in exercise_4_12.reference_retrieval_plan
+        if step.page.printed_page_label == "309"
+    ]
+    assert {
+        (
+            step.content_window.start_at.value,
+            step.content_window.end_before.value,
+        )
+        for step in page_309_steps
+        if step.content_window.start_at is not None and step.content_window.end_before is not None
+    } >= {("4.4", "4.5"), ("4.9", "4.10")}
+
+    exercise_2_11 = index.exercises["2.11"]
+    assert [step.page.printed_page_label for step in exercise_2_11.reference_retrieval_plan] == [
+        "70",
+        "71",
+    ]
+    page_71 = exercise_2_11.reference_retrieval_plan[1]
+    for evidence in page_71.required_evidence:
+        if evidence.kind == "printed_page_equals":
+            continue
+        safe_anchor = query_safe_anchor(evidence.value).casefold()
+        assert any(safe_anchor in query.casefold() for query in page_71.queries)
+    assert any("2-15" in query for query in page_71.queries)
+    assert any("2-16" in query for query in page_71.queries)
+
+
+def test_real_exercise_catalog_expands_parallel_and_range_references() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+
+    expected_equations = {
+        "2.38": ["2-46", "2-47"],
+        "4.11": ["4-25", "4-26"],
+        "4.15": ["4-42", "4-43", "4-44", "4-45"],
+        "4.25": ["4-59", "4-60"],
+        "4.27": ["4-71", "4-72"],
+    }
+    for exercise_id, expected in expected_equations.items():
+        locator = index.exercises[exercise_id]
+        actual = [
+            target.target_id for target in locator.reference_targets if target.kind == "equation"
+        ]
+        assert actual == expected
+        for target_id in expected:
+            target = next(
+                target
+                for target in locator.reference_targets
+                if target.kind == "equation" and target.target_id == target_id
+            )
+            assert target.retrieval_plan
+            matching_steps = [
+                step
+                for step in locator.reference_retrieval_plan
+                if any(
+                    evidence.kind == "contains_equation" and evidence.value == target_id
+                    for evidence in step.required_evidence
+                )
+            ]
+            assert matching_steps
+            assert any(
+                target_id.casefold() in query.casefold()
+                for step in matching_steps
+                for query in step.queries
+            )
+
+
+def test_real_exercise_catalog_recovers_pdf_wrapped_reference_keywords() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+    expected = {
+        "2.17": ("section", "2.5"),
+        "3.33": ("section", "3.5"),
+        "3.36": ("section", "3.5"),
+        "9.41": ("section", "9.6"),
+        "10.31": ("section", "10.3"),
+        "11.10": ("section", "11.2"),
+        "11.12": ("section", "11.2"),
+        "7.14": ("exercise", "7.13"),
+        "9.34": ("exercise", "9.9"),
+        "7.9": ("example", "7.3"),
+        "7.40": ("example", "7.19"),
+    }
+
+    for exercise_id, target_key in expected.items():
+        locator = index.exercises[exercise_id]
+        assert target_key in {
+            (target.kind, target.target_id) for target in locator.reference_targets
+        }
+
+
+def test_real_exercise_catalog_recovers_visual_line_formula_references() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+    expected = {
+        "7.3": {"7-16", "7-17"},
+        "12.6": {"12-12", "12-13"},
+        "12.27": {"12-79"},
+    }
+
+    for exercise_id, equation_ids in expected.items():
+        locator = index.exercises[exercise_id]
+        assert equation_ids <= {
+            target.target_id for target in locator.reference_targets if target.kind == "equation"
+        }
+
+
+def test_real_exercise_catalog_uses_reviewed_entity_pages_and_example_ranges() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+
+    reviewed_targets = {
+        ("3.25", "table", "3.6"): ["169"],
+        ("4.6", "figure", "4.11"): ["224"],
+        ("2.26", "example", "2.5"): ["86", "87"],
+        ("4.2", "example", "4.1"): ["211", "212"],
+        ("4.8", "example", "4.2"): ["212", "213"],
+        ("4.31", "example", "4.10"): ["244", "245"],
+        ("4.52", "example", "4.21"): ["290", "291"],
+        ("5.43", "example", "5.15"): ["376", "377"],
+        ("7.19", "example", "7.6"): ["475", "476", "477"],
+        ("7.39", "example", "7.18"): ["510", "511"],
+        ("7.40", "example", "7.19"): ["512", "513"],
+        ("10.52", "example", "10.29"): ["801", "802", "803"],
+        ("11.26", "example", "11.16"): ["863", "864", "865"],
+        ("12.13", "example", "12.7"): ["937", "938"],
+    }
+
+    for (exercise_id, kind, target_id), expected_pages in reviewed_targets.items():
+        locator = index.exercises[exercise_id]
+        target = next(
+            target
+            for target in locator.reference_targets
+            if target.kind == kind and target.target_id == target_id
+        )
+        assert [step.page.printed_page_label for step in target.retrieval_plan] == expected_pages
+
+
+def test_real_exercise_catalog_includes_transitive_exercise_dependencies() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+    expected_evidence = {
+        "4.10": {
+            ("contains_exercise", "4.8"),
+            ("contains_exercise", "4.9"),
+            ("contains_example", "4.2"),
+        },
+        "5.32": {
+            ("contains_exercise", "5.31"),
+            ("contains_exercise", "4.52"),
+            ("contains_table", "4.4"),
+        },
+        "5.35": {
+            ("contains_exercise", "5.31"),
+            ("contains_exercise", "4.52"),
+            ("contains_table", "4.4"),
+        },
+        "7.14": {
+            ("contains_exercise", "7.12"),
+            ("contains_exercise", "7.13"),
+        },
+        "7.41": {
+            ("contains_equation", "7-137"),
+            ("contains_equation", "7-138"),
+            ("contains_example", "7.19"),
+        },
+        "9.42": {
+            ("contains_exercise", "9.41"),
+            ("contains_heading", "9.6 MORPHOLOGICAL RECONSTRUCTION"),
+        },
+        "10.21": {
+            ("contains_exercise", "10.20"),
+            ("contains_equation", "10-27"),
+        },
+        "10.30": {
+            ("contains_exercise", "10.29"),
+            ("contains_heading", "10.3 THRESHOLDING"),
+        },
+    }
+
+    for exercise_id, expected in expected_evidence.items():
+        locator = index.exercises[exercise_id]
+        actual = {
+            (evidence.kind, evidence.value)
+            for step in locator.reference_retrieval_plan
+            for evidence in step.required_evidence
+        }
+        assert expected <= actual
+
+    report = json.loads(REAL_EXERCISE_REPORT.read_text(encoding="utf-8"))
+    assert report["transitive_exercise_dependency_count"] == 4
+    assert report["max_exercise_dependency_depth"] == 2
+
+
+def test_real_exercise_catalog_has_only_balanced_safe_queries() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+    query_count = 0
+    affected_exercises = {
+        "2.21",
+        "2.33",
+        "3.10",
+        "3.17",
+        "3.23",
+        "4.24",
+        "4.50",
+        "5.23",
+        "5.28",
+        "5.31",
+        "5.45",
+        "6.23",
+        "6.29",
+        "9.45",
+        "10.20",
+        "10.24",
+        "10.25",
+        "10.26",
+        "10.27",
+        "10.42",
+        "10.47",
+        "11.1",
+        "11.4",
+        "11.11",
+    }
+
+    for exercise_id, locator in index.exercises.items():
+        plans = [locator.problem_retrieval_plan, locator.reference_retrieval_plan]
+        plans.extend(target.retrieval_plan for target in locator.reference_targets)
+        exercise_query_count = 0
+        for plan in plans:
+            for step in plan:
+                assert step.queries
+                assert all(query_parentheses_balanced(query) for query in step.queries)
+                assert all(unicodedata.normalize("NFKC", query) == query for query in step.queries)
+                for evidence in step.required_evidence:
+                    if evidence.kind == "printed_page_equals":
+                        continue
+                    safe_anchor = query_safe_anchor(evidence.value).casefold()
+                    assert any(safe_anchor in query.casefold() for query in step.queries)
+                exercise_query_count += len(step.queries)
+        query_count += exercise_query_count
+        if exercise_id in affected_exercises:
+            assert exercise_query_count > 0
+
+    report = json.loads(REAL_EXERCISE_REPORT.read_text(encoding="utf-8"))
+    assert report["compiled_query_count"] == query_count
+    assert report["unbalanced_compiled_query_count"] == 0
+    assert report["steps_without_balanced_query_count"] == 0
+    assert report["non_nfkc_compiled_query_count"] == 0
+    assert report["steps_with_non_nfkc_query_count"] == 0

@@ -27,7 +27,7 @@ exercises:
         value: '10.2'
     queries:
     - +(10.1) +(printed page 804) --QDF=0
-    - +(of that term is, the lower the error will be in the) +(printed page 804) --QDF=0
+    - +(of that term is the lower the error will be in the) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -53,6 +53,15 @@ exercises:
   - kind: equation
     target_id: 10-4
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-5
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-6
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.2'
   chapter_id: '10'
   exercise_number: 2
@@ -79,7 +88,7 @@ exercises:
         value: '10.3'
     queries:
     - +(10.2) +(printed page 804) --QDF=0
-    - +((a) * Show how Eq. (10-8) was obtained.) +(printed page 804) --QDF=0
+    - +(a Show how Eq 10-8 was obtained) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -105,9 +114,11 @@ exercises:
   - kind: equation
     target_id: 10-8
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 10-9
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.3'
   chapter_id: '10'
   exercise_number: 3
@@ -134,13 +145,13 @@ exercises:
         value: '10.4'
     queries:
     - +(10.3) +(printed page 804) --QDF=0
-    - +(one-pixel breaks in these lines. Assume that the) +(printed page 804) --QDF=0
+    - +(a set of 3 kernels that can be used to detect 3) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
       verification_mode: visual_required
     - kind: contains_text
-      value: one-pixel breaks in these lines. Assume that the
+      value: a set of 3 × kernels that can be used to detect 3
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.3'
@@ -181,7 +192,7 @@ exercises:
         value: '10.5'
     queries:
     - +(10.4) +(printed page 804) --QDF=0
-    - +(of a binary image. Assume that the lines are one) +(printed page 804) --QDF=0
+    - +(of a binary image Assume that the lines are one) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -228,7 +239,7 @@ exercises:
         value: '10.6'
     queries:
     - +(10.5) +(printed page 804) --QDF=0
-    - +(vertical lines to which the kernels in Figs. 10.6(a)) +(printed page 804) --QDF=0
+    - +(vertical lines to which the kernels in Figs 10.6 a) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -252,9 +263,11 @@ exercises:
   - kind: figure
     target_id: '10.6'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '2.19'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.6'
   chapter_id: '10'
   exercise_number: 6
@@ -281,7 +294,7 @@ exercises:
         value: '10.7'
     queries:
     - +(10.6) +(printed page 804) --QDF=0
-    - +(Refer to Fig. 10.7 in answering the following ques-) +(printed page 804) --QDF=0
+    - +(Refer to Fig 10.7 in answering the following ques) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -305,6 +318,7 @@ exercises:
   - kind: figure
     target_id: '10.7'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.7'
   chapter_id: '10'
   exercise_number: 7
@@ -331,7 +345,7 @@ exercises:
         value: '10.8'
     queries:
     - +(10.7) +(printed page 804) --QDF=0
-    - +(of the proﬁles that show what you would expect) +(printed page 804) --QDF=0
+    - +(of the profiles that show what you would expect) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -355,9 +369,11 @@ exercises:
   - kind: figure
     target_id: '10.8'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '10.14'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.8'
   chapter_id: '10'
   exercise_number: 8
@@ -382,7 +398,7 @@ exercises:
       end_before: null
     queries:
     - +(10.8) +(printed page 804) --QDF=0
-    - +(Consider a horizontal intensity proﬁle through) +(printed page 804) --QDF=0
+    - +(Consider a horizontal intensity profile through) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -409,8 +425,8 @@ exercises:
         kind: exercise
         value: '10.9'
     queries:
-    - +(edge and 1 on its right. Also, assume that the size) +(printed page 805) --QDF=0
-    - +(edge and 1 on its right. Also, assume that the size) +(Problems) +(printed page 805) --QDF=0
+    - +(edge and 1 on its right Also assume that the size) +(printed page 805) --QDF=0
+    - +(edge and 1 on its right Also assume that the size) +(Problems) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -454,7 +470,7 @@ exercises:
         value: '10.10'
     queries:
     - +(10.9) +(printed page 805) --QDF=0
-    - +(Sketch the gradient and Laplacian of each proﬁle.) +(printed page 805) --QDF=0
+    - +(Sketch the gradient and Laplacian of each profile) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -478,6 +494,7 @@ exercises:
   - kind: figure
     target_id: '10.10'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.10'
   chapter_id: '10'
   exercise_number: 10
@@ -504,7 +521,7 @@ exercises:
         value: '10.11'
     queries:
     - +(10.10) +(printed page 805) --QDF=0
-    - +((b) Show that the direction of steepest descent is) +(printed page 805) --QDF=0
+    - +(b Show that the direction of steepest descent is) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -531,9 +548,15 @@ exercises:
   - kind: equation
     target_id: 10-16
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 10-17
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-26
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.11'
   chapter_id: '10'
   exercise_number: 11
@@ -560,7 +583,7 @@ exercises:
         value: '10.12'
     queries:
     - +(10.11) +(printed page 805) --QDF=0
-    - +(Prewitt kernels in Fig. 10.14 so that they give) +(printed page 805) --QDF=0
+    - +(Prewitt kernels in Fig 10.14 so that they give) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -584,6 +607,7 @@ exercises:
   - kind: figure
     target_id: '10.14'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.12'
   chapter_id: '10'
   exercise_number: 12
@@ -610,7 +634,7 @@ exercises:
         value: '10.13'
     queries:
     - +(10.12) +(printed page 805) --QDF=0
-    - +(The ﬁnal result is then scaled by 19. Show that) +(printed page 805) --QDF=0
+    - +(The final result is then scaled by 19 Show that) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -634,6 +658,7 @@ exercises:
   - kind: figure
     target_id: '10.14'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.13'
   chapter_id: '10'
   exercise_number: 13
@@ -660,7 +685,7 @@ exercises:
         value: '10.14'
     queries:
     - +(10.13) +(printed page 805) --QDF=0
-    - +(using these coefﬁcients. As in Fig. 10.15, let N,) +(printed page 805) --QDF=0
+    - +(using these coefficients As in Fig 10.15 let N) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -684,6 +709,7 @@ exercises:
   - kind: figure
     target_id: '10.15'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.14'
   chapter_id: '10'
   exercise_number: 14
@@ -708,7 +734,7 @@ exercises:
       end_before: null
     queries:
     - +(10.14) +(printed page 805) --QDF=0
-    - +(gx and gy are obtained using the Sobel ker-) +(printed page 805) --QDF=0
+    - +(gx and gy are obtained using the Sobel ker) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -737,8 +763,8 @@ exercises:
         kind: exercise
         value: '10.15'
     queries:
-    - +((c) What would the Laplacian of this image look) +(printed page 806) --QDF=0
-    - +((c) What would the Laplacian of this image look) +(Problems) +(printed page 806) --QDF=0
+    - +(c What would the Laplacian of this image look) +(printed page 806) --QDF=0
+    - +(c What would the Laplacian of this image look) +(Problems) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -760,15 +786,19 @@ exercises:
   - kind: equation
     target_id: 10-26
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 10-18
     reason: Explicit equation reference in exercise text
-  - kind: equation
-    target_id: 10-14
-    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '10.12'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-14
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.15'
   chapter_id: '10'
   exercise_number: 15
@@ -795,13 +825,13 @@ exercises:
         value: '10.16'
     queries:
     - +(10.15) +(printed page 806) --QDF=0
-    - +(mum edge strength of the original image is) +(printed page 806) --QDF=0
+    - +(Suppose that an image fxy is convolved with) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
       verification_mode: visual_required
     - kind: contains_text
-      value: mum edge strength of the original image is
+      value: Suppose that an image fxy (,) is convolved with
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.15'
@@ -821,6 +851,11 @@ exercises:
   - kind: equation
     target_id: 10-19
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-20
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.16'
   chapter_id: '10'
   exercise_number: 16
@@ -847,7 +882,7 @@ exercises:
         value: '10.17'
     queries:
     - +(10.16) +(printed page 806) --QDF=0
-    - +(any image. What would be true in general of) +(printed page 806) --QDF=0
+    - +(any image What would be true in general of) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -872,12 +907,15 @@ exercises:
   - kind: equation
     target_id: 10-29
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '10.4'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
   - kind: exercise
     target_id: '3.32'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.17'
   chapter_id: '10'
   exercise_number: 17
@@ -904,7 +942,7 @@ exercises:
         value: '10.18'
     queries:
     - +(10.17) +(printed page 806) --QDF=0
-    - +((a) Explain why the edges form closed contours.) +(printed page 806) --QDF=0
+    - +(a Explain why the edges form closed contours) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -928,6 +966,7 @@ exercises:
   - kind: figure
     target_id: '10.22'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.18'
   chapter_id: '10'
   exercise_number: 18
@@ -954,7 +993,7 @@ exercises:
         value: '10.19'
     queries:
     - +(10.18) +(printed page 806) --QDF=0
-    - +(stituted for r2 to get the ﬁnal (incorrect) result:) +(printed page 806) --QDF=0
+    - +(stituted for r2 to get the final incorrect result) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -979,6 +1018,7 @@ exercises:
   - kind: equation
     target_id: 10-29
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.19'
   chapter_id: '10'
   exercise_number: 19
@@ -1005,7 +1045,7 @@ exercises:
         value: '10.20'
     queries:
     - +(10.19) +(printed page 806) --QDF=0
-    - +(function, and express Eq. (10-33) in terms of) +(printed page 806) --QDF=0
+    - +(function and express Eq 10-33 in terms of) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -1030,6 +1070,7 @@ exercises:
   - kind: equation
     target_id: 10-33
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.20'
   chapter_id: '10'
   exercise_number: 20
@@ -1056,13 +1097,13 @@ exercises:
         value: '10.21'
     queries:
     - +(10.20) +(printed page 806) --QDF=0
-    - +(In the following, assume that G and f are discrete) +(printed page 806) --QDF=0
+    - +(Gxy is sampled to produce an array of size) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
       verification_mode: visual_required
     - kind: contains_text
-      value: In the following, assume that G and f are discrete
+      value: Gxy (,) is sampled to produce an array of size
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.20'
@@ -1078,12 +1119,14 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: section
-    target_id: '3.4'
-    reason: Explicit section reference in exercise text
   - kind: equation
     target_id: 10-27
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: section
+    target_id: '3.4'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.21'
   chapter_id: '10'
   exercise_number: 21
@@ -1108,7 +1151,7 @@ exercises:
       end_before: null
     queries:
     - +(10.21) +(printed page 806) --QDF=0
-    - +(as the sum of two partial derivatives, given) +(printed page 806) --QDF=0
+    - +(as the sum of two partial derivatives given) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -1135,14 +1178,14 @@ exercises:
         kind: exercise
         value: '10.22'
     queries:
-    - +((,) is sampled to produce an array of) +(printed page 807) --QDF=0
-    - +((,) is sampled to produce an array of) +(Problems) +(printed page 807) --QDF=0
+    - +(Gxy is sampled to produce an array of) +(printed page 807) --QDF=0
+    - +(Gxy is sampled to produce an array of) +(Problems) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
       verification_mode: visual_required
     - kind: contains_text
-      value: (,) is sampled to produce an array of
+      value: Gxy (,) is sampled to produce an array of
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.22'
@@ -1156,15 +1199,22 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: equation
-    target_id: 10-10
-    reason: Explicit equation reference in exercise text
   - kind: exercise
     target_id: '10.20'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-10
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-11
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: exercise
     target_id: '10.12'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.22'
   chapter_id: '10'
   exercise_number: 22
@@ -1197,7 +1247,7 @@ exercises:
       value: '807'
       verification_mode: visual_required
     - kind: contains_text
-      value: Step 1 is sampled into an array of size n
+      value: Step 1 is sampled into an array of size n ×
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.22'
@@ -1238,7 +1288,7 @@ exercises:
         value: '10.24'
     queries:
     - +(10.23) +(printed page 807) --QDF=0
-    - +(sketches of the proﬁles that would result from) +(printed page 807) --QDF=0
+    - +(sketches of the profiles that would result from) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1262,9 +1312,11 @@ exercises:
   - kind: figure
     target_id: '10.8'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '10.4'
     reason: Source exercise 10.23 prints Fig. 10.10.4(a); normalized to Fig. 10.4(a), the referenced 3 x 3 Laplacian kernel.
+    selected_context_pages: []
 - exercise_id: '10.24'
   chapter_id: '10'
   exercise_number: 24
@@ -1291,13 +1343,13 @@ exercises:
         value: '10.25'
     queries:
     - +(10.24) +(printed page 807) --QDF=0
-    - +(the rationale that led to choosing these values?) +(printed page 807) --QDF=0
+    - +(and refer to the discussion of lowpass Gaussian) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
       verification_mode: visual_required
     - kind: contains_text
-      value: the rationale that led to choosing these values?
+      value: . and refer to the discussion of lowpass Gaussian
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.24'
@@ -1313,15 +1365,18 @@ exercises:
       - '10.9'
       table_ids: []
   reference_specs:
-  - kind: section
-    target_id: '3.5'
-    reason: Explicit section reference in exercise text
-  - kind: figure
-    target_id: '10.26'
-    reason: Explicit figure reference in exercise text
   - kind: example
     target_id: '10.9'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
+  - kind: figure
+    target_id: '10.26'
+    reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: section
+    target_id: '3.5'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.25'
   chapter_id: '10'
   exercise_number: 25
@@ -1348,7 +1403,7 @@ exercises:
         value: '10.26'
     queries:
     - +(10.25) +(printed page 807) --QDF=0
-    - +(Refer to the Hough transform in Section 10.2.) +(printed page 807) --QDF=0
+    - +(Refer to the Hough transform in Section 10.2) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1372,6 +1427,7 @@ exercises:
   - kind: section
     target_id: '10.2'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.26'
   chapter_id: '10'
   exercise_number: 26
@@ -1398,7 +1454,7 @@ exercises:
         value: '10.27'
     queries:
     - +(10.26) +(printed page 807) --QDF=0
-    - +((b) * Is this the only point that would produce that) +(printed page 807) --QDF=0
+    - +(b Is this the only point that would produce that) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1422,9 +1478,11 @@ exercises:
   - kind: section
     target_id: '10.2'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '10.30'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.27'
   chapter_id: '10'
   exercise_number: 27
@@ -1475,6 +1533,7 @@ exercises:
   - kind: section
     target_id: '10.2'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.28'
   chapter_id: '10'
   exercise_number: 28
@@ -1499,7 +1558,7 @@ exercises:
       end_before: null
     queries:
     - +(10.28) +(printed page 807) --QDF=0
-    - +(all tracks angled at any of the following six direc-) +(printed page 807) --QDF=0
+    - +(all tracks angled at any of the following six direc) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1526,8 +1585,8 @@ exercises:
         kind: exercise
         value: '10.29'
     queries:
-    - +(thick, except at the point of collision from which) +(printed page 808) --QDF=0
-    - +(thick, except at the point of collision from which) +(Problems) +(printed page 808) --QDF=0
+    - +(thick except at the point of collision from which) +(printed page 808) --QDF=0
+    - +(thick except at the point of collision from which) +(Problems) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1595,6 +1654,7 @@ exercises:
   - kind: section
     target_id: '10.3'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.30'
   chapter_id: '10'
   exercise_number: 30
@@ -1621,7 +1681,7 @@ exercises:
         value: '10.31'
     queries:
     - +(10.30) +(printed page 808) --QDF=0
-    - +(* Prove that the basic global thresholding algo-) +(printed page 808) --QDF=0
+    - +(Prove that the basic global thresholding algo) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1645,9 +1705,11 @@ exercises:
   - kind: section
     target_id: '10.3'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
   - kind: exercise
     target_id: '10.29'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.31'
   chapter_id: '10'
   exercise_number: 31
@@ -1694,7 +1756,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '10.3'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.32'
   chapter_id: '10'
   exercise_number: 32
@@ -1721,7 +1787,7 @@ exercises:
         value: '10.33'
     queries:
     - +(10.32) +(printed page 808) --QDF=0
-    - +(think the ﬁnal value of the threshold at conver-) +(printed page 808) --QDF=0
+    - +(think the final value of the threshold at conver) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1745,6 +1811,7 @@ exercises:
   - kind: section
     target_id: '10.3'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.33'
   chapter_id: '10'
   exercise_number: 33
@@ -1771,7 +1838,7 @@ exercises:
         value: '10.34'
     queries:
     - +(10.33) +(printed page 808) --QDF=0
-    - +((a) * Show that if the histogram of an image is) +(printed page 808) --QDF=0
+    - +(a Show that if the histogram of an image is) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1818,7 +1885,7 @@ exercises:
         value: '10.35'
     queries:
     - +(10.34) +(printed page 808) --QDF=0
-    - +((in terms of the parameters of these curves) for the) +(printed page 808) --QDF=0
+    - +(in terms of the parameters of these curves for the) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1842,6 +1909,7 @@ exercises:
   - kind: section
     target_id: '10.3'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.35'
   chapter_id: '10'
   exercise_number: 35
@@ -1868,7 +1936,7 @@ exercises:
         value: '10.36'
     queries:
     - +(10.35) +(printed page 808) --QDF=0
-    - +((a) * Show how the ﬁrst line in Eq. (10-60) fol-) +(printed page 808) --QDF=0
+    - +(a Show how the first line in Eq 10-60 fol) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1896,9 +1964,19 @@ exercises:
   - kind: equation
     target_id: 10-60
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 10-55
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-56
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-59
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.36'
   chapter_id: '10'
   exercise_number: 36
@@ -1925,13 +2003,13 @@ exercises:
         value: '10.37'
     queries:
     - +(10.36) +(printed page 808) --QDF=0
-    - +(Show that a maximum value for Eq. (10-63)) +(printed page 808) --QDF=0
+    - +(always exists for k in the range 0 k L 1) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
       verification_mode: visual_required
     - kind: contains_text
-      value: Show that a maximum value for Eq. (10-63)
+      value: always exists for k in the range 0 ≤ k ≤ L − 1 .
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.36'
@@ -1950,6 +2028,7 @@ exercises:
   - kind: equation
     target_id: 10-63
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.37'
   chapter_id: '10'
   exercise_number: 37
@@ -1976,7 +2055,7 @@ exercises:
         value: '10.38'
     queries:
     - +(10.37) +(printed page 808) --QDF=0
-    - +(is achievable only by images with constant inten-) +(printed page 808) --QDF=0
+    - +(is achievable only by images with constant inten) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -2001,6 +2080,7 @@ exercises:
   - kind: equation
     target_id: 10-65
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.38'
   chapter_id: '10'
   exercise_number: 38
@@ -2027,13 +2107,13 @@ exercises:
         value: '10.39'
     queries:
     - +(10.38) +(printed page 808) --QDF=0
-    - +(same regions. The term negative is used here) +(printed page 808) --QDF=0
+    - +(image fxy are in the range 01 and that) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
       verification_mode: visual_required
     - kind: contains_text
-      value: same regions. The term negative is used here
+      value: image fxy (,) are in the range [,] 01 and that
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.38'
@@ -2051,6 +2131,7 @@ exercises:
   - kind: section
     target_id: '3.2'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.39'
   chapter_id: '10'
   exercise_number: 39
@@ -2075,7 +2156,7 @@ exercises:
       end_before: null
     queries:
     - +(10.39) +(printed page 808) --QDF=0
-    - +(Gaussian noise with 0 mean and a standard devia-) +(printed page 808) --QDF=0
+    - +(Gaussian noise with 0 mean and a standard devia) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -2102,8 +2183,8 @@ exercises:
         kind: exercise
         value: '10.40'
     queries:
-    - +(a Gaussian curve lies in a ±3s interval about the) +(printed page 809) --QDF=0
-    - +(a Gaussian curve lies in a ±3s interval about the) +(Problems) +(printed page 809) --QDF=0
+    - +(a Gaussian curve lies in a 3s interval about the) +(printed page 809) --QDF=0
+    - +(a Gaussian curve lies in a 3s interval about the) +(Problems) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2147,7 +2228,7 @@ exercises:
         value: '10.41'
     queries:
     - +(10.40) +(printed page 809) --QDF=0
-    - +(Refer to the intensity ramp image in Fig. 10.34(b)) +(printed page 809) --QDF=0
+    - +(Refer to the intensity ramp image in Fig 10.34 b) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2168,12 +2249,14 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: section
-    target_id: '10.3'
-    reason: Explicit section reference in exercise text
   - kind: figure
     target_id: '10.34'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: section
+    target_id: '10.3'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.41'
   chapter_id: '10'
   exercise_number: 41
@@ -2224,6 +2307,7 @@ exercises:
   - kind: exercise
     target_id: '10.39'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.42'
   chapter_id: '10'
   exercise_number: 42
@@ -2250,13 +2334,13 @@ exercises:
         value: '10.43'
     queries:
     - +(10.42) +(printed page 809) --QDF=0
-    - +() =TRUE if all pixels in Ri have the same) +(printed page 809) --QDF=0
+    - +(QRi TRUE if all pixels in Ri have the same) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
       verification_mode: visual_required
     - kind: contains_text
-      value: ) =TRUE if all pixels in Ri have the same
+      value: QRi ( ) =TRUE if all pixels in Ri have the same
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.42'
@@ -2274,6 +2358,7 @@ exercises:
   - kind: section
     target_id: '10.4'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.43'
   chapter_id: '10'
   exercise_number: 43
@@ -2325,6 +2410,7 @@ exercises:
   - kind: example
     target_id: '10.21'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.44'
   chapter_id: '10'
   exercise_number: 44
@@ -2351,13 +2437,13 @@ exercises:
         value: '10.45'
     queries:
     - +(10.44) +(printed page 809) --QDF=0
-    - +(the pixels in the second and third rows be labeled) +(printed page 809) --QDF=0
+    - +(Let the pixels in the first row of a 3 image like 3) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
       verification_mode: visual_required
     - kind: contains_text
-      value: the pixels in the second and third rows be labeled
+      value: Let the pixels in the ﬁrst row of a 3 × image, like 3
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.44'
@@ -2375,6 +2461,7 @@ exercises:
   - kind: figure
     target_id: '10.53'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.45'
   chapter_id: '10'
   exercise_number: 45
@@ -2401,7 +2488,7 @@ exercises:
         value: '10.46'
     queries:
     - +(10.45) +(printed page 809) --QDF=0
-    - +(* Show how Eqs. (10-106) through (10-108) follow) +(printed page 809) --QDF=0
+    - +(Show how Eqs 10-106 through 10-108 follow) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2428,9 +2515,19 @@ exercises:
   - kind: equation
     target_id: 10-106
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-107
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-108
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 10-105
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.46'
   chapter_id: '10'
   exercise_number: 46
@@ -2457,7 +2554,7 @@ exercises:
         value: '10.47'
     queries:
     - +(10.46) +(printed page 809) --QDF=0
-    - +(Demonstrate the validity of Eq. (10-102).) +(printed page 809) --QDF=0
+    - +(Demonstrate the validity of Eq 10-102) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2482,6 +2579,7 @@ exercises:
   - kind: equation
     target_id: 10-102
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.47'
   chapter_id: '10'
   exercise_number: 47
@@ -2508,7 +2606,7 @@ exercises:
         value: '10.48'
     queries:
     - +(10.47) +(printed page 809) --QDF=0
-    - +((b) Show that the number of elements in sets) +(printed page 809) --QDF=0
+    - +(b Show that the number of elements in sets) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2532,6 +2630,7 @@ exercises:
   - kind: section
     target_id: '10.7'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.48'
   chapter_id: '10'
   exercise_number: 48
@@ -2558,7 +2657,7 @@ exercises:
         value: '10.49'
     queries:
     - +(10.48) +(printed page 809) --QDF=0
-    - +(rithm form closed loops (for example, see Figs.) +(printed page 809) --QDF=0
+    - +(rithm form closed loops for example see Figs) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2582,9 +2681,15 @@ exercises:
   - kind: section
     target_id: '10.7'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '10.59'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: figure
+    target_id: '10.61'
+    reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.49'
   chapter_id: '10'
   exercise_number: 49
@@ -2609,7 +2714,7 @@ exercises:
       end_before: null
     queries:
     - +(10.49) +(printed page 809) --QDF=0
-    - +(of the cross section at each step, showing “water”) +(printed page 809) --QDF=0
+    - +(of the cross section at each step showing water) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2653,7 +2758,7 @@ exercises:
         value: '10.51'
     queries:
     - +(10.50) +(printed page 810) --QDF=0
-    - +(in Fig. 10.62(c) look like if we tested against T) +(printed page 810) --QDF=0
+    - +(in Fig 10.62 c look like if we tested against T) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -2675,12 +2780,14 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: equation
-    target_id: 10-117
-    reason: Explicit equation reference in exercise text
   - kind: figure
     target_id: '10.62'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-117
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.51'
   chapter_id: '10'
   exercise_number: 51
@@ -2707,7 +2814,7 @@ exercises:
         value: '10.52'
     queries:
     - +(10.51) +(printed page 810) --QDF=0
-    - +(Are the following statements true or false? Ex-) +(printed page 810) --QDF=0
+    - +(Are the following statements true or false Ex) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -2754,7 +2861,7 @@ exercises:
         value: '10.53'
     queries:
     - +(10.52) +(printed page 810) --QDF=0
-    - +(x-axis is set to zero. The object now moves only) +(printed page 810) --QDF=0
+    - +(x-axis is set to zero The object now moves only) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -2776,12 +2883,14 @@ exercises:
       - '10.29'
       table_ids: []
   reference_specs:
-  - kind: figure
-    target_id: '10.66'
-    reason: Explicit figure reference in exercise text
   - kind: example
     target_id: '10.29'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
+  - kind: figure
+    target_id: '10.66'
+    reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.53'
   chapter_id: '10'
   exercise_number: 53
@@ -2808,13 +2917,13 @@ exercises:
         value: '10.54'
     queries:
     - +(10.53) +(printed page 810) --QDF=0
-    - +(and (10-126) are the same, velocity component) +(printed page 810) --QDF=0
+    - +(when the signs of Sx 1 and Sx 2 in Eqs 10-125) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
       verification_mode: visual_required
     - kind: contains_text
-      value: and (10-126) are the same, velocity component
+      value: when the signs of Sx 1 and Sx 2 in Eqs. (10-125)
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '10.53'
@@ -2834,6 +2943,11 @@ exercises:
   - kind: equation
     target_id: 10-125
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 10-126
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.54'
   chapter_id: '10'
   exercise_number: 54
@@ -2860,7 +2974,7 @@ exercises:
         value: '10.55'
     queries:
     - +(10.54) +(printed page 810) --QDF=0
-    - +(other visual cues in the viewing area of the imag-) +(printed page 810) --QDF=0
+    - +(other visual cues in the viewing area of the imag) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -2884,6 +2998,7 @@ exercises:
   - kind: section
     target_id: '2.3'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.55'
   chapter_id: '10'
   exercise_number: 55
@@ -2908,7 +3023,7 @@ exercises:
       end_before: null
     queries:
     - +(10.55) +(printed page 810) --QDF=0
-    - +(The speed of a bullet in ﬂight is to be estimated by) +(printed page 810) --QDF=0
+    - +(The speed of a bullet in flight is to be estimated by) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'

@@ -238,6 +238,16 @@ content_window.end_before
 
 `+()` 不是严格布尔 AND，第一搜索候选也不保证正确。因此查询只是召回策略，最终仍必须检查 `required_evidence`。
 
+运行时按顺序逐条执行 query；每次 `file_search.msearch` 只发送一条 query，
+不把一个 step 的完整查询数组放进单次调用。这样既不受单次查询数量上限影响，
+也能在某条查询已满足全部 evidence 时停止后续回退查询。
+
+原始 PDF 文本不能直接嵌套进 `+(...)`。构建器先把 evidence anchor 规范化为
+Unicode NFKC，再提取字母、数字、句点和连字符 token。这样 `ﬁeld`、`ﬂat`
+分别恢复为 `field`、`flat`；随后移除源文本中的圆括号及其他结构标点，再由
+typed evidence 重新生成 query。Exercise Locator 加载时会拒绝任何括号不平衡
+的 query，并要求每个非页码 evidence 至少有一个匹配的安全 query anchor。
+
 ## 11. 生成并验证核验证据
 
 每个 page step 保存类型化证据，例如：
@@ -449,7 +459,7 @@ compiled_exercise_index.sections.02.json ... compiled_exercise_index.sections.12
 exercise_validation_report.json
 ```
 
-习题构建器从每章 `Problems` 区域开始识别题号，使用列位置和 bbox 重建双栏阅读顺序，并为同页相邻题生成 `exercise` 类型的 `start_at` / `end_before`。跨页题的每个物理页都必须有独立 step；题号和边界证据使用 `visual_required`。
+习题构建器从每章 `Problems` 区域开始识别题号，先按列、基线和 x 坐标把同一视觉行上的 PDF 文字与公式碎片重新组合，再重建双栏阅读顺序，并为同页相邻题生成 `exercise` 类型的 `start_at` / `end_before`。跨页题的每个物理页都必须有独立 step；题号和边界证据使用 `visual_required`。Manifest 与源 PDF 校验共享同一视觉行视图；`contains_text` 允许公式碎片插入，但要求规范化文本 token 保持有序子序列。
 
 编译器还会解析题目中的显式依赖：
 
@@ -462,7 +472,26 @@ Table
 Exercise / Problem
 ```
 
-Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。缺失引用、跨习题循环、章节不完整、错误 shard 或非规范页面都会阻止输出。
+解析器必须展开 `and`、逗号并列和 `through` / `to` / 连字符范围，例如
+`Eqs. (2-46) and (2-47)`、`Eqs. (6-6)-(6-12)`、`Sections 3.4-3.7`。
+Figure 子图标记 `(a)`、`(b)` 不生成新的主 Figure ID。并列或范围中的每个
+目标都必须进入 `reference_targets` 并通过源 PDF 锚点解析。
+
+PDF 断行可能把引用关键词提取成 `Sec- tion`、`Prob- lem`、`Exam- ple` 等。
+构建器只在“已知引用关键词 + 有界版面噪声 + 合法引用编号”的上下文中恢复
+关键词，不全局删除英文连字符，避免破坏 `one-pixel-thick` 等合法复合词。
+
+Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖先复用目标习题的题目 plan，再递归加入其引用依赖，构成编译期传递闭包。运行时保留直接 `reference_targets` 作为审计元数据，并生成完整、去重后的 `reference_retrieval_plan` 作为 GPT 默认执行计划；GPT 不需要也不应递归调用 Action。
+
+实体标签的第一次文字提及不一定是实体所在页。当前固定 PDF 对 Table 3.6 和 Figure 4.11 使用经过视觉审核的页覆盖，分别定位到印刷页 169 和 224。Example 不是单点锚点：12 个已审核 Example 保存精确跨页范围，其余 Example 根据下一个结构边界生成逐页 plan。
+
+去重不是简单删除引用。编译器禁止根据“精确目标位于 Section 范围内”自动裁剪 Section。只有经过 PDF 审核并写入 manifest 的 `selected_context_pages` 才会缩小 Section 的执行范围；未显式选择时必须保留完整 Section plan。
+
+聚合只允许合并“同一物理页且 `content_window` 完全相同”的步骤，`required_evidence` 和 `coverage` 取并集。同一页上的不同习题窗口必须保留为多个独立 step，例如 `[4.4, 4.5)` 与 `[4.9, 4.10)` 不能合并。每个非页码 evidence 至少生成一条包含其值的查询，不允许因固定查询数量上限静默丢失目标。
+
+以固定 PDF 中习题 2.11 为例，题干在印刷页 114，提到 Section 2.4 和 Eqs. (2-14)–(2-16)。PDF 原文显示式 (2-14) 和 linear indexing 上下文在印刷页 70，式 (2-15)、(2-16) 在印刷页 71。因此完整 `reference_targets` 仍记录 Section 2.4 的 63–79 页，但 `reference_retrieval_plan` 只执行 70、71 两页，并保留这两页的局部 section 文本证据与公式证据。
+
+缺失引用、跨习题循环、章节不完整、错误 shard 或非规范页面都会阻止输出。
 
 Exercise Catalog 必须覆盖源 PDF 中所有正式 `Problems` 区域后才能进入发布流程。当前固定 PDF 的第 1 章没有课后习题，因此实际范围是第 2 至第 12 章，共 11 个 shard。构建期不保存题目全文，也不批量生成答案。
 
@@ -476,8 +505,21 @@ cross-page exercises: 28
 exercise retrieval steps: 520
 source evidence checks: 1987
 query text anchor checks: 1040
-resolved references: 412
-cross-exercise references: 56
+resolved references: 479
+cross-exercise references: 60
+raw reference retrieval steps: 1533
+selected context references: 4
+execution reference steps before exact-window merge: 1587
+coalesced same-page/same-window steps: 114
+same-page distinct-window steps preserved: 18
+deduplicated reference retrieval steps: 1473
+transitive exercise dependencies: 4
+maximum exercise dependency depth: 2
+compiled queries: 7610
+unbalanced compiled queries: 0
+steps without a balanced query: 0
+non-NFKC compiled queries: 0
+steps with non-NFKC queries: 0
 source_pdf_verification_status: passed
 file_search_retrieval_status: not_tested
 ```

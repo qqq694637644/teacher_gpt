@@ -103,8 +103,9 @@ An exercise locator additionally contains:
 - one problem retrieval step for every physical page occupied by the exercise;
 - explicit `exercise` content-window boundaries for same-page neighboring problems;
 - required visual evidence for page identity and exercise boundaries;
+- a deduplicated `reference_retrieval_plan` for execution;
 - resolved retrieval plans for referenced sections, figures, equations, examples,
-  tables, and other exercises.
+  tables, and other exercises as audit metadata.
 
 It never contains a pre-generated solution.
 
@@ -221,18 +222,50 @@ python tools/compile_exercise_index.py \
 ```
 
 The builder detects each chapter's `Problems` region, preserves two-column reading
-order, separates same-page exercises, tracks starred and cross-page problems, and
+order, reconstructs same-baseline PDF fragments into visual lines, separates same-page
+exercises, tracks starred and cross-page problems, and
 extracts explicit textbook references. The compiler verifies the exact PDF, requires
 all chapters that contain a formal `Problems` section (chapters 2-12 in this PDF),
 resolves references against the section index and source anchors,
+applies only PDF-reviewed `selected_context_pages` declared in the manifest,
+coalesces only reference steps that have the same physical page and identical content window,
 and writes no final output when validation fails.
+
+Reviewed entity exceptions are explicit: Table 3.6 resolves to printed page 169 and
+Figure 4.11 resolves to printed page 224. Reviewed multi-page Examples use exact page
+ranges, while unreviewed Examples use the next structural boundary. Exercise references
+are compiled with their transitive dependency closure, so the GPT executes one complete
+`reference_retrieval_plan` without recursively calling the Action for referenced problems.
+
+The reference parser expands comma/`and` lists and reviewed numeric ranges for
+Sections, Equations, Figures, Tables, Examples, and Problems. Figure subpart markers
+such as `(a)` and `(b)` do not create separate Figure IDs.
+
+Reference parsing also repairs only known PDF-wrapped reference keywords such as
+`Sec- tion`, `Prob- lem`, and `Exam- ple`. The rule is bounded to a recognized keyword
+followed by a valid reference ID, so ordinary compounds such as `one-pixel-thick` are
+not globally dehyphenated.
+
+Compiled exercise queries are regenerated from typed evidence instead of copying raw
+PDF text into `+(...)`. Query anchors retain letters, numbers, periods, and hyphens,
+apply Unicode NFKC normalization so PDF ligatures such as `ﬁ` and `ﬂ` become `fi` and
+`fl`, drop unmatched punctuation such as source parentheses, and are validated for
+balanced parentheses. Every non-page evidence item must have a matching safe query
+anchor.
 
 Running these commands is an offline release step; normal application startup does
 not parse the PDF.
 
 The current reviewed baseline contains 492 exercises in chapters 2-12, 122 starred
-exercises, 28 cross-page exercises, 520 page-retrieval steps, and 412 resolved
-references. Chapter 1 has no formal `Problems` section in this source PDF. The source
+exercises, 28 cross-page exercises, 520 page-retrieval steps, and 479 resolved
+references. It keeps 1,533 raw reference steps for audit metadata, explicitly selects
+context pages for 4 reviewed section references, expands 4 transitive exercise
+dependencies to a maximum depth of 2, reduces 1,587 execution candidates by 114
+exact-window merges, preserves 18 same-page distinct-window cases, and exposes 1,473
+execution steps. The compiled package contains 7,610 queries, with zero
+unbalanced queries, zero steps lacking a balanced query, and zero queries requiring
+additional NFKC normalization. Chapter 1
+has no formal `Problems` section in this source PDF. The source
 prints `Fig. 10.10.4(a)` in exercise 10.23; the build records an explicit audited
 normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local source-PDF
 verification and byte-for-byte repeatability passed; real GPT file-search retrieval

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import unicodedata
 from collections import defaultdict
 from itertools import pairwise
 from typing import Annotated, Literal
@@ -94,6 +95,27 @@ BOUNDARY_TO_EVIDENCE: dict[str, str] = {
     "exercise": "contains_exercise",
 }
 RETRIEVAL_ONLY_ANCHOR = "DIP4E_GLOBAL_Print_Ready.indb"
+QUERY_ANCHOR_TOKEN_RE = re.compile(r"[A-Za-z0-9]+(?:[.-][A-Za-z0-9]+)*")
+
+
+def query_safe_anchor(value: str, *, max_tokens: int = 16) -> str:
+    normalized = unicodedata.normalize("NFKC", value)
+    tokens = QUERY_ANCHOR_TOKEN_RE.findall(normalized)
+    if not tokens:
+        return "reference"
+    return " ".join(tokens[:max_tokens])
+
+
+def query_parentheses_balanced(query: str) -> bool:
+    depth = 0
+    for character in query:
+        if character == "(":
+            depth += 1
+        elif character == ")":
+            depth -= 1
+            if depth < 0:
+                return False
+    return depth == 0
 
 
 class BoundaryAnchor(StrictModel):
@@ -131,7 +153,7 @@ class PageRetrievalStep(StrictModel):
     page_role: Literal["start", "body", "end", "single"]
     page: PageReference
     content_window: ContentWindow = Field(default_factory=ContentWindow)
-    queries: Annotated[list[str], Field(min_length=2, max_length=4)]
+    queries: Annotated[list[str], Field(min_length=2)]
     required_evidence: Annotated[list[EvidenceRequirement], Field(min_length=1)]
     coverage: PageCoverage = Field(default_factory=PageCoverage)
 

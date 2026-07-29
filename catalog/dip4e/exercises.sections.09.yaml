@@ -27,7 +27,7 @@ exercises:
         value: '9.2'
     queries:
     - +(9.1) +(printed page 692) --QDF=0
-    - +(structuring elements. The dot indicates the origin) +(printed page 692) --QDF=0
+    - +(structuring elements The dot indicates the origin) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -74,7 +74,7 @@ exercises:
         value: '9.3'
     queries:
     - +(9.2) +(printed page 692) --QDF=0
-    - +(Sketch the result of eroding Fig. 9.3(a) with each) +(printed page 692) --QDF=0
+    - +(Sketch the result of eroding Fig 9.3 a with each) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -98,6 +98,7 @@ exercises:
   - kind: figure
     target_id: '9.3'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.3'
   chapter_id: '9'
   exercise_number: 3
@@ -124,7 +125,7 @@ exercises:
         value: '9.4'
     queries:
     - +(9.3) +(printed page 692) --QDF=0
-    - +(within B. Give an example in which the erosion) +(printed page 692) --QDF=0
+    - +(within B Give an example in which the erosion) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -171,7 +172,7 @@ exercises:
         value: '9.5'
     queries:
     - +(9.4) +(printed page 692) --QDF=0
-    - +((a) * What do you think would happen if we erode) +(printed page 692) --QDF=0
+    - +(a What do you think would happen if we erode) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -265,7 +266,7 @@ exercises:
         value: '9.7'
     queries:
     - +(9.6) +(printed page 692) --QDF=0
-    - +((a) * Dilate Fig. 9.3(a) using the structuring element) +(printed page 692) --QDF=0
+    - +(a Dilate Fig 9.3 a using the structuring element) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -289,9 +290,11 @@ exercises:
   - kind: figure
     target_id: '9.3'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
   - kind: exercise
     target_id: '9.2'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.7'
   chapter_id: '9'
   exercise_number: 7
@@ -365,7 +368,7 @@ exercises:
         value: '9.9'
     queries:
     - +(9.8) +(printed page 692) --QDF=0
-    - +(With reference to the image at the top of the ﬁg-) +(printed page 692) --QDF=0
+    - +(With reference to the image at the top of the fig) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -410,7 +413,7 @@ exercises:
       end_before: null
     queries:
     - +(9.9) +(printed page 692) --QDF=0
-    - +(ing ﬁgure, and refer to the structuring elements) +(printed page 692) --QDF=0
+    - +(ing figure and refer to the structuring elements) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -454,7 +457,7 @@ exercises:
         value: '9.11'
     queries:
     - +(9.10) +(printed page 693) --QDF=0
-    - +((b) What is the smallest set from which you can) +(printed page 693) --QDF=0
+    - +(b What is the smallest set from which you can) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -548,7 +551,7 @@ exercises:
         value: '9.13'
     queries:
     - +(9.12) +(printed page 693) --QDF=0
-    - +(Show that this deﬁnition is equivalent to the) +(printed page 693) --QDF=0
+    - +(Show that this definition is equivalent to the) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -573,6 +576,7 @@ exercises:
   - kind: equation
     target_id: 9-3
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.13'
   chapter_id: '9'
   exercise_number: 13
@@ -599,7 +603,7 @@ exercises:
         value: '9.14'
     queries:
     - +(9.13) +(printed page 693) --QDF=0
-    - +((a) Show that the deﬁnition of erosion given in) +(printed page 693) --QDF=0
+    - +(a Show that the definition of erosion given in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -621,12 +625,14 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: equation
-    target_id: 9-3
-    reason: Explicit equation reference in exercise text
   - kind: exercise
     target_id: '9.12'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-3
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.14'
   chapter_id: '9'
   exercise_number: 14
@@ -653,7 +659,7 @@ exercises:
         value: '9.15'
     queries:
     - +(9.14) +(printed page 693) --QDF=0
-    - +(Show that this deﬁnition and the deﬁnition in) +(printed page 693) --QDF=0
+    - +(Show that this definition and the definition in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -678,6 +684,7 @@ exercises:
   - kind: equation
     target_id: 9-6
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.15'
   chapter_id: '9'
   exercise_number: 15
@@ -704,7 +711,7 @@ exercises:
         value: '9.16'
     queries:
     - +(9.15) +(printed page 693) --QDF=0
-    - +((a) Show that the deﬁnition of dilation given in) +(printed page 693) --QDF=0
+    - +(a Show that the definition of dilation given in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -726,12 +733,14 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: equation
-    target_id: 9-6
-    reason: Explicit equation reference in exercise text
   - kind: exercise
     target_id: '9.14'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-6
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.16'
   chapter_id: '9'
   exercise_number: 16
@@ -783,6 +792,7 @@ exercises:
   - kind: equation
     target_id: 9-9
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.17'
   chapter_id: '9'
   exercise_number: 17
@@ -807,7 +817,7 @@ exercises:
       end_before: null
     queries:
     - +(9.17) +(printed page 693) --QDF=0
-    - +(black straight-line portions in (d) part of the) +(printed page 693) --QDF=0
+    - +(black straight-line portions in d part of the) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -828,9 +838,11 @@ exercises:
   - kind: figure
     target_id: '9.8'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '9.9'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.18'
   chapter_id: '9'
   exercise_number: 18
@@ -857,7 +869,7 @@ exercises:
         value: '9.19'
     queries:
     - +(9.18) +(printed page 694) --QDF=0
-    - +((a) * Obtain the opening of the ﬁgure below using) +(printed page 694) --QDF=0
+    - +(a Obtain the opening of the figure below using) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -904,7 +916,7 @@ exercises:
         value: '9.20'
     queries:
     - +(9.19) +(printed page 694) --QDF=0
-    - +(integers. Discuss what the result will be in each) +(printed page 694) --QDF=0
+    - +(integers Discuss what the result will be in each) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -951,7 +963,7 @@ exercises:
         value: '9.21'
     queries:
     - +(9.20) +(printed page 694) --QDF=0
-    - +(Show the validity of the following duality expres-) +(printed page 694) --QDF=0
+    - +(Show the validity of the following duality expres) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -977,6 +989,11 @@ exercises:
   - kind: equation
     target_id: 9-14
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-15
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.21'
   chapter_id: '9'
   exercise_number: 21
@@ -1003,7 +1020,7 @@ exercises:
         value: '9.22'
     queries:
     - +(9.21) +(printed page 694) --QDF=0
-    - '+(Eq. (9-12) is valid. (Hint: Start with this equa-) +(printed page 694) --QDF=0'
+    - +(Eq 9-12 is valid Hint Start with this equa) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1028,9 +1045,11 @@ exercises:
   - kind: equation
     target_id: 9-12
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '9.8'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.22'
   chapter_id: '9'
   exercise_number: 22
@@ -1057,7 +1076,7 @@ exercises:
         value: '9.23'
     queries:
     - +(9.22) +(printed page 694) --QDF=0
-    - +(Show the validity of the following expressions.) +(printed page 694) --QDF=0
+    - +(Show the validity of the following expressions) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1081,6 +1100,7 @@ exercises:
   - kind: exercise
     target_id: '9.21'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.23'
   chapter_id: '9'
   exercise_number: 23
@@ -1107,7 +1127,7 @@ exercises:
         value: '9.24'
     queries:
     - +(9.23) +(printed page 694) --QDF=0
-    - +(ment shown in the lower right of the image. Sketch) +(printed page 694) --QDF=0
+    - +(ment shown in the lower right of the image Sketch) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1154,7 +1174,7 @@ exercises:
         value: '9.25'
     queries:
     - +(9.24) +(printed page 694) --QDF=0
-    - +(wide. Assuming that all four sides of the border) +(printed page 694) --QDF=0
+    - +(wide Assuming that all four sides of the border) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1178,6 +1198,7 @@ exercises:
   - kind: figure
     target_id: '9.12'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.25'
   chapter_id: '9'
   exercise_number: 25
@@ -1204,7 +1225,7 @@ exercises:
         value: '9.26'
     queries:
     - +(9.25) +(printed page 694) --QDF=0
-    - +(changes would occur in the erosion. What did) +(printed page 694) --QDF=0
+    - +(changes would occur in the erosion What did) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1228,6 +1249,7 @@ exercises:
   - kind: figure
     target_id: '9.12'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.26'
   chapter_id: '9'
   exercise_number: 26
@@ -1252,7 +1274,7 @@ exercises:
       end_before: null
     queries:
     - +(9.26) +(printed page 694) --QDF=0
-    - +(Indicate clearly the origin and border you select-) +(printed page 694) --QDF=0
+    - +(Indicate clearly the origin and border you select) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1296,7 +1318,7 @@ exercises:
         value: '9.28'
     queries:
     - +(9.27) +(printed page 695) --QDF=0
-    - +(and has no branches. You do not need to (but you) +(printed page 695) --QDF=0
+    - +(and has no branches You do not need to but you) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1320,6 +1342,7 @@ exercises:
   - kind: section
     target_id: '2.5'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.28'
   chapter_id: '9'
   exercise_number: 28
@@ -1346,7 +1369,7 @@ exercises:
         value: '9.29'
     queries:
     - +(9.28) +(printed page 695) --QDF=0
-    - +(branches. You do not need to (but you may) state) +(printed page 695) --QDF=0
+    - +(branches You do not need to but you may state) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1370,6 +1393,7 @@ exercises:
   - kind: section
     target_id: '2.5'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.29'
   chapter_id: '9'
   exercise_number: 29
@@ -1396,7 +1420,7 @@ exercises:
         value: '9.30'
     queries:
     - +(9.29) +(printed page 695) --QDF=0
-    - +(assume that the curve is fully connected, it is one-) +(printed page 695) --QDF=0
+    - +(assume that the curve is fully connected it is one) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1420,6 +1444,7 @@ exercises:
   - kind: section
     target_id: '2.5'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.30'
   chapter_id: '9'
   exercise_number: 30
@@ -1446,7 +1471,7 @@ exercises:
         value: '9.31'
     queries:
     - +(9.30) +(printed page 695) --QDF=0
-    - +(rithm would be one of these three curves. The out-) +(printed page 695) --QDF=0
+    - +(rithm would be one of these three curves The out) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1493,7 +1518,7 @@ exercises:
         value: '9.32'
     queries:
     - +(9.31) +(printed page 695) --QDF=0
-    - '+(an erosion, of A. (Hint: Take a look at the deﬁni-) +(printed page 695) --QDF=0'
+    - +(an erosion of A Hint Take a look at the defini) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1519,9 +1544,11 @@ exercises:
   - kind: equation
     target_id: 9-18
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 2-40
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.32'
   chapter_id: '9'
   exercise_number: 32
@@ -1548,7 +1575,7 @@ exercises:
         value: '9.33'
     queries:
     - +(9.32) +(printed page 695) --QDF=0
-    - +(structuring element composed of all 1’s in the) +(printed page 695) --QDF=0
+    - +(structuring element composed of all 1 s in the) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1570,15 +1597,18 @@ exercises:
       example_ids: []
       table_ids: []
   reference_specs:
-  - kind: equation
-    target_id: 9-19
-    reason: Explicit equation reference in exercise text
   - kind: figure
     target_id: '9.17'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '9.15'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-19
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.33'
   chapter_id: '9'
   exercise_number: 33
@@ -1630,6 +1660,7 @@ exercises:
   - kind: equation
     target_id: 9-19
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.34'
   chapter_id: '9'
   exercise_number: 34
@@ -1656,7 +1687,7 @@ exercises:
         value: '9.35'
     queries:
     - +(9.34) +(printed page 695) --QDF=0
-    - +(Sketch the convex hull of the large ﬁgure in Prob-) +(printed page 695) --QDF=0
+    - +(Sketch the convex hull of the large figure in Prob) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1676,7 +1707,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: exercise
+    target_id: '9.9'
+    reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.35'
   chapter_id: '9'
   exercise_number: 35
@@ -1703,7 +1738,7 @@ exercises:
         value: '9.36'
     queries:
     - +(9.35) +(printed page 695) --QDF=0
-    - +(Obtain the convex deﬁciency of set A shown in) +(printed page 695) --QDF=0
+    - +(Obtain the convex deficiency of set A shown in) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1727,9 +1762,11 @@ exercises:
   - kind: figure
     target_id: '9.21'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
   - kind: figure
     target_id: '9.22'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.36'
   chapter_id: '9'
   exercise_number: 36
@@ -1775,6 +1812,7 @@ exercises:
   - kind: figure
     target_id: '9.18'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.37'
   chapter_id: '9'
   exercise_number: 37
@@ -1801,7 +1839,7 @@ exercises:
         value: '9.38'
     queries:
     - +(9.37) +(printed page 696) --QDF=0
-    - +(to extract them all. Suppose that you are given a) +(printed page 696) --QDF=0
+    - +(to extract them all Suppose that you are given a) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -1825,6 +1863,7 @@ exercises:
   - kind: section
     target_id: '9.5'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.38'
   chapter_id: '9'
   exercise_number: 38
@@ -1898,7 +1937,7 @@ exercises:
         value: '9.40'
     queries:
     - +(9.39) +(printed page 696) --QDF=0
-    - +(With reference to the hole-ﬁlling algorithm in) +(printed page 696) --QDF=0
+    - +(With reference to the hole-filling algorithm in) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -1924,6 +1963,11 @@ exercises:
   - kind: equation
     target_id: 9-45
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-46
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.40'
   chapter_id: '9'
   exercise_number: 40
@@ -1950,7 +1994,7 @@ exercises:
         value: '9.41'
     queries:
     - +(9.40) +(printed page 696) --QDF=0
-    - +(* As explained in Eqs. (9-44) and (9-69), opening by) +(printed page 696) --QDF=0
+    - +(As explained in Eqs 9-44 and 9-69 opening by) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -1976,6 +2020,11 @@ exercises:
   - kind: equation
     target_id: 9-44
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 9-69
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.41'
   chapter_id: '9'
   exercise_number: 41
@@ -2002,7 +2051,7 @@ exercises:
         value: '9.42'
     queries:
     - +(9.41) +(printed page 696) --QDF=0
-    - +(element is symmetric about its origin, show that:) +(printed page 696) --QDF=0
+    - +(element is symmetric about its origin show that) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2022,7 +2071,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '9.6'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.42'
   chapter_id: '9'
   exercise_number: 42
@@ -2049,7 +2102,7 @@ exercises:
         value: '9.43'
     queries:
     - +(9.42) +(printed page 696) --QDF=0
-    - +(struction by erosion (Section 9.6) are duals with) +(printed page 696) --QDF=0
+    - +(struction by erosion Section 9.6 are duals with) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2073,9 +2126,11 @@ exercises:
   - kind: section
     target_id: '9.6'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
   - kind: exercise
     target_id: '9.41'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.43'
   chapter_id: '9'
   exercise_number: 43
@@ -2102,7 +2157,7 @@ exercises:
         value: '9.44'
     queries:
     - +(9.43) +(printed page 696) --QDF=0
-    - +(n successive erosions, starting with B; and) +(printed page 696) --QDF=0
+    - +(n successive erosions starting with B and) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2149,7 +2204,7 @@ exercises:
         value: '9.45'
     queries:
     - +(9.44) +(printed page 696) --QDF=0
-    - +(logical expressions. You may assume that the struc-) +(printed page 696) --QDF=0
+    - +(logical expressions You may assume that the struc) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2196,7 +2251,7 @@ exercises:
         value: '9.46'
     queries:
     - +(9.45) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following grayscale mor-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following grayscale mor) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2220,6 +2275,7 @@ exercises:
   - kind: section
     target_id: '9.8'
     reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.46'
   chapter_id: '9'
   exercise_number: 46
@@ -2246,7 +2302,7 @@ exercises:
         value: '9.47'
     queries:
     - +(9.46) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following gray-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following gray) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2293,7 +2349,7 @@ exercises:
         value: '9.48'
     queries:
     - +(9.47) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following grayscale mor-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following grayscale mor) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2340,7 +2396,7 @@ exercises:
         value: '9.49'
     queries:
     - +(9.48) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following grayscale mor-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following grayscale mor) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2387,7 +2443,7 @@ exercises:
         value: '9.50'
     queries:
     - +(9.49) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following gray-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following gray) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2432,7 +2488,7 @@ exercises:
       end_before: null
     queries:
     - +(9.50) +(printed page 696) --QDF=0
-    - +((a) Would you expect the method used to gen-) +(printed page 696) --QDF=0
+    - +(a Would you expect the method used to gen) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2459,8 +2515,8 @@ exercises:
         kind: exercise
         value: '9.51'
     queries:
-    - +((b) * If your answer to (a) is yes, sketch what the) +(printed page 697) --QDF=0
-    - +((b) * If your answer to (a) is yes, sketch what the) +(Problems) +(printed page 697) --QDF=0
+    - +(b If your answer to a is yes sketch what the) +(printed page 697) --QDF=0
+    - +(b If your answer to a is yes sketch what the) +(Problems) +(printed page 697) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '697'
@@ -2481,6 +2537,7 @@ exercises:
   - kind: figure
     target_id: '9.45'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.51'
   chapter_id: '9'
   exercise_number: 51
@@ -2552,7 +2609,7 @@ exercises:
       end_before: null
     queries:
     - +(9.52) +(printed page 697) --QDF=0
-    - +(ers be inspected by an imaging system. In this con-) +(printed page 697) --QDF=0
+    - +(ers be inspected by an imaging system In this con) +(printed page 697) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '697'

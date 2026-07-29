@@ -25,7 +25,7 @@ exercises:
       end_before: null
     queries:
     - +(7.1) +(printed page 534) --QDF=0
-    - +((c) Using the result of (b), write an orthogonal) +(printed page 534) --QDF=0
+    - +(c Using the result of b write an orthogonal) +(printed page 534) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '534'
@@ -69,14 +69,14 @@ exercises:
         value: '7.3'
     queries:
     - +(7.2) +(printed page 535) --QDF=0
-    - +(Prove Eq. (7-23).) +(printed page 535) --QDF=0
+    - +(7-23) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
       verification_mode: visual_required
-    - kind: contains_text
-      value: Prove Eq. (7-23).
-      verification_mode: text_or_visual
+    - kind: contains_equation
+      value: 7-23
+      verification_mode: visual_required
     - kind: contains_exercise
       value: '7.2'
       verification_mode: visual_required
@@ -94,6 +94,7 @@ exercises:
   - kind: equation
     target_id: 7-23
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.3'
   chapter_id: '7'
   exercise_number: 3
@@ -120,13 +121,13 @@ exercises:
         value: '7.4'
     queries:
     - +(7.3) +(printed page 535) --QDF=0
-    - +(Prove that if A*TA = I, the associated expansion) +(printed page 535) --QDF=0
+    - +(Prove that rxu sxu in Eqs 7-16 and) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
       verification_mode: visual_required
     - kind: contains_text
-      value: Prove that if A*TA = I, the associated expansion
+      value: '* Prove that rxu (,) = sxu (,) in Eqs. (7-16) and'
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.3'
@@ -146,6 +147,11 @@ exercises:
   - kind: equation
     target_id: 7-16
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-17
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.4'
   chapter_id: '7'
   exercise_number: 4
@@ -172,7 +178,7 @@ exercises:
         value: '7.5'
     queries:
     - +(7.4) +(printed page 535) --QDF=0
-    - +(functions are orthonormal.) +(printed page 535) --QDF=0
+    - +(functions are orthonormal) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -219,7 +225,7 @@ exercises:
         value: '7.6'
     queries:
     - +(7.5) +(printed page 535) --QDF=0
-    - +(Prove that matrix A3 in Example 7.3 is an orthog-) +(printed page 535) --QDF=0
+    - +(Prove that matrix A3 in Example 7.3 is an orthog) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -244,6 +250,7 @@ exercises:
   - kind: example
     target_id: '7.3'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.6'
   chapter_id: '7'
   exercise_number: 6
@@ -317,7 +324,7 @@ exercises:
         value: '7.8'
     queries:
     - +(7.7) +(printed page 535) --QDF=0
-    - +((f) Are f and g orthogonal to one another?) +(printed page 535) --QDF=0
+    - +(f Are f and g orthogonal to one another) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -343,6 +350,11 @@ exercises:
   - kind: equation
     target_id: 7-4
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-5
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.8'
   chapter_id: '7'
   exercise_number: 8
@@ -369,7 +381,7 @@ exercises:
         value: '7.9'
     queries:
     - +(7.8) +(printed page 535) --QDF=0
-    - +((c) * Show that angles and distances are preserved) +(printed page 535) --QDF=0
+    - +(c Show that angles and distances are preserved) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -393,6 +405,7 @@ exercises:
   - kind: exercise
     target_id: '7.1'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.9'
   chapter_id: '7'
   exercise_number: 9
@@ -419,7 +432,7 @@ exercises:
         value: '7.10'
     queries:
     - +(7.9) +(printed page 535) --QDF=0
-    - +(Compute the inverse transform of T in Exam-) +(printed page 535) --QDF=0
+    - +(Compute the inverse transform of T in Exam) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -439,7 +452,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: example
+    target_id: '7.3'
+    reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.10'
   chapter_id: '7'
   exercise_number: 10
@@ -466,7 +483,7 @@ exercises:
         value: '7.11'
     queries:
     - +(7.10) +(printed page 535) --QDF=0
-    - +(Prove that the set of sinusoidal expansion func-) +(printed page 535) --QDF=0
+    - +(Prove that the set of sinusoidal expansion func) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -513,7 +530,7 @@ exercises:
         value: '7.12'
     queries:
     - +(7.11) +(printed page 535) --QDF=0
-    - +(Compute the expansion coefﬁcients of 2-tuple) +(printed page 535) --QDF=0
+    - +(Compute the expansion coefficients of 2-tuple) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -560,7 +577,7 @@ exercises:
         value: '7.13'
     queries:
     - +(7.12) +(printed page 535) --QDF=0
-    - +(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0
+    - +(orthonormal If so write the corresponding) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -631,6 +648,7 @@ exercises:
   - kind: exercise
     target_id: '7.12'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.14'
   chapter_id: '7'
   exercise_number: 14
@@ -657,7 +675,7 @@ exercises:
         value: '7.15'
     queries:
     - +(7.14) +(printed page 535) --QDF=0
-    - +((a) Compute the transform of F with respect to) +(printed page 535) --QDF=0
+    - +(a Compute the transform of F with respect to) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -681,6 +699,11 @@ exercises:
   - kind: exercise
     target_id: '7.12'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
+  - kind: exercise
+    target_id: '7.13'
+    reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.15'
   chapter_id: '7'
   exercise_number: 15
@@ -707,7 +730,7 @@ exercises:
         value: '7.16'
     queries:
     - +(7.15) +(printed page 535) --QDF=0
-    - +(whether inner products, angles, and distances are) +(printed page 535) --QDF=0
+    - +(whether inner products angles and distances are) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -752,13 +775,13 @@ exercises:
       end_before: null
     queries:
     - +(7.16) +(printed page 535) --QDF=0
-    - +(Example 7.5, compute the transform of 4) +(printed page 535) --QDF=0
+    - +(Prove that A and A in Example 7.5 are biortho) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
       verification_mode: visual_required
     - kind: contains_text
-      value: Example 7.5, compute the transform of 4
+      value: Prove that A and A in Example 7.5 are biortho-
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.16'
@@ -774,6 +797,7 @@ exercises:
   - kind: example
     target_id: '7.5'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.17'
   chapter_id: '7'
   exercise_number: 17
@@ -800,7 +824,7 @@ exercises:
         value: '7.18'
     queries:
     - +(7.17) +(printed page 536) --QDF=0
-    - +(* Write a pair of 2-D transform matrix equations) +(printed page 536) --QDF=0
+    - +(Write a pair of 2-D transform matrix equations) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -894,7 +918,7 @@ exercises:
         value: '7.20'
     queries:
     - +(7.19) +(printed page 536) --QDF=0
-    - +(Show that Eq. (7-59) of Example 7.6 is equivalent) +(printed page 536) --QDF=0
+    - +(Show that Eq 7-59 of Example 7.6 is equivalent) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -920,9 +944,11 @@ exercises:
   - kind: equation
     target_id: 7-59
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: example
     target_id: '7.6'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.20'
   chapter_id: '7'
   exercise_number: 20
@@ -949,7 +975,7 @@ exercises:
         value: '7.21'
     queries:
     - +(7.20) +(printed page 536) --QDF=0
-    - +(* Prove that the DFT expansion functions of) +(printed page 536) --QDF=0
+    - +(Prove that the DFT expansion functions of) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -974,6 +1000,7 @@ exercises:
   - kind: equation
     target_id: 7-56
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.21'
   chapter_id: '7'
   exercise_number: 21
@@ -1025,6 +1052,7 @@ exercises:
   - kind: equation
     target_id: 7-52
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.22'
   chapter_id: '7'
   exercise_number: 22
@@ -1051,7 +1079,7 @@ exercises:
         value: '7.23'
     queries:
     - +(7.22) +(printed page 536) --QDF=0
-    - +(sion functions deﬁned in Eq. (7-56), derive an) +(printed page 536) --QDF=0
+    - +(sion functions defined in Eq 7-56 derive an) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1076,6 +1104,7 @@ exercises:
   - kind: equation
     target_id: 7-56
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.23'
   chapter_id: '7'
   exercise_number: 23
@@ -1102,7 +1131,7 @@ exercises:
         value: '7.24'
     queries:
     - +(7.23) +(printed page 536) --QDF=0
-    - +(arbitrary vector r of length r and angle u, compute) +(printed page 536) --QDF=0
+    - +(arbitrary vector r of length r and angle u compute) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1149,7 +1178,7 @@ exercises:
         value: '7.25'
     queries:
     - +(7.24) +(printed page 536) --QDF=0
-    - +(* Prove that the Fourier transform of time-scaled) +(printed page 536) --QDF=0
+    - +(Prove that the Fourier transform of time-scaled) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1174,6 +1203,7 @@ exercises:
   - kind: equation
     target_id: 7-73
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.25'
   chapter_id: '7'
   exercise_number: 25
@@ -1225,6 +1255,7 @@ exercises:
   - kind: equation
     target_id: 7-80
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.26'
   chapter_id: '7'
   exercise_number: 26
@@ -1298,7 +1329,7 @@ exercises:
         value: '7.28'
     queries:
     - +(7.27) +(printed page 536) --QDF=0
-    - +(tions of the form given in Eqs. (7-57) and (7-58)) +(printed page 536) --QDF=0
+    - +(tions of the form given in Eqs 7-57 and 7-58) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1324,6 +1355,11 @@ exercises:
   - kind: equation
     target_id: 7-57
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-58
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.28'
   chapter_id: '7'
   exercise_number: 28
@@ -1397,7 +1433,7 @@ exercises:
         value: '7.30'
     queries:
     - +(7.29) +(printed page 536) --QDF=0
-    - +(tion in (b) from its discrete Fourier transform.) +(printed page 536) --QDF=0
+    - +(tion in b from its discrete Fourier transform) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1424,9 +1460,23 @@ exercises:
   - kind: equation
     target_id: 7-28
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
   - kind: equation
     target_id: 7-86
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-87
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-88
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-89
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.30'
   chapter_id: '7'
   exercise_number: 30
@@ -1500,7 +1550,7 @@ exercises:
         value: '7.32'
     queries:
     - +(7.31) +(printed page 536) --QDF=0
-    - +(Create a table mapping the rows of Hadamard-) +(printed page 536) --QDF=0
+    - +(Create a table mapping the rows of Hadamard) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1547,7 +1597,7 @@ exercises:
         value: '7.33'
     queries:
     - +(7.32) +(printed page 536) --QDF=0
-    - +(Obtain the slant transformation matrix for N = 8.) +(printed page 536) --QDF=0
+    - +(Obtain the slant transformation matrix for N 8) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1594,7 +1644,7 @@ exercises:
         value: '7.34'
     queries:
     - +(7.33) +(printed page 536) --QDF=0
-    - +(Derive the Haar scaling coefﬁcients from) +(printed page 536) --QDF=0
+    - +(Derive the Haar scaling coefficients from) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1620,6 +1670,11 @@ exercises:
   - kind: equation
     target_id: 7-122
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-126
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.34'
   chapter_id: '7'
   exercise_number: 34
@@ -1646,7 +1701,7 @@ exercises:
         value: '7.35'
     queries:
     - +(7.34) +(printed page 536) --QDF=0
-    - +(does not satisfy the second requirement of a mul-) +(printed page 536) --QDF=0
+    - +(does not satisfy the second requirement of a mul) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1718,6 +1773,7 @@ exercises:
   - kind: equation
     target_id: 7-140
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.36'
   chapter_id: '7'
   exercise_number: 36
@@ -1744,7 +1800,7 @@ exercises:
         value: '7.37'
     queries:
     - +(7.36) +(printed page 536) --QDF=0
-    - +(scaling function deﬁnition of Eq. (7-122) to draw) +(printed page 536) --QDF=0
+    - +(scaling function definition of Eq 7-122 to draw) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1769,6 +1825,7 @@ exercises:
   - kind: equation
     target_id: 7-122
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.37'
   chapter_id: '7'
   exercise_number: 37
@@ -1795,13 +1852,13 @@ exercises:
         value: '7.38'
     queries:
     - +(7.37) +(printed page 536) --QDF=0
-    - +(tion. Write an expression for c33) +(printed page 536) --QDF=0
+    - +(tion Write an expression for c33 x in terms of) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
       verification_mode: visual_required
     - kind: contains_text
-      value: tion. Write an expression for c33
+      value: tion. Write an expression for c33 ,() x in terms of
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.37'
@@ -1842,13 +1899,13 @@ exercises:
         value: '7.39'
     queries:
     - +(7.38) +(printed page 536) --QDF=0
-    - +(express V3 as a function of scaling space V0 and) +(printed page 536) --QDF=0
+    - +(ing space V3 that is fx H V 3 Use Eq 7-128 to) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
       verification_mode: visual_required
     - kind: contains_text
-      value: express V3 as a function of scaling space V0 and
+      value: ing space V3—that is, fx () H V 3 Use Eq. (7-128) to .
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.38'
@@ -1867,6 +1924,7 @@ exercises:
   - kind: equation
     target_id: 7-128
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.39'
   chapter_id: '7'
   exercise_number: 39
@@ -1893,7 +1951,7 @@ exercises:
         value: '7.40'
     queries:
     - +(7.39) +(printed page 536) --QDF=0
-    - +(pare to the example, where the starting scale was) +(printed page 536) --QDF=0
+    - +(pare to the example where the starting scale was) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1918,6 +1976,7 @@ exercises:
   - kind: example
     target_id: '7.18'
     reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.40'
   chapter_id: '7'
   exercise_number: 40
@@ -1942,7 +2001,7 @@ exercises:
       end_before: null
     queries:
     - +(7.40) +(printed page 536) --QDF=0
-    - +(The DWT in Eqs. (7-137) and (7-138) is for a) +(printed page 536) --QDF=0
+    - +(The DWT in Eqs 7-137 and 7-138 is for a) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1971,14 +2030,14 @@ exercises:
         kind: exercise
         value: '7.41'
     queries:
-    - +((a) * Rewrite these equations for any starting) +(printed page 537) --QDF=0
-    - +((a) * Rewrite these equations for any starting) +(Problems) +(printed page 537) --QDF=0
+    - +(c Use the result from b to compute f 1 from) +(printed page 537) --QDF=0
+    - +(c Use the result from b to compute f 1 from) +(Problems) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
       verification_mode: visual_required
     - kind: contains_text
-      value: (a) * Rewrite these equations for any starting
+      value: (c) Use the result from (b) to compute f () 1 from
       verification_mode: text_or_visual
     - kind: contains_exercise
       value: '7.41'
@@ -1993,6 +2052,15 @@ exercises:
   - kind: equation
     target_id: 7-137
     reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: equation
+    target_id: 7-138
+    reason: Explicit equation reference in exercise text
+    selected_context_pages: []
+  - kind: example
+    target_id: '7.19'
+    reason: Explicit example reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.41'
   chapter_id: '7'
   exercise_number: 41
@@ -2019,7 +2087,7 @@ exercises:
         value: '7.42'
     queries:
     - +(7.41) +(printed page 537) --QDF=0
-    - +(* Draw the FWT ﬁlter bank required to compute) +(printed page 537) --QDF=0
+    - +(Draw the FWT filter bank required to compute) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2043,6 +2111,7 @@ exercises:
   - kind: exercise
     target_id: '7.40'
     reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.42'
   chapter_id: '7'
   exercise_number: 42
@@ -2069,7 +2138,7 @@ exercises:
         value: '7.43'
     queries:
     - +(7.42) +(printed page 537) --QDF=0
-    - +(wavelet transform is O(N). That is, the number of) +(printed page 537) --QDF=0
+    - +(wavelet transform is O N That is the number of) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2116,7 +2185,7 @@ exercises:
         value: '7.44'
     queries:
     - +(7.43) +(printed page 537) --QDF=0
-    - +(bank of Fig. 7.24(a) is the Haar scaling func-) +(printed page 537) --QDF=0
+    - +(bank of Fig 7.24 a is the Haar scaling func) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2140,6 +2209,7 @@ exercises:
   - kind: figure
     target_id: '7.24'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.44'
   chapter_id: '7'
   exercise_number: 44
@@ -2166,7 +2236,7 @@ exercises:
         value: '7.45'
     queries:
     - +(7.44) +(printed page 537) --QDF=0
-    - +(Draw the required ﬁlter bank and label all inputs) +(printed page 537) --QDF=0
+    - +(Draw the required filter bank and label all inputs) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2260,7 +2330,7 @@ exercises:
         value: '7.47'
     queries:
     - +(7.46) +(printed page 537) --QDF=0
-    - +(sions for determining them. Then order the basis) +(printed page 537) --QDF=0
+    - +(sions for determining them Then order the basis) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2332,8 +2402,8 @@ exercises:
         kind: exercise
         value: '7.48'
     queries:
-    - +(ysis tree, labeling all nodes with the names of) +(printed page 538) --QDF=0
-    - +(ysis tree, labeling all nodes with the names of) +(Problems) +(printed page 538) --QDF=0
+    - +(ysis tree labeling all nodes with the names of) +(printed page 538) --QDF=0
+    - +(ysis tree labeling all nodes with the names of) +(Problems) +(printed page 538) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '538'
@@ -2354,6 +2424,7 @@ exercises:
   - kind: figure
     target_id: '7.30'
     reason: Explicit figure reference in exercise text
+    selected_context_pages: []
 - exercise_id: '7.48'
   chapter_id: '7'
   exercise_number: 48
@@ -2378,7 +2449,7 @@ exercises:
       end_before: null
     queries:
     - +(7.48) +(printed page 538) --QDF=0
-    - +(mal tree, labeling the nodes with the computed) +(printed page 538) --QDF=0
+    - +(mal tree labeling the nodes with the computed) +(printed page 538) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '538'

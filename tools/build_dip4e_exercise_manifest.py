@@ -27,6 +27,7 @@ from app.models.locator import (
     PageCoverage,
     PageRange,
     PageReference,
+    query_safe_anchor,
 )
 from app.models.manifest import ManifestRetrievalStep
 from tools.extract_pdf_candidates import (
@@ -40,22 +41,76 @@ from tools.extract_pdf_candidates import (
     extract_lines,
     extract_page_anchors,
     extract_problem_headings,
+    merge_visual_lines,
     page_references,
     sha256_file,
 )
 
-SECTION_REF_RE = re.compile(r"\bSections?\s+(\d+(?:\.\d+)*)", re.IGNORECASE)
-EQUATION_REF_RE = re.compile(
-    r"\b(?:Eqs?\.?|Equations?)\s*\((\d+-\d+)\)",
+REFERENCE_PREFIXES = {
+    "section": re.compile(r"\bSections?\s+", re.IGNORECASE),
+    "equation": re.compile(r"\b(?:Equations?|Eqs?\.?)\s*", re.IGNORECASE),
+    "figure": re.compile(r"\b(?:Figs?\.?|Figures?)\s+", re.IGNORECASE),
+    "table": re.compile(r"\bTables?\s+", re.IGNORECASE),
+    "example": re.compile(r"\bExamples?\s+", re.IGNORECASE),
+    "exercise": re.compile(r"\b(?:Problems?|Exercises?)\s+", re.IGNORECASE),
+}
+REFERENCE_ID_PATTERNS = {
+    "section": r"\d+(?:\.\d+)+",
+    "equation": r"\d+-\d+",
+    "figure": r"\d+(?:\.\d+)+",
+    "table": r"\d+(?:\.\d+)+",
+    "example": r"\d+(?:\.\d+)+",
+    "exercise": r"\d+\.\d+",
+}
+REFERENCE_CONNECTOR_RE = re.compile(
+    r"\s*(?:(?P<range>through|to|[-–—])|(?P<list>,\s*(?:and|or)?|and|or))\s*",
     re.IGNORECASE,
 )
-FIGURE_REF_RE = re.compile(
-    r"\b(?:Figs?\.?|Figures?)\s+(\d+(?:\.\d+)*)",
-    re.IGNORECASE,
+SUBFIGURE_ONLY_RE = re.compile(r"\s*\([a-z](?:\s*,\s*[a-z])*\)", re.IGNORECASE)
+REFERENCE_KEYWORD_DEHYPHENATIONS = (
+    (
+        re.compile(
+            r"\bSec-\s*(?:\S+\s+){0,4}?tion(s?)(?=\s+\d+(?:\.\d+)+)",
+            re.IGNORECASE,
+        ),
+        r"Section\1",
+    ),
+    (
+        re.compile(
+            r"\bProb-\s*(?:\S+\s+){0,4}?lem(s?)(?=\s+\d+\.\d+)",
+            re.IGNORECASE,
+        ),
+        r"Problem\1",
+    ),
+    (
+        re.compile(
+            r"\bExam-\s*(?:\S+\s+){0,4}?ple(s?)(?=\s+\d+(?:\.\d+)+)",
+            re.IGNORECASE,
+        ),
+        r"Example\1",
+    ),
+    (
+        re.compile(
+            r"\bEqua-\s*(?:\S+\s+){0,4}?tion(s?)(?=\s*\(?\d+-\d+)",
+            re.IGNORECASE,
+        ),
+        r"Equation\1",
+    ),
+    (
+        re.compile(
+            r"\bFig-\s*(?:\S+\s+){0,4}?ure(s?)(?=\s+\d+(?:\.\d+)+)",
+            re.IGNORECASE,
+        ),
+        r"Figure\1",
+    ),
+    (
+        re.compile(
+            r"\bTa-\s*(?:\S+\s+){0,4}?ble(s?)(?=\s+\d+(?:\.\d+)+)",
+            re.IGNORECASE,
+        ),
+        r"Table\1",
+    ),
 )
-TABLE_REF_RE = re.compile(r"\bTables?\s+(\d+(?:\.\d+)*)", re.IGNORECASE)
-EXAMPLE_REF_RE = re.compile(r"\bExamples?\s+(\d+(?:\.\d+)*)", re.IGNORECASE)
-PROBLEM_REF_RE = re.compile(r"\b(?:Problems?|Exercises?)\s+(\d+\.\d+)", re.IGNORECASE)
 REFERENCE_OVERRIDES = {
     ("figure", "10.10.4"): (
         "10.4",
@@ -64,6 +119,12 @@ REFERENCE_OVERRIDES = {
             "the referenced 3 x 3 Laplacian kernel."
         ),
     ),
+}
+SELECTED_CONTEXT_PAGE_OVERRIDES = {
+    ("2.11", "section", "2.4"): ["70", "71"],
+    ("3.8", "section", "3.3"): ["135", "136"],
+    ("11.2", "section", "11.2"): ["815", "816"],
+    ("11.22", "section", "11.4"): ["850", "851"],
 }
 
 
@@ -88,10 +149,6 @@ def _column(page_width: float, x0: float) -> int:
 
 def _bbox_key(page_width: float, bbox: tuple[float, float, float, float] | list[float]):
     return (_column(page_width, float(bbox[0])), float(bbox[1]), float(bbox[0]))
-
-
-def _line_key(page: fitz.Page, line: TextLine):
-    return _bbox_key(page.rect.width, line.bbox)
 
 
 def _at_or_after_boundary(
@@ -169,7 +226,7 @@ def _window_lines(
         ):
             continue
         lines.append(line)
-    return sorted(lines, key=lambda item: _line_key(page, item))
+    return merge_visual_lines(float(page.rect.width), lines)
 
 
 def _distinctive_text(lines: list[TextLine], exercise_id: str) -> str | None:
@@ -320,10 +377,11 @@ def _build_problem_plan(
                     verification_mode="visual_required",
                 )
             )
-        primary_anchor = current.exercise_id if first else content_value
-        if content_value != primary_anchor:
+        primary_anchor = query_safe_anchor(current.exercise_id if first else content_value)
+        safe_content_value = query_safe_anchor(content_value)
+        if safe_content_value != primary_anchor:
             secondary_query = (
-                f"+({content_value}) +(printed page {page.printed_page_label}) --QDF=0"
+                f"+({safe_content_value}) +(printed page {page.printed_page_label}) --QDF=0"
             )
         else:
             secondary_query = (
@@ -346,35 +404,96 @@ def _build_problem_plan(
 
 
 def _reference_specs(text: str, exercise_id: str) -> list[ExerciseReferenceSpec]:
-    patterns = (
-        ("section", SECTION_REF_RE),
-        ("equation", EQUATION_REF_RE),
-        ("figure", FIGURE_REF_RE),
-        ("table", TABLE_REF_RE),
-        ("example", EXAMPLE_REF_RE),
-        ("exercise", PROBLEM_REF_RE),
-    )
+    text = _normalize_reference_keywords(text)
+    references: list[tuple[int, str, str]] = []
+    for kind, prefix_pattern in REFERENCE_PREFIXES.items():
+        for prefix_match in prefix_pattern.finditer(text):
+            for target_id in _parse_reference_clause(text, prefix_match.end(), kind):
+                references.append((prefix_match.start(), kind, target_id))
+
     specs: list[ExerciseReferenceSpec] = []
     seen: set[tuple[str, str]] = set()
-    for kind, pattern in patterns:
-        for match in pattern.finditer(text):
-            target_id = match.group(1)
-            override = REFERENCE_OVERRIDES.get((kind, target_id))
-            reason = f"Explicit {kind} reference in exercise text"
-            if override is not None:
-                target_id, reason = override
-            key = (kind, target_id)
-            if key in seen or (kind == "exercise" and target_id == exercise_id):
-                continue
-            seen.add(key)
-            specs.append(
-                ExerciseReferenceSpec(
-                    kind=kind,
-                    target_id=target_id,
-                    reason=reason,
-                )
+    for _position, kind, parsed_target_id in sorted(references, key=lambda item: item[0]):
+        target_id = parsed_target_id
+        override = REFERENCE_OVERRIDES.get((kind, target_id))
+        reason = f"Explicit {kind} reference in exercise text"
+        if override is not None:
+            target_id, reason = override
+        key = (kind, target_id)
+        if key in seen or (kind == "exercise" and target_id == exercise_id):
+            continue
+        seen.add(key)
+        specs.append(
+            ExerciseReferenceSpec(
+                kind=kind,
+                target_id=target_id,
+                reason=reason,
+                selected_context_pages=SELECTED_CONTEXT_PAGE_OVERRIDES.get(
+                    (exercise_id, kind, target_id),
+                    [],
+                ),
             )
+        )
     return specs
+
+
+def _normalize_reference_keywords(text: str) -> str:
+    normalized = text
+    for pattern, replacement in REFERENCE_KEYWORD_DEHYPHENATIONS:
+        normalized = pattern.sub(replacement, normalized)
+    return normalized
+
+
+def _parse_reference_clause(text: str, start: int, kind: str) -> list[str]:
+    item_pattern = re.compile(
+        rf"\s*\(?\s*(?P<id>{REFERENCE_ID_PATTERNS[kind]})\s*\)?"
+        r"(?:\s*\([a-z](?:\s*,\s*[a-z])*\))?",
+        re.IGNORECASE,
+    )
+    first = item_pattern.match(text, start)
+    if first is None:
+        return []
+
+    result = [first.group("id")]
+    previous_id = result[0]
+    position = first.end()
+    while True:
+        connector = REFERENCE_CONNECTOR_RE.match(text, position)
+        if connector is None:
+            break
+        next_item = item_pattern.match(text, connector.end())
+        if next_item is None:
+            subfigure = SUBFIGURE_ONLY_RE.match(text, connector.end())
+            if subfigure is None:
+                break
+            position = subfigure.end()
+            continue
+
+        next_id = next_item.group("id")
+        if connector.group("range") is not None:
+            expanded = _expand_reference_range(kind, previous_id, next_id)
+            result.extend(expanded[1:])
+        else:
+            result.append(next_id)
+        previous_id = next_id
+        position = next_item.end()
+    return list(dict.fromkeys(result))
+
+
+def _expand_reference_range(kind: str, start_id: str, end_id: str) -> list[str]:
+    separator = "-" if kind == "equation" else "."
+    start_parts = start_id.split(separator)
+    end_parts = end_id.split(separator)
+    if len(start_parts) != len(end_parts) or start_parts[:-1] != end_parts[:-1]:
+        raise ValueError(f"unsupported {kind} reference range: {start_id} to {end_id}")
+    start_number = int(start_parts[-1])
+    end_number = int(end_parts[-1])
+    if end_number < start_number:
+        raise ValueError(f"descending {kind} reference range: {start_id} to {end_id}")
+    if end_number - start_number > 100:
+        raise ValueError(f"oversized {kind} reference range: {start_id} to {end_id}")
+    prefix = separator.join(start_parts[:-1])
+    return [f"{prefix}{separator}{number}" for number in range(start_number, end_number + 1)]
 
 
 def build_exercise_manifest(pdf_path: Path) -> ExerciseManifest:
