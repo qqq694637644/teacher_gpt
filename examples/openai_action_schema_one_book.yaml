@@ -406,6 +406,13 @@
             "minItems": 1,
             "title": "Problem Retrieval Plan"
           },
+          "reference_retrieval_plan": {
+            "items": {
+              "$ref": "#/components/schemas/PageRetrievalStep"
+            },
+            "type": "array",
+            "title": "Reference Retrieval Plan"
+          },
           "reference_targets": {
             "items": {
               "$ref": "#/components/schemas/ExerciseReferenceTarget"

@@ -72,6 +72,53 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 816,
+            "pdf_page_number": 817,
+            "printed_page_label": "815"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.) +(printed page 815) --QDF=0",
+            "Boundary Preprocessing labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded. printed page 815 --QDF=0",
+            "+(figure 11.1) +(printed page 815) --QDF=0",
+            "+(11.1) +(figure) +(printed page 815) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "815",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "11.1",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.1"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "section",
@@ -919,6 +966,57 @@
           "coverage": {
             "subheadings": [],
             "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 817,
+            "pdf_page_number": 818,
+            "printed_page_label": "816"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the coarser boundary points represented by an 8-directional chain code. It is a simple) +(printed page 816) --QDF=0",
+            "Boundary Preprocessing the coarser boundary points represented by an 8-directional chain code. It is a simple printed page 816 --QDF=0",
+            "+(figure 11.2) +(printed page 816) --QDF=0",
+            "+(11.2) +(figure) +(printed page 816) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "816",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the coarser boundary points represented by an 8-directional chain code. It is a simple",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "11.2",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "CHAIN CODES",
+              "Freeman Chain Codes"
+            ],
+            "figure_ids": [
+              "11.4",
+              "11.2"
+            ],
             "equation_ids": [],
             "example_ids": [],
             "table_ids": []
@@ -1778,6 +1876,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.4": {
@@ -1846,6 +1945,732 @@
             "figure_ids": [],
             "equation_ids": [],
             "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 815,
+            "pdf_page_number": 816,
+            "printed_page_label": "814"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(11.2 BOUNDARY PREPROCESSING) +(printed page 814) --QDF=0",
+            "Boundary Preprocessing possibility of an object merging with the image border. For clarity, we limit the dis- printed page 814 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "814",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "possibility of an object merging with the image border. For clarity, we limit the dis-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.2 BOUNDARY PREPROCESSING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "11.2 BOUNDARY PREPROCESSING",
+              "BOUNDARY FOLLOWING (TRACING)"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 816,
+            "pdf_page_number": 817,
+            "printed_page_label": "815"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.) +(printed page 815) --QDF=0",
+            "Boundary Preprocessing labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded. printed page 815 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "815",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.1"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 817,
+            "pdf_page_number": 818,
+            "printed_page_label": "816"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the coarser boundary points represented by an 8-directional chain code. It is a simple) +(printed page 816) --QDF=0",
+            "Boundary Preprocessing the coarser boundary points represented by an 8-directional chain code. It is a simple printed page 816 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "816",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the coarser boundary points represented by an 8-directional chain code. It is a simple",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "CHAIN CODES",
+              "Freeman Chain Codes"
+            ],
+            "figure_ids": [
+              "11.4",
+              "11.2"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 818,
+            "pdf_page_number": 819,
+            "printed_page_label": "817"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the) +(printed page 817) --QDF=0",
+            "Boundary Preprocessing are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the printed page 817 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "817",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.4",
+              "11.3"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 819,
+            "pdf_page_number": 820,
+            "printed_page_label": "818"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f).) +(printed page 818) --QDF=0",
+            "Boundary Preprocessing Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f). printed page 818 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "818",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.5"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.1"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 820,
+            "pdf_page_number": 821,
+            "printed_page_label": "819"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points) +(printed page 819) --QDF=0",
+            "Boundary Preprocessing image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points printed page 819 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "819",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Slope Chain Codes"
+            ],
+            "figure_ids": [
+              "11.5"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 821,
+            "pdf_page_number": 822,
+            "printed_page_label": "820"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour-) +(printed page 820) --QDF=0",
+            "Boundary Preprocessing numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour- printed page 820 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "820",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.6"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 822,
+            "pdf_page_number": 823,
+            "printed_page_label": "821"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(that the preceding discussion is directly applicable to closed curves. Curve following) +(printed page 821) --QDF=0",
+            "Boundary Preprocessing that the preceding discussion is directly applicable to closed curves. Curve following printed page 821 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "821",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "that the preceding discussion is directly applicable to closed curves. Curve following",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "BOUNDARY APPROXIMATIONS USING MINIMUM-PERIMETER POLYGONS",
+              "Foundation"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 823,
+            "pdf_page_number": 824,
+            "printed_page_label": "822"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre-) +(printed page 822) --QDF=0",
+            "Boundary Preprocessing Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre- printed page 822 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "822",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "MPP Algorithm"
+            ],
+            "figure_ids": [
+              "11.8",
+              "11.7"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 824,
+            "pdf_page_number": 825,
+            "printed_page_label": "823"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the) +(printed page 823) --QDF=0",
+            "Boundary Preprocessing counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the printed page 823 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "823",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.8"
+            ],
+            "equation_ids": [
+              "11-1"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 825,
+            "pdf_page_number": 826,
+            "printed_page_label": "824"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive) +(printed page 824) --QDF=0",
+            "Boundary Preprocessing coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive printed page 824 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "824",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-2",
+              "11-3"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 826,
+            "pdf_page_number": 827,
+            "printed_page_label": "825"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con-) +(printed page 825) --QDF=0",
+            "Boundary Preprocessing A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con- printed page 825 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "825",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "11.2"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 827,
+            "pdf_page_number": 828,
+            "printed_page_label": "826"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con-) +(printed page 826) --QDF=0",
+            "Boundary Preprocessing cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con- printed page 826 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "826",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SIGNATURES"
+            ],
+            "figure_ids": [
+              "11.9"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.3"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 828,
+            "pdf_page_number": 829,
+            "printed_page_label": "827"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number) +(printed page 827) --QDF=0",
+            "Boundary Preprocessing of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number printed page 827 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "827",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.9"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 829,
+            "pdf_page_number": 830,
+            "printed_page_label": "828"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two) +(printed page 828) --QDF=0",
+            "Boundary Preprocessing number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two printed page 828 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "828",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SKELETONS, MEDIAL AXES, AND DISTANCE TRANSFORMS"
+            ],
+            "figure_ids": [
+              "11.10"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.4"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 830,
+            "pdf_page_number": 831,
+            "printed_page_label": "829"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the points on its border. All ﬁre fronts will advance into the region at the same speed.) +(printed page 829) --QDF=0",
+            "Boundary Preprocessing the points on its border. All ﬁre fronts will advance into the region at the same speed. printed page 829 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "829",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the points on its border. All ﬁre fronts will advance into the region at the same speed.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.12",
+              "11.13",
+              "11.11"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 831,
+            "pdf_page_number": 832,
+            "printed_page_label": "830"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect) +(printed page 830) --QDF=0",
+            "Boundary Preprocessing maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect printed page 830 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "830",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.13",
+              "11.12"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 832,
+            "pdf_page_number": 833,
+            "printed_page_label": "831"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal.) +(printed page 831) --QDF=0",
+            "Boundary Preprocessing by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal. printed page 831 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "831",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.3 BOUNDARY FEATURE DESCRIPTORS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.14"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.5"
+            ],
             "table_ids": []
           }
         }
@@ -2660,6 +3485,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.6": {
@@ -2732,6 +3558,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.7": {
@@ -2840,6 +3667,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.8": {
@@ -2912,6 +3740,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.9": {
@@ -2982,6 +3811,44 @@
             "example_ids": [
               "11.2"
             ],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 826,
+            "pdf_page_number": 827,
+            "printed_page_label": "825"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(example 11.2) +(printed page 825) --QDF=0",
+            "+(11.2) +(example) +(printed page 825) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "825",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "11.2",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
             "table_ids": []
           }
         }
@@ -3102,6 +3969,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.11": {
@@ -3170,6 +4038,732 @@
             "figure_ids": [],
             "equation_ids": [],
             "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 815,
+            "pdf_page_number": 816,
+            "printed_page_label": "814"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(11.2 BOUNDARY PREPROCESSING) +(printed page 814) --QDF=0",
+            "Boundary Preprocessing possibility of an object merging with the image border. For clarity, we limit the dis- printed page 814 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "814",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "possibility of an object merging with the image border. For clarity, we limit the dis-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.2 BOUNDARY PREPROCESSING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "11.2 BOUNDARY PREPROCESSING",
+              "BOUNDARY FOLLOWING (TRACING)"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 816,
+            "pdf_page_number": 817,
+            "printed_page_label": "815"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.) +(printed page 815) --QDF=0",
+            "Boundary Preprocessing labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded. printed page 815 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "815",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.1"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 817,
+            "pdf_page_number": 818,
+            "printed_page_label": "816"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the coarser boundary points represented by an 8-directional chain code. It is a simple) +(printed page 816) --QDF=0",
+            "Boundary Preprocessing the coarser boundary points represented by an 8-directional chain code. It is a simple printed page 816 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "816",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the coarser boundary points represented by an 8-directional chain code. It is a simple",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "CHAIN CODES",
+              "Freeman Chain Codes"
+            ],
+            "figure_ids": [
+              "11.4",
+              "11.2"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 818,
+            "pdf_page_number": 819,
+            "printed_page_label": "817"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the) +(printed page 817) --QDF=0",
+            "Boundary Preprocessing are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the printed page 817 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "817",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.4",
+              "11.3"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 819,
+            "pdf_page_number": 820,
+            "printed_page_label": "818"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f).) +(printed page 818) --QDF=0",
+            "Boundary Preprocessing Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f). printed page 818 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "818",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.5"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.1"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 820,
+            "pdf_page_number": 821,
+            "printed_page_label": "819"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points) +(printed page 819) --QDF=0",
+            "Boundary Preprocessing image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points printed page 819 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "819",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Slope Chain Codes"
+            ],
+            "figure_ids": [
+              "11.5"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 821,
+            "pdf_page_number": 822,
+            "printed_page_label": "820"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour-) +(printed page 820) --QDF=0",
+            "Boundary Preprocessing numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour- printed page 820 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "820",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.6"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 822,
+            "pdf_page_number": 823,
+            "printed_page_label": "821"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(that the preceding discussion is directly applicable to closed curves. Curve following) +(printed page 821) --QDF=0",
+            "Boundary Preprocessing that the preceding discussion is directly applicable to closed curves. Curve following printed page 821 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "821",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "that the preceding discussion is directly applicable to closed curves. Curve following",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "BOUNDARY APPROXIMATIONS USING MINIMUM-PERIMETER POLYGONS",
+              "Foundation"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 823,
+            "pdf_page_number": 824,
+            "printed_page_label": "822"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre-) +(printed page 822) --QDF=0",
+            "Boundary Preprocessing Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre- printed page 822 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "822",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "MPP Algorithm"
+            ],
+            "figure_ids": [
+              "11.8",
+              "11.7"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 824,
+            "pdf_page_number": 825,
+            "printed_page_label": "823"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the) +(printed page 823) --QDF=0",
+            "Boundary Preprocessing counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the printed page 823 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "823",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.8"
+            ],
+            "equation_ids": [
+              "11-1"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 825,
+            "pdf_page_number": 826,
+            "printed_page_label": "824"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive) +(printed page 824) --QDF=0",
+            "Boundary Preprocessing coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive printed page 824 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "824",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-2",
+              "11-3"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 826,
+            "pdf_page_number": 827,
+            "printed_page_label": "825"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con-) +(printed page 825) --QDF=0",
+            "Boundary Preprocessing A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con- printed page 825 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "825",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "11.2"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 827,
+            "pdf_page_number": 828,
+            "printed_page_label": "826"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con-) +(printed page 826) --QDF=0",
+            "Boundary Preprocessing cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con- printed page 826 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "826",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SIGNATURES"
+            ],
+            "figure_ids": [
+              "11.9"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.3"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 828,
+            "pdf_page_number": 829,
+            "printed_page_label": "827"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number) +(printed page 827) --QDF=0",
+            "Boundary Preprocessing of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number printed page 827 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "827",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.9"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 829,
+            "pdf_page_number": 830,
+            "printed_page_label": "828"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two) +(printed page 828) --QDF=0",
+            "Boundary Preprocessing number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two printed page 828 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "828",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SKELETONS, MEDIAL AXES, AND DISTANCE TRANSFORMS"
+            ],
+            "figure_ids": [
+              "11.10"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.4"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 830,
+            "pdf_page_number": 831,
+            "printed_page_label": "829"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the points on its border. All ﬁre fronts will advance into the region at the same speed.) +(printed page 829) --QDF=0",
+            "Boundary Preprocessing the points on its border. All ﬁre fronts will advance into the region at the same speed. printed page 829 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "829",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the points on its border. All ﬁre fronts will advance into the region at the same speed.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.12",
+              "11.13",
+              "11.11"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 831,
+            "pdf_page_number": 832,
+            "printed_page_label": "830"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect) +(printed page 830) --QDF=0",
+            "Boundary Preprocessing maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect printed page 830 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "830",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.13",
+              "11.12"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 832,
+            "pdf_page_number": 833,
+            "printed_page_label": "831"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal.) +(printed page 831) --QDF=0",
+            "Boundary Preprocessing by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal. printed page 831 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "831",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.3 BOUNDARY FEATURE DESCRIPTORS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.14"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.5"
+            ],
             "table_ids": []
           }
         }
@@ -3984,6 +5578,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.13": {
@@ -4056,6 +5651,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.14": {
@@ -4116,6 +5712,44 @@
             {
               "kind": "contains_exercise",
               "value": "11.15",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 830,
+            "pdf_page_number": 831,
+            "printed_page_label": "829"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 11.11) +(printed page 829) --QDF=0",
+            "+(11.11) +(figure) +(printed page 829) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "829",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "11.11",
               "verification_mode": "visual_required"
             }
           ],
@@ -4244,6 +5878,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.16": {
@@ -4316,6 +5951,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.17": {
@@ -4384,6 +6020,60 @@
             "figure_ids": [],
             "equation_ids": [],
             "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 836,
+            "pdf_page_number": 837,
+            "printed_page_label": "835"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Suppose that n = 18 is speciﬁed for the boundary in Fig. 11.17(a). To obtain a shape number of this order) +(printed page 835) --QDF=0",
+            "Boundary Feature Descriptors Suppose that n = 18 is speciﬁed for the boundary in Fig. 11.17(a). To obtain a shape number of this order printed page 835 --QDF=0",
+            "+(figure 11.18) +(printed page 835) --QDF=0",
+            "+(11.18) +(figure) +(printed page 835) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "835",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Suppose that n = 18 is speciﬁed for the boundary in Fig. 11.17(a). To obtain a shape number of this order",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "11.18",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "FOURIER DESCRIPTORS"
+            ],
+            "figure_ids": [
+              "11.18",
+              "11.17"
+            ],
+            "equation_ids": [
+              "11-7"
+            ],
+            "example_ids": [
+              "11.7"
+            ],
             "table_ids": []
           }
         }
@@ -4943,6 +6633,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 837,
+            "pdf_page_number": 838,
+            "printed_page_label": "836"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 11-10) +(printed page 836) --QDF=0",
+            "+(11-10) +(equation) +(printed page 836) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "836",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-10",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
@@ -5047,6 +6775,44 @@
             {
               "kind": "contains_exercise",
               "value": "11.20",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 829,
+            "pdf_page_number": 830,
+            "printed_page_label": "828"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 11.10) +(printed page 828) --QDF=0",
+            "+(11.10) +(figure) +(printed page 828) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "828",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "11.10",
               "verification_mode": "visual_required"
             }
           ],
@@ -5175,6 +6941,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.21": {
@@ -5247,6 +7014,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.22": {
@@ -5315,6 +7083,57 @@
             "figure_ids": [],
             "equation_ids": [],
             "example_ids": [],
+            "table_ids": [
+              "11.3"
+            ]
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 851,
+            "pdf_page_number": 852,
+            "printed_page_label": "850"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(we can do this by letting the ﬁrst 32 intensity levels equal to 1, the next 32 equal to 2,) +(printed page 850) --QDF=0",
+            "Region Feature Descriptors we can do this by letting the ﬁrst 32 intensity levels equal to 1, the next 32 equal to 2, printed page 850 --QDF=0",
+            "+(table 11.3) +(printed page 850) --QDF=0",
+            "+(11.3) +(table) +(printed page 850) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "850",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "we can do this by letting the ﬁrst 32 intensity levels equal to 1, the next 32 equal to 2,",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_table",
+              "value": "11.3",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.30"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.13"
+            ],
             "table_ids": [
               "11.3"
             ]
@@ -6315,6 +8134,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.24": {
@@ -6387,6 +8207,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.25": {
@@ -6458,6 +8279,51 @@
               "11-51",
               "11-52"
             ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 863,
+            "pdf_page_number": 864,
+            "printed_page_label": "862"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 11-50) +(printed page 862) --QDF=0",
+            "+(11-50) +(equation) +(printed page 862) --QDF=0",
+            "+(equation 11-52) +(printed page 862) --QDF=0",
+            "+(11-52) +(equation) +(printed page 862) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "862",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-50",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-52",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -6624,6 +8490,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 864,
+            "pdf_page_number": 865,
+            "printed_page_label": "863"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(example 11.16) +(printed page 863) --QDF=0",
+            "+(11.16) +(example) +(printed page 863) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "863",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "11.16",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "example",
@@ -6738,6 +8642,51 @@
               "11-52",
               "11-54"
             ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 863,
+            "pdf_page_number": 864,
+            "printed_page_label": "862"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 11-52) +(printed page 862) --QDF=0",
+            "+(11-52) +(equation) +(printed page 862) --QDF=0",
+            "+(equation 11-54) +(printed page 862) --QDF=0",
+            "+(11-54) +(equation) +(printed page 862) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "862",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-52",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-54",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -6904,6 +8853,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 833,
+            "pdf_page_number": 834,
+            "printed_page_label": "832"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 11-4) +(printed page 832) --QDF=0",
+            "+(11-4) +(equation) +(printed page 832) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "832",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-4",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
@@ -7020,6 +9007,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.30": {
@@ -7080,6 +9068,44 @@
             {
               "kind": "contains_exercise",
               "value": "11.31",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 872,
+            "pdf_page_number": 873,
+            "printed_page_label": "871"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 11.46) +(printed page 871) --QDF=0",
+            "+(11.46) +(figure) +(printed page 871) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "871",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "11.46",
               "verification_mode": "visual_required"
             }
           ],
@@ -7200,6 +9226,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.32": {
@@ -7260,6 +9287,44 @@
             {
               "kind": "contains_exercise",
               "value": "11.33",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 878,
+            "pdf_page_number": 879,
+            "printed_page_label": "877"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 11.51) +(printed page 877) --QDF=0",
+            "+(11.51) +(figure) +(printed page 877) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "877",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "11.51",
               "verification_mode": "visual_required"
             }
           ],
@@ -7382,6 +9447,586 @@
           "coverage": {
             "subheadings": [],
             "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 869,
+            "pdf_page_number": 870,
+            "printed_page_label": "868"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(11.6 WHOLE-IMAGE FEATURES) +(printed page 868) --QDF=0",
+            "Whole-image Features The descriptors introduced in Sections 11.2 through 11.4 are well suited for appli- printed page 868 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "868",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "The descriptors introduced in Sections 11.2 through 11.4 are well suited for appli-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.6 WHOLE-IMAGE FEATURES",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "11.6 WHOLE-IMAGE FEATURES"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "11.17"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 870,
+            "pdf_page_number": 871,
+            "printed_page_label": "869"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(three scenarios: (1) Areas of zero (or small) intensity changes in all directions, which) +(printed page 869) --QDF=0",
+            "Whole-image Features three scenarios: (1) Areas of zero (or small) intensity changes in all directions, which printed page 869 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "869",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "three scenarios: (1) Areas of zero (or small) intensity changes in all directions, which",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "THE HARRIS-STEPHENS CORNER DETECTOR"
+            ],
+            "figure_ids": [
+              "11.44"
+            ],
+            "equation_ids": [
+              "11-49"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 871,
+            "pdf_page_number": 872,
+            "printed_page_label": "870"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(isolated points), as in location C. The HS corner detector is a mathematical formula-) +(printed page 870) --QDF=0",
+            "Whole-image Features isolated points), as in location C. The HS corner detector is a mathematical formula- printed page 870 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "870",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "isolated points), as in location C. The HS corner detector is a mathematical formula-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.45"
+            ],
+            "equation_ids": [
+              "11-56",
+              "11-57",
+              "11-58",
+              "11-59"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 872,
+            "pdf_page_number": 873,
+            "printed_page_label": "871"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(almost identical, yielding a nearly circular ﬁt to the points (we label these eigenvalues) +(printed page 871) --QDF=0",
+            "Whole-image Features almost identical, yielding a nearly circular ﬁt to the points (we label these eigenvalues printed page 871 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "871",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "almost identical, yielding a nearly circular ﬁt to the points (we label these eigenvalues",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.46"
+            ],
+            "equation_ids": [
+              "11-60",
+              "11-61",
+              "11-62"
+            ],
+            "example_ids": [
+              "11.17"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 873,
+            "pdf_page_number": 874,
+            "printed_page_label": "872"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(square matrix is equal to the sum of its eigenvalues, and its determinant is equal to) +(printed page 872) --QDF=0",
+            "Whole-image Features square matrix is equal to the sum of its eigenvalues, and its determinant is equal to printed page 872 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "872",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "square matrix is equal to the sum of its eigenvalues, and its determinant is equal to",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.46"
+            ],
+            "equation_ids": [
+              "11-63"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 874,
+            "pdf_page_number": 875,
+            "printed_page_label": "873"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(detected correctly, but the number of false detections is too high (note that all errors occurred on the) +(printed page 873) --QDF=0",
+            "Whole-image Features detected correctly, but the number of false detections is too high (note that all errors occurred on the printed page 873 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "873",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "detected correctly, but the number of false detections is too high (note that all errors occurred on the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.47"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.18"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 875,
+            "pdf_page_number": 876,
+            "printed_page_label": "874"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the result obtained by increasing k to 0.1 and leaving T at 0.01. This time, all corners were detected cor-) +(printed page 874) --QDF=0",
+            "Whole-image Features the result obtained by increasing k to 0.1 and leaving T at 0.01. This time, all corners were detected cor- printed page 874 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "874",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the result obtained by increasing k to 0.1 and leaving T at 0.01. This time, all corners were detected cor-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.47",
+              "11.48",
+              "11.49"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 876,
+            "pdf_page_number": 877,
+            "printed_page_label": "875"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+((the default values in our implementation). Numerous irrelevant corners were detected. (c) Result using k=0 249) +(printed page 875) --QDF=0",
+            "Whole-image Features (the default values in our implementation). Numerous irrelevant corners were detected. (c) Result using k=0 249 printed page 875 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "875",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(the default values in our implementation). Numerous irrelevant corners were detected. (c) Result using k=0 249",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.49"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 877,
+            "pdf_page_number": 878,
+            "printed_page_label": "876"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(intensities. Imagine that we start thresholding an 8-bit grayscale image one intensity) +(printed page 876) --QDF=0",
+            "Whole-image Features intensities. Imagine that we start thresholding an 8-bit grayscale image one intensity printed page 876 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "876",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "intensities. Imagine that we start thresholding an 8-bit grayscale image one intensity",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "MAXIMALLY STABLE EXTREMAL REGIONS (MSERs)"
+            ],
+            "figure_ids": [
+              "11.50"
+            ],
+            "equation_ids": [
+              "11-64"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 878,
+            "pdf_page_number": 879,
+            "printed_page_label": "877"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(intensity of any point in the region is higher than the intensity at any point in the) +(printed page 877) --QDF=0",
+            "Whole-image Features intensity of any point in the region is higher than the intensity at any point in the printed page 877 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "877",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "intensity of any point in the region is higher than the intensity at any point in the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.51"
+            ],
+            "equation_ids": [
+              "11-65",
+              "11-64"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 879,
+            "pdf_page_number": 880,
+            "printed_page_label": "878"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(level. Each node of the tree contains one extremal region (connected component) shown in white, and denoted by) +(printed page 878) --QDF=0",
+            "Whole-image Features level. Each node of the tree contains one extremal region (connected component) shown in white, and denoted by printed page 878 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "878",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "level. Each node of the tree contains one extremal region (connected component) shown in white, and denoted by",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.51"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 880,
+            "pdf_page_number": 881,
+            "printed_page_label": "879"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Figure 11.52(a) shows a slice image from a CT scan of a human head, and Fig. 11.52(b) shows the result) +(printed page 879) --QDF=0",
+            "Whole-image Features Figure 11.52(a) shows a slice image from a CT scan of a human head, and Fig. 11.52(b) shows the result printed page 879 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "879",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 11.52(a) shows a slice image from a CT scan of a human head, and Fig. 11.52(b) shows the result",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.52"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.19"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 881,
+            "pdf_page_number": 882,
+            "printed_page_label": "880"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(show. The composite MSER, shown in Fig. 11.53(e), is a good representation of the front of the building.) +(printed page 880) --QDF=0",
+            "Whole-image Features show. The composite MSER, shown in Fig. 11.53(e), is a good representation of the front of the building. printed page 880 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "880",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "show. The composite MSER, shown in Fig. 11.53(e), is a good representation of the front of the building.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.53",
+              "11.54",
+              "11.55",
+              "11.52"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 882,
+            "pdf_page_number": 883,
+            "printed_page_label": "881"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(these changes, we used the same parameters as in Fig. 11.53. Figure 11.55(c) shows the resulting MSER.) +(printed page 881) --QDF=0",
+            "Whole-image Features these changes, we used the same parameters as in Fig. 11.53. Figure 11.55(c) shows the resulting MSER. printed page 881 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "881",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "these changes, we used the same parameters as in Fig. 11.53. Figure 11.55(c) shows the resulting MSER.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.7 SCALE-INVARIANT FEATURE TRANSFORM (SIFT)",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.55",
+              "11.53"
+            ],
             "equation_ids": [],
             "example_ids": [],
             "table_ids": []
@@ -8054,6 +10699,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 887,
+            "pdf_page_number": 888,
+            "printed_page_label": "886"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 11-70) +(printed page 886) --QDF=0",
+            "+(11-70) +(equation) +(printed page 886) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "886",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-70",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
@@ -8159,6 +10842,920 @@
               "kind": "contains_exercise",
               "value": "11.36",
               "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 882,
+            "pdf_page_number": 883,
+            "printed_page_label": "881"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(11.7 SCALE-INVARIANT FEATURE TRANSFORM (SIFT)) +(printed page 881) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) coordinates relative to local image features. SIFT is by far the most complex feature printed page 881 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "881",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "coordinates relative to local image features. SIFT is by far the most complex feature",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.7 SCALE-INVARIANT FEATURE TRANSFORM (SIFT)",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "11.7 SCALE-INVARIANT FEATURE TRANSFORM (SIFT)"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 883,
+            "pdf_page_number": 884,
+            "printed_page_label": "882"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Fig. 11.53(b). (c) Composite MSER detected using the same parameters we used to obtain Fig. 11.53(e). The MSERs) +(printed page 882) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) Fig. 11.53(b). (c) Composite MSER detected using the same parameters we used to obtain Fig. 11.53(e). The MSERs printed page 882 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "882",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 11.53(b). (c) Composite MSER detected using the same parameters we used to obtain Fig. 11.53(e). The MSERs",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.54",
+              "11.55"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 884,
+            "pdf_page_number": 885,
+            "printed_page_label": "883"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(kernel with s= 0 5. and then doubling its size by linear (nearest-neighbor) interpolation improves the number) +(printed page 883) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) kernel with s= 0 5. and then doubling its size by linear (nearest-neighbor) interpolation improves the number printed page 883 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "883",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "kernel with s= 0 5. and then doubling its size by linear (nearest-neighbor) interpolation improves the number",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SCALE SPACE"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-66",
+              "11-67"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 885,
+            "pdf_page_number": 886,
+            "printed_page_label": "884"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(ated in an octave is s + 1. However, as you will see in the next section, the smoothed) +(printed page 884) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) ated in an octave is s + 1. However, as you will see in the next section, the smoothed printed page 884 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "884",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ated in an octave is s + 1. However, as you will see in the next section, the smoothed",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.56"
+            ],
+            "equation_ids": [
+              "10-32"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 886,
+            "pdf_page_number": 887,
+            "printed_page_label": "885"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(then refines the locations and validity of those keypoints using two processing steps.) +(printed page 885) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) then refines the locations and validity of those keypoints using two processing steps. printed page 885 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "885",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "then refines the locations and validity of those keypoints using two processing steps.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "DETECTING LOCAL EXTREMA",
+              "Finding the Initial Keypoints"
+            ],
+            "figure_ids": [
+              "11.57"
+            ],
+            "equation_ids": [
+              "11-68",
+              "11-66",
+              "11-69",
+              "10-30"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 887,
+            "pdf_page_number": 888,
+            "printed_page_label": "886"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(constant over all scales, so it does not influence the process of locating extrema in) +(printed page 886) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) constant over all scales, so it does not influence the process of locating extrema in printed page 886 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "886",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "constant over all scales, so it does not influence the process of locating extrema in",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.57"
+            ],
+            "equation_ids": [
+              "11-70",
+              "11-68",
+              "11-69"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 888,
+            "pdf_page_number": 889,
+            "printed_page_label": "887"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(of the three octaves in Fig. 11.58. As you might expect from the results in Fig. 11.57,) +(printed page 887) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) of the three octaves in Fig. 11.58. As you might expect from the results in Fig. 11.57, printed page 887 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "887",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of the three octaves in Fig. 11.58. As you might expect from the results in Fig. 11.57,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Improving the Accuracy of Keypoint Locations"
+            ],
+            "figure_ids": [
+              "11.58",
+              "11.59"
+            ],
+            "equation_ids": [
+              "11-69"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 889,
+            "pdf_page_number": 890,
+            "printed_page_label": "888"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(extremum point found in the digital function, then look for an improved extremum) +(printed page 888) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) extremum point found in the digital function, then look for an improved extremum printed page 888 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "888",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "extremum point found in the digital function, then look for an improved extremum",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.59"
+            ],
+            "equation_ids": [
+              "11-71",
+              "11-72",
+              "11-73",
+              "11-74"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 890,
+            "pdf_page_number": 891,
+            "printed_page_label": "889"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(image. But keypoints of interest in SIFT are “corner-like” features, which are signifi-) +(printed page 889) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) image. But keypoints of interest in SIFT are “corner-like” features, which are signifi- printed page 889 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "889",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "image. But keypoints of interest in SIFT are “corner-like” features, which are signifi-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Eliminating Edge Responses"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-74",
+              "11-71",
+              "11-75",
+              "11-76",
+              "11-61",
+              "11-77"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 891,
+            "pdf_page_number": 892,
+            "printed_page_label": "890"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(At this point in the process, we have computed keypoints that SIFT considers stable.) +(printed page 890) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) At this point in the process, we have computed keypoints that SIFT considers stable. printed page 890 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "890",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "At this point in the process, we have computed keypoints that SIFT considers stable.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "KEYPOINT ORIENTATION"
+            ],
+            "figure_ids": [
+              "11.60"
+            ],
+            "equation_ids": [
+              "11-78",
+              "11-79",
+              "11-75",
+              "11-63"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 892,
+            "pdf_page_number": 893,
+            "printed_page_label": "891"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(later and in Chapter 12). Finally, a parabola is ﬁt to the three histogram values clos-) +(printed page 891) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) later and in Chapter 12). Finally, a parabola is ﬁt to the three histogram values clos- printed page 891 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "891",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "later and in Chapter 12). Finally, a parabola is ﬁt to the three histogram values clos-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.61"
+            ],
+            "equation_ids": [
+              "11-80",
+              "11-81"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 893,
+            "pdf_page_number": 894,
+            "printed_page_label": "892"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(illumination and image content, but their direction is unmistakably consistent. Plots) +(printed page 892) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) illumination and image content, but their direction is unmistakably consistent. Plots printed page 892 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "892",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "illumination and image content, but their direction is unmistakably consistent. Plots",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "KEYPOINT DESCRIPTORS"
+            ],
+            "figure_ids": [
+              "11.62"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 894,
+            "pdf_page_number": 895,
+            "printed_page_label": "893"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(would assign a full entry (i.e., a count of 1) to that bin in the histogram. The distance) +(printed page 893) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) would assign a full entry (i.e., a count of 1) to that bin in the histogram. The distance printed page 893 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "893",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "would assign a full entry (i.e., a count of 1) to that bin in the histogram. The distance",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.62"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 895,
+            "pdf_page_number": 896,
+            "printed_page_label": "894"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(an image of a building and a subimage formed by extracting part of the right corner edge of the building.) +(printed page 894) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) an image of a building and a subimage formed by extracting part of the right corner edge of the building. printed page 894 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "894",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "an image of a building and a subimage formed by extracting part of the right corner edge of the building.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SUMMARY OF THE SIFT ALGORITHM"
+            ],
+            "figure_ids": [
+              "11.63"
+            ],
+            "equation_ids": [
+              "11-69",
+              "11-74",
+              "11-75",
+              "11-79",
+              "11-80",
+              "11-81"
+            ],
+            "example_ids": [
+              "11.20"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 896,
+            "pdf_page_number": 897,
+            "printed_page_label": "895"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(of initial keypoints, you can see that keypoint descriptors offer a high degree of accuracy for establishing) +(printed page 895) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) of initial keypoints, you can see that keypoint descriptors offer a high degree of accuracy for establishing printed page 895 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "895",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of initial keypoints, you can see that keypoint descriptors offer a high degree of accuracy for establishing",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.63",
+              "11.64",
+              "11.65"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 897,
+            "pdf_page_number": 898,
+            "printed_page_label": "896"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(The subimage is a separate image and was processed as such. (b) Corresponding keypoints between the corner and) +(printed page 896) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) The subimage is a separate image and was processed as such. (b) Corresponding keypoints between the corner and printed page 896 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "896",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "The subimage is a separate image and was processed as such. (b) Corresponding keypoints between the corner and",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.66",
+              "11.64",
+              "11.65"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 898,
+            "pdf_page_number": 899,
+            "printed_page_label": "897"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(descriptors that “capture” essential differences between objects, or classes of objects, while maintaining as much) +(printed page 897) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) descriptors that “capture” essential differences between objects, or classes of objects, while maintaining as much printed page 897 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "897",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "descriptors that “capture” essential differences between objects, or classes of objects, while maintaining as much",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.66"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 899,
+            "pdf_page_number": 900,
+            "printed_page_label": "898"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(in Section 11.7 is from Lowe [2004]. For details on the software aspects of many of the examples in this chapter, see) +(printed page 898) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) in Section 11.7 is from Lowe [2004]. For details on the software aspects of many of the examples in this chapter, see printed page 898 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "898",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "in Section 11.7 is from Lowe [2004]. For details on the software aspects of many of the examples in this chapter, see",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 19,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 900,
+            "pdf_page_number": 901,
+            "printed_page_label": "899"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(angle accuracy is high enough so that it may be) +(printed page 899) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) angle accuracy is high enough so that it may be printed page 899 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "899",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "angle accuracy is high enough so that it may be",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-10"
+            ],
+            "example_ids": [
+              "11.2"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 20,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 901,
+            "pdf_page_number": 902,
+            "printed_page_label": "900"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(sion of Eq. (11-4), to be equal to the eigen axes of) +(printed page 900) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) sion of Eq. (11-4), to be equal to the eigen axes of printed page 900 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "900",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "sion of Eq. (11-4), to be equal to the eigen axes of",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-50",
+              "11-51",
+              "11-52",
+              "11-54",
+              "11-4"
+            ],
+            "example_ids": [
+              "11.16"
+            ],
+            "table_ids": [
+              "11.3"
+            ]
+          }
+        },
+        {
+          "sequence": 21,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 902,
+            "pdf_page_number": 903,
+            "printed_page_label": "901"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(on the material you have learned up to this point,) +(printed page 901) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) on the material you have learned up to this point, printed page 901 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "901",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "on the material you have learned up to this point,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-70",
+              "11-74",
+              "11-71",
+              "11-75"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 22,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 903,
+            "pdf_page_number": 904,
+            "printed_page_label": "902"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(pied by bubbles to the total area of the image;) +(printed page 902) --QDF=0",
+            "Scale-invariant Feature Transform (SIFT) pied by bubbles to the total area of the image; printed page 902 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "902",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "pied by bubbles to the total area of the image;",
+              "verification_mode": "text_or_visual"
             }
           ],
           "coverage": {
@@ -9165,6 +12762,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.37": {
@@ -9236,6 +12834,87 @@
               "11-71",
               "11-75"
             ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 889,
+            "pdf_page_number": 890,
+            "printed_page_label": "888"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 11-74) +(printed page 888) --QDF=0",
+            "+(11-74) +(equation) +(printed page 888) --QDF=0",
+            "+(equation 11-71) +(printed page 888) --QDF=0",
+            "+(11-71) +(equation) +(printed page 888) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "888",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-74",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-71",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 890,
+            "pdf_page_number": 891,
+            "printed_page_label": "889"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 11-75) +(printed page 889) --QDF=0",
+            "+(11-75) +(equation) +(printed page 889) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "889",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "11-75",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -9443,6 +13122,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "11.39": {
@@ -9543,6 +13223,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     }
   }

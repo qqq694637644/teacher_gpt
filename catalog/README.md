@@ -34,9 +34,11 @@ catalog/dip4e/exercise_validation_report.json
 
 The source PDF contains formal `Problems` sections in chapters 2-12; chapter 1 has no
 exercise shard. The reviewed baseline contains 492 exercises, 122 starred exercises,
-28 cross-page exercises, 520 retrieval steps, and 412 resolved references. All chapter
-number ranges are continuous and the independent rebuild matched all 24 package and
-shard files byte-for-byte.
+28 cross-page exercises, 520 problem retrieval steps, and 412 resolved references. The
+compiled execution plan preserves 1,344 raw reference page steps as audit metadata,
+trims 11 broad context references, removes 40 duplicate reference page executions, and
+exposes 1,106 deduplicated reference retrieval steps. All chapter number ranges are
+continuous and the independent rebuild matched all package and shard files byte-for-byte.
 
 Deployments should set `TEACHING_GPT_EXERCISE_INDEX_PATH` to
 `catalog/dip4e/compiled_exercise_index.json`. The package is strict: missing or

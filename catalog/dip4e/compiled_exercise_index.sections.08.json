@@ -72,6 +72,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.2": {
@@ -144,6 +145,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.3": {
@@ -216,6 +218,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.4": {
@@ -276,6 +279,54 @@
             {
               "kind": "contains_exercise",
               "value": "8.5",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 633,
+            "pdf_page_number": 634,
+            "printed_page_label": "632"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(8.3) +(printed page 632) --QDF=0",
+            "+(error and rms signal-to-noise ratios for the quan-) +(printed page 632) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "632",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "error and rms signal-to-noise ratios for the quan-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "8.3",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "8.4",
               "verification_mode": "visual_required"
             }
           ],
@@ -422,6 +473,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 547,
+            "pdf_page_number": 548,
+            "printed_page_label": "546"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-7) +(printed page 546) --QDF=0",
+            "+(8-7) +(equation) +(printed page 546) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "546",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-7",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
@@ -538,6 +627,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.7": {
@@ -610,6 +700,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.8": {
@@ -682,6 +773,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.9": {
@@ -790,6 +882,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.10": {
@@ -850,6 +943,44 @@
             {
               "kind": "contains_exercise",
               "value": "8.11",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 557,
+            "pdf_page_number": 558,
+            "printed_page_label": "556"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 8.8) +(printed page 556) --QDF=0",
+            "+(8.8) +(figure) +(printed page 556) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "556",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "8.8",
               "verification_mode": "visual_required"
             }
           ],
@@ -978,6 +1109,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.12": {
@@ -1050,6 +1182,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.13": {
@@ -1119,6 +1252,44 @@
             "equation_ids": [
               "8-13"
             ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 559,
+            "pdf_page_number": 560,
+            "printed_page_label": "558"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-13) +(printed page 558) --QDF=0",
+            "+(8-13) +(equation) +(printed page 558) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "558",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-13",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -1240,6 +1411,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.15": {
@@ -1312,6 +1484,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.16": {
@@ -1381,6 +1554,44 @@
             "equation_ids": [
               "8-14"
             ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 559,
+            "pdf_page_number": 560,
+            "printed_page_label": "558"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-14) +(printed page 558) --QDF=0",
+            "+(8-14) +(equation) +(printed page 558) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "558",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-14",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -1502,6 +1713,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.18": {
@@ -1574,6 +1786,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.19": {
@@ -1646,6 +1859,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.20": {
@@ -1716,6 +1930,44 @@
             "example_ids": [
               "8.7"
             ],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 566,
+            "pdf_page_number": 567,
+            "printed_page_label": "565"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(example 8.7) +(printed page 565) --QDF=0",
+            "+(8.7) +(example) +(printed page 565) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "565",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "8.7",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
             "table_ids": []
           }
         }
@@ -1836,6 +2088,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.22": {
@@ -1908,6 +2161,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.23": {
@@ -1980,6 +2234,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.24": {
@@ -2052,6 +2307,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.25": {
@@ -2124,6 +2380,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.26": {
@@ -2196,6 +2453,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.27": {
@@ -2256,6 +2514,44 @@
             {
               "kind": "contains_exercise",
               "value": "8.28",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 605,
+            "pdf_page_number": 606,
+            "printed_page_label": "604"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 8.36) +(printed page 604) --QDF=0",
+            "+(8.36) +(figure) +(printed page 604) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "604",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "8.36",
               "verification_mode": "visual_required"
             }
           ],
@@ -2378,6 +2674,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 611,
+            "pdf_page_number": 612,
+            "printed_page_label": "610"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-48) +(printed page 610) --QDF=0",
+            "+(8-48) +(equation) +(printed page 610) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "610",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-48",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
@@ -2494,6 +2828,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.30": {
@@ -2566,6 +2901,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.31": {
@@ -2639,6 +2975,80 @@
             "table_ids": [
               "7.1"
             ]
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 525,
+            "pdf_page_number": 526,
+            "printed_page_label": "524"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(table 7.1) +(printed page 524) --QDF=0",
+            "+(7.1) +(table) +(printed page 524) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "524",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_table",
+              "value": "7.1",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 620,
+            "pdf_page_number": 621,
+            "printed_page_label": "619"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 8-61) +(printed page 619) --QDF=0",
+            "+(8-61) +(equation) +(printed page 619) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "619",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "8-61",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
           }
         }
       ],
@@ -2801,6 +3211,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.33": {
@@ -2873,6 +3284,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.34": {
@@ -2945,6 +3357,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "8.35": {
@@ -3009,6 +3422,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     }
   }

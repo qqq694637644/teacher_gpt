@@ -462,7 +462,13 @@ Table
 Exercise / Problem
 ```
 
-Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。缺失引用、跨习题循环、章节不完整、错误 shard 或非规范页面都会阻止输出。
+Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。运行时同时保留完整 `reference_targets` 作为审计元数据，并生成去重后的 `reference_retrieval_plan` 作为 GPT 默认执行计划。
+
+去重不是简单删除引用。规则是：同一道题如果同时显式引用宽泛 section 和更精确的 equation、figure、table、example 或 exercise，且精确目标页落在该 section 范围内，则只保留 section 中与精确目标同页的上下文证据，再与精确目标证据合并；如果没有更精确目标，section 仍按原范围保留。同一物理页上的多个目标合并为一个 step，`required_evidence` 和 `coverage` 取并集。
+
+以固定 PDF 中习题 2.11 为例，题干在印刷页 114，提到 Section 2.4 和 Eqs. (2-14)–(2-16)。PDF 原文显示式 (2-14) 和 linear indexing 上下文在印刷页 70，式 (2-15)、(2-16) 在印刷页 71。因此完整 `reference_targets` 仍记录 Section 2.4 的 63–79 页，但 `reference_retrieval_plan` 只执行 70、71 两页，并保留这两页的局部 section 文本证据与公式证据。
+
+缺失引用、跨习题循环、章节不完整、错误 shard 或非规范页面都会阻止输出。
 
 Exercise Catalog 必须覆盖源 PDF 中所有正式 `Problems` 区域后才能进入发布流程。当前固定 PDF 的第 1 章没有课后习题，因此实际范围是第 2 至第 12 章，共 11 个 shard。构建期不保存题目全文，也不批量生成答案。
 
@@ -478,6 +484,10 @@ source evidence checks: 1987
 query text anchor checks: 1040
 resolved references: 412
 cross-exercise references: 56
+raw reference retrieval steps: 1344
+pruned broad context references: 11
+duplicate reference pages removed from execution: 40
+deduplicated reference retrieval steps: 1106
 source_pdf_verification_status: passed
 file_search_retrieval_status: not_tested
 ```

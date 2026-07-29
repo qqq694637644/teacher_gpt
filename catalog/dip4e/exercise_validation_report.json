@@ -8,6 +8,10 @@
   "exercise_page_count": 520,
   "visual_required_exercise_count": 492,
   "cross_exercise_reference_count": 56,
+  "raw_reference_retrieval_step_count": 1344,
+  "pruned_context_reference_count": 11,
+  "duplicate_reference_page_count": 40,
+  "deduplicated_reference_retrieval_step_count": 1106,
   "chapter_reports": {
     "2": {
       "first_exercise": "2.1",
@@ -114,19 +118,19 @@
   },
   "assembled_manifest_sha256": "5a752505cf7040e341ff79847385a9f3e88e1155e53f7cf1c5ba89c3d358f97f",
   "output_sha256": "ae71a4433f43503266792f9ee75d9480f0a38dc28093f2b178f5731f1f153bb3",
-  "assembled_index_sha256": "58578a1bf952390cbacc7fcb2eeb54c049ecfe469b7d75a83aa06758a01d192f",
+  "assembled_index_sha256": "e34155c3991c4745ac4cbf63d55f73d135ff7cfc727b783c570e2fe93823f2e5",
   "exercise_shard_count": 11,
   "exercise_shard_sha256": {
-    "compiled_exercise_index.sections.02.json": "99edb7afe47d191f7f5063a79533ba95287f84c32f74483b63918507aaf67f65",
-    "compiled_exercise_index.sections.03.json": "10b95e002e6fdbeef43f5a1edd33a2b3d035d5ad700c8114fe5a99b026998eca",
-    "compiled_exercise_index.sections.04.json": "fcb1454fa64dbbb4d7f562e8075d905084194ab63e0e1bf79f8877650d0a1f86",
-    "compiled_exercise_index.sections.05.json": "8312c813d9bb76cd1aa0a032d61a591d5a879dd690459295d5ab6fdff7d11be4",
-    "compiled_exercise_index.sections.06.json": "5cc6500e6a3e905a858671feedcfd59bfe4be8ea1b3a78542c05e6a0bd335263",
-    "compiled_exercise_index.sections.07.json": "e76fc06068e868802e0417471f96dcd676cdc905a97a12157845b2d7375ae63d",
-    "compiled_exercise_index.sections.08.json": "227bd0542ee0670786ee87cf3259e86f055222903c45bf0520b0210ee66571fb",
-    "compiled_exercise_index.sections.09.json": "b55550e738e073bdb8db22605ee7b716792623e43fa5ace20b20f247df0b12dd",
-    "compiled_exercise_index.sections.10.json": "b3a538fb2fb7b4bbfb94ed2f5d537e0f9b4714c9aff63667819f57f3c3b1aabb",
-    "compiled_exercise_index.sections.11.json": "ab36b1beb28c45266232de0912a7b903c67c66078a0fa6fd87feb2266c75a3cc",
-    "compiled_exercise_index.sections.12.json": "3030cdcbb4dfabbdce88460bd327cec92b86ca31286b7ab5e35ca44bdfcfdc25"
+    "compiled_exercise_index.sections.02.json": "45e66329a8579a4e8395de0ac519cb48eafcc401600e92253c26a111dd1f514f",
+    "compiled_exercise_index.sections.03.json": "5a2e7ea38cd454f603579e4de178ef412120fb6eaf2dba5eafc9883347f6fb3f",
+    "compiled_exercise_index.sections.04.json": "83ae9e02f9ae892cb6d5f1fb80707365780143cfa3363d8182012b5f09575f80",
+    "compiled_exercise_index.sections.05.json": "7b395bcf0a15bc19bf4904a4a159e99b8006edc542101ea1575a6c8e38794229",
+    "compiled_exercise_index.sections.06.json": "727511ebd62168350fe246ba284425f638a9f3318e0773ee0e5496579b6f0f8e",
+    "compiled_exercise_index.sections.07.json": "d79a97da701d0f83cec2e4f53f0cb1ed2aae35340d78131aeb0425225c6335ef",
+    "compiled_exercise_index.sections.08.json": "dece0929de3a37d34d5e0e60195a65a531a0efff36a956f0e8b35263c531579a",
+    "compiled_exercise_index.sections.09.json": "84f57dd72eccee34ab31193014ad9e5f82b7d281b6bbd007f3937b82a7f7b30a",
+    "compiled_exercise_index.sections.10.json": "df095f6e53bcc825e8b4f19c2f71c0ab2ec60cf6f20a23f3deec9ad34961e3b8",
+    "compiled_exercise_index.sections.11.json": "ee42c36e4d1a18cc5a525ccff359b68709b330bb6f53aaca758d68efb4b81c17",
+    "compiled_exercise_index.sections.12.json": "9f53a330aa55a24f3c4aebbdd81b5e2ae99bb7a379240e3f2df09f3a276ab810"
   }
 }

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from dataclasses import dataclass
 
 from app.models.exercise import (
     ChapterExerciseSummary,
@@ -9,14 +10,31 @@ from app.models.exercise import (
     ExerciseReferenceTarget,
 )
 from app.models.exercise_manifest import ExerciseManifest, ExerciseManifestNode
-from app.models.locator import CompiledLocatorIndex, PageRetrievalStep
+from app.models.locator import (
+    CompiledLocatorIndex,
+    ContentWindow,
+    EvidenceRequirement,
+    PageCoverage,
+    PageRetrievalStep,
+)
 from app.models.manifest import ManifestRetrievalStep
 
 ReferencePlanMap = dict[tuple[str, str], list[PageRetrievalStep]]
 
 
+@dataclass(frozen=True)
+class ReferencePlanStats:
+    raw_reference_step_count: int = 0
+    pruned_context_reference_count: int = 0
+    duplicate_reference_page_count: int = 0
+    deduplicated_reference_step_count: int = 0
+
+
 class ExerciseIndexCompiler:
     """Compile a reviewed exercise manifest into the strict runtime index."""
+
+    def __init__(self) -> None:
+        self.reference_plan_stats = ReferencePlanStats()
 
     def compile(
         self,
@@ -30,6 +48,10 @@ class ExerciseIndexCompiler:
             raise ValueError("exercise manifest pages do not match section index")
 
         resolved_plans = reference_plans or {}
+        raw_reference_step_count = 0
+        pruned_context_reference_count = 0
+        duplicate_reference_page_count = 0
+        deduplicated_reference_step_count = 0
         preliminary: dict[str, ExerciseLocator] = {}
         nodes: dict[str, ExerciseManifestNode] = {}
         for node in manifest.exercises:
@@ -42,6 +64,7 @@ class ExerciseIndexCompiler:
                 source_order=node.source_order,
                 problem_page_range=node.problem_page_range,
                 problem_retrieval_plan=self._compile_plan(node.problem_retrieval_plan),
+                reference_retrieval_plan=[],
                 reference_targets=[],
             )
             if locator.exercise_id in preliminary:
@@ -84,12 +107,28 @@ class ExerciseIndexCompiler:
                         retrieval_plan=list(plan),
                     )
                 )
+            raw_reference_step_count += sum(len(target.retrieval_plan) for target in targets)
+            duplicate_reference_page_count += self._duplicate_page_count(targets)
+            optimized_targets, pruned_count = self._prune_context_sections(targets)
+            pruned_context_reference_count += pruned_count
+            aggregate_plan = self._merge_reference_targets(optimized_targets)
+            deduplicated_reference_step_count += len(aggregate_plan)
             exercises[exercise_id] = ExerciseLocator.model_validate(
                 {
                     **locator.model_dump(mode="json"),
+                    "reference_retrieval_plan": [
+                        step.model_dump(mode="json") for step in aggregate_plan
+                    ],
                     "reference_targets": [target.model_dump(mode="json") for target in targets],
                 }
             )
+
+        self.reference_plan_stats = ReferencePlanStats(
+            raw_reference_step_count=raw_reference_step_count,
+            pruned_context_reference_count=pruned_context_reference_count,
+            duplicate_reference_page_count=duplicate_reference_page_count,
+            deduplicated_reference_step_count=deduplicated_reference_step_count,
+        )
 
         grouped: dict[str, list[ExerciseLocator]] = defaultdict(list)
         for locator in exercises.values():
@@ -141,3 +180,133 @@ class ExerciseIndexCompiler:
                 )
             )
         return steps
+
+    @staticmethod
+    def _target_chapter(target: ExerciseReferenceTarget) -> str:
+        if target.kind == "equation":
+            return target.target_id.split("-", 1)[0]
+        return target.target_id.split(".", 1)[0]
+
+    @classmethod
+    def _prune_context_sections(
+        cls,
+        targets: list[ExerciseReferenceTarget],
+    ) -> tuple[list[ExerciseReferenceTarget], int]:
+        precise_targets = [target for target in targets if target.kind != "section"]
+        if not precise_targets:
+            return targets, 0
+
+        pruned = 0
+        kept: list[ExerciseReferenceTarget] = []
+        for target in targets:
+            if target.kind != "section":
+                kept.append(target)
+                continue
+            section_pages = {step.page.pdf_page_index for step in target.retrieval_plan}
+            precise_pages_inside: set[int] = set()
+            for precise in precise_targets:
+                precise_pages = {step.page.pdf_page_index for step in precise.retrieval_plan}
+                if (
+                    cls._target_chapter(precise) == cls._target_chapter(target)
+                    and precise_pages <= section_pages
+                ):
+                    precise_pages_inside.update(precise_pages)
+            if precise_pages_inside:
+                pruned += 1
+                kept.append(
+                    target.model_copy(
+                        update={
+                            "retrieval_plan": [
+                                step
+                                for step in target.retrieval_plan
+                                if step.page.pdf_page_index in precise_pages_inside
+                            ]
+                        }
+                    )
+                )
+                continue
+            kept.append(target)
+        return kept, pruned
+
+    @staticmethod
+    def _duplicate_page_count(targets: list[ExerciseReferenceTarget]) -> int:
+        pages = [step.page.pdf_page_index for target in targets for step in target.retrieval_plan]
+        return len(pages) - len(set(pages))
+
+    @classmethod
+    def _merge_reference_targets(
+        cls,
+        targets: list[ExerciseReferenceTarget],
+    ) -> list[PageRetrievalStep]:
+        by_page: dict[int, list[PageRetrievalStep]] = defaultdict(list)
+        for target in targets:
+            for step in target.retrieval_plan:
+                by_page[step.page.pdf_page_index].append(step)
+
+        merged: list[PageRetrievalStep] = []
+        for sequence, page_index in enumerate(sorted(by_page), start=1):
+            source_steps = by_page[page_index]
+            first = source_steps[0]
+            merged.append(
+                PageRetrievalStep(
+                    sequence=sequence,
+                    page_role="single",
+                    page=first.page,
+                    content_window=ContentWindow(),
+                    queries=cls._merged_queries(source_steps),
+                    required_evidence=cls._merged_evidence(source_steps),
+                    coverage=cls._merged_coverage(source_steps),
+                )
+            )
+        return merged
+
+    @staticmethod
+    def _merged_queries(steps: list[PageRetrievalStep]) -> list[str]:
+        queries: list[str] = []
+        for step in steps:
+            for query in step.queries:
+                if query not in queries:
+                    queries.append(query)
+                if len(queries) == 4:
+                    return queries
+        return queries
+
+    @staticmethod
+    def _merged_evidence(steps: list[PageRetrievalStep]) -> list[EvidenceRequirement]:
+        page = steps[0].page
+        evidence: list[EvidenceRequirement] = [
+            EvidenceRequirement(
+                kind="printed_page_equals",
+                value=page.printed_page_label,
+                verification_mode="visual_required",
+            )
+        ]
+        seen = {(evidence[0].kind, evidence[0].value, evidence[0].verification_mode)}
+        for step in steps:
+            for item in step.required_evidence:
+                key = (item.kind, item.value, item.verification_mode)
+                if item.kind == "printed_page_equals" or key in seen:
+                    continue
+                seen.add(key)
+                evidence.append(item)
+        return evidence
+
+    @staticmethod
+    def _merged_coverage(steps: list[PageRetrievalStep]) -> PageCoverage:
+        return PageCoverage(
+            subheadings=list(
+                dict.fromkeys(heading for step in steps for heading in step.coverage.subheadings)
+            ),
+            figure_ids=list(
+                dict.fromkeys(item for step in steps for item in step.coverage.figure_ids)
+            ),
+            equation_ids=list(
+                dict.fromkeys(item for step in steps for item in step.coverage.equation_ids)
+            ),
+            example_ids=list(
+                dict.fromkeys(item for step in steps for item in step.coverage.example_ids)
+            ),
+            table_ids=list(
+                dict.fromkeys(item for step in steps for item in step.coverage.table_ids)
+            ),
+        )

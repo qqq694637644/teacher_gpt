@@ -72,6 +72,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 406,
+            "pdf_page_number": 407,
+            "printed_page_label": "405"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.5) +(printed page 405) --QDF=0",
+            "+(6.5) +(figure) +(printed page 405) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "405",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.5",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "figure",
@@ -176,6 +214,44 @@
             {
               "kind": "contains_exercise",
               "value": "6.3",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 406,
+            "pdf_page_number": 407,
+            "printed_page_label": "405"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.5) +(printed page 405) --QDF=0",
+            "+(6.5) +(figure) +(printed page 405) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "405",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.5",
               "verification_mode": "visual_required"
             }
           ],
@@ -304,6 +380,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 406,
+            "pdf_page_number": 407,
+            "printed_page_label": "405"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.5) +(printed page 405) --QDF=0",
+            "+(6.5) +(figure) +(printed page 405) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "405",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.5",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "figure",
@@ -412,6 +526,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.5": {
@@ -484,6 +599,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.6": {
@@ -556,6 +672,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.7": {
@@ -628,6 +745,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.8": {
@@ -688,6 +806,44 @@
             {
               "kind": "contains_exercise",
               "value": "6.9",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 408,
+            "pdf_page_number": 409,
+            "printed_page_label": "407"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.8) +(printed page 407) --QDF=0",
+            "+(6.8) +(figure) +(printed page 407) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "407",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.8",
               "verification_mode": "visual_required"
             }
           ],
@@ -804,6 +960,54 @@
             {
               "kind": "contains_exercise",
               "value": "6.10",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 460,
+            "pdf_page_number": 461,
+            "printed_page_label": "459"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(6.6) +(printed page 459) --QDF=0",
+            "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "459",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "monitor. All colors are at maximum intensity and",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "6.6",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "6.7",
               "verification_mode": "visual_required"
             }
           ],
@@ -948,6 +1152,54 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 460,
+            "pdf_page_number": 461,
+            "printed_page_label": "459"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(6.6) +(printed page 459) --QDF=0",
+            "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "459",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "monitor. All colors are at maximum intensity and",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "6.6",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "6.7",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "exercise",
@@ -1080,6 +1332,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 402,
+            "pdf_page_number": 403,
+            "printed_page_label": "401"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.2) +(printed page 401) --QDF=0",
+            "+(6.2) +(figure) +(printed page 401) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "401",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.2",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "figure",
@@ -1184,6 +1474,44 @@
             {
               "kind": "contains_exercise",
               "value": "6.13",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 413,
+            "pdf_page_number": 414,
+            "printed_page_label": "412"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.11) +(printed page 412) --QDF=0",
+            "+(6.11) +(figure) +(printed page 412) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "412",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.11",
               "verification_mode": "visual_required"
             }
           ],
@@ -1304,6 +1632,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.14": {
@@ -1364,6 +1693,44 @@
             {
               "kind": "contains_exercise",
               "value": "6.15",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 418,
+            "pdf_page_number": 419,
+            "printed_page_label": "417"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.14) +(printed page 417) --QDF=0",
+            "+(6.14) +(figure) +(printed page 417) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "417",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.14",
               "verification_mode": "visual_required"
             }
           ],
@@ -1480,6 +1847,54 @@
             {
               "kind": "contains_exercise",
               "value": "6.16",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 460,
+            "pdf_page_number": 461,
+            "printed_page_label": "459"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(6.6) +(printed page 459) --QDF=0",
+            "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "459",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "monitor. All colors are at maximum intensity and",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "6.6",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "6.7",
               "verification_mode": "visual_required"
             }
           ],
@@ -1623,6 +2038,116 @@
               "6-40",
               "6-5"
             ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 410,
+            "pdf_page_number": 411,
+            "printed_page_label": "409"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 6-5) +(printed page 409) --QDF=0",
+            "+(6-5) +(equation) +(printed page 409) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "409",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-5",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 432,
+            "pdf_page_number": 433,
+            "printed_page_label": "431"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 6-40) +(printed page 431) --QDF=0",
+            "+(6-40) +(equation) +(printed page 431) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "431",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-40",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 434,
+            "pdf_page_number": 435,
+            "printed_page_label": "433"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 6-41) +(printed page 433) --QDF=0",
+            "+(6-41) +(equation) +(printed page 433) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "433",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-41",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
             "example_ids": [],
             "table_ids": []
           }
@@ -1834,6 +2359,80 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 411,
+            "pdf_page_number": 412,
+            "printed_page_label": "410"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 6-6) +(printed page 410) --QDF=0",
+            "+(6-6) +(equation) +(printed page 410) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "410",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-6",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 434,
+            "pdf_page_number": 435,
+            "printed_page_label": "433"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 6-42) +(printed page 433) --QDF=0",
+            "+(6-42) +(equation) +(printed page 433) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "433",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-42",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
@@ -1993,6 +2592,44 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 428,
+            "pdf_page_number": 429,
+            "printed_page_label": "427"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.25) +(printed page 427) --QDF=0",
+            "+(6.25) +(figure) +(printed page 427) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "427",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.25",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "figure",
@@ -2109,6 +2746,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.20": {
@@ -2169,6 +2807,44 @@
             {
               "kind": "contains_exercise",
               "value": "6.21",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 436,
+            "pdf_page_number": 437,
+            "printed_page_label": "435"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.31) +(printed page 435) --QDF=0",
+            "+(6.31) +(figure) +(printed page 435) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "435",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.31",
               "verification_mode": "visual_required"
             }
           ],
@@ -2297,6 +2973,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.22": {
@@ -2369,6 +3046,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.23": {
@@ -2421,6 +3099,722 @@
             {
               "kind": "contains_exercise",
               "value": "6.23",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 406,
+            "pdf_page_number": 407,
+            "printed_page_label": "405"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(6.2 COLOR MODELS) +(printed page 405) --QDF=0",
+            "Color Models a goal (the creation of color graphics for animation is an example of the latter). In printed page 405 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "405",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "a goal (the creation of color graphics for animation is an example of the latter). In",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "6.2 COLOR MODELS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "6.2 COLOR MODELS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 407,
+            "pdf_page_number": 408,
+            "printed_page_label": "406"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(and gray-scale information in an image, making it suitable for many of the gray-scale) +(printed page 406) --QDF=0",
+            "Color Models and gray-scale information in an image, making it suitable for many of the gray-scale printed page 406 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "406",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "and gray-scale information in an image, making it suitable for many of the gray-scale",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.6"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 408,
+            "pdf_page_number": 409,
+            "printed_page_label": "407"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(es is an 8-bit image. Under these conditions, each RGB colorpixel [that is, a triplet of) +(printed page 407) --QDF=0",
+            "Color Models es is an 8-bit image. Under these conditions, each RGB colorpixel [that is, a triplet of printed page 407 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "407",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "es is an 8-bit image. Under these conditions, each RGB colorpixel [that is, a triplet of",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "THE RGB COLOR MODEL"
+            ],
+            "figure_ids": [
+              "6.8",
+              "6.7"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 409,
+            "pdf_page_number": 410,
+            "printed_page_label": "408"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(done by ﬁxing one of the three colors and allowing the other two to vary. For instance, a cross-sectional) +(printed page 408) --QDF=0",
+            "Color Models done by ﬁxing one of the three colors and allowing the other two to vary. For instance, a cross-sectional printed page 408 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "408",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "done by ﬁxing one of the three colors and allowing the other two to vary. For instance, a cross-sectional",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "THE CMY AND CMYK COLOR MODELS"
+            ],
+            "figure_ids": [
+              "6.9",
+              "6.8"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "6.1"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 410,
+            "pdf_page_number": 411,
+            "printed_page_label": "409"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(yellow, should produce black. In practice, because C, M, and Y inks seldom are pure) +(printed page 409) --QDF=0",
+            "Color Models yellow, should produce black. In practice, because C, M, and Y inks seldom are pure printed page 409 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "409",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "yellow, should produce black. In practice, because C, M, and Y inks seldom are pure",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.9"
+            ],
+            "equation_ids": [
+              "6-5"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 411,
+            "pdf_page_number": 412,
+            "printed_page_label": "410"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(interested in using the properties of color models to facilitate image processing tasks,) +(printed page 410) --QDF=0",
+            "Color Models interested in using the properties of color models to facilitate image processing tasks, printed page 410 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "410",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "interested in using the properties of color models to facilitate image processing tasks,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "6-6",
+              "6-7",
+              "6-8",
+              "6-9",
+              "6-10",
+              "6-11",
+              "6-12",
+              "6-13",
+              "6-14",
+              "6-15",
+              "6-5"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 412,
+            "pdf_page_number": 413,
+            "printed_page_label": "411"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the white, (1, 1, 1), vertex directly above it [see Fig. 6.10(a)]. As noted in our discus-) +(printed page 411) --QDF=0",
+            "Color Models the white, (1, 1, 1), vertex directly above it [see Fig. 6.10(a)]. As noted in our discus- printed page 411 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "411",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the white, (1, 1, 1), vertex directly above it [see Fig. 6.10(a)]. As noted in our discus-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "THE HSI COLOR MODEL"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "6.1"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 413,
+            "pdf_page_number": 414,
+            "printed_page_label": "412"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the locus of color points that lie on planes perpendicular to that axis. As the planes) +(printed page 412) --QDF=0",
+            "Color Models the locus of color points that lie on planes perpendicular to that axis. As the planes printed page 412 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "412",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the locus of color points that lie on planes perpendicular to that axis. As the planes",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.11",
+              "6.10"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 414,
+            "pdf_page_number": 415,
+            "printed_page_label": "413"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(† It is good practice to add a small number in the denominator of this expression to avoid dividing by 0 when) +(printed page 413) --QDF=0",
+            "Color Models † It is good practice to add a small number in the denominator of this expression to avoid dividing by 0 when printed page 413 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "413",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "† It is good practice to add a small number in the denominator of this expression to avoid dividing by 0 when",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Converting Colors from RGB to HSI"
+            ],
+            "figure_ids": [
+              "6.11",
+              "6.12"
+            ],
+            "equation_ids": [
+              "6-16",
+              "6-17",
+              "6-18",
+              "6-20",
+              "6-30"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 415,
+            "pdf_page_number": 416,
+            "printed_page_label": "414"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(414Chapter6Color Image Processing) +(printed page 414) --QDF=0",
+            "Color Models 414Chapter6Color Image Processing printed page 414 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "414",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "414Chapter6Color Image Processing",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.12"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 416,
+            "pdf_page_number": 417,
+            "printed_page_label": "415"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(There are three sectors of interest, corresponding to the 120° intervals in the separa-) +(printed page 415) --QDF=0",
+            "Color Models There are three sectors of interest, corresponding to the 120° intervals in the separa- printed page 415 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "415",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "There are three sectors of interest, corresponding to the 120° intervals in the separa-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Converting Colors from HSI to RGB"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "6-19",
+              "6-16",
+              "6-20",
+              "6-21",
+              "6-22",
+              "6-23",
+              "6-24",
+              "6-25"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 417,
+            "pdf_page_number": 418,
+            "printed_page_label": "416"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Fig. 6.11, the values of hue along this path should increase from 0° to 360° (i.e., from the lowest to highest) +(printed page 416) --QDF=0",
+            "Color Models Fig. 6.11, the values of hue along this path should increase from 0° to 360° (i.e., from the lowest to highest printed page 416 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "416",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 6.11, the values of hue along this path should increase from 0° to 360° (i.e., from the lowest to highest",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.13"
+            ],
+            "equation_ids": [
+              "6-26",
+              "6-27",
+              "6-28",
+              "6-29",
+              "6-30"
+            ],
+            "example_ids": [
+              "6.2"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 418,
+            "pdf_page_number": 419,
+            "printed_page_label": "417"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(possible values of hue). This is precisely what Fig. 6.13(a) shows, because the lowest value is represented) +(printed page 417) --QDF=0",
+            "Color Models possible values of hue). This is precisely what Fig. 6.13(a) shows, because the lowest value is represented printed page 417 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "417",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "possible values of hue). This is precisely what Fig. 6.13(a) shows, because the lowest value is represented",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Manipulating HSI Component Images"
+            ],
+            "figure_ids": [
+              "6.14"
+            ],
+            "equation_ids": [
+              "6-16",
+              "6-19"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 419,
+            "pdf_page_number": 420,
+            "printed_page_label": "418"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(ing independent control over hue, saturation, and intensity. These are quantities with) +(printed page 418) --QDF=0",
+            "Color Models ing independent control over hue, saturation, and intensity. These are quantities with printed page 418 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "418",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ing independent control over hue, saturation, and intensity. These are quantities with",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "A DEVICE INDEPENDENT COLOR MODEL"
+            ],
+            "figure_ids": [
+              "6.15"
+            ],
+            "equation_ids": [
+              "6-20",
+              "6-30"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 420,
+            "pdf_page_number": 421,
+            "printed_page_label": "419"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(color space is colorimetric (i.e., colors perceived as matching are encoded identically),) +(printed page 419) --QDF=0",
+            "Color Models color space is colorimetric (i.e., colors perceived as matching are encoded identically), printed page 419 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "419",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "color space is colorimetric (i.e., colors perceived as matching are encoded identically),",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "6-31",
+              "6-32",
+              "6-33",
+              "6-34"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 421,
+            "pdf_page_number": 422,
+            "printed_page_label": "420"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(of an image, also called its key type, refers to its general distribution of color intensi-) +(printed page 420) --QDF=0",
+            "Color Models of an image, also called its key type, refers to its general distribution of color intensi- printed page 420 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "420",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of an image, also called its key type, refers to its general distribution of color intensi-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "6.3 PSEUDOCOLOR IMAGE PROCESSING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 435,
+            "pdf_page_number": 436,
+            "printed_page_label": "434"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(figure 6.30) +(printed page 434) --QDF=0",
+            "+(6.30) +(figure) +(printed page 434) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "434",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_figure",
+              "value": "6.30",
               "verification_mode": "visual_required"
             }
           ],
@@ -3235,6 +4629,909 @@
             "subheadings": [],
             "figure_ids": [],
             "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 134,
+            "pdf_page_number": 135,
+            "printed_page_label": "133"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0",
+            "Histogram Processing images with four basic intensity characteristics: dark, light, low contrast, and high printed page 133 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "133",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "images with four basic intensity characteristics: dark, light, low contrast, and high",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.3 HISTOGRAM PROCESSING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "3.3 HISTOGRAM PROCESSING"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-6",
+              "3-7"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 135,
+            "pdf_page_number": 136,
+            "printed_page_label": "134"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(contrast and will exhibit a large variety of gray tones. The net effect will be an image) +(printed page 134) --QDF=0",
+            "Histogram Processing contrast and will exhibit a large variety of gray tones. The net effect will be an image printed page 134 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "134",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "contrast and will exhibit a large variety of gray tones. The net effect will be an image",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "HISTOGRAM EQUALIZATION"
+            ],
+            "figure_ids": [
+              "3.16"
+            ],
+            "equation_ids": [
+              "3-8"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 136,
+            "pdf_page_number": 137,
+            "printed_page_label": "135"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
+            "Histogram Processing artifacts created by reversals of intensity. Condition (b) guarantees that the range of printed page 135 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "135",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "artifacts created by reversals of intensity. Condition (b) guarantees that the range of",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.17"
+            ],
+            "equation_ids": [
+              "3-9"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 137,
+            "pdf_page_number": 138,
+            "printed_page_label": "136"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
+            "Histogram Processing integral with respect to its upper limit is the integrand evaluated at the limit. That is, printed page 136 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "136",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "integral with respect to its upper limit is the integrand evaluated at the limit. That is,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-10",
+              "3-11",
+              "3-12"
+            ],
+            "example_ids": [
+              "3.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 138,
+            "pdf_page_number": 139,
+            "printed_page_label": "137"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Substituting this result for drds in Eq. (3-10), and noting that all probability values) +(printed page 137) --QDF=0",
+            "Histogram Processing Substituting this result for drds in Eq. (3-10), and noting that all probability values printed page 137 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "137",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Substituting this result for drds in Eq. (3-10), and noting that all probability values",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.18"
+            ],
+            "equation_ids": [
+              "3-10",
+              "3-13",
+              "3-11"
+            ],
+            "example_ids": [
+              "3.4"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 139,
+            "pdf_page_number": 140,
+            "printed_page_label": "138"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s) +(printed page 138) --QDF=0",
+            "Histogram Processing Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s printed page 138 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "138",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-13",
+              "3-14",
+              "3-11",
+              "3-15"
+            ],
+            "example_ids": [
+              "3.5"
+            ],
+            "table_ids": [
+              "3.1"
+            ]
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 140,
+            "pdf_page_number": 141,
+            "printed_page_label": "139"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that) +(printed page 139) --QDF=0",
+            "Histogram Processing the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that printed page 139 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "139",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.19"
+            ],
+            "equation_ids": [
+              "3-15"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.1"
+            ]
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 141,
+            "pdf_page_number": 142,
+            "printed_page_label": "140"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-) +(printed page 140) --QDF=0",
+            "Histogram Processing fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma- printed page 140 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "140",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "HISTOGRAM MATCHING (SPECIFICATION)"
+            ],
+            "figure_ids": [
+              "3.21"
+            ],
+            "equation_ids": [
+              "3-15",
+              "3-16"
+            ],
+            "example_ids": [
+              "3.6"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 142,
+            "pdf_page_number": 143,
+            "printed_page_label": "141"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).) +(printed page 141) --QDF=0",
+            "Histogram Processing column: histograms of the images in the center column (compare with the histograms in Fig. 3.16). printed page 141 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "141",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.20"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 143,
+            "pdf_page_number": 144,
+            "printed_page_label": "142"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(However, there are applications in which histogram equalization is not suitable. In) +(printed page 142) --QDF=0",
+            "Histogram Processing However, there are applications in which histogram equalization is not suitable. In printed page 142 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "142",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "However, there are applications in which histogram equalization is not suitable. In",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.21"
+            ],
+            "equation_ids": [
+              "3-15",
+              "3-17",
+              "3-11",
+              "3-18",
+              "3-19"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 144,
+            "pdf_page_number": 145,
+            "printed_page_label": "143"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(where the components of this equation are as before. Similarly, given a specific value) +(printed page 143) --QDF=0",
+            "Histogram Processing where the components of this equation are as before. Similarly, given a specific value printed page 143 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "143",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "where the components of this equation are as before. Similarly, given a specific value",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-17",
+              "3-18",
+              "3-19",
+              "3-15",
+              "3-20",
+              "3-21",
+              "3-22"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 145,
+            "pdf_page_number": 146,
+            "printed_page_label": "144"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that) +(printed page 144) --QDF=0",
+            "Histogram Processing be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that printed page 144 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "144",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-23",
+              "3-21",
+              "3-20"
+            ],
+            "example_ids": [
+              "3.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 146,
+            "pdf_page_number": 147,
+            "printed_page_label": "145"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,) +(printed page 145) --QDF=0",
+            "Histogram Processing Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore, printed page 145 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "145",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.22"
+            ],
+            "equation_ids": [
+              "3-21"
+            ],
+            "example_ids": [
+              "3.7",
+              "3.5"
+            ],
+            "table_ids": [
+              "3.2",
+              "3.3"
+            ]
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 147,
+            "pdf_page_number": 148,
+            "printed_page_label": "146"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-) +(printed page 146) --QDF=0",
+            "Histogram Processing For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram- printed page 146 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "146",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "3.5",
+              "3.7"
+            ],
+            "table_ids": [
+              "3.3",
+              "3.4",
+              "3.2"
+            ]
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 148,
+            "pdf_page_number": 149,
+            "printed_page_label": "147"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the) +(printed page 147) --QDF=0",
+            "Histogram Processing obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the printed page 147 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "147",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.23",
+              "3.24"
+            ],
+            "equation_ids": [
+              "3-20"
+            ],
+            "example_ids": [
+              "3.8"
+            ],
+            "table_ids": [
+              "3.4"
+            ]
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 149,
+            "pdf_page_number": 150,
+            "printed_page_label": "148"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.) +(printed page 148) --QDF=0",
+            "Histogram Processing precisely in this interval, we would expect the result to be an image with a light, washed-out appearance. printed page 148 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "148",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.24",
+              "3.25"
+            ],
+            "equation_ids": [
+              "3-21",
+              "3-23"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 150,
+            "pdf_page_number": 151,
+            "printed_page_label": "149"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(generally fails when the objective is to enhance details over small areas in an image.) +(printed page 149) --QDF=0",
+            "Histogram Processing generally fails when the objective is to enhance details over small areas in an image. printed page 149 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "149",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "generally fails when the objective is to enhance details over small areas in an image.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "LOCAL HISTOGRAM PROCESSING"
+            ],
+            "figure_ids": [
+              "3.25"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 151,
+            "pdf_page_number": 152,
+            "printed_page_label": "150"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram) +(printed page 150) --QDF=0",
+            "Histogram Processing squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram printed page 150 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "150",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "USING HISTOGRAM STATISTICS FOR IMAGE ENHANCEMENT"
+            ],
+            "figure_ids": [
+              "3.26"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.9"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 19,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 152,
+            "pdf_page_number": 153,
+            "printed_page_label": "151"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(the local variance (or standard deviation) is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
+            "Histogram Processing the local variance (or standard deviation) is a measure of intensity contrast in that printed page 151 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "151",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the local variance (or standard deviation) is a measure of intensity contrast in that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-24",
+              "3-25",
+              "3-26",
+              "3-27",
+              "3-28"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 20,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 153,
+            "pdf_page_number": 154,
+            "printed_page_label": "152"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the) +(printed page 152) --QDF=0",
+            "Histogram Processing speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the printed page 152 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "152",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.27"
+            ],
+            "equation_ids": [
+              "3-25",
+              "3-26",
+              "3-29"
+            ],
+            "example_ids": [
+              "3.10"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 21,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 154,
+            "pdf_page_number": 155,
+            "printed_page_label": "153"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),) +(printed page 153) --QDF=0",
+            "Histogram Processing 3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c), printed page 153 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "153",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.4 FUNDAMENTALS OF SPATIAL FILTERING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-29"
+            ],
             "example_ids": [],
             "table_ids": []
           }
@@ -4227,6 +6524,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.26": {
@@ -4295,6 +6593,354 @@
             "figure_ids": [],
             "equation_ids": [],
             "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 446,
+            "pdf_page_number": 447,
+            "printed_page_label": "445"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0",
+            "Using Color in Image Segmentation ing the HSI intensity component and converting to RGB. (c) Difference between the two results. printed page 445 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "445",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ing the HSI intensity component and converting to RGB. (c) Difference between the two results.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "6.7 USING COLOR IN IMAGE SEGMENTATION",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "6.7 USING COLOR IN IMAGE SEGMENTATION"
+            ],
+            "figure_ids": [
+              "6.39"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 447,
+            "pdf_page_number": 448,
+            "printed_page_label": "446"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).) +(printed page 446) --QDF=0",
+            "Using Color in Image Segmentation Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a). printed page 446 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "446",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SEGMENTATION IN HSI COLOR SPACE",
+              "SEGMENTATION IN RGB SPACE"
+            ],
+            "figure_ids": [
+              "6.40"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "6.14"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 448,
+            "pdf_page_number": 449,
+            "printed_page_label": "447"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+((d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-) +(printed page 447) --QDF=0",
+            "Using Color in Image Segmentation (d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His- printed page 447 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "447",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.40"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 449,
+            "pdf_page_number": 450,
+            "printed_page_label": "448"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(property that its principal axes are oriented in the direction of maximum data spread.) +(printed page 448) --QDF=0",
+            "Using Color in Image Segmentation property that its principal axes are oriented in the direction of maximum data spread. printed page 448 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "448",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "property that its principal axes are oriented in the direction of maximum data spread.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.41"
+            ],
+            "equation_ids": [
+              "6-48",
+              "6-49"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 450,
+            "pdf_page_number": 451,
+            "printed_page_label": "449"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data) +(printed page 449) --QDF=0",
+            "Using Color in Image Segmentation dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data printed page 449 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "449",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.42"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "6.15",
+              "6.14"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 451,
+            "pdf_page_number": 452,
+            "printed_page_label": "450"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,) +(printed page 450) --QDF=0",
+            "Using Color in Image Segmentation with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected, printed page 450 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "450",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "COLOR EDGE DETECTION"
+            ],
+            "figure_ids": [
+              "6.42"
+            ],
+            "equation_ids": [
+              "3-58",
+              "6-37"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 452,
+            "pdf_page_number": 453,
+            "printed_page_label": "451"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these) +(printed page 451) --QDF=0",
+            "Using Color in Image Segmentation Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these printed page 451 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "451",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.43"
+            ],
+            "equation_ids": [
+              "6-50",
+              "6-51",
+              "6-52",
+              "6-53",
+              "6-54"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 453,
+            "pdf_page_number": 454,
+            "printed_page_label": "452"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three) +(printed page 452) --QDF=0",
+            "Using Color in Image Segmentation putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three printed page 452 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "452",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "6.8 NOISE IN COLOR IMAGES",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.44",
+              "6.45"
+            ],
+            "equation_ids": [
+              "6-55",
+              "6-56",
+              "6-52",
+              "6-54"
+            ],
+            "example_ids": [
+              "6.16"
+            ],
             "table_ids": []
           }
         }
@@ -4734,6 +7380,51 @@
           }
         }
       ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 449,
+            "pdf_page_number": 450,
+            "printed_page_label": "448"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(equation 6-49) +(printed page 448) --QDF=0",
+            "+(6-49) +(equation) +(printed page 448) --QDF=0",
+            "+(equation 6-48) +(printed page 448) --QDF=0",
+            "+(6-48) +(equation) +(printed page 448) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "448",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-49",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_equation",
+              "value": "6-48",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
       "reference_targets": [
         {
           "kind": "equation",
@@ -4893,6 +7584,7 @@
           }
         }
       ],
+      "reference_retrieval_plan": [],
       "reference_targets": []
     },
     "6.29": {
@@ -4989,6 +7681,906 @@
             "figure_ids": [],
             "equation_ids": [],
             "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 176,
+            "pdf_page_number": 177,
+            "printed_page_label": "175"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters sharpening can be accomplished by spatial differentiation. In fact, this is the case, printed page 175 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "175",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "sharpening can be accomplished by spatial differentiation. In fact, this is the case,",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 177,
+            "pdf_page_number": 178,
+            "printed_page_label": "176"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass printed page 176 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "176",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "FOUNDATION"
+            ],
+            "figure_ids": [
+              "3.43"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 178,
+            "pdf_page_number": 179,
+            "printed_page_label": "177"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44, printed page 177 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "177",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-48",
+              "3-49"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 179,
+            "pdf_page_number": 180,
+            "printed_page_label": "178"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters 3.44(c) that in a step transition a line joining these two values crosses the horizontal printed page 178 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "178",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "3.44(c) that in a step transition a line joining these two values crosses the horizontal",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "USING THE SECOND DERIVATIVE FOR IMAGE SHARPENING—THE LAPLACIAN"
+            ],
+            "figure_ids": [
+              "3.44"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 180,
+            "pdf_page_number": 181,
+            "printed_page_label": "179"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla- printed page 179 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "179",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.45"
+            ],
+            "equation_ids": [
+              "3-50",
+              "3-49",
+              "3-51",
+              "3-52",
+              "3-53"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 181,
+            "pdf_page_number": 182,
+            "printed_page_label": "180"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are printed page 180 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "180",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.45",
+              "3.46",
+              "3.47"
+            ],
+            "equation_ids": [
+              "3-54",
+              "2-31",
+              "2-32"
+            ],
+            "example_ids": [
+              "3.18"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 182,
+            "pdf_page_number": 183,
+            "printed_page_label": "181"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution- printed page 181 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "181",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.46"
+            ],
+            "equation_ids": [
+              "3-54"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 183,
+            "pdf_page_number": 184,
+            "printed_page_label": "182"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters sharpen images. This process, called unsharp masking, consists of the following steps: printed page 182 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "182",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "sharpen images. This process, called unsharp masking, consists of the following steps:",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "UNSHARP MASKING AND HIGHBOOST FILTERING"
+            ],
+            "figure_ids": [
+              "3.47"
+            ],
+            "equation_ids": [
+              "3-54",
+              "3-55",
+              "3-56"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 184,
+            "pdf_page_number": 185,
+            "printed_page_label": "183"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b) printed page 183 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "183",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.48",
+              "3.49"
+            ],
+            "equation_ids": [
+              "3-55"
+            ],
+            "example_ids": [
+              "3.19"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 185,
+            "pdf_page_number": 186,
+            "printed_page_label": "184"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol- printed page 184 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "184",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "USING FIRST-ORDER DERIVATIVES FOR IMAGE SHARPENING—THE GRADIENT"
+            ],
+            "figure_ids": [
+              "3.49"
+            ],
+            "equation_ids": [
+              "3-56",
+              "3-57"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 186,
+            "pdf_page_number": 187,
+            "printed_page_label": "185"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning printed page 185 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "185",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "3-58",
+              "3-57",
+              "3-59",
+              "3-48",
+              "3-60",
+              "3-61"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 187,
+            "pdf_page_number": 188,
+            "printed_page_label": "186"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+((integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters (integer) center of spatial symmetry. The smallest kernels in which we are interested printed page 186 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "186",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(integer) center of spatial symmetry. The smallest kernels in which we are interested",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.50"
+            ],
+            "equation_ids": [
+              "3-59",
+              "3-60",
+              "3-62",
+              "3-63",
+              "3-64"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 188,
+            "pdf_page_number": 189,
+            "printed_page_label": "187"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
+            "Sharpening (Highpass) Spatial Filters not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup- printed page 187 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "187",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.51"
+            ],
+            "equation_ids": [
+              "3-59",
+              "3-65"
+            ],
+            "example_ids": [
+              "3.20"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 446,
+            "pdf_page_number": 447,
+            "printed_page_label": "445"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0",
+            "Using Color in Image Segmentation ing the HSI intensity component and converting to RGB. (c) Difference between the two results. printed page 445 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "445",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ing the HSI intensity component and converting to RGB. (c) Difference between the two results.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "6.7 USING COLOR IN IMAGE SEGMENTATION",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "6.7 USING COLOR IN IMAGE SEGMENTATION"
+            ],
+            "figure_ids": [
+              "6.39"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 447,
+            "pdf_page_number": 448,
+            "printed_page_label": "446"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).) +(printed page 446) --QDF=0",
+            "Using Color in Image Segmentation Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a). printed page 446 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "446",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SEGMENTATION IN HSI COLOR SPACE",
+              "SEGMENTATION IN RGB SPACE"
+            ],
+            "figure_ids": [
+              "6.40"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "6.14"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 448,
+            "pdf_page_number": 449,
+            "printed_page_label": "447"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+((d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-) +(printed page 447) --QDF=0",
+            "Using Color in Image Segmentation (d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His- printed page 447 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "447",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.40"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 449,
+            "pdf_page_number": 450,
+            "printed_page_label": "448"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(property that its principal axes are oriented in the direction of maximum data spread.) +(printed page 448) --QDF=0",
+            "Using Color in Image Segmentation property that its principal axes are oriented in the direction of maximum data spread. printed page 448 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "448",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "property that its principal axes are oriented in the direction of maximum data spread.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.41"
+            ],
+            "equation_ids": [
+              "6-48",
+              "6-49"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 450,
+            "pdf_page_number": 451,
+            "printed_page_label": "449"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data) +(printed page 449) --QDF=0",
+            "Using Color in Image Segmentation dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data printed page 449 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "449",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.42"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "6.15",
+              "6.14"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 19,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 451,
+            "pdf_page_number": 452,
+            "printed_page_label": "450"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,) +(printed page 450) --QDF=0",
+            "Using Color in Image Segmentation with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected, printed page 450 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "450",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "COLOR EDGE DETECTION"
+            ],
+            "figure_ids": [
+              "6.42"
+            ],
+            "equation_ids": [
+              "3-58",
+              "6-37"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 20,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 452,
+            "pdf_page_number": 453,
+            "printed_page_label": "451"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these) +(printed page 451) --QDF=0",
+            "Using Color in Image Segmentation Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these printed page 451 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "451",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.43"
+            ],
+            "equation_ids": [
+              "6-50",
+              "6-51",
+              "6-52",
+              "6-53",
+              "6-54"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 21,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 453,
+            "pdf_page_number": 454,
+            "printed_page_label": "452"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three) +(printed page 452) --QDF=0",
+            "Using Color in Image Segmentation putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three printed page 452 --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "452",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "6.8 NOISE IN COLOR IMAGES",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "6.44",
+              "6.45"
+            ],
+            "equation_ids": [
+              "6-55",
+              "6-56",
+              "6-52",
+              "6-54"
+            ],
+            "example_ids": [
+              "6.16"
+            ],
             "table_ids": []
           }
         }

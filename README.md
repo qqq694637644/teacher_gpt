@@ -103,8 +103,9 @@ An exercise locator additionally contains:
 - one problem retrieval step for every physical page occupied by the exercise;
 - explicit `exercise` content-window boundaries for same-page neighboring problems;
 - required visual evidence for page identity and exercise boundaries;
+- a deduplicated `reference_retrieval_plan` for execution;
 - resolved retrieval plans for referenced sections, figures, equations, examples,
-  tables, and other exercises.
+  tables, and other exercises as audit metadata.
 
 It never contains a pre-generated solution.
 
@@ -225,6 +226,8 @@ order, separates same-page exercises, tracks starred and cross-page problems, an
 extracts explicit textbook references. The compiler verifies the exact PDF, requires
 all chapters that contain a formal `Problems` section (chapters 2-12 in this PDF),
 resolves references against the section index and source anchors,
+trims broad section references to pages that overlap more precise references,
+deduplicates same-page reference evidence into `reference_retrieval_plan`,
 and writes no final output when validation fails.
 
 Running these commands is an offline release step; normal application startup does
@@ -232,7 +235,10 @@ not parse the PDF.
 
 The current reviewed baseline contains 492 exercises in chapters 2-12, 122 starred
 exercises, 28 cross-page exercises, 520 page-retrieval steps, and 412 resolved
-references. Chapter 1 has no formal `Problems` section in this source PDF. The source
+references. It keeps 1,344 raw reference page steps for audit metadata, prunes 11
+broad context references during execution planning, removes 40 duplicate reference
+page executions, and exposes 1,106 deduplicated reference retrieval steps. Chapter 1
+has no formal `Problems` section in this source PDF. The source
 prints `Fig. 10.10.4(a)` in exercise 10.23; the build records an explicit audited
 normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local source-PDF
 verification and byte-for-byte repeatability passed; real GPT file-search retrieval

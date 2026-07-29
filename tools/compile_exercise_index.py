@@ -484,7 +484,8 @@ def main() -> None:
     section_index = LocatorRepository.load(args.section_index).index
     page_anchors, verification = verify_source_pdf(manifest, args.pdf)
     reference_plans = build_reference_plans(manifest, page_anchors)
-    compiled = ExerciseIndexCompiler().compile(manifest, section_index, reference_plans)
+    compiler = ExerciseIndexCompiler()
+    compiled = compiler.compile(manifest, section_index, reference_plans)
 
     output_details = write_compiled_exercise_package(compiled, args.output)
     chapter_reports = {
@@ -519,6 +520,18 @@ def main() -> None:
             target.kind == "exercise"
             for locator in compiled.exercises.values()
             for target in locator.reference_targets
+        ),
+        "raw_reference_retrieval_step_count": (
+            compiler.reference_plan_stats.raw_reference_step_count
+        ),
+        "pruned_context_reference_count": (
+            compiler.reference_plan_stats.pruned_context_reference_count
+        ),
+        "duplicate_reference_page_count": (
+            compiler.reference_plan_stats.duplicate_reference_page_count
+        ),
+        "deduplicated_reference_retrieval_step_count": (
+            compiler.reference_plan_stats.deduplicated_reference_step_count
         ),
         "chapter_reports": chapter_reports,
         "structural_validation_status": "passed",

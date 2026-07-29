@@ -2,11 +2,12 @@ import fitz
 import pytest
 import yaml
 
-from app.models.exercise_manifest import ExerciseManifestPackage
+from app.models.exercise_manifest import ExerciseManifest, ExerciseManifestPackage
+from app.models.locator import ContentWindow, EvidenceRequirement, PageCoverage, PageRetrievalStep
 from app.repositories.exercise_repository import ExerciseRepository
 from app.services.exercise_index_compiler import ExerciseIndexCompiler
 from app.services.index_compiler import LocatorIndexCompiler
-from tests.helpers import complete_exercise_manifest, complete_manifest
+from tests.helpers import PAGES, complete_exercise_manifest, complete_manifest
 from tools.build_dip4e_exercise_manifest import (
     _reference_specs,
     write_exercise_manifest_package,
@@ -55,12 +56,100 @@ def test_exercise_compiler_resolves_section_and_exercise_references(tmp_path) ->
     assert (
         first.reference_targets[0].retrieval_plan == section_index.sections["2.6.5"].retrieval_plan
     )
+    assert [step.page for step in first.reference_retrieval_plan] == [
+        step.page for step in section_index.sections["2.6.5"].retrieval_plan
+    ]
+    assert any(
+        item.kind == "contains_heading"
+        for item in first.reference_retrieval_plan[0].required_evidence
+    )
     assert second.reference_targets[0].kind == "exercise"
     assert second.reference_targets[0].retrieval_plan == first.problem_retrieval_plan
+    assert [step.page for step in second.reference_retrieval_plan] == [
+        step.page for step in first.problem_retrieval_plan
+    ]
+    assert any(
+        item.kind == "contains_exercise" and item.value == "2.14"
+        for item in second.reference_retrieval_plan[0].required_evidence
+    )
 
     output = tmp_path / "compiled_exercise_index.json"
     write_compiled_exercise_package(compiled, output)
     assert ExerciseRepository.load(output).index == compiled
+
+
+def _equation_reference_step() -> PageRetrievalStep:
+    page = PAGES[0]
+    return PageRetrievalStep(
+        sequence=1,
+        page_role="single",
+        page=page,
+        content_window=ContentWindow(),
+        queries=[
+            f"+(equation 2-1) +(printed page {page.printed_page_label}) --QDF=0",
+            f"+(2-1) +(equation) +(printed page {page.printed_page_label}) --QDF=0",
+        ],
+        required_evidence=[
+            EvidenceRequirement(
+                kind="printed_page_equals",
+                value=page.printed_page_label,
+                verification_mode="visual_required",
+            ),
+            EvidenceRequirement(
+                kind="contains_equation",
+                value="2-1",
+                verification_mode="visual_required",
+            ),
+        ],
+        coverage=PageCoverage(equation_ids=["2-1"]),
+    )
+
+
+def test_exercise_compiler_prunes_broad_sections_and_deduplicates_pages() -> None:
+    raw = complete_exercise_manifest().model_dump(mode="json")
+    raw["exercises"][0]["reference_specs"] = [
+        {
+            "kind": "section",
+            "target_id": "2.6",
+            "reason": "Broad section context",
+        },
+        {
+            "kind": "equation",
+            "target_id": "2-1",
+            "reason": "Precise equation dependency",
+        },
+    ]
+    manifest = ExerciseManifest.model_validate(raw)
+    section_index = LocatorIndexCompiler().compile(complete_manifest())
+    compiler = ExerciseIndexCompiler()
+
+    compiled = compiler.compile(
+        manifest,
+        section_index,
+        {("equation", "2-1"): [_equation_reference_step()]},
+    )
+
+    locator = compiled.exercises["2.14"]
+    assert [(target.kind, target.target_id) for target in locator.reference_targets] == [
+        ("section", "2.6"),
+        ("equation", "2-1"),
+    ]
+    assert len(locator.reference_targets[0].retrieval_plan) == 4
+    assert [step.page.pdf_page_index for step in locator.reference_retrieval_plan] == [0]
+    assert {
+        (item.kind, item.value) for item in locator.reference_retrieval_plan[0].required_evidence
+    } == {
+        ("printed_page_equals", "98"),
+        (
+            "contains_heading",
+            "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING",
+        ),
+        ("contains_equation", "2-1"),
+    }
+    assert compiler.reference_plan_stats.raw_reference_step_count == 6
+    assert compiler.reference_plan_stats.pruned_context_reference_count == 1
+    assert compiler.reference_plan_stats.duplicate_reference_page_count == 1
+    assert compiler.reference_plan_stats.deduplicated_reference_step_count == 2
 
 
 def test_reference_parser_extracts_supported_explicit_dependencies() -> None:

@@ -107,9 +107,10 @@ Action 返回 `SECTION_NOT_FOUND` 时直接说明 ID 不存在，不猜相近 ID
 2. 检查 `exercise_id`、`problem_page_range` 和非空 `problem_retrieval_plan`；
 3. 按页执行全部 `problem_retrieval_plan`，用 `contains_exercise` 和页面视觉隔离本题；
 4. 对跨页题读取全部页面；对同页多题严格应用 `start_at` 与 `end_before`；
-5. 题目核验完成后，按顺序执行全部 `reference_targets.retrieval_plan`；
-6. 引用可能是 `section`、`figure`、`equation`、`example`、`table` 或 `exercise`；只使用实际核验到的定义、公式和图表；
-7. 题目或关键依赖未完整核验时，明确缺失证据，不给出假装确定的完整答案。
+5. 题目核验完成后，优先按顺序执行去重后的 `reference_retrieval_plan`；
+6. `reference_targets` 是引用元数据和溯源，不要在已提供 `reference_retrieval_plan` 时逐个重复执行其中的 plan；
+7. 引用可能是 `section`、`figure`、`equation`、`example`、`table` 或 `exercise`；只使用实际核验到的定义、公式和图表；
+8. 题目或关键依赖未完整核验时，明确缺失证据，不给出假装确定的完整答案。
 
 Action 返回 `EXERCISE_NOT_FOUND` 时说明题号不存在。返回 `EXERCISE_CATALOG_UNAVAILABLE` 时说明后端尚未配置离线习题索引，停止并且不自行从全书猜题。
 

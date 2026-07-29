@@ -63,6 +63,7 @@ class ExerciseLocator(StrictModel):
     source_order: int = Field(ge=1)
     problem_page_range: PageRange
     problem_retrieval_plan: Annotated[list[PageRetrievalStep], Field(min_length=1)]
+    reference_retrieval_plan: list[PageRetrievalStep] = Field(default_factory=list)
     reference_targets: list[ExerciseReferenceTarget] = Field(default_factory=list)
 
     @model_validator(mode="after")
@@ -115,6 +116,17 @@ class ExerciseLocator(StrictModel):
             raise ValueError("exercise reference targets must be unique")
         if ("exercise", self.exercise_id) in references:
             raise ValueError("exercise cannot reference itself")
+        if self.reference_retrieval_plan:
+            if [step.sequence for step in self.reference_retrieval_plan] != list(
+                range(1, len(self.reference_retrieval_plan) + 1)
+            ):
+                raise ValueError(
+                    "reference retrieval plan sequence must be contiguous and start at 1"
+                )
+            if len({step.page.pdf_page_index for step in self.reference_retrieval_plan}) != len(
+                self.reference_retrieval_plan
+            ):
+                raise ValueError("reference retrieval plan must not repeat physical pages")
         return self
 
 
@@ -184,6 +196,12 @@ class CompiledExerciseIndex(StrictModel):
                 if target.kind == "exercise" and target.target_id not in self.exercises:
                     raise ValueError(
                         f"exercise {exercise_id} references missing exercise {target.target_id}"
+                    )
+            for step in locator.reference_retrieval_plan:
+                canonical = self.pages[step.page.pdf_page_index]
+                if step.page != canonical:
+                    raise ValueError(
+                        f"exercise {exercise_id} contains a noncanonical aggregate reference page"
                     )
             grouped[locator.chapter_id].append(locator)
 
