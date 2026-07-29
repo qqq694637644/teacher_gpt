@@ -20,6 +20,7 @@ from app.models.locator import (
     EvidenceRequirement,
     PageCoverage,
     PageRetrievalStep,
+    query_safe_anchor,
 )
 from app.models.manifest import ManifestRetrievalStep
 
@@ -108,19 +109,20 @@ class ExerciseIndexCompiler:
                             f"exercise {exercise_id} references unresolved {spec.kind} "
                             f"{spec.target_id}"
                         ) from exc
+                normalized_plan = self._normalize_page_plan(list(plan))
                 targets.append(
                     ExerciseReferenceTarget(
                         kind=spec.kind,
                         target_id=spec.target_id,
                         reason=spec.reason,
                         selected_context_pages=spec.selected_context_pages,
-                        retrieval_plan=list(plan),
+                        retrieval_plan=normalized_plan,
                     )
                 )
                 execution_plan = self._selected_execution_plan(
                     exercise_id,
                     spec,
-                    list(plan),
+                    normalized_plan,
                 )
                 execution_targets.append(
                     ExerciseReferenceTarget(
@@ -189,8 +191,8 @@ class ExerciseIndexCompiler:
             exercises=exercises,
         )
 
-    @staticmethod
-    def _compile_plan(source_steps: list[ManifestRetrievalStep]) -> list[PageRetrievalStep]:
+    @classmethod
+    def _compile_plan(cls, source_steps: list[ManifestRetrievalStep]) -> list[PageRetrievalStep]:
         steps: list[PageRetrievalStep] = []
         total = len(source_steps)
         for index, step in enumerate(source_steps):
@@ -208,12 +210,33 @@ class ExerciseIndexCompiler:
                     page_role=role,
                     page=step.page,
                     content_window=step.content_window,
-                    queries=step.queries,
+                    queries=cls._safe_queries(step.required_evidence, step.page.printed_page_label),
                     required_evidence=step.required_evidence,
                     coverage=step.coverage,
                 )
             )
         return steps
+
+    @classmethod
+    def _normalize_page_plan(
+        cls,
+        source_steps: list[PageRetrievalStep],
+    ) -> list[PageRetrievalStep]:
+        return [
+            PageRetrievalStep(
+                sequence=step.sequence,
+                page_role=step.page_role,
+                page=step.page,
+                content_window=step.content_window,
+                queries=cls._safe_queries(
+                    step.required_evidence,
+                    step.page.printed_page_label,
+                ),
+                required_evidence=step.required_evidence,
+                coverage=step.coverage,
+            )
+            for step in source_steps
+        ]
 
     @staticmethod
     def _selected_execution_plan(
@@ -277,7 +300,7 @@ class ExerciseIndexCompiler:
                     page_role=first.page_role,
                     page=first.page,
                     content_window=first.content_window,
-                    queries=cls._merged_queries(source_steps, evidence),
+                    queries=cls._safe_queries(evidence, first.page.printed_page_label),
                     required_evidence=evidence,
                     coverage=cls._merged_coverage(source_steps),
                 )
@@ -305,29 +328,27 @@ class ExerciseIndexCompiler:
         )
 
     @classmethod
-    def _merged_queries(
+    def _safe_queries(
         cls,
-        steps: list[PageRetrievalStep],
         evidence: list[EvidenceRequirement],
+        page_label: str,
     ) -> list[str]:
         queries: list[str] = []
-        page_label = steps[0].page.printed_page_label
         for item in evidence:
             if item.kind == "printed_page_equals":
                 continue
             query = cls._evidence_query(item, page_label)
             if query not in queries:
                 queries.append(query)
-        for step in steps:
-            for query in step.queries:
-                if query not in queries:
-                    queries.append(query)
         if len(queries) == 1:
-            queries.append(f"+(reference) +(printed page {page_label}) --QDF=0")
+            item = next(item for item in evidence if item.kind != "printed_page_equals")
+            prefix = cls._evidence_prefix(item.kind)
+            anchor = query_safe_anchor(item.value)
+            queries.append(f"+({anchor}) +({prefix}) +(printed page {page_label}) --QDF=0")
         return queries
 
     @staticmethod
-    def _evidence_query(evidence: EvidenceRequirement, page_label: str) -> str:
+    def _evidence_prefix(kind: str) -> str:
         prefixes = {
             "contains_heading": "heading",
             "contains_text": "text",
@@ -337,8 +358,13 @@ class ExerciseIndexCompiler:
             "contains_table": "table",
             "contains_exercise": "exercise",
         }
-        prefix = prefixes[evidence.kind]
-        return f"+({prefix} {evidence.value}) +(printed page {page_label}) --QDF=0"
+        return prefixes[kind]
+
+    @classmethod
+    def _evidence_query(cls, evidence: EvidenceRequirement, page_label: str) -> str:
+        prefix = cls._evidence_prefix(evidence.kind)
+        anchor = query_safe_anchor(evidence.value)
+        return f"+({prefix} {anchor}) +(printed page {page_label}) --QDF=0"
 
     @staticmethod
     def _merged_evidence(steps: list[PageRetrievalStep]) -> list[EvidenceRequirement]:

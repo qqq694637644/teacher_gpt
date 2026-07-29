@@ -27,7 +27,7 @@ exercises:
         value: '8.2'
     queries:
     - +(8.1) +(printed page 632) --QDF=0
-    - +((b) Can such an image contain spatial or tempo-) +(printed page 632) --QDF=0
+    - +(b Can such an image contain spatial or tempo) +(printed page 632) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '632'
@@ -74,7 +74,7 @@ exercises:
         value: '8.3'
     queries:
     - +(8.2) +(printed page 632) --QDF=0
-    - +(xk and rk represent the kth run’s starting coordi-) +(printed page 632) --QDF=0
+    - +(xk and rk represent the kth run s starting coordi) +(printed page 632) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '632'
@@ -121,7 +121,7 @@ exercises:
         value: '8.4'
     queries:
     - +(8.3) +(printed page 632) --QDF=0
-    - +(error and rms signal-to-noise ratios for the quan-) +(printed page 632) --QDF=0
+    - +(error and rms signal-to-noise ratios for the quan) +(printed page 632) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '632'
@@ -168,7 +168,7 @@ exercises:
         value: '8.5'
     queries:
     - +(8.4) +(printed page 632) --QDF=0
-    - +(value and the four least signiﬁcant bits of the pre-) +(printed page 632) --QDF=0
+    - +(value and the four least signi cant bits of the pre) +(printed page 632) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '632'
@@ -219,7 +219,7 @@ exercises:
         value: '8.6'
     queries:
     - +(8.5) +(printed page 632) --QDF=0
-    - +((c) If a greater level of lossless compression is) +(printed page 632) --QDF=0
+    - +(c If a greater level of lossless compression is) +(printed page 632) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '632'
@@ -365,7 +365,7 @@ exercises:
         value: '8.9'
     queries:
     - +(8.8) +(printed page 632) --QDF=0
-    - +((a) How many unique Huffman codes are there) +(printed page 632) --QDF=0
+    - +(a How many unique Huffman codes are there) +(printed page 632) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '632'
@@ -410,7 +410,7 @@ exercises:
       end_before: null
     queries:
     - +(8.9) +(printed page 632) --QDF=0
-    - +(sider the image to be produced by the sec-) +(printed page 632) --QDF=0
+    - +(sider the image to be produced by the sec) +(printed page 632) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '632'
@@ -482,7 +482,7 @@ exercises:
         value: '8.11'
     queries:
     - +(8.10) +(printed page 633) --QDF=0
-    - +(Using the Huffman code in Fig. 8.8, decode the) +(printed page 633) --QDF=0
+    - +(Using the Huffman code in Fig 8.8 decode the) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -726,7 +726,7 @@ exercises:
         value: '8.16'
     queries:
     - +(8.15) +(printed page 633) --QDF=0
-    - +(* Write a general procedure for decoding exponen-) +(printed page 633) --QDF=0
+    - +(Write a general procedure for decoding exponen) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -825,7 +825,7 @@ exercises:
         value: '8.18'
     queries:
     - +(8.17) +(printed page 633) --QDF=0
-    - +(Given a four-symbol source {a, b, c, d} with source) +(printed page 633) --QDF=0
+    - +(Given a four-symbol source a b c d with source) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -872,7 +872,7 @@ exercises:
         value: '8.19'
     queries:
     - +(8.18) +(printed page 633) --QDF=0
-    - +(* The arithmetic decoding process is the reverse) +(printed page 633) --QDF=0
+    - +(The arithmetic decoding process is the reverse) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1018,7 +1018,7 @@ exercises:
         value: '8.22'
     queries:
     - +(8.21) +(printed page 633) --QDF=0
-    - +(Decode the BMP encoded sequence {3, 4, 5, 6, 0, 3,) +(printed page 633) --QDF=0
+    - +(Decode the BMP encoded sequence 3 4 5 6 0 3) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1112,7 +1112,7 @@ exercises:
         value: '8.24'
     queries:
     - +(8.23) +(printed page 633) --QDF=0
-    - +(located on the ﬁrst pixel of the second line seg-) +(printed page 633) --QDF=0
+    - +(located on the rst pixel of the second line seg) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1159,7 +1159,7 @@ exercises:
         value: '8.25'
     queries:
     - +(8.24) +(printed page 633) --QDF=0
-    - +((a) List all the members of JPEG DC coefﬁcient) +(printed page 633) --QDF=0
+    - +(a List all the members of JPEG DC coef cient) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1206,7 +1206,7 @@ exercises:
         value: '8.26'
     queries:
     - +(8.25) +(printed page 633) --QDF=0
-    - +(placement of 8 pixels? What would it become for) +(printed page 633) --QDF=0
+    - +(placement of 8 pixels What would it become for) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1300,7 +1300,7 @@ exercises:
         value: '8.28'
     queries:
     - +(8.27) +(printed page 633) --QDF=0
-    - +(* Draw the block diagram of the companion) +(printed page 633) --QDF=0
+    - +(Draw the block diagram of the companion) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1349,7 +1349,7 @@ exercises:
       end_before: null
     queries:
     - +(8.28) +(printed page 633) --QDF=0
-    - +(the form of Eq. (8-48) with rh= 0 is to be DPCM) +(printed page 633) --QDF=0
+    - +(the form of Eq 8-48 with rh 0 is to be DPCM) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1398,7 +1398,7 @@ exercises:
         value: '8.30'
     queries:
     - +(8.29) +(printed page 634) --QDF=0
-    - +(tion levels for L = 4 and the uniform probability) +(printed page 634) --QDF=0
+    - +(tion levels for L 4 and the uniform probability) +(printed page 634) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '634'
@@ -1445,7 +1445,7 @@ exercises:
         value: '8.31'
     queries:
     - +(8.30) +(printed page 634) --QDF=0
-    - +(average) for the next 1 min, with the ﬁrst and last) +(printed page 634) --QDF=0
+    - +(average for the next 1 min with the rst and last) +(printed page 634) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '634'
@@ -1492,7 +1492,7 @@ exercises:
         value: '8.32'
     queries:
     - +(8.31) +(printed page 634) --QDF=0
-    - +(deﬁned by Eq. (8-61) is equivalent to the tradi-) +(printed page 634) --QDF=0
+    - +(de ned by Eq 8-61 is equivalent to the tradi) +(printed page 634) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '634'
@@ -1549,7 +1549,7 @@ exercises:
         value: '8.33'
     queries:
     - +(8.32) +(printed page 634) --QDF=0
-    - +(ted to the mantissa and exponent of the 2LL sub-) +(printed page 634) --QDF=0
+    - +(ted to the mantissa and exponent of the 2LL sub) +(printed page 634) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '634'
@@ -1643,7 +1643,7 @@ exercises:
         value: '8.35'
     queries:
     - +(8.34) +(printed page 634) --QDF=0
-    - +(* Design an invisible watermarking system based) +(printed page 634) --QDF=0
+    - +(Design an invisible watermarking system based) +(printed page 634) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '634'

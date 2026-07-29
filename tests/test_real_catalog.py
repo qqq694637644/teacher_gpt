@@ -1,13 +1,16 @@
+import json
 from pathlib import Path
 
 from fastapi.testclient import TestClient
 
 from app.core.config import Settings
 from app.main import create_app
+from app.models.locator import query_parentheses_balanced, query_safe_anchor
 from app.repositories.exercise_repository import ExerciseRepository
 
 REAL_INDEX = Path("catalog/dip4e/compiled_locator_index.json")
 REAL_EXERCISE_INDEX = Path("catalog/dip4e/compiled_exercise_index.json")
+REAL_EXERCISE_REPORT = Path("catalog/dip4e/exercise_validation_report.json")
 
 
 def test_real_catalog_starts_and_serves_reviewed_sections() -> None:
@@ -139,7 +142,8 @@ def test_real_exercise_reference_plans_preserve_reviewed_pdf_context_and_windows
     for evidence in page_71.required_evidence:
         if evidence.kind == "printed_page_equals":
             continue
-        assert any(evidence.value.casefold() in query.casefold() for query in page_71.queries)
+        safe_anchor = query_safe_anchor(evidence.value).casefold()
+        assert any(safe_anchor in query.casefold() for query in page_71.queries)
     assert any("2-15" in query for query in page_71.queries)
     assert any("2-16" in query for query in page_71.queries)
 
@@ -181,3 +185,58 @@ def test_real_exercise_catalog_expands_parallel_and_range_references() -> None:
                 for step in matching_steps
                 for query in step.queries
             )
+
+
+def test_real_exercise_catalog_has_only_balanced_safe_queries() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+    query_count = 0
+    affected_exercises = {
+        "2.21",
+        "2.33",
+        "3.10",
+        "3.17",
+        "3.23",
+        "4.24",
+        "4.50",
+        "5.23",
+        "5.28",
+        "5.31",
+        "5.45",
+        "6.23",
+        "6.29",
+        "9.45",
+        "10.20",
+        "10.24",
+        "10.25",
+        "10.26",
+        "10.27",
+        "10.42",
+        "10.47",
+        "11.1",
+        "11.4",
+        "11.11",
+    }
+
+    for exercise_id, locator in index.exercises.items():
+        plans = [locator.problem_retrieval_plan, locator.reference_retrieval_plan]
+        plans.extend(target.retrieval_plan for target in locator.reference_targets)
+        exercise_query_count = 0
+        for plan in plans:
+            for step in plan:
+                assert step.queries
+                assert all(query_parentheses_balanced(query) for query in step.queries)
+                for evidence in step.required_evidence:
+                    if evidence.kind == "printed_page_equals":
+                        continue
+                    safe_anchor = query_safe_anchor(evidence.value).casefold()
+                    assert any(safe_anchor in query.casefold() for query in step.queries)
+                exercise_query_count += len(step.queries)
+        query_count += exercise_query_count
+        if exercise_id in affected_exercises:
+            assert exercise_query_count > 0
+
+    report = json.loads(REAL_EXERCISE_REPORT.read_text(encoding="utf-8"))
+    assert query_count == 6939
+    assert report["compiled_query_count"] == query_count
+    assert report["unbalanced_compiled_query_count"] == 0
+    assert report["steps_without_balanced_query_count"] == 0

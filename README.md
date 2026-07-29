@@ -234,6 +234,11 @@ The reference parser expands comma/`and` lists and reviewed numeric ranges for
 Sections, Equations, Figures, Tables, Examples, and Problems. Figure subpart markers
 such as `(a)` and `(b)` do not create separate Figure IDs.
 
+Compiled exercise queries are regenerated from typed evidence instead of copying raw
+PDF text into `+(...)`. Query anchors retain letters, numbers, periods, and hyphens,
+drop unmatched punctuation such as source parentheses, and are validated for balanced
+parentheses. Every non-page evidence item must have a matching safe query anchor.
+
 Running these commands is an offline release step; normal application startup does
 not parse the PDF.
 
@@ -242,7 +247,8 @@ exercises, 28 cross-page exercises, 520 page-retrieval steps, and 465 resolved
 references. It keeps 1,406 raw reference steps for audit metadata, explicitly selects
 context pages for 4 reviewed section references, reduces 1,338 execution candidates
 by 72 exact-window merges, preserves 4 same-page distinct-window cases, and exposes
-1,266 execution steps. Chapter 1
+1,266 execution steps. The compiled package contains 6,939 queries, with zero
+unbalanced queries and zero steps lacking a balanced query. Chapter 1
 has no formal `Problems` section in this source PDF. The source
 prints `Fig. 10.10.4(a)` in exercise 10.23; the build records an explicit audited
 normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local source-PDF

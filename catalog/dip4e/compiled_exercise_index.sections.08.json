@@ -38,8 +38,9 @@
             }
           },
           "queries": [
-            "+(8.1) +(printed page 632) --QDF=0",
-            "+((b) Can such an image contain spatial or tempo-) +(printed page 632) --QDF=0"
+            "+(text b Can such an image contain spatial or tempo) +(printed page 632) --QDF=0",
+            "+(exercise 8.1) +(printed page 632) --QDF=0",
+            "+(exercise 8.2) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -111,8 +112,9 @@
             }
           },
           "queries": [
-            "+(8.2) +(printed page 632) --QDF=0",
-            "+(xk and rk represent the kth run’s starting coordi-) +(printed page 632) --QDF=0"
+            "+(text xk and rk represent the kth run s starting coordi) +(printed page 632) --QDF=0",
+            "+(exercise 8.2) +(printed page 632) --QDF=0",
+            "+(exercise 8.3) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -184,8 +186,9 @@
             }
           },
           "queries": [
-            "+(8.3) +(printed page 632) --QDF=0",
-            "+(error and rms signal-to-noise ratios for the quan-) +(printed page 632) --QDF=0"
+            "+(text error and rms signal-to-noise ratios for the quan) +(printed page 632) --QDF=0",
+            "+(exercise 8.3) +(printed page 632) --QDF=0",
+            "+(exercise 8.4) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -257,8 +260,9 @@
             }
           },
           "queries": [
-            "+(8.4) +(printed page 632) --QDF=0",
-            "+(value and the four least signiﬁcant bits of the pre-) +(printed page 632) --QDF=0"
+            "+(text value and the four least signi cant bits of the pre) +(printed page 632) --QDF=0",
+            "+(exercise 8.4) +(printed page 632) --QDF=0",
+            "+(exercise 8.5) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -311,11 +315,9 @@
             }
           },
           "queries": [
-            "+(text error and rms signal-to-noise ratios for the quan-) +(printed page 632) --QDF=0",
+            "+(text error and rms signal-to-noise ratios for the quan) +(printed page 632) --QDF=0",
             "+(exercise 8.3) +(printed page 632) --QDF=0",
-            "+(exercise 8.4) +(printed page 632) --QDF=0",
-            "+(8.3) +(printed page 632) --QDF=0",
-            "+(error and rms signal-to-noise ratios for the quan-) +(printed page 632) --QDF=0"
+            "+(exercise 8.4) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -374,8 +376,9 @@
                 }
               },
               "queries": [
-                "+(8.3) +(printed page 632) --QDF=0",
-                "+(error and rms signal-to-noise ratios for the quan-) +(printed page 632) --QDF=0"
+                "+(text error and rms signal-to-noise ratios for the quan) +(printed page 632) --QDF=0",
+                "+(exercise 8.3) +(printed page 632) --QDF=0",
+                "+(exercise 8.4) +(printed page 632) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -447,8 +450,9 @@
             }
           },
           "queries": [
-            "+(8.5) +(printed page 632) --QDF=0",
-            "+((c) If a greater level of lossless compression is) +(printed page 632) --QDF=0"
+            "+(text c If a greater level of lossless compression is) +(printed page 632) --QDF=0",
+            "+(exercise 8.5) +(printed page 632) --QDF=0",
+            "+(exercise 8.6) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -604,8 +608,9 @@
             }
           },
           "queries": [
-            "+(8.6) +(printed page 632) --QDF=0",
-            "+(needed to relate these units to the base-2 unit of) +(printed page 632) --QDF=0"
+            "+(text needed to relate these units to the base-2 unit of) +(printed page 632) --QDF=0",
+            "+(exercise 8.6) +(printed page 632) --QDF=0",
+            "+(exercise 8.7) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -677,8 +682,9 @@
             }
           },
           "queries": [
-            "+(8.7) +(printed page 632) --QDF=0",
-            "+(which is achieved if and only if all source symbols) +(printed page 632) --QDF=0"
+            "+(text which is achieved if and only if all source symbols) +(printed page 632) --QDF=0",
+            "+(exercise 8.7) +(printed page 632) --QDF=0",
+            "+(exercise 8.8) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -750,8 +756,9 @@
             }
           },
           "queries": [
-            "+(8.8) +(printed page 632) --QDF=0",
-            "+((a) How many unique Huffman codes are there) +(printed page 632) --QDF=0"
+            "+(text a How many unique Huffman codes are there) +(printed page 632) --QDF=0",
+            "+(exercise 8.8) +(printed page 632) --QDF=0",
+            "+(exercise 8.9) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -820,8 +827,8 @@
             "end_before": null
           },
           "queries": [
-            "+(8.9) +(printed page 632) --QDF=0",
-            "+(sider the image to be produced by the sec-) +(printed page 632) --QDF=0"
+            "+(text sider the image to be produced by the sec) +(printed page 632) --QDF=0",
+            "+(exercise 8.9) +(printed page 632) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -864,8 +871,8 @@
             }
           },
           "queries": [
-            "+(entropy of the image when looked at as pairs) +(printed page 633) --QDF=0",
-            "+(entropy of the image when looked at as pairs) +(Problems) +(printed page 633) --QDF=0"
+            "+(text entropy of the image when looked at as pairs) +(printed page 633) --QDF=0",
+            "+(exercise 8.10) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -932,8 +939,9 @@
             }
           },
           "queries": [
-            "+(8.10) +(printed page 633) --QDF=0",
-            "+(Using the Huffman code in Fig. 8.8, decode the) +(printed page 633) --QDF=0"
+            "+(text Using the Huffman code in Fig 8.8 decode the) +(printed page 633) --QDF=0",
+            "+(exercise 8.10) +(printed page 633) --QDF=0",
+            "+(exercise 8.11) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1087,8 +1095,9 @@
             }
           },
           "queries": [
-            "+(8.11) +(printed page 633) --QDF=0",
-            "+(Compute Golomb code Gn) +(printed page 633) --QDF=0"
+            "+(text Compute Golomb code Gn) +(printed page 633) --QDF=0",
+            "+(exercise 8.11) +(printed page 633) --QDF=0",
+            "+(exercise 8.12) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1160,8 +1169,9 @@
             }
           },
           "queries": [
-            "+(8.12) +(printed page 633) --QDF=0",
-            "+(Write a general procedure for decoding Golomb) +(printed page 633) --QDF=0"
+            "+(text Write a general procedure for decoding Golomb) +(printed page 633) --QDF=0",
+            "+(exercise 8.12) +(printed page 633) --QDF=0",
+            "+(exercise 8.13) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1233,8 +1243,9 @@
             }
           },
           "queries": [
-            "+(8.13) +(printed page 633) --QDF=0",
-            "+(Why is it not possible to compute the Huffman) +(printed page 633) --QDF=0"
+            "+(text Why is it not possible to compute the Huffman) +(printed page 633) --QDF=0",
+            "+(exercise 8.13) +(printed page 633) --QDF=0",
+            "+(exercise 8.14) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1390,8 +1401,9 @@
             }
           },
           "queries": [
-            "+(8.14) +(printed page 633) --QDF=0",
-            "+(Compute exponential Golomb code G) +(printed page 633) --QDF=0"
+            "+(text Compute exponential Golomb code G) +(printed page 633) --QDF=0",
+            "+(exercise 8.14) +(printed page 633) --QDF=0",
+            "+(exercise 8.15) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1463,8 +1475,9 @@
             }
           },
           "queries": [
-            "+(8.15) +(printed page 633) --QDF=0",
-            "+(* Write a general procedure for decoding exponen-) +(printed page 633) --QDF=0"
+            "+(text Write a general procedure for decoding exponen) +(printed page 633) --QDF=0",
+            "+(exercise 8.15) +(printed page 633) --QDF=0",
+            "+(exercise 8.16) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1536,8 +1549,9 @@
             }
           },
           "queries": [
-            "+(8.16) +(printed page 633) --QDF=0",
-            "+(Plot the optimal Golomb coding parameter m as) +(printed page 633) --QDF=0"
+            "+(text Plot the optimal Golomb coding parameter m as) +(printed page 633) --QDF=0",
+            "+(exercise 8.16) +(printed page 633) --QDF=0",
+            "+(exercise 8.17) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1693,8 +1707,9 @@
             }
           },
           "queries": [
-            "+(8.17) +(printed page 633) --QDF=0",
-            "+(Given a four-symbol source {a, b, c, d} with source) +(printed page 633) --QDF=0"
+            "+(text Given a four-symbol source a b c d with source) +(printed page 633) --QDF=0",
+            "+(exercise 8.17) +(printed page 633) --QDF=0",
+            "+(exercise 8.18) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1766,8 +1781,9 @@
             }
           },
           "queries": [
-            "+(8.18) +(printed page 633) --QDF=0",
-            "+(* The arithmetic decoding process is the reverse) +(printed page 633) --QDF=0"
+            "+(text The arithmetic decoding process is the reverse) +(printed page 633) --QDF=0",
+            "+(exercise 8.18) +(printed page 633) --QDF=0",
+            "+(exercise 8.19) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1839,8 +1855,9 @@
             }
           },
           "queries": [
-            "+(8.19) +(printed page 633) --QDF=0",
-            "+(Use the LZW coding algorithm to encode the) +(printed page 633) --QDF=0"
+            "+(text Use the LZW coding algorithm to encode the) +(printed page 633) --QDF=0",
+            "+(exercise 8.19) +(printed page 633) --QDF=0",
+            "+(exercise 8.20) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1912,8 +1929,9 @@
             }
           },
           "queries": [
-            "+(8.20) +(printed page 633) --QDF=0",
-            "+(tionary that was used during the encoding is not) +(printed page 633) --QDF=0"
+            "+(text tionary that was used during the encoding is not) +(printed page 633) --QDF=0",
+            "+(exercise 8.20) +(printed page 633) --QDF=0",
+            "+(exercise 8.21) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2069,8 +2087,9 @@
             }
           },
           "queries": [
-            "+(8.21) +(printed page 633) --QDF=0",
-            "+(Decode the BMP encoded sequence {3, 4, 5, 6, 0, 3,) +(printed page 633) --QDF=0"
+            "+(text Decode the BMP encoded sequence 3 4 5 6 0 3) +(printed page 633) --QDF=0",
+            "+(exercise 8.21) +(printed page 633) --QDF=0",
+            "+(exercise 8.22) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2142,8 +2161,9 @@
             }
           },
           "queries": [
-            "+(8.22) +(printed page 633) --QDF=0",
-            "+(Gray-coded number to its binary equivalent) +(printed page 633) --QDF=0"
+            "+(text Gray-coded number to its binary equivalent) +(printed page 633) --QDF=0",
+            "+(exercise 8.22) +(printed page 633) --QDF=0",
+            "+(exercise 8.23) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2215,8 +2235,9 @@
             }
           },
           "queries": [
-            "+(8.23) +(printed page 633) --QDF=0",
-            "+(located on the ﬁrst pixel of the second line seg-) +(printed page 633) --QDF=0"
+            "+(text located on the rst pixel of the second line seg) +(printed page 633) --QDF=0",
+            "+(exercise 8.23) +(printed page 633) --QDF=0",
+            "+(exercise 8.24) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2288,8 +2309,9 @@
             }
           },
           "queries": [
-            "+(8.24) +(printed page 633) --QDF=0",
-            "+((a) List all the members of JPEG DC coefﬁcient) +(printed page 633) --QDF=0"
+            "+(text a List all the members of JPEG DC coef cient) +(printed page 633) --QDF=0",
+            "+(exercise 8.24) +(printed page 633) --QDF=0",
+            "+(exercise 8.25) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2361,8 +2383,9 @@
             }
           },
           "queries": [
-            "+(8.25) +(printed page 633) --QDF=0",
-            "+(placement of 8 pixels? What would it become for) +(printed page 633) --QDF=0"
+            "+(text placement of 8 pixels What would it become for) +(printed page 633) --QDF=0",
+            "+(exercise 8.25) +(printed page 633) --QDF=0",
+            "+(exercise 8.26) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2434,8 +2457,9 @@
             }
           },
           "queries": [
-            "+(8.26) +(printed page 633) --QDF=0",
-            "+(What are the advantages of using B-frames for) +(printed page 633) --QDF=0"
+            "+(text What are the advantages of using B-frames for) +(printed page 633) --QDF=0",
+            "+(exercise 8.26) +(printed page 633) --QDF=0",
+            "+(exercise 8.27) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2507,8 +2531,9 @@
             }
           },
           "queries": [
-            "+(8.27) +(printed page 633) --QDF=0",
-            "+(* Draw the block diagram of the companion) +(printed page 633) --QDF=0"
+            "+(text Draw the block diagram of the companion) +(printed page 633) --QDF=0",
+            "+(exercise 8.27) +(printed page 633) --QDF=0",
+            "+(exercise 8.28) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2659,8 +2684,8 @@
             "end_before": null
           },
           "queries": [
-            "+(8.28) +(printed page 633) --QDF=0",
-            "+(the form of Eq. (8-48) with rh= 0 is to be DPCM) +(printed page 633) --QDF=0"
+            "+(text the form of Eq 8-48 with rh 0 is to be DPCM) +(printed page 633) --QDF=0",
+            "+(exercise 8.28) +(printed page 633) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2811,8 +2836,9 @@
             }
           },
           "queries": [
-            "+(8.29) +(printed page 634) --QDF=0",
-            "+(tion levels for L = 4 and the uniform probability) +(printed page 634) --QDF=0"
+            "+(text tion levels for L 4 and the uniform probability) +(printed page 634) --QDF=0",
+            "+(exercise 8.29) +(printed page 634) --QDF=0",
+            "+(exercise 8.30) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2884,8 +2910,9 @@
             }
           },
           "queries": [
-            "+(8.30) +(printed page 634) --QDF=0",
-            "+(average) for the next 1 min, with the ﬁrst and last) +(printed page 634) --QDF=0"
+            "+(text average for the next 1 min with the rst and last) +(printed page 634) --QDF=0",
+            "+(exercise 8.30) +(printed page 634) --QDF=0",
+            "+(exercise 8.31) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2957,8 +2984,9 @@
             }
           },
           "queries": [
-            "+(8.31) +(printed page 634) --QDF=0",
-            "+(deﬁned by Eq. (8-61) is equivalent to the tradi-) +(printed page 634) --QDF=0"
+            "+(text de ned by Eq 8-61 is equivalent to the tradi) +(printed page 634) --QDF=0",
+            "+(exercise 8.31) +(printed page 634) --QDF=0",
+            "+(exercise 8.32) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3196,8 +3224,9 @@
             }
           },
           "queries": [
-            "+(8.32) +(printed page 634) --QDF=0",
-            "+(ted to the mantissa and exponent of the 2LL sub-) +(printed page 634) --QDF=0"
+            "+(text ted to the mantissa and exponent of the 2LL sub) +(printed page 634) --QDF=0",
+            "+(exercise 8.32) +(printed page 634) --QDF=0",
+            "+(exercise 8.33) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3269,8 +3298,9 @@
             }
           },
           "queries": [
-            "+(8.33) +(printed page 634) --QDF=0",
-            "+(How would you add a visible watermark to an) +(printed page 634) --QDF=0"
+            "+(text How would you add a visible watermark to an) +(printed page 634) --QDF=0",
+            "+(exercise 8.33) +(printed page 634) --QDF=0",
+            "+(exercise 8.34) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3342,8 +3372,9 @@
             }
           },
           "queries": [
-            "+(8.34) +(printed page 634) --QDF=0",
-            "+(* Design an invisible watermarking system based) +(printed page 634) --QDF=0"
+            "+(text Design an invisible watermarking system based) +(printed page 634) --QDF=0",
+            "+(exercise 8.34) +(printed page 634) --QDF=0",
+            "+(exercise 8.35) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3412,8 +3443,8 @@
             "end_before": null
           },
           "queries": [
-            "+(8.35) +(printed page 634) --QDF=0",
-            "+(Design an invisible watermarking system based) +(printed page 634) --QDF=0"
+            "+(text Design an invisible watermarking system based) +(printed page 634) --QDF=0",
+            "+(exercise 8.35) +(printed page 634) --QDF=0"
           ],
           "required_evidence": [
             {

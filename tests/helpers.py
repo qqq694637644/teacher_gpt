@@ -248,6 +248,14 @@ def exercise_step(
                 verification_mode="visual_required",
             )
         )
+    queries = [
+        f"+(exercise {exercise_id}) +(printed page {page.printed_page_label}) --QDF=0",
+        f"+({exercise_id}) +(exercise) +(printed page {page.printed_page_label}) --QDF=0",
+    ]
+    if end_before is not None:
+        queries.append(
+            f"+(exercise {end_before}) +(printed page {page.printed_page_label}) --QDF=0"
+        )
     return PageRetrievalStep(
         sequence=sequence,
         page_role=page_role,
@@ -256,10 +264,7 @@ def exercise_step(
             start_at=BoundaryAnchor(kind="exercise", value=exercise_id),
             end_before=end_anchor,
         ),
-        queries=[
-            f"+({exercise_id}) +(printed page {page.printed_page_label}) --QDF=0",
-            f"exercise {exercise_id} page {page.printed_page_label} --QDF=0",
-        ],
+        queries=queries,
         required_evidence=evidence,
         coverage=PageCoverage(),
     )

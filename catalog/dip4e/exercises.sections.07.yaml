@@ -25,7 +25,7 @@ exercises:
       end_before: null
     queries:
     - +(7.1) +(printed page 534) --QDF=0
-    - +((c) Using the result of (b), write an orthogonal) +(printed page 534) --QDF=0
+    - +(c Using the result of b write an orthogonal) +(printed page 534) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '534'
@@ -69,7 +69,7 @@ exercises:
         value: '7.3'
     queries:
     - +(7.2) +(printed page 535) --QDF=0
-    - +(Prove Eq. (7-23).) +(printed page 535) --QDF=0
+    - +(Prove Eq 7-23) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -121,7 +121,7 @@ exercises:
         value: '7.4'
     queries:
     - +(7.3) +(printed page 535) --QDF=0
-    - +(Prove that if A*TA = I, the associated expansion) +(printed page 535) --QDF=0
+    - +(Prove that if A TA I the associated expansion) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -174,7 +174,7 @@ exercises:
         value: '7.5'
     queries:
     - +(7.4) +(printed page 535) --QDF=0
-    - +(functions are orthonormal.) +(printed page 535) --QDF=0
+    - +(functions are orthonormal) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -221,7 +221,7 @@ exercises:
         value: '7.6'
     queries:
     - +(7.5) +(printed page 535) --QDF=0
-    - +(Prove that matrix A3 in Example 7.3 is an orthog-) +(printed page 535) --QDF=0
+    - +(Prove that matrix A3 in Example 7.3 is an orthog) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -320,7 +320,7 @@ exercises:
         value: '7.8'
     queries:
     - +(7.7) +(printed page 535) --QDF=0
-    - +((f) Are f and g orthogonal to one another?) +(printed page 535) --QDF=0
+    - +(f Are f and g orthogonal to one another) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -377,7 +377,7 @@ exercises:
         value: '7.9'
     queries:
     - +(7.8) +(printed page 535) --QDF=0
-    - +((c) * Show that angles and distances are preserved) +(printed page 535) --QDF=0
+    - +(c Show that angles and distances are preserved) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -428,7 +428,7 @@ exercises:
         value: '7.10'
     queries:
     - +(7.9) +(printed page 535) --QDF=0
-    - +(Compute the inverse transform of T in Exam-) +(printed page 535) --QDF=0
+    - +(Compute the inverse transform of T in Exam) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -475,7 +475,7 @@ exercises:
         value: '7.11'
     queries:
     - +(7.10) +(printed page 535) --QDF=0
-    - +(Prove that the set of sinusoidal expansion func-) +(printed page 535) --QDF=0
+    - +(Prove that the set of sinusoidal expansion func) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -522,7 +522,7 @@ exercises:
         value: '7.12'
     queries:
     - +(7.11) +(printed page 535) --QDF=0
-    - +(Compute the expansion coefﬁcients of 2-tuple) +(printed page 535) --QDF=0
+    - +(Compute the expansion coef cients of 2-tuple) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -569,7 +569,7 @@ exercises:
         value: '7.13'
     queries:
     - +(7.12) +(printed page 535) --QDF=0
-    - +(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0
+    - +(orthonormal If so write the corresponding) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -667,7 +667,7 @@ exercises:
         value: '7.15'
     queries:
     - +(7.14) +(printed page 535) --QDF=0
-    - +((a) Compute the transform of F with respect to) +(printed page 535) --QDF=0
+    - +(a Compute the transform of F with respect to) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -718,7 +718,7 @@ exercises:
         value: '7.16'
     queries:
     - +(7.15) +(printed page 535) --QDF=0
-    - +(whether inner products, angles, and distances are) +(printed page 535) --QDF=0
+    - +(whether inner products angles and distances are) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -763,7 +763,7 @@ exercises:
       end_before: null
     queries:
     - +(7.16) +(printed page 535) --QDF=0
-    - +(Example 7.5, compute the transform of 4) +(printed page 535) --QDF=0
+    - +(Example 7.5 compute the transform of 4) +(printed page 535) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '535'
@@ -812,7 +812,7 @@ exercises:
         value: '7.18'
     queries:
     - +(7.17) +(printed page 536) --QDF=0
-    - +(* Write a pair of 2-D transform matrix equations) +(printed page 536) --QDF=0
+    - +(Write a pair of 2-D transform matrix equations) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -906,7 +906,7 @@ exercises:
         value: '7.20'
     queries:
     - +(7.19) +(printed page 536) --QDF=0
-    - +(Show that Eq. (7-59) of Example 7.6 is equivalent) +(printed page 536) --QDF=0
+    - +(Show that Eq 7-59 of Example 7.6 is equivalent) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -963,7 +963,7 @@ exercises:
         value: '7.21'
     queries:
     - +(7.20) +(printed page 536) --QDF=0
-    - +(* Prove that the DFT expansion functions of) +(printed page 536) --QDF=0
+    - +(Prove that the DFT expansion functions of) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1067,7 +1067,7 @@ exercises:
         value: '7.23'
     queries:
     - +(7.22) +(printed page 536) --QDF=0
-    - +(sion functions deﬁned in Eq. (7-56), derive an) +(printed page 536) --QDF=0
+    - +(sion functions de ned in Eq 7-56 derive an) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1119,7 +1119,7 @@ exercises:
         value: '7.24'
     queries:
     - +(7.23) +(printed page 536) --QDF=0
-    - +(arbitrary vector r of length r and angle u, compute) +(printed page 536) --QDF=0
+    - +(arbitrary vector r of length r and angle u compute) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1166,7 +1166,7 @@ exercises:
         value: '7.25'
     queries:
     - +(7.24) +(printed page 536) --QDF=0
-    - +(* Prove that the Fourier transform of time-scaled) +(printed page 536) --QDF=0
+    - +(Prove that the Fourier transform of time-scaled) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1317,7 +1317,7 @@ exercises:
         value: '7.28'
     queries:
     - +(7.27) +(printed page 536) --QDF=0
-    - +(tions of the form given in Eqs. (7-57) and (7-58)) +(printed page 536) --QDF=0
+    - +(tions of the form given in Eqs 7-57 and 7-58) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1421,7 +1421,7 @@ exercises:
         value: '7.30'
     queries:
     - +(7.29) +(printed page 536) --QDF=0
-    - +(tion in (b) from its discrete Fourier transform.) +(printed page 536) --QDF=0
+    - +(tion in b from its discrete Fourier transform) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1538,7 +1538,7 @@ exercises:
         value: '7.32'
     queries:
     - +(7.31) +(printed page 536) --QDF=0
-    - +(Create a table mapping the rows of Hadamard-) +(printed page 536) --QDF=0
+    - +(Create a table mapping the rows of Hadamard) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1585,7 +1585,7 @@ exercises:
         value: '7.33'
     queries:
     - +(7.32) +(printed page 536) --QDF=0
-    - +(Obtain the slant transformation matrix for N = 8.) +(printed page 536) --QDF=0
+    - +(Obtain the slant transformation matrix for N 8) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1632,7 +1632,7 @@ exercises:
         value: '7.34'
     queries:
     - +(7.33) +(printed page 536) --QDF=0
-    - +(Derive the Haar scaling coefﬁcients from) +(printed page 536) --QDF=0
+    - +(Derive the Haar scaling coef cients from) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1689,7 +1689,7 @@ exercises:
         value: '7.35'
     queries:
     - +(7.34) +(printed page 536) --QDF=0
-    - +(does not satisfy the second requirement of a mul-) +(printed page 536) --QDF=0
+    - +(does not satisfy the second requirement of a mul) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1788,7 +1788,7 @@ exercises:
         value: '7.37'
     queries:
     - +(7.36) +(printed page 536) --QDF=0
-    - +(scaling function deﬁnition of Eq. (7-122) to draw) +(printed page 536) --QDF=0
+    - +(scaling function de nition of Eq 7-122 to draw) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1840,7 +1840,7 @@ exercises:
         value: '7.38'
     queries:
     - +(7.37) +(printed page 536) --QDF=0
-    - +(tion. Write an expression for c33) +(printed page 536) --QDF=0
+    - +(tion Write an expression for c33) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1939,7 +1939,7 @@ exercises:
         value: '7.40'
     queries:
     - +(7.39) +(printed page 536) --QDF=0
-    - +(pare to the example, where the starting scale was) +(printed page 536) --QDF=0
+    - +(pare to the example where the starting scale was) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -1989,7 +1989,7 @@ exercises:
       end_before: null
     queries:
     - +(7.40) +(printed page 536) --QDF=0
-    - +(The DWT in Eqs. (7-137) and (7-138) is for a) +(printed page 536) --QDF=0
+    - +(The DWT in Eqs 7-137 and 7-138 is for a) +(printed page 536) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '536'
@@ -2018,8 +2018,8 @@ exercises:
         kind: exercise
         value: '7.41'
     queries:
-    - +((a) * Rewrite these equations for any starting) +(printed page 537) --QDF=0
-    - +((a) * Rewrite these equations for any starting) +(Problems) +(printed page 537) --QDF=0
+    - +(a Rewrite these equations for any starting) +(printed page 537) --QDF=0
+    - +(a Rewrite these equations for any starting) +(Problems) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2071,7 +2071,7 @@ exercises:
         value: '7.42'
     queries:
     - +(7.41) +(printed page 537) --QDF=0
-    - +(* Draw the FWT ﬁlter bank required to compute) +(printed page 537) --QDF=0
+    - +(Draw the FWT lter bank required to compute) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2122,7 +2122,7 @@ exercises:
         value: '7.43'
     queries:
     - +(7.42) +(printed page 537) --QDF=0
-    - +(wavelet transform is O(N). That is, the number of) +(printed page 537) --QDF=0
+    - +(wavelet transform is O N That is the number of) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2169,7 +2169,7 @@ exercises:
         value: '7.44'
     queries:
     - +(7.43) +(printed page 537) --QDF=0
-    - +(bank of Fig. 7.24(a) is the Haar scaling func-) +(printed page 537) --QDF=0
+    - +(bank of Fig 7.24 a is the Haar scaling func) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2220,7 +2220,7 @@ exercises:
         value: '7.45'
     queries:
     - +(7.44) +(printed page 537) --QDF=0
-    - +(Draw the required ﬁlter bank and label all inputs) +(printed page 537) --QDF=0
+    - +(Draw the required lter bank and label all inputs) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2314,7 +2314,7 @@ exercises:
         value: '7.47'
     queries:
     - +(7.46) +(printed page 537) --QDF=0
-    - +(sions for determining them. Then order the basis) +(printed page 537) --QDF=0
+    - +(sions for determining them Then order the basis) +(printed page 537) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '537'
@@ -2386,8 +2386,8 @@ exercises:
         kind: exercise
         value: '7.48'
     queries:
-    - +(ysis tree, labeling all nodes with the names of) +(printed page 538) --QDF=0
-    - +(ysis tree, labeling all nodes with the names of) +(Problems) +(printed page 538) --QDF=0
+    - +(ysis tree labeling all nodes with the names of) +(printed page 538) --QDF=0
+    - +(ysis tree labeling all nodes with the names of) +(Problems) +(printed page 538) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '538'
@@ -2433,7 +2433,7 @@ exercises:
       end_before: null
     queries:
     - +(7.48) +(printed page 538) --QDF=0
-    - +(mal tree, labeling the nodes with the computed) +(printed page 538) --QDF=0
+    - +(mal tree labeling the nodes with the computed) +(printed page 538) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '538'

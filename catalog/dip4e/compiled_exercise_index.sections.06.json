@@ -38,8 +38,9 @@
             }
           },
           "queries": [
-            "+(6.1) +(printed page 458) --QDF=0",
-            "+(blue (Z) light required to generate the point labeled) +(printed page 458) --QDF=0"
+            "+(text blue Z light required to generate the point labeled) +(printed page 458) --QDF=0",
+            "+(exercise 6.1) +(printed page 458) --QDF=0",
+            "+(exercise 6.2) +(printed page 458) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -193,8 +194,9 @@
             }
           },
           "queries": [
-            "+(6.2) +(printed page 458) --QDF=0",
-            "+(is known to lie on the straight line joining these two) +(printed page 458) --QDF=0"
+            "+(text is known to lie on the straight line joining these two) +(printed page 458) --QDF=0",
+            "+(exercise 6.2) +(printed page 458) --QDF=0",
+            "+(exercise 6.3) +(printed page 458) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -348,8 +350,9 @@
             }
           },
           "queries": [
-            "+(6.3) +(printed page 458) --QDF=0",
-            "+(color that is known to lie within the triangle whose) +(printed page 458) --QDF=0"
+            "+(text color that is known to lie within the triangle whose) +(printed page 458) --QDF=0",
+            "+(exercise 6.3) +(printed page 458) --QDF=0",
+            "+(exercise 6.4) +(printed page 458) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -500,8 +503,8 @@
             "end_before": null
           },
           "queries": [
-            "+(6.4) +(printed page 458) --QDF=0",
-            "+(for using this camera to detect the three different) +(printed page 458) --QDF=0"
+            "+(text for using this camera to detect the three different) +(printed page 458) --QDF=0",
+            "+(exercise 6.4) +(printed page 458) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -568,8 +571,9 @@
             }
           },
           "queries": [
-            "+(6.5) +(printed page 459) --QDF=0",
-            "+(son see in the middle column of this image?) +(printed page 459) --QDF=0"
+            "+(text son see in the middle column of this image) +(printed page 459) --QDF=0",
+            "+(exercise 6.5) +(printed page 459) --QDF=0",
+            "+(exercise 6.6) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -641,8 +645,9 @@
             }
           },
           "queries": [
-            "+(6.6) +(printed page 459) --QDF=0",
-            "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+            "+(text monitor All colors are at maximum intensity and) +(printed page 459) --QDF=0",
+            "+(exercise 6.6) +(printed page 459) --QDF=0",
+            "+(exercise 6.7) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -714,8 +719,9 @@
             }
           },
           "queries": [
-            "+(6.7) +(printed page 459) --QDF=0",
-            "+(ent shades of gray in an RGB image whose three) +(printed page 459) --QDF=0"
+            "+(text ent shades of gray in an RGB image whose three) +(printed page 459) --QDF=0",
+            "+(exercise 6.7) +(printed page 459) --QDF=0",
+            "+(exercise 6.8) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -787,8 +793,9 @@
             }
           },
           "queries": [
-            "+(6.8) +(printed page 459) --QDF=0",
-            "+((a) * Describe how the gray levels vary in each of) +(printed page 459) --QDF=0"
+            "+(text a Describe how the gray levels vary in each of) +(printed page 459) --QDF=0",
+            "+(exercise 6.8) +(printed page 459) --QDF=0",
+            "+(exercise 6.9) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -942,8 +949,9 @@
             }
           },
           "queries": [
-            "+(6.9) +(printed page 459) --QDF=0",
-            "+(fed into the red, green, and blue inputs of) +(printed page 459) --QDF=0"
+            "+(text fed into the red green and blue inputs of) +(printed page 459) --QDF=0",
+            "+(exercise 6.9) +(printed page 459) --QDF=0",
+            "+(exercise 6.10) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -996,11 +1004,9 @@
             }
           },
           "queries": [
-            "+(text monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0",
+            "+(text monitor All colors are at maximum intensity and) +(printed page 459) --QDF=0",
             "+(exercise 6.6) +(printed page 459) --QDF=0",
-            "+(exercise 6.7) +(printed page 459) --QDF=0",
-            "+(6.6) +(printed page 459) --QDF=0",
-            "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+            "+(exercise 6.7) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1059,8 +1065,9 @@
                 }
               },
               "queries": [
-                "+(6.6) +(printed page 459) --QDF=0",
-                "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+                "+(text monitor All colors are at maximum intensity and) +(printed page 459) --QDF=0",
+                "+(exercise 6.6) +(printed page 459) --QDF=0",
+                "+(exercise 6.7) +(printed page 459) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1132,8 +1139,9 @@
             }
           },
           "queries": [
-            "+(6.10) +(printed page 459) --QDF=0",
-            "+(Problem 6.6 as they would appear on a mono-) +(printed page 459) --QDF=0"
+            "+(text Problem 6.6 as they would appear on a mono) +(printed page 459) --QDF=0",
+            "+(exercise 6.10) +(printed page 459) --QDF=0",
+            "+(exercise 6.11) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1186,11 +1194,9 @@
             }
           },
           "queries": [
-            "+(text monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0",
+            "+(text monitor All colors are at maximum intensity and) +(printed page 459) --QDF=0",
             "+(exercise 6.6) +(printed page 459) --QDF=0",
-            "+(exercise 6.7) +(printed page 459) --QDF=0",
-            "+(6.6) +(printed page 459) --QDF=0",
-            "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+            "+(exercise 6.7) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1249,8 +1255,9 @@
                 }
               },
               "queries": [
-                "+(6.6) +(printed page 459) --QDF=0",
-                "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+                "+(text monitor All colors are at maximum intensity and) +(printed page 459) --QDF=0",
+                "+(exercise 6.6) +(printed page 459) --QDF=0",
+                "+(exercise 6.7) +(printed page 459) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1322,8 +1329,9 @@
             }
           },
           "queries": [
-            "+(6.11) +(printed page 459) --QDF=0",
-            "+(band starts at a dark purple on the left and pro-) +(printed page 459) --QDF=0"
+            "+(text band starts at a dark purple on the left and pro) +(printed page 459) --QDF=0",
+            "+(exercise 6.11) +(printed page 459) --QDF=0",
+            "+(exercise 6.12) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1477,8 +1485,9 @@
             }
           },
           "queries": [
-            "+(6.12) +(printed page 459) --QDF=0",
-            "+(ﬁxed and given. (Hint: Use the HSI color model.)) +(printed page 459) --QDF=0"
+            "+(text xed and given Hint Use the HSI color model) +(printed page 459) --QDF=0",
+            "+(exercise 6.12) +(printed page 459) --QDF=0",
+            "+(exercise 6.13) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1629,8 +1638,8 @@
             "end_before": null
           },
           "queries": [
-            "+(6.13) +(printed page 459) --QDF=0",
-            "+(are sufﬁcient. If you cannot assign a speciﬁc gray) +(printed page 459) --QDF=0"
+            "+(text are suf cient If you cannot assign a speci c gray) +(printed page 459) --QDF=0",
+            "+(exercise 6.13) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1697,8 +1706,9 @@
             }
           },
           "queries": [
-            "+(6.14) +(printed page 460) --QDF=0",
-            "+(If it is not possible to answer a question based on) +(printed page 460) --QDF=0"
+            "+(text If it is not possible to answer a question based on) +(printed page 460) --QDF=0",
+            "+(exercise 6.14) +(printed page 460) --QDF=0",
+            "+(exercise 6.15) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1852,8 +1862,9 @@
             }
           },
           "queries": [
-            "+(6.15) +(printed page 460) --QDF=0",
-            "+(values of the colors generated by the standard) +(printed page 460) --QDF=0"
+            "+(text values of the colors generated by the standard) +(printed page 460) --QDF=0",
+            "+(exercise 6.15) +(printed page 460) --QDF=0",
+            "+(exercise 6.16) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1906,11 +1917,9 @@
             }
           },
           "queries": [
-            "+(text monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0",
+            "+(text monitor All colors are at maximum intensity and) +(printed page 459) --QDF=0",
             "+(exercise 6.6) +(printed page 459) --QDF=0",
-            "+(exercise 6.7) +(printed page 459) --QDF=0",
-            "+(6.6) +(printed page 459) --QDF=0",
-            "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+            "+(exercise 6.7) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1969,8 +1978,9 @@
                 }
               },
               "queries": [
-                "+(6.6) +(printed page 459) --QDF=0",
-                "+(monitor. All colors are at maximum intensity and) +(printed page 459) --QDF=0"
+                "+(text monitor All colors are at maximum intensity and) +(printed page 459) --QDF=0",
+                "+(exercise 6.6) +(printed page 459) --QDF=0",
+                "+(exercise 6.7) +(printed page 459) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -2042,8 +2052,9 @@
             }
           },
           "queries": [
-            "+(6.16) +(printed page 460) --QDF=0",
-            "+(of Eq. (6-41) from the RGB counterpart in) +(printed page 460) --QDF=0"
+            "+(text of Eq 6-41 from the RGB counterpart in) +(printed page 460) --QDF=0",
+            "+(exercise 6.16) +(printed page 460) --QDF=0",
+            "+(exercise 6.17) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2361,8 +2372,9 @@
             }
           },
           "queries": [
-            "+(6.17) +(printed page 460) --QDF=0",
-            "+((Hint: The intensity of the CMYK image is) +(printed page 460) --QDF=0"
+            "+(text Hint The intensity of the CMYK image is) +(printed page 460) --QDF=0",
+            "+(exercise 6.17) +(printed page 460) --QDF=0",
+            "+(exercise 6.18) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2419,14 +2431,7 @@
             "+(equation 6-9) +(printed page 410) --QDF=0",
             "+(equation 6-10) +(printed page 410) --QDF=0",
             "+(equation 6-11) +(printed page 410) --QDF=0",
-            "+(equation 6-12) +(printed page 410) --QDF=0",
-            "+(6-6) +(equation) +(printed page 410) --QDF=0",
-            "+(6-7) +(equation) +(printed page 410) --QDF=0",
-            "+(6-8) +(equation) +(printed page 410) --QDF=0",
-            "+(6-9) +(equation) +(printed page 410) --QDF=0",
-            "+(6-10) +(equation) +(printed page 410) --QDF=0",
-            "+(6-11) +(equation) +(printed page 410) --QDF=0",
-            "+(6-12) +(equation) +(printed page 410) --QDF=0"
+            "+(equation 6-12) +(printed page 410) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2906,8 +2911,9 @@
             }
           },
           "queries": [
-            "+(6.18) +(printed page 460) --QDF=0",
-            "+((a) * Why does the image in Fig. 6.25(e) exhibit) +(printed page 460) --QDF=0"
+            "+(text a Why does the image in Fig 6.25 e exhibit) +(printed page 460) --QDF=0",
+            "+(exercise 6.18) +(printed page 460) --QDF=0",
+            "+(exercise 6.19) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3061,8 +3067,9 @@
             }
           },
           "queries": [
-            "+(6.19) +(printed page 460) --QDF=0",
-            "+(* Show that the saturation component of the com-) +(printed page 460) --QDF=0"
+            "+(text Show that the saturation component of the com) +(printed page 460) --QDF=0",
+            "+(exercise 6.19) +(printed page 460) --QDF=0",
+            "+(exercise 6.20) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3134,8 +3141,9 @@
             }
           },
           "queries": [
-            "+(6.20) +(printed page 460) --QDF=0",
-            "+(tion in Fig. 6.31(b) using the HSI color model.) +(printed page 460) --QDF=0"
+            "+(text tion in Fig 6.31 b using the HSI color model) +(printed page 460) --QDF=0",
+            "+(exercise 6.20) +(printed page 460) --QDF=0",
+            "+(exercise 6.21) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3289,8 +3297,9 @@
             }
           },
           "queries": [
-            "+(6.21) +(printed page 460) --QDF=0",
-            "+(* Derive the CMY transformations to generate the) +(printed page 460) --QDF=0"
+            "+(text Derive the CMY transformations to generate the) +(printed page 460) --QDF=0",
+            "+(exercise 6.21) +(printed page 460) --QDF=0",
+            "+(exercise 6.22) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3362,8 +3371,9 @@
             }
           },
           "queries": [
-            "+(6.22) +(printed page 460) --QDF=0",
-            "+(functions used to correct excessive contrast in) +(printed page 460) --QDF=0"
+            "+(text functions used to correct excessive contrast in) +(printed page 460) --QDF=0",
+            "+(exercise 6.22) +(printed page 460) --QDF=0",
+            "+(exercise 6.23) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3432,8 +3442,8 @@
             "end_before": null
           },
           "queries": [
-            "+(6.23) +(printed page 460) --QDF=0",
-            "+(* Assume that the monitor and printer of an imag-) +(printed page 460) --QDF=0"
+            "+(text Assume that the monitor and printer of an imag) +(printed page 460) --QDF=0",
+            "+(exercise 6.23) +(printed page 460) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3478,10 +3488,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text a goal (the creation of color graphics for animation is an example of the latter). In) +(printed page 405) --QDF=0",
-            "+(heading 6.2 COLOR MODELS) +(printed page 405) --QDF=0",
-            "+(6.2 COLOR MODELS) +(printed page 405) --QDF=0",
-            "Color Models a goal (the creation of color graphics for animation is an example of the latter). In printed page 405 --QDF=0"
+            "+(text a goal the creation of color graphics for animation is an example of the latter In) +(printed page 405) --QDF=0",
+            "+(heading 6.2 COLOR MODELS) +(printed page 405) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3523,9 +3531,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text and gray-scale information in an image, making it suitable for many of the gray-scale) +(printed page 406) --QDF=0",
-            "+(and gray-scale information in an image, making it suitable for many of the gray-scale) +(printed page 406) --QDF=0",
-            "Color Models and gray-scale information in an image, making it suitable for many of the gray-scale printed page 406 --QDF=0"
+            "+(text and gray-scale information in an image making it suitable for many of the gray-scale) +(printed page 406) --QDF=0",
+            "+(and gray-scale information in an image making it suitable for many of the gray-scale) +(text) +(printed page 406) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3562,9 +3569,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text es is an 8-bit image. Under these conditions, each RGB colorpixel [that is, a triplet of) +(printed page 407) --QDF=0",
-            "+(es is an 8-bit image. Under these conditions, each RGB colorpixel [that is, a triplet of) +(printed page 407) --QDF=0",
-            "Color Models es is an 8-bit image. Under these conditions, each RGB colorpixel [that is, a triplet of printed page 407 --QDF=0"
+            "+(text es is an 8-bit image Under these conditions each RGB colorpixel that is a triplet of) +(printed page 407) --QDF=0",
+            "+(es is an 8-bit image Under these conditions each RGB colorpixel that is a triplet of) +(text) +(printed page 407) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3604,9 +3610,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text done by ﬁxing one of the three colors and allowing the other two to vary. For instance, a cross-sectional) +(printed page 408) --QDF=0",
-            "+(done by ﬁxing one of the three colors and allowing the other two to vary. For instance, a cross-sectional) +(printed page 408) --QDF=0",
-            "Color Models done by ﬁxing one of the three colors and allowing the other two to vary. For instance, a cross-sectional printed page 408 --QDF=0"
+            "+(text done by xing one of the three colors and allowing the other two to vary For) +(printed page 408) --QDF=0",
+            "+(done by xing one of the three colors and allowing the other two to vary For) +(text) +(printed page 408) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3648,9 +3653,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text yellow, should produce black. In practice, because C, M, and Y inks seldom are pure) +(printed page 409) --QDF=0",
-            "+(yellow, should produce black. In practice, because C, M, and Y inks seldom are pure) +(printed page 409) --QDF=0",
-            "Color Models yellow, should produce black. In practice, because C, M, and Y inks seldom are pure printed page 409 --QDF=0"
+            "+(text yellow should produce black In practice because C M and Y inks seldom are pure) +(printed page 409) --QDF=0",
+            "+(yellow should produce black In practice because C M and Y inks seldom are pure) +(text) +(printed page 409) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3689,9 +3693,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text interested in using the properties of color models to facilitate image processing tasks,) +(printed page 410) --QDF=0",
-            "+(interested in using the properties of color models to facilitate image processing tasks,) +(printed page 410) --QDF=0",
-            "Color Models interested in using the properties of color models to facilitate image processing tasks, printed page 410 --QDF=0"
+            "+(text interested in using the properties of color models to facilitate image processing tasks) +(printed page 410) --QDF=0",
+            "+(interested in using the properties of color models to facilitate image processing tasks) +(text) +(printed page 410) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3738,9 +3741,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text the white, (1, 1, 1), vertex directly above it [see Fig. 6.10(a)]. As noted in our discus-) +(printed page 411) --QDF=0",
-            "+(the white, (1, 1, 1), vertex directly above it [see Fig. 6.10(a)]. As noted in our discus-) +(printed page 411) --QDF=0",
-            "Color Models the white, (1, 1, 1), vertex directly above it [see Fig. 6.10(a)]. As noted in our discus- printed page 411 --QDF=0"
+            "+(text the white 1 1 1 vertex directly above it see Fig 6.10 a As noted in) +(printed page 411) --QDF=0",
+            "+(the white 1 1 1 vertex directly above it see Fig 6.10 a As noted in) +(text) +(printed page 411) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3779,9 +3781,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text the locus of color points that lie on planes perpendicular to that axis. As the planes) +(printed page 412) --QDF=0",
-            "+(the locus of color points that lie on planes perpendicular to that axis. As the planes) +(printed page 412) --QDF=0",
-            "Color Models the locus of color points that lie on planes perpendicular to that axis. As the planes printed page 412 --QDF=0"
+            "+(text the locus of color points that lie on planes perpendicular to that axis As the planes) +(printed page 412) --QDF=0",
+            "+(the locus of color points that lie on planes perpendicular to that axis As the planes) +(text) +(printed page 412) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3819,9 +3820,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text † It is good practice to add a small number in the denominator of this expression to avoid dividing by 0 when) +(printed page 413) --QDF=0",
-            "+(† It is good practice to add a small number in the denominator of this expression to avoid dividing by 0 when) +(printed page 413) --QDF=0",
-            "Color Models † It is good practice to add a small number in the denominator of this expression to avoid dividing by 0 when printed page 413 --QDF=0"
+            "+(text It is good practice to add a small number in the denominator of this expression to) +(printed page 413) --QDF=0",
+            "+(It is good practice to add a small number in the denominator of this expression to) +(text) +(printed page 413) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3868,8 +3868,7 @@
           },
           "queries": [
             "+(text 414Chapter6Color Image Processing) +(printed page 414) --QDF=0",
-            "+(414Chapter6Color Image Processing) +(printed page 414) --QDF=0",
-            "Color Models 414Chapter6Color Image Processing printed page 414 --QDF=0"
+            "+(414Chapter6Color Image Processing) +(text) +(printed page 414) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3906,9 +3905,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text There are three sectors of interest, corresponding to the 120° intervals in the separa-) +(printed page 415) --QDF=0",
-            "+(There are three sectors of interest, corresponding to the 120° intervals in the separa-) +(printed page 415) --QDF=0",
-            "Color Models There are three sectors of interest, corresponding to the 120° intervals in the separa- printed page 415 --QDF=0"
+            "+(text There are three sectors of interest corresponding to the 120 intervals in the separa) +(printed page 415) --QDF=0",
+            "+(There are three sectors of interest corresponding to the 120 intervals in the separa) +(text) +(printed page 415) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3954,9 +3952,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Fig. 6.11, the values of hue along this path should increase from 0° to 360° (i.e., from the lowest to highest) +(printed page 416) --QDF=0",
-            "+(Fig. 6.11, the values of hue along this path should increase from 0° to 360° (i.e., from the lowest to highest) +(printed page 416) --QDF=0",
-            "Color Models Fig. 6.11, the values of hue along this path should increase from 0° to 360° (i.e., from the lowest to highest printed page 416 --QDF=0"
+            "+(text Fig 6.11 the values of hue along this path should increase from 0 to 360 i.e) +(printed page 416) --QDF=0",
+            "+(Fig 6.11 the values of hue along this path should increase from 0 to 360 i.e) +(text) +(printed page 416) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4001,9 +3998,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text possible values of hue). This is precisely what Fig. 6.13(a) shows, because the lowest value is represented) +(printed page 417) --QDF=0",
-            "+(possible values of hue). This is precisely what Fig. 6.13(a) shows, because the lowest value is represented) +(printed page 417) --QDF=0",
-            "Color Models possible values of hue). This is precisely what Fig. 6.13(a) shows, because the lowest value is represented printed page 417 --QDF=0"
+            "+(text possible values of hue This is precisely what Fig 6.13 a shows because the lowest value) +(printed page 417) --QDF=0",
+            "+(possible values of hue This is precisely what Fig 6.13 a shows because the lowest value) +(text) +(printed page 417) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4045,9 +4041,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing independent control over hue, saturation, and intensity. These are quantities with) +(printed page 418) --QDF=0",
-            "+(ing independent control over hue, saturation, and intensity. These are quantities with) +(printed page 418) --QDF=0",
-            "Color Models ing independent control over hue, saturation, and intensity. These are quantities with printed page 418 --QDF=0"
+            "+(text ing independent control over hue saturation and intensity These are quantities with) +(printed page 418) --QDF=0",
+            "+(ing independent control over hue saturation and intensity These are quantities with) +(text) +(printed page 418) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4089,9 +4084,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text color space is colorimetric (i.e., colors perceived as matching are encoded identically),) +(printed page 419) --QDF=0",
-            "+(color space is colorimetric (i.e., colors perceived as matching are encoded identically),) +(printed page 419) --QDF=0",
-            "Color Models color space is colorimetric (i.e., colors perceived as matching are encoded identically), printed page 419 --QDF=0"
+            "+(text color space is colorimetric i.e colors perceived as matching are encoded identically) +(printed page 419) --QDF=0",
+            "+(color space is colorimetric i.e colors perceived as matching are encoded identically) +(text) +(printed page 419) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4134,10 +4128,8 @@
             }
           },
           "queries": [
-            "+(text of an image, also called its key type, refers to its general distribution of color intensi-) +(printed page 420) --QDF=0",
-            "+(heading 6.3 PSEUDOCOLOR IMAGE PROCESSING) +(printed page 420) --QDF=0",
-            "+(of an image, also called its key type, refers to its general distribution of color intensi-) +(printed page 420) --QDF=0",
-            "Color Models of an image, also called its key type, refers to its general distribution of color intensi- printed page 420 --QDF=0"
+            "+(text of an image also called its key type refers to its general distribution of color intensi) +(printed page 420) --QDF=0",
+            "+(heading 6.3 PSEUDOCOLOR IMAGE PROCESSING) +(printed page 420) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4268,8 +4260,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(6.2 COLOR MODELS) +(printed page 405) --QDF=0",
-                "Color Models a goal (the creation of color graphics for animation is an example of the latter). In printed page 405 --QDF=0"
+                "+(text a goal the creation of color graphics for animation is an example of the latter In) +(printed page 405) --QDF=0",
+                "+(heading 6.2 COLOR MODELS) +(printed page 405) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4311,8 +4303,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(and gray-scale information in an image, making it suitable for many of the gray-scale) +(printed page 406) --QDF=0",
-                "Color Models and gray-scale information in an image, making it suitable for many of the gray-scale printed page 406 --QDF=0"
+                "+(text and gray-scale information in an image making it suitable for many of the gray-scale) +(printed page 406) --QDF=0",
+                "+(and gray-scale information in an image making it suitable for many of the gray-scale) +(text) +(printed page 406) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4349,8 +4341,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(es is an 8-bit image. Under these conditions, each RGB colorpixel [that is, a triplet of) +(printed page 407) --QDF=0",
-                "Color Models es is an 8-bit image. Under these conditions, each RGB colorpixel [that is, a triplet of printed page 407 --QDF=0"
+                "+(text es is an 8-bit image Under these conditions each RGB colorpixel that is a triplet of) +(printed page 407) --QDF=0",
+                "+(es is an 8-bit image Under these conditions each RGB colorpixel that is a triplet of) +(text) +(printed page 407) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4390,8 +4382,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(done by ﬁxing one of the three colors and allowing the other two to vary. For instance, a cross-sectional) +(printed page 408) --QDF=0",
-                "Color Models done by ﬁxing one of the three colors and allowing the other two to vary. For instance, a cross-sectional printed page 408 --QDF=0"
+                "+(text done by xing one of the three colors and allowing the other two to vary For) +(printed page 408) --QDF=0",
+                "+(done by xing one of the three colors and allowing the other two to vary For) +(text) +(printed page 408) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4433,8 +4425,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(yellow, should produce black. In practice, because C, M, and Y inks seldom are pure) +(printed page 409) --QDF=0",
-                "Color Models yellow, should produce black. In practice, because C, M, and Y inks seldom are pure printed page 409 --QDF=0"
+                "+(text yellow should produce black In practice because C M and Y inks seldom are pure) +(printed page 409) --QDF=0",
+                "+(yellow should produce black In practice because C M and Y inks seldom are pure) +(text) +(printed page 409) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4473,8 +4465,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(interested in using the properties of color models to facilitate image processing tasks,) +(printed page 410) --QDF=0",
-                "Color Models interested in using the properties of color models to facilitate image processing tasks, printed page 410 --QDF=0"
+                "+(text interested in using the properties of color models to facilitate image processing tasks) +(printed page 410) --QDF=0",
+                "+(interested in using the properties of color models to facilitate image processing tasks) +(text) +(printed page 410) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4521,8 +4513,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(the white, (1, 1, 1), vertex directly above it [see Fig. 6.10(a)]. As noted in our discus-) +(printed page 411) --QDF=0",
-                "Color Models the white, (1, 1, 1), vertex directly above it [see Fig. 6.10(a)]. As noted in our discus- printed page 411 --QDF=0"
+                "+(text the white 1 1 1 vertex directly above it see Fig 6.10 a As noted in) +(printed page 411) --QDF=0",
+                "+(the white 1 1 1 vertex directly above it see Fig 6.10 a As noted in) +(text) +(printed page 411) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4561,8 +4553,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(the locus of color points that lie on planes perpendicular to that axis. As the planes) +(printed page 412) --QDF=0",
-                "Color Models the locus of color points that lie on planes perpendicular to that axis. As the planes printed page 412 --QDF=0"
+                "+(text the locus of color points that lie on planes perpendicular to that axis As the planes) +(printed page 412) --QDF=0",
+                "+(the locus of color points that lie on planes perpendicular to that axis As the planes) +(text) +(printed page 412) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4600,8 +4592,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(† It is good practice to add a small number in the denominator of this expression to avoid dividing by 0 when) +(printed page 413) --QDF=0",
-                "Color Models † It is good practice to add a small number in the denominator of this expression to avoid dividing by 0 when printed page 413 --QDF=0"
+                "+(text It is good practice to add a small number in the denominator of this expression to) +(printed page 413) --QDF=0",
+                "+(It is good practice to add a small number in the denominator of this expression to) +(text) +(printed page 413) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4647,8 +4639,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(414Chapter6Color Image Processing) +(printed page 414) --QDF=0",
-                "Color Models 414Chapter6Color Image Processing printed page 414 --QDF=0"
+                "+(text 414Chapter6Color Image Processing) +(printed page 414) --QDF=0",
+                "+(414Chapter6Color Image Processing) +(text) +(printed page 414) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4685,8 +4677,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(There are three sectors of interest, corresponding to the 120° intervals in the separa-) +(printed page 415) --QDF=0",
-                "Color Models There are three sectors of interest, corresponding to the 120° intervals in the separa- printed page 415 --QDF=0"
+                "+(text There are three sectors of interest corresponding to the 120 intervals in the separa) +(printed page 415) --QDF=0",
+                "+(There are three sectors of interest corresponding to the 120 intervals in the separa) +(text) +(printed page 415) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4732,8 +4724,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Fig. 6.11, the values of hue along this path should increase from 0° to 360° (i.e., from the lowest to highest) +(printed page 416) --QDF=0",
-                "Color Models Fig. 6.11, the values of hue along this path should increase from 0° to 360° (i.e., from the lowest to highest printed page 416 --QDF=0"
+                "+(text Fig 6.11 the values of hue along this path should increase from 0 to 360 i.e) +(printed page 416) --QDF=0",
+                "+(Fig 6.11 the values of hue along this path should increase from 0 to 360 i.e) +(text) +(printed page 416) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4778,8 +4770,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(possible values of hue). This is precisely what Fig. 6.13(a) shows, because the lowest value is represented) +(printed page 417) --QDF=0",
-                "Color Models possible values of hue). This is precisely what Fig. 6.13(a) shows, because the lowest value is represented printed page 417 --QDF=0"
+                "+(text possible values of hue This is precisely what Fig 6.13 a shows because the lowest value) +(printed page 417) --QDF=0",
+                "+(possible values of hue This is precisely what Fig 6.13 a shows because the lowest value) +(text) +(printed page 417) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4821,8 +4813,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(ing independent control over hue, saturation, and intensity. These are quantities with) +(printed page 418) --QDF=0",
-                "Color Models ing independent control over hue, saturation, and intensity. These are quantities with printed page 418 --QDF=0"
+                "+(text ing independent control over hue saturation and intensity These are quantities with) +(printed page 418) --QDF=0",
+                "+(ing independent control over hue saturation and intensity These are quantities with) +(text) +(printed page 418) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4864,8 +4856,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(color space is colorimetric (i.e., colors perceived as matching are encoded identically),) +(printed page 419) --QDF=0",
-                "Color Models color space is colorimetric (i.e., colors perceived as matching are encoded identically), printed page 419 --QDF=0"
+                "+(text color space is colorimetric i.e colors perceived as matching are encoded identically) +(printed page 419) --QDF=0",
+                "+(color space is colorimetric i.e colors perceived as matching are encoded identically) +(text) +(printed page 419) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4908,8 +4900,8 @@
                 }
               },
               "queries": [
-                "+(of an image, also called its key type, refers to its general distribution of color intensi-) +(printed page 420) --QDF=0",
-                "Color Models of an image, also called its key type, refers to its general distribution of color intensi- printed page 420 --QDF=0"
+                "+(text of an image also called its key type refers to its general distribution of color intensi) +(printed page 420) --QDF=0",
+                "+(heading 6.3 PSEUDOCOLOR IMAGE PROCESSING) +(printed page 420) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4976,8 +4968,9 @@
             }
           },
           "queries": [
-            "+(6.24) +(printed page 461) --QDF=0",
-            "+(* Given an image in the RGB, CMY, or CMYK) +(printed page 461) --QDF=0"
+            "+(text Given an image in the RGB CMY or CMYK) +(printed page 461) --QDF=0",
+            "+(exercise 6.24) +(printed page 461) --QDF=0",
+            "+(exercise 6.25) +(printed page 461) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5027,10 +5020,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text images with four basic intensity characteristics: dark, light, low contrast, and high) +(printed page 133) --QDF=0",
-            "+(heading 3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0",
-            "+(3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0",
-            "Histogram Processing images with four basic intensity characteristics: dark, light, low contrast, and high printed page 133 --QDF=0"
+            "+(text images with four basic intensity characteristics dark light low contrast and high) +(printed page 133) --QDF=0",
+            "+(heading 3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5075,9 +5066,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text contrast and will exhibit a large variety of gray tones. The net effect will be an image) +(printed page 134) --QDF=0",
-            "+(contrast and will exhibit a large variety of gray tones. The net effect will be an image) +(printed page 134) --QDF=0",
-            "Histogram Processing contrast and will exhibit a large variety of gray tones. The net effect will be an image printed page 134 --QDF=0"
+            "+(text contrast and will exhibit a large variety of gray tones The net effect will be an) +(printed page 134) --QDF=0",
+            "+(contrast and will exhibit a large variety of gray tones The net effect will be an) +(text) +(printed page 134) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5118,9 +5108,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
-            "+(artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
-            "Histogram Processing artifacts created by reversals of intensity. Condition (b) guarantees that the range of printed page 135 --QDF=0"
+            "+(text artifacts created by reversals of intensity Condition b guarantees that the range of) +(printed page 135) --QDF=0",
+            "+(artifacts created by reversals of intensity Condition b guarantees that the range of) +(text) +(printed page 135) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5159,9 +5148,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
-            "+(integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
-            "Histogram Processing integral with respect to its upper limit is the integrand evaluated at the limit. That is, printed page 136 --QDF=0"
+            "+(text integral with respect to its upper limit is the integrand evaluated at the limit That is) +(printed page 136) --QDF=0",
+            "+(integral with respect to its upper limit is the integrand evaluated at the limit That is) +(text) +(printed page 136) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5202,9 +5190,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Substituting this result for drds in Eq. (3-10), and noting that all probability values) +(printed page 137) --QDF=0",
-            "+(Substituting this result for drds in Eq. (3-10), and noting that all probability values) +(printed page 137) --QDF=0",
-            "Histogram Processing Substituting this result for drds in Eq. (3-10), and noting that all probability values printed page 137 --QDF=0"
+            "+(text Substituting this result for drds in Eq 3-10 and noting that all probability values) +(printed page 137) --QDF=0",
+            "+(Substituting this result for drds in Eq 3-10 and noting that all probability values) +(text) +(printed page 137) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5247,9 +5234,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s) +(printed page 138) --QDF=0",
-            "+(Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s) +(printed page 138) --QDF=0",
-            "Histogram Processing Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s printed page 138 --QDF=0"
+            "+(text Suppose that we form a new image with intensities s obtained using this transformation that is) +(printed page 138) --QDF=0",
+            "+(Suppose that we form a new image with intensities s obtained using this transformation that is) +(text) +(printed page 138) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5293,9 +5279,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that) +(printed page 139) --QDF=0",
-            "+(the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that) +(printed page 139) --QDF=0",
-            "Histogram Processing the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that printed page 139 --QDF=0"
+            "+(text the method just discussed Thus unlike its continuous counterpart it cannot be proved in general that) +(printed page 139) --QDF=0",
+            "+(the method just discussed Thus unlike its continuous counterpart it cannot be proved in general that) +(text) +(printed page 139) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5336,9 +5321,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-) +(printed page 140) --QDF=0",
-            "+(fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-) +(printed page 140) --QDF=0",
-            "Histogram Processing fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma- printed page 140 --QDF=0"
+            "+(text fourth image because its intensities span almost the full scale already Figure 3.21 shows the transforma) +(printed page 140) --QDF=0",
+            "+(fourth image because its intensities span almost the full scale already Figure 3.21 shows the transforma) +(text) +(printed page 140) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5382,9 +5366,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).) +(printed page 141) --QDF=0",
-            "+(column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).) +(printed page 141) --QDF=0",
-            "Histogram Processing column: histograms of the images in the center column (compare with the histograms in Fig. 3.16). printed page 141 --QDF=0"
+            "+(text column histograms of the images in the center column compare with the histograms in Fig 3.16) +(printed page 141) --QDF=0",
+            "+(column histograms of the images in the center column compare with the histograms in Fig 3.16) +(text) +(printed page 141) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5421,9 +5404,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text However, there are applications in which histogram equalization is not suitable. In) +(printed page 142) --QDF=0",
-            "+(However, there are applications in which histogram equalization is not suitable. In) +(printed page 142) --QDF=0",
-            "Histogram Processing However, there are applications in which histogram equalization is not suitable. In printed page 142 --QDF=0"
+            "+(text However there are applications in which histogram equalization is not suitable In) +(printed page 142) --QDF=0",
+            "+(However there are applications in which histogram equalization is not suitable In) +(text) +(printed page 142) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5466,9 +5448,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text where the components of this equation are as before. Similarly, given a specific value) +(printed page 143) --QDF=0",
-            "+(where the components of this equation are as before. Similarly, given a specific value) +(printed page 143) --QDF=0",
-            "Histogram Processing where the components of this equation are as before. Similarly, given a specific value printed page 143 --QDF=0"
+            "+(text where the components of this equation are as before Similarly given a specific value) +(printed page 143) --QDF=0",
+            "+(where the components of this equation are as before Similarly given a specific value) +(text) +(printed page 143) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5511,9 +5492,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that) +(printed page 144) --QDF=0",
-            "+(be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that) +(printed page 144) --QDF=0",
-            "Histogram Processing be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that printed page 144 --QDF=0"
+            "+(text be strictly monotonic to satisfy condition a In terms of Eq 3-21 this means that) +(printed page 144) --QDF=0",
+            "+(be strictly monotonic to satisfy condition a In terms of Eq 3-21 this means that) +(text) +(printed page 144) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5554,9 +5534,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,) +(printed page 145) --QDF=0",
-            "+(Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,) +(printed page 145) --QDF=0",
-            "Histogram Processing Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore, printed page 145 --QDF=0"
+            "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+            "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5601,9 +5580,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-) +(printed page 146) --QDF=0",
-            "+(For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-) +(printed page 146) --QDF=0",
-            "Histogram Processing For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram- printed page 146 --QDF=0"
+            "+(text For instance we see in Table 3.4 that sk 1 maps to zq 3 and there) +(printed page 146) --QDF=0",
+            "+(For instance we see in Table 3.4 that sk 1 maps to zq 3 and there) +(text) +(printed page 146) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5645,9 +5623,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the) +(printed page 147) --QDF=0",
-            "+(obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the) +(printed page 147) --QDF=0",
-            "Histogram Processing obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the printed page 147 --QDF=0"
+            "+(text obtain a histogram-equalized result the net effect is to map a very narrow interval of dark) +(printed page 147) --QDF=0",
+            "+(obtain a histogram-equalized result the net effect is to map a very narrow interval of dark) +(text) +(printed page 147) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5691,9 +5668,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.) +(printed page 148) --QDF=0",
-            "+(precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.) +(printed page 148) --QDF=0",
-            "Histogram Processing precisely in this interval, we would expect the result to be an image with a light, washed-out appearance. printed page 148 --QDF=0"
+            "+(text precisely in this interval we would expect the result to be an image with a light) +(printed page 148) --QDF=0",
+            "+(precisely in this interval we would expect the result to be an image with a light) +(text) +(printed page 148) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5734,9 +5710,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text generally fails when the objective is to enhance details over small areas in an image.) +(printed page 149) --QDF=0",
-            "+(generally fails when the objective is to enhance details over small areas in an image.) +(printed page 149) --QDF=0",
-            "Histogram Processing generally fails when the objective is to enhance details over small areas in an image. printed page 149 --QDF=0"
+            "+(text generally fails when the objective is to enhance details over small areas in an image) +(printed page 149) --QDF=0",
+            "+(generally fails when the objective is to enhance details over small areas in an image) +(text) +(printed page 149) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5775,9 +5750,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram) +(printed page 150) --QDF=0",
-            "+(squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram) +(printed page 150) --QDF=0",
-            "Histogram Processing squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram printed page 150 --QDF=0"
+            "+(text squares but they are invisible for all practical purposes Figure 3.26 b is the result of) +(printed page 150) --QDF=0",
+            "+(squares but they are invisible for all practical purposes Figure 3.26 b is the result of) +(text) +(printed page 150) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5818,9 +5792,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text the local variance (or standard deviation) is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
-            "+(the local variance (or standard deviation) is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
-            "Histogram Processing the local variance (or standard deviation) is a measure of intensity contrast in that printed page 151 --QDF=0"
+            "+(text the local variance or standard deviation is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
+            "+(the local variance or standard deviation is a measure of intensity contrast in that) +(text) +(printed page 151) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5861,9 +5834,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the) +(printed page 152) --QDF=0",
-            "+(speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the) +(printed page 152) --QDF=0",
-            "Histogram Processing speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the printed page 152 --QDF=0"
+            "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
+            "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5909,10 +5881,8 @@
             }
           },
           "queries": [
-            "+(text 3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),) +(printed page 153) --QDF=0",
-            "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0",
-            "+(3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),) +(printed page 153) --QDF=0",
-            "Histogram Processing 3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c), printed page 153 --QDF=0"
+            "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+            "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5965,8 +5935,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0",
-                "Histogram Processing images with four basic intensity characteristics: dark, light, low contrast, and high printed page 133 --QDF=0"
+                "+(text images with four basic intensity characteristics dark light low contrast and high) +(printed page 133) --QDF=0",
+                "+(heading 3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6011,8 +5981,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(contrast and will exhibit a large variety of gray tones. The net effect will be an image) +(printed page 134) --QDF=0",
-                "Histogram Processing contrast and will exhibit a large variety of gray tones. The net effect will be an image printed page 134 --QDF=0"
+                "+(text contrast and will exhibit a large variety of gray tones The net effect will be an) +(printed page 134) --QDF=0",
+                "+(contrast and will exhibit a large variety of gray tones The net effect will be an) +(text) +(printed page 134) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6053,8 +6023,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(artifacts created by reversals of intensity. Condition (b) guarantees that the range of) +(printed page 135) --QDF=0",
-                "Histogram Processing artifacts created by reversals of intensity. Condition (b) guarantees that the range of printed page 135 --QDF=0"
+                "+(text artifacts created by reversals of intensity Condition b guarantees that the range of) +(printed page 135) --QDF=0",
+                "+(artifacts created by reversals of intensity Condition b guarantees that the range of) +(text) +(printed page 135) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6093,8 +6063,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(integral with respect to its upper limit is the integrand evaluated at the limit. That is,) +(printed page 136) --QDF=0",
-                "Histogram Processing integral with respect to its upper limit is the integrand evaluated at the limit. That is, printed page 136 --QDF=0"
+                "+(text integral with respect to its upper limit is the integrand evaluated at the limit That is) +(printed page 136) --QDF=0",
+                "+(integral with respect to its upper limit is the integrand evaluated at the limit That is) +(text) +(printed page 136) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6135,8 +6105,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Substituting this result for drds in Eq. (3-10), and noting that all probability values) +(printed page 137) --QDF=0",
-                "Histogram Processing Substituting this result for drds in Eq. (3-10), and noting that all probability values printed page 137 --QDF=0"
+                "+(text Substituting this result for drds in Eq 3-10 and noting that all probability values) +(printed page 137) --QDF=0",
+                "+(Substituting this result for drds in Eq 3-10 and noting that all probability values) +(text) +(printed page 137) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6179,8 +6149,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s) +(printed page 138) --QDF=0",
-                "Histogram Processing Suppose that we form a new image with intensities, s, obtained using this transformation; that is, the s printed page 138 --QDF=0"
+                "+(text Suppose that we form a new image with intensities s obtained using this transformation that is) +(printed page 138) --QDF=0",
+                "+(Suppose that we form a new image with intensities s obtained using this transformation that is) +(text) +(printed page 138) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6224,8 +6194,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that) +(printed page 139) --QDF=0",
-                "Histogram Processing the method just discussed. Thus, unlike its continuous counterpart, it cannot be proved in general that printed page 139 --QDF=0"
+                "+(text the method just discussed Thus unlike its continuous counterpart it cannot be proved in general that) +(printed page 139) --QDF=0",
+                "+(the method just discussed Thus unlike its continuous counterpart it cannot be proved in general that) +(text) +(printed page 139) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6266,8 +6236,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma-) +(printed page 140) --QDF=0",
-                "Histogram Processing fourth image because its intensities span almost the full scale already. Figure 3.21 shows the transforma- printed page 140 --QDF=0"
+                "+(text fourth image because its intensities span almost the full scale already Figure 3.21 shows the transforma) +(printed page 140) --QDF=0",
+                "+(fourth image because its intensities span almost the full scale already Figure 3.21 shows the transforma) +(text) +(printed page 140) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6311,8 +6281,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(column: histograms of the images in the center column (compare with the histograms in Fig. 3.16).) +(printed page 141) --QDF=0",
-                "Histogram Processing column: histograms of the images in the center column (compare with the histograms in Fig. 3.16). printed page 141 --QDF=0"
+                "+(text column histograms of the images in the center column compare with the histograms in Fig 3.16) +(printed page 141) --QDF=0",
+                "+(column histograms of the images in the center column compare with the histograms in Fig 3.16) +(text) +(printed page 141) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6349,8 +6319,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(However, there are applications in which histogram equalization is not suitable. In) +(printed page 142) --QDF=0",
-                "Histogram Processing However, there are applications in which histogram equalization is not suitable. In printed page 142 --QDF=0"
+                "+(text However there are applications in which histogram equalization is not suitable In) +(printed page 142) --QDF=0",
+                "+(However there are applications in which histogram equalization is not suitable In) +(text) +(printed page 142) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6393,8 +6363,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(where the components of this equation are as before. Similarly, given a specific value) +(printed page 143) --QDF=0",
-                "Histogram Processing where the components of this equation are as before. Similarly, given a specific value printed page 143 --QDF=0"
+                "+(text where the components of this equation are as before Similarly given a specific value) +(printed page 143) --QDF=0",
+                "+(where the components of this equation are as before Similarly given a specific value) +(text) +(printed page 143) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6437,8 +6407,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that) +(printed page 144) --QDF=0",
-                "Histogram Processing be strictly monotonic to satisfy condition (a). In terms of Eq. (3-21), this means that printed page 144 --QDF=0"
+                "+(text be strictly monotonic to satisfy condition a In terms of Eq 3-21 this means that) +(printed page 144) --QDF=0",
+                "+(be strictly monotonic to satisfy condition a In terms of Eq 3-21 this means that) +(text) +(printed page 144) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6479,8 +6449,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore,) +(printed page 145) --QDF=0",
-                "Histogram Processing Because its ﬁrst three values are equal, G is not strictly monotonic, so condition (a) is violated. Therefore, printed page 145 --QDF=0"
+                "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+                "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6525,8 +6495,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram-) +(printed page 146) --QDF=0",
-                "Histogram Processing For instance, we see in Table 3.4 that sk= 1 maps to zq=3, and there are 790 pixels in the histogram- printed page 146 --QDF=0"
+                "+(text For instance we see in Table 3.4 that sk 1 maps to zq 3 and there) +(printed page 146) --QDF=0",
+                "+(For instance we see in Table 3.4 that sk 1 maps to zq 3 and there) +(text) +(printed page 146) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6568,8 +6538,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the) +(printed page 147) --QDF=0",
-                "Histogram Processing obtain a histogram-equalized result, the net effect is to map a very narrow interval of dark pixels into the printed page 147 --QDF=0"
+                "+(text obtain a histogram-equalized result the net effect is to map a very narrow interval of dark) +(printed page 147) --QDF=0",
+                "+(obtain a histogram-equalized result the net effect is to map a very narrow interval of dark) +(text) +(printed page 147) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6613,8 +6583,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(precisely in this interval, we would expect the result to be an image with a light, washed-out appearance.) +(printed page 148) --QDF=0",
-                "Histogram Processing precisely in this interval, we would expect the result to be an image with a light, washed-out appearance. printed page 148 --QDF=0"
+                "+(text precisely in this interval we would expect the result to be an image with a light) +(printed page 148) --QDF=0",
+                "+(precisely in this interval we would expect the result to be an image with a light) +(text) +(printed page 148) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6655,8 +6625,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(generally fails when the objective is to enhance details over small areas in an image.) +(printed page 149) --QDF=0",
-                "Histogram Processing generally fails when the objective is to enhance details over small areas in an image. printed page 149 --QDF=0"
+                "+(text generally fails when the objective is to enhance details over small areas in an image) +(printed page 149) --QDF=0",
+                "+(generally fails when the objective is to enhance details over small areas in an image) +(text) +(printed page 149) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6695,8 +6665,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram) +(printed page 150) --QDF=0",
-                "Histogram Processing squares, but they are invisible for all practical purposes. Figure 3.26(b) is the result of global histogram printed page 150 --QDF=0"
+                "+(text squares but they are invisible for all practical purposes Figure 3.26 b is the result of) +(printed page 150) --QDF=0",
+                "+(squares but they are invisible for all practical purposes Figure 3.26 b is the result of) +(text) +(printed page 150) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6737,8 +6707,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(the local variance (or standard deviation) is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
-                "Histogram Processing the local variance (or standard deviation) is a measure of intensity contrast in that printed page 151 --QDF=0"
+                "+(text the local variance or standard deviation is a measure of intensity contrast in that) +(printed page 151) --QDF=0",
+                "+(the local variance or standard deviation is a measure of intensity contrast in that) +(text) +(printed page 151) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6779,8 +6749,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the) +(printed page 152) --QDF=0",
-                "Histogram Processing speciﬁed constant, C, to increase (or decrease) the value of its intensity level relative to the rest of the printed page 152 --QDF=0"
+                "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
+                "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6826,8 +6796,8 @@
                 }
               },
               "queries": [
-                "+(3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c),) +(printed page 153) --QDF=0",
-                "Histogram Processing 3.27(b) is the result of using Eq. (3-29) with these parameters. By comparing this ﬁgure with Fig. 3.26(c), printed page 153 --QDF=0"
+                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+                "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6896,8 +6866,9 @@
             }
           },
           "queries": [
-            "+(6.25) +(printed page 461) --QDF=0",
-            "+(and blue, and each of the colors is at maximum) +(printed page 461) --QDF=0"
+            "+(text and blue and each of the colors is at maximum) +(printed page 461) --QDF=0",
+            "+(exercise 6.25) +(printed page 461) --QDF=0",
+            "+(exercise 6.26) +(printed page 461) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6969,8 +6940,9 @@
             }
           },
           "queries": [
-            "+(6.26) +(printed page 461) --QDF=0",
-            "+((b) If the box is aligned with the axes this pro-) +(printed page 461) --QDF=0"
+            "+(text b If the box is aligned with the axes this pro) +(printed page 461) --QDF=0",
+            "+(exercise 6.26) +(printed page 461) --QDF=0",
+            "+(exercise 6.27) +(printed page 461) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7020,10 +6992,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing the HSI intensity component and converting to RGB. (c) Difference between the two results.) +(printed page 445) --QDF=0",
-            "+(heading 6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0",
-            "+(6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0",
-            "Using Color in Image Segmentation ing the HSI intensity component and converting to RGB. (c) Difference between the two results. printed page 445 --QDF=0"
+            "+(text ing the HSI intensity component and converting to RGB c Difference between the two results) +(printed page 445) --QDF=0",
+            "+(heading 6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7067,9 +7037,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).) +(printed page 446) --QDF=0",
-            "+(Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).) +(printed page 446) --QDF=0",
-            "Using Color in Image Segmentation Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a). printed page 446 --QDF=0"
+            "+(text Suppose that it is of interest to segment the reddish region in the lower left of) +(printed page 446) --QDF=0",
+            "+(Suppose that it is of interest to segment the reddish region in the lower left of) +(text) +(printed page 446) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7111,9 +7080,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text (d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-) +(printed page 447) --QDF=0",
-            "+((d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-) +(printed page 447) --QDF=0",
-            "Using Color in Image Segmentation (d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His- printed page 447 --QDF=0"
+            "+(text d Intensity e Binary saturation mask black 0 f Product of b and e g His) +(printed page 447) --QDF=0",
+            "+(d Intensity e Binary saturation mask black 0 f Product of b and e g His) +(text) +(printed page 447) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7150,9 +7118,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text property that its principal axes are oriented in the direction of maximum data spread.) +(printed page 448) --QDF=0",
-            "+(property that its principal axes are oriented in the direction of maximum data spread.) +(printed page 448) --QDF=0",
-            "Using Color in Image Segmentation property that its principal axes are oriented in the direction of maximum data spread. printed page 448 --QDF=0"
+            "+(text property that its principal axes are oriented in the direction of maximum data spread) +(printed page 448) --QDF=0",
+            "+(property that its principal axes are oriented in the direction of maximum data spread) +(text) +(printed page 448) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7192,9 +7159,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data) +(printed page 449) --QDF=0",
-            "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data) +(printed page 449) --QDF=0",
-            "Using Color in Image Segmentation dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data printed page 449 --QDF=0"
+            "+(text dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of) +(printed page 449) --QDF=0",
+            "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of) +(text) +(printed page 449) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7234,9 +7200,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,) +(printed page 450) --QDF=0",
-            "+(with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,) +(printed page 450) --QDF=0",
-            "Using Color in Image Segmentation with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected, printed page 450 --QDF=0"
+            "+(text with what we would de ne as reddish points in the original color image This result) +(printed page 450) --QDF=0",
+            "+(with what we would de ne as reddish points in the original color image This result) +(text) +(printed page 450) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7278,9 +7243,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these) +(printed page 451) --QDF=0",
-            "+(Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these) +(printed page 451) --QDF=0",
-            "Using Color in Image Segmentation Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these printed page 451 --QDF=0"
+            "+(text Let the quantities gxx gyy and gxy be defined in terms of the dot product of) +(printed page 451) --QDF=0",
+            "+(Let the quantities gxx gyy and gxy be defined in terms of the dot product of) +(text) +(printed page 451) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7326,10 +7290,8 @@
             }
           },
           "queries": [
-            "+(text putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three) +(printed page 452) --QDF=0",
-            "+(heading 6.8 NOISE IN COLOR IMAGES) +(printed page 452) --QDF=0",
-            "+(putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three) +(printed page 452) --QDF=0",
-            "Using Color in Image Segmentation putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three printed page 452 --QDF=0"
+            "+(text putations can only be determined by the requirements of a given problem Figure 6.45 shows the) +(printed page 452) --QDF=0",
+            "+(heading 6.8 NOISE IN COLOR IMAGES) +(printed page 452) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7390,8 +7352,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0",
-                "Using Color in Image Segmentation ing the HSI intensity component and converting to RGB. (c) Difference between the two results. printed page 445 --QDF=0"
+                "+(text ing the HSI intensity component and converting to RGB c Difference between the two results) +(printed page 445) --QDF=0",
+                "+(heading 6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7435,8 +7397,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).) +(printed page 446) --QDF=0",
-                "Using Color in Image Segmentation Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a). printed page 446 --QDF=0"
+                "+(text Suppose that it is of interest to segment the reddish region in the lower left of) +(printed page 446) --QDF=0",
+                "+(Suppose that it is of interest to segment the reddish region in the lower left of) +(text) +(printed page 446) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7478,8 +7440,8 @@
                 "end_before": null
               },
               "queries": [
-                "+((d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-) +(printed page 447) --QDF=0",
-                "Using Color in Image Segmentation (d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His- printed page 447 --QDF=0"
+                "+(text d Intensity e Binary saturation mask black 0 f Product of b and e g His) +(printed page 447) --QDF=0",
+                "+(d Intensity e Binary saturation mask black 0 f Product of b and e g His) +(text) +(printed page 447) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7516,8 +7478,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(property that its principal axes are oriented in the direction of maximum data spread.) +(printed page 448) --QDF=0",
-                "Using Color in Image Segmentation property that its principal axes are oriented in the direction of maximum data spread. printed page 448 --QDF=0"
+                "+(text property that its principal axes are oriented in the direction of maximum data spread) +(printed page 448) --QDF=0",
+                "+(property that its principal axes are oriented in the direction of maximum data spread) +(text) +(printed page 448) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7557,8 +7519,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data) +(printed page 449) --QDF=0",
-                "Using Color in Image Segmentation dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data printed page 449 --QDF=0"
+                "+(text dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of) +(printed page 449) --QDF=0",
+                "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of) +(text) +(printed page 449) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7598,8 +7560,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,) +(printed page 450) --QDF=0",
-                "Using Color in Image Segmentation with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected, printed page 450 --QDF=0"
+                "+(text with what we would de ne as reddish points in the original color image This result) +(printed page 450) --QDF=0",
+                "+(with what we would de ne as reddish points in the original color image This result) +(text) +(printed page 450) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7641,8 +7603,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these) +(printed page 451) --QDF=0",
-                "Using Color in Image Segmentation Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these printed page 451 --QDF=0"
+                "+(text Let the quantities gxx gyy and gxy be defined in terms of the dot product of) +(printed page 451) --QDF=0",
+                "+(Let the quantities gxx gyy and gxy be defined in terms of the dot product of) +(text) +(printed page 451) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7688,8 +7650,8 @@
                 }
               },
               "queries": [
-                "+(putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three) +(printed page 452) --QDF=0",
-                "Using Color in Image Segmentation putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three printed page 452 --QDF=0"
+                "+(text putations can only be determined by the requirements of a given problem Figure 6.45 shows the) +(printed page 452) --QDF=0",
+                "+(heading 6.8 NOISE IN COLOR IMAGES) +(printed page 452) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7766,8 +7728,9 @@
             }
           },
           "queries": [
-            "+(6.27) +(printed page 461) --QDF=0",
-            "+(Show that Eq. (6-49) reduces to Eq. (6-48) when) +(printed page 461) --QDF=0"
+            "+(text Show that Eq 6-49 reduces to Eq 6-48 when) +(printed page 461) --QDF=0",
+            "+(exercise 6.27) +(printed page 461) --QDF=0",
+            "+(exercise 6.28) +(printed page 461) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7818,9 +7781,7 @@
           },
           "queries": [
             "+(equation 6-49) +(printed page 448) --QDF=0",
-            "+(equation 6-48) +(printed page 448) --QDF=0",
-            "+(6-49) +(equation) +(printed page 448) --QDF=0",
-            "+(6-48) +(equation) +(printed page 448) --QDF=0"
+            "+(equation 6-48) +(printed page 448) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7975,8 +7936,9 @@
             }
           },
           "queries": [
-            "+(6.28) +(printed page 461) --QDF=0",
-            "+(Sketch the surface in RGB space for the points) +(printed page 461) --QDF=0"
+            "+(text Sketch the surface in RGB space for the points) +(printed page 461) --QDF=0",
+            "+(exercise 6.28) +(printed page 461) --QDF=0",
+            "+(exercise 6.29) +(printed page 461) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8045,8 +8007,8 @@
             "end_before": null
           },
           "queries": [
-            "+(6.29) +(printed page 461) --QDF=0",
-            "+(at times yield erroneous results. Speciﬁcally, it is) +(printed page 461) --QDF=0"
+            "+(text at times yield erroneous results Speci cally it is) +(printed page 461) --QDF=0",
+            "+(exercise 6.29) +(printed page 461) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8086,8 +8048,8 @@
             "end_before": null
           },
           "queries": [
-            "+(This page intentionally left blank) +(printed page 462) --QDF=0",
-            "+(This page intentionally left blank) +(Problems) +(printed page 462) --QDF=0"
+            "+(text This page intentionally left blank) +(printed page 462) --QDF=0",
+            "+(This page intentionally left blank) +(text) +(printed page 462) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8127,10 +8089,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text sharpening can be accomplished by spatial differentiation. In fact, this is the case,) +(printed page 175) --QDF=0",
-            "+(heading 3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
-            "+(3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters sharpening can be accomplished by spatial differentiation. In fact, this is the case, printed page 175 --QDF=0"
+            "+(text sharpening can be accomplished by spatial differentiation In fact this is the case) +(printed page 175) --QDF=0",
+            "+(heading 3.6 SHARPENING HIGHPASS SPATIAL FILTERS) +(printed page 175) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8172,9 +8132,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
-            "+(varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass printed page 176 --QDF=0"
+            "+(text varying intensities As noted in Section 3.5 smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
+            "+(varying intensities As noted in Section 3.5 smoothing is often referred to as lowpass) +(text) +(printed page 176) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8213,9 +8172,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
-            "+(These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44, printed page 177 --QDF=0"
+            "+(text These two definitions satisfy the conditions stated above as we illustrate in Fig 3.44) +(printed page 177) --QDF=0",
+            "+(These two definitions satisfy the conditions stated above as we illustrate in Fig 3.44) +(text) +(printed page 177) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8253,9 +8211,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
-            "+(3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters 3.44(c) that in a step transition a line joining these two values crosses the horizontal printed page 178 --QDF=0"
+            "+(text 3.44 c that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
+            "+(3.44 c that in a step transition a line joining these two values crosses the horizontal) +(text) +(printed page 178) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8294,9 +8251,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
-            "+(an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla- printed page 179 --QDF=0"
+            "+(text an extension of this equation that includes the diagonal terms c and d Two other Lapla) +(printed page 179) --QDF=0",
+            "+(an extension of this equation that includes the diagonal terms c and d Two other Lapla) +(text) +(printed page 179) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8339,9 +8295,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
-            "+(of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are printed page 180 --QDF=0"
+            "+(text of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
+            "+(of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8386,9 +8341,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
-            "+(Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution- printed page 181 --QDF=0"
+            "+(text Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
+            "+(Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8427,9 +8381,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
-            "+(sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters sharpen images. This process, called unsharp masking, consists of the following steps: printed page 182 --QDF=0"
+            "+(text sharpen images This process called unsharp masking consists of the following steps) +(printed page 182) --QDF=0",
+            "+(sharpen images This process called unsharp masking consists of the following steps) +(text) +(printed page 182) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8472,9 +8425,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
-            "+(Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b) printed page 183 --QDF=0"
+            "+(text Figure 3.49 a shows a slightly blurred image of white text on a dark gray background) +(printed page 183) --QDF=0",
+            "+(Figure 3.49 a shows a slightly blurred image of white text on a dark gray background) +(text) +(printed page 183) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8516,9 +8468,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
-            "+(signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol- printed page 184 --QDF=0"
+            "+(text signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(printed page 184) --QDF=0",
+            "+(signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(text) +(printed page 184) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8560,9 +8511,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-            "+(mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning printed page 185 --QDF=0"
+            "+(text mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+            "+(mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8604,9 +8554,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text (integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
-            "+((integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters (integer) center of spatial symmetry. The smallest kernels in which we are interested printed page 186 --QDF=0"
+            "+(text integer center of spatial symmetry The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
+            "+(integer center of spatial symmetry The smallest kernels in which we are interested) +(text) +(printed page 186) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8649,9 +8598,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
-            "+(not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup- printed page 187 --QDF=0"
+            "+(text not be readily visible in a gray-scale image specs like these can be foreign matter air) +(printed page 187) --QDF=0",
+            "+(not be readily visible in a gray-scale image specs like these can be foreign matter air) +(text) +(printed page 187) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8696,10 +8644,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing the HSI intensity component and converting to RGB. (c) Difference between the two results.) +(printed page 445) --QDF=0",
-            "+(heading 6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0",
-            "+(6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0",
-            "Using Color in Image Segmentation ing the HSI intensity component and converting to RGB. (c) Difference between the two results. printed page 445 --QDF=0"
+            "+(text ing the HSI intensity component and converting to RGB c Difference between the two results) +(printed page 445) --QDF=0",
+            "+(heading 6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8743,9 +8689,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).) +(printed page 446) --QDF=0",
-            "+(Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).) +(printed page 446) --QDF=0",
-            "Using Color in Image Segmentation Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a). printed page 446 --QDF=0"
+            "+(text Suppose that it is of interest to segment the reddish region in the lower left of) +(printed page 446) --QDF=0",
+            "+(Suppose that it is of interest to segment the reddish region in the lower left of) +(text) +(printed page 446) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8787,9 +8732,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text (d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-) +(printed page 447) --QDF=0",
-            "+((d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-) +(printed page 447) --QDF=0",
-            "Using Color in Image Segmentation (d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His- printed page 447 --QDF=0"
+            "+(text d Intensity e Binary saturation mask black 0 f Product of b and e g His) +(printed page 447) --QDF=0",
+            "+(d Intensity e Binary saturation mask black 0 f Product of b and e g His) +(text) +(printed page 447) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8826,9 +8770,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text property that its principal axes are oriented in the direction of maximum data spread.) +(printed page 448) --QDF=0",
-            "+(property that its principal axes are oriented in the direction of maximum data spread.) +(printed page 448) --QDF=0",
-            "Using Color in Image Segmentation property that its principal axes are oriented in the direction of maximum data spread. printed page 448 --QDF=0"
+            "+(text property that its principal axes are oriented in the direction of maximum data spread) +(printed page 448) --QDF=0",
+            "+(property that its principal axes are oriented in the direction of maximum data spread) +(text) +(printed page 448) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8868,9 +8811,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data) +(printed page 449) --QDF=0",
-            "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data) +(printed page 449) --QDF=0",
-            "Using Color in Image Segmentation dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data printed page 449 --QDF=0"
+            "+(text dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of) +(printed page 449) --QDF=0",
+            "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of) +(text) +(printed page 449) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8910,9 +8852,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,) +(printed page 450) --QDF=0",
-            "+(with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,) +(printed page 450) --QDF=0",
-            "Using Color in Image Segmentation with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected, printed page 450 --QDF=0"
+            "+(text with what we would de ne as reddish points in the original color image This result) +(printed page 450) --QDF=0",
+            "+(with what we would de ne as reddish points in the original color image This result) +(text) +(printed page 450) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8954,9 +8895,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these) +(printed page 451) --QDF=0",
-            "+(Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these) +(printed page 451) --QDF=0",
-            "Using Color in Image Segmentation Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these printed page 451 --QDF=0"
+            "+(text Let the quantities gxx gyy and gxy be defined in terms of the dot product of) +(printed page 451) --QDF=0",
+            "+(Let the quantities gxx gyy and gxy be defined in terms of the dot product of) +(text) +(printed page 451) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9002,10 +8942,8 @@
             }
           },
           "queries": [
-            "+(text putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three) +(printed page 452) --QDF=0",
-            "+(heading 6.8 NOISE IN COLOR IMAGES) +(printed page 452) --QDF=0",
-            "+(putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three) +(printed page 452) --QDF=0",
-            "Using Color in Image Segmentation putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three printed page 452 --QDF=0"
+            "+(text putations can only be determined by the requirements of a given problem Figure 6.45 shows the) +(printed page 452) --QDF=0",
+            "+(heading 6.8 NOISE IN COLOR IMAGES) +(printed page 452) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9066,8 +9004,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0",
-                "Using Color in Image Segmentation ing the HSI intensity component and converting to RGB. (c) Difference between the two results. printed page 445 --QDF=0"
+                "+(text ing the HSI intensity component and converting to RGB c Difference between the two results) +(printed page 445) --QDF=0",
+                "+(heading 6.7 USING COLOR IN IMAGE SEGMENTATION) +(printed page 445) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9111,8 +9049,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a).) +(printed page 446) --QDF=0",
-                "Using Color in Image Segmentation Suppose that it is of interest to segment the reddish region in the lower left of the image in Fig. 6.40(a). printed page 446 --QDF=0"
+                "+(text Suppose that it is of interest to segment the reddish region in the lower left of) +(printed page 446) --QDF=0",
+                "+(Suppose that it is of interest to segment the reddish region in the lower left of) +(text) +(printed page 446) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9154,8 +9092,8 @@
                 "end_before": null
               },
               "queries": [
-                "+((d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His-) +(printed page 447) --QDF=0",
-                "Using Color in Image Segmentation (d) Intensity. (e) Binary saturation mask (black = 0). (f) Product of (b) and (e). (g) His- printed page 447 --QDF=0"
+                "+(text d Intensity e Binary saturation mask black 0 f Product of b and e g His) +(printed page 447) --QDF=0",
+                "+(d Intensity e Binary saturation mask black 0 f Product of b and e g His) +(text) +(printed page 447) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9192,8 +9130,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(property that its principal axes are oriented in the direction of maximum data spread.) +(printed page 448) --QDF=0",
-                "Using Color in Image Segmentation property that its principal axes are oriented in the direction of maximum data spread. printed page 448 --QDF=0"
+                "+(text property that its principal axes are oriented in the direction of maximum data spread) +(printed page 448) --QDF=0",
+                "+(property that its principal axes are oriented in the direction of maximum data spread) +(text) +(printed page 448) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9233,8 +9171,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data) +(printed page 449) --QDF=0",
-                "Using Color in Image Segmentation dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of the data printed page 449 --QDF=0"
+                "+(text dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of) +(printed page 449) --QDF=0",
+                "+(dimensions along each of the RGB axes were selected as 1.25 times the standard deviation of) +(text) +(printed page 449) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9274,8 +9212,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected,) +(printed page 450) --QDF=0",
-                "Using Color in Image Segmentation with what we would deﬁne as “reddish” points in the original color image. This result is not unexpected, printed page 450 --QDF=0"
+                "+(text with what we would de ne as reddish points in the original color image This result) +(printed page 450) --QDF=0",
+                "+(with what we would de ne as reddish points in the original color image This result) +(text) +(printed page 450) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9317,8 +9255,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these) +(printed page 451) --QDF=0",
-                "Using Color in Image Segmentation Let the quantities gxx, gyy, and gxy be defined in terms of the dot product of these printed page 451 --QDF=0"
+                "+(text Let the quantities gxx gyy and gxy be defined in terms of the dot product of) +(printed page 451) --QDF=0",
+                "+(Let the quantities gxx gyy and gxy be defined in terms of the dot product of) +(text) +(printed page 451) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9364,8 +9302,8 @@
                 }
               },
               "queries": [
-                "+(putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three) +(printed page 452) --QDF=0",
-                "Using Color in Image Segmentation putations can only be determined by the requirements of a given problem. Figure 6.45 shows the three printed page 452 --QDF=0"
+                "+(text putations can only be determined by the requirements of a given problem Figure 6.45 shows the) +(printed page 452) --QDF=0",
+                "+(heading 6.8 NOISE IN COLOR IMAGES) +(printed page 452) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9426,8 +9364,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters sharpening can be accomplished by spatial differentiation. In fact, this is the case, printed page 175 --QDF=0"
+                "+(text sharpening can be accomplished by spatial differentiation In fact this is the case) +(printed page 175) --QDF=0",
+                "+(heading 3.6 SHARPENING HIGHPASS SPATIAL FILTERS) +(printed page 175) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9469,8 +9407,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass printed page 176 --QDF=0"
+                "+(text varying intensities As noted in Section 3.5 smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
+                "+(varying intensities As noted in Section 3.5 smoothing is often referred to as lowpass) +(text) +(printed page 176) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9509,8 +9447,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44, printed page 177 --QDF=0"
+                "+(text These two definitions satisfy the conditions stated above as we illustrate in Fig 3.44) +(printed page 177) --QDF=0",
+                "+(These two definitions satisfy the conditions stated above as we illustrate in Fig 3.44) +(text) +(printed page 177) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9548,8 +9486,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters 3.44(c) that in a step transition a line joining these two values crosses the horizontal printed page 178 --QDF=0"
+                "+(text 3.44 c that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
+                "+(3.44 c that in a step transition a line joining these two values crosses the horizontal) +(text) +(printed page 178) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9588,8 +9526,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla- printed page 179 --QDF=0"
+                "+(text an extension of this equation that includes the diagonal terms c and d Two other Lapla) +(printed page 179) --QDF=0",
+                "+(an extension of this equation that includes the diagonal terms c and d Two other Lapla) +(text) +(printed page 179) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9632,8 +9570,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are printed page 180 --QDF=0"
+                "+(text of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
+                "+(of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9678,8 +9616,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution- printed page 181 --QDF=0"
+                "+(text Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
+                "+(Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9718,8 +9656,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters sharpen images. This process, called unsharp masking, consists of the following steps: printed page 182 --QDF=0"
+                "+(text sharpen images This process called unsharp masking consists of the following steps) +(printed page 182) --QDF=0",
+                "+(sharpen images This process called unsharp masking consists of the following steps) +(text) +(printed page 182) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9762,8 +9700,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b) printed page 183 --QDF=0"
+                "+(text Figure 3.49 a shows a slightly blurred image of white text on a dark gray background) +(printed page 183) --QDF=0",
+                "+(Figure 3.49 a shows a slightly blurred image of white text on a dark gray background) +(text) +(printed page 183) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9805,8 +9743,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol- printed page 184 --QDF=0"
+                "+(text signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(printed page 184) --QDF=0",
+                "+(signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(text) +(printed page 184) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9848,8 +9786,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning printed page 185 --QDF=0"
+                "+(text mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+                "+(mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9891,8 +9829,8 @@
                 "end_before": null
               },
               "queries": [
-                "+((integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters (integer) center of spatial symmetry. The smallest kernels in which we are interested printed page 186 --QDF=0"
+                "+(text integer center of spatial symmetry The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
+                "+(integer center of spatial symmetry The smallest kernels in which we are interested) +(text) +(printed page 186) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9935,8 +9873,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup- printed page 187 --QDF=0"
+                "+(text not be readily visible in a gray-scale image specs like these can be foreign matter air) +(printed page 187) --QDF=0",
+                "+(not be readily visible in a gray-scale image specs like these can be foreign matter air) +(text) +(printed page 187) --QDF=0"
               ],
               "required_evidence": [
                 {

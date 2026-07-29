@@ -35,8 +35,8 @@
             "end_before": null
           },
           "queries": [
-            "+(7.1) +(printed page 534) --QDF=0",
-            "+((c) Using the result of (b), write an orthogonal) +(printed page 534) --QDF=0"
+            "+(text c Using the result of b write an orthogonal) +(printed page 534) --QDF=0",
+            "+(exercise 7.1) +(printed page 534) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -103,8 +103,9 @@
             }
           },
           "queries": [
-            "+(7.2) +(printed page 535) --QDF=0",
-            "+(Prove Eq. (7-23).) +(printed page 535) --QDF=0"
+            "+(text Prove Eq 7-23) +(printed page 535) --QDF=0",
+            "+(exercise 7.2) +(printed page 535) --QDF=0",
+            "+(exercise 7.3) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -260,8 +261,9 @@
             }
           },
           "queries": [
-            "+(7.3) +(printed page 535) --QDF=0",
-            "+(Prove that if A*TA = I, the associated expansion) +(printed page 535) --QDF=0"
+            "+(text Prove that if A TA I the associated expansion) +(printed page 535) --QDF=0",
+            "+(exercise 7.3) +(printed page 535) --QDF=0",
+            "+(exercise 7.4) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -418,8 +420,9 @@
             }
           },
           "queries": [
-            "+(7.4) +(printed page 535) --QDF=0",
-            "+(functions are orthonormal.) +(printed page 535) --QDF=0"
+            "+(text functions are orthonormal) +(printed page 535) --QDF=0",
+            "+(exercise 7.4) +(printed page 535) --QDF=0",
+            "+(exercise 7.5) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -491,8 +494,9 @@
             }
           },
           "queries": [
-            "+(7.5) +(printed page 535) --QDF=0",
-            "+(Prove that matrix A3 in Example 7.3 is an orthog-) +(printed page 535) --QDF=0"
+            "+(text Prove that matrix A3 in Example 7.3 is an orthog) +(printed page 535) --QDF=0",
+            "+(exercise 7.5) +(printed page 535) --QDF=0",
+            "+(exercise 7.6) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -648,8 +652,9 @@
             }
           },
           "queries": [
-            "+(7.6) +(printed page 535) --QDF=0",
-            "+(Prove that orthogonal transformations preserve) +(printed page 535) --QDF=0"
+            "+(text Prove that orthogonal transformations preserve) +(printed page 535) --QDF=0",
+            "+(exercise 7.6) +(printed page 535) --QDF=0",
+            "+(exercise 7.7) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -721,8 +726,9 @@
             }
           },
           "queries": [
-            "+(7.7) +(printed page 535) --QDF=0",
-            "+((f) Are f and g orthogonal to one another?) +(printed page 535) --QDF=0"
+            "+(text f Are f and g orthogonal to one another) +(printed page 535) --QDF=0",
+            "+(exercise 7.7) +(printed page 535) --QDF=0",
+            "+(exercise 7.8) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -959,8 +965,9 @@
             }
           },
           "queries": [
-            "+(7.8) +(printed page 535) --QDF=0",
-            "+((c) * Show that angles and distances are preserved) +(printed page 535) --QDF=0"
+            "+(text c Show that angles and distances are preserved) +(printed page 535) --QDF=0",
+            "+(exercise 7.8) +(printed page 535) --QDF=0",
+            "+(exercise 7.9) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1010,10 +1017,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text (c) Using the result of (b), write an orthogonal) +(printed page 534) --QDF=0",
-            "+(exercise 7.1) +(printed page 534) --QDF=0",
-            "+(7.1) +(printed page 534) --QDF=0",
-            "+((c) Using the result of (b), write an orthogonal) +(printed page 534) --QDF=0"
+            "+(text c Using the result of b write an orthogonal) +(printed page 534) --QDF=0",
+            "+(exercise 7.1) +(printed page 534) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1064,8 +1069,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(7.1) +(printed page 534) --QDF=0",
-                "+((c) Using the result of (b), write an orthogonal) +(printed page 534) --QDF=0"
+                "+(text c Using the result of b write an orthogonal) +(printed page 534) --QDF=0",
+                "+(exercise 7.1) +(printed page 534) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1132,8 +1137,9 @@
             }
           },
           "queries": [
-            "+(7.9) +(printed page 535) --QDF=0",
-            "+(Compute the inverse transform of T in Exam-) +(printed page 535) --QDF=0"
+            "+(text Compute the inverse transform of T in Exam) +(printed page 535) --QDF=0",
+            "+(exercise 7.9) +(printed page 535) --QDF=0",
+            "+(exercise 7.10) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1205,8 +1211,9 @@
             }
           },
           "queries": [
-            "+(7.10) +(printed page 535) --QDF=0",
-            "+(Prove that the set of sinusoidal expansion func-) +(printed page 535) --QDF=0"
+            "+(text Prove that the set of sinusoidal expansion func) +(printed page 535) --QDF=0",
+            "+(exercise 7.10) +(printed page 535) --QDF=0",
+            "+(exercise 7.11) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1278,8 +1285,9 @@
             }
           },
           "queries": [
-            "+(7.11) +(printed page 535) --QDF=0",
-            "+(Compute the expansion coefﬁcients of 2-tuple) +(printed page 535) --QDF=0"
+            "+(text Compute the expansion coef cients of 2-tuple) +(printed page 535) --QDF=0",
+            "+(exercise 7.11) +(printed page 535) --QDF=0",
+            "+(exercise 7.12) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1351,8 +1359,9 @@
             }
           },
           "queries": [
-            "+(7.12) +(printed page 535) --QDF=0",
-            "+(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0"
+            "+(text orthonormal If so write the corresponding) +(printed page 535) --QDF=0",
+            "+(exercise 7.12) +(printed page 535) --QDF=0",
+            "+(exercise 7.13) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1424,8 +1433,9 @@
             }
           },
           "queries": [
-            "+(7.13) +(printed page 535) --QDF=0",
-            "+(compute the inverse and show that the transform) +(printed page 535) --QDF=0"
+            "+(text compute the inverse and show that the transform) +(printed page 535) --QDF=0",
+            "+(exercise 7.13) +(printed page 535) --QDF=0",
+            "+(exercise 7.14) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1478,11 +1488,9 @@
             }
           },
           "queries": [
-            "+(text orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0",
+            "+(text orthonormal If so write the corresponding) +(printed page 535) --QDF=0",
             "+(exercise 7.12) +(printed page 535) --QDF=0",
-            "+(exercise 7.13) +(printed page 535) --QDF=0",
-            "+(7.12) +(printed page 535) --QDF=0",
-            "+(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0"
+            "+(exercise 7.13) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1541,8 +1549,9 @@
                 }
               },
               "queries": [
-                "+(7.12) +(printed page 535) --QDF=0",
-                "+(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0"
+                "+(text orthonormal If so write the corresponding) +(printed page 535) --QDF=0",
+                "+(exercise 7.12) +(printed page 535) --QDF=0",
+                "+(exercise 7.13) +(printed page 535) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1614,8 +1623,9 @@
             }
           },
           "queries": [
-            "+(7.14) +(printed page 535) --QDF=0",
-            "+((a) Compute the transform of F with respect to) +(printed page 535) --QDF=0"
+            "+(text a Compute the transform of F with respect to) +(printed page 535) --QDF=0",
+            "+(exercise 7.14) +(printed page 535) --QDF=0",
+            "+(exercise 7.15) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1668,11 +1678,9 @@
             }
           },
           "queries": [
-            "+(text orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0",
+            "+(text orthonormal If so write the corresponding) +(printed page 535) --QDF=0",
             "+(exercise 7.12) +(printed page 535) --QDF=0",
-            "+(exercise 7.13) +(printed page 535) --QDF=0",
-            "+(7.12) +(printed page 535) --QDF=0",
-            "+(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0"
+            "+(exercise 7.13) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1731,8 +1739,9 @@
                 }
               },
               "queries": [
-                "+(7.12) +(printed page 535) --QDF=0",
-                "+(orthonormal? If so, write the corresponding) +(printed page 535) --QDF=0"
+                "+(text orthonormal If so write the corresponding) +(printed page 535) --QDF=0",
+                "+(exercise 7.12) +(printed page 535) --QDF=0",
+                "+(exercise 7.13) +(printed page 535) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1804,8 +1813,9 @@
             }
           },
           "queries": [
-            "+(7.15) +(printed page 535) --QDF=0",
-            "+(whether inner products, angles, and distances are) +(printed page 535) --QDF=0"
+            "+(text whether inner products angles and distances are) +(printed page 535) --QDF=0",
+            "+(exercise 7.15) +(printed page 535) --QDF=0",
+            "+(exercise 7.16) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1874,8 +1884,8 @@
             "end_before": null
           },
           "queries": [
-            "+(7.16) +(printed page 535) --QDF=0",
-            "+(Example 7.5, compute the transform of 4) +(printed page 535) --QDF=0"
+            "+(text Example 7.5 compute the transform of 4) +(printed page 535) --QDF=0",
+            "+(exercise 7.16) +(printed page 535) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2026,8 +2036,9 @@
             }
           },
           "queries": [
-            "+(7.17) +(printed page 536) --QDF=0",
-            "+(* Write a pair of 2-D transform matrix equations) +(printed page 536) --QDF=0"
+            "+(text Write a pair of 2-D transform matrix equations) +(printed page 536) --QDF=0",
+            "+(exercise 7.17) +(printed page 536) --QDF=0",
+            "+(exercise 7.18) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2099,8 +2110,9 @@
             }
           },
           "queries": [
-            "+(7.18) +(printed page 536) --QDF=0",
-            "+(Write a pair of 2-D transform matrix equations) +(printed page 536) --QDF=0"
+            "+(text Write a pair of 2-D transform matrix equations) +(printed page 536) --QDF=0",
+            "+(exercise 7.18) +(printed page 536) --QDF=0",
+            "+(exercise 7.19) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2172,8 +2184,9 @@
             }
           },
           "queries": [
-            "+(7.19) +(printed page 536) --QDF=0",
-            "+(Show that Eq. (7-59) of Example 7.6 is equivalent) +(printed page 536) --QDF=0"
+            "+(text Show that Eq 7-59 of Example 7.6 is equivalent) +(printed page 536) --QDF=0",
+            "+(exercise 7.19) +(printed page 536) --QDF=0",
+            "+(exercise 7.20) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2411,8 +2424,9 @@
             }
           },
           "queries": [
-            "+(7.20) +(printed page 536) --QDF=0",
-            "+(* Prove that the DFT expansion functions of) +(printed page 536) --QDF=0"
+            "+(text Prove that the DFT expansion functions of) +(printed page 536) --QDF=0",
+            "+(exercise 7.20) +(printed page 536) --QDF=0",
+            "+(exercise 7.21) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2568,8 +2582,9 @@
             }
           },
           "queries": [
-            "+(7.21) +(printed page 536) --QDF=0",
-            "+(7-52) +(printed page 536) --QDF=0"
+            "+(equation 7-52) +(printed page 536) --QDF=0",
+            "+(exercise 7.21) +(printed page 536) --QDF=0",
+            "+(exercise 7.22) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2725,8 +2740,9 @@
             }
           },
           "queries": [
-            "+(7.22) +(printed page 536) --QDF=0",
-            "+(sion functions deﬁned in Eq. (7-56), derive an) +(printed page 536) --QDF=0"
+            "+(text sion functions de ned in Eq 7-56 derive an) +(printed page 536) --QDF=0",
+            "+(exercise 7.22) +(printed page 536) --QDF=0",
+            "+(exercise 7.23) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2882,8 +2898,9 @@
             }
           },
           "queries": [
-            "+(7.23) +(printed page 536) --QDF=0",
-            "+(arbitrary vector r of length r and angle u, compute) +(printed page 536) --QDF=0"
+            "+(text arbitrary vector r of length r and angle u compute) +(printed page 536) --QDF=0",
+            "+(exercise 7.23) +(printed page 536) --QDF=0",
+            "+(exercise 7.24) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2955,8 +2972,9 @@
             }
           },
           "queries": [
-            "+(7.24) +(printed page 536) --QDF=0",
-            "+(* Prove that the Fourier transform of time-scaled) +(printed page 536) --QDF=0"
+            "+(text Prove that the Fourier transform of time-scaled) +(printed page 536) --QDF=0",
+            "+(exercise 7.24) +(printed page 536) --QDF=0",
+            "+(exercise 7.25) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3112,8 +3130,9 @@
             }
           },
           "queries": [
-            "+(7.25) +(printed page 536) --QDF=0",
-            "+(7-80) +(printed page 536) --QDF=0"
+            "+(equation 7-80) +(printed page 536) --QDF=0",
+            "+(exercise 7.25) +(printed page 536) --QDF=0",
+            "+(exercise 7.26) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3269,8 +3288,9 @@
             }
           },
           "queries": [
-            "+(7.26) +(printed page 536) --QDF=0",
-            "+(Obtain the Hartley transfomation matrix for) +(printed page 536) --QDF=0"
+            "+(text Obtain the Hartley transfomation matrix for) +(printed page 536) --QDF=0",
+            "+(exercise 7.26) +(printed page 536) --QDF=0",
+            "+(exercise 7.27) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3342,8 +3362,9 @@
             }
           },
           "queries": [
-            "+(7.27) +(printed page 536) --QDF=0",
-            "+(tions of the form given in Eqs. (7-57) and (7-58)) +(printed page 536) --QDF=0"
+            "+(text tions of the form given in Eqs 7-57 and 7-58) +(printed page 536) --QDF=0",
+            "+(exercise 7.27) +(printed page 536) --QDF=0",
+            "+(exercise 7.28) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3394,9 +3415,7 @@
           },
           "queries": [
             "+(equation 7-57) +(printed page 476) --QDF=0",
-            "+(equation 7-58) +(printed page 476) --QDF=0",
-            "+(7-57) +(equation) +(printed page 476) --QDF=0",
-            "+(7-58) +(equation) +(printed page 476) --QDF=0"
+            "+(equation 7-58) +(printed page 476) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3551,8 +3570,9 @@
             }
           },
           "queries": [
-            "+(7.28) +(printed page 536) --QDF=0",
-            "+(1-D DCT is that it can be computed by using the) +(printed page 536) --QDF=0"
+            "+(text 1-D DCT is that it can be computed by using the) +(printed page 536) --QDF=0",
+            "+(exercise 7.28) +(printed page 536) --QDF=0",
+            "+(exercise 7.29) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3624,8 +3644,9 @@
             }
           },
           "queries": [
-            "+(7.29) +(printed page 536) --QDF=0",
-            "+(tion in (b) from its discrete Fourier transform.) +(printed page 536) --QDF=0"
+            "+(text tion in b from its discrete Fourier transform) +(printed page 536) --QDF=0",
+            "+(exercise 7.29) +(printed page 536) --QDF=0",
+            "+(exercise 7.30) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3713,9 +3734,7 @@
           },
           "queries": [
             "+(equation 7-86) +(printed page 489) --QDF=0",
-            "+(equation 7-87) +(printed page 489) --QDF=0",
-            "+(7-86) +(equation) +(printed page 489) --QDF=0",
-            "+(7-87) +(equation) +(printed page 489) --QDF=0"
+            "+(equation 7-87) +(printed page 489) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3756,9 +3775,7 @@
           },
           "queries": [
             "+(equation 7-88) +(printed page 490) --QDF=0",
-            "+(equation 7-89) +(printed page 490) --QDF=0",
-            "+(7-88) +(equation) +(printed page 490) --QDF=0",
-            "+(7-89) +(equation) +(printed page 490) --QDF=0"
+            "+(equation 7-89) +(printed page 490) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4045,8 +4062,9 @@
             }
           },
           "queries": [
-            "+(7.30) +(printed page 536) --QDF=0",
-            "+(Compute the basis images of the Haar transform) +(printed page 536) --QDF=0"
+            "+(text Compute the basis images of the Haar transform) +(printed page 536) --QDF=0",
+            "+(exercise 7.30) +(printed page 536) --QDF=0",
+            "+(exercise 7.31) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4118,8 +4136,9 @@
             }
           },
           "queries": [
-            "+(7.31) +(printed page 536) --QDF=0",
-            "+(Create a table mapping the rows of Hadamard-) +(printed page 536) --QDF=0"
+            "+(text Create a table mapping the rows of Hadamard) +(printed page 536) --QDF=0",
+            "+(exercise 7.31) +(printed page 536) --QDF=0",
+            "+(exercise 7.32) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4191,8 +4210,9 @@
             }
           },
           "queries": [
-            "+(7.32) +(printed page 536) --QDF=0",
-            "+(Obtain the slant transformation matrix for N = 8.) +(printed page 536) --QDF=0"
+            "+(text Obtain the slant transformation matrix for N 8) +(printed page 536) --QDF=0",
+            "+(exercise 7.32) +(printed page 536) --QDF=0",
+            "+(exercise 7.33) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4264,8 +4284,9 @@
             }
           },
           "queries": [
-            "+(7.33) +(printed page 536) --QDF=0",
-            "+(Derive the Haar scaling coefﬁcients from) +(printed page 536) --QDF=0"
+            "+(text Derive the Haar scaling coef cients from) +(printed page 536) --QDF=0",
+            "+(exercise 7.33) +(printed page 536) --QDF=0",
+            "+(exercise 7.34) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4502,8 +4523,9 @@
             }
           },
           "queries": [
-            "+(7.34) +(printed page 536) --QDF=0",
-            "+(does not satisfy the second requirement of a mul-) +(printed page 536) --QDF=0"
+            "+(text does not satisfy the second requirement of a mul) +(printed page 536) --QDF=0",
+            "+(exercise 7.34) +(printed page 536) --QDF=0",
+            "+(exercise 7.35) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4575,8 +4597,9 @@
             }
           },
           "queries": [
-            "+(7.35) +(printed page 536) --QDF=0",
-            "+(7-140) +(printed page 536) --QDF=0"
+            "+(equation 7-140) +(printed page 536) --QDF=0",
+            "+(exercise 7.35) +(printed page 536) --QDF=0",
+            "+(exercise 7.36) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4732,8 +4755,9 @@
             }
           },
           "queries": [
-            "+(7.36) +(printed page 536) --QDF=0",
-            "+(scaling function deﬁnition of Eq. (7-122) to draw) +(printed page 536) --QDF=0"
+            "+(text scaling function de nition of Eq 7-122 to draw) +(printed page 536) --QDF=0",
+            "+(exercise 7.36) +(printed page 536) --QDF=0",
+            "+(exercise 7.37) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4889,8 +4913,9 @@
             }
           },
           "queries": [
-            "+(7.37) +(printed page 536) --QDF=0",
-            "+(tion. Write an expression for c33) +(printed page 536) --QDF=0"
+            "+(text tion Write an expression for c33) +(printed page 536) --QDF=0",
+            "+(exercise 7.37) +(printed page 536) --QDF=0",
+            "+(exercise 7.38) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4962,8 +4987,9 @@
             }
           },
           "queries": [
-            "+(7.38) +(printed page 536) --QDF=0",
-            "+(express V3 as a function of scaling space V0 and) +(printed page 536) --QDF=0"
+            "+(text express V3 as a function of scaling space V0 and) +(printed page 536) --QDF=0",
+            "+(exercise 7.38) +(printed page 536) --QDF=0",
+            "+(exercise 7.39) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5119,8 +5145,9 @@
             }
           },
           "queries": [
-            "+(7.39) +(printed page 536) --QDF=0",
-            "+(pare to the example, where the starting scale was) +(printed page 536) --QDF=0"
+            "+(text pare to the example where the starting scale was) +(printed page 536) --QDF=0",
+            "+(exercise 7.39) +(printed page 536) --QDF=0",
+            "+(exercise 7.40) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5273,8 +5300,8 @@
             "end_before": null
           },
           "queries": [
-            "+(7.40) +(printed page 536) --QDF=0",
-            "+(The DWT in Eqs. (7-137) and (7-138) is for a) +(printed page 536) --QDF=0"
+            "+(text The DWT in Eqs 7-137 and 7-138 is for a) +(printed page 536) --QDF=0",
+            "+(exercise 7.40) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5320,8 +5347,8 @@
             }
           },
           "queries": [
-            "+((a) * Rewrite these equations for any starting) +(printed page 537) --QDF=0",
-            "+((a) * Rewrite these equations for any starting) +(Problems) +(printed page 537) --QDF=0"
+            "+(text a Rewrite these equations for any starting) +(printed page 537) --QDF=0",
+            "+(exercise 7.41) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5364,9 +5391,7 @@
           },
           "queries": [
             "+(equation 7-137) +(printed page 512) --QDF=0",
-            "+(equation 7-138) +(printed page 512) --QDF=0",
-            "+(7-137) +(equation) +(printed page 512) --QDF=0",
-            "+(7-138) +(equation) +(printed page 512) --QDF=0"
+            "+(equation 7-138) +(printed page 512) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5521,8 +5546,9 @@
             }
           },
           "queries": [
-            "+(7.41) +(printed page 537) --QDF=0",
-            "+(* Draw the FWT ﬁlter bank required to compute) +(printed page 537) --QDF=0"
+            "+(text Draw the FWT lter bank required to compute) +(printed page 537) --QDF=0",
+            "+(exercise 7.41) +(printed page 537) --QDF=0",
+            "+(exercise 7.42) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5572,10 +5598,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text The DWT in Eqs. (7-137) and (7-138) is for a) +(printed page 536) --QDF=0",
-            "+(exercise 7.40) +(printed page 536) --QDF=0",
-            "+(7.40) +(printed page 536) --QDF=0",
-            "+(The DWT in Eqs. (7-137) and (7-138) is for a) +(printed page 536) --QDF=0"
+            "+(text The DWT in Eqs 7-137 and 7-138 is for a) +(printed page 536) --QDF=0",
+            "+(exercise 7.40) +(printed page 536) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5621,10 +5645,8 @@
             }
           },
           "queries": [
-            "+(text (a) * Rewrite these equations for any starting) +(printed page 537) --QDF=0",
-            "+(exercise 7.41) +(printed page 537) --QDF=0",
-            "+((a) * Rewrite these equations for any starting) +(printed page 537) --QDF=0",
-            "+((a) * Rewrite these equations for any starting) +(Problems) +(printed page 537) --QDF=0"
+            "+(text a Rewrite these equations for any starting) +(printed page 537) --QDF=0",
+            "+(exercise 7.41) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5675,8 +5697,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(7.40) +(printed page 536) --QDF=0",
-                "+(The DWT in Eqs. (7-137) and (7-138) is for a) +(printed page 536) --QDF=0"
+                "+(text The DWT in Eqs 7-137 and 7-138 is for a) +(printed page 536) --QDF=0",
+                "+(exercise 7.40) +(printed page 536) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -5722,8 +5744,8 @@
                 }
               },
               "queries": [
-                "+((a) * Rewrite these equations for any starting) +(printed page 537) --QDF=0",
-                "+((a) * Rewrite these equations for any starting) +(Problems) +(printed page 537) --QDF=0"
+                "+(text a Rewrite these equations for any starting) +(printed page 537) --QDF=0",
+                "+(exercise 7.41) +(printed page 537) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -5790,8 +5812,9 @@
             }
           },
           "queries": [
-            "+(7.42) +(printed page 537) --QDF=0",
-            "+(wavelet transform is O(N). That is, the number of) +(printed page 537) --QDF=0"
+            "+(text wavelet transform is O N That is the number of) +(printed page 537) --QDF=0",
+            "+(exercise 7.42) +(printed page 537) --QDF=0",
+            "+(exercise 7.43) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5863,8 +5886,9 @@
             }
           },
           "queries": [
-            "+(7.43) +(printed page 537) --QDF=0",
-            "+(bank of Fig. 7.24(a) is the Haar scaling func-) +(printed page 537) --QDF=0"
+            "+(text bank of Fig 7.24 a is the Haar scaling func) +(printed page 537) --QDF=0",
+            "+(exercise 7.43) +(printed page 537) --QDF=0",
+            "+(exercise 7.44) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6018,8 +6042,9 @@
             }
           },
           "queries": [
-            "+(7.44) +(printed page 537) --QDF=0",
-            "+(Draw the required ﬁlter bank and label all inputs) +(printed page 537) --QDF=0"
+            "+(text Draw the required lter bank and label all inputs) +(printed page 537) --QDF=0",
+            "+(exercise 7.44) +(printed page 537) --QDF=0",
+            "+(exercise 7.45) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6091,8 +6116,9 @@
             }
           },
           "queries": [
-            "+(7.45) +(printed page 537) --QDF=0",
-            "+(image after it has been shifted one pixel to the) +(printed page 537) --QDF=0"
+            "+(text image after it has been shifted one pixel to the) +(printed page 537) --QDF=0",
+            "+(exercise 7.45) +(printed page 537) --QDF=0",
+            "+(exercise 7.46) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6164,8 +6190,9 @@
             }
           },
           "queries": [
-            "+(7.46) +(printed page 537) --QDF=0",
-            "+(sions for determining them. Then order the basis) +(printed page 537) --QDF=0"
+            "+(text sions for determining them Then order the basis) +(printed page 537) --QDF=0",
+            "+(exercise 7.46) +(printed page 537) --QDF=0",
+            "+(exercise 7.47) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6234,8 +6261,8 @@
             "end_before": null
           },
           "queries": [
-            "+(7.47) +(printed page 537) --QDF=0",
-            "+(A wavelet packet decomposition of the vase from) +(printed page 537) --QDF=0"
+            "+(text A wavelet packet decomposition of the vase from) +(printed page 537) --QDF=0",
+            "+(exercise 7.47) +(printed page 537) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6278,8 +6305,8 @@
             }
           },
           "queries": [
-            "+(ysis tree, labeling all nodes with the names of) +(printed page 538) --QDF=0",
-            "+(ysis tree, labeling all nodes with the names of) +(Problems) +(printed page 538) --QDF=0"
+            "+(text ysis tree labeling all nodes with the names of) +(printed page 538) --QDF=0",
+            "+(exercise 7.48) +(printed page 538) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6425,8 +6452,8 @@
             "end_before": null
           },
           "queries": [
-            "+(7.48) +(printed page 538) --QDF=0",
-            "+(mal tree, labeling the nodes with the computed) +(printed page 538) --QDF=0"
+            "+(text mal tree labeling the nodes with the computed) +(printed page 538) --QDF=0",
+            "+(exercise 7.48) +(printed page 538) --QDF=0"
           ],
           "required_evidence": [
             {

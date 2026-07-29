@@ -13,6 +13,8 @@ from app.models.locator import (
     PageReference,
     PageRetrievalStep,
     StrictModel,
+    query_parentheses_balanced,
+    query_safe_anchor,
 )
 
 EXERCISE_ID_PATTERN = r"^\d+\.\d+$"
@@ -123,22 +125,25 @@ class ExerciseLocator(StrictModel):
             raise ValueError("exercise reference targets must be unique")
         if ("exercise", self.exercise_id) in references:
             raise ValueError("exercise cannot reference itself")
-        if self.reference_retrieval_plan:
-            if [step.sequence for step in self.reference_retrieval_plan] != list(
-                range(1, len(self.reference_retrieval_plan) + 1)
-            ):
-                raise ValueError(
-                    "reference retrieval plan sequence must be contiguous and start at 1"
-                )
-            for step in self.reference_retrieval_plan:
+        all_plans = [self.problem_retrieval_plan, self.reference_retrieval_plan]
+        all_plans.extend(target.retrieval_plan for target in self.reference_targets)
+        for plan_to_validate in all_plans:
+            for step in plan_to_validate:
+                if any(not query_parentheses_balanced(query) for query in step.queries):
+                    raise ValueError("exercise retrieval queries must have balanced parentheses")
                 for evidence in step.required_evidence:
                     if evidence.kind == "printed_page_equals":
                         continue
-                    folded_value = evidence.value.casefold()
-                    if not any(folded_value in query.casefold() for query in step.queries):
+                    folded_anchor = query_safe_anchor(evidence.value).casefold()
+                    if not any(folded_anchor in query.casefold() for query in step.queries):
                         raise ValueError(
-                            "every non-page reference evidence must have a matching query anchor"
+                            "every non-page exercise evidence must have a matching safe query anchor"
                         )
+
+        if self.reference_retrieval_plan and [
+            step.sequence for step in self.reference_retrieval_plan
+        ] != list(range(1, len(self.reference_retrieval_plan) + 1)):
+            raise ValueError("reference retrieval plan sequence must be contiguous and start at 1")
         return self
 
 

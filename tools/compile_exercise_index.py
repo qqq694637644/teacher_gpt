@@ -29,6 +29,8 @@ from app.models.locator import (
     EvidenceRequirement,
     PageCoverage,
     PageRetrievalStep,
+    query_parentheses_balanced,
+    query_safe_anchor,
 )
 from app.repositories.locator_repository import LocatorRepository
 from app.services.exercise_index_compiler import ExerciseIndexCompiler, ReferencePlanMap
@@ -322,12 +324,17 @@ def verify_manifest_anchors(
                         f"page {step.page.printed_page_label}: {evidence.kind}={evidence.value!r}"
                     )
             anchors = [
-                clean_text(item.value)
+                query_safe_anchor(clean_text(item.value))
                 for item in step.required_evidence
                 if item.kind != "printed_page_equals"
             ]
             for query in step.queries:
                 query_count += 1
+                if not query_parentheses_balanced(query):
+                    raise ValueError(
+                        f"query has unbalanced parentheses for exercise {node.exercise_id}: "
+                        f"{query!r}"
+                    )
                 folded = clean_text(query.replace("--QDF=0", "")).casefold()
                 if step.page.printed_page_label.casefold() not in folded:
                     raise ValueError(
@@ -483,6 +490,27 @@ def write_compiled_exercise_package(
     }
 
 
+def compiled_query_metrics(compiled: CompiledExerciseIndex) -> dict[str, int]:
+    query_count = 0
+    unbalanced_query_count = 0
+    steps_without_balanced_query = 0
+    for locator in compiled.exercises.values():
+        plans = [locator.problem_retrieval_plan, locator.reference_retrieval_plan]
+        plans.extend(target.retrieval_plan for target in locator.reference_targets)
+        for plan in plans:
+            for step in plan:
+                balanced = [query_parentheses_balanced(query) for query in step.queries]
+                query_count += len(step.queries)
+                unbalanced_query_count += sum(not item for item in balanced)
+                if not any(balanced):
+                    steps_without_balanced_query += 1
+    return {
+        "compiled_query_count": query_count,
+        "unbalanced_compiled_query_count": unbalanced_query_count,
+        "steps_without_balanced_query_count": steps_without_balanced_query,
+    }
+
+
 def _missing_exercise_numbers(exercise_ids: list[str]) -> list[int]:
     numbers = sorted(int(exercise_id.split(".", 1)[1]) for exercise_id in exercise_ids)
     if not numbers:
@@ -558,6 +586,7 @@ def main() -> None:
         "deduplicated_reference_retrieval_step_count": (
             compiler.reference_plan_stats.deduplicated_reference_step_count
         ),
+        **compiled_query_metrics(compiled),
         "chapter_reports": chapter_reports,
         "structural_validation_status": "passed",
         **verification,

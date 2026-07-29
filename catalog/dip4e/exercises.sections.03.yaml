@@ -74,7 +74,7 @@ exercises:
         value: '3.3'
     queries:
     - +(3.2) +(printed page 196) --QDF=0
-    - +(tions from low to high intensity values. Your) +(printed page 196) --QDF=0
+    - +(tions from low to high intensity values Your) +(printed page 196) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '196'
@@ -125,7 +125,7 @@ exercises:
         value: '3.4'
     queries:
     - +(3.3) +(printed page 196) --QDF=0
-    - +((d) If the method is general, how would it be dif-) +(printed page 196) --QDF=0
+    - +(d If the method is general how would it be dif) +(printed page 196) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '196'
@@ -221,7 +221,7 @@ exercises:
       end_before: null
     queries:
     - +(3.5) +(printed page 196) --QDF=0
-    - +((a) * What effect would setting to zero the lower-) +(printed page 196) --QDF=0
+    - +(a What effect would setting to zero the lower) +(printed page 196) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '196'
@@ -293,7 +293,7 @@ exercises:
         value: '3.7'
     queries:
     - +(3.6) +(printed page 197) --QDF=0
-    - +(technique does not yield a ﬂat histogram in gen-) +(printed page 197) --QDF=0
+    - +(technique does not yield a at histogram in gen) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -340,7 +340,7 @@ exercises:
         value: '3.8'
     queries:
     - +(3.7) +(printed page 197) --QDF=0
-    - +(Suppose that a digital image is subjected to histo-) +(printed page 197) --QDF=0
+    - +(Suppose that a digital image is subjected to histo) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -445,7 +445,7 @@ exercises:
         value: '3.10'
     queries:
     - +(3.9) +(printed page 197) --QDF=0
-    - +(and (b) in Section 3.3 only if none of the) +(printed page 197) --QDF=0
+    - +(and b in Section 3.3 only if none of the) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -506,7 +506,7 @@ exercises:
         value: '3.11'
     queries:
     - +(3.10) +(printed page 197) --QDF=0
-    - +(values of the pixels in f and g) under which you) +(printed page 197) --QDF=0
+    - +(values of the pixels in f and g under which you) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -604,7 +604,7 @@ exercises:
         value: '3.13'
     queries:
     - +(3.12) +(printed page 197) --QDF=0
-    - +(image so that they will have the speciﬁed pz) +(printed page 197) --QDF=0
+    - +(image so that they will have the speci ed pz) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -651,7 +651,7 @@ exercises:
         value: '3.14'
     queries:
     - +(3.13) +(printed page 197) --QDF=0
-    - +(two end points. Does this property always hold) +(printed page 197) --QDF=0
+    - +(two end points Does this property always hold) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -712,7 +712,7 @@ exercises:
         value: '3.15'
     queries:
     - +(3.14) +(printed page 197) --QDF=0
-    - +(in Section 3.3 requires that a histogram be com-) +(printed page 197) --QDF=0
+    - +(in Section 3.3 requires that a histogram be com) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -763,7 +763,7 @@ exercises:
         value: '3.16'
     queries:
     - +(3.15) +(printed page 197) --QDF=0
-    - +(What is the behavior of Eq. (3-35) when a) +(printed page 197) --QDF=0
+    - +(What is the behavior of Eq 3-35 when a) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -815,7 +815,7 @@ exercises:
         value: '3.17'
     queries:
     - +(3.16) +(printed page 197) --QDF=0
-    - +(tion or convolution. Give the details of a test you) +(printed page 197) --QDF=0
+    - +(tion or convolution Give the details of a test you) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -860,7 +860,7 @@ exercises:
       end_before: null
     queries:
     - +(3.17) +(printed page 197) --QDF=0
-    - +(* We mentioned in Section 3.4 that to perform con-) +(printed page 197) --QDF=0
+    - +(We mentioned in Section 3.4 that to perform con) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -887,8 +887,8 @@ exercises:
         kind: exercise
         value: '3.18'
     queries:
-    - +(and show that the result of your expansion corre-) +(printed page 198) --QDF=0
-    - +(and show that the result of your expansion corre-) +(Problems) +(printed page 198) --QDF=0
+    - +(and show that the result of your expansion corre) +(printed page 198) --QDF=0
+    - +(and show that the result of your expansion corre) +(Problems) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
@@ -946,7 +946,7 @@ exercises:
         value: '3.19'
     queries:
     - +(3.18) +(printed page 198) --QDF=0
-    - +(large ellipse in Fig. 3.28 when the kernel is) +(printed page 198) --QDF=0
+    - +(large ellipse in Fig 3.28 when the kernel is) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
@@ -997,7 +997,7 @@ exercises:
         value: '3.20'
     queries:
     - +(3.19) +(printed page 198) --QDF=0
-    - +(* Prove the validity of Eqs. (3-36) and (3-37).) +(printed page 198) --QDF=0
+    - +(Prove the validity of Eqs 3-36 and 3-37) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
@@ -1109,7 +1109,7 @@ exercises:
         value: '3.22'
     queries:
     - +(3.21) +(printed page 198) --QDF=0
-    - +(Given the following kernel and image:) +(printed page 198) --QDF=0
+    - +(Given the following kernel and image) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
@@ -1156,7 +1156,7 @@ exercises:
         value: '3.23'
     queries:
     - +(3.22) +(printed page 198) --QDF=0
-    - +((b) The following kernel is separable. Find w1) +(printed page 198) --QDF=0
+    - +(b The following kernel is separable Find w1) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
@@ -1203,7 +1203,7 @@ exercises:
         value: '3.24'
     queries:
     - +(3.23) +(printed page 198) --QDF=0
-    - +(metric, it can be expressed in the form) +(printed page 198) --QDF=0
+    - +(metric it can be expressed in the form) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
@@ -1264,7 +1264,7 @@ exercises:
         value: '3.25'
     queries:
     - +(3.24) +(printed page 198) --QDF=0
-    - +(be of the same length. You may use a graphical) +(printed page 198) --QDF=0
+    - +(be of the same length You may use a graphical) +(printed page 198) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '198'
@@ -1362,7 +1362,7 @@ exercises:
         value: '3.27'
     queries:
     - +(3.26) +(printed page 199) --QDF=0
-    - +((b) If your answer is no, either sketch the two) +(printed page 199) --QDF=0
+    - +(b If your answer is no either sketch the two) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1409,7 +1409,7 @@ exercises:
         value: '3.28'
     queries:
     - +(3.27) +(printed page 199) --QDF=0
-    - +((a) * What is the size of the single Gaussian ker-) +(printed page 199) --QDF=0
+    - +(a What is the size of the single Gaussian ker) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1456,7 +1456,7 @@ exercises:
         value: '3.29'
     queries:
     - +(3.28) +(printed page 199) --QDF=0
-    - +(posite ﬁlter, w, is formed as the convolution of) +(printed page 199) --QDF=0
+    - +(posite lter w is formed as the convolution of) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1503,7 +1503,7 @@ exercises:
         value: '3.30'
     queries:
     - +(3.29) +(printed page 199) --QDF=0
-    - +(* Discuss the limiting effect of repeatedly ﬁltering) +(printed page 199) --QDF=0
+    - +(Discuss the limiting effect of repeatedly ltering) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1601,7 +1601,7 @@ exercises:
         value: '3.32'
     queries:
     - +(3.31) +(printed page 199) --QDF=0
-    - +(values in the original and ﬁltered images is the) +(printed page 199) --QDF=0
+    - +(values in the original and ltered images is the) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1648,7 +1648,7 @@ exercises:
         value: '3.33'
     queries:
     - +(3.32) +(printed page 199) --QDF=0
-    - +(cients sum to 0. Show that the sum of the pixel) +(printed page 199) --QDF=0
+    - +(cients sum to 0 Show that the sum of the pixel) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1787,7 +1787,7 @@ exercises:
       end_before: null
     queries:
     - +(3.35) +(printed page 199) --QDF=0
-    - +(els. Suppose that we want to reduce the average) +(printed page 199) --QDF=0
+    - +(els Suppose that we want to reduce the average) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1814,8 +1814,8 @@ exercises:
         kind: exercise
         value: '3.36'
     queries:
-    - +(the (odd) size of the smallest box kernel that will) +(printed page 200) --QDF=0
-    - +(the (odd) size of the smallest box kernel that will) +(Problems) +(printed page 200) --QDF=0
+    - +(the odd size of the smallest box kernel that will) +(printed page 200) --QDF=0
+    - +(the odd size of the smallest box kernel that will) +(Problems) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -1863,7 +1863,7 @@ exercises:
         value: '3.37'
     queries:
     - +(3.36) +(printed page 200) --QDF=0
-    - +(ter is less than or equal to n22. In terms of) +(printed page 200) --QDF=0
+    - +(ter is less than or equal to n22 In terms of) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2004,7 +2004,7 @@ exercises:
         value: '3.40'
     queries:
     - +(3.39) +(printed page 200) --QDF=0
-    - +(* Show that the Laplacian deﬁned in Eq. (3-50) is) +(printed page 200) --QDF=0
+    - +(Show that the Laplacian de ned in Eq 3-50 is) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2061,7 +2061,7 @@ exercises:
         value: '3.41'
     queries:
     - +(3.40) +(printed page 200) --QDF=0
-    - +(* You saw in Fig. 3.46 that the Laplacian with a −8) +(printed page 200) --QDF=0
+    - +(You saw in Fig 3.46 that the Laplacian with a 8) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2112,7 +2112,7 @@ exercises:
         value: '3.42'
     queries:
     - +(3.41) +(printed page 200) --QDF=0
-    - +(the average image is obtained using a box ﬁlter of) +(printed page 200) --QDF=0
+    - +(the average image is obtained using a box lter of) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2159,7 +2159,7 @@ exercises:
         value: '3.43'
     queries:
     - +(3.42) +(printed page 200) --QDF=0
-    - +(age gives a result that is proportional to the un-) +(printed page 200) --QDF=0
+    - +(age gives a result that is proportional to the un) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2216,7 +2216,7 @@ exercises:
         value: '3.44'
     queries:
     - +(3.43) +(printed page 200) --QDF=0
-    - +(en in Eq. (3-58) is an isotropic operation (see) +(printed page 200) --QDF=0
+    - +(en in Eq 3-58 is an isotropic operation see) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2277,7 +2277,7 @@ exercises:
         value: '3.45'
     queries:
     - +(3.44) +(printed page 200) --QDF=0
-    - +(kernels separable? For those that are, ﬁnd vectors) +(printed page 200) --QDF=0
+    - +(kernels separable For those that are nd vectors) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2330,7 +2330,7 @@ exercises:
       end_before: null
     queries:
     - +(3.45) +(printed page 200) --QDF=0
-    - +(over the binary image to blur it, and thus create) +(printed page 200) --QDF=0
+    - +(over the binary image to blur it and thus create) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2378,7 +2378,7 @@ exercises:
         value: '3.47'
     queries:
     - +(3.46) +(printed page 201) --QDF=0
-    - +(it should. You are hired as a consultant to deter-) +(printed page 201) --QDF=0
+    - +(it should You are hired as a consultant to deter) +(printed page 201) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '201'
@@ -2431,7 +2431,7 @@ exercises:
       end_before: null
     queries:
     - +(3.47) +(printed page 201) --QDF=0
-    - +(light to artiﬁcial lighting. At no time is the scene) +(printed page 201) --QDF=0
+    - +(light to arti cial lighting At no time is the scene) +(printed page 201) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '201'

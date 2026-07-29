@@ -27,6 +27,7 @@ from app.models.locator import (
     PageCoverage,
     PageRange,
     PageReference,
+    query_safe_anchor,
 )
 from app.models.manifest import ManifestRetrievalStep
 from tools.extract_pdf_candidates import (
@@ -46,7 +47,7 @@ from tools.extract_pdf_candidates import (
 
 REFERENCE_PREFIXES = {
     "section": re.compile(r"\bSections?\s+", re.IGNORECASE),
-    "equation": re.compile(r"\b(?:Eqs?\.?|Equations?)\s*", re.IGNORECASE),
+    "equation": re.compile(r"\b(?:Equations?|Eqs?\.?)\s*", re.IGNORECASE),
     "figure": re.compile(r"\b(?:Figs?\.?|Figures?)\s+", re.IGNORECASE),
     "table": re.compile(r"\bTables?\s+", re.IGNORECASE),
     "example": re.compile(r"\bExamples?\s+", re.IGNORECASE),
@@ -335,10 +336,11 @@ def _build_problem_plan(
                     verification_mode="visual_required",
                 )
             )
-        primary_anchor = current.exercise_id if first else content_value
-        if content_value != primary_anchor:
+        primary_anchor = query_safe_anchor(current.exercise_id if first else content_value)
+        safe_content_value = query_safe_anchor(content_value)
+        if safe_content_value != primary_anchor:
             secondary_query = (
-                f"+({content_value}) +(printed page {page.printed_page_label}) --QDF=0"
+                f"+({safe_content_value}) +(printed page {page.printed_page_label}) --QDF=0"
             )
         else:
             secondary_query = (

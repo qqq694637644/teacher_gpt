@@ -27,7 +27,7 @@ exercises:
         value: '5.2'
     queries:
     - +(5.1) +(printed page 393) --QDF=0
-    - +(can be a brief verbal description of the result. For) +(printed page 393) --QDF=0
+    - +(can be a brief verbal description of the result For) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -74,7 +74,7 @@ exercises:
         value: '5.3'
     queries:
     - +(5.2) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a geometric mean ﬁlter.) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a geometric mean lter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -125,7 +125,7 @@ exercises:
         value: '5.4'
     queries:
     - +(5.3) +(printed page 393) --QDF=0
-    - +(* Repeat Problem 5.1 using a harmonic mean ﬁlter.) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a harmonic mean lter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -227,7 +227,7 @@ exercises:
         value: '5.6'
     queries:
     - +(5.5) +(printed page 393) --QDF=0
-    - +(* Repeat Problem 5.1 using a contraharmonic) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a contraharmonic) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -278,7 +278,7 @@ exercises:
         value: '5.7'
     queries:
     - +(5.6) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a median ﬁlter.) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a median lter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -329,7 +329,7 @@ exercises:
         value: '5.8'
     queries:
     - +(5.7) +(printed page 393) --QDF=0
-    - +(* Repeat Problem 5.1 using a max ﬁlter.) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a max lter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -380,7 +380,7 @@ exercises:
         value: '5.9'
     queries:
     - +(5.8) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a min ﬁlter.) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a min lter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -431,7 +431,7 @@ exercises:
         value: '5.10'
     queries:
     - +(5.9) +(printed page 393) --QDF=0
-    - +(* Repeat Problem 5.1 using a midpoint ﬁlter.) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a midpoint lter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -482,7 +482,7 @@ exercises:
         value: '5.11'
     queries:
     - +(5.10) +(printed page 393) --QDF=0
-    - +((a) * Explain why the ﬁlter is effective in eliminat-) +(printed page 393) --QDF=0
+    - +(a Explain why the lter is effective in eliminat) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -536,7 +536,7 @@ exercises:
       end_before: null
     queries:
     - +(5.11) +(printed page 393) --QDF=0
-    - '+(is so. (Hint: In order to focus on the key differ-) +(printed page 393) --QDF=0'
+    - +(is so Hint In order to focus on the key differ) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -585,7 +585,7 @@ exercises:
         value: '5.13'
     queries:
     - +(5.12) +(printed page 394) --QDF=0
-    - +(With reference to the alpha-trimmed ﬁlter deﬁned) +(printed page 394) --QDF=0
+    - +(With reference to the alpha-trimmed lter de ned) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -637,7 +637,7 @@ exercises:
         value: '5.14'
     queries:
     - +(5.13) +(printed page 394) --QDF=0
-    - +(functions in Table 4.7, obtain equations for the) +(printed page 394) --QDF=0
+    - +(functions in Table 4.7 obtain equations for the) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -689,7 +689,7 @@ exercises:
         value: '5.15'
     queries:
     - +(5.14) +(printed page 394) --QDF=0
-    - +(With reference to Eq. (5-33), obtain equations for:) +(printed page 394) --QDF=0
+    - +(With reference to Eq 5-33 obtain equations for) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -741,7 +741,7 @@ exercises:
         value: '5.16'
     queries:
     - +(5.15) +(printed page 394) --QDF=0
-    - +(Show that the Fourier transform of the 2-D dis-) +(printed page 394) --QDF=0
+    - +(Show that the Fourier transform of the 2-D dis) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -788,7 +788,7 @@ exercises:
         value: '5.17'
     queries:
     - +(5.16) +(printed page 394) --QDF=0
-    - +(=, M is the same integer as before,) +(printed page 394) --QDF=0
+    - +(M is the same integer as before) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -839,7 +839,7 @@ exercises:
         value: '5.18'
     queries:
     - +(5.17) +(printed page 394) --QDF=0
-    - +(* Start with Eq. (5-46) and derive Eq. (5-48).) +(printed page 394) --QDF=0
+    - +(Start with Eq 5-46 and derive Eq 5-48) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -896,7 +896,7 @@ exercises:
         value: '5.19'
     queries:
     - +(5.18) +(printed page 394) --QDF=0
-    - +(lished that the system is linear and position invari-) +(printed page 394) --QDF=0
+    - +(lished that the system is linear and position invari) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -943,7 +943,7 @@ exercises:
         value: '5.20'
     queries:
     - +(5.19) +(printed page 394) --QDF=0
-    - +((b) * What would the spatial domain system response) +(printed page 394) --QDF=0
+    - +(b What would the spatial domain system response) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -990,7 +990,7 @@ exercises:
         value: '5.21'
     queries:
     - +(5.20) +(printed page 394) --QDF=0
-    - +(* Assuming now that x and y are continuous quanti-) +(printed page 394) --QDF=0
+    - +(Assuming now that x and y are continuous quanti) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -1050,7 +1050,7 @@ exercises:
         value: '5.22'
     queries:
     - +(5.21) +(printed page 394) --QDF=0
-    - +(that the input to the system is a binary image con-) +(printed page 394) --QDF=0
+    - +(that the input to the system is a binary image con) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -1100,7 +1100,7 @@ exercises:
       end_before: null
     queries:
     - +(5.22) +(printed page 394) --QDF=0
-    - +(solve the problem. All you have to do is list the) +(printed page 394) --QDF=0
+    - +(solve the problem All you have to do is list the) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -1148,7 +1148,7 @@ exercises:
         value: '5.24'
     queries:
     - +(5.23) +(printed page 395) --QDF=0
-    - +(ing at some point in the image. The image is input) +(printed page 395) --QDF=0
+    - +(ing at some point in the image The image is input) +(printed page 395) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '395'
@@ -1259,7 +1259,7 @@ exercises:
         value: '5.26'
     queries:
     - +(5.25) +(printed page 395) --QDF=0
-    - +(opening and closing times are negligible also, give) +(printed page 395) --QDF=0
+    - +(opening and closing times are negligible also give) +(printed page 395) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '395'
@@ -1306,7 +1306,7 @@ exercises:
         value: '5.27'
     queries:
     - +(5.26) +(printed page 395) --QDF=0
-    - +(uv ﬁrst, and then use it as the basis for) +(printed page 395) --QDF=0
+    - +(uv rst and then use it as the basis for) +(printed page 395) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '395'
@@ -1353,7 +1353,7 @@ exercises:
         value: '5.28'
     queries:
     - +(5.27) +(printed page 395) --QDF=0
-    - +(eration in the x-direction. If the image is at rest at) +(printed page 395) --QDF=0
+    - +(eration in the x-direction If the image is at rest at) +(printed page 395) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '395'
@@ -1400,7 +1400,7 @@ exercises:
         value: '5.29'
     queries:
     - +(5.28) +(printed page 395) --QDF=0
-    - +(rotation of the craft is also about its vertical axis,) +(printed page 395) --QDF=0
+    - +(rotation of the craft is also about its vertical axis) +(printed page 395) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '395'
@@ -1461,7 +1461,7 @@ exercises:
       end_before: null
     queries:
     - +(5.29) +(printed page 395) --QDF=0
-    - +(wide, 30 pixels long, and had an intensity value of) +(printed page 395) --QDF=0
+    - +(wide 30 pixels long and had an intensity value of) +(printed page 395) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '395'
@@ -1505,7 +1505,7 @@ exercises:
         value: '5.31'
     queries:
     - +(5.30) +(printed page 396) --QDF=0
-    - +(stant white in the top right of Fig. 5.29(g) with the) +(printed page 396) --QDF=0
+    - +(stant white in the top right of Fig 5.29 g with the) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -1616,7 +1616,7 @@ exercises:
         value: '5.33'
     queries:
     - +(5.32) +(printed page 396) --QDF=0
-    - +(tion, assuming that the ratio of power spectra of) +(printed page 396) --QDF=0
+    - +(tion assuming that the ratio of power spectra of) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -1667,7 +1667,7 @@ exercises:
         value: '5.34'
     queries:
     - +(5.33) +(printed page 396) --QDF=0
-    - '+((Hint: Study the solution to Problem 4.47.)) +(printed page 396) --QDF=0'
+    - +(Hint Study the solution to Problem 4.47) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -1723,7 +1723,7 @@ exercises:
         value: '5.35'
     queries:
     - +(5.34) +(printed page 396) --QDF=0
-    - +(Show how Eq. (5-98) follows from Eqs. (5-96) and) +(printed page 396) --QDF=0
+    - +(Show how Eq 5-98 follows from Eqs 5-96 and) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -1785,7 +1785,7 @@ exercises:
         value: '5.36'
     queries:
     - +(5.35) +(printed page 396) --QDF=0
-    - +(Using the transfer function in Problem 5.31, give) +(printed page 396) --QDF=0
+    - +(Using the transfer function in Problem 5.31 give) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -1836,7 +1836,7 @@ exercises:
         value: '5.37'
     queries:
     - +(5.36) +(printed page 396) --QDF=0
-    - +(* Assume that the model in Fig. 5.1 is linear and) +(printed page 396) --QDF=0
+    - +(Assume that the model in Fig 5.1 is linear and) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -1897,7 +1897,7 @@ exercises:
         value: '5.38'
     queries:
     - +(5.37) +(printed page 396) --QDF=0
-    - +(form similar to the last line of Eq. (5-81), and) +(printed page 396) --QDF=0
+    - +(form similar to the last line of Eq 5-81 and) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -1962,7 +1962,7 @@ exercises:
         value: '5.39'
     queries:
     - +(5.38) +(printed page 396) --QDF=0
-    - +(Show that, when a= 1 in Eq. (5-99), the geomet-) +(printed page 396) --QDF=0
+    - +(Show that when a 1 in Eq 5-99 the geomet) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -2014,7 +2014,7 @@ exercises:
         value: '5.40'
     queries:
     - +(5.39) +(printed page 396) --QDF=0
-    - +(coins crucial to his research are listed in the hold-) +(printed page 396) --QDF=0
+    - +(coins crucial to his research are listed in the hold) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -2059,7 +2059,7 @@ exercises:
       end_before: null
     queries:
     - +(5.40) +(printed page 396) --QDF=0
-    - +(astronomer that the unit is operating within speci-) +(printed page 396) --QDF=0
+    - +(astronomer that the unit is operating within speci) +(printed page 396) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '396'
@@ -2086,8 +2086,8 @@ exercises:
         kind: exercise
         value: '5.41'
     queries:
-    - +(point of light in the ﬁeld of view can be used to) +(printed page 397) --QDF=0
-    - +(point of light in the ﬁeld of view can be used to) +(Problems) +(printed page 397) --QDF=0
+    - +(point of light in the eld of view can be used to) +(printed page 397) --QDF=0
+    - +(point of light in the eld of view can be used to) +(Problems) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'
@@ -2131,7 +2131,7 @@ exercises:
         value: '5.42'
     queries:
     - +(5.41) +(printed page 397) --QDF=0
-    - +(white pixel in the center of the image. Assume a) +(printed page 397) --QDF=0
+    - +(white pixel in the center of the image Assume a) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'
@@ -2178,7 +2178,7 @@ exercises:
         value: '5.43'
     queries:
     - +(5.42) +(printed page 397) --QDF=0
-    - '+(smaller black disk in its center. (Hint: Take a look) +(printed page 397) --QDF=0'
+    - +(smaller black disk in its center Hint Take a look) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'
@@ -2229,7 +2229,7 @@ exercises:
         value: '5.44'
     queries:
     - +(5.43) +(printed page 397) --QDF=0
-    - +(Show that the Radon transform [Eq. (5-102)] of) +(printed page 397) --QDF=0
+    - +(Show that the Radon transform Eq 5-102 of) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'
@@ -2394,7 +2394,7 @@ exercises:
         value: '5.47'
     queries:
     - +(5.46) +(printed page 397) --QDF=0
-    - +(Provide the steps that lead from Eq. (5-113) to) +(printed page 397) --QDF=0
+    - +(Provide the steps that lead from Eq 5-113 to) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'
@@ -2451,7 +2451,7 @@ exercises:
         value: '5.48'
     queries:
     - +(5.47) +(printed page 397) --QDF=0
-    - +(* Prove the validity of Eq. (5-125).) +(printed page 397) --QDF=0
+    - +(Prove the validity of Eq 5-125) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'
@@ -2501,7 +2501,7 @@ exercises:
       end_before: null
     queries:
     - +(5.48) +(printed page 397) --QDF=0
-    - +(Prove the validity of Eq. (5-127).) +(printed page 397) --QDF=0
+    - +(Prove the validity of Eq 5-127) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'

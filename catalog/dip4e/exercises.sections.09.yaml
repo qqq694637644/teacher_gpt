@@ -27,7 +27,7 @@ exercises:
         value: '9.2'
     queries:
     - +(9.1) +(printed page 692) --QDF=0
-    - +(structuring elements. The dot indicates the origin) +(printed page 692) --QDF=0
+    - +(structuring elements The dot indicates the origin) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -74,7 +74,7 @@ exercises:
         value: '9.3'
     queries:
     - +(9.2) +(printed page 692) --QDF=0
-    - +(Sketch the result of eroding Fig. 9.3(a) with each) +(printed page 692) --QDF=0
+    - +(Sketch the result of eroding Fig 9.3 a with each) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -125,7 +125,7 @@ exercises:
         value: '9.4'
     queries:
     - +(9.3) +(printed page 692) --QDF=0
-    - +(within B. Give an example in which the erosion) +(printed page 692) --QDF=0
+    - +(within B Give an example in which the erosion) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -172,7 +172,7 @@ exercises:
         value: '9.5'
     queries:
     - +(9.4) +(printed page 692) --QDF=0
-    - +((a) * What do you think would happen if we erode) +(printed page 692) --QDF=0
+    - +(a What do you think would happen if we erode) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -266,7 +266,7 @@ exercises:
         value: '9.7'
     queries:
     - +(9.6) +(printed page 692) --QDF=0
-    - +((a) * Dilate Fig. 9.3(a) using the structuring element) +(printed page 692) --QDF=0
+    - +(a Dilate Fig 9.3 a using the structuring element) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -368,7 +368,7 @@ exercises:
         value: '9.9'
     queries:
     - +(9.8) +(printed page 692) --QDF=0
-    - +(With reference to the image at the top of the ﬁg-) +(printed page 692) --QDF=0
+    - +(With reference to the image at the top of the g) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -413,7 +413,7 @@ exercises:
       end_before: null
     queries:
     - +(9.9) +(printed page 692) --QDF=0
-    - +(ing ﬁgure, and refer to the structuring elements) +(printed page 692) --QDF=0
+    - +(ing gure and refer to the structuring elements) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -457,7 +457,7 @@ exercises:
         value: '9.11'
     queries:
     - +(9.10) +(printed page 693) --QDF=0
-    - +((b) What is the smallest set from which you can) +(printed page 693) --QDF=0
+    - +(b What is the smallest set from which you can) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -551,7 +551,7 @@ exercises:
         value: '9.13'
     queries:
     - +(9.12) +(printed page 693) --QDF=0
-    - +(Show that this deﬁnition is equivalent to the) +(printed page 693) --QDF=0
+    - +(Show that this de nition is equivalent to the) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -603,7 +603,7 @@ exercises:
         value: '9.14'
     queries:
     - +(9.13) +(printed page 693) --QDF=0
-    - +((a) Show that the deﬁnition of erosion given in) +(printed page 693) --QDF=0
+    - +(a Show that the de nition of erosion given in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -659,7 +659,7 @@ exercises:
         value: '9.15'
     queries:
     - +(9.14) +(printed page 693) --QDF=0
-    - +(Show that this deﬁnition and the deﬁnition in) +(printed page 693) --QDF=0
+    - +(Show that this de nition and the de nition in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -711,7 +711,7 @@ exercises:
         value: '9.16'
     queries:
     - +(9.15) +(printed page 693) --QDF=0
-    - +((a) Show that the deﬁnition of dilation given in) +(printed page 693) --QDF=0
+    - +(a Show that the de nition of dilation given in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -817,7 +817,7 @@ exercises:
       end_before: null
     queries:
     - +(9.17) +(printed page 693) --QDF=0
-    - +(black straight-line portions in (d) part of the) +(printed page 693) --QDF=0
+    - +(black straight-line portions in d part of the) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -869,7 +869,7 @@ exercises:
         value: '9.19'
     queries:
     - +(9.18) +(printed page 694) --QDF=0
-    - +((a) * Obtain the opening of the ﬁgure below using) +(printed page 694) --QDF=0
+    - +(a Obtain the opening of the gure below using) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -916,7 +916,7 @@ exercises:
         value: '9.20'
     queries:
     - +(9.19) +(printed page 694) --QDF=0
-    - +(integers. Discuss what the result will be in each) +(printed page 694) --QDF=0
+    - +(integers Discuss what the result will be in each) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -963,7 +963,7 @@ exercises:
         value: '9.21'
     queries:
     - +(9.20) +(printed page 694) --QDF=0
-    - +(Show the validity of the following duality expres-) +(printed page 694) --QDF=0
+    - +(Show the validity of the following duality expres) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1020,7 +1020,7 @@ exercises:
         value: '9.22'
     queries:
     - +(9.21) +(printed page 694) --QDF=0
-    - '+(Eq. (9-12) is valid. (Hint: Start with this equa-) +(printed page 694) --QDF=0'
+    - +(Eq 9-12 is valid Hint Start with this equa) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1076,7 +1076,7 @@ exercises:
         value: '9.23'
     queries:
     - +(9.22) +(printed page 694) --QDF=0
-    - +(Show the validity of the following expressions.) +(printed page 694) --QDF=0
+    - +(Show the validity of the following expressions) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1127,7 +1127,7 @@ exercises:
         value: '9.24'
     queries:
     - +(9.23) +(printed page 694) --QDF=0
-    - +(ment shown in the lower right of the image. Sketch) +(printed page 694) --QDF=0
+    - +(ment shown in the lower right of the image Sketch) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1174,7 +1174,7 @@ exercises:
         value: '9.25'
     queries:
     - +(9.24) +(printed page 694) --QDF=0
-    - +(wide. Assuming that all four sides of the border) +(printed page 694) --QDF=0
+    - +(wide Assuming that all four sides of the border) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1225,7 +1225,7 @@ exercises:
         value: '9.26'
     queries:
     - +(9.25) +(printed page 694) --QDF=0
-    - +(changes would occur in the erosion. What did) +(printed page 694) --QDF=0
+    - +(changes would occur in the erosion What did) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1274,7 +1274,7 @@ exercises:
       end_before: null
     queries:
     - +(9.26) +(printed page 694) --QDF=0
-    - +(Indicate clearly the origin and border you select-) +(printed page 694) --QDF=0
+    - +(Indicate clearly the origin and border you select) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1318,7 +1318,7 @@ exercises:
         value: '9.28'
     queries:
     - +(9.27) +(printed page 695) --QDF=0
-    - +(and has no branches. You do not need to (but you) +(printed page 695) --QDF=0
+    - +(and has no branches You do not need to but you) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1369,7 +1369,7 @@ exercises:
         value: '9.29'
     queries:
     - +(9.28) +(printed page 695) --QDF=0
-    - +(branches. You do not need to (but you may) state) +(printed page 695) --QDF=0
+    - +(branches You do not need to but you may state) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1420,7 +1420,7 @@ exercises:
         value: '9.30'
     queries:
     - +(9.29) +(printed page 695) --QDF=0
-    - +(assume that the curve is fully connected, it is one-) +(printed page 695) --QDF=0
+    - +(assume that the curve is fully connected it is one) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1471,7 +1471,7 @@ exercises:
         value: '9.31'
     queries:
     - +(9.30) +(printed page 695) --QDF=0
-    - +(rithm would be one of these three curves. The out-) +(printed page 695) --QDF=0
+    - +(rithm would be one of these three curves The out) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1518,7 +1518,7 @@ exercises:
         value: '9.32'
     queries:
     - +(9.31) +(printed page 695) --QDF=0
-    - '+(an erosion, of A. (Hint: Take a look at the deﬁni-) +(printed page 695) --QDF=0'
+    - +(an erosion of A Hint Take a look at the de ni) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1575,7 +1575,7 @@ exercises:
         value: '9.33'
     queries:
     - +(9.32) +(printed page 695) --QDF=0
-    - +(structuring element composed of all 1’s in the) +(printed page 695) --QDF=0
+    - +(structuring element composed of all 1 s in the) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1687,7 +1687,7 @@ exercises:
         value: '9.35'
     queries:
     - +(9.34) +(printed page 695) --QDF=0
-    - +(Sketch the convex hull of the large ﬁgure in Prob-) +(printed page 695) --QDF=0
+    - +(Sketch the convex hull of the large gure in Prob) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1734,7 +1734,7 @@ exercises:
         value: '9.36'
     queries:
     - +(9.35) +(printed page 695) --QDF=0
-    - +(Obtain the convex deﬁciency of set A shown in) +(printed page 695) --QDF=0
+    - +(Obtain the convex de ciency of set A shown in) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1835,7 +1835,7 @@ exercises:
         value: '9.38'
     queries:
     - +(9.37) +(printed page 696) --QDF=0
-    - +(to extract them all. Suppose that you are given a) +(printed page 696) --QDF=0
+    - +(to extract them all Suppose that you are given a) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -1933,7 +1933,7 @@ exercises:
         value: '9.40'
     queries:
     - +(9.39) +(printed page 696) --QDF=0
-    - +(With reference to the hole-ﬁlling algorithm in) +(printed page 696) --QDF=0
+    - +(With reference to the hole lling algorithm in) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -1990,7 +1990,7 @@ exercises:
         value: '9.41'
     queries:
     - +(9.40) +(printed page 696) --QDF=0
-    - +(* As explained in Eqs. (9-44) and (9-69), opening by) +(printed page 696) --QDF=0
+    - +(As explained in Eqs 9-44 and 9-69 opening by) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2047,7 +2047,7 @@ exercises:
         value: '9.42'
     queries:
     - +(9.41) +(printed page 696) --QDF=0
-    - +(element is symmetric about its origin, show that:) +(printed page 696) --QDF=0
+    - +(element is symmetric about its origin show that) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2094,7 +2094,7 @@ exercises:
         value: '9.43'
     queries:
     - +(9.42) +(printed page 696) --QDF=0
-    - +(struction by erosion (Section 9.6) are duals with) +(printed page 696) --QDF=0
+    - +(struction by erosion Section 9.6 are duals with) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2149,7 +2149,7 @@ exercises:
         value: '9.44'
     queries:
     - +(9.43) +(printed page 696) --QDF=0
-    - +(n successive erosions, starting with B; and) +(printed page 696) --QDF=0
+    - +(n successive erosions starting with B and) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2196,7 +2196,7 @@ exercises:
         value: '9.45'
     queries:
     - +(9.44) +(printed page 696) --QDF=0
-    - +(logical expressions. You may assume that the struc-) +(printed page 696) --QDF=0
+    - +(logical expressions You may assume that the struc) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2243,7 +2243,7 @@ exercises:
         value: '9.46'
     queries:
     - +(9.45) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following grayscale mor-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following grayscale mor) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2294,7 +2294,7 @@ exercises:
         value: '9.47'
     queries:
     - +(9.46) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following gray-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following gray) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2341,7 +2341,7 @@ exercises:
         value: '9.48'
     queries:
     - +(9.47) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following grayscale mor-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following grayscale mor) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2388,7 +2388,7 @@ exercises:
         value: '9.49'
     queries:
     - +(9.48) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following grayscale mor-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following grayscale mor) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2435,7 +2435,7 @@ exercises:
         value: '9.50'
     queries:
     - +(9.49) +(printed page 696) --QDF=0
-    - +(Prove the validity of the following gray-) +(printed page 696) --QDF=0
+    - +(Prove the validity of the following gray) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2480,7 +2480,7 @@ exercises:
       end_before: null
     queries:
     - +(9.50) +(printed page 696) --QDF=0
-    - +((a) Would you expect the method used to gen-) +(printed page 696) --QDF=0
+    - +(a Would you expect the method used to gen) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2507,8 +2507,8 @@ exercises:
         kind: exercise
         value: '9.51'
     queries:
-    - +((b) * If your answer to (a) is yes, sketch what the) +(printed page 697) --QDF=0
-    - +((b) * If your answer to (a) is yes, sketch what the) +(Problems) +(printed page 697) --QDF=0
+    - +(b If your answer to a is yes sketch what the) +(printed page 697) --QDF=0
+    - +(b If your answer to a is yes sketch what the) +(Problems) +(printed page 697) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '697'
@@ -2601,7 +2601,7 @@ exercises:
       end_before: null
     queries:
     - +(9.52) +(printed page 697) --QDF=0
-    - +(ers be inspected by an imaging system. In this con-) +(printed page 697) --QDF=0
+    - +(ers be inspected by an imaging system In this con) +(printed page 697) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '697'

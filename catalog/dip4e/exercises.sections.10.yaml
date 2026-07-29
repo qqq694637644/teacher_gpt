@@ -27,7 +27,7 @@ exercises:
         value: '10.2'
     queries:
     - +(10.1) +(printed page 804) --QDF=0
-    - +(of that term is, the lower the error will be in the) +(printed page 804) --QDF=0
+    - +(of that term is the lower the error will be in the) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -88,7 +88,7 @@ exercises:
         value: '10.3'
     queries:
     - +(10.2) +(printed page 804) --QDF=0
-    - +((a) * Show how Eq. (10-8) was obtained.) +(printed page 804) --QDF=0
+    - +(a Show how Eq 10-8 was obtained) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -145,7 +145,7 @@ exercises:
         value: '10.4'
     queries:
     - +(10.3) +(printed page 804) --QDF=0
-    - +(one-pixel breaks in these lines. Assume that the) +(printed page 804) --QDF=0
+    - +(one-pixel breaks in these lines Assume that the) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -192,7 +192,7 @@ exercises:
         value: '10.5'
     queries:
     - +(10.4) +(printed page 804) --QDF=0
-    - +(of a binary image. Assume that the lines are one) +(printed page 804) --QDF=0
+    - +(of a binary image Assume that the lines are one) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -239,7 +239,7 @@ exercises:
         value: '10.6'
     queries:
     - +(10.5) +(printed page 804) --QDF=0
-    - +(vertical lines to which the kernels in Figs. 10.6(a)) +(printed page 804) --QDF=0
+    - +(vertical lines to which the kernels in Figs 10.6 a) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -294,7 +294,7 @@ exercises:
         value: '10.7'
     queries:
     - +(10.6) +(printed page 804) --QDF=0
-    - +(Refer to Fig. 10.7 in answering the following ques-) +(printed page 804) --QDF=0
+    - +(Refer to Fig 10.7 in answering the following ques) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -345,7 +345,7 @@ exercises:
         value: '10.8'
     queries:
     - +(10.7) +(printed page 804) --QDF=0
-    - +(of the proﬁles that show what you would expect) +(printed page 804) --QDF=0
+    - +(of the pro les that show what you would expect) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -398,7 +398,7 @@ exercises:
       end_before: null
     queries:
     - +(10.8) +(printed page 804) --QDF=0
-    - +(Consider a horizontal intensity proﬁle through) +(printed page 804) --QDF=0
+    - +(Consider a horizontal intensity pro le through) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -425,8 +425,8 @@ exercises:
         kind: exercise
         value: '10.9'
     queries:
-    - +(edge and 1 on its right. Also, assume that the size) +(printed page 805) --QDF=0
-    - +(edge and 1 on its right. Also, assume that the size) +(Problems) +(printed page 805) --QDF=0
+    - +(edge and 1 on its right Also assume that the size) +(printed page 805) --QDF=0
+    - +(edge and 1 on its right Also assume that the size) +(Problems) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -470,7 +470,7 @@ exercises:
         value: '10.10'
     queries:
     - +(10.9) +(printed page 805) --QDF=0
-    - +(Sketch the gradient and Laplacian of each proﬁle.) +(printed page 805) --QDF=0
+    - +(Sketch the gradient and Laplacian of each pro le) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -521,7 +521,7 @@ exercises:
         value: '10.11'
     queries:
     - +(10.10) +(printed page 805) --QDF=0
-    - +((b) Show that the direction of steepest descent is) +(printed page 805) --QDF=0
+    - +(b Show that the direction of steepest descent is) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -583,7 +583,7 @@ exercises:
         value: '10.12'
     queries:
     - +(10.11) +(printed page 805) --QDF=0
-    - +(Prewitt kernels in Fig. 10.14 so that they give) +(printed page 805) --QDF=0
+    - +(Prewitt kernels in Fig 10.14 so that they give) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -634,7 +634,7 @@ exercises:
         value: '10.13'
     queries:
     - +(10.12) +(printed page 805) --QDF=0
-    - +(The ﬁnal result is then scaled by 19. Show that) +(printed page 805) --QDF=0
+    - +(The nal result is then scaled by 19 Show that) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -685,7 +685,7 @@ exercises:
         value: '10.14'
     queries:
     - +(10.13) +(printed page 805) --QDF=0
-    - +(using these coefﬁcients. As in Fig. 10.15, let N,) +(printed page 805) --QDF=0
+    - +(using these coef cients As in Fig 10.15 let N) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -734,7 +734,7 @@ exercises:
       end_before: null
     queries:
     - +(10.14) +(printed page 805) --QDF=0
-    - +(gx and gy are obtained using the Sobel ker-) +(printed page 805) --QDF=0
+    - +(gx and gy are obtained using the Sobel ker) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -763,8 +763,8 @@ exercises:
         kind: exercise
         value: '10.15'
     queries:
-    - +((c) What would the Laplacian of this image look) +(printed page 806) --QDF=0
-    - +((c) What would the Laplacian of this image look) +(Problems) +(printed page 806) --QDF=0
+    - +(c What would the Laplacian of this image look) +(printed page 806) --QDF=0
+    - +(c What would the Laplacian of this image look) +(Problems) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -882,7 +882,7 @@ exercises:
         value: '10.17'
     queries:
     - +(10.16) +(printed page 806) --QDF=0
-    - +(any image. What would be true in general of) +(printed page 806) --QDF=0
+    - +(any image What would be true in general of) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -942,7 +942,7 @@ exercises:
         value: '10.18'
     queries:
     - +(10.17) +(printed page 806) --QDF=0
-    - +((a) Explain why the edges form closed contours.) +(printed page 806) --QDF=0
+    - +(a Explain why the edges form closed contours) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -993,7 +993,7 @@ exercises:
         value: '10.19'
     queries:
     - +(10.18) +(printed page 806) --QDF=0
-    - +(stituted for r2 to get the ﬁnal (incorrect) result:) +(printed page 806) --QDF=0
+    - +(stituted for r2 to get the nal incorrect result) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -1045,7 +1045,7 @@ exercises:
         value: '10.20'
     queries:
     - +(10.19) +(printed page 806) --QDF=0
-    - +(function, and express Eq. (10-33) in terms of) +(printed page 806) --QDF=0
+    - +(function and express Eq 10-33 in terms of) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -1097,7 +1097,7 @@ exercises:
         value: '10.21'
     queries:
     - +(10.20) +(printed page 806) --QDF=0
-    - +(In the following, assume that G and f are discrete) +(printed page 806) --QDF=0
+    - +(In the following assume that G and f are discrete) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -1151,7 +1151,7 @@ exercises:
       end_before: null
     queries:
     - +(10.21) +(printed page 806) --QDF=0
-    - +(as the sum of two partial derivatives, given) +(printed page 806) --QDF=0
+    - +(as the sum of two partial derivatives given) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -1178,8 +1178,8 @@ exercises:
         kind: exercise
         value: '10.22'
     queries:
-    - +((,) is sampled to produce an array of) +(printed page 807) --QDF=0
-    - +((,) is sampled to produce an array of) +(Problems) +(printed page 807) --QDF=0
+    - +(is sampled to produce an array of) +(printed page 807) --QDF=0
+    - +(is sampled to produce an array of) +(Problems) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1288,7 +1288,7 @@ exercises:
         value: '10.24'
     queries:
     - +(10.23) +(printed page 807) --QDF=0
-    - +(sketches of the proﬁles that would result from) +(printed page 807) --QDF=0
+    - +(sketches of the pro les that would result from) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1343,7 +1343,7 @@ exercises:
         value: '10.25'
     queries:
     - +(10.24) +(printed page 807) --QDF=0
-    - +(the rationale that led to choosing these values?) +(printed page 807) --QDF=0
+    - +(the rationale that led to choosing these values) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1403,7 +1403,7 @@ exercises:
         value: '10.26'
     queries:
     - +(10.25) +(printed page 807) --QDF=0
-    - +(Refer to the Hough transform in Section 10.2.) +(printed page 807) --QDF=0
+    - +(Refer to the Hough transform in Section 10.2) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1454,7 +1454,7 @@ exercises:
         value: '10.27'
     queries:
     - +(10.26) +(printed page 807) --QDF=0
-    - +((b) * Is this the only point that would produce that) +(printed page 807) --QDF=0
+    - +(b Is this the only point that would produce that) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1558,7 +1558,7 @@ exercises:
       end_before: null
     queries:
     - +(10.28) +(printed page 807) --QDF=0
-    - +(all tracks angled at any of the following six direc-) +(printed page 807) --QDF=0
+    - +(all tracks angled at any of the following six direc) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1585,8 +1585,8 @@ exercises:
         kind: exercise
         value: '10.29'
     queries:
-    - +(thick, except at the point of collision from which) +(printed page 808) --QDF=0
-    - +(thick, except at the point of collision from which) +(Problems) +(printed page 808) --QDF=0
+    - +(thick except at the point of collision from which) +(printed page 808) --QDF=0
+    - +(thick except at the point of collision from which) +(Problems) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1681,7 +1681,7 @@ exercises:
         value: '10.31'
     queries:
     - +(10.30) +(printed page 808) --QDF=0
-    - +(* Prove that the basic global thresholding algo-) +(printed page 808) --QDF=0
+    - +(Prove that the basic global thresholding algo) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1783,7 +1783,7 @@ exercises:
         value: '10.33'
     queries:
     - +(10.32) +(printed page 808) --QDF=0
-    - +(think the ﬁnal value of the threshold at conver-) +(printed page 808) --QDF=0
+    - +(think the nal value of the threshold at conver) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1834,7 +1834,7 @@ exercises:
         value: '10.34'
     queries:
     - +(10.33) +(printed page 808) --QDF=0
-    - +((a) * Show that if the histogram of an image is) +(printed page 808) --QDF=0
+    - +(a Show that if the histogram of an image is) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1881,7 +1881,7 @@ exercises:
         value: '10.35'
     queries:
     - +(10.34) +(printed page 808) --QDF=0
-    - +((in terms of the parameters of these curves) for the) +(printed page 808) --QDF=0
+    - +(in terms of the parameters of these curves for the) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1932,7 +1932,7 @@ exercises:
         value: '10.36'
     queries:
     - +(10.35) +(printed page 808) --QDF=0
-    - +((a) * Show how the ﬁrst line in Eq. (10-60) fol-) +(printed page 808) --QDF=0
+    - +(a Show how the rst line in Eq 10-60 fol) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1999,7 +1999,7 @@ exercises:
         value: '10.37'
     queries:
     - +(10.36) +(printed page 808) --QDF=0
-    - +(Show that a maximum value for Eq. (10-63)) +(printed page 808) --QDF=0
+    - +(Show that a maximum value for Eq 10-63) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -2051,7 +2051,7 @@ exercises:
         value: '10.38'
     queries:
     - +(10.37) +(printed page 808) --QDF=0
-    - +(is achievable only by images with constant inten-) +(printed page 808) --QDF=0
+    - +(is achievable only by images with constant inten) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -2103,7 +2103,7 @@ exercises:
         value: '10.39'
     queries:
     - +(10.38) +(printed page 808) --QDF=0
-    - +(same regions. The term negative is used here) +(printed page 808) --QDF=0
+    - +(same regions The term negative is used here) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -2152,7 +2152,7 @@ exercises:
       end_before: null
     queries:
     - +(10.39) +(printed page 808) --QDF=0
-    - +(Gaussian noise with 0 mean and a standard devia-) +(printed page 808) --QDF=0
+    - +(Gaussian noise with 0 mean and a standard devia) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -2179,8 +2179,8 @@ exercises:
         kind: exercise
         value: '10.40'
     queries:
-    - +(a Gaussian curve lies in a ±3s interval about the) +(printed page 809) --QDF=0
-    - +(a Gaussian curve lies in a ±3s interval about the) +(Problems) +(printed page 809) --QDF=0
+    - +(a Gaussian curve lies in a 3s interval about the) +(printed page 809) --QDF=0
+    - +(a Gaussian curve lies in a 3s interval about the) +(Problems) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2224,7 +2224,7 @@ exercises:
         value: '10.41'
     queries:
     - +(10.40) +(printed page 809) --QDF=0
-    - +(Refer to the intensity ramp image in Fig. 10.34(b)) +(printed page 809) --QDF=0
+    - +(Refer to the intensity ramp image in Fig 10.34 b) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2330,7 +2330,7 @@ exercises:
         value: '10.43'
     queries:
     - +(10.42) +(printed page 809) --QDF=0
-    - +() =TRUE if all pixels in Ri have the same) +(printed page 809) --QDF=0
+    - +(TRUE if all pixels in Ri have the same) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2484,7 +2484,7 @@ exercises:
         value: '10.46'
     queries:
     - +(10.45) +(printed page 809) --QDF=0
-    - +(* Show how Eqs. (10-106) through (10-108) follow) +(printed page 809) --QDF=0
+    - +(Show how Eqs 10-106 through 10-108 follow) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2550,7 +2550,7 @@ exercises:
         value: '10.47'
     queries:
     - +(10.46) +(printed page 809) --QDF=0
-    - +(Demonstrate the validity of Eq. (10-102).) +(printed page 809) --QDF=0
+    - +(Demonstrate the validity of Eq 10-102) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2602,7 +2602,7 @@ exercises:
         value: '10.48'
     queries:
     - +(10.47) +(printed page 809) --QDF=0
-    - +((b) Show that the number of elements in sets) +(printed page 809) --QDF=0
+    - +(b Show that the number of elements in sets) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2653,7 +2653,7 @@ exercises:
         value: '10.49'
     queries:
     - +(10.48) +(printed page 809) --QDF=0
-    - +(rithm form closed loops (for example, see Figs.) +(printed page 809) --QDF=0
+    - +(rithm form closed loops for example see Figs) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2710,7 +2710,7 @@ exercises:
       end_before: null
     queries:
     - +(10.49) +(printed page 809) --QDF=0
-    - +(of the cross section at each step, showing “water”) +(printed page 809) --QDF=0
+    - +(of the cross section at each step showing water) +(printed page 809) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '809'
@@ -2754,7 +2754,7 @@ exercises:
         value: '10.51'
     queries:
     - +(10.50) +(printed page 810) --QDF=0
-    - +(in Fig. 10.62(c) look like if we tested against T) +(printed page 810) --QDF=0
+    - +(in Fig 10.62 c look like if we tested against T) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -2810,7 +2810,7 @@ exercises:
         value: '10.52'
     queries:
     - +(10.51) +(printed page 810) --QDF=0
-    - +(Are the following statements true or false? Ex-) +(printed page 810) --QDF=0
+    - +(Are the following statements true or false Ex) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -2857,7 +2857,7 @@ exercises:
         value: '10.53'
     queries:
     - +(10.52) +(printed page 810) --QDF=0
-    - +(x-axis is set to zero. The object now moves only) +(printed page 810) --QDF=0
+    - +(x-axis is set to zero The object now moves only) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -2913,7 +2913,7 @@ exercises:
         value: '10.54'
     queries:
     - +(10.53) +(printed page 810) --QDF=0
-    - +(and (10-126) are the same, velocity component) +(printed page 810) --QDF=0
+    - +(and 10-126 are the same velocity component) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -2970,7 +2970,7 @@ exercises:
         value: '10.55'
     queries:
     - +(10.54) +(printed page 810) --QDF=0
-    - +(other visual cues in the viewing area of the imag-) +(printed page 810) --QDF=0
+    - +(other visual cues in the viewing area of the imag) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'
@@ -3019,7 +3019,7 @@ exercises:
       end_before: null
     queries:
     - +(10.55) +(printed page 810) --QDF=0
-    - +(The speed of a bullet in ﬂight is to be estimated by) +(printed page 810) --QDF=0
+    - +(The speed of a bullet in ight is to be estimated by) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'

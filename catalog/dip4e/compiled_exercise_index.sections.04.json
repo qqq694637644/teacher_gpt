@@ -38,8 +38,9 @@
             }
           },
           "queries": [
-            "+(4.1) +(printed page 308) --QDF=0",
-            "+((a) * Give an equation similar to Eq. (4-10), but) +(printed page 308) --QDF=0"
+            "+(text a Give an equation similar to Eq 4-10 but) +(printed page 308) --QDF=0",
+            "+(exercise 4.1) +(printed page 308) --QDF=0",
+            "+(exercise 4.2) +(printed page 308) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -276,8 +277,9 @@
             }
           },
           "queries": [
-            "+(4.2) +(printed page 308) --QDF=0",
-            "+(values of t. Explain the reason for any differences) +(printed page 308) --QDF=0"
+            "+(text values of t Explain the reason for any differences) +(printed page 308) --QDF=0",
+            "+(exercise 4.2) +(printed page 308) --QDF=0",
+            "+(exercise 4.3) +(printed page 308) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -430,8 +432,8 @@
             "end_before": null
           },
           "queries": [
-            "+(4.3) +(printed page 308) --QDF=0",
-            "+(What is the convolution of two, 1-D impulses:) +(printed page 308) --QDF=0"
+            "+(text What is the convolution of two 1-D impulses) +(printed page 308) --QDF=0",
+            "+(exercise 4.3) +(printed page 308) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -498,8 +500,9 @@
             }
           },
           "queries": [
-            "+(4.4) +(printed page 309) --QDF=0",
-            "+(so that its origin is moved to the location of the) +(printed page 309) --QDF=0"
+            "+(text so that its origin is moved to the location of the) +(printed page 309) --QDF=0",
+            "+(exercise 4.4) +(printed page 309) --QDF=0",
+            "+(exercise 4.5) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -571,8 +574,9 @@
             }
           },
           "queries": [
-            "+(4.5) +(printed page 309) --QDF=0",
-            "+(tion of an aliased pair of functions that are not) +(printed page 309) --QDF=0"
+            "+(text tion of an aliased pair of functions that are not) +(printed page 309) --QDF=0",
+            "+(exercise 4.5) +(printed page 309) --QDF=0",
+            "+(exercise 4.6) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -726,8 +730,9 @@
             }
           },
           "queries": [
-            "+(4.6) +(printed page 309) --QDF=0",
-            "+(the Nyquist rate is satisﬁed, and (2) the sam-) +(printed page 309) --QDF=0"
+            "+(text the Nyquist rate is satis ed and 2 the sam) +(printed page 309) --QDF=0",
+            "+(exercise 4.6) +(printed page 309) --QDF=0",
+            "+(exercise 4.7) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -881,8 +886,9 @@
             }
           },
           "queries": [
-            "+(4.7) +(printed page 309) --QDF=0",
-            "+(ity in both directions, what is the highest fre-) +(printed page 309) --QDF=0"
+            "+(text ity in both directions what is the highest fre) +(printed page 309) --QDF=0",
+            "+(exercise 4.7) +(printed page 309) --QDF=0",
+            "+(exercise 4.8) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -954,8 +960,9 @@
             }
           },
           "queries": [
-            "+(4.8) +(printed page 309) --QDF=0",
-            "+(stant. (Hint: Study Example 4.2.)) +(printed page 309) --QDF=0"
+            "+(text stant Hint Study Example 4.2) +(printed page 309) --QDF=0",
+            "+(exercise 4.8) +(printed page 309) --QDF=0",
+            "+(exercise 4.9) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1111,8 +1118,9 @@
             }
           },
           "queries": [
-            "+(4.9) +(printed page 309) --QDF=0",
-            "+((Hint: Make use of the solution to Problem 4.8):) +(printed page 309) --QDF=0"
+            "+(text Hint Make use of the solution to Problem 4.8) +(printed page 309) --QDF=0",
+            "+(exercise 4.9) +(printed page 309) --QDF=0",
+            "+(exercise 4.10) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1165,11 +1173,9 @@
             }
           },
           "queries": [
-            "+(text stant. (Hint: Study Example 4.2.)) +(printed page 309) --QDF=0",
+            "+(text stant Hint Study Example 4.2) +(printed page 309) --QDF=0",
             "+(exercise 4.8) +(printed page 309) --QDF=0",
-            "+(exercise 4.9) +(printed page 309) --QDF=0",
-            "+(4.8) +(printed page 309) --QDF=0",
-            "+(stant. (Hint: Study Example 4.2.)) +(printed page 309) --QDF=0"
+            "+(exercise 4.9) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1230,8 +1236,9 @@
                 }
               },
               "queries": [
-                "+(4.8) +(printed page 309) --QDF=0",
-                "+(stant. (Hint: Study Example 4.2.)) +(printed page 309) --QDF=0"
+                "+(text stant Hint Study Example 4.2) +(printed page 309) --QDF=0",
+                "+(exercise 4.8) +(printed page 309) --QDF=0",
+                "+(exercise 4.9) +(printed page 309) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1305,8 +1312,9 @@
             }
           },
           "queries": [
-            "+(4.10) +(printed page 309) --QDF=0",
-            "+(in general if ft() is sampled at a rate lower) +(printed page 309) --QDF=0"
+            "+(text in general if ft is sampled at a rate lower) +(printed page 309) --QDF=0",
+            "+(exercise 4.10) +(printed page 309) --QDF=0",
+            "+(exercise 4.11) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1395,11 +1403,9 @@
             }
           },
           "queries": [
-            "+(text (Hint: Make use of the solution to Problem 4.8):) +(printed page 309) --QDF=0",
+            "+(text Hint Make use of the solution to Problem 4.8) +(printed page 309) --QDF=0",
             "+(exercise 4.9) +(printed page 309) --QDF=0",
-            "+(exercise 4.10) +(printed page 309) --QDF=0",
-            "+(4.9) +(printed page 309) --QDF=0",
-            "+((Hint: Make use of the solution to Problem 4.8):) +(printed page 309) --QDF=0"
+            "+(exercise 4.10) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1458,8 +1464,9 @@
                 }
               },
               "queries": [
-                "+(4.9) +(printed page 309) --QDF=0",
-                "+((Hint: Make use of the solution to Problem 4.8):) +(printed page 309) --QDF=0"
+                "+(text Hint Make use of the solution to Problem 4.8) +(printed page 309) --QDF=0",
+                "+(exercise 4.9) +(printed page 309) --QDF=0",
+                "+(exercise 4.10) +(printed page 309) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1575,8 +1582,9 @@
             }
           },
           "queries": [
-            "+(4.11) +(printed page 309) --QDF=0",
-            "+(one continuous variable, as given in Eqs. (4-25)) +(printed page 309) --QDF=0"
+            "+(text one continuous variable as given in Eqs 4-25) +(printed page 309) --QDF=0",
+            "+(exercise 4.11) +(printed page 309) --QDF=0",
+            "+(exercise 4.12) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1813,8 +1821,9 @@
             }
           },
           "queries": [
-            "+(4.12) +(printed page 309) --QDF=0",
-            "+(tion of a function with an impulse shifts the func-) +(printed page 309) --QDF=0"
+            "+(text tion of a function with an impulse shifts the func) +(printed page 309) --QDF=0",
+            "+(exercise 4.12) +(printed page 309) --QDF=0",
+            "+(exercise 4.13) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1945,9 +1954,7 @@
           "queries": [
             "+(text so that its origin is moved to the location of the) +(printed page 309) --QDF=0",
             "+(exercise 4.4) +(printed page 309) --QDF=0",
-            "+(exercise 4.5) +(printed page 309) --QDF=0",
-            "+(4.4) +(printed page 309) --QDF=0",
-            "+(so that its origin is moved to the location of the) +(printed page 309) --QDF=0"
+            "+(exercise 4.5) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1998,11 +2005,9 @@
             }
           },
           "queries": [
-            "+(text (Hint: Make use of the solution to Problem 4.8):) +(printed page 309) --QDF=0",
+            "+(text Hint Make use of the solution to Problem 4.8) +(printed page 309) --QDF=0",
             "+(exercise 4.9) +(printed page 309) --QDF=0",
-            "+(exercise 4.10) +(printed page 309) --QDF=0",
-            "+(4.9) +(printed page 309) --QDF=0",
-            "+((Hint: Make use of the solution to Problem 4.8):) +(printed page 309) --QDF=0"
+            "+(exercise 4.10) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2105,8 +2110,9 @@
                 }
               },
               "queries": [
-                "+(4.9) +(printed page 309) --QDF=0",
-                "+((Hint: Make use of the solution to Problem 4.8):) +(printed page 309) --QDF=0"
+                "+(text Hint Make use of the solution to Problem 4.8) +(printed page 309) --QDF=0",
+                "+(exercise 4.9) +(printed page 309) --QDF=0",
+                "+(exercise 4.10) +(printed page 309) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -2209,8 +2215,9 @@
                 }
               },
               "queries": [
-                "+(4.4) +(printed page 309) --QDF=0",
-                "+(so that its origin is moved to the location of the) +(printed page 309) --QDF=0"
+                "+(text so that its origin is moved to the location of the) +(printed page 309) --QDF=0",
+                "+(exercise 4.4) +(printed page 309) --QDF=0",
+                "+(exercise 4.5) +(printed page 309) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -2282,8 +2289,9 @@
             }
           },
           "queries": [
-            "+(4.13) +(printed page 309) --QDF=0",
-            "+(* Complete the steps that led from Eq. (4-37) to) +(printed page 309) --QDF=0"
+            "+(text Complete the steps that led from Eq 4-37 to) +(printed page 309) --QDF=0",
+            "+(exercise 4.13) +(printed page 309) --QDF=0",
+            "+(exercise 4.14) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2334,9 +2342,7 @@
           },
           "queries": [
             "+(equation 4-37) +(printed page 225) --QDF=0",
-            "+(equation 4-38) +(printed page 225) --QDF=0",
-            "+(4-37) +(equation) +(printed page 225) --QDF=0",
-            "+(4-38) +(equation) +(printed page 225) --QDF=0"
+            "+(equation 4-38) +(printed page 225) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2491,8 +2497,9 @@
             }
           },
           "queries": [
-            "+(4.14) +(printed page 309) --QDF=0",
-            "+(m in Eq. (4-40) is inﬁnitely periodic) +(printed page 309) --QDF=0"
+            "+(text m in Eq 4-40 is in nitely periodic) +(printed page 309) --QDF=0",
+            "+(exercise 4.14) +(printed page 309) --QDF=0",
+            "+(exercise 4.15) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2645,8 +2652,8 @@
             "end_before": null
           },
           "queries": [
-            "+(4.15) +(printed page 309) --QDF=0",
-            "+(You will need the following orthogonality prop-) +(printed page 309) --QDF=0"
+            "+(text You will need the following orthogonality prop) +(printed page 309) --QDF=0",
+            "+(exercise 4.15) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2731,10 +2738,7 @@
           "queries": [
             "+(equation 4-43) +(printed page 227) --QDF=0",
             "+(equation 4-44) +(printed page 227) --QDF=0",
-            "+(equation 4-45) +(printed page 227) --QDF=0",
-            "+(4-43) +(equation) +(printed page 227) --QDF=0",
-            "+(4-44) +(equation) +(printed page 227) --QDF=0",
-            "+(4-45) +(equation) +(printed page 227) --QDF=0"
+            "+(equation 4-45) +(printed page 227) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2982,8 +2986,9 @@
             }
           },
           "queries": [
-            "+(4.16) +(printed page 310) --QDF=0",
-            "+((4-45) are inﬁnitely periodic with period M; that is,) +(printed page 310) --QDF=0"
+            "+(text 4-45 are in nitely periodic with period M that is) +(printed page 310) --QDF=0",
+            "+(exercise 4.16) +(printed page 310) --QDF=0",
+            "+(exercise 4.17) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3036,9 +3041,7 @@
           },
           "queries": [
             "+(equation 4-44) +(printed page 227) --QDF=0",
-            "+(equation 4-45) +(printed page 227) --QDF=0",
-            "+(4-44) +(equation) +(printed page 227) --QDF=0",
-            "+(4-45) +(equation) +(printed page 227) --QDF=0"
+            "+(equation 4-45) +(printed page 227) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3079,9 +3082,7 @@
           },
           "queries": [
             "+(equation 4-46) +(printed page 228) --QDF=0",
-            "+(equation 4-47) +(printed page 228) --QDF=0",
-            "+(4-46) +(equation) +(printed page 228) --QDF=0",
-            "+(4-47) +(equation) +(printed page 228) --QDF=0"
+            "+(equation 4-47) +(printed page 228) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3324,8 +3325,9 @@
             }
           },
           "queries": [
-            "+(4.17) +(printed page 310) --QDF=0",
-            "+(transform pairs. (Hint: It is easier in part (b) to) +(printed page 310) --QDF=0"
+            "+(text transform pairs Hint It is easier in part b to) +(printed page 310) --QDF=0",
+            "+(exercise 4.17) +(printed page 310) --QDF=0",
+            "+(exercise 4.18) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3397,8 +3399,9 @@
             }
           },
           "queries": [
-            "+(4.18) +(printed page 310) --QDF=0",
-            "+(ables, but with the right side of Eq. (4-26) multi-) +(printed page 310) --QDF=0"
+            "+(text ables but with the right side of Eq 4-26 multi) +(printed page 310) --QDF=0",
+            "+(exercise 4.18) +(printed page 310) --QDF=0",
+            "+(exercise 4.19) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3635,8 +3638,9 @@
             }
           },
           "queries": [
-            "+(4.19) +(printed page 310) --QDF=0",
-            "+(z for the variables on the left side of the expression) +(printed page 310) --QDF=0"
+            "+(text z for the variables on the left side of the expression) +(printed page 310) --QDF=0",
+            "+(exercise 4.19) +(printed page 310) --QDF=0",
+            "+(exercise 4.20) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3792,8 +3796,9 @@
             }
           },
           "queries": [
-            "+(4.20) +(printed page 310) --QDF=0",
-            "+(so that its origin is located at the location of the) +(printed page 310) --QDF=0"
+            "+(text so that its origin is located at the location of the) +(printed page 310) --QDF=0",
+            "+(exercise 4.20) +(printed page 310) --QDF=0",
+            "+(exercise 4.21) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3848,9 +3853,7 @@
           "queries": [
             "+(text so that its origin is moved to the location of the) +(printed page 309) --QDF=0",
             "+(exercise 4.4) +(printed page 309) --QDF=0",
-            "+(exercise 4.5) +(printed page 309) --QDF=0",
-            "+(4.4) +(printed page 309) --QDF=0",
-            "+(so that its origin is moved to the location of the) +(printed page 309) --QDF=0"
+            "+(exercise 4.5) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3909,8 +3912,9 @@
                 }
               },
               "queries": [
-                "+(4.4) +(printed page 309) --QDF=0",
-                "+(so that its origin is moved to the location of the) +(printed page 309) --QDF=0"
+                "+(text so that its origin is moved to the location of the) +(printed page 309) --QDF=0",
+                "+(exercise 4.4) +(printed page 309) --QDF=0",
+                "+(exercise 4.5) +(printed page 309) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -3982,8 +3986,9 @@
             }
           },
           "queries": [
-            "+(4.21) +(printed page 310) --QDF=0",
-            "+(image of the same size but having stripes that) +(printed page 310) --QDF=0"
+            "+(text image of the same size but having stripes that) +(printed page 310) --QDF=0",
+            "+(exercise 4.21) +(printed page 310) --QDF=0",
+            "+(exercise 4.22) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4055,8 +4060,9 @@
             }
           },
           "queries": [
-            "+(4.22) +(printed page 310) --QDF=0",
-            "+(onto the area deﬁned by the size of the chip you) +(printed page 310) --QDF=0"
+            "+(text onto the area de ned by the size of the chip you) +(printed page 310) --QDF=0",
+            "+(exercise 4.22) +(printed page 310) --QDF=0",
+            "+(exercise 4.23) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4128,8 +4134,9 @@
             }
           },
           "queries": [
-            "+(4.23) +(printed page 310) --QDF=0",
-            "+(would be free of aliasing if it were zoomed by) +(printed page 310) --QDF=0"
+            "+(text would be free of aliasing if it were zoomed by) +(printed page 310) --QDF=0",
+            "+(exercise 4.23) +(printed page 310) --QDF=0",
+            "+(exercise 4.24) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4179,10 +4186,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text When working with an image of finite dimensions, the limits in the two preceding) +(printed page 230) --QDF=0",
-            "+(heading 4.5 EXTENSIONS TO FUNCTIONS OF TWO VARIABLES) +(printed page 230) --QDF=0",
-            "+(4.5 EXTENSIONS TO FUNCTIONS OF TWO VARIABLES) +(printed page 230) --QDF=0",
-            "Extensions to Functions of Two Variables When working with an image of finite dimensions, the limits in the two preceding printed page 230 --QDF=0"
+            "+(text When working with an image of finite dimensions the limits in the two preceding) +(printed page 230) --QDF=0",
+            "+(heading 4.5 EXTENSIONS TO FUNCTIONS OF TWO VARIABLES) +(printed page 230) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4233,9 +4238,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text interpreted to be continuous spatial variables. As in the 1-D case, the domain of the) +(printed page 231) --QDF=0",
-            "+(interpreted to be continuous spatial variables. As in the 1-D case, the domain of the) +(printed page 231) --QDF=0",
-            "Extensions to Functions of Two Variables interpreted to be continuous spatial variables. As in the 1-D case, the domain of the printed page 231 --QDF=0"
+            "+(text interpreted to be continuous spatial variables As in the 1-D case the domain of the) +(printed page 231) --QDF=0",
+            "+(interpreted to be continuous spatial variables As in the 1-D case the domain of the) +(text) +(printed page 231) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4282,9 +4286,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text extending infinitely along the two axes (see Fig. 4.15). As in the 1-D case illustrated) +(printed page 232) --QDF=0",
-            "+(extending infinitely along the two axes (see Fig. 4.15). As in the 1-D case illustrated) +(printed page 232) --QDF=0",
-            "Extensions to Functions of Two Variables extending infinitely along the two axes (see Fig. 4.15). As in the 1-D case illustrated printed page 232 --QDF=0"
+            "+(text extending infinitely along the two axes see Fig 4.15 As in the 1-D case illustrated) +(printed page 232) --QDF=0",
+            "+(extending infinitely along the two axes see Fig 4.15 As in the 1-D case illustrated) +(text) +(printed page 232) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4327,9 +4330,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text In this section, we extend the concept of aliasing to images, and discuss in detail sev-) +(printed page 233) --QDF=0",
-            "+(In this section, we extend the concept of aliasing to images, and discuss in detail sev-) +(printed page 233) --QDF=0",
-            "Extensions to Functions of Two Variables In this section, we extend the concept of aliasing to images, and discuss in detail sev- printed page 233 --QDF=0"
+            "+(text In this section we extend the concept of aliasing to images and discuss in detail sev) +(printed page 233) --QDF=0",
+            "+(In this section we extend the concept of aliasing to images and discuss in detail sev) +(text) +(printed page 233) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4372,9 +4374,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing in images are the introduction of artifacts such as jaggedness in line features, spu-) +(printed page 234) --QDF=0",
-            "+(ing in images are the introduction of artifacts such as jaggedness in line features, spu-) +(printed page 234) --QDF=0",
-            "Extensions to Functions of Two Variables ing in images are the introduction of artifacts such as jaggedness in line features, spu- printed page 234 --QDF=0"
+            "+(text ing in images are the introduction of artifacts such as jaggedness in line features spu) +(printed page 234) --QDF=0",
+            "+(ing in images are the introduction of artifacts such as jaggedness in line features spu) +(text) +(printed page 234) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4411,9 +4412,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text undersampled case discussed earlier, which will result in aliasing. A horizontal or vertical scan line of the) +(printed page 235) --QDF=0",
-            "+(undersampled case discussed earlier, which will result in aliasing. A horizontal or vertical scan line of the) +(printed page 235) --QDF=0",
-            "Extensions to Functions of Two Variables undersampled case discussed earlier, which will result in aliasing. A horizontal or vertical scan line of the printed page 235 --QDF=0"
+            "+(text undersampled case discussed earlier which will result in aliasing A horizontal or vertical scan line of) +(printed page 235) --QDF=0",
+            "+(undersampled case discussed earlier which will result in aliasing A horizontal or vertical scan line of) +(text) +(printed page 235) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4450,9 +4450,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text humans is to place a pattern of alternating black and white stripes in one degree of the visual ﬁeld. If the) +(printed page 236) --QDF=0",
-            "+(humans is to place a pattern of alternating black and white stripes in one degree of the visual ﬁeld. If the) +(printed page 236) --QDF=0",
-            "Extensions to Functions of Two Variables humans is to place a pattern of alternating black and white stripes in one degree of the visual ﬁeld. If the printed page 236 --QDF=0"
+            "+(text humans is to place a pattern of alternating black and white stripes in one degree of) +(printed page 236) --QDF=0",
+            "+(humans is to place a pattern of alternating black and white stripes in one degree of) +(text) +(printed page 236) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4492,9 +4491,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text in Fig. 4.19(a), indicating that the sampling rate used initially was sufﬁcient to mitigate visible aliasing.) +(printed page 237) --QDF=0",
-            "+(in Fig. 4.19(a), indicating that the sampling rate used initially was sufﬁcient to mitigate visible aliasing.) +(printed page 237) --QDF=0",
-            "Extensions to Functions of Two Variables in Fig. 4.19(a), indicating that the sampling rate used initially was sufﬁcient to mitigate visible aliasing. printed page 237 --QDF=0"
+            "+(text in Fig 4.19 a indicating that the sampling rate used initially was suf cient to mitigate) +(printed page 237) --QDF=0",
+            "+(in Fig 4.19 a indicating that the sampling rate used initially was suf cient to mitigate) +(text) +(printed page 237) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4535,9 +4533,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing it to its original size by pixel replication. Aliasing is clearly visible. (c) Result of blurring the image in (a) with an) +(printed page 238) --QDF=0",
-            "+(ing it to its original size by pixel replication. Aliasing is clearly visible. (c) Result of blurring the image in (a) with an) +(printed page 238) --QDF=0",
-            "Extensions to Functions of Two Variables ing it to its original size by pixel replication. Aliasing is clearly visible. (c) Result of blurring the image in (a) with an printed page 238 --QDF=0"
+            "+(text ing it to its original size by pixel replication Aliasing is clearly visible c Result of) +(printed page 238) --QDF=0",
+            "+(ing it to its original size by pixel replication Aliasing is clearly visible c Result of) +(text) +(printed page 238) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4578,9 +4575,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text sampled at 75 dpi. The sampling lattice (which is oriented vertically and horizontally) and dot patterns) +(printed page 239) --QDF=0",
-            "+(sampled at 75 dpi. The sampling lattice (which is oriented vertically and horizontally) and dot patterns) +(printed page 239) --QDF=0",
-            "Extensions to Functions of Two Variables sampled at 75 dpi. The sampling lattice (which is oriented vertically and horizontally) and dot patterns printed page 239 --QDF=0"
+            "+(text sampled at 75 dpi The sampling lattice which is oriented vertically and horizontally and dot patterns) +(printed page 239) --QDF=0",
+            "+(sampled at 75 dpi The sampling lattice which is oriented vertically and horizontally and dot patterns) +(text) +(printed page 239) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4621,10 +4617,8 @@
             }
           },
           "queries": [
-            "+(text A development similar to the material in Sections 4.3 and 4.4 would yield the follow-) +(printed page 240) --QDF=0",
-            "+(heading 4.6 SOME PROPERTIES OF THE 2-D DFT AND IDFT) +(printed page 240) --QDF=0",
-            "+(A development similar to the material in Sections 4.3 and 4.4 would yield the follow-) +(printed page 240) --QDF=0",
-            "Extensions to Functions of Two Variables A development similar to the material in Sections 4.3 and 4.4 would yield the follow- printed page 240 --QDF=0"
+            "+(text A development similar to the material in Sections 4.3 and 4.4 would yield the follow) +(printed page 240) --QDF=0",
+            "+(heading 4.6 SOME PROPERTIES OF THE 2-D DFT AND IDFT) +(printed page 240) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4682,8 +4676,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(4.5 EXTENSIONS TO FUNCTIONS OF TWO VARIABLES) +(printed page 230) --QDF=0",
-                "Extensions to Functions of Two Variables When working with an image of finite dimensions, the limits in the two preceding printed page 230 --QDF=0"
+                "+(text When working with an image of finite dimensions the limits in the two preceding) +(printed page 230) --QDF=0",
+                "+(heading 4.5 EXTENSIONS TO FUNCTIONS OF TWO VARIABLES) +(printed page 230) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4734,8 +4728,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(interpreted to be continuous spatial variables. As in the 1-D case, the domain of the) +(printed page 231) --QDF=0",
-                "Extensions to Functions of Two Variables interpreted to be continuous spatial variables. As in the 1-D case, the domain of the printed page 231 --QDF=0"
+                "+(text interpreted to be continuous spatial variables As in the 1-D case the domain of the) +(printed page 231) --QDF=0",
+                "+(interpreted to be continuous spatial variables As in the 1-D case the domain of the) +(text) +(printed page 231) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4782,8 +4776,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(extending infinitely along the two axes (see Fig. 4.15). As in the 1-D case illustrated) +(printed page 232) --QDF=0",
-                "Extensions to Functions of Two Variables extending infinitely along the two axes (see Fig. 4.15). As in the 1-D case illustrated printed page 232 --QDF=0"
+                "+(text extending infinitely along the two axes see Fig 4.15 As in the 1-D case illustrated) +(printed page 232) --QDF=0",
+                "+(extending infinitely along the two axes see Fig 4.15 As in the 1-D case illustrated) +(text) +(printed page 232) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4826,8 +4820,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(In this section, we extend the concept of aliasing to images, and discuss in detail sev-) +(printed page 233) --QDF=0",
-                "Extensions to Functions of Two Variables In this section, we extend the concept of aliasing to images, and discuss in detail sev- printed page 233 --QDF=0"
+                "+(text In this section we extend the concept of aliasing to images and discuss in detail sev) +(printed page 233) --QDF=0",
+                "+(In this section we extend the concept of aliasing to images and discuss in detail sev) +(text) +(printed page 233) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4870,8 +4864,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(ing in images are the introduction of artifacts such as jaggedness in line features, spu-) +(printed page 234) --QDF=0",
-                "Extensions to Functions of Two Variables ing in images are the introduction of artifacts such as jaggedness in line features, spu- printed page 234 --QDF=0"
+                "+(text ing in images are the introduction of artifacts such as jaggedness in line features spu) +(printed page 234) --QDF=0",
+                "+(ing in images are the introduction of artifacts such as jaggedness in line features spu) +(text) +(printed page 234) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4908,8 +4902,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(undersampled case discussed earlier, which will result in aliasing. A horizontal or vertical scan line of the) +(printed page 235) --QDF=0",
-                "Extensions to Functions of Two Variables undersampled case discussed earlier, which will result in aliasing. A horizontal or vertical scan line of the printed page 235 --QDF=0"
+                "+(text undersampled case discussed earlier which will result in aliasing A horizontal or vertical scan line of) +(printed page 235) --QDF=0",
+                "+(undersampled case discussed earlier which will result in aliasing A horizontal or vertical scan line of) +(text) +(printed page 235) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4946,8 +4940,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(humans is to place a pattern of alternating black and white stripes in one degree of the visual ﬁeld. If the) +(printed page 236) --QDF=0",
-                "Extensions to Functions of Two Variables humans is to place a pattern of alternating black and white stripes in one degree of the visual ﬁeld. If the printed page 236 --QDF=0"
+                "+(text humans is to place a pattern of alternating black and white stripes in one degree of) +(printed page 236) --QDF=0",
+                "+(humans is to place a pattern of alternating black and white stripes in one degree of) +(text) +(printed page 236) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4987,8 +4981,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(in Fig. 4.19(a), indicating that the sampling rate used initially was sufﬁcient to mitigate visible aliasing.) +(printed page 237) --QDF=0",
-                "Extensions to Functions of Two Variables in Fig. 4.19(a), indicating that the sampling rate used initially was sufﬁcient to mitigate visible aliasing. printed page 237 --QDF=0"
+                "+(text in Fig 4.19 a indicating that the sampling rate used initially was suf cient to mitigate) +(printed page 237) --QDF=0",
+                "+(in Fig 4.19 a indicating that the sampling rate used initially was suf cient to mitigate) +(text) +(printed page 237) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -5029,8 +5023,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(ing it to its original size by pixel replication. Aliasing is clearly visible. (c) Result of blurring the image in (a) with an) +(printed page 238) --QDF=0",
-                "Extensions to Functions of Two Variables ing it to its original size by pixel replication. Aliasing is clearly visible. (c) Result of blurring the image in (a) with an printed page 238 --QDF=0"
+                "+(text ing it to its original size by pixel replication Aliasing is clearly visible c Result of) +(printed page 238) --QDF=0",
+                "+(ing it to its original size by pixel replication Aliasing is clearly visible c Result of) +(text) +(printed page 238) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -5071,8 +5065,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(sampled at 75 dpi. The sampling lattice (which is oriented vertically and horizontally) and dot patterns) +(printed page 239) --QDF=0",
-                "Extensions to Functions of Two Variables sampled at 75 dpi. The sampling lattice (which is oriented vertically and horizontally) and dot patterns printed page 239 --QDF=0"
+                "+(text sampled at 75 dpi The sampling lattice which is oriented vertically and horizontally and dot patterns) +(printed page 239) --QDF=0",
+                "+(sampled at 75 dpi The sampling lattice which is oriented vertically and horizontally and dot patterns) +(text) +(printed page 239) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -5113,8 +5107,8 @@
                 }
               },
               "queries": [
-                "+(A development similar to the material in Sections 4.3 and 4.4 would yield the follow-) +(printed page 240) --QDF=0",
-                "Extensions to Functions of Two Variables A development similar to the material in Sections 4.3 and 4.4 would yield the follow- printed page 240 --QDF=0"
+                "+(text A development similar to the material in Sections 4.3 and 4.4 would yield the follow) +(printed page 240) --QDF=0",
+                "+(heading 4.6 SOME PROPERTIES OF THE 2-D DFT AND IDFT) +(printed page 240) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -5185,8 +5179,8 @@
             "end_before": null
           },
           "queries": [
-            "+(4.24) +(printed page 310) --QDF=0",
-            "+(With reference to the discussion on linearity in) +(printed page 310) --QDF=0"
+            "+(text With reference to the discussion on linearity in) +(printed page 310) --QDF=0",
+            "+(exercise 4.24) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5231,10 +5225,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text tools we use throughout the book; and (2) to help you begin developing a “feel” for) +(printed page 83) --QDF=0",
-            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
-            "+(2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tools we use throughout the book; and (2) to help you begin developing a “feel” for printed page 83 --QDF=0"
+            "+(text tools we use throughout the book and 2 to help you begin developing a feel for) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5277,9 +5269,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
-            "+(original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing original input multiplied by that constant. The first property is called the property printed page 84 --QDF=0"
+            "+(text original input multiplied by that constant The first property is called the property) +(printed page 84) --QDF=0",
+            "+(original input multiplied by that constant The first property is called the property) +(text) +(printed page 84) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5319,9 +5310,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
-            "+(As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing As you will see in the next three chapters, linear operations are exceptionally impor- printed page 85 --QDF=0"
+            "+(text As you will see in the next three chapters linear operations are exceptionally impor) +(printed page 85) --QDF=0",
+            "+(As you will see in the next three chapters linear operations are exceptionally impor) +(text) +(printed page 85) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5361,9 +5351,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
-            "+(versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is printed page 86 --QDF=0"
+            "+(text versa Do not confuse correlation and statistical independence If two random variables are statistically independent their) +(printed page 86) --QDF=0",
+            "+(versa Do not confuse correlation and statistical independence If two random variables are statistically independent their) +(text) +(printed page 86) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5408,9 +5397,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
-            "+(identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing identical for all practical purposes. This is not unexpected, as the difference between the standard devia- printed page 87 --QDF=0"
+            "+(text identical for all practical purposes This is not unexpected as the difference between the standard devia) +(printed page 87) --QDF=0",
+            "+(identical for all practical purposes This is not unexpected as the difference between the standard devia) +(text) +(printed page 87) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5451,9 +5439,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
-            "+(in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi printed page 88 --QDF=0"
+            "+(text in Fig 2.31 show proportionally less overall intensities indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
+            "+(in Fig 2.31 show proportionally less overall intensities indicating smaller differences between the 930 dpi) +(text) +(printed page 88) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5491,9 +5478,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
-            "+(effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing effect of subtracting the mask from each sample live image is that the areas that are different between printed page 89 --QDF=0"
+            "+(text effect of subtracting the mask from each sample live image is that the areas that are) +(printed page 89) --QDF=0",
+            "+(effect of subtracting the mask from each sample live image is that the areas that are) +(text) +(printed page 89) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5532,9 +5518,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
-            "+(tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process printed page 90 --QDF=0"
+            "+(text tiplication is in masking also called region of interest ROI operations As Fig 2.34 shows the) +(printed page 90) --QDF=0",
+            "+(tiplication is in masking also called region of interest ROI operations As Fig 2.34 shows the) +(text) +(printed page 90) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5574,9 +5559,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
-            "+(In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing In this section, we discuss the basics of set theory. We also introduce and illustrate printed page 91 --QDF=0"
+            "+(text In this section we discuss the basics of set theory We also introduce and illustrate) +(printed page 91) --QDF=0",
+            "+(In this section we discuss the basics of set theory We also introduce and illustrate) +(text) +(printed page 91) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5621,9 +5605,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
-            "+(This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing This is the set of elements that belong to A, but not to B. We can define Ac in terms printed page 92 --QDF=0"
+            "+(text This is the set of elements that belong to A but not to B We can) +(printed page 92) --QDF=0",
+            "+(This is the set of elements that belong to A but not to B We can) +(text) +(printed page 92) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5669,9 +5652,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
-            "+(pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union printed page 93 --QDF=0"
+            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
+            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5708,9 +5690,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
-            "+(Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form printed page 94 --QDF=0"
+            "+(text Let the elements of a grayscale image be represented by a set A whose elements are) +(printed page 94) --QDF=0",
+            "+(Let the elements of a grayscale image be represented by a set A whose elements are) +(text) +(printed page 94) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5754,9 +5735,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
-            "+(which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows printed page 95 --QDF=0"
+            "+(text which all values of z are equal to 3 times the mean intensity z of the) +(printed page 95) --QDF=0",
+            "+(which all values of z are equal to 3 times the mean intensity z of the) +(text) +(printed page 95) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5795,9 +5775,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
-            "+(is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is strict because no member of the set can precede itself (antireflexivity) and, for any printed page 96 --QDF=0"
+            "+(text is strict because no member of the set can precede itself antireflexivity and for any) +(printed page 96) --QDF=0",
+            "+(is strict because no member of the set can precede itself antireflexivity and for any) +(text) +(printed page 96) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5834,9 +5813,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
-            "+(els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing els in a single image as sets, or (2) we can work with one or more images of the same printed page 97 --QDF=0"
+            "+(text els in a single image as sets or 2 we can work with one or more) +(printed page 97) --QDF=0",
+            "+(els in a single image as sets or 2 we can work with one or more) +(text) +(printed page 97) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5875,9 +5853,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
-            "+(expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing expressions in the last two rows of Fig. 2.37 were constructed using operators from printed page 98 --QDF=0"
+            "+(text expressions in the last two rows of Fig 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
+            "+(expressions in the last two rows of Fig 2.37 were constructed using operators from) +(text) +(printed page 98) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5919,8 +5896,7 @@
           },
           "queries": [
             "+(text The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
-            "+(The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing The simplest operation we perform on a digital image is to alter the intensity of its printed page 99 --QDF=0"
+            "+(The simplest operation we perform on a digital image is to alter the intensity of its) +(text) +(printed page 99) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5963,9 +5939,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
-            "+(net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing net effect is to perform local blurring in the original image. This type of process is printed page 100 --QDF=0"
+            "+(text net effect is to perform local blurring in the original image This type of process is) +(printed page 100) --QDF=0",
+            "+(net effect is to perform local blurring in the original image This type of process is) +(text) +(printed page 100) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6006,9 +5981,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
-            "+(ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi- printed page 101 --QDF=0"
+            "+(text ing is simply scaling as detailed in the second row of Table 2.3 and an analysis) +(printed page 101) --QDF=0",
+            "+(ing is simply scaling as detailed in the second row of Table 2.3 and an analysis) +(text) +(printed page 101) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6048,9 +6022,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
-            "+(single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing single output pixel value. In addition, it is possible that some output locations may printed page 102 --QDF=0"
+            "+(text single output pixel value In addition it is possible that some output locations may) +(printed page 102) --QDF=0",
+            "+(single output pixel value In addition it is possible that some output locations may) +(text) +(printed page 102) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6089,9 +6062,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
-            "+(crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we printed page 103 --QDF=0"
+            "+(text crop the rotated image so that its size is equal to the size of the original) +(printed page 103) --QDF=0",
+            "+(crop the rotated image so that its size is equal to the size of the original) +(text) +(printed page 103) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6134,9 +6106,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
-            "+(interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values). printed page 104 --QDF=0"
+            "+(text interpolation e h Zoomed sections each square is one pixel and the numbers shown are intensity) +(printed page 104) --QDF=0",
+            "+(interpolation e h Zoomed sections each square is one pixel and the numbers shown are intensity) +(text) +(printed page 104) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6175,9 +6146,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
-            "+(input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing input and reference images, respectively. If we have four pairs of corresponding tie printed page 105 --QDF=0"
+            "+(text input and reference images respectively If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
+            "+(input and reference images respectively If we have four pairs of corresponding tie) +(text) +(printed page 105) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6217,9 +6187,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
-            "+(shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in printed page 106 --QDF=0"
+            "+(text shear in both directions Figure 2.42 c shows the registration result obtained using these tie points) +(printed page 106) --QDF=0",
+            "+(shear in both directions Figure 2.42 c shows the registration result obtained using these tie points) +(text) +(printed page 106) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6266,8 +6235,7 @@
           },
           "queries": [
             "+(text 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
-            "+(2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107 printed page 107 --QDF=0"
+            "+(2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(text) +(printed page 107) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6307,9 +6275,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
-            "+(image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men- printed page 108 --QDF=0"
+            "+(text image restoration starting with Eq 2-54 as we discuss in Section 5.9 We will men) +(printed page 108) --QDF=0",
+            "+(image restoration starting with Eq 2-54 as we discuss in Section 5.9 We will men) +(text) +(printed page 108) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6353,8 +6320,7 @@
           },
           "queries": [
             "+(text All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
-            "+(All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing All the image processing approaches discussed thus far operate directly on the pixels printed page 109 --QDF=0"
+            "+(All the image processing approaches discussed thus far operate directly on the pixels) +(text) +(printed page 109) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6400,9 +6366,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
-            "+(manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu- printed page 110 --QDF=0"
+            "+(text manifests itself as bright bursts of intensity whose location is determined by the frequency of the) +(printed page 110) --QDF=0",
+            "+(manifests itself as bright bursts of intensity whose location is determined by the frequency of the) +(text) +(printed page 110) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6447,9 +6412,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text (2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
-            "+((2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing (2-65). We will discuss these and other types of image transforms in later chapters. printed page 111 --QDF=0"
+            "+(text 2-65 We will discuss these and other types of image transforms in later chapters) +(printed page 111) --QDF=0",
+            "+(2-65 We will discuss these and other types of image transforms in later chapters) +(text) +(printed page 111) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6494,9 +6458,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
-            "+(that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing that the intensities are distributed approximately equally on both sides of the mean. printed page 112 --QDF=0"
+            "+(text that the intensities are distributed approximately equally on both sides of the mean) +(printed page 112) --QDF=0",
+            "+(that the intensities are distributed approximately equally on both sides of the mean) +(text) +(printed page 112) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6539,9 +6502,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
-            "+([2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling printed page 113 --QDF=0"
+            "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
+            "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6577,8 +6539,7 @@
           },
           "queries": [
             "+(text You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
-            "+(You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing You are preparing a report and have to insert in it printed page 114 --QDF=0"
+            "+(You are preparing a report and have to insert in it) +(text) +(printed page 114) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6617,9 +6578,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
-            "+(whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing whose function is to compute the sum of pixel val- printed page 115 --QDF=0"
+            "+(text whose function is to compute the sum of pixel val) +(printed page 115) --QDF=0",
+            "+(whose function is to compute the sum of pixel val) +(text) +(printed page 115) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6657,9 +6617,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text er half are above it. For example, the median of) +(printed page 116) --QDF=0",
-            "+(er half are above it. For example, the median of) +(printed page 116) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing er half are above it. For example, the median of printed page 116 --QDF=0"
+            "+(text er half are above it For example the median of) +(printed page 116) --QDF=0",
+            "+(er half are above it For example the median of) +(text) +(printed page 116) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6701,8 +6660,7 @@
           },
           "queries": [
             "+(text is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
-            "+(is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is to look at the screen and reject any sample that printed page 117 --QDF=0"
+            "+(is to look at the screen and reject any sample that) +(text) +(printed page 117) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6746,9 +6704,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
-            "+(cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
-            "Introduction to the Basic Mathematical Tools Used in Digital Image Processing cost much more than the lenses, so you should use printed page 118 --QDF=0"
+            "+(text cost much more than the lenses so you should use) +(printed page 118) --QDF=0",
+            "+(cost much more than the lenses so you should use) +(text) +(printed page 118) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6794,8 +6751,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tools we use throughout the book; and (2) to help you begin developing a “feel” for printed page 83 --QDF=0"
+                "+(text tools we use throughout the book and 2 to help you begin developing a feel for) +(printed page 83) --QDF=0",
+                "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6838,8 +6795,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(original input multiplied by that constant. The first property is called the property) +(printed page 84) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing original input multiplied by that constant. The first property is called the property printed page 84 --QDF=0"
+                "+(text original input multiplied by that constant The first property is called the property) +(printed page 84) --QDF=0",
+                "+(original input multiplied by that constant The first property is called the property) +(text) +(printed page 84) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6879,8 +6836,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(As you will see in the next three chapters, linear operations are exceptionally impor-) +(printed page 85) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing As you will see in the next three chapters, linear operations are exceptionally impor- printed page 85 --QDF=0"
+                "+(text As you will see in the next three chapters linear operations are exceptionally impor) +(printed page 85) --QDF=0",
+                "+(As you will see in the next three chapters linear operations are exceptionally impor) +(text) +(printed page 85) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6920,8 +6877,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is) +(printed page 86) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing versa. (Do not confuse correlation and statistical independence. If two random variables are statistically independent, their correlation is printed page 86 --QDF=0"
+                "+(text versa Do not confuse correlation and statistical independence If two random variables are statistically independent their) +(printed page 86) --QDF=0",
+                "+(versa Do not confuse correlation and statistical independence If two random variables are statistically independent their) +(text) +(printed page 86) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6966,8 +6923,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(identical for all practical purposes. This is not unexpected, as the difference between the standard devia-) +(printed page 87) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing identical for all practical purposes. This is not unexpected, as the difference between the standard devia- printed page 87 --QDF=0"
+                "+(text identical for all practical purposes This is not unexpected as the difference between the standard devia) +(printed page 87) --QDF=0",
+                "+(identical for all practical purposes This is not unexpected as the difference between the standard devia) +(text) +(printed page 87) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7008,8 +6965,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing in Fig. 2.31 show proportionally less overall intensities, indicating smaller differences between the 930 dpi printed page 88 --QDF=0"
+                "+(text in Fig 2.31 show proportionally less overall intensities indicating smaller differences between the 930 dpi) +(printed page 88) --QDF=0",
+                "+(in Fig 2.31 show proportionally less overall intensities indicating smaller differences between the 930 dpi) +(text) +(printed page 88) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7047,8 +7004,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(effect of subtracting the mask from each sample live image is that the areas that are different between) +(printed page 89) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing effect of subtracting the mask from each sample live image is that the areas that are different between printed page 89 --QDF=0"
+                "+(text effect of subtracting the mask from each sample live image is that the areas that are) +(printed page 89) --QDF=0",
+                "+(effect of subtracting the mask from each sample live image is that the areas that are) +(text) +(printed page 89) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7087,8 +7044,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process) +(printed page 90) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing tiplication is in masking, also called region of interest (ROI), operations. As Fig. 2.34 shows, the process printed page 90 --QDF=0"
+                "+(text tiplication is in masking also called region of interest ROI operations As Fig 2.34 shows the) +(printed page 90) --QDF=0",
+                "+(tiplication is in masking also called region of interest ROI operations As Fig 2.34 shows the) +(text) +(printed page 90) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7128,8 +7085,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(In this section, we discuss the basics of set theory. We also introduce and illustrate) +(printed page 91) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing In this section, we discuss the basics of set theory. We also introduce and illustrate printed page 91 --QDF=0"
+                "+(text In this section we discuss the basics of set theory We also introduce and illustrate) +(printed page 91) --QDF=0",
+                "+(In this section we discuss the basics of set theory We also introduce and illustrate) +(text) +(printed page 91) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7174,8 +7131,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(This is the set of elements that belong to A, but not to B. We can define Ac in terms) +(printed page 92) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing This is the set of elements that belong to A, but not to B. We can define Ac in terms printed page 92 --QDF=0"
+                "+(text This is the set of elements that belong to A but not to B We can) +(printed page 92) --QDF=0",
+                "+(This is the set of elements that belong to A but not to B We can) +(text) +(printed page 92) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7221,8 +7178,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union) +(printed page 93) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing pixels resulting from a set operation. In Sections 3.8 and 9.6 we will deﬁne the union printed page 93 --QDF=0"
+                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
+                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7259,8 +7216,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form) +(printed page 94) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing Let the elements of a grayscale image be represented by a set A whose elements are triplets of the form printed page 94 --QDF=0"
+                "+(text Let the elements of a grayscale image be represented by a set A whose elements are) +(printed page 94) --QDF=0",
+                "+(Let the elements of a grayscale image be represented by a set A whose elements are) +(text) +(printed page 94) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7304,8 +7261,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows) +(printed page 95) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing which all values of z are equal to 3 times the mean intensity, z, of the elements of A. Figure 2.36(c) shows printed page 95 --QDF=0"
+                "+(text which all values of z are equal to 3 times the mean intensity z of the) +(printed page 95) --QDF=0",
+                "+(which all values of z are equal to 3 times the mean intensity z of the) +(text) +(printed page 95) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7344,8 +7301,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(is strict because no member of the set can precede itself (antireflexivity) and, for any) +(printed page 96) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is strict because no member of the set can precede itself (antireflexivity) and, for any printed page 96 --QDF=0"
+                "+(text is strict because no member of the set can precede itself antireflexivity and for any) +(printed page 96) --QDF=0",
+                "+(is strict because no member of the set can precede itself antireflexivity and for any) +(text) +(printed page 96) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7382,8 +7339,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(els in a single image as sets, or (2) we can work with one or more images of the same) +(printed page 97) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing els in a single image as sets, or (2) we can work with one or more images of the same printed page 97 --QDF=0"
+                "+(text els in a single image as sets or 2 we can work with one or more) +(printed page 97) --QDF=0",
+                "+(els in a single image as sets or 2 we can work with one or more) +(text) +(printed page 97) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7422,8 +7379,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(expressions in the last two rows of Fig. 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing expressions in the last two rows of Fig. 2.37 were constructed using operators from printed page 98 --QDF=0"
+                "+(text expressions in the last two rows of Fig 2.37 were constructed using operators from) +(printed page 98) --QDF=0",
+                "+(expressions in the last two rows of Fig 2.37 were constructed using operators from) +(text) +(printed page 98) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7464,8 +7421,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing The simplest operation we perform on a digital image is to alter the intensity of its printed page 99 --QDF=0"
+                "+(text The simplest operation we perform on a digital image is to alter the intensity of its) +(printed page 99) --QDF=0",
+                "+(The simplest operation we perform on a digital image is to alter the intensity of its) +(text) +(printed page 99) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7508,8 +7465,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(net effect is to perform local blurring in the original image. This type of process is) +(printed page 100) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing net effect is to perform local blurring in the original image. This type of process is printed page 100 --QDF=0"
+                "+(text net effect is to perform local blurring in the original image This type of process is) +(printed page 100) --QDF=0",
+                "+(net effect is to perform local blurring in the original image This type of process is) +(text) +(printed page 100) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7550,8 +7507,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi-) +(printed page 101) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing ing is simply scaling, as detailed in the second row of Table 2.3, and an analysis simi- printed page 101 --QDF=0"
+                "+(text ing is simply scaling as detailed in the second row of Table 2.3 and an analysis) +(printed page 101) --QDF=0",
+                "+(ing is simply scaling as detailed in the second row of Table 2.3 and an analysis) +(text) +(printed page 101) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7591,8 +7548,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(single output pixel value. In addition, it is possible that some output locations may) +(printed page 102) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing single output pixel value. In addition, it is possible that some output locations may printed page 102 --QDF=0"
+                "+(text single output pixel value In addition it is possible that some output locations may) +(printed page 102) --QDF=0",
+                "+(single output pixel value In addition it is possible that some output locations may) +(text) +(printed page 102) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7631,8 +7588,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we) +(printed page 103) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing crop the rotated image so that its size is equal to the size of the original image, as in Fig. 2.41(c), or we printed page 103 --QDF=0"
+                "+(text crop the rotated image so that its size is equal to the size of the original) +(printed page 103) --QDF=0",
+                "+(crop the rotated image so that its size is equal to the size of the original) +(text) +(printed page 103) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7675,8 +7632,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values).) +(printed page 104) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing interpolation. (e)-(h) Zoomed sections (each square is one pixel, and the numbers shown are intensity values). printed page 104 --QDF=0"
+                "+(text interpolation e h Zoomed sections each square is one pixel and the numbers shown are intensity) +(printed page 104) --QDF=0",
+                "+(interpolation e h Zoomed sections each square is one pixel and the numbers shown are intensity) +(text) +(printed page 104) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7715,8 +7672,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(input and reference images, respectively. If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing input and reference images, respectively. If we have four pairs of corresponding tie printed page 105 --QDF=0"
+                "+(text input and reference images respectively If we have four pairs of corresponding tie) +(printed page 105) --QDF=0",
+                "+(input and reference images respectively If we have four pairs of corresponding tie) +(text) +(printed page 105) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7756,8 +7713,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in) +(printed page 106) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing shear in both directions). Figure 2.42(c) shows the registration result obtained using these tie points in printed page 106 --QDF=0"
+                "+(text shear in both directions Figure 2.42 c shows the registration result obtained using these tie points) +(printed page 106) --QDF=0",
+                "+(shear in both directions Figure 2.42 c shows the registration result obtained using these tie points) +(text) +(printed page 106) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7803,8 +7760,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107 printed page 107 --QDF=0"
+                "+(text 2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(printed page 107) --QDF=0",
+                "+(2.6Introduction to the Basic Mathematical Tools Used in Digital Image Processing107) +(text) +(printed page 107) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7844,8 +7801,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men-) +(printed page 108) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing image restoration starting with Eq. (2-54), as we discuss in Section 5.9. We will men- printed page 108 --QDF=0"
+                "+(text image restoration starting with Eq 2-54 as we discuss in Section 5.9 We will men) +(printed page 108) --QDF=0",
+                "+(image restoration starting with Eq 2-54 as we discuss in Section 5.9 We will men) +(text) +(printed page 108) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7888,8 +7845,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing All the image processing approaches discussed thus far operate directly on the pixels printed page 109 --QDF=0"
+                "+(text All the image processing approaches discussed thus far operate directly on the pixels) +(printed page 109) --QDF=0",
+                "+(All the image processing approaches discussed thus far operate directly on the pixels) +(text) +(printed page 109) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7935,8 +7892,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu-) +(printed page 110) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing manifests itself as bright bursts of intensity, whose location is determined by the frequency of the sinu- printed page 110 --QDF=0"
+                "+(text manifests itself as bright bursts of intensity whose location is determined by the frequency of the) +(printed page 110) --QDF=0",
+                "+(manifests itself as bright bursts of intensity whose location is determined by the frequency of the) +(text) +(printed page 110) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7981,8 +7938,8 @@
                 "end_before": null
               },
               "queries": [
-                "+((2-65). We will discuss these and other types of image transforms in later chapters.) +(printed page 111) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing (2-65). We will discuss these and other types of image transforms in later chapters. printed page 111 --QDF=0"
+                "+(text 2-65 We will discuss these and other types of image transforms in later chapters) +(printed page 111) --QDF=0",
+                "+(2-65 We will discuss these and other types of image transforms in later chapters) +(text) +(printed page 111) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8027,8 +7984,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(that the intensities are distributed approximately equally on both sides of the mean.) +(printed page 112) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing that the intensities are distributed approximately equally on both sides of the mean. printed page 112 --QDF=0"
+                "+(text that the intensities are distributed approximately equally on both sides of the mean) +(printed page 112) --QDF=0",
+                "+(that the intensities are distributed approximately equally on both sides of the mean) +(text) +(printed page 112) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8071,8 +8028,8 @@
                 "end_before": null
               },
               "queries": [
-                "+([2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling) +(printed page 113) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing [2011] is a reference for the illumination and reﬂectance values used in that section. The concepts of image sampling printed page 113 --QDF=0"
+                "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
+                "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8107,8 +8064,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing You are preparing a report and have to insert in it printed page 114 --QDF=0"
+                "+(text You are preparing a report and have to insert in it) +(printed page 114) --QDF=0",
+                "+(You are preparing a report and have to insert in it) +(text) +(printed page 114) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8147,8 +8104,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing whose function is to compute the sum of pixel val- printed page 115 --QDF=0"
+                "+(text whose function is to compute the sum of pixel val) +(printed page 115) --QDF=0",
+                "+(whose function is to compute the sum of pixel val) +(text) +(printed page 115) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8186,8 +8143,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(er half are above it. For example, the median of) +(printed page 116) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing er half are above it. For example, the median of printed page 116 --QDF=0"
+                "+(text er half are above it For example the median of) +(printed page 116) --QDF=0",
+                "+(er half are above it For example the median of) +(text) +(printed page 116) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8228,8 +8185,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing is to look at the screen and reject any sample that printed page 117 --QDF=0"
+                "+(text is to look at the screen and reject any sample that) +(printed page 117) --QDF=0",
+                "+(is to look at the screen and reject any sample that) +(text) +(printed page 117) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8273,8 +8230,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(cost much more than the lenses, so you should use) +(printed page 118) --QDF=0",
-                "Introduction to the Basic Mathematical Tools Used in Digital Image Processing cost much more than the lenses, so you should use printed page 118 --QDF=0"
+                "+(text cost much more than the lenses so you should use) +(printed page 118) --QDF=0",
+                "+(cost much more than the lenses so you should use) +(text) +(printed page 118) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8336,8 +8293,9 @@
             }
           },
           "queries": [
-            "+(4.25) +(printed page 311) --QDF=0",
-            "+(validity of the following translation (shift) prop-) +(printed page 311) --QDF=0"
+            "+(text validity of the following translation shift prop) +(printed page 311) --QDF=0",
+            "+(exercise 4.25) +(printed page 311) --QDF=0",
+            "+(exercise 4.26) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8388,9 +8346,7 @@
           },
           "queries": [
             "+(equation 4-59) +(printed page 231) --QDF=0",
-            "+(equation 4-60) +(printed page 231) --QDF=0",
-            "+(4-59) +(equation) +(printed page 231) --QDF=0",
-            "+(4-60) +(equation) +(printed page 231) --QDF=0"
+            "+(equation 4-60) +(printed page 231) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8436,11 +8392,9 @@
             }
           },
           "queries": [
-            "+(text one continuous variable, as given in Eqs. (4-25)) +(printed page 309) --QDF=0",
+            "+(text one continuous variable as given in Eqs 4-25) +(printed page 309) --QDF=0",
             "+(exercise 4.11) +(printed page 309) --QDF=0",
-            "+(exercise 4.12) +(printed page 309) --QDF=0",
-            "+(4.11) +(printed page 309) --QDF=0",
-            "+(one continuous variable, as given in Eqs. (4-25)) +(printed page 309) --QDF=0"
+            "+(exercise 4.12) +(printed page 309) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8590,8 +8544,9 @@
                 }
               },
               "queries": [
-                "+(4.11) +(printed page 309) --QDF=0",
-                "+(one continuous variable, as given in Eqs. (4-25)) +(printed page 309) --QDF=0"
+                "+(text one continuous variable as given in Eqs 4-25) +(printed page 309) --QDF=0",
+                "+(exercise 4.11) +(printed page 309) --QDF=0",
+                "+(exercise 4.12) +(printed page 309) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8666,8 +8621,9 @@
             }
           },
           "queries": [
-            "+(4.26) +(printed page 311) --QDF=0",
-            "+(Show the validity of the following 2-D continuous) +(printed page 311) --QDF=0"
+            "+(text Show the validity of the following 2-D continuous) +(printed page 311) --QDF=0",
+            "+(exercise 4.26) +(printed page 311) --QDF=0",
+            "+(exercise 4.27) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8739,8 +8695,9 @@
             }
           },
           "queries": [
-            "+(4.27) +(printed page 311) --QDF=0",
-            "+(form pairs from Table 4.4. (Hint: Study the solu-) +(printed page 311) --QDF=0"
+            "+(text form pairs from Table 4.4 Hint Study the solu) +(printed page 311) --QDF=0",
+            "+(exercise 4.27) +(printed page 311) --QDF=0",
+            "+(exercise 4.28) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8793,9 +8750,7 @@
           },
           "queries": [
             "+(equation 4-71) +(printed page 241) --QDF=0",
-            "+(equation 4-72) +(printed page 241) --QDF=0",
-            "+(4-71) +(equation) +(printed page 241) --QDF=0",
-            "+(4-72) +(equation) +(printed page 241) --QDF=0"
+            "+(equation 4-72) +(printed page 241) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8877,11 +8832,9 @@
             }
           },
           "queries": [
-            "+(text transform pairs. (Hint: It is easier in part (b) to) +(printed page 310) --QDF=0",
+            "+(text transform pairs Hint It is easier in part b to) +(printed page 310) --QDF=0",
             "+(exercise 4.17) +(printed page 310) --QDF=0",
-            "+(exercise 4.18) +(printed page 310) --QDF=0",
-            "+(4.17) +(printed page 310) --QDF=0",
-            "+(transform pairs. (Hint: It is easier in part (b) to) +(printed page 310) --QDF=0"
+            "+(exercise 4.18) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9072,8 +9025,9 @@
                 }
               },
               "queries": [
-                "+(4.17) +(printed page 310) --QDF=0",
-                "+(transform pairs. (Hint: It is easier in part (b) to) +(printed page 310) --QDF=0"
+                "+(text transform pairs Hint It is easier in part b to) +(printed page 310) --QDF=0",
+                "+(exercise 4.17) +(printed page 310) --QDF=0",
+                "+(exercise 4.18) +(printed page 310) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9145,8 +9099,9 @@
             }
           },
           "queries": [
-            "+(4.28) +(printed page 311) --QDF=0",
-            "+(Show the validity of the following 2-D discrete) +(printed page 311) --QDF=0"
+            "+(text Show the validity of the following 2-D discrete) +(printed page 311) --QDF=0",
+            "+(exercise 4.28) +(printed page 311) --QDF=0",
+            "+(exercise 4.29) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9302,8 +9257,9 @@
             }
           },
           "queries": [
-            "+(4.29) +(printed page 311) --QDF=0",
-            "+(is included or if it was split as two constants,) +(printed page 311) --QDF=0"
+            "+(text is included or if it was split as two constants) +(printed page 311) --QDF=0",
+            "+(exercise 4.29) +(printed page 311) --QDF=0",
+            "+(exercise 4.30) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9375,8 +9331,9 @@
             }
           },
           "queries": [
-            "+(4.30) +(printed page 311) --QDF=0",
-            "+(digital sequences (Hint: Think of these as square) +(printed page 311) --QDF=0"
+            "+(text digital sequences Hint Think of these as square) +(printed page 311) --QDF=0",
+            "+(exercise 4.30) +(printed page 311) --QDF=0",
+            "+(exercise 4.31) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9448,8 +9405,9 @@
             }
           },
           "queries": [
-            "+(4.31) +(printed page 311) --QDF=0",
-            "+((a) * When M is even, why is the point at M2 in) +(printed page 311) --QDF=0"
+            "+(text a When M is even why is the point at M2 in) +(printed page 311) --QDF=0",
+            "+(exercise 4.31) +(printed page 311) --QDF=0",
+            "+(exercise 4.32) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9603,8 +9561,9 @@
             }
           },
           "queries": [
-            "+(4.32) +(printed page 311) --QDF=0",
-            "+(centers coincide. Show that this is true also for) +(printed page 311) --QDF=0"
+            "+(text centers coincide Show that this is true also for) +(printed page 311) --QDF=0",
+            "+(exercise 4.32) +(printed page 311) --QDF=0",
+            "+(exercise 4.33) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9760,8 +9719,9 @@
             }
           },
           "queries": [
-            "+(4.33) +(printed page 311) --QDF=0",
-            "+(its ﬁrst element is −1, and we know that in order) +(printed page 311) --QDF=0"
+            "+(text its rst element is 1 and we know that in order) +(printed page 311) --QDF=0",
+            "+(exercise 4.33) +(printed page 311) --QDF=0",
+            "+(exercise 4.34) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9914,8 +9874,8 @@
             "end_before": null
           },
           "queries": [
-            "+(4.34) +(printed page 311) --QDF=0",
-            "+((c) Explain why, as stated at the end of the exam-) +(printed page 311) --QDF=0"
+            "+(text c Explain why as stated at the end of the exam) +(printed page 311) --QDF=0",
+            "+(exercise 4.34) +(printed page 311) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10066,8 +10026,9 @@
             }
           },
           "queries": [
-            "+(4.35) +(printed page 312) --QDF=0",
-            "+(The following problems are related to the proper-) +(printed page 312) --QDF=0"
+            "+(text The following problems are related to the proper) +(printed page 312) --QDF=0",
+            "+(exercise 4.35) +(printed page 312) --QDF=0",
+            "+(exercise 4.36) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10223,8 +10184,9 @@
             }
           },
           "queries": [
-            "+(4.36) +(printed page 312) --QDF=0",
-            "+(of a DFT is proportional to the average value of) +(printed page 312) --QDF=0"
+            "+(text of a DFT is proportional to the average value of) +(printed page 312) --QDF=0",
+            "+(exercise 4.36) +(printed page 312) --QDF=0",
+            "+(exercise 4.37) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10277,9 +10239,7 @@
           },
           "queries": [
             "+(equation 4-102) +(printed page 257) --QDF=0",
-            "+(equation 4-103) +(printed page 257) --QDF=0",
-            "+(4-102) +(equation) +(printed page 257) --QDF=0",
-            "+(4-103) +(equation) +(printed page 257) --QDF=0"
+            "+(equation 4-103) +(printed page 257) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10514,8 +10474,9 @@
             }
           },
           "queries": [
-            "+(4.37) +(printed page 312) --QDF=0",
-            "+(Demonstrate the validity of the periodicity prop-) +(printed page 312) --QDF=0"
+            "+(text Demonstrate the validity of the periodicity prop) +(printed page 312) --QDF=0",
+            "+(exercise 4.37) +(printed page 312) --QDF=0",
+            "+(exercise 4.38) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10671,8 +10632,9 @@
             }
           },
           "queries": [
-            "+(4.38) +(printed page 312) --QDF=0",
-            "+(With reference to the 2-D discrete convolution) +(printed page 312) --QDF=0"
+            "+(text With reference to the 2-D discrete convolution) +(printed page 312) --QDF=0",
+            "+(exercise 4.38) +(printed page 312) --QDF=0",
+            "+(exercise 4.39) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10838,11 +10800,9 @@
             }
           },
           "queries": [
-            "+(text ables, but with the right side of Eq. (4-26) multi-) +(printed page 310) --QDF=0",
+            "+(text ables but with the right side of Eq 4-26 multi) +(printed page 310) --QDF=0",
             "+(exercise 4.18) +(printed page 310) --QDF=0",
-            "+(exercise 4.19) +(printed page 310) --QDF=0",
-            "+(4.18) +(printed page 310) --QDF=0",
-            "+(ables, but with the right side of Eq. (4-26) multi-) +(printed page 310) --QDF=0"
+            "+(exercise 4.19) +(printed page 310) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11036,8 +10996,9 @@
                 }
               },
               "queries": [
-                "+(4.18) +(printed page 310) --QDF=0",
-                "+(ables, but with the right side of Eq. (4-26) multi-) +(printed page 310) --QDF=0"
+                "+(text ables but with the right side of Eq 4-26 multi) +(printed page 310) --QDF=0",
+                "+(exercise 4.18) +(printed page 310) --QDF=0",
+                "+(exercise 4.19) +(printed page 310) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -11112,8 +11073,9 @@
             }
           },
           "queries": [
-            "+(4.39) +(printed page 312) --QDF=0",
-            "+(With reference to the 2-D discrete correlation) +(printed page 312) --QDF=0"
+            "+(text With reference to the 2-D discrete correlation) +(printed page 312) --QDF=0",
+            "+(exercise 4.39) +(printed page 312) --QDF=0",
+            "+(exercise 4.40) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11269,8 +11231,9 @@
             }
           },
           "queries": [
-            "+(4.40) +(printed page 312) --QDF=0",
-            "+(* Demonstrate validity of the differentiation pairs) +(printed page 312) --QDF=0"
+            "+(text Demonstrate validity of the differentiation pairs) +(printed page 312) --QDF=0",
+            "+(exercise 4.40) +(printed page 312) --QDF=0",
+            "+(exercise 4.41) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11426,8 +11389,9 @@
             }
           },
           "queries": [
-            "+(4.41) +(printed page 312) --QDF=0",
-            "+(image, on the left). Do you think it would make a) +(printed page 312) --QDF=0"
+            "+(text image on the left Do you think it would make a) +(printed page 312) --QDF=0",
+            "+(exercise 4.41) +(printed page 312) --QDF=0",
+            "+(exercise 4.42) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11477,10 +11441,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text In this section, we introduce several properties of the 2-D discrete Fourier transform) +(printed page 240) --QDF=0",
-            "+(heading 4.6 SOME PROPERTIES OF THE 2-D DFT AND IDFT) +(printed page 240) --QDF=0",
-            "+(4.6 SOME PROPERTIES OF THE 2-D DFT AND IDFT) +(printed page 240) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT In this section, we introduce several properties of the 2-D discrete Fourier transform printed page 240 --QDF=0"
+            "+(text In this section we introduce several properties of the 2-D discrete Fourier transform) +(printed page 240) --QDF=0",
+            "+(heading 4.6 SOME PROPERTIES OF THE 2-D DFT AND IDFT) +(printed page 240) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11525,9 +11487,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text interval from 0 to M −1 consists of two half periods meeting at point M2, but with) +(printed page 241) --QDF=0",
-            "+(interval from 0 to M −1 consists of two half periods meeting at point M2, but with) +(printed page 241) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT interval from 0 to M −1 consists of two half periods meeting at point M2, but with printed page 241 --QDF=0"
+            "+(text interval from 0 to M 1 consists of two half periods meeting at point M2 but) +(printed page 241) --QDF=0",
+            "+(interval from 0 to M 1 consists of two half periods meeting at point M2 but) +(text) +(printed page 241) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11577,9 +11538,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing purposes, it is more convenient to have in this interval a complete period of the) +(printed page 242) --QDF=0",
-            "+(ing purposes, it is more convenient to have in this interval a complete period of the) +(printed page 242) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT ing purposes, it is more convenient to have in this interval a complete period of the printed page 242 --QDF=0"
+            "+(text ing purposes it is more convenient to have in this interval a complete period of the) +(printed page 242) --QDF=0",
+            "+(ing purposes it is more convenient to have in this interval a complete period of the) +(text) +(printed page 242) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11619,9 +11579,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text frequency domains are integers. As we explained in Section 2.4 (see Fig. 2.19) if, as) +(printed page 243) --QDF=0",
-            "+(frequency domains are integers. As we explained in Section 2.4 (see Fig. 2.19) if, as) +(printed page 243) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT frequency domains are integers. As we explained in Section 2.4 (see Fig. 2.19) if, as printed page 243 --QDF=0"
+            "+(text frequency domains are integers As we explained in Section 2.4 see Fig 2.19 if as) +(printed page 243) --QDF=0",
+            "+(frequency domains are integers As we explained in Section 2.4 see Fig 2.19 if as) +(text) +(printed page 243) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11667,9 +11626,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text intuitive when dealing with discrete sequences. The following illustrations will help clarify the preceding) +(printed page 244) --QDF=0",
-            "+(intuitive when dealing with discrete sequences. The following illustrations will help clarify the preceding) +(printed page 244) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT intuitive when dealing with discrete sequences. The following illustrations will help clarify the preceding printed page 244 --QDF=0"
+            "+(text intuitive when dealing with discrete sequences The following illustrations will help clarify the preceding) +(printed page 244) --QDF=0",
+            "+(intuitive when dealing with discrete sequences The following illustrations will help clarify the preceding) +(text) +(printed page 244) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11711,9 +11669,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text arbitrary values. When M is odd, the ﬁrst point of an even sequence is still arbitrary, but the others form) +(printed page 245) --QDF=0",
-            "+(arbitrary values. When M is odd, the ﬁrst point of an even sequence is still arbitrary, but the others form) +(printed page 245) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT arbitrary values. When M is odd, the ﬁrst point of an even sequence is still arbitrary, but the others form printed page 245 --QDF=0"
+            "+(text arbitrary values When M is odd the rst point of an even sequence is still arbitrary) +(printed page 245) --QDF=0",
+            "+(arbitrary values When M is odd the rst point of an even sequence is still arbitrary) +(text) +(printed page 245) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11753,9 +11710,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text similarly for an odd complex function. As before, “⇔” indicates a Fourier transform pair.) +(printed page 246) --QDF=0",
-            "+(similarly for an odd complex function. As before, “⇔” indicates a Fourier transform pair.) +(printed page 246) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT similarly for an odd complex function. As before, “⇔” indicates a Fourier transform pair. printed page 246 --QDF=0"
+            "+(text similarly for an odd complex function As before indicates a Fourier transform pair) +(printed page 246) --QDF=0",
+            "+(similarly for an odd complex function As before indicates a Fourier transform pair) +(text) +(printed page 246) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11794,9 +11750,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text odd. Property 8 tells us that a real even function has a transform that is real and even also. Property 12) +(printed page 247) --QDF=0",
-            "+(odd. Property 8 tells us that a real even function has a transform that is real and even also. Property 12) +(printed page 247) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT odd. Property 8 tells us that a real even function has a transform that is real and even also. Property 12 printed page 247 --QDF=0"
+            "+(text odd Property 8 tells us that a real even function has a transform that is real) +(printed page 247) --QDF=0",
+            "+(odd Property 8 tells us that a real even function has a transform that is real) +(text) +(printed page 247) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11841,9 +11796,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ply insert this function into the equation, as we would any other function. Because of periodicity,) +(printed page 248) --QDF=0",
-            "+(ply insert this function into the equation, as we would any other function. Because of periodicity,) +(printed page 248) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT ply insert this function into the equation, as we would any other function. Because of periodicity, printed page 248 --QDF=0"
+            "+(text ply insert this function into the equation as we would any other function Because of periodicity) +(printed page 248) --QDF=0",
+            "+(ply insert this function into the equation as we would any other function Because of periodicity) +(text) +(printed page 248) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11880,9 +11834,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text The Fourier transform of a real function is conjugate symmetric [see Eq. (4-85)],) +(printed page 249) --QDF=0",
-            "+(The Fourier transform of a real function is conjugate symmetric [see Eq. (4-85)],) +(printed page 249) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT The Fourier transform of a real function is conjugate symmetric [see Eq. (4-85)], printed page 249 --QDF=0"
+            "+(text The Fourier transform of a real function is conjugate symmetric see Eq 4-85) +(printed page 249) --QDF=0",
+            "+(The Fourier transform of a real function is conjugate symmetric see Eq 4-85) +(text) +(printed page 249) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11929,9 +11882,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Two things are apparent in Fig. 4.23(b). As expected, the area around the origin of the transform con-) +(printed page 250) --QDF=0",
-            "+(Two things are apparent in Fig. 4.23(b). As expected, the area around the origin of the transform con-) +(printed page 250) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT Two things are apparent in Fig. 4.23(b). As expected, the area around the origin of the transform con- printed page 250 --QDF=0"
+            "+(text Two things are apparent in Fig 4.23 b As expected the area around the origin of) +(printed page 250) --QDF=0",
+            "+(Two things are apparent in Fig 4.23 b As expected the area around the origin of) +(text) +(printed page 250) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11972,9 +11924,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 4.24 illustrates these properties. The spectrum in Fig. 4.24(b) is identical to the spectrum in Fig. 4.23(d).) +(printed page 251) --QDF=0",
-            "+(4.24 illustrates these properties. The spectrum in Fig. 4.24(b) is identical to the spectrum in Fig. 4.23(d).) +(printed page 251) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT 4.24 illustrates these properties. The spectrum in Fig. 4.24(b) is identical to the spectrum in Fig. 4.23(d). printed page 251 --QDF=0"
+            "+(text 4.24 illustrates these properties The spectrum in Fig 4.24 b is identical to the spectrum in) +(printed page 251) --QDF=0",
+            "+(4.24 illustrates these properties The spectrum in Fig 4.24 b is identical to the spectrum in) +(text) +(printed page 251) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12018,9 +11969,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text using Eq. (4-88). Although there is no detail in this array that would lead us by visual analysis to associ-) +(printed page 252) --QDF=0",
-            "+(using Eq. (4-88). Although there is no detail in this array that would lead us by visual analysis to associ-) +(printed page 252) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT using Eq. (4-88). Although there is no detail in this array that would lead us by visual analysis to associ- printed page 252 --QDF=0"
+            "+(text using Eq 4-88 Although there is no detail in this array that would lead us by) +(printed page 252) --QDF=0",
+            "+(using Eq 4-88 Although there is no detail in this array that would lead us by) +(text) +(printed page 252) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12065,9 +12015,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Extending Eq. (4-48) to two variables results in the following expression for 2-D) +(printed page 253) --QDF=0",
-            "+(Extending Eq. (4-48) to two variables results in the following expression for 2-D) +(printed page 253) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT Extending Eq. (4-48) to two variables results in the following expression for 2-D printed page 253 --QDF=0"
+            "+(text Extending Eq 4-48 to two variables results in the following expression for 2-D) +(printed page 253) --QDF=0",
+            "+(Extending Eq 4-48 to two variables results in the following expression for 2-D) +(text) +(printed page 253) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12110,9 +12059,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Eq. (4-67). As before, the double arrow is used to indicate that the left and right sides) +(printed page 254) --QDF=0",
-            "+(Eq. (4-67). As before, the double arrow is used to indicate that the left and right sides) +(printed page 254) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT Eq. (4-67). As before, the double arrow is used to indicate that the left and right sides printed page 254 --QDF=0"
+            "+(text Eq 4-67 As before the double arrow is used to indicate that the left and right) +(printed page 254) --QDF=0",
+            "+(Eq 4-67 As before the double arrow is used to indicate that the left and right) +(text) +(printed page 254) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12153,9 +12101,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text these two functions as in the previous paragraph would yield the result in Fig. 4.27(j),) +(printed page 255) --QDF=0",
-            "+(these two functions as in the previous paragraph would yield the result in Fig. 4.27(j),) +(printed page 255) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT these two functions as in the previous paragraph would yield the result in Fig. 4.27(j), printed page 255 --QDF=0"
+            "+(text these two functions as in the previous paragraph would yield the result in Fig 4.27 j) +(printed page 255) --QDF=0",
+            "+(these two functions as in the previous paragraph would yield the result in Fig 4.27 j) +(text) +(printed page 255) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12197,9 +12144,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text in a 799-point spatial function identical to Fig. 4.27(e). The conclusion, then, is that) +(printed page 256) --QDF=0",
-            "+(in a 799-point spatial function identical to Fig. 4.27(e). The conclusion, then, is that) +(printed page 256) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT in a 799-point spatial function identical to Fig. 4.27(e). The conclusion, then, is that printed page 256 --QDF=0"
+            "+(text in a 799-point spatial function identical to Fig 4.27 e The conclusion then is that) +(printed page 256) --QDF=0",
+            "+(in a 799-point spatial function identical to Fig 4.27 e The conclusion then is that) +(text) +(printed page 256) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12241,9 +12187,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ful in digital image processing. The differentiation pair can be used to derive the fre-) +(printed page 257) --QDF=0",
-            "+(ful in digital image processing. The differentiation pair can be used to derive the fre-) +(printed page 257) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT ful in digital image processing. The differentiation pair can be used to derive the fre- printed page 257 --QDF=0"
+            "+(text ful in digital image processing The differentiation pair can be used to derive the fre) +(printed page 257) --QDF=0",
+            "+(ful in digital image processing The differentiation pair can be used to derive the fre) +(text) +(printed page 257) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12292,9 +12237,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text conjugate and dividing by MN gives the desired inverse. See) +(printed page 258) --QDF=0",
-            "+(conjugate and dividing by MN gives the desired inverse. See) +(printed page 258) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT conjugate and dividing by MN gives the desired inverse. See printed page 258 --QDF=0"
+            "+(text conjugate and dividing by MN gives the desired inverse See) +(printed page 258) --QDF=0",
+            "+(conjugate and dividing by MN gives the desired inverse See) +(text) +(printed page 258) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12331,9 +12275,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text The following Fourier transform pairs are derivable only for continuous variables, denoted) +(printed page 259) --QDF=0",
-            "+(The following Fourier transform pairs are derivable only for continuous variables, denoted) +(printed page 259) --QDF=0",
-            "Some Properties of the 2-D DFT and IDFT The following Fourier transform pairs are derivable only for continuous variables, denoted printed page 259 --QDF=0"
+            "+(text The following Fourier transform pairs are derivable only for continuous variables denoted) +(printed page 259) --QDF=0",
+            "+(The following Fourier transform pairs are derivable only for continuous variables denoted) +(text) +(printed page 259) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12383,8 +12326,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(4.6 SOME PROPERTIES OF THE 2-D DFT AND IDFT) +(printed page 240) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT In this section, we introduce several properties of the 2-D discrete Fourier transform printed page 240 --QDF=0"
+                "+(text In this section we introduce several properties of the 2-D discrete Fourier transform) +(printed page 240) --QDF=0",
+                "+(heading 4.6 SOME PROPERTIES OF THE 2-D DFT AND IDFT) +(printed page 240) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12429,8 +12372,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(interval from 0 to M −1 consists of two half periods meeting at point M2, but with) +(printed page 241) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT interval from 0 to M −1 consists of two half periods meeting at point M2, but with printed page 241 --QDF=0"
+                "+(text interval from 0 to M 1 consists of two half periods meeting at point M2 but) +(printed page 241) --QDF=0",
+                "+(interval from 0 to M 1 consists of two half periods meeting at point M2 but) +(text) +(printed page 241) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12480,8 +12423,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(ing purposes, it is more convenient to have in this interval a complete period of the) +(printed page 242) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT ing purposes, it is more convenient to have in this interval a complete period of the printed page 242 --QDF=0"
+                "+(text ing purposes it is more convenient to have in this interval a complete period of the) +(printed page 242) --QDF=0",
+                "+(ing purposes it is more convenient to have in this interval a complete period of the) +(text) +(printed page 242) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12521,8 +12464,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(frequency domains are integers. As we explained in Section 2.4 (see Fig. 2.19) if, as) +(printed page 243) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT frequency domains are integers. As we explained in Section 2.4 (see Fig. 2.19) if, as printed page 243 --QDF=0"
+                "+(text frequency domains are integers As we explained in Section 2.4 see Fig 2.19 if as) +(printed page 243) --QDF=0",
+                "+(frequency domains are integers As we explained in Section 2.4 see Fig 2.19 if as) +(text) +(printed page 243) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12568,8 +12511,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(intuitive when dealing with discrete sequences. The following illustrations will help clarify the preceding) +(printed page 244) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT intuitive when dealing with discrete sequences. The following illustrations will help clarify the preceding printed page 244 --QDF=0"
+                "+(text intuitive when dealing with discrete sequences The following illustrations will help clarify the preceding) +(printed page 244) --QDF=0",
+                "+(intuitive when dealing with discrete sequences The following illustrations will help clarify the preceding) +(text) +(printed page 244) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12611,8 +12554,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(arbitrary values. When M is odd, the ﬁrst point of an even sequence is still arbitrary, but the others form) +(printed page 245) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT arbitrary values. When M is odd, the ﬁrst point of an even sequence is still arbitrary, but the others form printed page 245 --QDF=0"
+                "+(text arbitrary values When M is odd the rst point of an even sequence is still arbitrary) +(printed page 245) --QDF=0",
+                "+(arbitrary values When M is odd the rst point of an even sequence is still arbitrary) +(text) +(printed page 245) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12652,8 +12595,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(similarly for an odd complex function. As before, “⇔” indicates a Fourier transform pair.) +(printed page 246) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT similarly for an odd complex function. As before, “⇔” indicates a Fourier transform pair. printed page 246 --QDF=0"
+                "+(text similarly for an odd complex function As before indicates a Fourier transform pair) +(printed page 246) --QDF=0",
+                "+(similarly for an odd complex function As before indicates a Fourier transform pair) +(text) +(printed page 246) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12692,8 +12635,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(odd. Property 8 tells us that a real even function has a transform that is real and even also. Property 12) +(printed page 247) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT odd. Property 8 tells us that a real even function has a transform that is real and even also. Property 12 printed page 247 --QDF=0"
+                "+(text odd Property 8 tells us that a real even function has a transform that is real) +(printed page 247) --QDF=0",
+                "+(odd Property 8 tells us that a real even function has a transform that is real) +(text) +(printed page 247) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12738,8 +12681,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(ply insert this function into the equation, as we would any other function. Because of periodicity,) +(printed page 248) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT ply insert this function into the equation, as we would any other function. Because of periodicity, printed page 248 --QDF=0"
+                "+(text ply insert this function into the equation as we would any other function Because of periodicity) +(printed page 248) --QDF=0",
+                "+(ply insert this function into the equation as we would any other function Because of periodicity) +(text) +(printed page 248) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12776,8 +12719,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(The Fourier transform of a real function is conjugate symmetric [see Eq. (4-85)],) +(printed page 249) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT The Fourier transform of a real function is conjugate symmetric [see Eq. (4-85)], printed page 249 --QDF=0"
+                "+(text The Fourier transform of a real function is conjugate symmetric see Eq 4-85) +(printed page 249) --QDF=0",
+                "+(The Fourier transform of a real function is conjugate symmetric see Eq 4-85) +(text) +(printed page 249) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12824,8 +12767,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Two things are apparent in Fig. 4.23(b). As expected, the area around the origin of the transform con-) +(printed page 250) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT Two things are apparent in Fig. 4.23(b). As expected, the area around the origin of the transform con- printed page 250 --QDF=0"
+                "+(text Two things are apparent in Fig 4.23 b As expected the area around the origin of) +(printed page 250) --QDF=0",
+                "+(Two things are apparent in Fig 4.23 b As expected the area around the origin of) +(text) +(printed page 250) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12866,8 +12809,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(4.24 illustrates these properties. The spectrum in Fig. 4.24(b) is identical to the spectrum in Fig. 4.23(d).) +(printed page 251) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT 4.24 illustrates these properties. The spectrum in Fig. 4.24(b) is identical to the spectrum in Fig. 4.23(d). printed page 251 --QDF=0"
+                "+(text 4.24 illustrates these properties The spectrum in Fig 4.24 b is identical to the spectrum in) +(printed page 251) --QDF=0",
+                "+(4.24 illustrates these properties The spectrum in Fig 4.24 b is identical to the spectrum in) +(text) +(printed page 251) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12911,8 +12854,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(using Eq. (4-88). Although there is no detail in this array that would lead us by visual analysis to associ-) +(printed page 252) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT using Eq. (4-88). Although there is no detail in this array that would lead us by visual analysis to associ- printed page 252 --QDF=0"
+                "+(text using Eq 4-88 Although there is no detail in this array that would lead us by) +(printed page 252) --QDF=0",
+                "+(using Eq 4-88 Although there is no detail in this array that would lead us by) +(text) +(printed page 252) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12957,8 +12900,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Extending Eq. (4-48) to two variables results in the following expression for 2-D) +(printed page 253) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT Extending Eq. (4-48) to two variables results in the following expression for 2-D printed page 253 --QDF=0"
+                "+(text Extending Eq 4-48 to two variables results in the following expression for 2-D) +(printed page 253) --QDF=0",
+                "+(Extending Eq 4-48 to two variables results in the following expression for 2-D) +(text) +(printed page 253) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13001,8 +12944,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Eq. (4-67). As before, the double arrow is used to indicate that the left and right sides) +(printed page 254) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT Eq. (4-67). As before, the double arrow is used to indicate that the left and right sides printed page 254 --QDF=0"
+                "+(text Eq 4-67 As before the double arrow is used to indicate that the left and right) +(printed page 254) --QDF=0",
+                "+(Eq 4-67 As before the double arrow is used to indicate that the left and right) +(text) +(printed page 254) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13043,8 +12986,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(these two functions as in the previous paragraph would yield the result in Fig. 4.27(j),) +(printed page 255) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT these two functions as in the previous paragraph would yield the result in Fig. 4.27(j), printed page 255 --QDF=0"
+                "+(text these two functions as in the previous paragraph would yield the result in Fig 4.27 j) +(printed page 255) --QDF=0",
+                "+(these two functions as in the previous paragraph would yield the result in Fig 4.27 j) +(text) +(printed page 255) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13086,8 +13029,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(in a 799-point spatial function identical to Fig. 4.27(e). The conclusion, then, is that) +(printed page 256) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT in a 799-point spatial function identical to Fig. 4.27(e). The conclusion, then, is that printed page 256 --QDF=0"
+                "+(text in a 799-point spatial function identical to Fig 4.27 e The conclusion then is that) +(printed page 256) --QDF=0",
+                "+(in a 799-point spatial function identical to Fig 4.27 e The conclusion then is that) +(text) +(printed page 256) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13129,8 +13072,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(ful in digital image processing. The differentiation pair can be used to derive the fre-) +(printed page 257) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT ful in digital image processing. The differentiation pair can be used to derive the fre- printed page 257 --QDF=0"
+                "+(text ful in digital image processing The differentiation pair can be used to derive the fre) +(printed page 257) --QDF=0",
+                "+(ful in digital image processing The differentiation pair can be used to derive the fre) +(text) +(printed page 257) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13179,8 +13122,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(conjugate and dividing by MN gives the desired inverse. See) +(printed page 258) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT conjugate and dividing by MN gives the desired inverse. See printed page 258 --QDF=0"
+                "+(text conjugate and dividing by MN gives the desired inverse See) +(printed page 258) --QDF=0",
+                "+(conjugate and dividing by MN gives the desired inverse See) +(text) +(printed page 258) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13217,8 +13160,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(The following Fourier transform pairs are derivable only for continuous variables, denoted) +(printed page 259) --QDF=0",
-                "Some Properties of the 2-D DFT and IDFT The following Fourier transform pairs are derivable only for continuous variables, denoted printed page 259 --QDF=0"
+                "+(text The following Fourier transform pairs are derivable only for continuous variables denoted) +(printed page 259) --QDF=0",
+                "+(The following Fourier transform pairs are derivable only for continuous variables denoted) +(text) +(printed page 259) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13284,8 +13227,9 @@
             }
           },
           "queries": [
-            "+(4.42) +(printed page 312) --QDF=0",
-            "+(strength along the vertical and horizontal axes of) +(printed page 312) --QDF=0"
+            "+(text strength along the vertical and horizontal axes of) +(printed page 312) --QDF=0",
+            "+(exercise 4.42) +(printed page 312) --QDF=0",
+            "+(exercise 4.43) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -13354,8 +13298,8 @@
             "end_before": null
           },
           "queries": [
-            "+(4.43) +(printed page 312) --QDF=0",
-            "+(right was obtained by: (a) multiplying the image) +(printed page 312) --QDF=0"
+            "+(text right was obtained by a multiplying the image) +(printed page 312) --QDF=0",
+            "+(exercise 4.43) +(printed page 312) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -13422,8 +13366,9 @@
             }
           },
           "queries": [
-            "+(4.44) +(printed page 313) --QDF=0",
-            "+(explain why this operation caused the image to be) +(printed page 313) --QDF=0"
+            "+(text explain why this operation caused the image to be) +(printed page 313) --QDF=0",
+            "+(exercise 4.44) +(printed page 313) --QDF=0",
+            "+(exercise 4.45) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -13741,8 +13686,9 @@
             }
           },
           "queries": [
-            "+(4.45) +(printed page 313) --QDF=0",
-            "+(angle by −1 ﬂipped the image with respect to both) +(printed page 313) --QDF=0"
+            "+(text angle by 1 ipped the image with respect to both) +(printed page 313) --QDF=0",
+            "+(exercise 4.45) +(printed page 313) --QDF=0",
+            "+(exercise 4.46) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -13793,9 +13739,7 @@
           },
           "queries": [
             "+(equation 2-31) +(printed page 91) --QDF=0",
-            "+(equation 2-32) +(printed page 91) --QDF=0",
-            "+(2-31) +(equation) +(printed page 91) --QDF=0",
-            "+(2-32) +(equation) +(printed page 91) --QDF=0"
+            "+(equation 2-32) +(printed page 91) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14030,8 +13974,9 @@
             }
           },
           "queries": [
-            "+(4.46) +(printed page 313) --QDF=0",
-            "+(What is the source of the nearly periodic bright) +(printed page 313) --QDF=0"
+            "+(text What is the source of the nearly periodic bright) +(printed page 313) --QDF=0",
+            "+(exercise 4.46) +(printed page 313) --QDF=0",
+            "+(exercise 4.47) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14185,8 +14130,9 @@
             }
           },
           "queries": [
-            "+(4.47) +(printed page 313) --QDF=0",
-            "+((b) Show that your result is a lowpass ﬁlter trans-) +(printed page 313) --QDF=0"
+            "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+            "+(exercise 4.47) +(printed page 313) --QDF=0",
+            "+(exercise 4.48) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14258,8 +14204,9 @@
             }
           },
           "queries": [
-            "+(4.48) +(printed page 313) --QDF=0",
-            "+(* A continuous Gaussian lowpass ﬁlter in the con-) +(printed page 313) --QDF=0"
+            "+(text A continuous Gaussian lowpass lter in the con) +(printed page 313) --QDF=0",
+            "+(exercise 4.48) +(printed page 313) --QDF=0",
+            "+(exercise 4.49) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14331,8 +14278,9 @@
             }
           },
           "queries": [
-            "+(4.49) +(printed page 313) --QDF=0",
-            "+(for a sufﬁciently large value of K? If so, what) +(printed page 313) --QDF=0"
+            "+(text for a suf ciently large value of K If so what) +(printed page 313) --QDF=0",
+            "+(exercise 4.49) +(printed page 313) --QDF=0",
+            "+(exercise 4.50) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14404,8 +14352,9 @@
             }
           },
           "queries": [
-            "+(4.50) +(printed page 313) --QDF=0",
-            "+(tives can be approximated by the spatial differ-) +(printed page 313) --QDF=0"
+            "+(text tives can be approximated by the spatial differ) +(printed page 313) --QDF=0",
+            "+(exercise 4.50) +(printed page 313) --QDF=0",
+            "+(exercise 4.51) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14455,10 +14404,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text sharpening can be accomplished by spatial differentiation. In fact, this is the case,) +(printed page 175) --QDF=0",
-            "+(heading 3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
-            "+(3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters sharpening can be accomplished by spatial differentiation. In fact, this is the case, printed page 175 --QDF=0"
+            "+(text sharpening can be accomplished by spatial differentiation In fact this is the case) +(printed page 175) --QDF=0",
+            "+(heading 3.6 SHARPENING HIGHPASS SPATIAL FILTERS) +(printed page 175) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14500,9 +14447,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
-            "+(varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass printed page 176 --QDF=0"
+            "+(text varying intensities As noted in Section 3.5 smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
+            "+(varying intensities As noted in Section 3.5 smoothing is often referred to as lowpass) +(text) +(printed page 176) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14541,9 +14487,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
-            "+(These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44, printed page 177 --QDF=0"
+            "+(text These two definitions satisfy the conditions stated above as we illustrate in Fig 3.44) +(printed page 177) --QDF=0",
+            "+(These two definitions satisfy the conditions stated above as we illustrate in Fig 3.44) +(text) +(printed page 177) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14581,9 +14526,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
-            "+(3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters 3.44(c) that in a step transition a line joining these two values crosses the horizontal printed page 178 --QDF=0"
+            "+(text 3.44 c that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
+            "+(3.44 c that in a step transition a line joining these two values crosses the horizontal) +(text) +(printed page 178) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14622,9 +14566,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
-            "+(an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla- printed page 179 --QDF=0"
+            "+(text an extension of this equation that includes the diagonal terms c and d Two other Lapla) +(printed page 179) --QDF=0",
+            "+(an extension of this equation that includes the diagonal terms c and d Two other Lapla) +(text) +(printed page 179) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14667,9 +14610,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
-            "+(of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are printed page 180 --QDF=0"
+            "+(text of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
+            "+(of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14714,9 +14656,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
-            "+(Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution- printed page 181 --QDF=0"
+            "+(text Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
+            "+(Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14755,9 +14696,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
-            "+(sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters sharpen images. This process, called unsharp masking, consists of the following steps: printed page 182 --QDF=0"
+            "+(text sharpen images This process called unsharp masking consists of the following steps) +(printed page 182) --QDF=0",
+            "+(sharpen images This process called unsharp masking consists of the following steps) +(text) +(printed page 182) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14800,9 +14740,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
-            "+(Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b) printed page 183 --QDF=0"
+            "+(text Figure 3.49 a shows a slightly blurred image of white text on a dark gray background) +(printed page 183) --QDF=0",
+            "+(Figure 3.49 a shows a slightly blurred image of white text on a dark gray background) +(text) +(printed page 183) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14844,9 +14783,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
-            "+(signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol- printed page 184 --QDF=0"
+            "+(text signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(printed page 184) --QDF=0",
+            "+(signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(text) +(printed page 184) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14888,9 +14826,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-            "+(mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning printed page 185 --QDF=0"
+            "+(text mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+            "+(mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14932,9 +14869,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text (integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
-            "+((integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters (integer) center of spatial symmetry. The smallest kernels in which we are interested printed page 186 --QDF=0"
+            "+(text integer center of spatial symmetry The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
+            "+(integer center of spatial symmetry The smallest kernels in which we are interested) +(text) +(printed page 186) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14977,9 +14913,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
-            "+(not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
-            "Sharpening (Highpass) Spatial Filters not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup- printed page 187 --QDF=0"
+            "+(text not be readily visible in a gray-scale image specs like these can be foreign matter air) +(printed page 187) --QDF=0",
+            "+(not be readily visible in a gray-scale image specs like these can be foreign matter air) +(text) +(printed page 187) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -15027,11 +14962,9 @@
             }
           },
           "queries": [
-            "+(text (b) Show that your result is a lowpass ﬁlter trans-) +(printed page 313) --QDF=0",
+            "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
             "+(exercise 4.47) +(printed page 313) --QDF=0",
-            "+(exercise 4.48) +(printed page 313) --QDF=0",
-            "+(4.47) +(printed page 313) --QDF=0",
-            "+((b) Show that your result is a lowpass ﬁlter trans-) +(printed page 313) --QDF=0"
+            "+(exercise 4.48) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -15087,8 +15020,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS) +(printed page 175) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters sharpening can be accomplished by spatial differentiation. In fact, this is the case, printed page 175 --QDF=0"
+                "+(text sharpening can be accomplished by spatial differentiation In fact this is the case) +(printed page 175) --QDF=0",
+                "+(heading 3.6 SHARPENING HIGHPASS SPATIAL FILTERS) +(printed page 175) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15130,8 +15063,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters varying intensities. As noted in Section 3.5, smoothing is often referred to as lowpass printed page 176 --QDF=0"
+                "+(text varying intensities As noted in Section 3.5 smoothing is often referred to as lowpass) +(printed page 176) --QDF=0",
+                "+(varying intensities As noted in Section 3.5 smoothing is often referred to as lowpass) +(text) +(printed page 176) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15170,8 +15103,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44,) +(printed page 177) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters These two definitions satisfy the conditions stated above, as we illustrate in Fig. 3.44, printed page 177 --QDF=0"
+                "+(text These two definitions satisfy the conditions stated above as we illustrate in Fig 3.44) +(printed page 177) --QDF=0",
+                "+(These two definitions satisfy the conditions stated above as we illustrate in Fig 3.44) +(text) +(printed page 177) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15209,8 +15142,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(3.44(c) that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters 3.44(c) that in a step transition a line joining these two values crosses the horizontal printed page 178 --QDF=0"
+                "+(text 3.44 c that in a step transition a line joining these two values crosses the horizontal) +(printed page 178) --QDF=0",
+                "+(3.44 c that in a step transition a line joining these two values crosses the horizontal) +(text) +(printed page 178) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15249,8 +15182,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla-) +(printed page 179) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters an extension of this equation that includes the diagonal terms. (c) and (d) Two other Lapla- printed page 179 --QDF=0"
+                "+(text an extension of this equation that includes the diagonal terms c and d Two other Lapla) +(printed page 179) --QDF=0",
+                "+(an extension of this equation that includes the diagonal terms c and d Two other Lapla) +(text) +(printed page 179) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15293,8 +15226,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are) +(printed page 180) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters of ﬁltering this image with the Laplacian kernel in Fig. 3.45(a) directly. Large sections of this image are printed page 180 --QDF=0"
+                "+(text of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
+                "+(of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15339,8 +15272,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution-) +(printed page 181) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters Observe in Fig. 3.45 that the coefﬁcients of each kernel sum to zero. Convolution- printed page 181 --QDF=0"
+                "+(text Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
+                "+(Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15379,8 +15312,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(sharpen images. This process, called unsharp masking, consists of the following steps:) +(printed page 182) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters sharpen images. This process, called unsharp masking, consists of the following steps: printed page 182 --QDF=0"
+                "+(text sharpen images This process called unsharp masking consists of the following steps) +(printed page 182) --QDF=0",
+                "+(sharpen images This process called unsharp masking consists of the following steps) +(text) +(printed page 182) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15423,8 +15356,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b)) +(printed page 183) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters Figure 3.49(a) shows a slightly blurred image of white text on a dark gray background. Figure 3.49(b) printed page 183 --QDF=0"
+                "+(text Figure 3.49 a shows a slightly blurred image of white text on a dark gray background) +(printed page 183) --QDF=0",
+                "+(Figure 3.49 a shows a slightly blurred image of white text on a dark gray background) +(text) +(printed page 183) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15466,8 +15399,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol-) +(printed page 184) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters signiﬁcantly sharper than the original image in Fig. 3.49(a), but we can do better, as we show in the fol- printed page 184 --QDF=0"
+                "+(text signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(printed page 184) --QDF=0",
+                "+(signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(text) +(printed page 184) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15509,8 +15442,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters mations to a ﬁrst-order derivative that satisfy the conditions stated at the beginning printed page 185 --QDF=0"
+                "+(text mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+                "+(mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15552,8 +15485,8 @@
                 "end_before": null
               },
               "queries": [
-                "+((integer) center of spatial symmetry. The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters (integer) center of spatial symmetry. The smallest kernels in which we are interested printed page 186 --QDF=0"
+                "+(text integer center of spatial symmetry The smallest kernels in which we are interested) +(printed page 186) --QDF=0",
+                "+(integer center of spatial symmetry The smallest kernels in which we are interested) +(text) +(printed page 186) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15596,8 +15529,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup-) +(printed page 187) --QDF=0",
-                "Sharpening (Highpass) Spatial Filters not be readily visible in a gray-scale image (specs like these can be foreign matter, air pockets in a sup- printed page 187 --QDF=0"
+                "+(text not be readily visible in a gray-scale image specs like these can be foreign matter air) +(printed page 187) --QDF=0",
+                "+(not be readily visible in a gray-scale image specs like these can be foreign matter air) +(text) +(printed page 187) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15653,8 +15586,9 @@
                 }
               },
               "queries": [
-                "+(4.47) +(printed page 313) --QDF=0",
-                "+((b) Show that your result is a lowpass ﬁlter trans-) +(printed page 313) --QDF=0"
+                "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+                "+(exercise 4.47) +(printed page 313) --QDF=0",
+                "+(exercise 4.48) +(printed page 313) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15726,8 +15660,9 @@
             }
           },
           "queries": [
-            "+(4.51) +(printed page 313) --QDF=0",
-            "+(in Fig. 3.45(a). Show that your result behaves as a) +(printed page 313) --QDF=0"
+            "+(text in Fig 3.45 a Show that your result behaves as a) +(printed page 313) --QDF=0",
+            "+(exercise 4.51) +(printed page 313) --QDF=0",
+            "+(exercise 4.52) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -15816,11 +15751,9 @@
             }
           },
           "queries": [
-            "+(text (b) Show that your result is a lowpass ﬁlter trans-) +(printed page 313) --QDF=0",
+            "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
             "+(exercise 4.47) +(printed page 313) --QDF=0",
-            "+(exercise 4.48) +(printed page 313) --QDF=0",
-            "+(4.47) +(printed page 313) --QDF=0",
-            "+((b) Show that your result is a lowpass ﬁlter trans-) +(printed page 313) --QDF=0"
+            "+(exercise 4.48) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -15923,8 +15856,9 @@
                 }
               },
               "queries": [
-                "+(4.47) +(printed page 313) --QDF=0",
-                "+((b) Show that your result is a lowpass ﬁlter trans-) +(printed page 313) --QDF=0"
+                "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+                "+(exercise 4.47) +(printed page 313) --QDF=0",
+                "+(exercise 4.48) +(printed page 313) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15993,8 +15927,8 @@
             "end_before": null
           },
           "queries": [
-            "+(4.52) +(printed page 313) --QDF=0",
-            "+((b) * The result in (a) is valid only for continuous) +(printed page 313) --QDF=0"
+            "+(text b The result in a is valid only for continuous) +(printed page 313) --QDF=0",
+            "+(exercise 4.52) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -16389,8 +16323,9 @@
             }
           },
           "queries": [
-            "+(4.53) +(printed page 314) --QDF=0",
-            "+(* Can you think of a way to use the Fourier trans-) +(printed page 314) --QDF=0"
+            "+(text Can you think of a way to use the Fourier trans) +(printed page 314) --QDF=0",
+            "+(exercise 4.53) +(printed page 314) --QDF=0",
+            "+(exercise 4.54) +(printed page 314) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -16546,8 +16481,9 @@
             }
           },
           "queries": [
-            "+(4.54) +(printed page 314) --QDF=0",
-            "+(As explained in Eq. (4-118), it is possible to obtain) +(printed page 314) --QDF=0"
+            "+(text As explained in Eq 4-118 it is possible to obtain) +(printed page 314) --QDF=0",
+            "+(exercise 4.54) +(printed page 314) --QDF=0",
+            "+(exercise 4.55) +(printed page 314) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -16638,11 +16574,9 @@
             }
           },
           "queries": [
-            "+(text * A continuous Gaussian lowpass ﬁlter in the con-) +(printed page 313) --QDF=0",
+            "+(text A continuous Gaussian lowpass lter in the con) +(printed page 313) --QDF=0",
             "+(exercise 4.48) +(printed page 313) --QDF=0",
-            "+(exercise 4.49) +(printed page 313) --QDF=0",
-            "+(4.48) +(printed page 313) --QDF=0",
-            "+(* A continuous Gaussian lowpass ﬁlter in the con-) +(printed page 313) --QDF=0"
+            "+(exercise 4.49) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -16745,8 +16679,9 @@
                 }
               },
               "queries": [
-                "+(4.48) +(printed page 313) --QDF=0",
-                "+(* A continuous Gaussian lowpass ﬁlter in the con-) +(printed page 313) --QDF=0"
+                "+(text A continuous Gaussian lowpass lter in the con) +(printed page 313) --QDF=0",
+                "+(exercise 4.48) +(printed page 313) --QDF=0",
+                "+(exercise 4.49) +(printed page 313) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -16818,8 +16753,9 @@
             }
           },
           "queries": [
-            "+(4.55) +(printed page 314) --QDF=0",
-            "+(strong spike in the center. Explain the source of) +(printed page 314) --QDF=0"
+            "+(text strong spike in the center Explain the source of) +(printed page 314) --QDF=0",
+            "+(exercise 4.55) +(printed page 314) --QDF=0",
+            "+(exercise 4.56) +(printed page 314) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -16973,8 +16909,9 @@
             }
           },
           "queries": [
-            "+(4.56) +(printed page 314) --QDF=0",
-            "+(fer function in Eq. (4-121) follows from its low-) +(printed page 314) --QDF=0"
+            "+(text fer function in Eq 4-121 follows from its low) +(printed page 314) --QDF=0",
+            "+(exercise 4.56) +(printed page 314) --QDF=0",
+            "+(exercise 4.57) +(printed page 314) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -17211,8 +17148,9 @@
             }
           },
           "queries": [
-            "+(4.57) +(printed page 314) --QDF=0",
-            "+((b) Do you think the result would have been dif-) +(printed page 314) --QDF=0"
+            "+(text b Do you think the result would have been dif) +(printed page 314) --QDF=0",
+            "+(exercise 4.57) +(printed page 314) --QDF=0",
+            "+(exercise 4.58) +(printed page 314) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -17284,8 +17222,9 @@
             }
           },
           "queries": [
-            "+(4.58) +(printed page 314) --QDF=0",
-            "+(The image on the top left is a segment of an X-ray) +(printed page 314) --QDF=0"
+            "+(text The image on the top left is a segment of an X-ray) +(printed page 314) --QDF=0",
+            "+(exercise 4.58) +(printed page 314) --QDF=0",
+            "+(exercise 4.59) +(printed page 314) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -17338,11 +17277,9 @@
             }
           },
           "queries": [
-            "+(text for a sufﬁciently large value of K? If so, what) +(printed page 313) --QDF=0",
+            "+(text for a suf ciently large value of K If so what) +(printed page 313) --QDF=0",
             "+(exercise 4.49) +(printed page 313) --QDF=0",
-            "+(exercise 4.50) +(printed page 313) --QDF=0",
-            "+(4.49) +(printed page 313) --QDF=0",
-            "+(for a sufﬁciently large value of K? If so, what) +(printed page 313) --QDF=0"
+            "+(exercise 4.50) +(printed page 313) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -17401,8 +17338,9 @@
                 }
               },
               "queries": [
-                "+(4.49) +(printed page 313) --QDF=0",
-                "+(for a sufﬁciently large value of K? If so, what) +(printed page 313) --QDF=0"
+                "+(text for a suf ciently large value of K If so what) +(printed page 313) --QDF=0",
+                "+(exercise 4.49) +(printed page 313) --QDF=0",
+                "+(exercise 4.50) +(printed page 313) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -17471,8 +17409,8 @@
             "end_before": null
           },
           "queries": [
-            "+(4.59) +(printed page 314) --QDF=0",
-            "+(As illustrated in Fig. 4.57, combining high-fre-) +(printed page 314) --QDF=0"
+            "+(text As illustrated in Fig 4.57 combining high-fre) +(printed page 314) --QDF=0",
+            "+(exercise 4.59) +(printed page 314) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -17515,8 +17453,8 @@
             }
           },
           "queries": [
-            "+((b) If the order does matter, give a rationale for) +(printed page 315) --QDF=0",
-            "+((b) If the order does matter, give a rationale for) +(Problems) +(printed page 315) --QDF=0"
+            "+(text b If the order does matter give a rationale for) +(printed page 315) --QDF=0",
+            "+(exercise 4.60) +(printed page 315) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -17665,8 +17603,9 @@
             }
           },
           "queries": [
-            "+(4.60) +(printed page 315) --QDF=0",
-            "+(same general shape as the function in Fig. 4.59.) +(printed page 315) --QDF=0"
+            "+(text same general shape as the function in Fig 4.59) +(printed page 315) --QDF=0",
+            "+(exercise 4.60) +(printed page 315) --QDF=0",
+            "+(exercise 4.61) +(printed page 315) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -17820,8 +17759,9 @@
             }
           },
           "queries": [
-            "+(4.61) +(printed page 315) --QDF=0",
-            "+(ated by an experiment dealing with the analysis of) +(printed page 315) --QDF=0"
+            "+(text ated by an experiment dealing with the analysis of) +(printed page 315) --QDF=0",
+            "+(exercise 4.61) +(printed page 315) --QDF=0",
+            "+(exercise 4.62) +(printed page 315) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -17893,8 +17833,9 @@
             }
           },
           "queries": [
-            "+(4.62) +(printed page 315) --QDF=0",
-            "+(How would you generate an image of only the) +(printed page 315) --QDF=0"
+            "+(text How would you generate an image of only the) +(printed page 315) --QDF=0",
+            "+(exercise 4.62) +(printed page 315) --QDF=0",
+            "+(exercise 4.63) +(printed page 315) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -18048,8 +17989,9 @@
             }
           },
           "queries": [
-            "+(4.63) +(printed page 315) --QDF=0",
-            "+(* Show the validity of Eqs. (4-171) and (4-172).) +(printed page 315) --QDF=0"
+            "+(text Show the validity of Eqs 4-171 and 4-172) +(printed page 315) --QDF=0",
+            "+(exercise 4.63) +(printed page 315) --QDF=0",
+            "+(exercise 4.64) +(printed page 315) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -18100,9 +18042,7 @@
           },
           "queries": [
             "+(equation 4-171) +(printed page 307) --QDF=0",
-            "+(equation 4-172) +(printed page 307) --QDF=0",
-            "+(4-171) +(equation) +(printed page 307) --QDF=0",
-            "+(4-172) +(equation) +(printed page 307) --QDF=0"
+            "+(equation 4-172) +(printed page 307) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -18254,8 +18194,8 @@
             "end_before": null
           },
           "queries": [
-            "+(4.64) +(printed page 315) --QDF=0",
-            "+(can follow to achieve the desired goal. You may) +(printed page 315) --QDF=0"
+            "+(text can follow to achieve the desired goal You may) +(printed page 315) --QDF=0",
+            "+(exercise 4.64) +(printed page 315) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -18295,8 +18235,8 @@
             "end_before": null
           },
           "queries": [
-            "+(This page intentionally left blank) +(printed page 316) --QDF=0",
-            "+(This page intentionally left blank) +(Problems) +(printed page 316) --QDF=0"
+            "+(text This page intentionally left blank) +(printed page 316) --QDF=0",
+            "+(This page intentionally left blank) +(text) +(printed page 316) --QDF=0"
           ],
           "required_evidence": [
             {

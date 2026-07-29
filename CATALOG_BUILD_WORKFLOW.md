@@ -242,6 +242,11 @@ content_window.end_before
 不把一个 step 的完整查询数组放进单次调用。这样既不受单次查询数量上限影响，
 也能在某条查询已满足全部 evidence 时停止后续回退查询。
 
+原始 PDF 文本不能直接嵌套进 `+(...)`。构建器先把 evidence anchor 规范化为
+字母、数字、句点和连字符 token，移除源文本中的圆括号及其他结构标点，再由
+typed evidence 重新生成 query。Exercise Locator 加载时会拒绝任何括号不平衡
+的 query，并要求每个非页码 evidence 至少有一个匹配的安全 query anchor。
+
 ## 11. 生成并验证核验证据
 
 每个 page step 保存类型化证据，例如：
@@ -501,6 +506,9 @@ execution reference steps before exact-window merge: 1338
 coalesced same-page/same-window steps: 72
 same-page distinct-window steps preserved: 4
 deduplicated reference retrieval steps: 1266
+compiled queries: 6939
+unbalanced compiled queries: 0
+steps without a balanced query: 0
 source_pdf_verification_status: passed
 file_search_retrieval_status: not_tested
 ```

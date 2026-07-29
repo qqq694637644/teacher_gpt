@@ -78,7 +78,7 @@ exercises:
         value: '2.3'
     queries:
     - +(2.2) +(printed page 113) --QDF=0
-    - +(of one receptor (cone) in that area of the retina.) +(printed page 113) --QDF=0
+    - +(of one receptor cone in that area of the retina) +(printed page 113) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '113'
@@ -129,7 +129,7 @@ exercises:
         value: '2.4'
     queries:
     - +(2.3) +(printed page 113) --QDF=0
-    - +(States has a frequency of 60 Hz. What is the wave-) +(printed page 113) --QDF=0
+    - +(States has a frequency of 60 Hz What is the wave) +(printed page 113) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '113'
@@ -178,7 +178,7 @@ exercises:
       end_before: null
     queries:
     - +(2.4) +(printed page 113) --QDF=0
-    - +(You are hired to design the front end of an imag-) +(printed page 113) --QDF=0
+    - +(You are hired to design the front end of an imag) +(printed page 113) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '113'
@@ -269,7 +269,7 @@ exercises:
         value: '2.7'
     queries:
     - +(2.6) +(printed page 114) --QDF=0
-    - +(pairs per mm will this camera be able to resolve?) +(printed page 114) --QDF=0
+    - +(pairs per mm will this camera be able to resolve) +(printed page 114) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '114'
@@ -367,7 +367,7 @@ exercises:
         value: '2.9'
     queries:
     - +(2.8) +(printed page 114) --QDF=0
-    - +(mm lens, and your job is to pick an appropriate) +(printed page 114) --QDF=0
+    - +(mm lens and your job is to pick an appropriate) +(printed page 114) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '114'
@@ -418,7 +418,7 @@ exercises:
         value: '2.10'
     queries:
     - +(2.9) +(printed page 114) --QDF=0
-    - +(data is the baud rate, deﬁned as symbols (bits in) +(printed page 114) --QDF=0
+    - +(data is the baud rate de ned as symbols bits in) +(printed page 114) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '114'
@@ -465,7 +465,7 @@ exercises:
         value: '2.11'
     queries:
     - +(2.10) +(printed page 114) --QDF=0
-    - +(of each horizontal line in their system is propor-) +(printed page 114) --QDF=0
+    - +(of each horizontal line in their system is propor) +(printed page 114) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '114'
@@ -512,7 +512,7 @@ exercises:
         value: '2.12'
     queries:
     - +(2.11) +(printed page 114) --QDF=0
-    - +(we arrived at the linear index in Eq. (2-14) by) +(printed page 114) --QDF=0
+    - +(we arrived at the linear index in Eq 2-14 by) +(printed page 114) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '114'
@@ -578,7 +578,7 @@ exercises:
       end_before: null
     queries:
     - +(2.12) +(printed page 114) --QDF=0
-    - +(* Suppose that a ﬂat area with center at () +(printed page 114) --QDF=0
+    - +(Suppose that a at area with center at) +(printed page 114) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '114'
@@ -605,8 +605,8 @@ exercises:
         kind: exercise
         value: '2.13'
     queries:
-    - +(adjacent pixels, what is the highest value of k that) +(printed page 115) --QDF=0
-    - +(adjacent pixels, what is the highest value of k that) +(Problems) +(printed page 115) --QDF=0
+    - +(adjacent pixels what is the highest value of k that) +(printed page 115) --QDF=0
+    - +(adjacent pixels what is the highest value of k that) +(Problems) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -650,7 +650,7 @@ exercises:
         value: '2.14'
     queries:
     - +(2.13) +(printed page 115) --QDF=0
-    - +(Sketch the image in Problem 2.12 for k=2.) +(printed page 115) --QDF=0
+    - +(Sketch the image in Problem 2.12 for k 2) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -701,7 +701,7 @@ exercises:
         value: '2.15'
     queries:
     - +(2.14) +(printed page 115) --QDF=0
-    - +(Consider the two image subsets, S1 and S2 in the) +(printed page 115) --QDF=0
+    - +(Consider the two image subsets S1 and S2 in the) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -752,7 +752,7 @@ exercises:
         value: '2.16'
     queries:
     - +(2.15) +(printed page 115) --QDF=0
-    - +(* Develop an algorithm for converting a one-pixel-) +(printed page 115) --QDF=0
+    - +(Develop an algorithm for converting a one-pixel) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -799,7 +799,7 @@ exercises:
         value: '2.17'
     queries:
     - +(2.16) +(printed page 115) --QDF=0
-    - +(Develop an algorithm for converting a one-pixel-) +(printed page 115) --QDF=0
+    - +(Develop an algorithm for converting a one-pixel) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -846,7 +846,7 @@ exercises:
         value: '2.18'
     queries:
     - +(2.17) +(printed page 115) --QDF=0
-    - '+(hole pixels” is not acceptable. (Hint: Use the con-) +(printed page 115) --QDF=0'
+    - +(hole pixels is not acceptable Hint Use the con) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -893,7 +893,7 @@ exercises:
         value: '2.19'
     queries:
     - +(2.18) +(printed page 115) --QDF=0
-    - +(ing image. If a particular path does not exist) +(printed page 115) --QDF=0
+    - +(ing image If a particular path does not exist) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -991,7 +991,7 @@ exercises:
         value: '2.21'
     queries:
     - +(2.20) +(printed page 115) --QDF=0
-    - +(Repeat problem 2.19 for the D8 distance.) +(printed page 115) --QDF=0
+    - +(Repeat problem 2.19 for the D8 distance) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -1042,7 +1042,7 @@ exercises:
         value: '2.22'
     queries:
     - +(2.21) +(printed page 115) --QDF=0
-    - +(the same size. What has to be true about the ori-) +(printed page 115) --QDF=0
+    - +(the same size What has to be true about the ori) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -1093,7 +1093,7 @@ exercises:
         value: '2.23'
     queries:
     - +(2.22) +(printed page 115) --QDF=0
-    - +(whose function is to compute the sum of pixel val-) +(printed page 115) --QDF=0
+    - +(whose function is to compute the sum of pixel val) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -1145,7 +1145,7 @@ exercises:
         value: '2.24'
     queries:
     - +(2.23) +(printed page 115) --QDF=0
-    - +((d) Show that image division is a nonlinear opera-) +(printed page 115) --QDF=0
+    - +(d Show that image division is a nonlinear opera) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -1195,7 +1195,7 @@ exercises:
       end_before: null
     queries:
     - +(2.24) +(printed page 115) --QDF=0
-    - +(The median, z, of a set of numbers is such that) +(printed page 115) --QDF=0
+    - +(The median z of a set of numbers is such that) +(printed page 115) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '115'
@@ -1222,8 +1222,8 @@ exercises:
         kind: exercise
         value: '2.25'
     queries:
-    - +(er half are above it. For example, the median of) +(printed page 116) --QDF=0
-    - +(er half are above it. For example, the median of) +(Problems) +(printed page 116) --QDF=0
+    - +(er half are above it For example the median of) +(printed page 116) --QDF=0
+    - +(er half are above it For example the median of) +(Problems) +(printed page 116) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '116'
@@ -1267,7 +1267,7 @@ exercises:
         value: '2.26'
     queries:
     - +(2.25) +(printed page 116) --QDF=0
-    - +(* Show that image averaging can be done recur-) +(printed page 116) --QDF=0
+    - +(Show that image averaging can be done recur) +(printed page 116) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '116'
@@ -1314,7 +1314,7 @@ exercises:
         value: '2.27'
     queries:
     - +(2.26) +(printed page 116) --QDF=0
-    - +(For part (b) you will need the following facts from) +(printed page 116) --QDF=0
+    - +(For part b you will need the following facts from) +(printed page 116) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '116'
@@ -1423,7 +1423,7 @@ exercises:
         value: '2.29'
     queries:
     - +(2.28) +(printed page 116) --QDF=0
-    - +(conditions do you think have to be met in prac-) +(printed page 116) --QDF=0
+    - +(conditions do you think have to be met in prac) +(printed page 116) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '116'
@@ -1470,7 +1470,7 @@ exercises:
         value: '2.30'
     queries:
     - +(2.29) +(printed page 116) --QDF=0
-    - +(as a function of the number of bits, k, in an) +(printed page 116) --QDF=0
+    - +(as a function of the number of bits k in an) +(printed page 116) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '116'
@@ -1522,7 +1522,7 @@ exercises:
         value: '2.31'
     queries:
     - +(2.30) +(printed page 116) --QDF=0
-    - +(Give Venn diagrams for the following expres-) +(printed page 116) --QDF=0
+    - +(Give Venn diagrams for the following expres) +(printed page 116) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '116'
@@ -1712,7 +1712,7 @@ exercises:
       end_before: null
     queries:
     - +(2.34) +(printed page 116) --QDF=0
-    - +(For any nonzero integers m and n, we say that m) +(printed page 116) --QDF=0
+    - +(For any nonzero integers m and n we say that m) +(printed page 116) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '116'
@@ -1739,8 +1739,8 @@ exercises:
         kind: exercise
         value: '2.35'
     queries:
-    - +(is divisible by n, written mn, if there exists an) +(printed page 117) --QDF=0
-    - +(is divisible by n, written mn, if there exists an) +(Problems) +(printed page 117) --QDF=0
+    - +(is divisible by n written mn if there exists an) +(printed page 117) --QDF=0
+    - +(is divisible by n written mn if there exists an) +(Problems) +(printed page 117) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '117'
@@ -1784,7 +1784,7 @@ exercises:
         value: '2.36'
     queries:
     - +(2.35) +(printed page 117) --QDF=0
-    - +(look like if we modiﬁed Eq. (2-43), as follows:) +(printed page 117) --QDF=0
+    - +(look like if we modi ed Eq 2-43 as follows) +(printed page 117) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '117'
@@ -1840,7 +1840,7 @@ exercises:
         value: '2.37'
     queries:
     - +(2.36) +(printed page 117) --QDF=0
-    - +(With reference to Table 2.3, provide single, com-) +(printed page 117) --QDF=0
+    - +(With reference to Table 2.3 provide single com) +(printed page 117) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '117'
@@ -1892,7 +1892,7 @@ exercises:
         value: '2.38'
     queries:
     - +(2.37) +(printed page 117) --QDF=0
-    - +(We know from Eq. (2-45) that an afﬁne transfor-) +(printed page 117) --QDF=0
+    - +(We know from Eq 2-45 that an af ne transfor) +(printed page 117) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '117'
@@ -1949,7 +1949,7 @@ exercises:
         value: '2.39'
     queries:
     - +(2.38) +(printed page 117) --QDF=0
-    - +(and (2-47), that would result from using triangu-) +(printed page 117) --QDF=0
+    - +(and 2-47 that would result from using triangu) +(printed page 117) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '117'
@@ -2006,7 +2006,7 @@ exercises:
         value: '2.40'
     queries:
     - +(2.39) +(printed page 117) --QDF=0
-    - +((a) * Prove that the Fourier kernel in Eq. (2-59) is) +(printed page 117) --QDF=0
+    - +(a Prove that the Fourier kernel in Eq 2-59 is) +(printed page 117) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '117'
@@ -2063,7 +2063,7 @@ exercises:
         value: '2.41'
     queries:
     - +(2.40) +(printed page 117) --QDF=0
-    - +(ing 1-D transforms along the individual rows (col-) +(printed page 117) --QDF=0
+    - +(ing 1-D transforms along the individual rows col) +(printed page 117) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '117'
@@ -2133,8 +2133,8 @@ exercises:
       start_at: null
       end_before: null
     queries:
-    - +(cost much more than the lenses, so you should use) +(printed page 118) --QDF=0
-    - +(cost much more than the lenses, so you should use) +(Problems) +(printed page 118) --QDF=0
+    - +(cost much more than the lenses so you should use) +(printed page 118) --QDF=0
+    - +(cost much more than the lenses so you should use) +(Problems) +(printed page 118) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '118'

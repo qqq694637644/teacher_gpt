@@ -3,7 +3,14 @@ import pytest
 import yaml
 
 from app.models.exercise_manifest import ExerciseManifest, ExerciseManifestPackage
-from app.models.locator import ContentWindow, EvidenceRequirement, PageCoverage, PageRetrievalStep
+from app.models.locator import (
+    ContentWindow,
+    EvidenceRequirement,
+    PageCoverage,
+    PageRetrievalStep,
+    query_parentheses_balanced,
+    query_safe_anchor,
+)
 from app.repositories.exercise_repository import ExerciseRepository
 from app.services.exercise_index_compiler import ExerciseIndexCompiler
 from app.services.index_compiler import LocatorIndexCompiler
@@ -53,9 +60,9 @@ def test_exercise_compiler_resolves_section_and_exercise_references(tmp_path) ->
     second = compiled.exercises["2.15"]
     assert first.reference_targets[0].kind == "section"
     assert first.reference_targets[0].target_id == "2.6.5"
-    assert (
-        first.reference_targets[0].retrieval_plan == section_index.sections["2.6.5"].retrieval_plan
-    )
+    assert [step.page for step in first.reference_targets[0].retrieval_plan] == [
+        step.page for step in section_index.sections["2.6.5"].retrieval_plan
+    ]
     assert [step.page for step in first.reference_retrieval_plan] == [
         step.page for step in section_index.sections["2.6.5"].retrieval_plan
     ]
@@ -191,6 +198,14 @@ def test_reference_parser_applies_audited_source_erratum() -> None:
             [("equation", "2-46"), ("equation", "2-47")],
         ),
         (
+            "Use Equation (2-46).",
+            [("equation", "2-46")],
+        ),
+        (
+            "Use Equations (2-46) and (2-47).",
+            [("equation", "2-46"), ("equation", "2-47")],
+        ),
+        (
             "Use Eqs. (4-42) through (4-45).",
             [
                 ("equation", "4-42"),
@@ -236,6 +251,31 @@ def test_reference_parser_expands_parallel_and_range_references(
     specs = _reference_specs(text, "12.99")
 
     assert [(item.kind, item.target_id) for item in specs] == expected
+
+
+def test_query_safe_anchor_removes_unbalanced_parentheses() -> None:
+    value = "versa. (Do not confuse correlation and statistical independence..."
+
+    anchor = query_safe_anchor(value)
+    queries = ExerciseIndexCompiler._safe_queries(
+        [
+            EvidenceRequirement(
+                kind="printed_page_equals",
+                value="86",
+                verification_mode="visual_required",
+            ),
+            EvidenceRequirement(
+                kind="contains_text",
+                value=value,
+                verification_mode="text_or_visual",
+            ),
+        ],
+        "86",
+    )
+
+    assert anchor == "versa Do not confuse correlation and statistical independence"
+    assert all(query_parentheses_balanced(query) for query in queries)
+    assert all(anchor.casefold() in query.casefold() for query in queries)
 
 
 def test_terminal_boundary_is_inherited_by_last_learning_unit() -> None:

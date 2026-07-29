@@ -94,6 +94,26 @@ BOUNDARY_TO_EVIDENCE: dict[str, str] = {
     "exercise": "contains_exercise",
 }
 RETRIEVAL_ONLY_ANCHOR = "DIP4E_GLOBAL_Print_Ready.indb"
+QUERY_ANCHOR_TOKEN_RE = re.compile(r"[A-Za-z0-9]+(?:[.-][A-Za-z0-9]+)*")
+
+
+def query_safe_anchor(value: str, *, max_tokens: int = 16) -> str:
+    tokens = QUERY_ANCHOR_TOKEN_RE.findall(value)
+    if not tokens:
+        return "reference"
+    return " ".join(tokens[:max_tokens])
+
+
+def query_parentheses_balanced(query: str) -> bool:
+    depth = 0
+    for character in query:
+        if character == "(":
+            depth += 1
+        elif character == ")":
+            depth -= 1
+            if depth < 0:
+                return False
+    return depth == 0
 
 
 class BoundaryAnchor(StrictModel):

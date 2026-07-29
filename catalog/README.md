@@ -38,7 +38,9 @@ exercise shard. The reviewed baseline contains 492 exercises, 122 starred exerci
 compiled execution plan preserves 1,406 raw reference page steps as audit metadata,
 uses explicit PDF-reviewed context-page selections for 4 section references, reduces
 1,338 execution candidates by 72 same-page/same-window merges, preserves 4
-same-page distinct-window cases, and exposes 1,266 execution steps. All chapter number ranges are
+same-page distinct-window cases, and exposes 1,266 execution steps. The compiled
+package contains 6,939 evidence-derived queries, zero unbalanced queries, and zero
+steps without a balanced query. All chapter number ranges are
 continuous and the independent rebuild matched all package and shard files byte-for-byte.
 
 Deployments should set `TEACHING_GPT_EXERCISE_INDEX_PATH` to
