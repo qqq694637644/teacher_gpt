@@ -5,12 +5,16 @@ PROMPT_PATH = Path(__file__).resolve().parents[1] / "PROMPT.md"
 MAX_CHARACTERS = 8000
 REQUIRED = {
     "gptGetSectionLocator",
+    "gptGetExerciseLocator",
+    "gptListChapterExercises",
     "file_search.msearch",
     "file_search.mclick",
     '"file_library"',
     "required_evidence",
     "content_window",
     "data_version",
+    "contains_exercise",
+    "EXERCISE_CATALOG_UNAVAILABLE",
 }
 FORBIDDEN = {
     "file_library.open_page",

@@ -153,7 +153,7 @@ Manifest 只保存顺序和树深度，不保存项目 `section_id`。编译器�
 
 ## 7. 计算章节边界和内容窗口
 
-一个节点的开始位置是其标题 bbox。结束位置是后续第一个同级或更高层级标题。
+一个节点的开始位置是其标题 bbox。结束位置是后续第一个同级或更高层级标题。正文最后一个叶子节点还必须在 `Summary`、`Problems` 或下一章标题之前停止，不能把章末总结和习题页吸收到最后一个学习单元。
 
 跨页边界不能简单使用“下一个标题页减一”。如果下一个标题位于新页面，还要检查该标题上方是否存在上一节正文：
 
@@ -204,6 +204,7 @@ content_window.end_before
 - Equation ID；
 - Example ID；
 - Table ID。
+- Exercise ID（仅用于课后题的页内起止边界和核验）。
 
 这条规则解决了多个实际错误：
 
@@ -400,6 +401,17 @@ python tools/compile_locator_index.py \
   catalog/dip4e/compiled_locator_index.json \
   --report catalog/dip4e/validation_report.json
 
+python tools/build_dip4e_exercise_manifest.py \
+  "/path/to/Digital Image ProcessingRafael.pdf" \
+  catalog/dip4e/exercises.yaml
+
+python tools/compile_exercise_index.py \
+  catalog/dip4e/exercises.yaml \
+  catalog/dip4e/compiled_locator_index.json \
+  "/path/to/Digital Image ProcessingRafael.pdf" \
+  catalog/dip4e/compiled_exercise_index.json \
+  --report catalog/dip4e/exercise_validation_report.json
+
 python -m pytest -q
 python -m ruff check .
 python -m ruff format --check .
@@ -424,3 +436,34 @@ file_search_retrieval_status: not_tested
 ```
 
 这些数字是当前固定 PDF 和当前规则的结果，不是通用教材常量。任何规则或源文件变化都应重新生成报告并审查差异。
+
+## 18. Exercise Locator 构建补充
+
+习题与正文使用独立命名空间和独立 package：
+
+```text
+exercises.yaml
+exercises.sections.01.yaml ... exercises.sections.12.yaml
+compiled_exercise_index.json
+compiled_exercise_index.sections.01.json ... compiled_exercise_index.sections.12.json
+exercise_validation_report.json
+```
+
+习题构建器从每章 `Problems` 区域开始识别题号，使用列位置和 bbox 重建双栏阅读顺序，并为同页相邻题生成 `exercise` 类型的 `start_at` / `end_before`。跨页题的每个物理页都必须有独立 step；题号和边界证据使用 `visual_required`。
+
+编译器还会解析题目中的显式依赖：
+
+```text
+Section
+Figure
+Equation
+Example
+Table
+Exercise / Problem
+```
+
+Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。缺失引用、跨习题循环、章节不完整、错误 shard 或非规范页面都会阻止输出。
+
+Exercise Catalog 必须覆盖第 1 至第 12 章后才能进入发布流程。构建期不保存题目全文，也不批量生成答案。
+
+本次代码接入阶段只实现并测试构建链、schema、运行时 API 和 Prompt，**尚未对真实 PDF 执行上述 Exercise Catalog 命令**。因此仓库暂时没有习题生成产物，当前基线数字也不包含 Exercise Locator。真实构建完成后必须新增习题指标、审核正文章末边界差异，并执行可重复性与 GPT 文件库验收。

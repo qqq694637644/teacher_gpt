@@ -3,6 +3,13 @@ from pathlib import Path
 import fitz
 import pytest
 
+from tests.helpers import complete_manifest
+from tools.compile_locator_index import (
+    _iter_manifest_steps,
+    manifest_heading_keys,
+    verify_heading_coverage,
+    verify_manifest_anchors,
+)
 from tools.extract_pdf_candidates import (
     HEADING_COLOR,
     HEADING_FONT,
@@ -11,14 +18,7 @@ from tools.extract_pdf_candidates import (
     is_heading_line,
     page_references,
 )
-from tools.compile_locator_index import (
-    _iter_manifest_steps,
-    manifest_heading_keys,
-    verify_heading_coverage,
-    verify_manifest_anchors,
-)
 from tools.validate_prompt import validate_prompt
-from tests.helpers import complete_manifest
 
 
 def test_heading_candidate_requires_verified_dip4e_style() -> None:
@@ -81,8 +81,10 @@ def test_page_references_use_pdf_page_labels(tmp_path: Path) -> None:
 
 def test_prompt_validator_rejects_invented_page_tool() -> None:
     valid = (
-        "gptGetSectionLocator file_search.msearch file_search.mclick "
-        '"file_library" required_evidence content_window data_version'
+        "gptGetSectionLocator gptGetExerciseLocator gptListChapterExercises "
+        "file_search.msearch file_search.mclick contains_exercise "
+        '"file_library" required_evidence content_window data_version '
+        "EXERCISE_CATALOG_UNAVAILABLE"
     )
     validate_prompt(valid)
 

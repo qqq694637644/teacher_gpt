@@ -18,11 +18,12 @@ OUTPUT_PATH = PROJECT_ROOT / "examples" / "openai_action_schema_one_book.yaml"
 def main() -> None:
     schema = app.openapi()
     schema["servers"] = [{"url": "https://YOUR_DOMAIN"}]
-    schema["paths"] = {
-        "/gpt/section-locators/{section_id}": schema["paths"][
-            "/gpt/section-locators/{section_id}"
-        ]
-    }
+    action_paths = (
+        "/gpt/section-locators/{section_id}",
+        "/gpt/exercise-locators/{exercise_id}",
+        "/gpt/chapters/{chapter_id}/exercises",
+    )
+    schema["paths"] = {path: schema["paths"][path] for path in action_paths}
 
     for path_item in schema["paths"].values():
         for operation in path_item.values():
@@ -30,9 +31,7 @@ def main() -> None:
                 continue
             parameters = operation.get("parameters", [])
             operation["parameters"] = [
-                parameter
-                for parameter in parameters
-                if parameter.get("in") != "header"
+                parameter for parameter in parameters if parameter.get("in") != "header"
             ]
             if not operation["parameters"]:
                 operation.pop("parameters", None)

@@ -8,8 +8,14 @@ from fastapi.responses import JSONResponse, RedirectResponse
 
 from app.api.routes import router
 from app.core.config import Settings, get_settings
-from app.core.errors import SectionNotFoundError
+from app.core.errors import (
+    ExerciseCatalogUnavailableError,
+    ExerciseIndexLoadError,
+    ExerciseNotFoundError,
+    SectionNotFoundError,
+)
 from app.core.security import api_key_fingerprint
+from app.repositories.exercise_repository import ExerciseRepository
 from app.repositories.locator_repository import LocatorRepository
 
 logger = logging.getLogger("uvicorn.error")
@@ -24,24 +30,31 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         env_file_path = Path(".env").resolve()
         logger.info(
             "API auth configuration: require_api_key=%s api_key_loaded=%s "
-            "api_key_is_default=%s api_key_length=%s api_key=%s "
-            "api_key_fingerprint=%s "
+            "api_key_is_default=%s api_key_length=%s api_key_fingerprint=%s "
             "env_file=%s env_file_exists=%s",
             resolved_settings.require_api_key,
             bool(resolved_settings.api_key),
             resolved_settings.api_key == "change-me",
             len(resolved_settings.api_key),
-            resolved_settings.api_key,
             api_key_fingerprint(resolved_settings.api_key),
             env_file_path,
             env_file_path.is_file(),
         )
-        app.state.locator_repository = LocatorRepository.load(resolved_settings.locator_index_path)
+        locator_repository = LocatorRepository.load(resolved_settings.locator_index_path)
+        exercise_repository = None
+        if resolved_settings.exercise_index_path is not None:
+            exercise_repository = ExerciseRepository.load(resolved_settings.exercise_index_path)
+            if exercise_repository.index.book != locator_repository.index.book:
+                raise ExerciseIndexLoadError(
+                    "Compiled exercise index book metadata does not match locator index"
+                )
+        app.state.locator_repository = locator_repository
+        app.state.exercise_repository = exercise_repository
         yield
 
     app = FastAPI(
         title="Teacher GPT Locator API",
-        version="3.0.0",
+        version="3.1.0",
         description=(
             "Strict one-book GPT Action API. It returns page-by-page retrieval plans "
             "for the original PDF and never returns textbook content."
@@ -68,6 +81,34 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             content={
                 "error_code": "SECTION_NOT_FOUND",
                 "detail": f"Section id does not exist: {section_id}",
+            },
+        )
+
+    @app.exception_handler(ExerciseNotFoundError)
+    async def exercise_not_found_handler(
+        request: Request, exc: ExerciseNotFoundError
+    ) -> JSONResponse:
+        requested_id = exc.args[0] if exc.args else ""
+        return JSONResponse(
+            status_code=404,
+            content={
+                "error_code": "EXERCISE_NOT_FOUND",
+                "detail": f"Exercise or chapter id does not exist: {requested_id}",
+            },
+        )
+
+    @app.exception_handler(ExerciseCatalogUnavailableError)
+    async def exercise_catalog_unavailable_handler(
+        request: Request, exc: ExerciseCatalogUnavailableError
+    ) -> JSONResponse:
+        return JSONResponse(
+            status_code=503,
+            content={
+                "error_code": "EXERCISE_CATALOG_UNAVAILABLE",
+                "detail": (
+                    "Exercise catalog is not configured. Build the offline exercise index "
+                    "and set TEACHING_GPT_EXERCISE_INDEX_PATH."
+                ),
             },
         )
 

@@ -1,416 +1,925 @@
-openapi: 3.1.0
-info:
-  title: Teacher GPT Locator API
-  description: Strict one-book GPT Action API. It returns page-by-page retrieval plans for the original PDF and never returns
-    textbook content.
-  version: 3.0.0
-paths:
-  /gpt/section-locators/{section_id}:
-    get:
-      tags:
-      - gpt
-      summary: Get Section Locator
-      operationId: gptGetSectionLocator
-      parameters:
-      - name: section_id
-        in: path
-        required: true
-        schema:
-          type: string
-          title: Section Id
-      responses:
-        '200':
-          description: Successful Response
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SectionLocator'
-        '404':
-          description: Section id does not exist.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '422':
-          description: Validation Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/HTTPValidationError'
-components:
-  schemas:
-    BoundaryAnchor:
-      properties:
-        kind:
-          type: string
-          enum:
-          - heading
-          - figure
-          - equation
-          - example
-          - table
-          - text
-          title: Kind
-        value:
-          type: string
-          minLength: 1
-          title: Value
-      additionalProperties: false
-      type: object
-      required:
-      - kind
-      - value
-      title: BoundaryAnchor
-    ContentWindow:
-      properties:
-        start_at:
-          anyOf:
-          - $ref: '#/components/schemas/BoundaryAnchor'
-          - type: 'null'
-        end_before:
-          anyOf:
-          - $ref: '#/components/schemas/BoundaryAnchor'
-          - type: 'null'
-      additionalProperties: false
-      type: object
-      title: ContentWindow
-    ErrorResponse:
-      properties:
-        error_code:
-          type: string
-          const: SECTION_NOT_FOUND
-          title: Error Code
-        detail:
-          type: string
-          title: Detail
-      additionalProperties: false
-      type: object
-      required:
-      - error_code
-      - detail
-      title: ErrorResponse
-    EvidenceRequirement:
-      properties:
-        kind:
-          type: string
-          enum:
-          - printed_page_equals
-          - contains_heading
-          - contains_figure
-          - contains_equation
-          - contains_example
-          - contains_table
-          - contains_text
-          - running_header_contains
-          title: Kind
-        value:
-          type: string
-          minLength: 1
-          title: Value
-        verification_mode:
-          type: string
-          enum:
-          - visual_required
-          - text_or_visual
-          title: Verification Mode
-      additionalProperties: false
-      type: object
-      required:
-      - kind
-      - value
-      - verification_mode
-      title: EvidenceRequirement
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
-    HeadingLocation:
-      properties:
-        page:
-          $ref: '#/components/schemas/PageReference'
-        bbox:
-          items:
-            type: number
-          type: array
-          maxItems: 4
-          minItems: 4
-          title: Bbox
-      additionalProperties: false
-      type: object
-      required:
-      - page
-      - bbox
-      title: HeadingLocation
-    HealthResponse:
-      properties:
-        status:
-          type: string
-          const: ok
-          title: Status
-          default: ok
-        data_version:
-          type: string
-          const: '3'
-          title: Data Version
-          default: '3'
-        book_id:
-          type: string
-          title: Book Id
-        section_count:
-          type: integer
-          minimum: 1.0
-          title: Section Count
-        page_count:
-          type: integer
-          minimum: 1.0
-          title: Page Count
-      additionalProperties: false
-      type: object
-      required:
-      - book_id
-      - section_count
-      - page_count
-      title: HealthResponse
-    PageCoverage:
-      properties:
-        subheadings:
-          items:
-            type: string
-          type: array
-          title: Subheadings
-        figure_ids:
-          items:
-            type: string
-          type: array
-          title: Figure Ids
-        equation_ids:
-          items:
-            type: string
-          type: array
-          title: Equation Ids
-        example_ids:
-          items:
-            type: string
-          type: array
-          title: Example Ids
-        table_ids:
-          items:
-            type: string
-          type: array
-          title: Table Ids
-      additionalProperties: false
-      type: object
-      title: PageCoverage
-    PageRange:
-      properties:
-        pdf_page_index_start:
-          type: integer
-          minimum: 0.0
-          title: Pdf Page Index Start
-        pdf_page_index_end:
-          type: integer
-          minimum: 0.0
-          title: Pdf Page Index End
-        pdf_page_number_start:
-          type: integer
-          minimum: 1.0
-          title: Pdf Page Number Start
-        pdf_page_number_end:
-          type: integer
-          minimum: 1.0
-          title: Pdf Page Number End
-        printed_page_start:
-          type: string
-          minLength: 1
-          title: Printed Page Start
-        printed_page_end:
-          type: string
-          minLength: 1
-          title: Printed Page End
-      additionalProperties: false
-      type: object
-      required:
-      - pdf_page_index_start
-      - pdf_page_index_end
-      - pdf_page_number_start
-      - pdf_page_number_end
-      - printed_page_start
-      - printed_page_end
-      title: PageRange
-    PageReference:
-      properties:
-        pdf_page_index:
-          type: integer
-          minimum: 0.0
-          title: Pdf Page Index
-        pdf_page_number:
-          type: integer
-          minimum: 1.0
-          title: Pdf Page Number
-        printed_page_label:
-          type: string
-          minLength: 1
-          title: Printed Page Label
-      additionalProperties: false
-      type: object
-      required:
-      - pdf_page_index
-      - pdf_page_number
-      - printed_page_label
-      title: PageReference
-    PageRetrievalStep:
-      properties:
-        sequence:
-          type: integer
-          minimum: 1.0
-          title: Sequence
-        page_role:
-          type: string
-          enum:
-          - start
-          - body
-          - end
-          - single
-          title: Page Role
-        page:
-          $ref: '#/components/schemas/PageReference'
-        content_window:
-          $ref: '#/components/schemas/ContentWindow'
-        queries:
-          items:
-            type: string
-          type: array
-          maxItems: 4
-          minItems: 2
-          title: Queries
-        required_evidence:
-          items:
-            $ref: '#/components/schemas/EvidenceRequirement'
-          type: array
-          minItems: 1
-          title: Required Evidence
-        coverage:
-          $ref: '#/components/schemas/PageCoverage'
-      additionalProperties: false
-      type: object
-      required:
-      - sequence
-      - page_role
-      - page
-      - queries
-      - required_evidence
-      title: PageRetrievalStep
-    SectionLocator:
-      properties:
-        data_version:
-          type: string
-          const: '3'
-          title: Data Version
-          default: '3'
-        book_id:
-          type: string
-          minLength: 1
-          title: Book Id
-        section_kind:
-          type: string
-          enum:
-          - printed
-          - learning_unit
-          title: Section Kind
-        section_id:
-          type: string
-          pattern: ^\d+(?:\.\d+)*$
-          title: Section Id
-        printed_section_id:
-          type: string
-          pattern: ^\d+(?:\.\d+)*$
-          title: Printed Section Id
-        parent_section_id:
-          anyOf:
-          - type: string
-            pattern: ^\d+(?:\.\d+)*$
-          - type: 'null'
-          title: Parent Section Id
-        title:
-          type: string
-          minLength: 1
-          title: Title
-        source_heading:
-          type: string
-          minLength: 1
-          title: Source Heading
-        source_heading_numbered:
-          type: boolean
-          title: Source Heading Numbered
-        source_location:
-          $ref: '#/components/schemas/HeadingLocation'
-        source_level:
-          type: integer
-          minimum: 0.0
-          title: Source Level
-        hierarchy_depth:
-          type: integer
-          minimum: 1.0
-          title: Hierarchy Depth
-        page_range:
-          $ref: '#/components/schemas/PageRange'
-        outline:
-          items:
-            type: string
-          type: array
-          title: Outline
-        retrieval_plan:
-          items:
-            $ref: '#/components/schemas/PageRetrievalStep'
-          type: array
-          minItems: 1
-          title: Retrieval Plan
-      additionalProperties: false
-      type: object
-      required:
-      - book_id
-      - section_kind
-      - section_id
-      - printed_section_id
-      - title
-      - source_heading
-      - source_heading_numbered
-      - source_location
-      - source_level
-      - hierarchy_depth
-      - page_range
-      - retrieval_plan
-      title: SectionLocator
-    ValidationError:
-      properties:
-        loc:
-          items:
-            anyOf:
-            - type: string
-            - type: integer
-          type: array
-          title: Location
-        msg:
-          type: string
-          title: Message
-        type:
-          type: string
-          title: Error Type
-        input:
-          title: Input
-        ctx:
-          type: object
-          title: Context
-      type: object
-      required:
-      - loc
-      - msg
-      - type
-      title: ValidationError
-servers:
-- url: https://YOUR_DOMAIN
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Teacher GPT Locator API",
+    "description": "Strict one-book GPT Action API. It returns page-by-page retrieval plans for the original PDF and never returns textbook content.",
+    "version": "3.1.0"
+  },
+  "paths": {
+    "/gpt/section-locators/{section_id}": {
+      "get": {
+        "tags": [
+          "gpt"
+        ],
+        "summary": "Get Section Locator",
+        "operationId": "gptGetSectionLocator",
+        "parameters": [
+          {
+            "name": "section_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Section Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SectionLocator"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Section id does not exist.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SectionNotFoundResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/gpt/exercise-locators/{exercise_id}": {
+      "get": {
+        "tags": [
+          "gpt"
+        ],
+        "summary": "Get Exercise Locator",
+        "operationId": "gptGetExerciseLocator",
+        "parameters": [
+          {
+            "name": "exercise_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^\\d+\\.\\d+$",
+              "title": "Exercise Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExerciseLocator"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Exercise id does not exist.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExerciseNotFoundResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Exercise catalog has not been configured.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExerciseCatalogUnavailableResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/gpt/chapters/{chapter_id}/exercises": {
+      "get": {
+        "tags": [
+          "gpt"
+        ],
+        "summary": "List Chapter Exercises",
+        "operationId": "gptListChapterExercises",
+        "parameters": [
+          {
+            "name": "chapter_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^\\d+$",
+              "title": "Chapter Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChapterExerciseSummary"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Chapter has no exercise catalog entry.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExerciseNotFoundResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Exercise catalog has not been configured.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExerciseCatalogUnavailableResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BoundaryAnchor": {
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "heading",
+              "figure",
+              "equation",
+              "example",
+              "table",
+              "text",
+              "exercise"
+            ],
+            "title": "Kind"
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Value"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "kind",
+          "value"
+        ],
+        "title": "BoundaryAnchor"
+      },
+      "ChapterExerciseSummary": {
+        "properties": {
+          "data_version": {
+            "type": "string",
+            "const": "3",
+            "title": "Data Version",
+            "default": "3"
+          },
+          "book_id": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Book Id"
+          },
+          "chapter_id": {
+            "type": "string",
+            "pattern": "^\\d+$",
+            "title": "Chapter Id"
+          },
+          "exercise_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Exercise Ids"
+          },
+          "first_exercise": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+$",
+            "title": "First Exercise"
+          },
+          "last_exercise": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+$",
+            "title": "Last Exercise"
+          },
+          "exercise_count": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Exercise Count"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "book_id",
+          "chapter_id",
+          "exercise_ids",
+          "first_exercise",
+          "last_exercise",
+          "exercise_count"
+        ],
+        "title": "ChapterExerciseSummary"
+      },
+      "ContentWindow": {
+        "properties": {
+          "start_at": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/BoundaryAnchor"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "end_before": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/BoundaryAnchor"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ContentWindow"
+      },
+      "EvidenceRequirement": {
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "printed_page_equals",
+              "contains_heading",
+              "contains_figure",
+              "contains_equation",
+              "contains_example",
+              "contains_table",
+              "contains_text",
+              "contains_exercise",
+              "running_header_contains"
+            ],
+            "title": "Kind"
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Value"
+          },
+          "verification_mode": {
+            "type": "string",
+            "enum": [
+              "visual_required",
+              "text_or_visual"
+            ],
+            "title": "Verification Mode"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "kind",
+          "value",
+          "verification_mode"
+        ],
+        "title": "EvidenceRequirement"
+      },
+      "ExerciseCatalogUnavailableResponse": {
+        "properties": {
+          "error_code": {
+            "type": "string",
+            "const": "EXERCISE_CATALOG_UNAVAILABLE",
+            "title": "Error Code"
+          },
+          "detail": {
+            "type": "string",
+            "title": "Detail"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "error_code",
+          "detail"
+        ],
+        "title": "ExerciseCatalogUnavailableResponse"
+      },
+      "ExerciseLocator": {
+        "properties": {
+          "data_version": {
+            "type": "string",
+            "const": "3",
+            "title": "Data Version",
+            "default": "3"
+          },
+          "book_id": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Book Id"
+          },
+          "exercise_id": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+$",
+            "title": "Exercise Id"
+          },
+          "chapter_id": {
+            "type": "string",
+            "pattern": "^\\d+$",
+            "title": "Chapter Id"
+          },
+          "exercise_number": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Exercise Number"
+          },
+          "starred": {
+            "type": "boolean",
+            "title": "Starred",
+            "default": false
+          },
+          "source_order": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Source Order"
+          },
+          "problem_page_range": {
+            "$ref": "#/components/schemas/PageRange"
+          },
+          "problem_retrieval_plan": {
+            "items": {
+              "$ref": "#/components/schemas/PageRetrievalStep"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Problem Retrieval Plan"
+          },
+          "reference_targets": {
+            "items": {
+              "$ref": "#/components/schemas/ExerciseReferenceTarget"
+            },
+            "type": "array",
+            "title": "Reference Targets"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "book_id",
+          "exercise_id",
+          "chapter_id",
+          "exercise_number",
+          "source_order",
+          "problem_page_range",
+          "problem_retrieval_plan"
+        ],
+        "title": "ExerciseLocator"
+      },
+      "ExerciseNotFoundResponse": {
+        "properties": {
+          "error_code": {
+            "type": "string",
+            "const": "EXERCISE_NOT_FOUND",
+            "title": "Error Code"
+          },
+          "detail": {
+            "type": "string",
+            "title": "Detail"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "error_code",
+          "detail"
+        ],
+        "title": "ExerciseNotFoundResponse"
+      },
+      "ExerciseReferenceTarget": {
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "section",
+              "figure",
+              "equation",
+              "example",
+              "table",
+              "exercise"
+            ],
+            "title": "Kind"
+          },
+          "target_id": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Target Id"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Reason"
+          },
+          "retrieval_plan": {
+            "items": {
+              "$ref": "#/components/schemas/PageRetrievalStep"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Retrieval Plan"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "kind",
+          "target_id",
+          "reason",
+          "retrieval_plan"
+        ],
+        "title": "ExerciseReferenceTarget"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HeadingLocation": {
+        "properties": {
+          "page": {
+            "$ref": "#/components/schemas/PageReference"
+          },
+          "bbox": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "maxItems": 4,
+            "minItems": 4,
+            "title": "Bbox"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "page",
+          "bbox"
+        ],
+        "title": "HeadingLocation"
+      },
+      "HealthResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "const": "ok",
+            "title": "Status",
+            "default": "ok"
+          },
+          "data_version": {
+            "type": "string",
+            "const": "3",
+            "title": "Data Version",
+            "default": "3"
+          },
+          "book_id": {
+            "type": "string",
+            "title": "Book Id"
+          },
+          "section_count": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Section Count"
+          },
+          "page_count": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Page Count"
+          },
+          "exercise_catalog_status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "not_configured"
+            ],
+            "title": "Exercise Catalog Status"
+          },
+          "exercise_count": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Exercise Count"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "book_id",
+          "section_count",
+          "page_count",
+          "exercise_catalog_status",
+          "exercise_count"
+        ],
+        "title": "HealthResponse"
+      },
+      "PageCoverage": {
+        "properties": {
+          "subheadings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Subheadings"
+          },
+          "figure_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Figure Ids"
+          },
+          "equation_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Equation Ids"
+          },
+          "example_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Example Ids"
+          },
+          "table_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Table Ids"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "PageCoverage"
+      },
+      "PageRange": {
+        "properties": {
+          "pdf_page_index_start": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Pdf Page Index Start"
+          },
+          "pdf_page_index_end": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Pdf Page Index End"
+          },
+          "pdf_page_number_start": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Pdf Page Number Start"
+          },
+          "pdf_page_number_end": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Pdf Page Number End"
+          },
+          "printed_page_start": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Printed Page Start"
+          },
+          "printed_page_end": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Printed Page End"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "pdf_page_index_start",
+          "pdf_page_index_end",
+          "pdf_page_number_start",
+          "pdf_page_number_end",
+          "printed_page_start",
+          "printed_page_end"
+        ],
+        "title": "PageRange"
+      },
+      "PageReference": {
+        "properties": {
+          "pdf_page_index": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Pdf Page Index"
+          },
+          "pdf_page_number": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Pdf Page Number"
+          },
+          "printed_page_label": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Printed Page Label"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "pdf_page_index",
+          "pdf_page_number",
+          "printed_page_label"
+        ],
+        "title": "PageReference"
+      },
+      "PageRetrievalStep": {
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Sequence"
+          },
+          "page_role": {
+            "type": "string",
+            "enum": [
+              "start",
+              "body",
+              "end",
+              "single"
+            ],
+            "title": "Page Role"
+          },
+          "page": {
+            "$ref": "#/components/schemas/PageReference"
+          },
+          "content_window": {
+            "$ref": "#/components/schemas/ContentWindow"
+          },
+          "queries": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 4,
+            "minItems": 2,
+            "title": "Queries"
+          },
+          "required_evidence": {
+            "items": {
+              "$ref": "#/components/schemas/EvidenceRequirement"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Required Evidence"
+          },
+          "coverage": {
+            "$ref": "#/components/schemas/PageCoverage"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "sequence",
+          "page_role",
+          "page",
+          "queries",
+          "required_evidence"
+        ],
+        "title": "PageRetrievalStep"
+      },
+      "SectionLocator": {
+        "properties": {
+          "data_version": {
+            "type": "string",
+            "const": "3",
+            "title": "Data Version",
+            "default": "3"
+          },
+          "book_id": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Book Id"
+          },
+          "section_kind": {
+            "type": "string",
+            "enum": [
+              "printed",
+              "learning_unit"
+            ],
+            "title": "Section Kind"
+          },
+          "section_id": {
+            "type": "string",
+            "pattern": "^\\d+(?:\\.\\d+)*$",
+            "title": "Section Id"
+          },
+          "printed_section_id": {
+            "type": "string",
+            "pattern": "^\\d+(?:\\.\\d+)*$",
+            "title": "Printed Section Id"
+          },
+          "parent_section_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d+(?:\\.\\d+)*$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Parent Section Id"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Title"
+          },
+          "source_heading": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Source Heading"
+          },
+          "source_heading_numbered": {
+            "type": "boolean",
+            "title": "Source Heading Numbered"
+          },
+          "source_location": {
+            "$ref": "#/components/schemas/HeadingLocation"
+          },
+          "source_level": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Source Level"
+          },
+          "hierarchy_depth": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Hierarchy Depth"
+          },
+          "page_range": {
+            "$ref": "#/components/schemas/PageRange"
+          },
+          "outline": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Outline"
+          },
+          "retrieval_plan": {
+            "items": {
+              "$ref": "#/components/schemas/PageRetrievalStep"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Retrieval Plan"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "book_id",
+          "section_kind",
+          "section_id",
+          "printed_section_id",
+          "title",
+          "source_heading",
+          "source_heading_numbered",
+          "source_location",
+          "source_level",
+          "hierarchy_depth",
+          "page_range",
+          "retrieval_plan"
+        ],
+        "title": "SectionLocator"
+      },
+      "SectionNotFoundResponse": {
+        "properties": {
+          "error_code": {
+            "type": "string",
+            "const": "SECTION_NOT_FOUND",
+            "title": "Error Code"
+          },
+          "detail": {
+            "type": "string",
+            "title": "Detail"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "error_code",
+          "detail"
+        ],
+        "title": "SectionNotFoundResponse"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://YOUR_DOMAIN"
+    }
+  ]
+}

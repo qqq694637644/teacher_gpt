@@ -1,14 +1,27 @@
 from __future__ import annotations
 
+from app.models.exercise import (
+    ChapterExerciseSummary,
+    CompiledExerciseIndex,
+    ExerciseLocator,
+    ExerciseReferenceTarget,
+)
+from app.models.exercise_manifest import (
+    ExerciseManifest,
+    ExerciseManifestNode,
+    ExerciseReferenceSpec,
+)
 from app.models.locator import (
     BookMetadata,
+    BoundaryAnchor,
     ContentWindow,
     EvidenceRequirement,
     HeadingLocation,
-    PageCoverage,
     PageClassification,
+    PageCoverage,
     PageRange,
     PageReference,
+    PageRetrievalStep,
 )
 from app.models.manifest import (
     BookManifest,
@@ -16,7 +29,6 @@ from app.models.manifest import (
     ManifestRetrievalStep,
     PrintedSectionManifest,
 )
-
 
 PAGES = [
     PageReference(
@@ -202,4 +214,219 @@ def complete_manifest() -> BookManifest:
             PageClassification(page=page, category="body", reason="test fixture") for page in PAGES
         ],
         printed_sections=[chapter, printed],
+    )
+
+
+def exercise_step(
+    exercise_id: str,
+    index: int,
+    *,
+    sequence: int = 1,
+    page_role: str = "single",
+    end_before: str | None = None,
+) -> PageRetrievalStep:
+    page = PAGES[index]
+    evidence = [
+        EvidenceRequirement(
+            kind="printed_page_equals",
+            value=page.printed_page_label,
+            verification_mode="visual_required",
+        ),
+        EvidenceRequirement(
+            kind="contains_exercise",
+            value=exercise_id,
+            verification_mode="visual_required",
+        ),
+    ]
+    end_anchor = None
+    if end_before is not None:
+        end_anchor = BoundaryAnchor(kind="exercise", value=end_before)
+        evidence.append(
+            EvidenceRequirement(
+                kind="contains_exercise",
+                value=end_before,
+                verification_mode="visual_required",
+            )
+        )
+    return PageRetrievalStep(
+        sequence=sequence,
+        page_role=page_role,
+        page=page,
+        content_window=ContentWindow(
+            start_at=BoundaryAnchor(kind="exercise", value=exercise_id),
+            end_before=end_anchor,
+        ),
+        queries=[
+            f"+({exercise_id}) +(printed page {page.printed_page_label}) --QDF=0",
+            f"exercise {exercise_id} page {page.printed_page_label} --QDF=0",
+        ],
+        required_evidence=evidence,
+        coverage=PageCoverage(),
+    )
+
+
+def reference_step() -> PageRetrievalStep:
+    page = PAGES[0]
+    heading = "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS"
+    return PageRetrievalStep(
+        sequence=1,
+        page_role="single",
+        page=page,
+        content_window=ContentWindow(
+            start_at=BoundaryAnchor(kind="heading", value=heading),
+        ),
+        queries=[
+            f"+({heading}) +(printed page {page.printed_page_label}) --QDF=0",
+            f"pixel adjacency page {page.printed_page_label} --QDF=0",
+        ],
+        required_evidence=[
+            EvidenceRequirement(
+                kind="printed_page_equals",
+                value=page.printed_page_label,
+                verification_mode="visual_required",
+            ),
+            EvidenceRequirement(
+                kind="contains_heading",
+                value=heading,
+                verification_mode="visual_required",
+            ),
+        ],
+        coverage=PageCoverage(subheadings=[heading]),
+    )
+
+
+def complete_exercise_index() -> CompiledExerciseIndex:
+    manifest = complete_manifest()
+    exercise_214 = ExerciseLocator(
+        book_id="dip4e",
+        exercise_id="2.14",
+        chapter_id="2",
+        exercise_number=14,
+        starred=True,
+        source_order=1,
+        problem_page_range=page_range(1, 1),
+        problem_retrieval_plan=[exercise_step("2.14", 1, end_before="2.15")],
+        reference_targets=[
+            ExerciseReferenceTarget(
+                kind="section",
+                target_id="2.5",
+                reason="Definitions of pixel adjacency",
+                retrieval_plan=[reference_step()],
+            )
+        ],
+    )
+    exercise_215 = ExerciseLocator(
+        book_id="dip4e",
+        exercise_id="2.15",
+        chapter_id="2",
+        exercise_number=15,
+        source_order=2,
+        problem_page_range=page_range(1, 1),
+        problem_retrieval_plan=[exercise_step("2.15", 1)],
+    )
+    exercise_ids = ["2.14", "2.15"]
+    return CompiledExerciseIndex(
+        index_status="complete",
+        book=manifest.book,
+        pages=PAGES,
+        chapters={
+            "2": ChapterExerciseSummary(
+                book_id="dip4e",
+                chapter_id="2",
+                exercise_ids=exercise_ids,
+                first_exercise=exercise_ids[0],
+                last_exercise=exercise_ids[-1],
+                exercise_count=len(exercise_ids),
+            )
+        },
+        exercises={
+            exercise_214.exercise_id: exercise_214,
+            exercise_215.exercise_id: exercise_215,
+        },
+    )
+
+
+def exercise_manifest_step(
+    exercise_id: str,
+    index: int,
+    *,
+    end_before: str | None = None,
+) -> ManifestRetrievalStep:
+    page = PAGES[index]
+    evidence = [
+        EvidenceRequirement(
+            kind="printed_page_equals",
+            value=page.printed_page_label,
+            verification_mode="visual_required",
+        ),
+        EvidenceRequirement(
+            kind="contains_exercise",
+            value=exercise_id,
+            verification_mode="visual_required",
+        ),
+    ]
+    end_anchor = None
+    if end_before is not None:
+        end_anchor = BoundaryAnchor(kind="exercise", value=end_before)
+        evidence.append(
+            EvidenceRequirement(
+                kind="contains_exercise",
+                value=end_before,
+                verification_mode="visual_required",
+            )
+        )
+    return ManifestRetrievalStep(
+        page=page,
+        content_window=ContentWindow(
+            start_at=BoundaryAnchor(kind="exercise", value=exercise_id),
+            end_before=end_anchor,
+        ),
+        queries=[
+            f"+({exercise_id}) +(printed page {page.printed_page_label}) --QDF=0",
+            f"exercise {exercise_id} page {page.printed_page_label} --QDF=0",
+        ],
+        required_evidence=evidence,
+        coverage=PageCoverage(),
+    )
+
+
+def complete_exercise_manifest() -> ExerciseManifest:
+    book_manifest = complete_manifest()
+    return ExerciseManifest(
+        index_status="complete",
+        book=book_manifest.book,
+        pages=PAGES,
+        exercises=[
+            ExerciseManifestNode(
+                exercise_id="2.14",
+                chapter_id="2",
+                exercise_number=14,
+                starred=True,
+                source_order=1,
+                problem_page_range=page_range(1, 1),
+                problem_retrieval_plan=[exercise_manifest_step("2.14", 1, end_before="2.15")],
+                reference_specs=[
+                    ExerciseReferenceSpec(
+                        kind="section",
+                        target_id="2.6.5",
+                        reason="Definitions used by the exercise",
+                    )
+                ],
+            ),
+            ExerciseManifestNode(
+                exercise_id="2.15",
+                chapter_id="2",
+                exercise_number=15,
+                source_order=2,
+                problem_page_range=page_range(1, 1),
+                problem_retrieval_plan=[exercise_manifest_step("2.15", 1)],
+                reference_specs=[
+                    ExerciseReferenceSpec(
+                        kind="exercise",
+                        target_id="2.14",
+                        reason="Builds on the preceding exercise",
+                    )
+                ],
+            ),
+        ],
     )

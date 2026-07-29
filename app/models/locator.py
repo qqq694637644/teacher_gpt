@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 from collections import defaultdict
+from itertools import pairwise
 from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
@@ -63,7 +64,15 @@ class HeadingLocation(StrictModel):
         return self
 
 
-BoundaryKind = Literal["heading", "figure", "equation", "example", "table", "text"]
+BoundaryKind = Literal[
+    "heading",
+    "figure",
+    "equation",
+    "example",
+    "table",
+    "text",
+    "exercise",
+]
 EvidenceKind = Literal[
     "printed_page_equals",
     "contains_heading",
@@ -72,6 +81,7 @@ EvidenceKind = Literal[
     "contains_example",
     "contains_table",
     "contains_text",
+    "contains_exercise",
     "running_header_contains",
 ]
 BOUNDARY_TO_EVIDENCE: dict[str, str] = {
@@ -81,6 +91,7 @@ BOUNDARY_TO_EVIDENCE: dict[str, str] = {
     "example": "contains_example",
     "table": "contains_table",
     "text": "contains_text",
+    "exercise": "contains_exercise",
 }
 RETRIEVAL_ONLY_ANCHOR = "DIP4E_GLOBAL_Print_Ready.indb"
 
@@ -319,7 +330,7 @@ class CompiledLocatorIndex(StrictModel):
                     raise ValueError(
                         f"learning unit {child.section_id} is outside printed section range"
                     )
-            for previous, current in zip(ordered, ordered[1:]):
+            for previous, current in pairwise(ordered):
                 gap = (
                     current.page_range.pdf_page_index_start - previous.page_range.pdf_page_index_end
                 )
@@ -427,8 +438,20 @@ class HealthResponse(StrictModel):
     book_id: str
     section_count: int = Field(ge=1)
     page_count: int = Field(ge=1)
+    exercise_catalog_status: Literal["ready", "not_configured"]
+    exercise_count: int = Field(ge=0)
 
 
-class ErrorResponse(StrictModel):
+class SectionNotFoundResponse(StrictModel):
     error_code: Literal["SECTION_NOT_FOUND"]
+    detail: str
+
+
+class ExerciseNotFoundResponse(StrictModel):
+    error_code: Literal["EXERCISE_NOT_FOUND"]
+    detail: str
+
+
+class ExerciseCatalogUnavailableResponse(StrictModel):
+    error_code: Literal["EXERCISE_CATALOG_UNAVAILABLE"]
     detail: str

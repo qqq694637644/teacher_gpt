@@ -4,3 +4,15 @@ class SectionNotFoundError(KeyError):
 
 class LocatorIndexLoadError(RuntimeError):
     pass
+
+
+class ExerciseNotFoundError(KeyError):
+    pass
+
+
+class ExerciseCatalogUnavailableError(RuntimeError):
+    pass
+
+
+class ExerciseIndexLoadError(RuntimeError):
+    pass

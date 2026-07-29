@@ -5,7 +5,6 @@ from fastapi.testclient import TestClient
 from app.core.config import Settings
 from app.main import create_app
 
-
 REAL_INDEX = Path("catalog/dip4e/compiled_locator_index.json")
 
 
@@ -25,6 +24,8 @@ def test_real_catalog_starts_and_serves_reviewed_sections() -> None:
         "book_id": "dip4e",
         "section_count": 444,
         "page_count": 1022,
+        "exercise_catalog_status": "not_configured",
+        "exercise_count": 0,
     }
 
     assert spatial.status_code == 200
