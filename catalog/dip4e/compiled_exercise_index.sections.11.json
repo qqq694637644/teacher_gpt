@@ -219,8 +219,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(printed page 817) --QDF=0",
-            "+(are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(text) +(printed page 817) --QDF=0"
+            "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+            "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -653,8 +653,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(printed page 828) --QDF=0",
-            "+(number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(text) +(printed page 828) --QDF=0"
+            "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+            "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -695,8 +695,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text the points on its border All re fronts will advance into the region at the same) +(printed page 829) --QDF=0",
-            "+(the points on its border All re fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+            "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+            "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1001,8 +1001,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(printed page 817) --QDF=0",
-                "+(are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(text) +(printed page 817) --QDF=0"
+                "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+                "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1435,8 +1435,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(printed page 828) --QDF=0",
-                "+(number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(text) +(printed page 828) --QDF=0"
+                "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+                "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1477,8 +1477,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text the points on its border All re fronts will advance into the region at the same) +(printed page 829) --QDF=0",
-                "+(the points on its border All re fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+                "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+                "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1903,8 +1903,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(printed page 817) --QDF=0",
-                "+(are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(text) +(printed page 817) --QDF=0"
+                "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+                "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -2337,8 +2337,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(printed page 828) --QDF=0",
-                "+(number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(text) +(printed page 828) --QDF=0"
+                "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+                "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -2379,8 +2379,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text the points on its border All re fronts will advance into the region at the same) +(printed page 829) --QDF=0",
-                "+(the points on its border All re fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+                "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+                "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -2651,7 +2651,7 @@
             }
           },
           "queries": [
-            "+(text a Show that the rst difference of a chain code) +(printed page 898) --QDF=0",
+            "+(text a Show that the first difference of a chain code) +(printed page 898) --QDF=0",
             "+(exercise 11.4) +(printed page 898) --QDF=0",
             "+(exercise 11.5) +(printed page 898) --QDF=0"
           ],
@@ -2827,8 +2827,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(printed page 817) --QDF=0",
-            "+(are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(text) +(printed page 817) --QDF=0"
+            "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+            "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3261,8 +3261,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(printed page 828) --QDF=0",
-            "+(number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(text) +(printed page 828) --QDF=0"
+            "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+            "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3303,8 +3303,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text the points on its border All re fronts will advance into the region at the same) +(printed page 829) --QDF=0",
-            "+(the points on its border All re fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+            "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+            "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3565,8 +3565,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(printed page 817) --QDF=0",
-                "+(are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(text) +(printed page 817) --QDF=0"
+                "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+                "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -3999,8 +3999,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(printed page 828) --QDF=0",
-                "+(number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(text) +(printed page 828) --QDF=0"
+                "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+                "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4041,8 +4041,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text the points on its border All re fronts will advance into the region at the same) +(printed page 829) --QDF=0",
-                "+(the points on its border All re fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+                "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+                "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4719,80 +4719,6 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
-    },
-    "11.11": {
-      "data_version": "3",
-      "book_id": "dip4e",
-      "exercise_id": "11.11",
-      "chapter_id": "11",
-      "exercise_number": 11,
-      "starred": false,
-      "source_order": 11,
-      "problem_page_range": {
-        "pdf_page_index_start": 900,
-        "pdf_page_index_end": 900,
-        "pdf_page_number_start": 901,
-        "pdf_page_number_end": 901,
-        "printed_page_start": "899",
-        "printed_page_end": "899"
-      },
-      "problem_retrieval_plan": [
-        {
-          "sequence": 1,
-          "page_role": "single",
-          "page": {
-            "pdf_page_index": 900,
-            "pdf_page_number": 901,
-            "printed_page_label": "899"
-          },
-          "content_window": {
-            "start_at": {
-              "kind": "exercise",
-              "value": "11.11"
-            },
-            "end_before": {
-              "kind": "exercise",
-              "value": "11.12"
-            }
-          },
-          "queries": [
-            "+(text Explain how the MPP algorithm in Section 11.2) +(printed page 899) --QDF=0",
-            "+(exercise 11.11) +(printed page 899) --QDF=0",
-            "+(exercise 11.12) +(printed page 899) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "899",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "Explain how the MPP algorithm in Section 11.2",
-              "verification_mode": "text_or_visual"
-            },
-            {
-              "kind": "contains_exercise",
-              "value": "11.11",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_exercise",
-              "value": "11.12",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        }
-      ],
       "reference_retrieval_plan": [
         {
           "sequence": 1,
@@ -4934,8 +4860,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(printed page 817) --QDF=0",
-            "+(are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(text) +(printed page 817) --QDF=0"
+            "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+            "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5368,8 +5294,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(printed page 828) --QDF=0",
-            "+(number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(text) +(printed page 828) --QDF=0"
+            "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+            "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5410,8 +5336,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text the points on its border All re fronts will advance into the region at the same) +(printed page 829) --QDF=0",
-            "+(the points on its border All re fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+            "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+            "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5672,8 +5598,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(printed page 817) --QDF=0",
-                "+(are integer multiples of the directions in Fig 11.3 by using the rst difference of the) +(text) +(printed page 817) --QDF=0"
+                "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+                "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6106,8 +6032,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(printed page 828) --QDF=0",
-                "+(number of prominent peaks in the signatures is suf cient to differentiate between the shapes of) +(text) +(printed page 828) --QDF=0"
+                "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+                "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6148,8 +6074,1552 @@
                 "end_before": null
               },
               "queries": [
-                "+(text the points on its border All re fronts will advance into the region at the same) +(printed page 829) --QDF=0",
-                "+(the points on its border All re fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+                "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+                "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "829",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "the points on its border. All ﬁre fronts will advance into the region at the same speed.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.12",
+                  "11.13",
+                  "11.11"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 17,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 831,
+                "pdf_page_number": 832,
+                "printed_page_label": "830"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text maxima shown bold in Fig 11.13 d Figures 11.13 e and f show the same effect) +(printed page 830) --QDF=0",
+                "+(maxima shown bold in Fig 11.13 d Figures 11.13 e and f show the same effect) +(text) +(printed page 830) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "830",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.13",
+                  "11.12"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 18,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 832,
+                "pdf_page_number": 833,
+                "printed_page_label": "831"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "11.3 BOUNDARY FEATURE DESCRIPTORS"
+                }
+              },
+              "queries": [
+                "+(text by spurs which certainly is the case here Figure 11.14 c shows the result of forty) +(printed page 831) --QDF=0",
+                "+(heading 11.3 BOUNDARY FEATURE DESCRIPTORS) +(printed page 831) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "831",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal.",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "11.3 BOUNDARY FEATURE DESCRIPTORS",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.14"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.5"
+                ],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "11.11": {
+      "data_version": "3",
+      "book_id": "dip4e",
+      "exercise_id": "11.11",
+      "chapter_id": "11",
+      "exercise_number": 11,
+      "starred": false,
+      "source_order": 11,
+      "problem_page_range": {
+        "pdf_page_index_start": 900,
+        "pdf_page_index_end": 900,
+        "pdf_page_number_start": 901,
+        "pdf_page_number_end": 901,
+        "printed_page_start": "899",
+        "printed_page_end": "899"
+      },
+      "problem_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 900,
+            "pdf_page_number": 901,
+            "printed_page_label": "899"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "exercise",
+              "value": "11.11"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "11.12"
+            }
+          },
+          "queries": [
+            "+(text Explain how the MPP algorithm in Section 11.2) +(printed page 899) --QDF=0",
+            "+(exercise 11.11) +(printed page 899) --QDF=0",
+            "+(exercise 11.12) +(printed page 899) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "899",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Explain how the MPP algorithm in Section 11.2",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "11.11",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "11.12",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 815,
+            "pdf_page_number": 816,
+            "printed_page_label": "814"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "11.2 BOUNDARY PREPROCESSING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text possibility of an object merging with the image border For clarity we limit the dis) +(printed page 814) --QDF=0",
+            "+(heading 11.2 BOUNDARY PREPROCESSING) +(printed page 814) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "814",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "possibility of an object merging with the image border. For clarity, we limit the dis-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.2 BOUNDARY PREPROCESSING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "11.2 BOUNDARY PREPROCESSING",
+              "BOUNDARY FOLLOWING (TRACING)"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 816,
+            "pdf_page_number": 817,
+            "printed_page_label": "815"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text labeled in bold black the points yet to be processed are gray and the points found) +(printed page 815) --QDF=0",
+            "+(labeled in bold black the points yet to be processed are gray and the points found) +(text) +(printed page 815) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "815",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.1"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 817,
+            "pdf_page_number": 818,
+            "printed_page_label": "816"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text the coarser boundary points represented by an 8-directional chain code It is a simple) +(printed page 816) --QDF=0",
+            "+(the coarser boundary points represented by an 8-directional chain code It is a simple) +(text) +(printed page 816) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "816",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the coarser boundary points represented by an 8-directional chain code. It is a simple",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "CHAIN CODES",
+              "Freeman Chain Codes"
+            ],
+            "figure_ids": [
+              "11.4",
+              "11.2"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 818,
+            "pdf_page_number": 819,
+            "printed_page_label": "817"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+            "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "817",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.4",
+              "11.3"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 819,
+            "pdf_page_number": 820,
+            "printed_page_label": "818"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Fig 2.19 that the origin of an image is at its top left This is the) +(printed page 818) --QDF=0",
+            "+(Fig 2.19 that the origin of an image is at its top left This is the) +(text) +(printed page 818) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "818",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.5"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.1"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 820,
+            "pdf_page_number": 821,
+            "printed_page_label": "819"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text image thresholded using Otsu s method d Longest outer boundary of c e Subsampled boundary the) +(printed page 819) --QDF=0",
+            "+(image thresholded using Otsu s method d Longest outer boundary of c e Subsampled boundary the) +(text) +(printed page 819) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "819",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Slope Chain Codes"
+            ],
+            "figure_ids": [
+              "11.5"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 821,
+            "pdf_page_number": 822,
+            "printed_page_label": "820"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text numbers shown e Resulting coded curve showing its corresponding numerical sequence of slope changes Cour) +(printed page 820) --QDF=0",
+            "+(numbers shown e Resulting coded curve showing its corresponding numerical sequence of slope changes Cour) +(text) +(printed page 820) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "820",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.6"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 822,
+            "pdf_page_number": 823,
+            "printed_page_label": "821"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text that the preceding discussion is directly applicable to closed curves Curve following) +(printed page 821) --QDF=0",
+            "+(that the preceding discussion is directly applicable to closed curves Curve following) +(text) +(printed page 821) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "821",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "that the preceding discussion is directly applicable to closed curves. Curve following",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "BOUNDARY APPROXIMATIONS USING MINIMUM-PERIMETER POLYGONS",
+              "Foundation"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 823,
+            "pdf_page_number": 824,
+            "printed_page_label": "822"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Fig 11.8 b and that every concave blue vertex in the dark gray region has a) +(printed page 822) --QDF=0",
+            "+(Fig 11.8 b and that every concave blue vertex in the dark gray region has a) +(text) +(printed page 822) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "822",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "MPP Algorithm"
+            ],
+            "figure_ids": [
+              "11.8",
+              "11.7"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 824,
+            "pdf_page_number": 825,
+            "printed_page_label": "823"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text counterclockwise direction c Concave vertices blue dots displaced to their diagonal mirror locations in the) +(printed page 823) --QDF=0",
+            "+(counterclockwise direction c Concave vertices blue dots displaced to their diagonal mirror locations in the) +(text) +(printed page 823) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "823",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.8"
+            ],
+            "equation_ids": [
+              "11-1"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 825,
+            "pdf_page_number": 826,
+            "printed_page_label": "824"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text coordinate system from Fig 2.19 in which the origin is at the top left the positive) +(printed page 824) --QDF=0",
+            "+(coordinate system from Fig 2.19 in which the origin is at the top left the positive) +(text) +(printed page 824) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "824",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-2",
+              "11-3"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 826,
+            "pdf_page_number": 827,
+            "printed_page_label": "825"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text A simple example in which we can follow the algorithm step-by-step will help clarify the preceding) +(printed page 825) --QDF=0",
+            "+(A simple example in which we can follow the algorithm step-by-step will help clarify the preceding) +(text) +(printed page 825) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "825",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "11.2"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 827,
+            "pdf_page_number": 828,
+            "printed_page_label": "826"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text cellular complex cells of sizes 2 4 6 8 16 and 32 respectively the vertices in) +(printed page 826) --QDF=0",
+            "+(cellular complex cells of sizes 2 4 6 8 16 and 32 respectively the vertices in) +(text) +(printed page 826) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "826",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SIGNATURES"
+            ],
+            "figure_ids": [
+              "11.9"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.3"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 828,
+            "pdf_page_number": 829,
+            "printed_page_label": "827"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text of sizes 2 4 6 8 16 and 32 respectively the vertices were joined by straight-line) +(printed page 827) --QDF=0",
+            "+(of sizes 2 4 6 8 16 and 32 respectively the vertices were joined by straight-line) +(text) +(printed page 827) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "827",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.9"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 829,
+            "pdf_page_number": 830,
+            "printed_page_label": "828"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+            "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "828",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SKELETONS, MEDIAL AXES, AND DISTANCE TRANSFORMS"
+            ],
+            "figure_ids": [
+              "11.10"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.4"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 830,
+            "pdf_page_number": 831,
+            "printed_page_label": "829"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+            "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "829",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the points on its border. All ﬁre fronts will advance into the region at the same speed.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.12",
+              "11.13",
+              "11.11"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 831,
+            "pdf_page_number": 832,
+            "printed_page_label": "830"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text maxima shown bold in Fig 11.13 d Figures 11.13 e and f show the same effect) +(printed page 830) --QDF=0",
+            "+(maxima shown bold in Fig 11.13 d Figures 11.13 e and f show the same effect) +(text) +(printed page 830) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "830",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.13",
+              "11.12"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 832,
+            "pdf_page_number": 833,
+            "printed_page_label": "831"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "11.3 BOUNDARY FEATURE DESCRIPTORS"
+            }
+          },
+          "queries": [
+            "+(text by spurs which certainly is the case here Figure 11.14 c shows the result of forty) +(printed page 831) --QDF=0",
+            "+(heading 11.3 BOUNDARY FEATURE DESCRIPTORS) +(printed page 831) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "831",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.3 BOUNDARY FEATURE DESCRIPTORS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.14"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.5"
+            ],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "section",
+          "target_id": "11.2",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 815,
+                "pdf_page_number": 816,
+                "printed_page_label": "814"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "11.2 BOUNDARY PREPROCESSING"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(text possibility of an object merging with the image border For clarity we limit the dis) +(printed page 814) --QDF=0",
+                "+(heading 11.2 BOUNDARY PREPROCESSING) +(printed page 814) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "814",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "possibility of an object merging with the image border. For clarity, we limit the dis-",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "11.2 BOUNDARY PREPROCESSING",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "11.2 BOUNDARY PREPROCESSING",
+                  "BOUNDARY FOLLOWING (TRACING)"
+                ],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 816,
+                "pdf_page_number": 817,
+                "printed_page_label": "815"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text labeled in bold black the points yet to be processed are gray and the points found) +(printed page 815) --QDF=0",
+                "+(labeled in bold black the points yet to be processed are gray and the points found) +(text) +(printed page 815) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "815",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.1"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 817,
+                "pdf_page_number": 818,
+                "printed_page_label": "816"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text the coarser boundary points represented by an 8-directional chain code It is a simple) +(printed page 816) --QDF=0",
+                "+(the coarser boundary points represented by an 8-directional chain code It is a simple) +(text) +(printed page 816) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "816",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "the coarser boundary points represented by an 8-directional chain code. It is a simple",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "CHAIN CODES",
+                  "Freeman Chain Codes"
+                ],
+                "figure_ids": [
+                  "11.4",
+                  "11.2"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 818,
+                "pdf_page_number": 819,
+                "printed_page_label": "817"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+                "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "817",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.4",
+                  "11.3"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 819,
+                "pdf_page_number": 820,
+                "printed_page_label": "818"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Fig 2.19 that the origin of an image is at its top left This is the) +(printed page 818) --QDF=0",
+                "+(Fig 2.19 that the origin of an image is at its top left This is the) +(text) +(printed page 818) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "818",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f).",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.5"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.1"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 6,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 820,
+                "pdf_page_number": 821,
+                "printed_page_label": "819"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text image thresholded using Otsu s method d Longest outer boundary of c e Subsampled boundary the) +(printed page 819) --QDF=0",
+                "+(image thresholded using Otsu s method d Longest outer boundary of c e Subsampled boundary the) +(text) +(printed page 819) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "819",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "Slope Chain Codes"
+                ],
+                "figure_ids": [
+                  "11.5"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 7,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 821,
+                "pdf_page_number": 822,
+                "printed_page_label": "820"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text numbers shown e Resulting coded curve showing its corresponding numerical sequence of slope changes Cour) +(printed page 820) --QDF=0",
+                "+(numbers shown e Resulting coded curve showing its corresponding numerical sequence of slope changes Cour) +(text) +(printed page 820) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "820",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.6"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 8,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 822,
+                "pdf_page_number": 823,
+                "printed_page_label": "821"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text that the preceding discussion is directly applicable to closed curves Curve following) +(printed page 821) --QDF=0",
+                "+(that the preceding discussion is directly applicable to closed curves Curve following) +(text) +(printed page 821) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "821",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "that the preceding discussion is directly applicable to closed curves. Curve following",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "BOUNDARY APPROXIMATIONS USING MINIMUM-PERIMETER POLYGONS",
+                  "Foundation"
+                ],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 9,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 823,
+                "pdf_page_number": 824,
+                "printed_page_label": "822"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Fig 11.8 b and that every concave blue vertex in the dark gray region has a) +(printed page 822) --QDF=0",
+                "+(Fig 11.8 b and that every concave blue vertex in the dark gray region has a) +(text) +(printed page 822) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "822",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "MPP Algorithm"
+                ],
+                "figure_ids": [
+                  "11.8",
+                  "11.7"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 10,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 824,
+                "pdf_page_number": 825,
+                "printed_page_label": "823"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text counterclockwise direction c Concave vertices blue dots displaced to their diagonal mirror locations in the) +(printed page 823) --QDF=0",
+                "+(counterclockwise direction c Concave vertices blue dots displaced to their diagonal mirror locations in the) +(text) +(printed page 823) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "823",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.8"
+                ],
+                "equation_ids": [
+                  "11-1"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 11,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 825,
+                "pdf_page_number": 826,
+                "printed_page_label": "824"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text coordinate system from Fig 2.19 in which the origin is at the top left the positive) +(printed page 824) --QDF=0",
+                "+(coordinate system from Fig 2.19 in which the origin is at the top left the positive) +(text) +(printed page 824) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "824",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "11-2",
+                  "11-3"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 12,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 826,
+                "pdf_page_number": 827,
+                "printed_page_label": "825"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text A simple example in which we can follow the algorithm step-by-step will help clarify the preceding) +(printed page 825) --QDF=0",
+                "+(A simple example in which we can follow the algorithm step-by-step will help clarify the preceding) +(text) +(printed page 825) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "825",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.2"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 13,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 827,
+                "pdf_page_number": 828,
+                "printed_page_label": "826"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text cellular complex cells of sizes 2 4 6 8 16 and 32 respectively the vertices in) +(printed page 826) --QDF=0",
+                "+(cellular complex cells of sizes 2 4 6 8 16 and 32 respectively the vertices in) +(text) +(printed page 826) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "826",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "SIGNATURES"
+                ],
+                "figure_ids": [
+                  "11.9"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.3"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 14,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 828,
+                "pdf_page_number": 829,
+                "printed_page_label": "827"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text of sizes 2 4 6 8 16 and 32 respectively the vertices were joined by straight-line) +(printed page 827) --QDF=0",
+                "+(of sizes 2 4 6 8 16 and 32 respectively the vertices were joined by straight-line) +(text) +(printed page 827) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "827",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.9"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 15,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 829,
+                "pdf_page_number": 830,
+                "printed_page_label": "828"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+                "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "828",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "SKELETONS, MEDIAL AXES, AND DISTANCE TRANSFORMS"
+                ],
+                "figure_ids": [
+                  "11.10"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.4"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 16,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 830,
+                "pdf_page_number": 831,
+                "printed_page_label": "829"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+                "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6337,8 +7807,1478 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 815,
+            "pdf_page_number": 816,
+            "printed_page_label": "814"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "11.2 BOUNDARY PREPROCESSING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text possibility of an object merging with the image border For clarity we limit the dis) +(printed page 814) --QDF=0",
+            "+(heading 11.2 BOUNDARY PREPROCESSING) +(printed page 814) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "814",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "possibility of an object merging with the image border. For clarity, we limit the dis-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.2 BOUNDARY PREPROCESSING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "11.2 BOUNDARY PREPROCESSING",
+              "BOUNDARY FOLLOWING (TRACING)"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 816,
+            "pdf_page_number": 817,
+            "printed_page_label": "815"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text labeled in bold black the points yet to be processed are gray and the points found) +(printed page 815) --QDF=0",
+            "+(labeled in bold black the points yet to be processed are gray and the points found) +(text) +(printed page 815) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "815",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.1"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 817,
+            "pdf_page_number": 818,
+            "printed_page_label": "816"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text the coarser boundary points represented by an 8-directional chain code It is a simple) +(printed page 816) --QDF=0",
+            "+(the coarser boundary points represented by an 8-directional chain code It is a simple) +(text) +(printed page 816) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "816",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the coarser boundary points represented by an 8-directional chain code. It is a simple",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "CHAIN CODES",
+              "Freeman Chain Codes"
+            ],
+            "figure_ids": [
+              "11.4",
+              "11.2"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 818,
+            "pdf_page_number": 819,
+            "printed_page_label": "817"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+            "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "817",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.4",
+              "11.3"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 819,
+            "pdf_page_number": 820,
+            "printed_page_label": "818"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Fig 2.19 that the origin of an image is at its top left This is the) +(printed page 818) --QDF=0",
+            "+(Fig 2.19 that the origin of an image is at its top left This is the) +(text) +(printed page 818) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "818",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.5"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.1"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 820,
+            "pdf_page_number": 821,
+            "printed_page_label": "819"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text image thresholded using Otsu s method d Longest outer boundary of c e Subsampled boundary the) +(printed page 819) --QDF=0",
+            "+(image thresholded using Otsu s method d Longest outer boundary of c e Subsampled boundary the) +(text) +(printed page 819) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "819",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Slope Chain Codes"
+            ],
+            "figure_ids": [
+              "11.5"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 821,
+            "pdf_page_number": 822,
+            "printed_page_label": "820"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text numbers shown e Resulting coded curve showing its corresponding numerical sequence of slope changes Cour) +(printed page 820) --QDF=0",
+            "+(numbers shown e Resulting coded curve showing its corresponding numerical sequence of slope changes Cour) +(text) +(printed page 820) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "820",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.6"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 822,
+            "pdf_page_number": 823,
+            "printed_page_label": "821"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text that the preceding discussion is directly applicable to closed curves Curve following) +(printed page 821) --QDF=0",
+            "+(that the preceding discussion is directly applicable to closed curves Curve following) +(text) +(printed page 821) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "821",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "that the preceding discussion is directly applicable to closed curves. Curve following",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "BOUNDARY APPROXIMATIONS USING MINIMUM-PERIMETER POLYGONS",
+              "Foundation"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 823,
+            "pdf_page_number": 824,
+            "printed_page_label": "822"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Fig 11.8 b and that every concave blue vertex in the dark gray region has a) +(printed page 822) --QDF=0",
+            "+(Fig 11.8 b and that every concave blue vertex in the dark gray region has a) +(text) +(printed page 822) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "822",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "MPP Algorithm"
+            ],
+            "figure_ids": [
+              "11.8",
+              "11.7"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 824,
+            "pdf_page_number": 825,
+            "printed_page_label": "823"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text counterclockwise direction c Concave vertices blue dots displaced to their diagonal mirror locations in the) +(printed page 823) --QDF=0",
+            "+(counterclockwise direction c Concave vertices blue dots displaced to their diagonal mirror locations in the) +(text) +(printed page 823) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "823",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.8"
+            ],
+            "equation_ids": [
+              "11-1"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 825,
+            "pdf_page_number": 826,
+            "printed_page_label": "824"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text coordinate system from Fig 2.19 in which the origin is at the top left the positive) +(printed page 824) --QDF=0",
+            "+(coordinate system from Fig 2.19 in which the origin is at the top left the positive) +(text) +(printed page 824) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "824",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "11-2",
+              "11-3"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 826,
+            "pdf_page_number": 827,
+            "printed_page_label": "825"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text A simple example in which we can follow the algorithm step-by-step will help clarify the preceding) +(printed page 825) --QDF=0",
+            "+(A simple example in which we can follow the algorithm step-by-step will help clarify the preceding) +(text) +(printed page 825) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "825",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [
+              "11.2"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 827,
+            "pdf_page_number": 828,
+            "printed_page_label": "826"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text cellular complex cells of sizes 2 4 6 8 16 and 32 respectively the vertices in) +(printed page 826) --QDF=0",
+            "+(cellular complex cells of sizes 2 4 6 8 16 and 32 respectively the vertices in) +(text) +(printed page 826) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "826",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SIGNATURES"
+            ],
+            "figure_ids": [
+              "11.9"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.3"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 828,
+            "pdf_page_number": 829,
+            "printed_page_label": "827"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text of sizes 2 4 6 8 16 and 32 respectively the vertices were joined by straight-line) +(printed page 827) --QDF=0",
+            "+(of sizes 2 4 6 8 16 and 32 respectively the vertices were joined by straight-line) +(text) +(printed page 827) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "827",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.9"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 829,
+            "pdf_page_number": 830,
+            "printed_page_label": "828"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+            "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "828",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SKELETONS, MEDIAL AXES, AND DISTANCE TRANSFORMS"
+            ],
+            "figure_ids": [
+              "11.10"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.4"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 830,
+            "pdf_page_number": 831,
+            "printed_page_label": "829"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+            "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "829",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the points on its border. All ﬁre fronts will advance into the region at the same speed.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.12",
+              "11.13",
+              "11.11"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 831,
+            "pdf_page_number": 832,
+            "printed_page_label": "830"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text maxima shown bold in Fig 11.13 d Figures 11.13 e and f show the same effect) +(printed page 830) --QDF=0",
+            "+(maxima shown bold in Fig 11.13 d Figures 11.13 e and f show the same effect) +(text) +(printed page 830) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "830",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.13",
+              "11.12"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 832,
+            "pdf_page_number": 833,
+            "printed_page_label": "831"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "11.3 BOUNDARY FEATURE DESCRIPTORS"
+            }
+          },
+          "queries": [
+            "+(text by spurs which certainly is the case here Figure 11.14 c shows the result of forty) +(printed page 831) --QDF=0",
+            "+(heading 11.3 BOUNDARY FEATURE DESCRIPTORS) +(printed page 831) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "831",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal.",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "11.3 BOUNDARY FEATURE DESCRIPTORS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "11.14"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "11.5"
+            ],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "section",
+          "target_id": "11.2",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 815,
+                "pdf_page_number": 816,
+                "printed_page_label": "814"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "11.2 BOUNDARY PREPROCESSING"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(text possibility of an object merging with the image border For clarity we limit the dis) +(printed page 814) --QDF=0",
+                "+(heading 11.2 BOUNDARY PREPROCESSING) +(printed page 814) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "814",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "possibility of an object merging with the image border. For clarity, we limit the dis-",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "11.2 BOUNDARY PREPROCESSING",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "11.2 BOUNDARY PREPROCESSING",
+                  "BOUNDARY FOLLOWING (TRACING)"
+                ],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 816,
+                "pdf_page_number": 817,
+                "printed_page_label": "815"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text labeled in bold black the points yet to be processed are gray and the points found) +(printed page 815) --QDF=0",
+                "+(labeled in bold black the points yet to be processed are gray and the points found) +(text) +(printed page 815) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "815",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "labeled in bold, black; the points yet to be processed are gray; and the points found by the algorithm are shaded.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.1"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 817,
+                "pdf_page_number": 818,
+                "printed_page_label": "816"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text the coarser boundary points represented by an 8-directional chain code It is a simple) +(printed page 816) --QDF=0",
+                "+(the coarser boundary points represented by an 8-directional chain code It is a simple) +(text) +(printed page 816) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "816",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "the coarser boundary points represented by an 8-directional chain code. It is a simple",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "CHAIN CODES",
+                  "Freeman Chain Codes"
+                ],
+                "figure_ids": [
+                  "11.4",
+                  "11.2"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 818,
+                "pdf_page_number": 819,
+                "printed_page_label": "817"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(printed page 817) --QDF=0",
+                "+(are integer multiples of the directions in Fig 11.3 by using the first difference of the) +(text) +(printed page 817) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "817",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "are integer multiples of the directions in Fig. 11.3) by using the ﬁrst difference of the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.4",
+                  "11.3"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 819,
+                "pdf_page_number": 820,
+                "printed_page_label": "818"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Fig 2.19 that the origin of an image is at its top left This is the) +(printed page 818) --QDF=0",
+                "+(Fig 2.19 that the origin of an image is at its top left This is the) +(text) +(printed page 818) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "818",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Fig. 2.19 that the origin of an image is at its top, left). This is the uppermost-leftmost point in Fig. 11.5(f).",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.5"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.1"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 6,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 820,
+                "pdf_page_number": 821,
+                "printed_page_label": "819"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text image thresholded using Otsu s method d Longest outer boundary of c e Subsampled boundary the) +(printed page 819) --QDF=0",
+                "+(image thresholded using Otsu s method d Longest outer boundary of c e Subsampled boundary the) +(text) +(printed page 819) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "819",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "image, thresholded using Otsu’s method. (d) Longest outer boundary of (c). (e) Subsampled boundary (the points",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "Slope Chain Codes"
+                ],
+                "figure_ids": [
+                  "11.5"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 7,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 821,
+                "pdf_page_number": 822,
+                "printed_page_label": "820"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text numbers shown e Resulting coded curve showing its corresponding numerical sequence of slope changes Cour) +(printed page 820) --QDF=0",
+                "+(numbers shown e Resulting coded curve showing its corresponding numerical sequence of slope changes Cour) +(text) +(printed page 820) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "820",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "numbers shown.(e) Resulting coded curve showing its corresponding numerical sequence of slope changes. (Cour-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.6"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 8,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 822,
+                "pdf_page_number": 823,
+                "printed_page_label": "821"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text that the preceding discussion is directly applicable to closed curves Curve following) +(printed page 821) --QDF=0",
+                "+(that the preceding discussion is directly applicable to closed curves Curve following) +(text) +(printed page 821) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "821",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "that the preceding discussion is directly applicable to closed curves. Curve following",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "BOUNDARY APPROXIMATIONS USING MINIMUM-PERIMETER POLYGONS",
+                  "Foundation"
+                ],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 9,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 823,
+                "pdf_page_number": 824,
+                "printed_page_label": "822"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Fig 11.8 b and that every concave blue vertex in the dark gray region has a) +(printed page 822) --QDF=0",
+                "+(Fig 11.8 b and that every concave blue vertex in the dark gray region has a) +(text) +(printed page 822) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "822",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Fig. 11.8(b), and that every concave (blue) vertex in the dark gray region has a corre-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "MPP Algorithm"
+                ],
+                "figure_ids": [
+                  "11.8",
+                  "11.7"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 10,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 824,
+                "pdf_page_number": 825,
+                "printed_page_label": "823"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text counterclockwise direction c Concave vertices blue dots displaced to their diagonal mirror locations in the) +(printed page 823) --QDF=0",
+                "+(counterclockwise direction c Concave vertices blue dots displaced to their diagonal mirror locations in the) +(text) +(printed page 823) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "823",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "counterclockwise direction. (c) Concave vertices (blue dots) displaced to their diagonal mirror locations in the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.8"
+                ],
+                "equation_ids": [
+                  "11-1"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 11,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 825,
+                "pdf_page_number": 826,
+                "printed_page_label": "824"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text coordinate system from Fig 2.19 in which the origin is at the top left the positive) +(printed page 824) --QDF=0",
+                "+(coordinate system from Fig 2.19 in which the origin is at the top left the positive) +(text) +(printed page 824) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "824",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "coordinate system from Fig. 2.19 (in which the origin is at the top left, the positive",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "11-2",
+                  "11-3"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 12,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 826,
+                "pdf_page_number": 827,
+                "printed_page_label": "825"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text A simple example in which we can follow the algorithm step-by-step will help clarify the preceding) +(printed page 825) --QDF=0",
+                "+(A simple example in which we can follow the algorithm step-by-step will help clarify the preceding) +(text) +(printed page 825) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "825",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "A simple example in which we can follow the algorithm step-by-step will help clarify the preceding con-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.2"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 13,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 827,
+                "pdf_page_number": 828,
+                "printed_page_label": "826"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text cellular complex cells of sizes 2 4 6 8 16 and 32 respectively the vertices in) +(printed page 826) --QDF=0",
+                "+(cellular complex cells of sizes 2 4 6 8 16 and 32 respectively the vertices in) +(text) +(printed page 826) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "826",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "cellular complex cells of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices in each ﬁgure were con-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "SIGNATURES"
+                ],
+                "figure_ids": [
+                  "11.9"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.3"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 14,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 828,
+                "pdf_page_number": 829,
+                "printed_page_label": "827"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text of sizes 2 4 6 8 16 and 32 respectively the vertices were joined by straight-line) +(printed page 827) --QDF=0",
+                "+(of sizes 2 4 6 8 16 and 32 respectively the vertices were joined by straight-line) +(text) +(printed page 827) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "827",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "of sizes 2, 4, 6, 8, 16, and 32, respectively (the vertices were joined by straight-line segments for display). The number",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.9"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 15,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 829,
+                "pdf_page_number": 830,
+                "printed_page_label": "828"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(printed page 828) --QDF=0",
+                "+(number of prominent peaks in the signatures is sufficient to differentiate between the shapes of the) +(text) +(printed page 828) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "828",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "number of prominent peaks in the signatures is sufﬁcient to differentiate between the shapes of the two",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "SKELETONS, MEDIAL AXES, AND DISTANCE TRANSFORMS"
+                ],
+                "figure_ids": [
+                  "11.10"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.4"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 16,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 830,
+                "pdf_page_number": 831,
+                "printed_page_label": "829"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text the points on its border All fire fronts will advance into the region at the same) +(printed page 829) --QDF=0",
+                "+(the points on its border All fire fronts will advance into the region at the same) +(text) +(printed page 829) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "829",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "the points on its border. All ﬁre fronts will advance into the region at the same speed.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.12",
+                  "11.13",
+                  "11.11"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 17,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 831,
+                "pdf_page_number": 832,
+                "printed_page_label": "830"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text maxima shown bold in Fig 11.13 d Figures 11.13 e and f show the same effect) +(printed page 830) --QDF=0",
+                "+(maxima shown bold in Fig 11.13 d Figures 11.13 e and f show the same effect) +(text) +(printed page 830) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "830",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "maxima [shown bold in Fig. 11.13(d)]. Figures 11.13(e) and (f) show the same effect",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.13",
+                  "11.12"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 18,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 832,
+                "pdf_page_number": 833,
+                "printed_page_label": "831"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "11.3 BOUNDARY FEATURE DESCRIPTORS"
+                }
+              },
+              "queries": [
+                "+(text by spurs which certainly is the case here Figure 11.14 c shows the result of forty) +(printed page 831) --QDF=0",
+                "+(heading 11.3 BOUNDARY FEATURE DESCRIPTORS) +(printed page 831) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "831",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "by spurs, which certainly is the case here. Figure 11.14(c) shows the result of forty passes of spur removal.",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "11.3 BOUNDARY FEATURE DESCRIPTORS",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "11.14"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "11.5"
+                ],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
     },
     "11.13": {
       "data_version": "3",
@@ -6972,8 +9912,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Suppose that n 18 is speci ed for the boundary in Fig 11.17 a To obtain) +(printed page 835) --QDF=0",
-            "+(Suppose that n 18 is speci ed for the boundary in Fig 11.17 a To obtain) +(text) +(printed page 835) --QDF=0"
+            "+(text Suppose that n 18 is specified for the boundary in Fig 11.17 a To obtain a) +(printed page 835) --QDF=0",
+            "+(Suppose that n 18 is specified for the boundary in Fig 11.17 a To obtain a) +(text) +(printed page 835) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7202,7 +10142,7 @@
             }
           },
           "queries": [
-            "+(text pute the 1-D discrete Fourier transform of gr obtain its spectrum and use the rst) +(printed page 840) --QDF=0",
+            "+(text pute the 1-D discrete Fourier transform of gr obtain its spectrum and use the first) +(printed page 840) --QDF=0",
             "+(heading 11.4 REGION FEATURE DESCRIPTORS) +(printed page 840) --QDF=0"
           ],
           "required_evidence": [
@@ -7423,8 +10363,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Suppose that n 18 is speci ed for the boundary in Fig 11.17 a To obtain) +(printed page 835) --QDF=0",
-                "+(Suppose that n 18 is speci ed for the boundary in Fig 11.17 a To obtain) +(text) +(printed page 835) --QDF=0"
+                "+(text Suppose that n 18 is specified for the boundary in Fig 11.17 a To obtain a) +(printed page 835) --QDF=0",
+                "+(Suppose that n 18 is specified for the boundary in Fig 11.17 a To obtain a) +(text) +(printed page 835) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7648,7 +10588,7 @@
                 }
               },
               "queries": [
-                "+(text pute the 1-D discrete Fourier transform of gr obtain its spectrum and use the rst) +(printed page 840) --QDF=0",
+                "+(text pute the 1-D discrete Fourier transform of gr obtain its spectrum and use the first) +(printed page 840) --QDF=0",
                 "+(heading 11.4 REGION FEATURE DESCRIPTORS) +(printed page 840) --QDF=0"
               ],
               "required_evidence": [
@@ -8267,8 +11207,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text we can do this by letting the rst 32 intensity levels equal to 1 the next) +(printed page 850) --QDF=0",
-            "+(we can do this by letting the rst 32 intensity levels equal to 1 the next) +(text) +(printed page 850) --QDF=0"
+            "+(text we can do this by letting the first 32 intensity levels equal to 1 the next) +(printed page 850) --QDF=0",
+            "+(we can do this by letting the first 32 intensity levels equal to 1 the next) +(text) +(printed page 850) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8716,8 +11656,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text that the rst texture has signi cantly less variability in intensity it is smoother than the) +(printed page 848) --QDF=0",
-                "+(that the rst texture has signi cantly less variability in intensity it is smoother than the) +(text) +(printed page 848) --QDF=0"
+                "+(text that the first texture has significantly less variability in intensity it is smoother than the other) +(printed page 848) --QDF=0",
+                "+(that the first texture has significantly less variability in intensity it is smoother than the other) +(text) +(printed page 848) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8802,8 +11742,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text we can do this by letting the rst 32 intensity levels equal to 1 the next) +(printed page 850) --QDF=0",
-                "+(we can do this by letting the rst 32 intensity levels equal to 1 the next) +(text) +(printed page 850) --QDF=0"
+                "+(text we can do this by letting the first 32 intensity levels equal to 1 the next) +(printed page 850) --QDF=0",
+                "+(we can do this by letting the first 32 intensity levels equal to 1 the next) +(text) +(printed page 850) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9379,7 +12319,7 @@
             }
           },
           "queries": [
-            "+(text a The position operator Q is de ned as one) +(printed page 900) --QDF=0",
+            "+(text a The position operator Q is defined as one) +(printed page 900) --QDF=0",
             "+(exercise 11.24) +(printed page 900) --QDF=0",
             "+(exercise 11.25) +(printed page 900) --QDF=0"
           ],
@@ -10869,8 +13809,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text almost identical yielding a nearly circular t to the points we label these eigenvalues) +(printed page 871) --QDF=0",
-            "+(almost identical yielding a nearly circular t to the points we label these eigenvalues) +(text) +(printed page 871) --QDF=0"
+            "+(text almost identical yielding a nearly circular fit to the points we label these eigenvalues) +(printed page 871) --QDF=0",
+            "+(almost identical yielding a nearly circular fit to the points we label these eigenvalues) +(text) +(printed page 871) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11461,8 +14401,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text almost identical yielding a nearly circular t to the points we label these eigenvalues) +(printed page 871) --QDF=0",
-                "+(almost identical yielding a nearly circular t to the points we label these eigenvalues) +(text) +(printed page 871) --QDF=0"
+                "+(text almost identical yielding a nearly circular fit to the points we label these eigenvalues) +(printed page 871) --QDF=0",
+                "+(almost identical yielding a nearly circular fit to the points we label these eigenvalues) +(text) +(printed page 871) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12576,8 +15516,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text later and in Chapter 12 Finally a parabola is t to the three histogram values clos) +(printed page 891) --QDF=0",
-            "+(later and in Chapter 12 Finally a parabola is t to the three histogram values clos) +(text) +(printed page 891) --QDF=0"
+            "+(text later and in Chapter 12 Finally a parabola is fit to the three histogram values clos) +(printed page 891) --QDF=0",
+            "+(later and in Chapter 12 Finally a parabola is fit to the three histogram values clos) +(text) +(printed page 891) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -13499,8 +16439,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text later and in Chapter 12 Finally a parabola is t to the three histogram values clos) +(printed page 891) --QDF=0",
-                "+(later and in Chapter 12 Finally a parabola is t to the three histogram values clos) +(text) +(printed page 891) --QDF=0"
+                "+(text later and in Chapter 12 Finally a parabola is fit to the three histogram values clos) +(printed page 891) --QDF=0",
+                "+(later and in Chapter 12 Finally a parabola is fit to the three histogram values clos) +(text) +(printed page 891) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -14445,7 +17385,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text els such as the one shown in the gure below) +(printed page 901) --QDF=0",
+            "+(text els such as the one shown in the figure below) +(printed page 901) --QDF=0",
             "+(exercise 11.39) +(printed page 901) --QDF=0"
           ],
           "required_evidence": [

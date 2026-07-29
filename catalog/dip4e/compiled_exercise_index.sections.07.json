@@ -1172,8 +1172,90 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 473,
+            "pdf_page_number": 474,
+            "printed_page_label": "472"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(example 7.3) +(printed page 472) --QDF=0",
+            "+(7.3) +(example) +(printed page 472) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "472",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "7.3",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "example",
+          "target_id": "7.3",
+          "reason": "Explicit example reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 473,
+                "pdf_page_number": 474,
+                "printed_page_label": "472"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(example 7.3) +(printed page 472) --QDF=0",
+                "+(7.3) +(example) +(printed page 472) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "472",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_example",
+                  "value": "7.3",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
     },
     "7.10": {
       "data_version": "3",
@@ -1285,7 +1367,7 @@
             }
           },
           "queries": [
-            "+(text Compute the expansion coef cients of 2-tuple) +(printed page 535) --QDF=0",
+            "+(text Compute the expansion coefficients of 2-tuple) +(printed page 535) --QDF=0",
             "+(exercise 7.11) +(printed page 535) --QDF=0",
             "+(exercise 7.12) +(printed page 535) --QDF=0"
           ],
@@ -1711,6 +1793,59 @@
             "example_ids": [],
             "table_ids": []
           }
+        },
+        {
+          "sequence": 2,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 536,
+            "pdf_page_number": 537,
+            "printed_page_label": "535"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "exercise",
+              "value": "7.13"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "7.14"
+            }
+          },
+          "queries": [
+            "+(text compute the inverse and show that the transform) +(printed page 535) --QDF=0",
+            "+(exercise 7.13) +(printed page 535) --QDF=0",
+            "+(exercise 7.14) +(printed page 535) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "535",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "compute the inverse and show that the transform",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "7.13",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "7.14",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
         }
       ],
       "reference_targets": [
@@ -1762,6 +1897,67 @@
                 {
                   "kind": "contains_exercise",
                   "value": "7.13",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        },
+        {
+          "kind": "exercise",
+          "target_id": "7.13",
+          "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 536,
+                "pdf_page_number": 537,
+                "printed_page_label": "535"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "exercise",
+                  "value": "7.13"
+                },
+                "end_before": {
+                  "kind": "exercise",
+                  "value": "7.14"
+                }
+              },
+              "queries": [
+                "+(text compute the inverse and show that the transform) +(printed page 535) --QDF=0",
+                "+(exercise 7.13) +(printed page 535) --QDF=0",
+                "+(exercise 7.14) +(printed page 535) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "535",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "compute the inverse and show that the transform",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_exercise",
+                  "value": "7.13",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_exercise",
+                  "value": "7.14",
                   "verification_mode": "visual_required"
                 }
               ],
@@ -2740,7 +2936,7 @@
             }
           },
           "queries": [
-            "+(text sion functions de ned in Eq 7-56 derive an) +(printed page 536) --QDF=0",
+            "+(text sion functions defined in Eq 7-56 derive an) +(printed page 536) --QDF=0",
             "+(exercise 7.22) +(printed page 536) --QDF=0",
             "+(exercise 7.23) +(printed page 536) --QDF=0"
           ],
@@ -4284,7 +4480,7 @@
             }
           },
           "queries": [
-            "+(text Derive the Haar scaling coef cients from) +(printed page 536) --QDF=0",
+            "+(text Derive the Haar scaling coefficients from) +(printed page 536) --QDF=0",
             "+(exercise 7.33) +(printed page 536) --QDF=0",
             "+(exercise 7.34) +(printed page 536) --QDF=0"
           ],
@@ -4755,7 +4951,7 @@
             }
           },
           "queries": [
-            "+(text scaling function de nition of Eq 7-122 to draw) +(printed page 536) --QDF=0",
+            "+(text scaling function definition of Eq 7-122 to draw) +(printed page 536) --QDF=0",
             "+(exercise 7.36) +(printed page 536) --QDF=0",
             "+(exercise 7.37) +(printed page 536) --QDF=0"
           ],
@@ -5391,7 +5587,8 @@
           },
           "queries": [
             "+(equation 7-137) +(printed page 512) --QDF=0",
-            "+(equation 7-138) +(printed page 512) --QDF=0"
+            "+(equation 7-138) +(printed page 512) --QDF=0",
+            "+(example 7.19) +(printed page 512) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5407,6 +5604,11 @@
             {
               "kind": "contains_equation",
               "value": "7-138",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_example",
+              "value": "7.19",
               "verification_mode": "visual_required"
             }
           ],
@@ -5507,6 +5709,50 @@
               }
             }
           ]
+        },
+        {
+          "kind": "example",
+          "target_id": "7.19",
+          "reason": "Explicit example reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 513,
+                "pdf_page_number": 514,
+                "printed_page_label": "512"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(example 7.19) +(printed page 512) --QDF=0",
+                "+(7.19) +(example) +(printed page 512) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "512",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_example",
+                  "value": "7.19",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
         }
       ]
     },
@@ -5546,7 +5792,7 @@
             }
           },
           "queries": [
-            "+(text Draw the FWT lter bank required to compute) +(printed page 537) --QDF=0",
+            "+(text Draw the FWT filter bank required to compute) +(printed page 537) --QDF=0",
             "+(exercise 7.41) +(printed page 537) --QDF=0",
             "+(exercise 7.42) +(printed page 537) --QDF=0"
           ],
@@ -6042,7 +6288,7 @@
             }
           },
           "queries": [
-            "+(text Draw the required lter bank and label all inputs) +(printed page 537) --QDF=0",
+            "+(text Draw the required filter bank and label all inputs) +(printed page 537) --QDF=0",
             "+(exercise 7.44) +(printed page 537) --QDF=0",
             "+(exercise 7.45) +(printed page 537) --QDF=0"
           ],

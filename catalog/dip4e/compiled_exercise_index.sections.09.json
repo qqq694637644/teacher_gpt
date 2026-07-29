@@ -834,7 +834,7 @@
             }
           },
           "queries": [
-            "+(text With reference to the image at the top of the g) +(printed page 692) --QDF=0",
+            "+(text With reference to the image at the top of the fig) +(printed page 692) --QDF=0",
             "+(exercise 9.8) +(printed page 692) --QDF=0",
             "+(exercise 9.9) +(printed page 692) --QDF=0"
           ],
@@ -905,7 +905,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing gure and refer to the structuring elements) +(printed page 692) --QDF=0",
+            "+(text ing figure and refer to the structuring elements) +(printed page 692) --QDF=0",
             "+(exercise 9.9) +(printed page 692) --QDF=0"
           ],
           "required_evidence": [
@@ -1121,7 +1121,7 @@
             }
           },
           "queries": [
-            "+(text Show that this de nition is equivalent to the) +(printed page 693) --QDF=0",
+            "+(text Show that this definition is equivalent to the) +(printed page 693) --QDF=0",
             "+(exercise 9.12) +(printed page 693) --QDF=0",
             "+(exercise 9.13) +(printed page 693) --QDF=0"
           ],
@@ -1279,7 +1279,7 @@
             }
           },
           "queries": [
-            "+(text a Show that the de nition of erosion given in) +(printed page 693) --QDF=0",
+            "+(text a Show that the definition of erosion given in) +(printed page 693) --QDF=0",
             "+(exercise 9.13) +(printed page 693) --QDF=0",
             "+(exercise 9.14) +(printed page 693) --QDF=0"
           ],
@@ -1372,7 +1372,7 @@
             }
           },
           "queries": [
-            "+(text Show that this de nition is equivalent to the) +(printed page 693) --QDF=0",
+            "+(text Show that this definition is equivalent to the) +(printed page 693) --QDF=0",
             "+(exercise 9.12) +(printed page 693) --QDF=0",
             "+(exercise 9.13) +(printed page 693) --QDF=0"
           ],
@@ -1435,7 +1435,7 @@
                 }
               },
               "queries": [
-                "+(text Show that this de nition is equivalent to the) +(printed page 693) --QDF=0",
+                "+(text Show that this definition is equivalent to the) +(printed page 693) --QDF=0",
                 "+(exercise 9.12) +(printed page 693) --QDF=0",
                 "+(exercise 9.13) +(printed page 693) --QDF=0"
               ],
@@ -1555,7 +1555,7 @@
             }
           },
           "queries": [
-            "+(text Show that this de nition and the de nition in) +(printed page 693) --QDF=0",
+            "+(text Show that this definition and the definition in) +(printed page 693) --QDF=0",
             "+(exercise 9.14) +(printed page 693) --QDF=0",
             "+(exercise 9.15) +(printed page 693) --QDF=0"
           ],
@@ -1713,7 +1713,7 @@
             }
           },
           "queries": [
-            "+(text a Show that the de nition of dilation given in) +(printed page 693) --QDF=0",
+            "+(text a Show that the definition of dilation given in) +(printed page 693) --QDF=0",
             "+(exercise 9.15) +(printed page 693) --QDF=0",
             "+(exercise 9.16) +(printed page 693) --QDF=0"
           ],
@@ -1806,7 +1806,7 @@
             }
           },
           "queries": [
-            "+(text Show that this de nition and the de nition in) +(printed page 693) --QDF=0",
+            "+(text Show that this definition and the definition in) +(printed page 693) --QDF=0",
             "+(exercise 9.14) +(printed page 693) --QDF=0",
             "+(exercise 9.15) +(printed page 693) --QDF=0"
           ],
@@ -1869,7 +1869,7 @@
                 }
               },
               "queries": [
-                "+(text Show that this de nition and the de nition in) +(printed page 693) --QDF=0",
+                "+(text Show that this definition and the definition in) +(printed page 693) --QDF=0",
                 "+(exercise 9.14) +(printed page 693) --QDF=0",
                 "+(exercise 9.15) +(printed page 693) --QDF=0"
               ],
@@ -2374,7 +2374,7 @@
             }
           },
           "queries": [
-            "+(text a Obtain the opening of the gure below using) +(printed page 694) --QDF=0",
+            "+(text a Obtain the opening of the figure below using) +(printed page 694) --QDF=0",
             "+(exercise 9.18) +(printed page 694) --QDF=0",
             "+(exercise 9.19) +(printed page 694) --QDF=0"
           ],
@@ -5156,7 +5156,7 @@
             }
           },
           "queries": [
-            "+(text an erosion of A Hint Take a look at the de ni) +(printed page 695) --QDF=0",
+            "+(text an erosion of A Hint Take a look at the defini) +(printed page 695) --QDF=0",
             "+(exercise 9.31) +(printed page 695) --QDF=0",
             "+(exercise 9.32) +(printed page 695) --QDF=0"
           ],
@@ -5871,7 +5871,7 @@
             }
           },
           "queries": [
-            "+(text Sketch the convex hull of the large gure in Prob) +(printed page 695) --QDF=0",
+            "+(text Sketch the convex hull of the large figure in Prob) +(printed page 695) --QDF=0",
             "+(exercise 9.34) +(printed page 695) --QDF=0",
             "+(exercise 9.35) +(printed page 695) --QDF=0"
           ],
@@ -5906,8 +5906,106 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 693,
+            "pdf_page_number": 694,
+            "printed_page_label": "692"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "exercise",
+              "value": "9.9"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text ing figure and refer to the structuring elements) +(printed page 692) --QDF=0",
+            "+(exercise 9.9) +(printed page 692) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "692",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ing ﬁgure, and refer to the structuring elements",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "9.9",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "exercise",
+          "target_id": "9.9",
+          "reason": "Explicit exercise reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "single",
+              "page": {
+                "pdf_page_index": 693,
+                "pdf_page_number": 694,
+                "printed_page_label": "692"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "exercise",
+                  "value": "9.9"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(text ing figure and refer to the structuring elements) +(printed page 692) --QDF=0",
+                "+(exercise 9.9) +(printed page 692) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "692",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "ing ﬁgure, and refer to the structuring elements",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_exercise",
+                  "value": "9.9",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
     },
     "9.35": {
       "data_version": "3",
@@ -5945,7 +6043,7 @@
             }
           },
           "queries": [
-            "+(text Obtain the convex de ciency of set A shown in) +(printed page 695) --QDF=0",
+            "+(text Obtain the convex deficiency of set A shown in) +(printed page 695) --QDF=0",
             "+(exercise 9.35) +(printed page 695) --QDF=0",
             "+(exercise 9.36) +(printed page 695) --QDF=0"
           ],
@@ -7786,7 +7884,7 @@
             }
           },
           "queries": [
-            "+(text With reference to the hole lling algorithm in) +(printed page 696) --QDF=0",
+            "+(text With reference to the hole-filling algorithm in) +(printed page 696) --QDF=0",
             "+(exercise 9.39) +(printed page 696) --QDF=0",
             "+(exercise 9.40) +(printed page 696) --QDF=0"
           ],
@@ -8268,8 +8366,674 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 668,
+            "pdf_page_number": 669,
+            "printed_page_label": "667"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "9.6 MORPHOLOGICAL RECONSTRUCTION"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text as we do here their practical implementation typically is based on more computationally efficient algorithms) +(printed page 667) --QDF=0",
+            "+(heading 9.6 MORPHOLOGICAL RECONSTRUCTION) +(printed page 667) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "667",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(as we do here), their practical implementation typically is based on more computationally efﬁcient algorithms",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "9.6 MORPHOLOGICAL RECONSTRUCTION",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "9.6 MORPHOLOGICAL RECONSTRUCTION",
+              "GEODESIC DILATION AND EROSION"
+            ],
+            "figure_ids": [
+              "9.28"
+            ],
+            "equation_ids": [
+              "9-38",
+              "9-39",
+              "9-40"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 669,
+            "pdf_page_number": 670,
+            "printed_page_label": "668"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text geodesic dilation of F with respect to G iterated until stability is achieved that is) +(printed page 668) --QDF=0",
+            "+(geodesic dilation of F with respect to G iterated until stability is achieved that is) +(text) +(printed page 668) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "668",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "geodesic dilation of F with respect to G, iterated until stability is achieved; that is,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "MORPHOLOGICAL RECONSTRUCTION BY DILATION AND BY EROSION"
+            ],
+            "figure_ids": [
+              "9.28",
+              "9.29",
+              "9.30"
+            ],
+            "equation_ids": [
+              "9-41",
+              "9-40",
+              "9-38",
+              "9-42"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 670,
+            "pdf_page_number": 671,
+            "printed_page_label": "669"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text and erosion are duals with respect to set complementation see Problem 9.42) +(printed page 669) --QDF=0",
+            "+(and erosion are duals with respect to set complementation see Problem 9.42) +(text) +(printed page 669) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "669",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "and erosion are duals with respect to set complementation (see Problem 9.42).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "SAMPLE APPLICATIONS"
+            ],
+            "figure_ids": [
+              "9.29",
+              "9.30"
+            ],
+            "equation_ids": [
+              "9-43"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 671,
+            "pdf_page_number": 672,
+            "printed_page_label": "670"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text As you will see in Fig 9.31 Eq 9-44 can lead to some interesting results Typically) +(printed page 670) --QDF=0",
+            "+(As you will see in Fig 9.31 Eq 9-44 can lead to some interesting results Typically) +(text) +(printed page 670) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "670",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "As you will see in Fig. 9.31, Eq. (9-44) can lead to some interesting results. Typically,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Opening by Reconstruction"
+            ],
+            "figure_ids": [
+              "9.31"
+            ],
+            "equation_ids": [
+              "9-44",
+              "9-30",
+              "9-42"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "9.1"
+            ]
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 672,
+            "pdf_page_number": 673,
+            "printed_page_label": "671"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text same structuring element shown for comparison d Result of opening by reconstruction) +(printed page 671) --QDF=0",
+            "+(same structuring element shown for comparison d Result of opening by reconstruction) +(text) +(printed page 671) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "671",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "same structuring element, shown for comparison. (d) Result of opening by reconstruction.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Automatic Algorithm for Filling Holes"
+            ],
+            "figure_ids": [
+              "9.31"
+            ],
+            "equation_ids": [
+              "9-45",
+              "9-46"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 673,
+            "pdf_page_number": 674,
+            "printed_page_label": "672"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text used as a signal that partial objects are present in the field of view As a) +(printed page 672) --QDF=0",
+            "+(used as a signal that partial objects are present in the field of view As a) +(text) +(printed page 672) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "672",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "used as a signal that partial objects are present in the field of view. As a final illustra-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Border Clearing"
+            ],
+            "figure_ids": [
+              "9.32",
+              "9.33"
+            ],
+            "equation_ids": [
+              "9-45",
+              "9-46",
+              "9-47"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 674,
+            "pdf_page_number": 675,
+            "printed_page_label": "673"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "9.7 SUMMARY OF MORPHOLOGICAL OPERATIONS ON BINARY IMAGES"
+            }
+          },
+          "queries": [
+            "+(text 9-48 If the task at hand were automated character recognition having an image in) +(printed page 673) --QDF=0",
+            "+(heading 9.7 SUMMARY OF MORPHOLOGICAL OPERATIONS ON BINARY IMAGES) +(printed page 673) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "673",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(9-48). If the task at hand were automated character recognition, having an image in",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "9.7 SUMMARY OF MORPHOLOGICAL OPERATIONS ON BINARY IMAGES",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "9.34",
+              "9.33"
+            ],
+            "equation_ids": [
+              "9-48",
+              "9-45",
+              "9-46"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "section",
+          "target_id": "9.6",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 668,
+                "pdf_page_number": 669,
+                "printed_page_label": "667"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "9.6 MORPHOLOGICAL RECONSTRUCTION"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(text as we do here their practical implementation typically is based on more computationally efficient algorithms) +(printed page 667) --QDF=0",
+                "+(heading 9.6 MORPHOLOGICAL RECONSTRUCTION) +(printed page 667) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "667",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "(as we do here), their practical implementation typically is based on more computationally efﬁcient algorithms",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "9.6 MORPHOLOGICAL RECONSTRUCTION",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "9.6 MORPHOLOGICAL RECONSTRUCTION",
+                  "GEODESIC DILATION AND EROSION"
+                ],
+                "figure_ids": [
+                  "9.28"
+                ],
+                "equation_ids": [
+                  "9-38",
+                  "9-39",
+                  "9-40"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 669,
+                "pdf_page_number": 670,
+                "printed_page_label": "668"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text geodesic dilation of F with respect to G iterated until stability is achieved that is) +(printed page 668) --QDF=0",
+                "+(geodesic dilation of F with respect to G iterated until stability is achieved that is) +(text) +(printed page 668) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "668",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "geodesic dilation of F with respect to G, iterated until stability is achieved; that is,",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "MORPHOLOGICAL RECONSTRUCTION BY DILATION AND BY EROSION"
+                ],
+                "figure_ids": [
+                  "9.28",
+                  "9.29",
+                  "9.30"
+                ],
+                "equation_ids": [
+                  "9-41",
+                  "9-40",
+                  "9-38",
+                  "9-42"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 670,
+                "pdf_page_number": 671,
+                "printed_page_label": "669"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text and erosion are duals with respect to set complementation see Problem 9.42) +(printed page 669) --QDF=0",
+                "+(and erosion are duals with respect to set complementation see Problem 9.42) +(text) +(printed page 669) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "669",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "and erosion are duals with respect to set complementation (see Problem 9.42).",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "SAMPLE APPLICATIONS"
+                ],
+                "figure_ids": [
+                  "9.29",
+                  "9.30"
+                ],
+                "equation_ids": [
+                  "9-43"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 671,
+                "pdf_page_number": 672,
+                "printed_page_label": "670"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text As you will see in Fig 9.31 Eq 9-44 can lead to some interesting results Typically) +(printed page 670) --QDF=0",
+                "+(As you will see in Fig 9.31 Eq 9-44 can lead to some interesting results Typically) +(text) +(printed page 670) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "670",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "As you will see in Fig. 9.31, Eq. (9-44) can lead to some interesting results. Typically,",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "Opening by Reconstruction"
+                ],
+                "figure_ids": [
+                  "9.31"
+                ],
+                "equation_ids": [
+                  "9-44",
+                  "9-30",
+                  "9-42"
+                ],
+                "example_ids": [],
+                "table_ids": [
+                  "9.1"
+                ]
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 672,
+                "pdf_page_number": 673,
+                "printed_page_label": "671"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text same structuring element shown for comparison d Result of opening by reconstruction) +(printed page 671) --QDF=0",
+                "+(same structuring element shown for comparison d Result of opening by reconstruction) +(text) +(printed page 671) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "671",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "same structuring element, shown for comparison. (d) Result of opening by reconstruction.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "Automatic Algorithm for Filling Holes"
+                ],
+                "figure_ids": [
+                  "9.31"
+                ],
+                "equation_ids": [
+                  "9-45",
+                  "9-46"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 6,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 673,
+                "pdf_page_number": 674,
+                "printed_page_label": "672"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text used as a signal that partial objects are present in the field of view As a) +(printed page 672) --QDF=0",
+                "+(used as a signal that partial objects are present in the field of view As a) +(text) +(printed page 672) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "672",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "used as a signal that partial objects are present in the field of view. As a final illustra-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "Border Clearing"
+                ],
+                "figure_ids": [
+                  "9.32",
+                  "9.33"
+                ],
+                "equation_ids": [
+                  "9-45",
+                  "9-46",
+                  "9-47"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 7,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 674,
+                "pdf_page_number": 675,
+                "printed_page_label": "673"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "9.7 SUMMARY OF MORPHOLOGICAL OPERATIONS ON BINARY IMAGES"
+                }
+              },
+              "queries": [
+                "+(text 9-48 If the task at hand were automated character recognition having an image in) +(printed page 673) --QDF=0",
+                "+(heading 9.7 SUMMARY OF MORPHOLOGICAL OPERATIONS ON BINARY IMAGES) +(printed page 673) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "673",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "(9-48). If the task at hand were automated character recognition, having an image in",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "9.7 SUMMARY OF MORPHOLOGICAL OPERATIONS ON BINARY IMAGES",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "9.34",
+                  "9.33"
+                ],
+                "equation_ids": [
+                  "9-48",
+                  "9-45",
+                  "9-46"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
     },
     "9.42": {
       "data_version": "3",
@@ -8359,7 +9123,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text as we do here their practical implementation typically is based on more computationally ef cient algorithms) +(printed page 667) --QDF=0",
+            "+(text as we do here their practical implementation typically is based on more computationally efficient algorithms) +(printed page 667) --QDF=0",
             "+(heading 9.6 MORPHOLOGICAL RECONSTRUCTION) +(printed page 667) --QDF=0"
           ],
           "required_evidence": [
@@ -8748,7 +9512,7 @@
                 "end_before": null
               },
               "queries": [
-                "+(text as we do here their practical implementation typically is based on more computationally ef cient algorithms) +(printed page 667) --QDF=0",
+                "+(text as we do here their practical implementation typically is based on more computationally efficient algorithms) +(printed page 667) --QDF=0",
                 "+(heading 9.6 MORPHOLOGICAL RECONSTRUCTION) +(printed page 667) --QDF=0"
               ],
               "required_evidence": [
@@ -9361,7 +10125,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text in this section grayscale non at SEs are not used frequently in practice Finally we) +(printed page 674) --QDF=0",
+            "+(text in this section grayscale nonflat SEs are not used frequently in practice Finally we) +(printed page 674) --QDF=0",
             "+(heading 9.8 GRAYSCALE MORPHOLOGY) +(printed page 674) --QDF=0"
           ],
           "required_evidence": [
@@ -9486,8 +10250,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text I but with all holes lled See) +(printed page 677) --QDF=0",
-            "+(I but with all holes lled See) +(text) +(printed page 677) --QDF=0"
+            "+(text I but with all holes filled See) +(printed page 677) --QDF=0",
+            "+(I but with all holes filled See) +(text) +(printed page 677) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10159,8 +10923,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text a Show that the de nition of dilation given in) +(printed page 693) --QDF=0",
-            "+(a Show that the de nition of dilation given in) +(text) +(printed page 693) --QDF=0"
+            "+(text a Show that the definition of dilation given in) +(printed page 693) --QDF=0",
+            "+(a Show that the definition of dilation given in) +(text) +(printed page 693) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10403,7 +11167,7 @@
                 "end_before": null
               },
               "queries": [
-                "+(text in this section grayscale non at SEs are not used frequently in practice Finally we) +(printed page 674) --QDF=0",
+                "+(text in this section grayscale nonflat SEs are not used frequently in practice Finally we) +(printed page 674) --QDF=0",
                 "+(heading 9.8 GRAYSCALE MORPHOLOGY) +(printed page 674) --QDF=0"
               ],
               "required_evidence": [
@@ -10528,8 +11292,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text I but with all holes lled See) +(printed page 677) --QDF=0",
-                "+(I but with all holes lled See) +(text) +(printed page 677) --QDF=0"
+                "+(text I but with all holes filled See) +(printed page 677) --QDF=0",
+                "+(I but with all holes filled See) +(text) +(printed page 677) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -11201,8 +11965,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text a Show that the de nition of dilation given in) +(printed page 693) --QDF=0",
-                "+(a Show that the de nition of dilation given in) +(text) +(printed page 693) --QDF=0"
+                "+(text a Show that the definition of dilation given in) +(printed page 693) --QDF=0",
+                "+(a Show that the definition of dilation given in) +(text) +(printed page 693) --QDF=0"
               ],
               "required_evidence": [
                 {

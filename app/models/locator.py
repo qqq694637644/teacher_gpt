@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import unicodedata
 from collections import defaultdict
 from itertools import pairwise
 from typing import Annotated, Literal
@@ -98,7 +99,8 @@ QUERY_ANCHOR_TOKEN_RE = re.compile(r"[A-Za-z0-9]+(?:[.-][A-Za-z0-9]+)*")
 
 
 def query_safe_anchor(value: str, *, max_tokens: int = 16) -> str:
-    tokens = QUERY_ANCHOR_TOKEN_RE.findall(value)
+    normalized = unicodedata.normalize("NFKC", value)
+    tokens = QUERY_ANCHOR_TOKEN_RE.findall(normalized)
     if not tokens:
         return "reference"
     return " ".join(tokens[:max_tokens])

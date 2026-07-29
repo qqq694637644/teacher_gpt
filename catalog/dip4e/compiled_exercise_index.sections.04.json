@@ -730,7 +730,7 @@
             }
           },
           "queries": [
-            "+(text the Nyquist rate is satis ed and 2 the sam) +(printed page 309) --QDF=0",
+            "+(text the Nyquist rate is satisfied and 2 the sam) +(printed page 309) --QDF=0",
             "+(exercise 4.6) +(printed page 309) --QDF=0",
             "+(exercise 4.7) +(printed page 309) --QDF=0"
           ],
@@ -2497,7 +2497,7 @@
             }
           },
           "queries": [
-            "+(text m in Eq 4-40 is in nitely periodic) +(printed page 309) --QDF=0",
+            "+(text m in Eq 4-40 is infinitely periodic) +(printed page 309) --QDF=0",
             "+(exercise 4.14) +(printed page 309) --QDF=0",
             "+(exercise 4.15) +(printed page 309) --QDF=0"
           ],
@@ -2986,7 +2986,7 @@
             }
           },
           "queries": [
-            "+(text 4-45 are in nitely periodic with period M that is) +(printed page 310) --QDF=0",
+            "+(text 4-45 are infinitely periodic with period M that is) +(printed page 310) --QDF=0",
             "+(exercise 4.16) +(printed page 310) --QDF=0",
             "+(exercise 4.17) +(printed page 310) --QDF=0"
           ],
@@ -4060,7 +4060,7 @@
             }
           },
           "queries": [
-            "+(text onto the area de ned by the size of the chip you) +(printed page 310) --QDF=0",
+            "+(text onto the area defined by the size of the chip you) +(printed page 310) --QDF=0",
             "+(exercise 4.22) +(printed page 310) --QDF=0",
             "+(exercise 4.23) +(printed page 310) --QDF=0"
           ],
@@ -4491,8 +4491,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text in Fig 4.19 a indicating that the sampling rate used initially was suf cient to mitigate) +(printed page 237) --QDF=0",
-            "+(in Fig 4.19 a indicating that the sampling rate used initially was suf cient to mitigate) +(text) +(printed page 237) --QDF=0"
+            "+(text in Fig 4.19 a indicating that the sampling rate used initially was sufficient to mitigate visible) +(printed page 237) --QDF=0",
+            "+(in Fig 4.19 a indicating that the sampling rate used initially was sufficient to mitigate visible) +(text) +(printed page 237) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4981,8 +4981,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text in Fig 4.19 a indicating that the sampling rate used initially was suf cient to mitigate) +(printed page 237) --QDF=0",
-                "+(in Fig 4.19 a indicating that the sampling rate used initially was suf cient to mitigate) +(text) +(printed page 237) --QDF=0"
+                "+(text in Fig 4.19 a indicating that the sampling rate used initially was sufficient to mitigate visible) +(printed page 237) --QDF=0",
+                "+(in Fig 4.19 a indicating that the sampling rate used initially was sufficient to mitigate visible) +(text) +(printed page 237) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -5652,8 +5652,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6502,8 +6502,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-            "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+            "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+            "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7178,8 +7178,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8028,8 +8028,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-                "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+                "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+                "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9719,7 +9719,7 @@
             }
           },
           "queries": [
-            "+(text its rst element is 1 and we know that in order) +(printed page 311) --QDF=0",
+            "+(text its first element is 1 and we know that in order) +(printed page 311) --QDF=0",
             "+(exercise 4.33) +(printed page 311) --QDF=0",
             "+(exercise 4.34) +(printed page 311) --QDF=0"
           ],
@@ -11669,8 +11669,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text arbitrary values When M is odd the rst point of an even sequence is still arbitrary) +(printed page 245) --QDF=0",
-            "+(arbitrary values When M is odd the rst point of an even sequence is still arbitrary) +(text) +(printed page 245) --QDF=0"
+            "+(text arbitrary values When M is odd the first point of an even sequence is still arbitrary) +(printed page 245) --QDF=0",
+            "+(arbitrary values When M is odd the first point of an even sequence is still arbitrary) +(text) +(printed page 245) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12554,8 +12554,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text arbitrary values When M is odd the rst point of an even sequence is still arbitrary) +(printed page 245) --QDF=0",
-                "+(arbitrary values When M is odd the rst point of an even sequence is still arbitrary) +(text) +(printed page 245) --QDF=0"
+                "+(text arbitrary values When M is odd the first point of an even sequence is still arbitrary) +(printed page 245) --QDF=0",
+                "+(arbitrary values When M is odd the first point of an even sequence is still arbitrary) +(text) +(printed page 245) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13686,7 +13686,7 @@
             }
           },
           "queries": [
-            "+(text angle by 1 ipped the image with respect to both) +(printed page 313) --QDF=0",
+            "+(text angle by 1 flipped the image with respect to both) +(printed page 313) --QDF=0",
             "+(exercise 4.45) +(printed page 313) --QDF=0",
             "+(exercise 4.46) +(printed page 313) --QDF=0"
           ],
@@ -14130,7 +14130,7 @@
             }
           },
           "queries": [
-            "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+            "+(text b Show that your result is a lowpass filter trans) +(printed page 313) --QDF=0",
             "+(exercise 4.47) +(printed page 313) --QDF=0",
             "+(exercise 4.48) +(printed page 313) --QDF=0"
           ],
@@ -14204,7 +14204,7 @@
             }
           },
           "queries": [
-            "+(text A continuous Gaussian lowpass lter in the con) +(printed page 313) --QDF=0",
+            "+(text A continuous Gaussian lowpass filter in the con) +(printed page 313) --QDF=0",
             "+(exercise 4.48) +(printed page 313) --QDF=0",
             "+(exercise 4.49) +(printed page 313) --QDF=0"
           ],
@@ -14278,7 +14278,7 @@
             }
           },
           "queries": [
-            "+(text for a suf ciently large value of K If so what) +(printed page 313) --QDF=0",
+            "+(text for a sufficiently large value of K If so what) +(printed page 313) --QDF=0",
             "+(exercise 4.49) +(printed page 313) --QDF=0",
             "+(exercise 4.50) +(printed page 313) --QDF=0"
           ],
@@ -14610,8 +14610,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
-            "+(of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
+            "+(text of filtering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
+            "+(of filtering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14656,8 +14656,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
-            "+(Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
+            "+(text Observe in Fig 3.45 that the coefficients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
+            "+(Observe in Fig 3.45 that the coefficients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14783,8 +14783,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(printed page 184) --QDF=0",
-            "+(signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(text) +(printed page 184) --QDF=0"
+            "+(text significantly sharper than the original image in Fig 3.49 a but we can do better as) +(printed page 184) --QDF=0",
+            "+(significantly sharper than the original image in Fig 3.49 a but we can do better as) +(text) +(printed page 184) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14826,8 +14826,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-            "+(mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
+            "+(text mations to a first-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+            "+(mations to a first-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14962,7 +14962,7 @@
             }
           },
           "queries": [
-            "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+            "+(text b Show that your result is a lowpass filter trans) +(printed page 313) --QDF=0",
             "+(exercise 4.47) +(printed page 313) --QDF=0",
             "+(exercise 4.48) +(printed page 313) --QDF=0"
           ],
@@ -15226,8 +15226,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
-                "+(of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
+                "+(text of filtering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
+                "+(of filtering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15272,8 +15272,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
-                "+(Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
+                "+(text Observe in Fig 3.45 that the coefficients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
+                "+(Observe in Fig 3.45 that the coefficients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15399,8 +15399,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(printed page 184) --QDF=0",
-                "+(signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(text) +(printed page 184) --QDF=0"
+                "+(text significantly sharper than the original image in Fig 3.49 a but we can do better as) +(printed page 184) --QDF=0",
+                "+(significantly sharper than the original image in Fig 3.49 a but we can do better as) +(text) +(printed page 184) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15442,8 +15442,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-                "+(mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
+                "+(text mations to a first-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+                "+(mations to a first-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -15586,7 +15586,7 @@
                 }
               },
               "queries": [
-                "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+                "+(text b Show that your result is a lowpass filter trans) +(printed page 313) --QDF=0",
                 "+(exercise 4.47) +(printed page 313) --QDF=0",
                 "+(exercise 4.48) +(printed page 313) --QDF=0"
               ],
@@ -15751,7 +15751,7 @@
             }
           },
           "queries": [
-            "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+            "+(text b Show that your result is a lowpass filter trans) +(printed page 313) --QDF=0",
             "+(exercise 4.47) +(printed page 313) --QDF=0",
             "+(exercise 4.48) +(printed page 313) --QDF=0"
           ],
@@ -15856,7 +15856,7 @@
                 }
               },
               "queries": [
-                "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+                "+(text b Show that your result is a lowpass filter trans) +(printed page 313) --QDF=0",
                 "+(exercise 4.47) +(printed page 313) --QDF=0",
                 "+(exercise 4.48) +(printed page 313) --QDF=0"
               ],
@@ -16574,7 +16574,7 @@
             }
           },
           "queries": [
-            "+(text A continuous Gaussian lowpass lter in the con) +(printed page 313) --QDF=0",
+            "+(text A continuous Gaussian lowpass filter in the con) +(printed page 313) --QDF=0",
             "+(exercise 4.48) +(printed page 313) --QDF=0",
             "+(exercise 4.49) +(printed page 313) --QDF=0"
           ],
@@ -16679,7 +16679,7 @@
                 }
               },
               "queries": [
-                "+(text A continuous Gaussian lowpass lter in the con) +(printed page 313) --QDF=0",
+                "+(text A continuous Gaussian lowpass filter in the con) +(printed page 313) --QDF=0",
                 "+(exercise 4.48) +(printed page 313) --QDF=0",
                 "+(exercise 4.49) +(printed page 313) --QDF=0"
               ],
@@ -17277,7 +17277,7 @@
             }
           },
           "queries": [
-            "+(text for a suf ciently large value of K If so what) +(printed page 313) --QDF=0",
+            "+(text for a sufficiently large value of K If so what) +(printed page 313) --QDF=0",
             "+(exercise 4.49) +(printed page 313) --QDF=0",
             "+(exercise 4.50) +(printed page 313) --QDF=0"
           ],
@@ -17338,7 +17338,7 @@
                 }
               },
               "queries": [
-                "+(text for a suf ciently large value of K If so what) +(printed page 313) --QDF=0",
+                "+(text for a sufficiently large value of K If so what) +(printed page 313) --QDF=0",
                 "+(exercise 4.49) +(printed page 313) --QDF=0",
                 "+(exercise 4.50) +(printed page 313) --QDF=0"
               ],

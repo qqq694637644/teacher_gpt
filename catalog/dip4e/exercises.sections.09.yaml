@@ -368,7 +368,7 @@ exercises:
         value: '9.9'
     queries:
     - +(9.8) +(printed page 692) --QDF=0
-    - +(With reference to the image at the top of the g) +(printed page 692) --QDF=0
+    - +(With reference to the image at the top of the fig) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -413,7 +413,7 @@ exercises:
       end_before: null
     queries:
     - +(9.9) +(printed page 692) --QDF=0
-    - +(ing gure and refer to the structuring elements) +(printed page 692) --QDF=0
+    - +(ing figure and refer to the structuring elements) +(printed page 692) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '692'
@@ -551,7 +551,7 @@ exercises:
         value: '9.13'
     queries:
     - +(9.12) +(printed page 693) --QDF=0
-    - +(Show that this de nition is equivalent to the) +(printed page 693) --QDF=0
+    - +(Show that this definition is equivalent to the) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -603,7 +603,7 @@ exercises:
         value: '9.14'
     queries:
     - +(9.13) +(printed page 693) --QDF=0
-    - +(a Show that the de nition of erosion given in) +(printed page 693) --QDF=0
+    - +(a Show that the definition of erosion given in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -659,7 +659,7 @@ exercises:
         value: '9.15'
     queries:
     - +(9.14) +(printed page 693) --QDF=0
-    - +(Show that this de nition and the de nition in) +(printed page 693) --QDF=0
+    - +(Show that this definition and the definition in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -711,7 +711,7 @@ exercises:
         value: '9.16'
     queries:
     - +(9.15) +(printed page 693) --QDF=0
-    - +(a Show that the de nition of dilation given in) +(printed page 693) --QDF=0
+    - +(a Show that the definition of dilation given in) +(printed page 693) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '693'
@@ -869,7 +869,7 @@ exercises:
         value: '9.19'
     queries:
     - +(9.18) +(printed page 694) --QDF=0
-    - +(a Obtain the opening of the gure below using) +(printed page 694) --QDF=0
+    - +(a Obtain the opening of the figure below using) +(printed page 694) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '694'
@@ -1518,7 +1518,7 @@ exercises:
         value: '9.32'
     queries:
     - +(9.31) +(printed page 695) --QDF=0
-    - +(an erosion of A Hint Take a look at the de ni) +(printed page 695) --QDF=0
+    - +(an erosion of A Hint Take a look at the defini) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1687,7 +1687,7 @@ exercises:
         value: '9.35'
     queries:
     - +(9.34) +(printed page 695) --QDF=0
-    - +(Sketch the convex hull of the large gure in Prob) +(printed page 695) --QDF=0
+    - +(Sketch the convex hull of the large figure in Prob) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1707,7 +1707,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: exercise
+    target_id: '9.9'
+    reason: Explicit exercise reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.35'
   chapter_id: '9'
   exercise_number: 35
@@ -1734,7 +1738,7 @@ exercises:
         value: '9.36'
     queries:
     - +(9.35) +(printed page 695) --QDF=0
-    - +(Obtain the convex de ciency of set A shown in) +(printed page 695) --QDF=0
+    - +(Obtain the convex deficiency of set A shown in) +(printed page 695) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '695'
@@ -1933,7 +1937,7 @@ exercises:
         value: '9.40'
     queries:
     - +(9.39) +(printed page 696) --QDF=0
-    - +(With reference to the hole lling algorithm in) +(printed page 696) --QDF=0
+    - +(With reference to the hole-filling algorithm in) +(printed page 696) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '696'
@@ -2067,7 +2071,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '9.6'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '9.42'
   chapter_id: '9'
   exercise_number: 42

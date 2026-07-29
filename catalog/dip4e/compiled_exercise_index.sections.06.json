@@ -1485,7 +1485,7 @@
             }
           },
           "queries": [
-            "+(text xed and given Hint Use the HSI color model) +(printed page 459) --QDF=0",
+            "+(text fixed and given Hint Use the HSI color model) +(printed page 459) --QDF=0",
             "+(exercise 6.12) +(printed page 459) --QDF=0",
             "+(exercise 6.13) +(printed page 459) --QDF=0"
           ],
@@ -1638,7 +1638,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text are suf cient If you cannot assign a speci c gray) +(printed page 459) --QDF=0",
+            "+(text are sufficient If you cannot assign a specific gray) +(printed page 459) --QDF=0",
             "+(exercise 6.13) +(printed page 459) --QDF=0"
           ],
           "required_evidence": [
@@ -3610,8 +3610,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text done by xing one of the three colors and allowing the other two to vary For) +(printed page 408) --QDF=0",
-            "+(done by xing one of the three colors and allowing the other two to vary For) +(text) +(printed page 408) --QDF=0"
+            "+(text done by fixing one of the three colors and allowing the other two to vary For) +(printed page 408) --QDF=0",
+            "+(done by fixing one of the three colors and allowing the other two to vary For) +(text) +(printed page 408) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4382,8 +4382,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text done by xing one of the three colors and allowing the other two to vary For) +(printed page 408) --QDF=0",
-                "+(done by xing one of the three colors and allowing the other two to vary For) +(text) +(printed page 408) --QDF=0"
+                "+(text done by fixing one of the three colors and allowing the other two to vary For) +(printed page 408) --QDF=0",
+                "+(done by fixing one of the three colors and allowing the other two to vary For) +(text) +(printed page 408) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -5534,8 +5534,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
-            "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
+            "+(text Because its first three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+            "+(Because its first three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5834,8 +5834,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
-            "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
+            "+(text specified constant C to increase or decrease the value of its intensity level relative to the) +(printed page 152) --QDF=0",
+            "+(specified constant C to increase or decrease the value of its intensity level relative to the) +(text) +(printed page 152) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5881,7 +5881,7 @@
             }
           },
           "queries": [
-            "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+            "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this figure) +(printed page 153) --QDF=0",
             "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
           ],
           "required_evidence": [
@@ -6449,8 +6449,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
-                "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
+                "+(text Because its first three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+                "+(Because its first three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6749,8 +6749,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
-                "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
+                "+(text specified constant C to increase or decrease the value of its intensity level relative to the) +(printed page 152) --QDF=0",
+                "+(specified constant C to increase or decrease the value of its intensity level relative to the) +(text) +(printed page 152) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6796,7 +6796,7 @@
                 }
               },
               "queries": [
-                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this figure) +(printed page 153) --QDF=0",
                 "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
               ],
               "required_evidence": [
@@ -7200,8 +7200,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text with what we would de ne as reddish points in the original color image This result) +(printed page 450) --QDF=0",
-            "+(with what we would de ne as reddish points in the original color image This result) +(text) +(printed page 450) --QDF=0"
+            "+(text with what we would define as reddish points in the original color image This result is) +(printed page 450) --QDF=0",
+            "+(with what we would define as reddish points in the original color image This result is) +(text) +(printed page 450) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7560,8 +7560,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text with what we would de ne as reddish points in the original color image This result) +(printed page 450) --QDF=0",
-                "+(with what we would de ne as reddish points in the original color image This result) +(text) +(printed page 450) --QDF=0"
+                "+(text with what we would define as reddish points in the original color image This result is) +(printed page 450) --QDF=0",
+                "+(with what we would define as reddish points in the original color image This result is) +(text) +(printed page 450) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8007,7 +8007,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text at times yield erroneous results Speci cally it is) +(printed page 461) --QDF=0",
+            "+(text at times yield erroneous results Specifically it is) +(printed page 461) --QDF=0",
             "+(exercise 6.29) +(printed page 461) --QDF=0"
           ],
           "required_evidence": [
@@ -8295,8 +8295,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
-            "+(of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
+            "+(text of filtering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
+            "+(of filtering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8341,8 +8341,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
-            "+(Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
+            "+(text Observe in Fig 3.45 that the coefficients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
+            "+(Observe in Fig 3.45 that the coefficients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8468,8 +8468,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(printed page 184) --QDF=0",
-            "+(signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(text) +(printed page 184) --QDF=0"
+            "+(text significantly sharper than the original image in Fig 3.49 a but we can do better as) +(printed page 184) --QDF=0",
+            "+(significantly sharper than the original image in Fig 3.49 a but we can do better as) +(text) +(printed page 184) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8511,8 +8511,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-            "+(mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
+            "+(text mations to a first-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+            "+(mations to a first-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8852,8 +8852,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text with what we would de ne as reddish points in the original color image This result) +(printed page 450) --QDF=0",
-            "+(with what we would de ne as reddish points in the original color image This result) +(text) +(printed page 450) --QDF=0"
+            "+(text with what we would define as reddish points in the original color image This result is) +(printed page 450) --QDF=0",
+            "+(with what we would define as reddish points in the original color image This result is) +(text) +(printed page 450) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9212,8 +9212,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text with what we would de ne as reddish points in the original color image This result) +(printed page 450) --QDF=0",
-                "+(with what we would de ne as reddish points in the original color image This result) +(text) +(printed page 450) --QDF=0"
+                "+(text with what we would define as reddish points in the original color image This result is) +(printed page 450) --QDF=0",
+                "+(with what we would define as reddish points in the original color image This result is) +(text) +(printed page 450) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9570,8 +9570,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
-                "+(of ltering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
+                "+(text of filtering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(printed page 180) --QDF=0",
+                "+(of filtering this image with the Laplacian kernel in Fig 3.45 a directly Large sections of) +(text) +(printed page 180) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9616,8 +9616,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
-                "+(Observe in Fig 3.45 that the coef cients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
+                "+(text Observe in Fig 3.45 that the coefficients of each kernel sum to zero Convolution) +(printed page 181) --QDF=0",
+                "+(Observe in Fig 3.45 that the coefficients of each kernel sum to zero Convolution) +(text) +(printed page 181) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9743,8 +9743,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(printed page 184) --QDF=0",
-                "+(signi cantly sharper than the original image in Fig 3.49 a but we can do better) +(text) +(printed page 184) --QDF=0"
+                "+(text significantly sharper than the original image in Fig 3.49 a but we can do better as) +(printed page 184) --QDF=0",
+                "+(significantly sharper than the original image in Fig 3.49 a but we can do better as) +(text) +(printed page 184) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9786,8 +9786,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
-                "+(mations to a rst-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
+                "+(text mations to a first-order derivative that satisfy the conditions stated at the beginning) +(printed page 185) --QDF=0",
+                "+(mations to a first-order derivative that satisfy the conditions stated at the beginning) +(text) +(printed page 185) --QDF=0"
               ],
               "required_evidence": [
                 {

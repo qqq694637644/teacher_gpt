@@ -27,7 +27,7 @@ exercises:
         value: '12.2'
     queries:
     - +(12.1) +(printed page 990) --QDF=0
-    - +(mum distance classi er for the patterns in) +(printed page 990) --QDF=0
+    - +(mum distance classifier for the patterns in) +(printed page 990) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '990'
@@ -78,7 +78,7 @@ exercises:
         value: '12.3'
     queries:
     - +(12.2) +(printed page 990) --QDF=0
-    - +(same function in terms of pattern classi cation) +(printed page 990) --QDF=0
+    - +(same function in terms of pattern classification) +(printed page 990) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '990'
@@ -238,7 +238,7 @@ exercises:
         value: '12.6'
     queries:
     - +(12.5) +(printed page 990) --QDF=0
-    - +(Show that the correlation coef cient of Eq 12-10) +(printed page 990) --QDF=0
+    - +(Show that the correlation coefficient of Eq 12-10) +(printed page 990) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '990'
@@ -290,7 +290,7 @@ exercises:
         value: '12.7'
     queries:
     - +(12.6) +(printed page 990) --QDF=0
-    - +(12-12 satis es the properties in Eq 12-13) +(printed page 990) --QDF=0
+    - +(12-12 satisfies the properties in Eq 12-13) +(printed page 990) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '990'
@@ -780,7 +780,7 @@ exercises:
         value: '12.16'
     queries:
     - +(12.15) +(printed page 991) --QDF=0
-    - +(a nite number of steps if the training pattern) +(printed page 991) --QDF=0
+    - +(a finite number of steps if the training pattern) +(printed page 991) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '991'
@@ -986,7 +986,7 @@ exercises:
         value: '12.20'
     queries:
     - +(12.19) +(printed page 991) --QDF=0
-    - +(same function as a Bayes classi er for two pat) +(printed page 991) --QDF=0
+    - +(same function as a Bayes classifier for two pat) +(printed page 991) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '991'

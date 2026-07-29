@@ -1044,7 +1044,7 @@
             }
           },
           "queries": [
-            "+(text of the pro les that show what you would expect) +(printed page 804) --QDF=0",
+            "+(text of the profiles that show what you would expect) +(printed page 804) --QDF=0",
             "+(exercise 10.7) +(printed page 804) --QDF=0",
             "+(exercise 10.8) +(printed page 804) --QDF=0"
           ],
@@ -1277,7 +1277,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text Consider a horizontal intensity pro le through) +(printed page 804) --QDF=0",
+            "+(text Consider a horizontal intensity profile through) +(printed page 804) --QDF=0",
             "+(exercise 10.8) +(printed page 804) --QDF=0"
           ],
           "required_evidence": [
@@ -1389,7 +1389,7 @@
             }
           },
           "queries": [
-            "+(text Sketch the gradient and Laplacian of each pro le) +(printed page 805) --QDF=0",
+            "+(text Sketch the gradient and Laplacian of each profile) +(printed page 805) --QDF=0",
             "+(exercise 10.9) +(printed page 805) --QDF=0",
             "+(exercise 10.10) +(printed page 805) --QDF=0"
           ],
@@ -1990,7 +1990,7 @@
             }
           },
           "queries": [
-            "+(text The nal result is then scaled by 19 Show that) +(printed page 805) --QDF=0",
+            "+(text The final result is then scaled by 19 Show that) +(printed page 805) --QDF=0",
             "+(exercise 10.12) +(printed page 805) --QDF=0",
             "+(exercise 10.13) +(printed page 805) --QDF=0"
           ],
@@ -2146,7 +2146,7 @@
             }
           },
           "queries": [
-            "+(text using these coef cients As in Fig 10.15 let N) +(printed page 805) --QDF=0",
+            "+(text using these coefficients As in Fig 10.15 let N) +(printed page 805) --QDF=0",
             "+(exercise 10.13) +(printed page 805) --QDF=0",
             "+(exercise 10.14) +(printed page 805) --QDF=0"
           ],
@@ -3485,7 +3485,7 @@
             }
           },
           "queries": [
-            "+(text stituted for r2 to get the nal incorrect result) +(printed page 806) --QDF=0",
+            "+(text stituted for r2 to get the final incorrect result) +(printed page 806) --QDF=0",
             "+(exercise 10.18) +(printed page 806) --QDF=0",
             "+(exercise 10.19) +(printed page 806) --QDF=0"
           ],
@@ -3898,8 +3898,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
-            "+(of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
+            "+(text of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
+            "+(of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -3982,8 +3982,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to fully shift w past f so the center coef cient in w visited every pixel) +(printed page 156) --QDF=0",
-            "+(to fully shift w past f so the center coef cient in w visited every pixel) +(text) +(printed page 156) --QDF=0"
+            "+(text to fully shift w past f so the center coefficient in w visited every pixel in) +(printed page 156) --QDF=0",
+            "+(to fully shift w past f so the center coefficient in w visited every pixel in) +(text) +(printed page 156) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4106,8 +4106,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text just its center visits every pixel in f This requires that the starting con guration be) +(printed page 159) --QDF=0",
-            "+(just its center visits every pixel in f This requires that the starting con guration be) +(text) +(printed page 159) --QDF=0"
+            "+(text just its center visits every pixel in f This requires that the starting configuration be) +(printed page 159) --QDF=0",
+            "+(just its center visits every pixel in f This requires that the starting configuration be) +(text) +(printed page 159) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4149,8 +4149,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text cally these terms are used in the literature to denote a spatial lter kernel and not) +(printed page 160) --QDF=0",
-            "+(cally these terms are used in the literature to denote a spatial lter kernel and not) +(text) +(printed page 160) --QDF=0"
+            "+(text cally these terms are used in the literature to denote a spatial filter kernel and not) +(printed page 160) --QDF=0",
+            "+(cally these terms are used in the literature to denote a spatial filter kernel and not) +(text) +(printed page 160) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -4326,7 +4326,7 @@
             }
           },
           "queries": [
-            "+(text evident in the gure A central theme of digital lter design theory is obtaining faith) +(printed page 164) --QDF=0",
+            "+(text evident in the figure A central theme of digital filter design theory is obtaining faith) +(printed page 164) --QDF=0",
             "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
           ],
           "required_evidence": [
@@ -4507,8 +4507,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
-                "+(of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
+                "+(text of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
+                "+(of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4591,8 +4591,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to fully shift w past f so the center coef cient in w visited every pixel) +(printed page 156) --QDF=0",
-                "+(to fully shift w past f so the center coef cient in w visited every pixel) +(text) +(printed page 156) --QDF=0"
+                "+(text to fully shift w past f so the center coefficient in w visited every pixel in) +(printed page 156) --QDF=0",
+                "+(to fully shift w past f so the center coefficient in w visited every pixel in) +(text) +(printed page 156) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4715,8 +4715,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text just its center visits every pixel in f This requires that the starting con guration be) +(printed page 159) --QDF=0",
-                "+(just its center visits every pixel in f This requires that the starting con guration be) +(text) +(printed page 159) --QDF=0"
+                "+(text just its center visits every pixel in f This requires that the starting configuration be) +(printed page 159) --QDF=0",
+                "+(just its center visits every pixel in f This requires that the starting configuration be) +(text) +(printed page 159) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4758,8 +4758,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text cally these terms are used in the literature to denote a spatial lter kernel and not) +(printed page 160) --QDF=0",
-                "+(cally these terms are used in the literature to denote a spatial lter kernel and not) +(text) +(printed page 160) --QDF=0"
+                "+(text cally these terms are used in the literature to denote a spatial filter kernel and not) +(printed page 160) --QDF=0",
+                "+(cally these terms are used in the literature to denote a spatial filter kernel and not) +(text) +(printed page 160) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -4935,7 +4935,7 @@
                 }
               },
               "queries": [
-                "+(text evident in the gure A central theme of digital lter design theory is obtaining faith) +(printed page 164) --QDF=0",
+                "+(text evident in the figure A central theme of digital filter design theory is obtaining faith) +(printed page 164) --QDF=0",
                 "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
               ],
               "required_evidence": [
@@ -5143,7 +5143,7 @@
             }
           },
           "queries": [
-            "+(text The nal result is then scaled by 19 Show that) +(printed page 805) --QDF=0",
+            "+(text The final result is then scaled by 19 Show that) +(printed page 805) --QDF=0",
             "+(exercise 10.12) +(printed page 805) --QDF=0",
             "+(exercise 10.13) +(printed page 805) --QDF=0"
           ],
@@ -5410,7 +5410,7 @@
                 }
               },
               "queries": [
-                "+(text The nal result is then scaled by 19 Show that) +(printed page 805) --QDF=0",
+                "+(text The final result is then scaled by 19 Show that) +(printed page 805) --QDF=0",
                 "+(exercise 10.12) +(printed page 805) --QDF=0",
                 "+(exercise 10.13) +(printed page 805) --QDF=0"
               ],
@@ -5558,7 +5558,7 @@
             }
           },
           "queries": [
-            "+(text sketches of the pro les that would result from) +(printed page 807) --QDF=0",
+            "+(text sketches of the profiles that would result from) +(printed page 807) --QDF=0",
             "+(exercise 10.23) +(printed page 807) --QDF=0",
             "+(exercise 10.24) +(printed page 807) --QDF=0"
           ],
@@ -5891,8 +5891,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text kernel being affected signi cantly more Such features include the thinner lines in the image and) +(printed page 165) --QDF=0",
-            "+(kernel being affected signi cantly more Such features include the thinner lines in the image and) +(text) +(printed page 165) --QDF=0"
+            "+(text kernel being affected significantly more Such features include the thinner lines in the image and the) +(printed page 165) --QDF=0",
+            "+(kernel being affected significantly more Such features include the thinner lines in the image and the) +(text) +(printed page 165) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5933,8 +5933,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text the image during ltering When zero black padding is used the net result of smoothing at) +(printed page 166) --QDF=0",
-            "+(the image during ltering When zero black padding is used the net result of smoothing at) +(text) +(printed page 166) --QDF=0"
+            "+(text the image during filtering When zero black padding is used the net result of smoothing at) +(printed page 166) --QDF=0",
+            "+(the image during filtering When zero black padding is used the net result of smoothing at) +(text) +(printed page 166) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6063,8 +6063,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text result of lowpass ltering the test pattern with this kernel Comparing this result with Fig 3.33) +(printed page 169) --QDF=0",
-            "+(result of lowpass ltering the test pattern with this kernel Comparing this result with Fig 3.33) +(text) +(printed page 169) --QDF=0"
+            "+(text result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(printed page 169) --QDF=0",
+            "+(result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(text) +(printed page 169) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6234,8 +6234,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ing with a Gaussian kernel c Result of thresholding the ltered image intensities were scaled to) +(printed page 173) --QDF=0",
-            "+(ing with a Gaussian kernel c Result of thresholding the ltered image intensities were scaled to) +(text) +(printed page 173) --QDF=0"
+            "+(text ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(printed page 173) --QDF=0",
+            "+(ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(text) +(printed page 173) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6276,8 +6276,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text patterns obtained using lowpass ltering c Result of dividing a by b See Section 9.8 for) +(printed page 174) --QDF=0",
-            "+(patterns obtained using lowpass ltering c Result of dividing a by b See Section 9.8 for) +(text) +(printed page 174) --QDF=0"
+            "+(text patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(printed page 174) --QDF=0",
+            "+(patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(text) +(printed page 174) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6551,8 +6551,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text kernel being affected signi cantly more Such features include the thinner lines in the image and) +(printed page 165) --QDF=0",
-                "+(kernel being affected signi cantly more Such features include the thinner lines in the image and) +(text) +(printed page 165) --QDF=0"
+                "+(text kernel being affected significantly more Such features include the thinner lines in the image and the) +(printed page 165) --QDF=0",
+                "+(kernel being affected significantly more Such features include the thinner lines in the image and the) +(text) +(printed page 165) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6593,8 +6593,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text the image during ltering When zero black padding is used the net result of smoothing at) +(printed page 166) --QDF=0",
-                "+(the image during ltering When zero black padding is used the net result of smoothing at) +(text) +(printed page 166) --QDF=0"
+                "+(text the image during filtering When zero black padding is used the net result of smoothing at) +(printed page 166) --QDF=0",
+                "+(the image during filtering When zero black padding is used the net result of smoothing at) +(text) +(printed page 166) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6723,8 +6723,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text result of lowpass ltering the test pattern with this kernel Comparing this result with Fig 3.33) +(printed page 169) --QDF=0",
-                "+(result of lowpass ltering the test pattern with this kernel Comparing this result with Fig 3.33) +(text) +(printed page 169) --QDF=0"
+                "+(text result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(printed page 169) --QDF=0",
+                "+(result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(text) +(printed page 169) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6894,8 +6894,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text ing with a Gaussian kernel c Result of thresholding the ltered image intensities were scaled to) +(printed page 173) --QDF=0",
-                "+(ing with a Gaussian kernel c Result of thresholding the ltered image intensities were scaled to) +(text) +(printed page 173) --QDF=0"
+                "+(text ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(printed page 173) --QDF=0",
+                "+(ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(text) +(printed page 173) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6936,8 +6936,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text patterns obtained using lowpass ltering c Result of dividing a by b See Section 9.8 for) +(printed page 174) --QDF=0",
-                "+(patterns obtained using lowpass ltering c Result of dividing a by b See Section 9.8 for) +(text) +(printed page 174) --QDF=0"
+                "+(text patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(printed page 174) --QDF=0",
+                "+(patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(text) +(printed page 174) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7281,8 +7281,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
-            "+(pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
+            "+(text profile from left to right Initially the first-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
+            "+(profile from left to right Initially the first-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7322,8 +7322,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
-            "+(ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
+            "+(text fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
+            "+(fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7458,8 +7458,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(printed page 709) --QDF=0",
-            "+(direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
+            "+(text direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(printed page 709) --QDF=0",
+            "+(direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7582,8 +7582,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text intensity pro le we note that the rst derivative is positive at the onset of the) +(printed page 712) --QDF=0",
-            "+(intensity pro le we note that the rst derivative is positive at the onset of the) +(text) +(printed page 712) --QDF=0"
+            "+(text intensity profile we note that the first derivative is positive at the onset of the ramp) +(printed page 712) --QDF=0",
+            "+(intensity profile we note that the first derivative is positive at the onset of the ramp) +(text) +(printed page 712) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7621,8 +7621,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(printed page 713) --QDF=0",
-            "+(small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(text) +(printed page 713) --QDF=0"
+            "+(text small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(printed page 713) --QDF=0",
+            "+(small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(text) +(printed page 713) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8124,8 +8124,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
-            "+(Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
+            "+(text Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
+            "+(Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8627,8 +8627,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(printed page 737) --QDF=0",
-            "+(to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(text) +(printed page 737) --QDF=0"
+            "+(text to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(printed page 737) --QDF=0",
+            "+(to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(text) +(printed page 737) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8751,8 +8751,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(printed page 740) --QDF=0",
-            "+(exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(text) +(printed page 740) --QDF=0"
+            "+(text exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(printed page 740) --QDF=0",
+            "+(exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(text) +(printed page 740) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8837,7 +8837,7 @@
             }
           },
           "queries": [
-            "+(text orientations of runways throughout the world are available in ight charts and the direction of travel) +(printed page 742) --QDF=0",
+            "+(text orientations of runways throughout the world are available in flight charts and the direction of travel) +(printed page 742) --QDF=0",
             "+(heading 10.3 THRESHOLDING) +(printed page 742) --QDF=0"
           ],
           "required_evidence": [
@@ -9065,8 +9065,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
-                "+(pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
+                "+(text profile from left to right Initially the first-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
+                "+(profile from left to right Initially the first-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9106,8 +9106,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
-                "+(ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
+                "+(text fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
+                "+(fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9242,8 +9242,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(printed page 709) --QDF=0",
-                "+(direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
+                "+(text direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(printed page 709) --QDF=0",
+                "+(direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9366,8 +9366,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text intensity pro le we note that the rst derivative is positive at the onset of the) +(printed page 712) --QDF=0",
-                "+(intensity pro le we note that the rst derivative is positive at the onset of the) +(text) +(printed page 712) --QDF=0"
+                "+(text intensity profile we note that the first derivative is positive at the onset of the ramp) +(printed page 712) --QDF=0",
+                "+(intensity profile we note that the first derivative is positive at the onset of the ramp) +(text) +(printed page 712) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9405,8 +9405,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(printed page 713) --QDF=0",
-                "+(small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(text) +(printed page 713) --QDF=0"
+                "+(text small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(printed page 713) --QDF=0",
+                "+(small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(text) +(printed page 713) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9908,8 +9908,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
-                "+(Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
+                "+(text Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
+                "+(Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10411,8 +10411,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(printed page 737) --QDF=0",
-                "+(to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(text) +(printed page 737) --QDF=0"
+                "+(text to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(printed page 737) --QDF=0",
+                "+(to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(text) +(printed page 737) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10535,8 +10535,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(printed page 740) --QDF=0",
-                "+(exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(text) +(printed page 740) --QDF=0"
+                "+(text exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(printed page 740) --QDF=0",
+                "+(exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(text) +(printed page 740) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10621,7 +10621,7 @@
                 }
               },
               "queries": [
-                "+(text orientations of runways throughout the world are available in ight charts and the direction of travel) +(printed page 742) --QDF=0",
+                "+(text orientations of runways throughout the world are available in flight charts and the direction of travel) +(printed page 742) --QDF=0",
                 "+(heading 10.3 THRESHOLDING) +(printed page 742) --QDF=0"
               ],
               "required_evidence": [
@@ -10917,8 +10917,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
-            "+(pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
+            "+(text profile from left to right Initially the first-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
+            "+(profile from left to right Initially the first-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10958,8 +10958,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
-            "+(ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
+            "+(text fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
+            "+(fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11094,8 +11094,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(printed page 709) --QDF=0",
-            "+(direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
+            "+(text direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(printed page 709) --QDF=0",
+            "+(direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11218,8 +11218,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text intensity pro le we note that the rst derivative is positive at the onset of the) +(printed page 712) --QDF=0",
-            "+(intensity pro le we note that the rst derivative is positive at the onset of the) +(text) +(printed page 712) --QDF=0"
+            "+(text intensity profile we note that the first derivative is positive at the onset of the ramp) +(printed page 712) --QDF=0",
+            "+(intensity profile we note that the first derivative is positive at the onset of the ramp) +(text) +(printed page 712) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11257,8 +11257,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(printed page 713) --QDF=0",
-            "+(small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(text) +(printed page 713) --QDF=0"
+            "+(text small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(printed page 713) --QDF=0",
+            "+(small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(text) +(printed page 713) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11760,8 +11760,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
-            "+(Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
+            "+(text Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
+            "+(Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12263,8 +12263,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(printed page 737) --QDF=0",
-            "+(to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(text) +(printed page 737) --QDF=0"
+            "+(text to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(printed page 737) --QDF=0",
+            "+(to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(text) +(printed page 737) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12387,7 +12387,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(printed page 740) --QDF=0",
+            "+(text exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(printed page 740) --QDF=0",
             "+(figure 10.30) +(printed page 740) --QDF=0"
           ],
           "required_evidence": [
@@ -12478,7 +12478,7 @@
             }
           },
           "queries": [
-            "+(text orientations of runways throughout the world are available in ight charts and the direction of travel) +(printed page 742) --QDF=0",
+            "+(text orientations of runways throughout the world are available in flight charts and the direction of travel) +(printed page 742) --QDF=0",
             "+(heading 10.3 THRESHOLDING) +(printed page 742) --QDF=0"
           ],
           "required_evidence": [
@@ -12706,8 +12706,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
-                "+(pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
+                "+(text profile from left to right Initially the first-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
+                "+(profile from left to right Initially the first-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12747,8 +12747,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
-                "+(ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
+                "+(text fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
+                "+(fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12883,8 +12883,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(printed page 709) --QDF=0",
-                "+(direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
+                "+(text direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(printed page 709) --QDF=0",
+                "+(direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13007,8 +13007,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text intensity pro le we note that the rst derivative is positive at the onset of the) +(printed page 712) --QDF=0",
-                "+(intensity pro le we note that the rst derivative is positive at the onset of the) +(text) +(printed page 712) --QDF=0"
+                "+(text intensity profile we note that the first derivative is positive at the onset of the ramp) +(printed page 712) --QDF=0",
+                "+(intensity profile we note that the first derivative is positive at the onset of the ramp) +(text) +(printed page 712) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13046,8 +13046,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(printed page 713) --QDF=0",
-                "+(small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(text) +(printed page 713) --QDF=0"
+                "+(text small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(printed page 713) --QDF=0",
+                "+(small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(text) +(printed page 713) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -13549,8 +13549,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
-                "+(Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
+                "+(text Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
+                "+(Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -14052,8 +14052,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(printed page 737) --QDF=0",
-                "+(to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(text) +(printed page 737) --QDF=0"
+                "+(text to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(printed page 737) --QDF=0",
+                "+(to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(text) +(printed page 737) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -14176,8 +14176,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(printed page 740) --QDF=0",
-                "+(exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(text) +(printed page 740) --QDF=0"
+                "+(text exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(printed page 740) --QDF=0",
+                "+(exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(text) +(printed page 740) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -14262,7 +14262,7 @@
                 }
               },
               "queries": [
-                "+(text orientations of runways throughout the world are available in ight charts and the direction of travel) +(printed page 742) --QDF=0",
+                "+(text orientations of runways throughout the world are available in flight charts and the direction of travel) +(printed page 742) --QDF=0",
                 "+(heading 10.3 THRESHOLDING) +(printed page 742) --QDF=0"
               ],
               "required_evidence": [
@@ -14602,8 +14602,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
-            "+(pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
+            "+(text profile from left to right Initially the first-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
+            "+(profile from left to right Initially the first-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14643,8 +14643,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
-            "+(ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
+            "+(text fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
+            "+(fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14779,8 +14779,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(printed page 709) --QDF=0",
-            "+(direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
+            "+(text direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(printed page 709) --QDF=0",
+            "+(direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14903,8 +14903,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text intensity pro le we note that the rst derivative is positive at the onset of the) +(printed page 712) --QDF=0",
-            "+(intensity pro le we note that the rst derivative is positive at the onset of the) +(text) +(printed page 712) --QDF=0"
+            "+(text intensity profile we note that the first derivative is positive at the onset of the ramp) +(printed page 712) --QDF=0",
+            "+(intensity profile we note that the first derivative is positive at the onset of the ramp) +(text) +(printed page 712) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14942,8 +14942,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(printed page 713) --QDF=0",
-            "+(small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(text) +(printed page 713) --QDF=0"
+            "+(text small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(printed page 713) --QDF=0",
+            "+(small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(text) +(printed page 713) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -15445,8 +15445,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
-            "+(Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
+            "+(text Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
+            "+(Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -15948,8 +15948,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(printed page 737) --QDF=0",
-            "+(to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(text) +(printed page 737) --QDF=0"
+            "+(text to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(printed page 737) --QDF=0",
+            "+(to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(text) +(printed page 737) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -16072,8 +16072,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(printed page 740) --QDF=0",
-            "+(exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(text) +(printed page 740) --QDF=0"
+            "+(text exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(printed page 740) --QDF=0",
+            "+(exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(text) +(printed page 740) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -16158,7 +16158,7 @@
             }
           },
           "queries": [
-            "+(text orientations of runways throughout the world are available in ight charts and the direction of travel) +(printed page 742) --QDF=0",
+            "+(text orientations of runways throughout the world are available in flight charts and the direction of travel) +(printed page 742) --QDF=0",
             "+(heading 10.3 THRESHOLDING) +(printed page 742) --QDF=0"
           ],
           "required_evidence": [
@@ -16386,8 +16386,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
-                "+(pro le from left to right Initially the rst-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
+                "+(text profile from left to right Initially the first-order derivative is nonzero at the onset) +(printed page 705) --QDF=0",
+                "+(profile from left to right Initially the first-order derivative is nonzero at the onset) +(text) +(printed page 705) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -16427,8 +16427,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
-                "+(ne detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
+                "+(text fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(printed page 706) --QDF=0",
+                "+(fine detail such as thin lines isolated points and noise 3 Second-order derivatives) +(text) +(printed page 706) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -16563,8 +16563,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(printed page 709) --QDF=0",
-                "+(direction of each kernel is weighted with a larger coef cient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
+                "+(text direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(printed page 709) --QDF=0",
+                "+(direction of each kernel is weighted with a larger coefficient i.e 2 than other possi) +(text) +(printed page 709) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -16687,8 +16687,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text intensity pro le we note that the rst derivative is positive at the onset of the) +(printed page 712) --QDF=0",
-                "+(intensity pro le we note that the rst derivative is positive at the onset of the) +(text) +(printed page 712) --QDF=0"
+                "+(text intensity profile we note that the first derivative is positive at the onset of the ramp) +(printed page 712) --QDF=0",
+                "+(intensity profile we note that the first derivative is positive at the onset of the ramp) +(text) +(printed page 712) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -16726,8 +16726,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(printed page 713) --QDF=0",
-                "+(small circles The ramp and step pro les span 9 pixels and 2 pixels respectively The) +(text) +(printed page 713) --QDF=0"
+                "+(text small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(printed page 713) --QDF=0",
+                "+(small circles The ramp and step profiles span 9 pixels and 2 pixels respectively The base) +(text) +(printed page 713) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -17229,8 +17229,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
-                "+(Filter kernels of arbitrary size but xed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
+                "+(text Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(printed page 725) --QDF=0",
+                "+(Filter kernels of arbitrary size but fixed s can be generated by sampling Eq 10-29) +(text) +(printed page 725) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -17732,8 +17732,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(printed page 737) --QDF=0",
-                "+(to 30 of the maximum gradient value A 90 TA 45 and lling all gaps of) +(text) +(printed page 737) --QDF=0"
+                "+(text to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(printed page 737) --QDF=0",
+                "+(to 30 of the maximum gradient value A 90 TA 45 and filling all gaps of) +(text) +(printed page 737) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -17856,8 +17856,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(printed page 740) --QDF=0",
-                "+(exhibits a re ective adjacency relationship at the right and left edges of the parameter space) +(text) +(printed page 740) --QDF=0"
+                "+(text exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(printed page 740) --QDF=0",
+                "+(exhibits a reflective adjacency relationship at the right and left edges of the parameter space This) +(text) +(printed page 740) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -17942,7 +17942,7 @@
                 }
               },
               "queries": [
-                "+(text orientations of runways throughout the world are available in ight charts and the direction of travel) +(printed page 742) --QDF=0",
+                "+(text orientations of runways throughout the world are available in flight charts and the direction of travel) +(printed page 742) --QDF=0",
                 "+(heading 10.3 THRESHOLDING) +(printed page 742) --QDF=0"
               ],
               "required_evidence": [
@@ -18341,8 +18341,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-            "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+            "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+            "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -18560,8 +18560,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -19354,8 +19354,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-                "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+                "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+                "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -19573,8 +19573,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -20435,8 +20435,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-            "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+            "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+            "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -20654,8 +20654,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -21501,8 +21501,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-                "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+                "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+                "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -21720,8 +21720,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -22458,80 +22458,6 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
-    },
-    "10.32": {
-      "data_version": "3",
-      "book_id": "dip4e",
-      "exercise_id": "10.32",
-      "chapter_id": "10",
-      "exercise_number": 32,
-      "starred": true,
-      "source_order": 32,
-      "problem_page_range": {
-        "pdf_page_index_start": 809,
-        "pdf_page_index_end": 809,
-        "pdf_page_number_start": 810,
-        "pdf_page_number_end": 810,
-        "printed_page_start": "808",
-        "printed_page_end": "808"
-      },
-      "problem_retrieval_plan": [
-        {
-          "sequence": 1,
-          "page_role": "single",
-          "page": {
-            "pdf_page_index": 809,
-            "pdf_page_number": 810,
-            "printed_page_label": "808"
-          },
-          "content_window": {
-            "start_at": {
-              "kind": "exercise",
-              "value": "10.32"
-            },
-            "end_before": {
-              "kind": "exercise",
-              "value": "10.33"
-            }
-          },
-          "queries": [
-            "+(text think the nal value of the threshold at conver) +(printed page 808) --QDF=0",
-            "+(exercise 10.32) +(printed page 808) --QDF=0",
-            "+(exercise 10.33) +(printed page 808) --QDF=0"
-          ],
-          "required_evidence": [
-            {
-              "kind": "printed_page_equals",
-              "value": "808",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_text",
-              "value": "think the ﬁnal value of the threshold at conver-",
-              "verification_mode": "text_or_visual"
-            },
-            {
-              "kind": "contains_exercise",
-              "value": "10.32",
-              "verification_mode": "visual_required"
-            },
-            {
-              "kind": "contains_exercise",
-              "value": "10.33",
-              "verification_mode": "visual_required"
-            }
-          ],
-          "coverage": {
-            "subheadings": [],
-            "figure_ids": [],
-            "equation_ids": [],
-            "example_ids": [],
-            "table_ids": []
-          }
-        }
-      ],
       "reference_retrieval_plan": [
         {
           "sequence": 1,
@@ -22717,8 +22643,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-            "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+            "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+            "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -22936,8 +22862,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -23730,8 +23656,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-                "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+                "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+                "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -23949,8 +23875,2102 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "751",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Figure 10.36(a) shows an optical microscope image of polymersome cells. These are cells artiﬁcially engi-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "10.36"
+                ],
+                "equation_ids": [
+                  "10-61",
+                  "10-65",
+                  "10-49",
+                  "10-53",
+                  "10-54",
+                  "10-62",
+                  "10-58"
+                ],
+                "example_ids": [
+                  "10.14",
+                  "10.13"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 11,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 753,
+                "pdf_page_number": 754,
+                "printed_page_label": "752"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text smooth the image prior to thresholding We illustrate this approach with an example) +(printed page 752) --QDF=0",
+                "+(smooth the image prior to thresholding We illustrate this approach with an example) +(text) +(printed page 752) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "752",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "smooth the image prior to thresholding. We illustrate this approach with an example.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "USING IMAGE SMOOTHING TO IMPROVE GLOBAL THRESHOLDING"
+                ],
+                "figure_ids": [
+                  "10.37",
+                  "10.36"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 12,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 754,
+                "pdf_page_number": 755,
+                "printed_page_label": "753"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text by noise In situations such as this the approach discussed in the following section is) +(printed page 753) --QDF=0",
+                "+(by noise In situations such as this the approach discussed in the following section is) +(text) +(printed page 753) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "753",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "by noise. In situations such as this, the approach discussed in the following section is",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "USING EDGES TO IMPROVE GLOBAL THRESHOLDING"
+                ],
+                "figure_ids": [
+                  "10.38",
+                  "10.37"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 13,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 755,
+                "pdf_page_number": 756,
+                "printed_page_label": "754"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Thresholding failed in both cases to extract the object of interest See Fig 10.39 for a) +(printed page 754) --QDF=0",
+                "+(Thresholding failed in both cases to extract the object of interest See Fig 10.39 for a) +(text) +(printed page 754) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "754",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Thresholding failed in both cases to extract the object of interest. (See Fig. 10.39 for a better solution.)",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "10.38"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 14,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 756,
+                "pdf_page_number": 757,
+                "printed_page_label": "755"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text modes separated by a deep valley Thus while the histogram of the original noisy image offered) +(printed page 755) --QDF=0",
+                "+(modes separated by a deep valley Thus while the histogram of the original noisy image offered) +(text) +(printed page 755) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "755",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "modes separated by a deep valley. Thus, while the histogram of the original noisy image offered no hope",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "10.39"
+                ],
+                "equation_ids": [
+                  "10-46"
+                ],
+                "example_ids": [
+                  "10.15"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 15,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 757,
+                "pdf_page_number": 758,
+                "printed_page_label": "756"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text image so thresholding at this level results in a sparse set of pixels as Fig 10.40) +(printed page 756) --QDF=0",
+                "+(image so thresholding at this level results in a sparse set of pixels as Fig 10.40) +(text) +(printed page 756) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "756",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "image, so thresholding at this level results in a sparse set of pixels, as Fig. 10.40(d) shows. Note in this",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "10.40",
+                  "10.39"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "10.16"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 16,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 758,
+                "pdf_page_number": 759,
+                "printed_page_label": "757"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text zero pixels in the product of a and d f Original image thresholded using Otsu s) +(printed page 757) --QDF=0",
+                "+(zero pixels in the product of a and d f Original image thresholded using Otsu s) +(text) +(printed page 757) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "757",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "zero pixels in the product of (a) and (d). (f) Original image thresholded using Otsu’s method based on the histogram",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "MULTIPLE THRESHOLDS"
+                ],
+                "figure_ids": [
+                  "10.40"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 17,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 759,
+                "pdf_page_number": 760,
+                "printed_page_label": "758"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Although this result is applicable to an arbitrary number of classes it begins to lose) +(printed page 758) --QDF=0",
+                "+(Although this result is applicable to an arbitrary number of classes it begins to lose) +(text) +(printed page 758) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "758",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Although this result is applicable to an arbitrary number of classes, it begins to lose",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "10.41"
+                ],
+                "equation_ids": [
+                  "10-66",
+                  "10-67",
+                  "10-68",
+                  "10-54",
+                  "10-69",
+                  "6-48",
+                  "6-49"
+                ],
+                "example_ids": [
+                  "6.15"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 18,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 760,
+                "pdf_page_number": 761,
+                "printed_page_label": "759"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text ing for a threshold at 0 intensity makes no sense also keep in mind that the) +(printed page 759) --QDF=0",
+                "+(ing for a threshold at 0 intensity makes no sense also keep in mind that the) +(text) +(printed page 759) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "759",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "ing for a threshold at 0 intensity makes no sense; also, keep in mind that the incre-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "10-70",
+                  "10-71",
+                  "10-72",
+                  "10-55",
+                  "10-56",
+                  "10-73",
+                  "10-74",
+                  "10-69",
+                  "10-75"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 19,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 761,
+                "pdf_page_number": 762,
+                "printed_page_label": "760"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text evident from the image histogram in Fig 10.42 b that two thresholds are required to solve) +(printed page 760) --QDF=0",
+                "+(evident from the image histogram in Fig 10.42 b that two thresholds are required to solve) +(text) +(printed page 760) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "760",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "evident from the image histogram in Fig. 10.42(b) that two thresholds are required to solve this problem.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "10.42"
+                ],
+                "equation_ids": [
+                  "10-76",
+                  "10-77",
+                  "10-58"
+                ],
+                "example_ids": [
+                  "10.17"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 20,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 762,
+                "pdf_page_number": 763,
+                "printed_page_label": "761"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text of the thresholding methods discussed thus far In such situations the next level of) +(printed page 761) --QDF=0",
+                "+(of the thresholding methods discussed thus far In such situations the next level of) +(text) +(printed page 761) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "761",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "of the thresholding methods discussed thus far. In such situations, the next level of",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "VARIABLE THRESHOLDING",
+                  "Variable Thresholding Based on Local Image Properties"
+                ],
+                "figure_ids": [],
+                "equation_ids": [
+                  "10-78",
+                  "10-79",
+                  "10-80",
+                  "10-81",
+                  "3-27",
+                  "3-28"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 21,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 763,
+                "pdf_page_number": 764,
+                "printed_page_label": "762"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text sity levels so it is reasonable to assume that perhaps dual thresholding could be a good) +(printed page 762) --QDF=0",
+                "+(sity levels so it is reasonable to assume that perhaps dual thresholding could be a good) +(text) +(printed page 762) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "762",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "sity levels, so it is reasonable to assume that perhaps dual thresholding could be a good segmentation",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "10.43"
+                ],
+                "equation_ids": [
+                  "10-82",
+                  "10-80",
+                  "10-81",
+                  "10-76"
+                ],
+                "example_ids": [
+                  "10.18",
+                  "10.16"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 22,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 764,
+                "pdf_page_number": 765,
+                "printed_page_label": "763"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text background is nearly constant and all the object intensities are above or below the background intensity) +(printed page 763) --QDF=0",
+                "+(background is nearly constant and all the object intensities are above or below the background intensity) +(text) +(printed page 763) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "763",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "background is nearly constant and all the object intensities are above or below the background intensity.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "Variable Thresholding Based on Moving Averages"
+                ],
+                "figure_ids": [
+                  "10.43",
+                  "10.44"
+                ],
+                "equation_ids": [
+                  "10-82",
+                  "10-83",
+                  "10-80"
+                ],
+                "example_ids": [
+                  "10.19"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 23,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 765,
+                "pdf_page_number": 766,
+                "printed_page_label": "764"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "10.4 SEGMENTATION BY REGION GROWING AND BY REGION SPLITTING AND MERGING"
+                }
+              },
+              "queries": [
+                "+(text soidal intensity variation typical of the variations that may occur when the power supply in a) +(printed page 764) --QDF=0",
+                "+(heading 10.4 SEGMENTATION BY REGION GROWING AND BY REGION SPLITTING AND MERGING) +(printed page 764) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "764",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "soidal intensity variation typical of the variations that may occur when the power supply in a document",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "10.4 SEGMENTATION BY REGION GROWING AND BY REGION SPLITTING AND MERGING",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "10.44"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "10.32": {
+      "data_version": "3",
+      "book_id": "dip4e",
+      "exercise_id": "10.32",
+      "chapter_id": "10",
+      "exercise_number": 32,
+      "starred": true,
+      "source_order": 32,
+      "problem_page_range": {
+        "pdf_page_index_start": 809,
+        "pdf_page_index_end": 809,
+        "pdf_page_number_start": 810,
+        "pdf_page_number_end": 810,
+        "printed_page_start": "808",
+        "printed_page_end": "808"
+      },
+      "problem_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "single",
+          "page": {
+            "pdf_page_index": 809,
+            "pdf_page_number": 810,
+            "printed_page_label": "808"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "exercise",
+              "value": "10.32"
+            },
+            "end_before": {
+              "kind": "exercise",
+              "value": "10.33"
+            }
+          },
+          "queries": [
+            "+(text think the final value of the threshold at conver) +(printed page 808) --QDF=0",
+            "+(exercise 10.32) +(printed page 808) --QDF=0",
+            "+(exercise 10.33) +(printed page 808) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "808",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "think the ﬁnal value of the threshold at conver-",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "10.32",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_exercise",
+              "value": "10.33",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 743,
+            "pdf_page_number": 744,
+            "printed_page_label": "742"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "10.3 THRESHOLDING"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text tation Thresholding was introduced in Section 3.1 and we have used it in various) +(printed page 742) --QDF=0",
+            "+(heading 10.3 THRESHOLDING) +(printed page 742) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "742",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "tation. Thresholding was introduced in Section 3.1, and we have used it in various",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "10.3 THRESHOLDING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "10.3 THRESHOLDING",
+              "FOUNDATION"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 744,
+            "pdf_page_number": 745,
+            "printed_page_label": "743"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text tion is referred to as global thresholding When the value of T changes over an image) +(printed page 743) --QDF=0",
+            "+(tion is referred to as global thresholding When the value of T changes over an image) +(text) +(printed page 743) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "743",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "tion is referred to as global thresholding. When the value of T changes over an image,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "The Basics of Intensity Thresholding"
+            ],
+            "figure_ids": [
+              "10.32"
+            ],
+            "equation_ids": [
+              "10-46",
+              "10-47"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 745,
+            "pdf_page_number": 746,
+            "printed_page_label": "744"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text 10 intensity levels c Image with additive Gaussian noise of mean 0 and standard deviation of) +(printed page 744) --QDF=0",
+            "+(10 intensity levels c Image with additive Gaussian noise of mean 0 and standard deviation of) +(text) +(printed page 744) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "744",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "10 intensity levels. (c) Image with additive Gaussian noise of mean 0 and standard deviation of 50 intensity levels.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "The Role of Noise in Image Thresholding"
+            ],
+            "figure_ids": [
+              "10.33"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 746,
+            "pdf_page_number": 747,
+            "printed_page_label": "745"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Figure 10.34 c shows the product of these two images and Fig 10.34 f is the) +(printed page 745) --QDF=0",
+            "+(Figure 10.34 c shows the product of these two images and Fig 10.34 f is the) +(text) +(printed page 745) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "745",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 10.34(c) shows the product of these two images, and Fig. 10.34(f) is the result-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "The Role of Illumination and Reﬂectance in Image Thresholding"
+            ],
+            "figure_ids": [
+              "10.33",
+              "10.34"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 747,
+            "pdf_page_number": 748,
+            "printed_page_label": "746"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+            "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "746",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "to the problem when control over these factors is not possible. The ﬁrst is to correct",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "BASIC GLOBAL THRESHOLDING"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "10-46"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 748,
+            "pdf_page_number": 749,
+            "printed_page_label": "747"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Figure 10.35 shows an example of segmentation using the preceding iterative algorithm Figure 10.35 a) +(printed page 747) --QDF=0",
+            "+(Figure 10.35 shows an example of segmentation using the preceding iterative algorithm Figure 10.35 a) +(text) +(printed page 747) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "747",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 10.35 shows an example of segmentation using the preceding iterative algorithm. Figure 10.35(a)",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "OPTIMUM GLOBAL THRESHOLDING USING OTSU’S METHOD"
+            ],
+            "figure_ids": [
+              "10.35"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "10.13"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 749,
+            "pdf_page_number": 750,
+            "printed_page_label": "748"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text set k 0 the probability of class c1 having any pixels assigned to it is zero) +(printed page 748) --QDF=0",
+            "+(set k 0 the probability of class c1 having any pixels assigned to it is zero) +(text) +(printed page 748) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "748",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "set k=0, the probability of class c1 having any pixels assigned to it is zero. Similarly,",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "10-48",
+              "10-49",
+              "10-50",
+              "3-25",
+              "10-51"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 750,
+            "pdf_page_number": 751,
+            "printed_page_label": "749"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text where we have omitted the ks temporarily in favor of notational clarity) +(printed page 749) --QDF=0",
+            "+(where we have omitted the ks temporarily in favor of notational clarity) +(text) +(printed page 749) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "749",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "where we have omitted the ks temporarily in favor of notational clarity.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "10-52",
+              "10-53",
+              "10-54",
+              "10-55",
+              "10-56",
+              "10-57",
+              "3-26",
+              "10-58",
+              "10-59",
+              "10-60"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 751,
+            "pdf_page_number": 752,
+            "printed_page_label": "750"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text between-class variance as stated earlier Note that Eq 10-57 assumes implicitly that) +(printed page 750) --QDF=0",
+            "+(between-class variance as stated earlier Note that Eq 10-57 assumes implicitly that) +(text) +(printed page 750) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "750",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "between-class variance, as stated earlier. Note that Eq. (10-57) assumes implicitly that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "10-55",
+              "10-56",
+              "10-59",
+              "10-50",
+              "10-54",
+              "10-60",
+              "10-57",
+              "10-61",
+              "10-62",
+              "10-63",
+              "10-64"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 752,
+            "pdf_page_number": 753,
+            "printed_page_label": "751"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "751",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 10.36(a) shows an optical microscope image of polymersome cells. These are cells artiﬁcially engi-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "10.36"
+            ],
+            "equation_ids": [
+              "10-61",
+              "10-65",
+              "10-49",
+              "10-53",
+              "10-54",
+              "10-62",
+              "10-58"
+            ],
+            "example_ids": [
+              "10.14",
+              "10.13"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 753,
+            "pdf_page_number": 754,
+            "printed_page_label": "752"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text smooth the image prior to thresholding We illustrate this approach with an example) +(printed page 752) --QDF=0",
+            "+(smooth the image prior to thresholding We illustrate this approach with an example) +(text) +(printed page 752) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "752",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "smooth the image prior to thresholding. We illustrate this approach with an example.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "USING IMAGE SMOOTHING TO IMPROVE GLOBAL THRESHOLDING"
+            ],
+            "figure_ids": [
+              "10.37",
+              "10.36"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 754,
+            "pdf_page_number": 755,
+            "printed_page_label": "753"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text by noise In situations such as this the approach discussed in the following section is) +(printed page 753) --QDF=0",
+            "+(by noise In situations such as this the approach discussed in the following section is) +(text) +(printed page 753) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "753",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "by noise. In situations such as this, the approach discussed in the following section is",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "USING EDGES TO IMPROVE GLOBAL THRESHOLDING"
+            ],
+            "figure_ids": [
+              "10.38",
+              "10.37"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 13,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 755,
+            "pdf_page_number": 756,
+            "printed_page_label": "754"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Thresholding failed in both cases to extract the object of interest See Fig 10.39 for a) +(printed page 754) --QDF=0",
+            "+(Thresholding failed in both cases to extract the object of interest See Fig 10.39 for a) +(text) +(printed page 754) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "754",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Thresholding failed in both cases to extract the object of interest. (See Fig. 10.39 for a better solution.)",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "10.38"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 14,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 756,
+            "pdf_page_number": 757,
+            "printed_page_label": "755"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text modes separated by a deep valley Thus while the histogram of the original noisy image offered) +(printed page 755) --QDF=0",
+            "+(modes separated by a deep valley Thus while the histogram of the original noisy image offered) +(text) +(printed page 755) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "755",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "modes separated by a deep valley. Thus, while the histogram of the original noisy image offered no hope",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "10.39"
+            ],
+            "equation_ids": [
+              "10-46"
+            ],
+            "example_ids": [
+              "10.15"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 15,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 757,
+            "pdf_page_number": 758,
+            "printed_page_label": "756"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text image so thresholding at this level results in a sparse set of pixels as Fig 10.40) +(printed page 756) --QDF=0",
+            "+(image so thresholding at this level results in a sparse set of pixels as Fig 10.40) +(text) +(printed page 756) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "756",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "image, so thresholding at this level results in a sparse set of pixels, as Fig. 10.40(d) shows. Note in this",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "10.40",
+              "10.39"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "10.16"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 16,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 758,
+            "pdf_page_number": 759,
+            "printed_page_label": "757"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text zero pixels in the product of a and d f Original image thresholded using Otsu s) +(printed page 757) --QDF=0",
+            "+(zero pixels in the product of a and d f Original image thresholded using Otsu s) +(text) +(printed page 757) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "757",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "zero pixels in the product of (a) and (d). (f) Original image thresholded using Otsu’s method based on the histogram",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "MULTIPLE THRESHOLDS"
+            ],
+            "figure_ids": [
+              "10.40"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 17,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 759,
+            "pdf_page_number": 760,
+            "printed_page_label": "758"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text Although this result is applicable to an arbitrary number of classes it begins to lose) +(printed page 758) --QDF=0",
+            "+(Although this result is applicable to an arbitrary number of classes it begins to lose) +(text) +(printed page 758) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "758",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Although this result is applicable to an arbitrary number of classes, it begins to lose",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "10.41"
+            ],
+            "equation_ids": [
+              "10-66",
+              "10-67",
+              "10-68",
+              "10-54",
+              "10-69",
+              "6-48",
+              "6-49"
+            ],
+            "example_ids": [
+              "6.15"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 18,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 760,
+            "pdf_page_number": 761,
+            "printed_page_label": "759"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text ing for a threshold at 0 intensity makes no sense also keep in mind that the) +(printed page 759) --QDF=0",
+            "+(ing for a threshold at 0 intensity makes no sense also keep in mind that the) +(text) +(printed page 759) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "759",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ing for a threshold at 0 intensity makes no sense; also, keep in mind that the incre-",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [
+              "10-70",
+              "10-71",
+              "10-72",
+              "10-55",
+              "10-56",
+              "10-73",
+              "10-74",
+              "10-69",
+              "10-75"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 19,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 761,
+            "pdf_page_number": 762,
+            "printed_page_label": "760"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text evident from the image histogram in Fig 10.42 b that two thresholds are required to solve) +(printed page 760) --QDF=0",
+            "+(evident from the image histogram in Fig 10.42 b that two thresholds are required to solve) +(text) +(printed page 760) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "760",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "evident from the image histogram in Fig. 10.42(b) that two thresholds are required to solve this problem.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "10.42"
+            ],
+            "equation_ids": [
+              "10-76",
+              "10-77",
+              "10-58"
+            ],
+            "example_ids": [
+              "10.17"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 20,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 762,
+            "pdf_page_number": 763,
+            "printed_page_label": "761"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text of the thresholding methods discussed thus far In such situations the next level of) +(printed page 761) --QDF=0",
+            "+(of the thresholding methods discussed thus far In such situations the next level of) +(text) +(printed page 761) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "761",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "of the thresholding methods discussed thus far. In such situations, the next level of",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "VARIABLE THRESHOLDING",
+              "Variable Thresholding Based on Local Image Properties"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "10-78",
+              "10-79",
+              "10-80",
+              "10-81",
+              "3-27",
+              "3-28"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 21,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 763,
+            "pdf_page_number": 764,
+            "printed_page_label": "762"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text sity levels so it is reasonable to assume that perhaps dual thresholding could be a good) +(printed page 762) --QDF=0",
+            "+(sity levels so it is reasonable to assume that perhaps dual thresholding could be a good) +(text) +(printed page 762) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "762",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "sity levels, so it is reasonable to assume that perhaps dual thresholding could be a good segmentation",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "10.43"
+            ],
+            "equation_ids": [
+              "10-82",
+              "10-80",
+              "10-81",
+              "10-76"
+            ],
+            "example_ids": [
+              "10.18",
+              "10.16"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 22,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 764,
+            "pdf_page_number": 765,
+            "printed_page_label": "763"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text background is nearly constant and all the object intensities are above or below the background intensity) +(printed page 763) --QDF=0",
+            "+(background is nearly constant and all the object intensities are above or below the background intensity) +(text) +(printed page 763) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "763",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "background is nearly constant and all the object intensities are above or below the background intensity.",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "Variable Thresholding Based on Moving Averages"
+            ],
+            "figure_ids": [
+              "10.43",
+              "10.44"
+            ],
+            "equation_ids": [
+              "10-82",
+              "10-83",
+              "10-80"
+            ],
+            "example_ids": [
+              "10.19"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 23,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 765,
+            "pdf_page_number": 766,
+            "printed_page_label": "764"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "10.4 SEGMENTATION BY REGION GROWING AND BY REGION SPLITTING AND MERGING"
+            }
+          },
+          "queries": [
+            "+(text soidal intensity variation typical of the variations that may occur when the power supply in a) +(printed page 764) --QDF=0",
+            "+(heading 10.4 SEGMENTATION BY REGION GROWING AND BY REGION SPLITTING AND MERGING) +(printed page 764) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "764",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "soidal intensity variation typical of the variations that may occur when the power supply in a document",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "10.4 SEGMENTATION BY REGION GROWING AND BY REGION SPLITTING AND MERGING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "10.44"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "section",
+          "target_id": "10.3",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 743,
+                "pdf_page_number": 744,
+                "printed_page_label": "742"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "10.3 THRESHOLDING"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(text tation Thresholding was introduced in Section 3.1 and we have used it in various) +(printed page 742) --QDF=0",
+                "+(heading 10.3 THRESHOLDING) +(printed page 742) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "742",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "tation. Thresholding was introduced in Section 3.1, and we have used it in various",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "10.3 THRESHOLDING",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "10.3 THRESHOLDING",
+                  "FOUNDATION"
+                ],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 744,
+                "pdf_page_number": 745,
+                "printed_page_label": "743"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text tion is referred to as global thresholding When the value of T changes over an image) +(printed page 743) --QDF=0",
+                "+(tion is referred to as global thresholding When the value of T changes over an image) +(text) +(printed page 743) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "743",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "tion is referred to as global thresholding. When the value of T changes over an image,",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "The Basics of Intensity Thresholding"
+                ],
+                "figure_ids": [
+                  "10.32"
+                ],
+                "equation_ids": [
+                  "10-46",
+                  "10-47"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 745,
+                "pdf_page_number": 746,
+                "printed_page_label": "744"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text 10 intensity levels c Image with additive Gaussian noise of mean 0 and standard deviation of) +(printed page 744) --QDF=0",
+                "+(10 intensity levels c Image with additive Gaussian noise of mean 0 and standard deviation of) +(text) +(printed page 744) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "744",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "10 intensity levels. (c) Image with additive Gaussian noise of mean 0 and standard deviation of 50 intensity levels.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "The Role of Noise in Image Thresholding"
+                ],
+                "figure_ids": [
+                  "10.33"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 746,
+                "pdf_page_number": 747,
+                "printed_page_label": "745"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Figure 10.34 c shows the product of these two images and Fig 10.34 f is the) +(printed page 745) --QDF=0",
+                "+(Figure 10.34 c shows the product of these two images and Fig 10.34 f is the) +(text) +(printed page 745) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "745",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Figure 10.34(c) shows the product of these two images, and Fig. 10.34(f) is the result-",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "The Role of Illumination and Reﬂectance in Image Thresholding"
+                ],
+                "figure_ids": [
+                  "10.33",
+                  "10.34"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 747,
+                "pdf_page_number": 748,
+                "printed_page_label": "746"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+                "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "746",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "to the problem when control over these factors is not possible. The ﬁrst is to correct",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "BASIC GLOBAL THRESHOLDING"
+                ],
+                "figure_ids": [],
+                "equation_ids": [
+                  "10-46"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 6,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 748,
+                "pdf_page_number": 749,
+                "printed_page_label": "747"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Figure 10.35 shows an example of segmentation using the preceding iterative algorithm Figure 10.35 a) +(printed page 747) --QDF=0",
+                "+(Figure 10.35 shows an example of segmentation using the preceding iterative algorithm Figure 10.35 a) +(text) +(printed page 747) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "747",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Figure 10.35 shows an example of segmentation using the preceding iterative algorithm. Figure 10.35(a)",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "OPTIMUM GLOBAL THRESHOLDING USING OTSU’S METHOD"
+                ],
+                "figure_ids": [
+                  "10.35"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "10.13"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 7,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 749,
+                "pdf_page_number": 750,
+                "printed_page_label": "748"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text set k 0 the probability of class c1 having any pixels assigned to it is zero) +(printed page 748) --QDF=0",
+                "+(set k 0 the probability of class c1 having any pixels assigned to it is zero) +(text) +(printed page 748) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "748",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "set k=0, the probability of class c1 having any pixels assigned to it is zero. Similarly,",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "10-48",
+                  "10-49",
+                  "10-50",
+                  "3-25",
+                  "10-51"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 8,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 750,
+                "pdf_page_number": 751,
+                "printed_page_label": "749"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text where we have omitted the ks temporarily in favor of notational clarity) +(printed page 749) --QDF=0",
+                "+(where we have omitted the ks temporarily in favor of notational clarity) +(text) +(printed page 749) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "749",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "where we have omitted the ks temporarily in favor of notational clarity.",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "10-52",
+                  "10-53",
+                  "10-54",
+                  "10-55",
+                  "10-56",
+                  "10-57",
+                  "3-26",
+                  "10-58",
+                  "10-59",
+                  "10-60"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 9,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 751,
+                "pdf_page_number": 752,
+                "printed_page_label": "750"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text between-class variance as stated earlier Note that Eq 10-57 assumes implicitly that) +(printed page 750) --QDF=0",
+                "+(between-class variance as stated earlier Note that Eq 10-57 assumes implicitly that) +(text) +(printed page 750) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "750",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "between-class variance, as stated earlier. Note that Eq. (10-57) assumes implicitly that",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [
+                  "10-55",
+                  "10-56",
+                  "10-59",
+                  "10-50",
+                  "10-54",
+                  "10-60",
+                  "10-57",
+                  "10-61",
+                  "10-62",
+                  "10-63",
+                  "10-64"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 10,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 752,
+                "pdf_page_number": 753,
+                "printed_page_label": "751"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -24885,8 +26905,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-            "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+            "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+            "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -25104,8 +27124,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -25898,8 +27918,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-                "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+                "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+                "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -26117,8 +28137,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -26759,7 +28779,7 @@
             }
           },
           "queries": [
-            "+(text a Show how the rst line in Eq 10-60 fol) +(printed page 808) --QDF=0",
+            "+(text a Show how the first line in Eq 10-60 fol) +(printed page 808) --QDF=0",
             "+(exercise 10.35) +(printed page 808) --QDF=0",
             "+(exercise 10.36) +(printed page 808) --QDF=0"
           ],
@@ -27903,7 +29923,7 @@
             }
           },
           "queries": [
-            "+(text is reduced signi cantly by adding the 5th plane to the reconstruction as Fig 3.15 c) +(printed page 133) --QDF=0",
+            "+(text is reduced significantly by adding the 5th plane to the reconstruction as Fig 3.15 c) +(printed page 133) --QDF=0",
             "+(heading 3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0"
           ],
           "required_evidence": [
@@ -28423,7 +30443,7 @@
                 }
               },
               "queries": [
-                "+(text is reduced signi cantly by adding the 5th plane to the reconstruction as Fig 3.15 c) +(printed page 133) --QDF=0",
+                "+(text is reduced significantly by adding the 5th plane to the reconstruction as Fig 3.15 c) +(printed page 133) --QDF=0",
                 "+(heading 3.3 HISTOGRAM PROCESSING) +(printed page 133) --QDF=0"
               ],
               "required_evidence": [
@@ -28827,8 +30847,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-            "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+            "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+            "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -29046,8 +31066,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+            "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+            "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -29884,8 +31904,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to the problem when control over these factors is not possible The rst is to correct) +(printed page 746) --QDF=0",
-                "+(to the problem when control over these factors is not possible The rst is to correct) +(text) +(printed page 746) --QDF=0"
+                "+(text to the problem when control over these factors is not possible The first is to correct) +(printed page 746) --QDF=0",
+                "+(to the problem when control over these factors is not possible The first is to correct) +(text) +(printed page 746) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -30103,8 +32123,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(printed page 751) --QDF=0",
-                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells arti cially) +(text) +(printed page 751) --QDF=0"
+                "+(text Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(printed page 751) --QDF=0",
+                "+(Figure 10.36 a shows an optical microscope image of polymersome cells These are cells artificially engi) +(text) +(printed page 751) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -31103,8 +33123,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text be signi cantly more dif cult or even impossible to solve without the inherent infor) +(printed page 765) --QDF=0",
-            "+(be signi cantly more dif cult or even impossible to solve without the inherent infor) +(text) +(printed page 765) --QDF=0"
+            "+(text be significantly more difficult or even impossible to solve without the inherent infor) +(printed page 765) --QDF=0",
+            "+(be significantly more difficult or even impossible to solve without the inherent infor) +(text) +(printed page 765) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -31402,8 +33422,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text be signi cantly more dif cult or even impossible to solve without the inherent infor) +(printed page 765) --QDF=0",
-                "+(be signi cantly more dif cult or even impossible to solve without the inherent infor) +(text) +(printed page 765) --QDF=0"
+                "+(text be significantly more difficult or even impossible to solve without the inherent infor) +(printed page 765) --QDF=0",
+                "+(be significantly more difficult or even impossible to solve without the inherent infor) +(text) +(printed page 765) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -32734,8 +34754,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text condition 1 was satis ed by every point during dilation and that condition 2 did) +(printed page 791) --QDF=0",
-            "+(condition 1 was satis ed by every point during dilation and that condition 2 did) +(text) +(printed page 791) --QDF=0"
+            "+(text condition 1 was satisfied by every point during dilation and that condition 2 did) +(printed page 791) --QDF=0",
+            "+(condition 1 was satisfied by every point during dilation and that condition 2 did) +(text) +(printed page 791) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -33144,8 +35164,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text condition 1 was satis ed by every point during dilation and that condition 2 did) +(printed page 791) --QDF=0",
-                "+(condition 1 was satis ed by every point during dilation and that condition 2 did) +(text) +(printed page 791) --QDF=0"
+                "+(text condition 1 was satisfied by every point during dilation and that condition 2 did) +(printed page 791) --QDF=0",
+                "+(condition 1 was satisfied by every point during dilation and that condition 2 did) +(text) +(printed page 791) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -33622,8 +35642,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text condition 1 was satis ed by every point during dilation and that condition 2 did) +(printed page 791) --QDF=0",
-            "+(condition 1 was satis ed by every point during dilation and that condition 2 did) +(text) +(printed page 791) --QDF=0"
+            "+(text condition 1 was satisfied by every point during dilation and that condition 2 did) +(printed page 791) --QDF=0",
+            "+(condition 1 was satisfied by every point during dilation and that condition 2 did) +(text) +(printed page 791) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -34042,8 +36062,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text condition 1 was satis ed by every point during dilation and that condition 2 did) +(printed page 791) --QDF=0",
-                "+(condition 1 was satis ed by every point during dilation and that condition 2 did) +(text) +(printed page 791) --QDF=0"
+                "+(text condition 1 was satisfied by every point during dilation and that condition 2 did) +(printed page 791) --QDF=0",
+                "+(condition 1 was satisfied by every point during dilation and that condition 2 did) +(text) +(printed page 791) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -35482,7 +37502,7 @@
             }
           },
           "queries": [
-            "+(text The following numerical quantities illustrate some typical values of illumination and re ectance for) +(printed page 63) --QDF=0",
+            "+(text The following numerical quantities illustrate some typical values of illumination and reflectance for) +(printed page 63) --QDF=0",
             "+(heading 2.4 IMAGE SAMPLING AND QUANTIZATION) +(printed page 63) --QDF=0"
           ],
           "required_evidence": [
@@ -35792,7 +37812,7 @@
                 }
               },
               "queries": [
-                "+(text The following numerical quantities illustrate some typical values of illumination and re ectance for) +(printed page 63) --QDF=0",
+                "+(text The following numerical quantities illustrate some typical values of illumination and reflectance for) +(printed page 63) --QDF=0",
                 "+(heading 2.4 IMAGE SAMPLING AND QUANTIZATION) +(printed page 63) --QDF=0"
               ],
               "required_evidence": [
@@ -35864,7 +37884,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text The speed of a bullet in ight is to be estimated by) +(printed page 810) --QDF=0",
+            "+(text The speed of a bullet in flight is to be estimated by) +(printed page 810) --QDF=0",
             "+(exercise 10.55) +(printed page 810) --QDF=0"
           ],
           "required_evidence": [

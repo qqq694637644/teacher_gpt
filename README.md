@@ -234,21 +234,29 @@ The reference parser expands comma/`and` lists and reviewed numeric ranges for
 Sections, Equations, Figures, Tables, Examples, and Problems. Figure subpart markers
 such as `(a)` and `(b)` do not create separate Figure IDs.
 
+Reference parsing also repairs only known PDF-wrapped reference keywords such as
+`Sec- tion`, `Prob- lem`, and `Exam- ple`. The rule is bounded to a recognized keyword
+followed by a valid reference ID, so ordinary compounds such as `one-pixel-thick` are
+not globally dehyphenated.
+
 Compiled exercise queries are regenerated from typed evidence instead of copying raw
 PDF text into `+(...)`. Query anchors retain letters, numbers, periods, and hyphens,
-drop unmatched punctuation such as source parentheses, and are validated for balanced
-parentheses. Every non-page evidence item must have a matching safe query anchor.
+apply Unicode NFKC normalization so PDF ligatures such as `ﬁ` and `ﬂ` become `fi` and
+`fl`, drop unmatched punctuation such as source parentheses, and are validated for
+balanced parentheses. Every non-page evidence item must have a matching safe query
+anchor.
 
 Running these commands is an offline release step; normal application startup does
 not parse the PDF.
 
 The current reviewed baseline contains 492 exercises in chapters 2-12, 122 starred
-exercises, 28 cross-page exercises, 520 page-retrieval steps, and 465 resolved
-references. It keeps 1,406 raw reference steps for audit metadata, explicitly selects
-context pages for 4 reviewed section references, reduces 1,338 execution candidates
-by 72 exact-window merges, preserves 4 same-page distinct-window cases, and exposes
-1,266 execution steps. The compiled package contains 6,939 queries, with zero
-unbalanced queries and zero steps lacking a balanced query. Chapter 1
+exercises, 28 cross-page exercises, 520 page-retrieval steps, and 476 resolved
+references. It keeps 1,505 raw reference steps for audit metadata, explicitly selects
+context pages for 4 reviewed section references, reduces 1,437 execution candidates
+by 73 exact-window merges, preserves 5 same-page distinct-window cases, and exposes
+1,364 execution steps. The compiled package contains 7,336 queries, with zero
+unbalanced queries, zero steps lacking a balanced query, and zero queries requiring
+additional NFKC normalization. Chapter 1
 has no formal `Problems` section in this source PDF. The source
 prints `Fig. 10.10.4(a)` in exercise 10.23; the build records an explicit audited
 normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local source-PDF

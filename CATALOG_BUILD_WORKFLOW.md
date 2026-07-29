@@ -243,7 +243,8 @@ content_window.end_before
 也能在某条查询已满足全部 evidence 时停止后续回退查询。
 
 原始 PDF 文本不能直接嵌套进 `+(...)`。构建器先把 evidence anchor 规范化为
-字母、数字、句点和连字符 token，移除源文本中的圆括号及其他结构标点，再由
+Unicode NFKC，再提取字母、数字、句点和连字符 token。这样 `ﬁeld`、`ﬂat`
+分别恢复为 `field`、`flat`；随后移除源文本中的圆括号及其他结构标点，再由
 typed evidence 重新生成 query。Exercise Locator 加载时会拒绝任何括号不平衡
 的 query，并要求每个非页码 evidence 至少有一个匹配的安全 query anchor。
 
@@ -476,6 +477,10 @@ Exercise / Problem
 Figure 子图标记 `(a)`、`(b)` 不生成新的主 Figure ID。并列或范围中的每个
 目标都必须进入 `reference_targets` 并通过源 PDF 锚点解析。
 
+PDF 断行可能把引用关键词提取成 `Sec- tion`、`Prob- lem`、`Exam- ple` 等。
+构建器只在“已知引用关键词 + 有界版面噪声 + 合法引用编号”的上下文中恢复
+关键词，不全局删除英文连字符，避免破坏 `one-pixel-thick` 等合法复合词。
+
 Section 依赖复用正文 Locator；图、公式、例题和表格依赖回查源 PDF 锚点；习题依赖复用目标习题的题目 retrieval plan。运行时同时保留完整 `reference_targets` 作为审计元数据，并生成去重后的 `reference_retrieval_plan` 作为 GPT 默认执行计划。
 
 去重不是简单删除引用。编译器禁止根据“精确目标位于 Section 范围内”自动裁剪 Section。只有经过 PDF 审核并写入 manifest 的 `selected_context_pages` 才会缩小 Section 的执行范围；未显式选择时必须保留完整 Section plan。
@@ -498,17 +503,19 @@ cross-page exercises: 28
 exercise retrieval steps: 520
 source evidence checks: 1987
 query text anchor checks: 1040
-resolved references: 465
-cross-exercise references: 58
-raw reference retrieval steps: 1406
+resolved references: 476
+cross-exercise references: 60
+raw reference retrieval steps: 1505
 selected context references: 4
-execution reference steps before exact-window merge: 1338
-coalesced same-page/same-window steps: 72
-same-page distinct-window steps preserved: 4
-deduplicated reference retrieval steps: 1266
-compiled queries: 6939
+execution reference steps before exact-window merge: 1437
+coalesced same-page/same-window steps: 73
+same-page distinct-window steps preserved: 5
+deduplicated reference retrieval steps: 1364
+compiled queries: 7336
 unbalanced compiled queries: 0
 steps without a balanced query: 0
+non-NFKC compiled queries: 0
+steps with non-NFKC queries: 0
 source_pdf_verification_status: passed
 file_search_retrieval_status: not_tested
 ```

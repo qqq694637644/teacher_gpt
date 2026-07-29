@@ -74,7 +74,7 @@ exercises:
         value: '5.3'
     queries:
     - +(5.2) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a geometric mean lter) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a geometric mean filter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -125,7 +125,7 @@ exercises:
         value: '5.4'
     queries:
     - +(5.3) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a harmonic mean lter) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a harmonic mean filter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -278,7 +278,7 @@ exercises:
         value: '5.7'
     queries:
     - +(5.6) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a median lter) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a median filter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -329,7 +329,7 @@ exercises:
         value: '5.8'
     queries:
     - +(5.7) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a max lter) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a max filter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -380,7 +380,7 @@ exercises:
         value: '5.9'
     queries:
     - +(5.8) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a min lter) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a min filter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -431,7 +431,7 @@ exercises:
         value: '5.10'
     queries:
     - +(5.9) +(printed page 393) --QDF=0
-    - +(Repeat Problem 5.1 using a midpoint lter) +(printed page 393) --QDF=0
+    - +(Repeat Problem 5.1 using a midpoint filter) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -482,7 +482,7 @@ exercises:
         value: '5.11'
     queries:
     - +(5.10) +(printed page 393) --QDF=0
-    - +(a Explain why the lter is effective in eliminat) +(printed page 393) --QDF=0
+    - +(a Explain why the filter is effective in eliminat) +(printed page 393) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '393'
@@ -585,7 +585,7 @@ exercises:
         value: '5.13'
     queries:
     - +(5.12) +(printed page 394) --QDF=0
-    - +(With reference to the alpha-trimmed lter de ned) +(printed page 394) --QDF=0
+    - +(With reference to the alpha-trimmed filter defined) +(printed page 394) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '394'
@@ -1306,7 +1306,7 @@ exercises:
         value: '5.27'
     queries:
     - +(5.26) +(printed page 395) --QDF=0
-    - +(uv rst and then use it as the basis for) +(printed page 395) --QDF=0
+    - +(uv first and then use it as the basis for) +(printed page 395) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '395'
@@ -2086,8 +2086,8 @@ exercises:
         kind: exercise
         value: '5.41'
     queries:
-    - +(point of light in the eld of view can be used to) +(printed page 397) --QDF=0
-    - +(point of light in the eld of view can be used to) +(Problems) +(printed page 397) --QDF=0
+    - +(point of light in the field of view can be used to) +(printed page 397) --QDF=0
+    - +(point of light in the field of view can be used to) +(Problems) +(printed page 397) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '397'

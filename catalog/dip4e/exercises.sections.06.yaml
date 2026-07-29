@@ -567,7 +567,7 @@ exercises:
         value: '6.13'
     queries:
     - +(6.12) +(printed page 459) --QDF=0
-    - +(xed and given Hint Use the HSI color model) +(printed page 459) --QDF=0
+    - +(fixed and given Hint Use the HSI color model) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -616,7 +616,7 @@ exercises:
       end_before: null
     queries:
     - +(6.13) +(printed page 459) --QDF=0
-    - +(are suf cient If you cannot assign a speci c gray) +(printed page 459) --QDF=0
+    - +(are sufficient If you cannot assign a specific gray) +(printed page 459) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '459'
@@ -1450,7 +1450,7 @@ exercises:
       end_before: null
     queries:
     - +(6.29) +(printed page 461) --QDF=0
-    - +(at times yield erroneous results Speci cally it is) +(printed page 461) --QDF=0
+    - +(at times yield erroneous results Specifically it is) +(printed page 461) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '461'

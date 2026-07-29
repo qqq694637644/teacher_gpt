@@ -66,6 +66,50 @@ REFERENCE_CONNECTOR_RE = re.compile(
     re.IGNORECASE,
 )
 SUBFIGURE_ONLY_RE = re.compile(r"\s*\([a-z](?:\s*,\s*[a-z])*\)", re.IGNORECASE)
+REFERENCE_KEYWORD_DEHYPHENATIONS = (
+    (
+        re.compile(
+            r"\bSec-\s*(?:\S+\s+){0,4}?tion(s?)(?=\s+\d+(?:\.\d+)+)",
+            re.IGNORECASE,
+        ),
+        r"Section\1",
+    ),
+    (
+        re.compile(
+            r"\bProb-\s*(?:\S+\s+){0,4}?lem(s?)(?=\s+\d+\.\d+)",
+            re.IGNORECASE,
+        ),
+        r"Problem\1",
+    ),
+    (
+        re.compile(
+            r"\bExam-\s*(?:\S+\s+){0,4}?ple(s?)(?=\s+\d+(?:\.\d+)+)",
+            re.IGNORECASE,
+        ),
+        r"Example\1",
+    ),
+    (
+        re.compile(
+            r"\bEqua-\s*(?:\S+\s+){0,4}?tion(s?)(?=\s*\(?\d+-\d+)",
+            re.IGNORECASE,
+        ),
+        r"Equation\1",
+    ),
+    (
+        re.compile(
+            r"\bFig-\s*(?:\S+\s+){0,4}?ure(s?)(?=\s+\d+(?:\.\d+)+)",
+            re.IGNORECASE,
+        ),
+        r"Figure\1",
+    ),
+    (
+        re.compile(
+            r"\bTa-\s*(?:\S+\s+){0,4}?ble(s?)(?=\s+\d+(?:\.\d+)+)",
+            re.IGNORECASE,
+        ),
+        r"Table\1",
+    ),
+)
 REFERENCE_OVERRIDES = {
     ("figure", "10.10.4"): (
         "10.4",
@@ -363,6 +407,7 @@ def _build_problem_plan(
 
 
 def _reference_specs(text: str, exercise_id: str) -> list[ExerciseReferenceSpec]:
+    text = _normalize_reference_keywords(text)
     references: list[tuple[int, str, str]] = []
     for kind, prefix_pattern in REFERENCE_PREFIXES.items():
         for prefix_match in prefix_pattern.finditer(text):
@@ -393,6 +438,13 @@ def _reference_specs(text: str, exercise_id: str) -> list[ExerciseReferenceSpec]
             )
         )
     return specs
+
+
+def _normalize_reference_keywords(text: str) -> str:
+    normalized = text
+    for pattern, replacement in REFERENCE_KEYWORD_DEHYPHENATIONS:
+        normalized = pattern.sub(replacement, normalized)
+    return normalized
 
 
 def _parse_reference_clause(text: str, start: int, kind: str) -> list[str]:

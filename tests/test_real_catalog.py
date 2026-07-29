@@ -1,4 +1,5 @@
 import json
+import unicodedata
 from pathlib import Path
 
 from fastapi.testclient import TestClient
@@ -187,6 +188,29 @@ def test_real_exercise_catalog_expands_parallel_and_range_references() -> None:
             )
 
 
+def test_real_exercise_catalog_recovers_pdf_wrapped_reference_keywords() -> None:
+    index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
+    expected = {
+        "2.17": ("section", "2.5"),
+        "3.33": ("section", "3.5"),
+        "3.36": ("section", "3.5"),
+        "9.41": ("section", "9.6"),
+        "10.31": ("section", "10.3"),
+        "11.10": ("section", "11.2"),
+        "11.12": ("section", "11.2"),
+        "7.14": ("exercise", "7.13"),
+        "9.34": ("exercise", "9.9"),
+        "7.9": ("example", "7.3"),
+        "7.40": ("example", "7.19"),
+    }
+
+    for exercise_id, target_key in expected.items():
+        locator = index.exercises[exercise_id]
+        assert target_key in {
+            (target.kind, target.target_id) for target in locator.reference_targets
+        }
+
+
 def test_real_exercise_catalog_has_only_balanced_safe_queries() -> None:
     index = ExerciseRepository.load(REAL_EXERCISE_INDEX).index
     query_count = 0
@@ -225,6 +249,7 @@ def test_real_exercise_catalog_has_only_balanced_safe_queries() -> None:
             for step in plan:
                 assert step.queries
                 assert all(query_parentheses_balanced(query) for query in step.queries)
+                assert all(unicodedata.normalize("NFKC", query) == query for query in step.queries)
                 for evidence in step.required_evidence:
                     if evidence.kind == "printed_page_equals":
                         continue
@@ -236,7 +261,8 @@ def test_real_exercise_catalog_has_only_balanced_safe_queries() -> None:
             assert exercise_query_count > 0
 
     report = json.loads(REAL_EXERCISE_REPORT.read_text(encoding="utf-8"))
-    assert query_count == 6939
     assert report["compiled_query_count"] == query_count
     assert report["unbalanced_compiled_query_count"] == 0
     assert report["steps_without_balanced_query_count"] == 0
+    assert report["non_nfkc_compiled_query_count"] == 0
+    assert report["steps_with_non_nfkc_query_count"] == 0

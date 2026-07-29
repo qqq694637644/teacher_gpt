@@ -186,7 +186,7 @@ exercises:
         value: '11.5'
     queries:
     - +(11.4) +(printed page 898) --QDF=0
-    - +(a Show that the rst difference of a chain code) +(printed page 898) --QDF=0
+    - +(a Show that the first difference of a chain code) +(printed page 898) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '898'
@@ -520,7 +520,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '11.2'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.11'
   chapter_id: '11'
   exercise_number: 11
@@ -618,7 +622,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '11.2'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '11.13'
   chapter_id: '11'
   exercise_number: 13
@@ -1189,7 +1197,7 @@ exercises:
         value: '11.25'
     queries:
     - +(11.24) +(printed page 900) --QDF=0
-    - +(a The position operator Q is de ned as one) +(printed page 900) --QDF=0
+    - +(a The position operator Q is defined as one) +(printed page 900) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '900'
@@ -1958,7 +1966,7 @@ exercises:
       end_before: null
     queries:
     - +(11.39) +(printed page 901) --QDF=0
-    - +(els such as the one shown in the gure below) +(printed page 901) --QDF=0
+    - +(els such as the one shown in the figure below) +(printed page 901) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '901'

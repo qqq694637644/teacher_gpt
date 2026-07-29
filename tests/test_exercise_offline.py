@@ -242,6 +242,24 @@ def test_reference_parser_applies_audited_source_erratum() -> None:
                 ("exercise", "4.9"),
             ],
         ),
+        (
+            (
+                "Use Sec- tion 2.5, Prob- lem 7.13, Exam- ple 7.3, "
+                "Equa- tion (2-46), Fig- ure 2.3(a), and Ta- ble 11.3."
+            ),
+            [
+                ("section", "2.5"),
+                ("exercise", "7.13"),
+                ("example", "7.3"),
+                ("equation", "2-46"),
+                ("figure", "2.3"),
+                ("table", "11.3"),
+            ],
+        ),
+        (
+            "Recompute the transform in Exam- fx () = ple 7.19.",
+            [("example", "7.19")],
+        ),
     ],
 )
 def test_reference_parser_expands_parallel_and_range_references(
@@ -276,6 +294,10 @@ def test_query_safe_anchor_removes_unbalanced_parentheses() -> None:
     assert anchor == "versa Do not confuse correlation and statistical independence"
     assert all(query_parentheses_balanced(query) for query in queries)
     assert all(anchor.casefold() in query.casefold() for query in queries)
+
+
+def test_query_safe_anchor_normalizes_pdf_ligatures() -> None:
+    assert query_safe_anchor("ﬁeld ﬁrst deﬁned ﬁgure ﬂat") == ("field first defined figure flat")
 
 
 def test_terminal_boundary_is_inherited_by_last_learning_unit() -> None:

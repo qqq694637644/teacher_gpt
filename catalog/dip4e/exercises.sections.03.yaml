@@ -293,7 +293,7 @@ exercises:
         value: '3.7'
     queries:
     - +(3.6) +(printed page 197) --QDF=0
-    - +(technique does not yield a at histogram in gen) +(printed page 197) --QDF=0
+    - +(technique does not yield a flat histogram in gen) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -604,7 +604,7 @@ exercises:
         value: '3.13'
     queries:
     - +(3.12) +(printed page 197) --QDF=0
-    - +(image so that they will have the speci ed pz) +(printed page 197) --QDF=0
+    - +(image so that they will have the specified pz) +(printed page 197) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '197'
@@ -1456,7 +1456,7 @@ exercises:
         value: '3.29'
     queries:
     - +(3.28) +(printed page 199) --QDF=0
-    - +(posite lter w is formed as the convolution of) +(printed page 199) --QDF=0
+    - +(posite filter w is formed as the convolution of) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1503,7 +1503,7 @@ exercises:
         value: '3.30'
     queries:
     - +(3.29) +(printed page 199) --QDF=0
-    - +(Discuss the limiting effect of repeatedly ltering) +(printed page 199) --QDF=0
+    - +(Discuss the limiting effect of repeatedly filtering) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1601,7 +1601,7 @@ exercises:
         value: '3.32'
     queries:
     - +(3.31) +(printed page 199) --QDF=0
-    - +(values in the original and ltered images is the) +(printed page 199) --QDF=0
+    - +(values in the original and filtered images is the) +(printed page 199) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '199'
@@ -1715,7 +1715,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '3.5'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '3.34'
   chapter_id: '3'
   exercise_number: 34
@@ -1883,7 +1887,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '3.5'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '3.37'
   chapter_id: '3'
   exercise_number: 37
@@ -2004,7 +2012,7 @@ exercises:
         value: '3.40'
     queries:
     - +(3.39) +(printed page 200) --QDF=0
-    - +(Show that the Laplacian de ned in Eq 3-50 is) +(printed page 200) --QDF=0
+    - +(Show that the Laplacian defined in Eq 3-50 is) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2112,7 +2120,7 @@ exercises:
         value: '3.42'
     queries:
     - +(3.41) +(printed page 200) --QDF=0
-    - +(the average image is obtained using a box lter of) +(printed page 200) --QDF=0
+    - +(the average image is obtained using a box filter of) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2277,7 +2285,7 @@ exercises:
         value: '3.45'
     queries:
     - +(3.44) +(printed page 200) --QDF=0
-    - +(kernels separable For those that are nd vectors) +(printed page 200) --QDF=0
+    - +(kernels separable For those that are find vectors) +(printed page 200) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '200'
@@ -2431,7 +2439,7 @@ exercises:
       end_before: null
     queries:
     - +(3.47) +(printed page 201) --QDF=0
-    - +(light to arti cial lighting At no time is the scene) +(printed page 201) --QDF=0
+    - +(light to artificial lighting At no time is the scene) +(printed page 201) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '201'

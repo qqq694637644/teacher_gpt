@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import json
 import sys
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -494,20 +495,30 @@ def compiled_query_metrics(compiled: CompiledExerciseIndex) -> dict[str, int]:
     query_count = 0
     unbalanced_query_count = 0
     steps_without_balanced_query = 0
+    non_nfkc_query_count = 0
+    steps_with_non_nfkc_query = 0
     for locator in compiled.exercises.values():
         plans = [locator.problem_retrieval_plan, locator.reference_retrieval_plan]
         plans.extend(target.retrieval_plan for target in locator.reference_targets)
         for plan in plans:
             for step in plan:
                 balanced = [query_parentheses_balanced(query) for query in step.queries]
+                nfkc_stable = [
+                    unicodedata.normalize("NFKC", query) == query for query in step.queries
+                ]
                 query_count += len(step.queries)
                 unbalanced_query_count += sum(not item for item in balanced)
+                non_nfkc_query_count += sum(not item for item in nfkc_stable)
                 if not any(balanced):
                     steps_without_balanced_query += 1
+                if not all(nfkc_stable):
+                    steps_with_non_nfkc_query += 1
     return {
         "compiled_query_count": query_count,
         "unbalanced_compiled_query_count": unbalanced_query_count,
         "steps_without_balanced_query_count": steps_without_balanced_query,
+        "non_nfkc_compiled_query_count": non_nfkc_query_count,
+        "steps_with_non_nfkc_query_count": steps_with_non_nfkc_query,
     }
 
 

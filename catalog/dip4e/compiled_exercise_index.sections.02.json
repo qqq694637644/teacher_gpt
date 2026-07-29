@@ -252,8 +252,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text occupy the entire eld of view This area typically is a diffuser such as opaque glass) +(printed page 52) --QDF=0",
-            "+(occupy the entire eld of view This area typically is a diffuser such as opaque glass) +(text) +(printed page 52) --QDF=0"
+            "+(text occupy the entire field of view This area typically is a diffuser such as opaque glass) +(printed page 52) --QDF=0",
+            "+(occupy the entire field of view This area typically is a diffuser such as opaque glass) +(text) +(printed page 52) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -549,8 +549,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text occupy the entire eld of view This area typically is a diffuser such as opaque glass) +(printed page 52) --QDF=0",
-                "+(occupy the entire eld of view This area typically is a diffuser such as opaque glass) +(text) +(printed page 52) --QDF=0"
+                "+(text occupy the entire field of view This area typically is a diffuser such as opaque glass) +(printed page 52) --QDF=0",
+                "+(occupy the entire field of view This area typically is a diffuser such as opaque glass) +(text) +(printed page 52) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -914,8 +914,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text occupy the entire eld of view This area typically is a diffuser such as opaque glass) +(printed page 52) --QDF=0",
-            "+(occupy the entire eld of view This area typically is a diffuser such as opaque glass) +(text) +(printed page 52) --QDF=0"
+            "+(text occupy the entire field of view This area typically is a diffuser such as opaque glass) +(printed page 52) --QDF=0",
+            "+(occupy the entire field of view This area typically is a diffuser such as opaque glass) +(text) +(printed page 52) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -1211,8 +1211,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text occupy the entire eld of view This area typically is a diffuser such as opaque glass) +(printed page 52) --QDF=0",
-                "+(occupy the entire eld of view This area typically is a diffuser such as opaque glass) +(text) +(printed page 52) --QDF=0"
+                "+(text occupy the entire field of view This area typically is a diffuser such as opaque glass) +(printed page 52) --QDF=0",
+                "+(occupy the entire field of view This area typically is a diffuser such as opaque glass) +(text) +(printed page 52) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -2043,7 +2043,7 @@
             }
           },
           "queries": [
-            "+(text data is the baud rate de ned as symbols bits in) +(printed page 114) --QDF=0",
+            "+(text data is the baud rate defined as symbols bits in) +(printed page 114) --QDF=0",
             "+(exercise 2.9) +(printed page 114) --QDF=0",
             "+(exercise 2.10) +(printed page 114) --QDF=0"
           ],
@@ -2972,8 +2972,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text This gure is the same as Fig 2.23 d b Image reduced to 72 dpi and) +(printed page 78) --QDF=0",
-                "+(This gure is the same as Fig 2.23 d b Image reduced to 72 dpi and) +(text) +(printed page 78) --QDF=0"
+                "+(text This figure is the same as Fig 2.23 d b Image reduced to 72 dpi and) +(printed page 78) --QDF=0",
+                "+(This figure is the same as Fig 2.23 d b Image reduced to 72 dpi and) +(text) +(printed page 78) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -3215,7 +3215,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text Suppose that a at area with center at) +(printed page 114) --QDF=0",
+            "+(text Suppose that a flat area with center at) +(printed page 114) --QDF=0",
             "+(exercise 2.12) +(printed page 114) --QDF=0"
           ],
           "required_evidence": [
@@ -3379,7 +3379,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text Suppose that a at area with center at) +(printed page 114) --QDF=0",
+            "+(text Suppose that a flat area with center at) +(printed page 114) --QDF=0",
             "+(exercise 2.12) +(printed page 114) --QDF=0"
           ],
           "required_evidence": [
@@ -3475,7 +3475,7 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Suppose that a at area with center at) +(printed page 114) --QDF=0",
+                "+(text Suppose that a flat area with center at) +(printed page 114) --QDF=0",
                 "+(exercise 2.12) +(printed page 114) --QDF=0"
               ],
               "required_evidence": [
@@ -4270,8 +4270,434 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 80,
+            "pdf_page_number": 81,
+            "printed_page_label": "79"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text In this section we discuss several important relationships between pixels in a digital) +(printed page 79) --QDF=0",
+            "+(heading 2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "79",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "In this section, we discuss several important relationships between pixels in a digital",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS",
+              "NEIGHBORS OF A PIXEL",
+              "ADJACENCY, CONNECTIVITY, REGIONS, AND BOUNDARIES"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 81,
+            "pdf_page_number": 82,
+            "printed_page_label": "80"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text c m-adjacency d Two regions of 1 s that are 8-adjacent e The circled point is) +(printed page 80) --QDF=0",
+            "+(c m-adjacency d Two regions of 1 s that are 8-adjacent e The circled point is) +(text) +(printed page 80) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "80",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "(c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "2.28"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 82,
+            "pdf_page_number": 83,
+            "printed_page_label": "81"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text because if one or more regions touch the border of an image we can simply pad) +(printed page 81) --QDF=0",
+            "+(because if one or more regions touch the border of an image we can simply pad) +(text) +(printed page 81) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "81",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 83,
+            "pdf_page_number": 84,
+            "printed_page_label": "82"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text intuitive Conceptually until we arrive at Chapter 10 it is helpful to think of edges) +(printed page 82) --QDF=0",
+            "+(intuitive Conceptually until we arrive at Chapter 10 it is helpful to think of edges) +(text) +(printed page 82) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "82",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "DISTANCE MEASURES"
+            ],
+            "figure_ids": [],
+            "equation_ids": [
+              "2-19",
+              "2-20",
+              "2-21"
+            ],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 84,
+            "pdf_page_number": 85,
+            "printed_page_label": "83"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+            }
+          },
+          "queries": [
+            "+(text length of the shortest m-path also is 3 Finally if both p1 and p3 are 1) +(printed page 83) --QDF=0",
+            "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "83",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "section",
+          "target_id": "2.5",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 80,
+                "pdf_page_number": 81,
+                "printed_page_label": "79"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(text In this section we discuss several important relationships between pixels in a digital) +(printed page 79) --QDF=0",
+                "+(heading 2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS) +(printed page 79) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "79",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "In this section, we discuss several important relationships between pixels in a digital",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "2.5 SOME BASIC RELATIONSHIPS BETWEEN PIXELS",
+                  "NEIGHBORS OF A PIXEL",
+                  "ADJACENCY, CONNECTIVITY, REGIONS, AND BOUNDARIES"
+                ],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 81,
+                "pdf_page_number": 82,
+                "printed_page_label": "80"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text c m-adjacency d Two regions of 1 s that are 8-adjacent e The circled point is) +(printed page 80) --QDF=0",
+                "+(c m-adjacency d Two regions of 1 s that are 8-adjacent e The circled point is) +(text) +(printed page 80) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "80",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "(c) m-adjacency. (d) Two regions (of 1’s) that are 8-adjacent. (e) The circled point is on the boundary of the 1-valued",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "2.28"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 82,
+                "pdf_page_number": 83,
+                "printed_page_label": "81"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text because if one or more regions touch the border of an image we can simply pad) +(printed page 81) --QDF=0",
+                "+(because if one or more regions touch the border of an image we can simply pad) +(text) +(printed page 81) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "81",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "because if one or more regions touch the border of an image, we can simply pad the image with a 1-pixel-wide",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 83,
+                "pdf_page_number": 84,
+                "printed_page_label": "82"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text intuitive Conceptually until we arrive at Chapter 10 it is helpful to think of edges) +(printed page 82) --QDF=0",
+                "+(intuitive Conceptually until we arrive at Chapter 10 it is helpful to think of edges) +(text) +(printed page 82) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "82",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "intuitive. Conceptually, until we arrive at Chapter 10, it is helpful to think of edges",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "DISTANCE MEASURES"
+                ],
+                "figure_ids": [],
+                "equation_ids": [
+                  "2-19",
+                  "2-20",
+                  "2-21"
+                ],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 84,
+                "pdf_page_number": 85,
+                "printed_page_label": "83"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING"
+                }
+              },
+              "queries": [
+                "+(text length of the shortest m-path also is 3 Finally if both p1 and p3 are 1) +(printed page 83) --QDF=0",
+                "+(heading 2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING) +(printed page 83) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "83",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "length of the shortest m-path also is 3. Finally, if both p1 and p3 are 1, the length of",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "2.6 INTRODUCTION TO THE BASIC MATHEMATICAL TOOLS USED IN DIGITAL IMAGE PROCESSING",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
     },
     "2.18": {
       "data_version": "3",
@@ -5552,8 +5978,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6402,8 +6828,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-            "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+            "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+            "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7078,8 +7504,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7928,8 +8354,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-                "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+                "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+                "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9959,8 +10385,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10809,8 +11235,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-            "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+            "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+            "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11485,8 +11911,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12335,8 +12761,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-                "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+                "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+                "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12709,7 +13135,7 @@
             }
           },
           "queries": [
-            "+(text look like if we modi ed Eq 2-43 as follows) +(printed page 117) --QDF=0",
+            "+(text look like if we modified Eq 2-43 as follows) +(printed page 117) --QDF=0",
             "+(exercise 2.35) +(printed page 117) --QDF=0",
             "+(exercise 2.36) +(printed page 117) --QDF=0"
           ],
@@ -13074,7 +13500,7 @@
             }
           },
           "queries": [
-            "+(text We know from Eq 2-45 that an af ne transfor) +(printed page 117) --QDF=0",
+            "+(text We know from Eq 2-45 that an affine transfor) +(printed page 117) --QDF=0",
             "+(exercise 2.37) +(printed page 117) --QDF=0",
             "+(exercise 2.38) +(printed page 117) --QDF=0"
           ],

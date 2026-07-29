@@ -112,7 +112,7 @@
             }
           },
           "queries": [
-            "+(text Repeat Problem 5.1 using a geometric mean lter) +(printed page 393) --QDF=0",
+            "+(text Repeat Problem 5.1 using a geometric mean filter) +(printed page 393) --QDF=0",
             "+(exercise 5.2) +(printed page 393) --QDF=0",
             "+(exercise 5.3) +(printed page 393) --QDF=0"
           ],
@@ -302,7 +302,7 @@
             }
           },
           "queries": [
-            "+(text Repeat Problem 5.1 using a harmonic mean lter) +(printed page 393) --QDF=0",
+            "+(text Repeat Problem 5.1 using a harmonic mean filter) +(printed page 393) --QDF=0",
             "+(exercise 5.3) +(printed page 393) --QDF=0",
             "+(exercise 5.4) +(printed page 393) --QDF=0"
           ],
@@ -872,7 +872,7 @@
             }
           },
           "queries": [
-            "+(text Repeat Problem 5.1 using a median lter) +(printed page 393) --QDF=0",
+            "+(text Repeat Problem 5.1 using a median filter) +(printed page 393) --QDF=0",
             "+(exercise 5.6) +(printed page 393) --QDF=0",
             "+(exercise 5.7) +(printed page 393) --QDF=0"
           ],
@@ -1062,7 +1062,7 @@
             }
           },
           "queries": [
-            "+(text Repeat Problem 5.1 using a max lter) +(printed page 393) --QDF=0",
+            "+(text Repeat Problem 5.1 using a max filter) +(printed page 393) --QDF=0",
             "+(exercise 5.7) +(printed page 393) --QDF=0",
             "+(exercise 5.8) +(printed page 393) --QDF=0"
           ],
@@ -1252,7 +1252,7 @@
             }
           },
           "queries": [
-            "+(text Repeat Problem 5.1 using a min lter) +(printed page 393) --QDF=0",
+            "+(text Repeat Problem 5.1 using a min filter) +(printed page 393) --QDF=0",
             "+(exercise 5.8) +(printed page 393) --QDF=0",
             "+(exercise 5.9) +(printed page 393) --QDF=0"
           ],
@@ -1442,7 +1442,7 @@
             }
           },
           "queries": [
-            "+(text Repeat Problem 5.1 using a midpoint lter) +(printed page 393) --QDF=0",
+            "+(text Repeat Problem 5.1 using a midpoint filter) +(printed page 393) --QDF=0",
             "+(exercise 5.9) +(printed page 393) --QDF=0",
             "+(exercise 5.10) +(printed page 393) --QDF=0"
           ],
@@ -1632,7 +1632,7 @@
             }
           },
           "queries": [
-            "+(text a Explain why the lter is effective in eliminat) +(printed page 393) --QDF=0",
+            "+(text a Explain why the filter is effective in eliminat) +(printed page 393) --QDF=0",
             "+(exercise 5.10) +(printed page 393) --QDF=0",
             "+(exercise 5.11) +(printed page 393) --QDF=0"
           ],
@@ -2019,7 +2019,7 @@
             }
           },
           "queries": [
-            "+(text With reference to the alpha-trimmed lter de ned) +(printed page 394) --QDF=0",
+            "+(text With reference to the alpha-trimmed filter defined) +(printed page 394) --QDF=0",
             "+(exercise 5.12) +(printed page 394) --QDF=0",
             "+(exercise 5.13) +(printed page 394) --QDF=0"
           ],
@@ -4358,8 +4358,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5208,8 +5208,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-            "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+            "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+            "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -6002,8 +6002,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6852,8 +6852,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-                "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+                "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+                "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7398,7 +7398,7 @@
             }
           },
           "queries": [
-            "+(text uv rst and then use it as the basis for) +(printed page 395) --QDF=0",
+            "+(text uv first and then use it as the basis for) +(printed page 395) --QDF=0",
             "+(exercise 5.26) +(printed page 395) --QDF=0",
             "+(exercise 5.27) +(printed page 395) --QDF=0"
           ],
@@ -7874,8 +7874,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text small that the result of full inverse ltering Fig 5.27 a is useless The reasons for) +(printed page 357) --QDF=0",
-            "+(small that the result of full inverse ltering Fig 5.27 a is useless The reasons for) +(text) +(printed page 357) --QDF=0"
+            "+(text small that the result of full inverse filtering Fig 5.27 a is useless The reasons for) +(printed page 357) --QDF=0",
+            "+(small that the result of full inverse filtering Fig 5.27 a is useless The reasons for) +(text) +(printed page 357) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -7966,8 +7966,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text theorem rst line of entry 7 in Table 4.4 When the two functions are the same) +(printed page 359) --QDF=0",
-            "+(theorem rst line of entry 7 in Table 4.4 When the two functions are the same) +(text) +(printed page 359) --QDF=0"
+            "+(text theorem first line of entry 7 in Table 4.4 When the two functions are the same) +(printed page 359) --QDF=0",
+            "+(theorem first line of entry 7 in Table 4.4 When the two functions are the same) +(text) +(printed page 359) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8051,8 +8051,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text The Wiener lter result in Fig 5.29 i is excellent being quite close visually to the) +(printed page 361) --QDF=0",
-            "+(The Wiener lter result in Fig 5.29 i is excellent being quite close visually to the) +(text) +(printed page 361) --QDF=0"
+            "+(text The Wiener filter result in Fig 5.29 i is excellent being quite close visually to the) +(printed page 361) --QDF=0",
+            "+(The Wiener filter result in Fig 5.29 i is excellent being quite close visually to the) +(text) +(printed page 361) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8096,8 +8096,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Wiener ltering d f Same sequence but with noise variance one order of magnitude less g) +(printed page 362) --QDF=0",
-            "+(Wiener ltering d f Same sequence but with noise variance one order of magnitude less g) +(text) +(printed page 362) --QDF=0"
+            "+(text Wiener filtering d f Same sequence but with noise variance one order of magnitude less g) +(printed page 362) --QDF=0",
+            "+(Wiener filtering d f Same sequence but with noise variance one order of magnitude less g) +(text) +(printed page 362) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8667,8 +8667,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text small that the result of full inverse ltering Fig 5.27 a is useless The reasons for) +(printed page 357) --QDF=0",
-                "+(small that the result of full inverse ltering Fig 5.27 a is useless The reasons for) +(text) +(printed page 357) --QDF=0"
+                "+(text small that the result of full inverse filtering Fig 5.27 a is useless The reasons for) +(printed page 357) --QDF=0",
+                "+(small that the result of full inverse filtering Fig 5.27 a is useless The reasons for) +(text) +(printed page 357) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8767,8 +8767,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text theorem rst line of entry 7 in Table 4.4 When the two functions are the same) +(printed page 359) --QDF=0",
-                "+(theorem rst line of entry 7 in Table 4.4 When the two functions are the same) +(text) +(printed page 359) --QDF=0"
+                "+(text theorem first line of entry 7 in Table 4.4 When the two functions are the same) +(printed page 359) --QDF=0",
+                "+(theorem first line of entry 7 in Table 4.4 When the two functions are the same) +(text) +(printed page 359) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8852,8 +8852,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text The Wiener lter result in Fig 5.29 i is excellent being quite close visually to the) +(printed page 361) --QDF=0",
-                "+(The Wiener lter result in Fig 5.29 i is excellent being quite close visually to the) +(text) +(printed page 361) --QDF=0"
+                "+(text The Wiener filter result in Fig 5.29 i is excellent being quite close visually to the) +(printed page 361) --QDF=0",
+                "+(The Wiener filter result in Fig 5.29 i is excellent being quite close visually to the) +(text) +(printed page 361) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -8897,8 +8897,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Wiener ltering d f Same sequence but with noise variance one order of magnitude less g) +(printed page 362) --QDF=0",
-                "+(Wiener ltering d f Same sequence but with noise variance one order of magnitude less g) +(text) +(printed page 362) --QDF=0"
+                "+(text Wiener filtering d f Same sequence but with noise variance one order of magnitude less g) +(printed page 362) --QDF=0",
+                "+(Wiener filtering d f Same sequence but with noise variance one order of magnitude less g) +(text) +(printed page 362) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9614,8 +9614,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text not part of the data d f Horizontal intensity pro les through the centers of the) +(printed page 286) --QDF=0",
-            "+(not part of the data d f Horizontal intensity pro les through the centers of the) +(text) +(printed page 286) --QDF=0"
+            "+(text not part of the data d f Horizontal intensity profiles through the centers of the kernels) +(printed page 286) --QDF=0",
+            "+(not part of the data d f Horizontal intensity profiles through the centers of the kernels) +(text) +(printed page 286) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9927,8 +9927,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text highpass lter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(printed page 293) --QDF=0",
-            "+(highpass lter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(text) +(printed page 293) --QDF=0"
+            "+(text highpass filter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(printed page 293) --QDF=0",
+            "+(highpass filter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(text) +(printed page 293) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9973,8 +9973,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Figure 4.58 is a summary of the ltering approach just derived This method is) +(printed page 294) --QDF=0",
-            "+(Figure 4.58 is a summary of the ltering approach just derived This method is) +(text) +(printed page 294) --QDF=0"
+            "+(text Figure 4.58 is a summary of the filtering approach just derived This method is) +(printed page 294) --QDF=0",
+            "+(Figure 4.58 is a summary of the filtering approach just derived This method is) +(text) +(printed page 294) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10273,8 +10273,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text not part of the data d f Horizontal intensity pro les through the centers of the) +(printed page 286) --QDF=0",
-                "+(not part of the data d f Horizontal intensity pro les through the centers of the) +(text) +(printed page 286) --QDF=0"
+                "+(text not part of the data d f Horizontal intensity profiles through the centers of the kernels) +(printed page 286) --QDF=0",
+                "+(not part of the data d f Horizontal intensity profiles through the centers of the kernels) +(text) +(printed page 286) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10586,8 +10586,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text highpass lter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(printed page 293) --QDF=0",
-                "+(highpass lter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(text) +(printed page 293) --QDF=0"
+                "+(text highpass filter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(printed page 293) --QDF=0",
+                "+(highpass filter transfer function Because the spatial representation of a GHPF function is Gaussian also) +(text) +(printed page 293) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10632,8 +10632,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Figure 4.58 is a summary of the ltering approach just derived This method is) +(printed page 294) --QDF=0",
-                "+(Figure 4.58 is a summary of the ltering approach just derived This method is) +(text) +(printed page 294) --QDF=0"
+                "+(text Figure 4.58 is a summary of the filtering approach just derived This method is) +(printed page 294) --QDF=0",
+                "+(Figure 4.58 is a summary of the filtering approach just derived This method is) +(text) +(printed page 294) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -11156,7 +11156,7 @@
             }
           },
           "queries": [
-            "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+            "+(text b Show that your result is a lowpass filter trans) +(printed page 313) --QDF=0",
             "+(exercise 4.47) +(printed page 313) --QDF=0",
             "+(exercise 4.48) +(printed page 313) --QDF=0"
           ],
@@ -11297,7 +11297,7 @@
                 }
               },
               "queries": [
-                "+(text b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0",
+                "+(text b Show that your result is a lowpass filter trans) +(printed page 313) --QDF=0",
                 "+(exercise 4.47) +(printed page 313) --QDF=0",
                 "+(exercise 4.48) +(printed page 313) --QDF=0"
               ],
@@ -12855,7 +12855,7 @@
             }
           },
           "queries": [
-            "+(text point of light in the eld of view can be used to) +(printed page 397) --QDF=0",
+            "+(text point of light in the field of view can be used to) +(printed page 397) --QDF=0",
             "+(exercise 5.41) +(printed page 397) --QDF=0"
           ],
           "required_evidence": [
@@ -14032,8 +14032,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -14882,8 +14882,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-            "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+            "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+            "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -15638,8 +15638,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -16488,8 +16488,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-                "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+                "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+                "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
               ],
               "required_evidence": [
                 {

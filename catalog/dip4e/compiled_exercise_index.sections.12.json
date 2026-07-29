@@ -38,7 +38,7 @@
             }
           },
           "queries": [
-            "+(text mum distance classi er for the patterns in) +(printed page 990) --QDF=0",
+            "+(text mum distance classifier for the patterns in) +(printed page 990) --QDF=0",
             "+(exercise 12.1) +(printed page 990) --QDF=0",
             "+(exercise 12.2) +(printed page 990) --QDF=0"
           ],
@@ -194,7 +194,7 @@
             }
           },
           "queries": [
-            "+(text same function in terms of pattern classi cation) +(printed page 990) --QDF=0",
+            "+(text same function in terms of pattern classification) +(printed page 990) --QDF=0",
             "+(exercise 12.2) +(printed page 990) --QDF=0",
             "+(exercise 12.3) +(printed page 990) --QDF=0"
           ],
@@ -716,7 +716,7 @@
             }
           },
           "queries": [
-            "+(text Show that the correlation coef cient of Eq 12-10) +(printed page 990) --QDF=0",
+            "+(text Show that the correlation coefficient of Eq 12-10) +(printed page 990) --QDF=0",
             "+(exercise 12.5) +(printed page 990) --QDF=0",
             "+(exercise 12.6) +(printed page 990) --QDF=0"
           ],
@@ -874,7 +874,7 @@
             }
           },
           "queries": [
-            "+(text 12-12 satis es the properties in Eq 12-13) +(printed page 990) --QDF=0",
+            "+(text 12-12 satisfies the properties in Eq 12-13) +(printed page 990) --QDF=0",
             "+(exercise 12.6) +(printed page 990) --QDF=0",
             "+(exercise 12.7) +(printed page 990) --QDF=0"
           ],
@@ -2366,7 +2366,7 @@
             }
           },
           "queries": [
-            "+(text a nite number of steps if the training pattern) +(printed page 991) --QDF=0",
+            "+(text a finite number of steps if the training pattern) +(printed page 991) --QDF=0",
             "+(exercise 12.15) +(printed page 991) --QDF=0",
             "+(exercise 12.16) +(printed page 991) --QDF=0"
           ],
@@ -2928,7 +2928,7 @@
             }
           },
           "queries": [
-            "+(text same function as a Bayes classi er for two pat) +(printed page 991) --QDF=0",
+            "+(text same function as a Bayes classifier for two pat) +(printed page 991) --QDF=0",
             "+(exercise 12.19) +(printed page 991) --QDF=0",
             "+(exercise 12.20) +(printed page 991) --QDF=0"
           ],
@@ -3101,7 +3101,7 @@
             }
           },
           "queries": [
-            "+(text same function as a Bayes classi er for two pat) +(printed page 991) --QDF=0",
+            "+(text same function as a Bayes classifier for two pat) +(printed page 991) --QDF=0",
             "+(exercise 12.19) +(printed page 991) --QDF=0",
             "+(exercise 12.20) +(printed page 991) --QDF=0"
           ],
@@ -3223,7 +3223,7 @@
                 }
               },
               "queries": [
-                "+(text same function as a Bayes classi er for two pat) +(printed page 991) --QDF=0",
+                "+(text same function as a Bayes classifier for two pat) +(printed page 991) --QDF=0",
                 "+(exercise 12.19) +(printed page 991) --QDF=0",
                 "+(exercise 12.20) +(printed page 991) --QDF=0"
               ],

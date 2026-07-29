@@ -168,7 +168,7 @@ exercises:
         value: '8.5'
     queries:
     - +(8.4) +(printed page 632) --QDF=0
-    - +(value and the four least signi cant bits of the pre) +(printed page 632) --QDF=0
+    - +(value and the four least significant bits of the pre) +(printed page 632) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '632'
@@ -1112,7 +1112,7 @@ exercises:
         value: '8.24'
     queries:
     - +(8.23) +(printed page 633) --QDF=0
-    - +(located on the rst pixel of the second line seg) +(printed page 633) --QDF=0
+    - +(located on the first pixel of the second line seg) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1159,7 +1159,7 @@ exercises:
         value: '8.25'
     queries:
     - +(8.24) +(printed page 633) --QDF=0
-    - +(a List all the members of JPEG DC coef cient) +(printed page 633) --QDF=0
+    - +(a List all the members of JPEG DC coefficient) +(printed page 633) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '633'
@@ -1445,7 +1445,7 @@ exercises:
         value: '8.31'
     queries:
     - +(8.30) +(printed page 634) --QDF=0
-    - +(average for the next 1 min with the rst and last) +(printed page 634) --QDF=0
+    - +(average for the next 1 min with the first and last) +(printed page 634) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '634'
@@ -1492,7 +1492,7 @@ exercises:
         value: '8.32'
     queries:
     - +(8.31) +(printed page 634) --QDF=0
-    - +(de ned by Eq 8-61 is equivalent to the tradi) +(printed page 634) --QDF=0
+    - +(defined by Eq 8-61 is equivalent to the tradi) +(printed page 634) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '634'

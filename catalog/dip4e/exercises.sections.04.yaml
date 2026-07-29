@@ -276,7 +276,7 @@ exercises:
         value: '4.7'
     queries:
     - +(4.6) +(printed page 309) --QDF=0
-    - +(the Nyquist rate is satis ed and 2 the sam) +(printed page 309) --QDF=0
+    - +(the Nyquist rate is satisfied and 2 the sam) +(printed page 309) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '309'
@@ -711,7 +711,7 @@ exercises:
         value: '4.15'
     queries:
     - +(4.14) +(printed page 309) --QDF=0
-    - +(m in Eq 4-40 is in nitely periodic) +(printed page 309) --QDF=0
+    - +(m in Eq 4-40 is infinitely periodic) +(printed page 309) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '309'
@@ -825,7 +825,7 @@ exercises:
         value: '4.17'
     queries:
     - +(4.16) +(printed page 310) --QDF=0
-    - +(4-45 are in nitely periodic with period M that is) +(printed page 310) --QDF=0
+    - +(4-45 are infinitely periodic with period M that is) +(printed page 310) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '310'
@@ -1146,7 +1146,7 @@ exercises:
         value: '4.23'
     queries:
     - +(4.22) +(printed page 310) --QDF=0
-    - +(onto the area de ned by the size of the chip you) +(printed page 310) --QDF=0
+    - +(onto the area defined by the size of the chip you) +(printed page 310) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '310'
@@ -1713,7 +1713,7 @@ exercises:
         value: '4.34'
     queries:
     - +(4.33) +(printed page 311) --QDF=0
-    - +(its rst element is 1 and we know that in order) +(printed page 311) --QDF=0
+    - +(its first element is 1 and we know that in order) +(printed page 311) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '311'
@@ -2349,7 +2349,7 @@ exercises:
         value: '4.46'
     queries:
     - +(4.45) +(printed page 313) --QDF=0
-    - +(angle by 1 ipped the image with respect to both) +(printed page 313) --QDF=0
+    - +(angle by 1 flipped the image with respect to both) +(printed page 313) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '313'
@@ -2461,7 +2461,7 @@ exercises:
         value: '4.48'
     queries:
     - +(4.47) +(printed page 313) --QDF=0
-    - +(b Show that your result is a lowpass lter trans) +(printed page 313) --QDF=0
+    - +(b Show that your result is a lowpass filter trans) +(printed page 313) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '313'
@@ -2508,7 +2508,7 @@ exercises:
         value: '4.49'
     queries:
     - +(4.48) +(printed page 313) --QDF=0
-    - +(A continuous Gaussian lowpass lter in the con) +(printed page 313) --QDF=0
+    - +(A continuous Gaussian lowpass filter in the con) +(printed page 313) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '313'
@@ -2555,7 +2555,7 @@ exercises:
         value: '4.50'
     queries:
     - +(4.49) +(printed page 313) --QDF=0
-    - +(for a suf ciently large value of K If so what) +(printed page 313) --QDF=0
+    - +(for a sufficiently large value of K If so what) +(printed page 313) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '313'

@@ -345,7 +345,7 @@ exercises:
         value: '10.8'
     queries:
     - +(10.7) +(printed page 804) --QDF=0
-    - +(of the pro les that show what you would expect) +(printed page 804) --QDF=0
+    - +(of the profiles that show what you would expect) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -398,7 +398,7 @@ exercises:
       end_before: null
     queries:
     - +(10.8) +(printed page 804) --QDF=0
-    - +(Consider a horizontal intensity pro le through) +(printed page 804) --QDF=0
+    - +(Consider a horizontal intensity profile through) +(printed page 804) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '804'
@@ -470,7 +470,7 @@ exercises:
         value: '10.10'
     queries:
     - +(10.9) +(printed page 805) --QDF=0
-    - +(Sketch the gradient and Laplacian of each pro le) +(printed page 805) --QDF=0
+    - +(Sketch the gradient and Laplacian of each profile) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -634,7 +634,7 @@ exercises:
         value: '10.13'
     queries:
     - +(10.12) +(printed page 805) --QDF=0
-    - +(The nal result is then scaled by 19 Show that) +(printed page 805) --QDF=0
+    - +(The final result is then scaled by 19 Show that) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -685,7 +685,7 @@ exercises:
         value: '10.14'
     queries:
     - +(10.13) +(printed page 805) --QDF=0
-    - +(using these coef cients As in Fig 10.15 let N) +(printed page 805) --QDF=0
+    - +(using these coefficients As in Fig 10.15 let N) +(printed page 805) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '805'
@@ -993,7 +993,7 @@ exercises:
         value: '10.19'
     queries:
     - +(10.18) +(printed page 806) --QDF=0
-    - +(stituted for r2 to get the nal incorrect result) +(printed page 806) --QDF=0
+    - +(stituted for r2 to get the final incorrect result) +(printed page 806) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '806'
@@ -1288,7 +1288,7 @@ exercises:
         value: '10.24'
     queries:
     - +(10.23) +(printed page 807) --QDF=0
-    - +(sketches of the pro les that would result from) +(printed page 807) --QDF=0
+    - +(sketches of the profiles that would result from) +(printed page 807) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '807'
@@ -1756,7 +1756,11 @@ exercises:
       equation_ids: []
       example_ids: []
       table_ids: []
-  reference_specs: []
+  reference_specs:
+  - kind: section
+    target_id: '10.3'
+    reason: Explicit section reference in exercise text
+    selected_context_pages: []
 - exercise_id: '10.32'
   chapter_id: '10'
   exercise_number: 32
@@ -1783,7 +1787,7 @@ exercises:
         value: '10.33'
     queries:
     - +(10.32) +(printed page 808) --QDF=0
-    - +(think the nal value of the threshold at conver) +(printed page 808) --QDF=0
+    - +(think the final value of the threshold at conver) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -1932,7 +1936,7 @@ exercises:
         value: '10.36'
     queries:
     - +(10.35) +(printed page 808) --QDF=0
-    - +(a Show how the rst line in Eq 10-60 fol) +(printed page 808) --QDF=0
+    - +(a Show how the first line in Eq 10-60 fol) +(printed page 808) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '808'
@@ -3019,7 +3023,7 @@ exercises:
       end_before: null
     queries:
     - +(10.55) +(printed page 810) --QDF=0
-    - +(The speed of a bullet in ight is to be estimated by) +(printed page 810) --QDF=0
+    - +(The speed of a bullet in flight is to be estimated by) +(printed page 810) --QDF=0
     required_evidence:
     - kind: printed_page_equals
       value: '810'

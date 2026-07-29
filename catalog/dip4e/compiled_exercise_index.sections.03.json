@@ -607,7 +607,7 @@
             }
           },
           "queries": [
-            "+(text technique does not yield a at histogram in gen) +(printed page 197) --QDF=0",
+            "+(text technique does not yield a flat histogram in gen) +(printed page 197) --QDF=0",
             "+(exercise 3.6) +(printed page 197) --QDF=0",
             "+(exercise 3.7) +(printed page 197) --QDF=0"
           ],
@@ -1465,8 +1465,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
-                "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
+                "+(text Because its first three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+                "+(Because its first three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1765,8 +1765,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
-                "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
+                "+(text specified constant C to increase or decrease the value of its intensity level relative to the) +(printed page 152) --QDF=0",
+                "+(specified constant C to increase or decrease the value of its intensity level relative to the) +(text) +(printed page 152) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -1812,7 +1812,7 @@
                 }
               },
               "queries": [
-                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this figure) +(printed page 153) --QDF=0",
                 "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
               ],
               "required_evidence": [
@@ -2461,8 +2461,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
-            "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
+            "+(text Because its first three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+            "+(Because its first three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2761,8 +2761,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
-            "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
+            "+(text specified constant C to increase or decrease the value of its intensity level relative to the) +(printed page 152) --QDF=0",
+            "+(specified constant C to increase or decrease the value of its intensity level relative to the) +(text) +(printed page 152) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -2808,7 +2808,7 @@
             }
           },
           "queries": [
-            "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+            "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this figure) +(printed page 153) --QDF=0",
             "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
           ],
           "required_evidence": [
@@ -3420,8 +3420,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
-                "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
+                "+(text Because its first three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+                "+(Because its first three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -3720,8 +3720,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
-                "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
+                "+(text specified constant C to increase or decrease the value of its intensity level relative to the) +(printed page 152) --QDF=0",
+                "+(specified constant C to increase or decrease the value of its intensity level relative to the) +(text) +(printed page 152) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -3767,7 +3767,7 @@
                 }
               },
               "queries": [
-                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this figure) +(printed page 153) --QDF=0",
                 "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
               ],
               "required_evidence": [
@@ -4360,8 +4360,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+            "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+            "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5210,8 +5210,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-            "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+            "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+            "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -5886,8 +5886,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(printed page 93) --QDF=0",
-                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will de ne the) +(text) +(printed page 93) --QDF=0"
+                "+(text pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(printed page 93) --QDF=0",
+                "+(pixels resulting from a set operation In Sections 3.8 and 9.6 we will define the union) +(text) +(printed page 93) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -6736,8 +6736,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text 2011 is a reference for the illumination and re ectance values used in that section The) +(printed page 113) --QDF=0",
-                "+(2011 is a reference for the illumination and re ectance values used in that section The) +(text) +(printed page 113) --QDF=0"
+                "+(text 2011 is a reference for the illumination and reflectance values used in that section The concepts) +(printed page 113) --QDF=0",
+                "+(2011 is a reference for the illumination and reflectance values used in that section The concepts) +(text) +(printed page 113) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -7075,7 +7075,7 @@
             }
           },
           "queries": [
-            "+(text image so that they will have the speci ed pz) +(printed page 197) --QDF=0",
+            "+(text image so that they will have the specified pz) +(printed page 197) --QDF=0",
             "+(exercise 3.12) +(printed page 197) --QDF=0",
             "+(exercise 3.13) +(printed page 197) --QDF=0"
           ],
@@ -8034,8 +8034,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
-            "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
+            "+(text Because its first three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+            "+(Because its first three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8334,8 +8334,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
-            "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
+            "+(text specified constant C to increase or decrease the value of its intensity level relative to the) +(printed page 152) --QDF=0",
+            "+(specified constant C to increase or decrease the value of its intensity level relative to the) +(text) +(printed page 152) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -8381,7 +8381,7 @@
             }
           },
           "queries": [
-            "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+            "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this figure) +(printed page 153) --QDF=0",
             "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
           ],
           "required_evidence": [
@@ -8949,8 +8949,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text Because its rst three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
-                "+(Because its rst three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
+                "+(text Because its first three values are equal G is not strictly monotonic so condition a is) +(printed page 145) --QDF=0",
+                "+(Because its first three values are equal G is not strictly monotonic so condition a is) +(text) +(printed page 145) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9249,8 +9249,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text speci ed constant C to increase or decrease the value of its intensity level relative to) +(printed page 152) --QDF=0",
-                "+(speci ed constant C to increase or decrease the value of its intensity level relative to) +(text) +(printed page 152) --QDF=0"
+                "+(text specified constant C to increase or decrease the value of its intensity level relative to the) +(printed page 152) --QDF=0",
+                "+(specified constant C to increase or decrease the value of its intensity level relative to the) +(text) +(printed page 152) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -9296,7 +9296,7 @@
                 }
               },
               "queries": [
-                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this gure) +(printed page 153) --QDF=0",
+                "+(text 3.27 b is the result of using Eq 3-29 with these parameters By comparing this figure) +(printed page 153) --QDF=0",
                 "+(heading 3.4 FUNDAMENTALS OF SPATIAL FILTERING) +(printed page 153) --QDF=0"
               ],
               "required_evidence": [
@@ -9732,8 +9732,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
-            "+(of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
+            "+(text of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
+            "+(of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9821,8 +9821,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to fully shift w past f so the center coef cient in w visited every pixel) +(printed page 156) --QDF=0",
-            "+(to fully shift w past f so the center coef cient in w visited every pixel) +(text) +(printed page 156) --QDF=0"
+            "+(text to fully shift w past f so the center coefficient in w visited every pixel in) +(printed page 156) --QDF=0",
+            "+(to fully shift w past f so the center coefficient in w visited every pixel in) +(text) +(printed page 156) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -9945,7 +9945,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text just its center visits every pixel in f This requires that the starting con guration be) +(printed page 159) --QDF=0",
+            "+(text just its center visits every pixel in f This requires that the starting configuration be) +(printed page 159) --QDF=0",
             "+(equation 3-35) +(printed page 159) --QDF=0"
           ],
           "required_evidence": [
@@ -9993,8 +9993,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text cally these terms are used in the literature to denote a spatial lter kernel and not) +(printed page 160) --QDF=0",
-            "+(cally these terms are used in the literature to denote a spatial lter kernel and not) +(text) +(printed page 160) --QDF=0"
+            "+(text cally these terms are used in the literature to denote a spatial filter kernel and not) +(printed page 160) --QDF=0",
+            "+(cally these terms are used in the literature to denote a spatial filter kernel and not) +(text) +(printed page 160) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -10170,7 +10170,7 @@
             }
           },
           "queries": [
-            "+(text evident in the gure A central theme of digital lter design theory is obtaining faith) +(printed page 164) --QDF=0",
+            "+(text evident in the figure A central theme of digital filter design theory is obtaining faith) +(printed page 164) --QDF=0",
             "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
           ],
           "required_evidence": [
@@ -10271,8 +10271,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
-                "+(of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
+                "+(text of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
+                "+(of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10355,8 +10355,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to fully shift w past f so the center coef cient in w visited every pixel) +(printed page 156) --QDF=0",
-                "+(to fully shift w past f so the center coef cient in w visited every pixel) +(text) +(printed page 156) --QDF=0"
+                "+(text to fully shift w past f so the center coefficient in w visited every pixel in) +(printed page 156) --QDF=0",
+                "+(to fully shift w past f so the center coefficient in w visited every pixel in) +(text) +(printed page 156) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10479,8 +10479,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text just its center visits every pixel in f This requires that the starting con guration be) +(printed page 159) --QDF=0",
-                "+(just its center visits every pixel in f This requires that the starting con guration be) +(text) +(printed page 159) --QDF=0"
+                "+(text just its center visits every pixel in f This requires that the starting configuration be) +(printed page 159) --QDF=0",
+                "+(just its center visits every pixel in f This requires that the starting configuration be) +(text) +(printed page 159) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10522,8 +10522,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text cally these terms are used in the literature to denote a spatial lter kernel and not) +(printed page 160) --QDF=0",
-                "+(cally these terms are used in the literature to denote a spatial lter kernel and not) +(text) +(printed page 160) --QDF=0"
+                "+(text cally these terms are used in the literature to denote a spatial filter kernel and not) +(printed page 160) --QDF=0",
+                "+(cally these terms are used in the literature to denote a spatial filter kernel and not) +(text) +(printed page 160) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -10699,7 +10699,7 @@
                 }
               },
               "queries": [
-                "+(text evident in the gure A central theme of digital lter design theory is obtaining faith) +(printed page 164) --QDF=0",
+                "+(text evident in the figure A central theme of digital filter design theory is obtaining faith) +(printed page 164) --QDF=0",
                 "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
               ],
               "required_evidence": [
@@ -11741,8 +11741,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
-            "+(of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
+            "+(text of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
+            "+(of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11825,8 +11825,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text to fully shift w past f so the center coef cient in w visited every pixel) +(printed page 156) --QDF=0",
-            "+(to fully shift w past f so the center coef cient in w visited every pixel) +(text) +(printed page 156) --QDF=0"
+            "+(text to fully shift w past f so the center coefficient in w visited every pixel in) +(printed page 156) --QDF=0",
+            "+(to fully shift w past f so the center coefficient in w visited every pixel in) +(text) +(printed page 156) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11949,8 +11949,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text just its center visits every pixel in f This requires that the starting con guration be) +(printed page 159) --QDF=0",
-            "+(just its center visits every pixel in f This requires that the starting con guration be) +(text) +(printed page 159) --QDF=0"
+            "+(text just its center visits every pixel in f This requires that the starting configuration be) +(printed page 159) --QDF=0",
+            "+(just its center visits every pixel in f This requires that the starting configuration be) +(text) +(printed page 159) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -11992,8 +11992,8 @@
             "end_before": null
           },
           "queries": [
-            "+(text cally these terms are used in the literature to denote a spatial lter kernel and not) +(printed page 160) --QDF=0",
-            "+(cally these terms are used in the literature to denote a spatial lter kernel and not) +(text) +(printed page 160) --QDF=0"
+            "+(text cally these terms are used in the literature to denote a spatial filter kernel and not) +(printed page 160) --QDF=0",
+            "+(cally these terms are used in the literature to denote a spatial filter kernel and not) +(text) +(printed page 160) --QDF=0"
           ],
           "required_evidence": [
             {
@@ -12169,7 +12169,7 @@
             }
           },
           "queries": [
-            "+(text evident in the gure A central theme of digital lter design theory is obtaining faith) +(printed page 164) --QDF=0",
+            "+(text evident in the figure A central theme of digital filter design theory is obtaining faith) +(printed page 164) --QDF=0",
             "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
           ],
           "required_evidence": [
@@ -12355,8 +12355,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
-                "+(of ltering It is seldom the case that ltered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
+                "+(text of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(printed page 154) --QDF=0",
+                "+(of filtering It is seldom the case that filtered pixels replace the values of the corresponding) +(text) +(printed page 154) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12439,8 +12439,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text to fully shift w past f so the center coef cient in w visited every pixel) +(printed page 156) --QDF=0",
-                "+(to fully shift w past f so the center coef cient in w visited every pixel) +(text) +(printed page 156) --QDF=0"
+                "+(text to fully shift w past f so the center coefficient in w visited every pixel in) +(printed page 156) --QDF=0",
+                "+(to fully shift w past f so the center coefficient in w visited every pixel in) +(text) +(printed page 156) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12563,8 +12563,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text just its center visits every pixel in f This requires that the starting con guration be) +(printed page 159) --QDF=0",
-                "+(just its center visits every pixel in f This requires that the starting con guration be) +(text) +(printed page 159) --QDF=0"
+                "+(text just its center visits every pixel in f This requires that the starting configuration be) +(printed page 159) --QDF=0",
+                "+(just its center visits every pixel in f This requires that the starting configuration be) +(text) +(printed page 159) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12606,8 +12606,8 @@
                 "end_before": null
               },
               "queries": [
-                "+(text cally these terms are used in the literature to denote a spatial lter kernel and not) +(printed page 160) --QDF=0",
-                "+(cally these terms are used in the literature to denote a spatial lter kernel and not) +(text) +(printed page 160) --QDF=0"
+                "+(text cally these terms are used in the literature to denote a spatial filter kernel and not) +(printed page 160) --QDF=0",
+                "+(cally these terms are used in the literature to denote a spatial filter kernel and not) +(text) +(printed page 160) --QDF=0"
               ],
               "required_evidence": [
                 {
@@ -12783,7 +12783,7 @@
                 }
               },
               "queries": [
-                "+(text evident in the gure A central theme of digital lter design theory is obtaining faith) +(printed page 164) --QDF=0",
+                "+(text evident in the figure A central theme of digital filter design theory is obtaining faith) +(printed page 164) --QDF=0",
                 "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
               ],
               "required_evidence": [
@@ -13354,7 +13354,7 @@
             }
           },
           "queries": [
-            "+(text posite lter w is formed as the convolution of) +(printed page 199) --QDF=0",
+            "+(text posite filter w is formed as the convolution of) +(printed page 199) --QDF=0",
             "+(exercise 3.28) +(printed page 199) --QDF=0",
             "+(exercise 3.29) +(printed page 199) --QDF=0"
           ],
@@ -13428,7 +13428,7 @@
             }
           },
           "queries": [
-            "+(text Discuss the limiting effect of repeatedly ltering) +(printed page 199) --QDF=0",
+            "+(text Discuss the limiting effect of repeatedly filtering) +(printed page 199) --QDF=0",
             "+(exercise 3.29) +(printed page 199) --QDF=0",
             "+(exercise 3.30) +(printed page 199) --QDF=0"
           ],
@@ -13658,7 +13658,7 @@
             }
           },
           "queries": [
-            "+(text values in the original and ltered images is the) +(printed page 199) --QDF=0",
+            "+(text values in the original and filtered images is the) +(printed page 199) --QDF=0",
             "+(exercise 3.31) +(printed page 199) --QDF=0",
             "+(exercise 3.32) +(printed page 199) --QDF=0"
           ],
@@ -13841,8 +13841,1064 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 165,
+            "pdf_page_number": 166,
+            "printed_page_label": "164"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text tions in intensity Because random noise typically consists of sharp transitions in) +(printed page 164) --QDF=0",
+            "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "164",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "tions in intensity. Because random noise typically consists of sharp transitions in",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 166,
+            "pdf_page_number": 167,
+            "printed_page_label": "165"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text kernel being affected significantly more Such features include the thinner lines in the image and the) +(printed page 165) --QDF=0",
+            "+(kernel being affected significantly more Such features include the thinner lines in the image and the) +(text) +(printed page 165) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "165",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "kernel being affected signiﬁcantly more. Such features include the thinner lines in the image and the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "BOX FILTER KERNELS"
+            ],
+            "figure_ids": [
+              "3.33"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.11"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 167,
+            "pdf_page_number": 168,
+            "printed_page_label": "166"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text the image during filtering When zero black padding is used the net result of smoothing at) +(printed page 166) --QDF=0",
+            "+(the image during filtering When zero black padding is used the net result of smoothing at) +(text) +(printed page 166) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "166",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the image during ﬁltering. When zero (black) padding is used, the net result of smoothing at or near the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "LOWPASS GAUSSIAN FILTER KERNELS"
+            ],
+            "figure_ids": [
+              "3.33"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.14",
+              "3.13"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 168,
+            "pdf_page_number": 169,
+            "printed_page_label": "167"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text odd kernel sizes the centers of such kernels fall on integer values and it follows that) +(printed page 167) --QDF=0",
+            "+(odd kernel sizes the centers of such kernels fall on integer values and it follows that) +(text) +(printed page 167) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "167",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "odd kernel sizes, the centers of such kernels fall on integer values, and it follows that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.34"
+            ],
+            "equation_ids": [
+              "3-45",
+              "3-46"
+            ],
+            "example_ids": [
+              "3.13"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 169,
+            "pdf_page_number": 170,
+            "printed_page_label": "168"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text tion LMc is used to denote the ceiling of c that is the smallest integer not) +(printed page 168) --QDF=0",
+            "+(tion LMc is used to denote the ceiling of c that is the smallest integer not) +(text) +(printed page 168) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "168",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "tion LMc is used to denote the ceiling of c; that is, the smallest integer not less than",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.35"
+            ],
+            "equation_ids": [
+              "3-47",
+              "3-45",
+              "3-42"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.6"
+            ]
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 170,
+            "pdf_page_number": 171,
+            "printed_page_label": "169"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(printed page 169) --QDF=0",
+            "+(result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(text) +(printed page 169) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "169",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "result of lowpass ﬁltering the test pattern with this kernel. Comparing this result with Fig. 3.33(d), we see",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.36",
+              "3.37"
+            ],
+            "equation_ids": [
+              "3-45",
+              "3-46",
+              "3-43"
+            ],
+            "example_ids": [
+              "3.12",
+              "3.11"
+            ],
+            "table_ids": [
+              "3.6",
+              "3"
+            ]
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 171,
+            "pdf_page_number": 172,
+            "printed_page_label": "170"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text identical their maximum difference being 0.75 which is less than one level out of 256 these) +(printed page 170) --QDF=0",
+            "+(identical their maximum difference being 0.75 which is less than one level out of 256 these) +(text) +(printed page 170) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "170",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "identical, their maximum difference being 0.75, which is less than one level out of 256 (these are 8-bit",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.38",
+              "3.36",
+              "3.37"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.13"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 172,
+            "pdf_page_number": 173,
+            "printed_page_label": "171"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text produced linear smoothing with the transition from black to white i.e at an edge having the) +(printed page 171) --QDF=0",
+            "+(produced linear smoothing with the transition from black to white i.e at an edge having the) +(text) +(printed page 171) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "171",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "produced linear smoothing, with the transition from black to white (i.e., at an edge) having the shape",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.39",
+              "3.38"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 173,
+            "pdf_page_number": 174,
+            "printed_page_label": "172"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text pixels four times larger in each dimension than before Figure 3.40 b shows the result of) +(printed page 172) --QDF=0",
+            "+(pixels four times larger in each dimension than before Figure 3.40 b shows the result of) +(text) +(printed page 172) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "172",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "pixels, four times larger in each dimension than before. Figure 3.40(b) shows the result of ﬁltering this",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.40",
+              "3.39"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.14"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 174,
+            "pdf_page_number": 175,
+            "printed_page_label": "173"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(printed page 173) --QDF=0",
+            "+(ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(text) +(printed page 173) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "173",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ing with a Gaussian kernel. (c) Result of thresholding the ﬁltered image (intensities were scaled to the range [0, 1]).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.40",
+              "3.41"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.15",
+              "3.16"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 175,
+            "pdf_page_number": 176,
+            "printed_page_label": "174"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(printed page 174) --QDF=0",
+            "+(patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(text) +(printed page 174) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "174",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "patterns obtained using lowpass ﬁltering. (c) Result of dividing (a) by (b). (See Section 9.8 for a morphological",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "ORDER-STATISTIC (NONLINEAR) FILTERS"
+            ],
+            "figure_ids": [
+              "3.42"
+            ],
+            "equation_ids": [
+              "3-44"
+            ],
+            "example_ids": [
+              "2.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 176,
+            "pdf_page_number": 177,
+            "printed_page_label": "175"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
+            }
+          },
+          "queries": [
+            "+(text Figure 3.43 a shows an X-ray image of a circuit board heavily corrupted by salt-and-pepper noise) +(printed page 175) --QDF=0",
+            "+(heading 3.6 SHARPENING HIGHPASS SPATIAL FILTERS) +(printed page 175) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "175",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 3.43(a) shows an X-ray image of a circuit board heavily corrupted by salt-and-pepper noise. To",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.43"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.17"
+            ],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "section",
+          "target_id": "3.5",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 165,
+                "pdf_page_number": 166,
+                "printed_page_label": "164"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(text tions in intensity Because random noise typically consists of sharp transitions in) +(printed page 164) --QDF=0",
+                "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "164",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "tions in intensity. Because random noise typically consists of sharp transitions in",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+                ],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 166,
+                "pdf_page_number": 167,
+                "printed_page_label": "165"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text kernel being affected significantly more Such features include the thinner lines in the image and the) +(printed page 165) --QDF=0",
+                "+(kernel being affected significantly more Such features include the thinner lines in the image and the) +(text) +(printed page 165) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "165",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "kernel being affected signiﬁcantly more. Such features include the thinner lines in the image and the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "BOX FILTER KERNELS"
+                ],
+                "figure_ids": [
+                  "3.33"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.11"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 167,
+                "pdf_page_number": 168,
+                "printed_page_label": "166"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text the image during filtering When zero black padding is used the net result of smoothing at) +(printed page 166) --QDF=0",
+                "+(the image during filtering When zero black padding is used the net result of smoothing at) +(text) +(printed page 166) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "166",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "the image during ﬁltering. When zero (black) padding is used, the net result of smoothing at or near the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "LOWPASS GAUSSIAN FILTER KERNELS"
+                ],
+                "figure_ids": [
+                  "3.33"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.14",
+                  "3.13"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 168,
+                "pdf_page_number": 169,
+                "printed_page_label": "167"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text odd kernel sizes the centers of such kernels fall on integer values and it follows that) +(printed page 167) --QDF=0",
+                "+(odd kernel sizes the centers of such kernels fall on integer values and it follows that) +(text) +(printed page 167) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "167",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "odd kernel sizes, the centers of such kernels fall on integer values, and it follows that",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.34"
+                ],
+                "equation_ids": [
+                  "3-45",
+                  "3-46"
+                ],
+                "example_ids": [
+                  "3.13"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 169,
+                "pdf_page_number": 170,
+                "printed_page_label": "168"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text tion LMc is used to denote the ceiling of c that is the smallest integer not) +(printed page 168) --QDF=0",
+                "+(tion LMc is used to denote the ceiling of c that is the smallest integer not) +(text) +(printed page 168) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "168",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "tion LMc is used to denote the ceiling of c; that is, the smallest integer not less than",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.35"
+                ],
+                "equation_ids": [
+                  "3-47",
+                  "3-45",
+                  "3-42"
+                ],
+                "example_ids": [],
+                "table_ids": [
+                  "3.6"
+                ]
+              }
+            },
+            {
+              "sequence": 6,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 170,
+                "pdf_page_number": 171,
+                "printed_page_label": "169"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(printed page 169) --QDF=0",
+                "+(result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(text) +(printed page 169) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "169",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "result of lowpass ﬁltering the test pattern with this kernel. Comparing this result with Fig. 3.33(d), we see",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.36",
+                  "3.37"
+                ],
+                "equation_ids": [
+                  "3-45",
+                  "3-46",
+                  "3-43"
+                ],
+                "example_ids": [
+                  "3.12",
+                  "3.11"
+                ],
+                "table_ids": [
+                  "3.6",
+                  "3"
+                ]
+              }
+            },
+            {
+              "sequence": 7,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 171,
+                "pdf_page_number": 172,
+                "printed_page_label": "170"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text identical their maximum difference being 0.75 which is less than one level out of 256 these) +(printed page 170) --QDF=0",
+                "+(identical their maximum difference being 0.75 which is less than one level out of 256 these) +(text) +(printed page 170) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "170",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "identical, their maximum difference being 0.75, which is less than one level out of 256 (these are 8-bit",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.38",
+                  "3.36",
+                  "3.37"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.13"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 8,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 172,
+                "pdf_page_number": 173,
+                "printed_page_label": "171"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text produced linear smoothing with the transition from black to white i.e at an edge having the) +(printed page 171) --QDF=0",
+                "+(produced linear smoothing with the transition from black to white i.e at an edge having the) +(text) +(printed page 171) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "171",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "produced linear smoothing, with the transition from black to white (i.e., at an edge) having the shape",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.39",
+                  "3.38"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 9,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 173,
+                "pdf_page_number": 174,
+                "printed_page_label": "172"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text pixels four times larger in each dimension than before Figure 3.40 b shows the result of) +(printed page 172) --QDF=0",
+                "+(pixels four times larger in each dimension than before Figure 3.40 b shows the result of) +(text) +(printed page 172) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "172",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "pixels, four times larger in each dimension than before. Figure 3.40(b) shows the result of ﬁltering this",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.40",
+                  "3.39"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.14"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 10,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 174,
+                "pdf_page_number": 175,
+                "printed_page_label": "173"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(printed page 173) --QDF=0",
+                "+(ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(text) +(printed page 173) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "173",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "ing with a Gaussian kernel. (c) Result of thresholding the ﬁltered image (intensities were scaled to the range [0, 1]).",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.40",
+                  "3.41"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.15",
+                  "3.16"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 11,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 175,
+                "pdf_page_number": 176,
+                "printed_page_label": "174"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(printed page 174) --QDF=0",
+                "+(patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(text) +(printed page 174) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "174",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "patterns obtained using lowpass ﬁltering. (c) Result of dividing (a) by (b). (See Section 9.8 for a morphological",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "ORDER-STATISTIC (NONLINEAR) FILTERS"
+                ],
+                "figure_ids": [
+                  "3.42"
+                ],
+                "equation_ids": [
+                  "3-44"
+                ],
+                "example_ids": [
+                  "2.7"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 12,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 176,
+                "pdf_page_number": 177,
+                "printed_page_label": "175"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
+                }
+              },
+              "queries": [
+                "+(text Figure 3.43 a shows an X-ray image of a circuit board heavily corrupted by salt-and-pepper noise) +(printed page 175) --QDF=0",
+                "+(heading 3.6 SHARPENING HIGHPASS SPATIAL FILTERS) +(printed page 175) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "175",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Figure 3.43(a) shows an X-ray image of a circuit board heavily corrupted by salt-and-pepper noise. To",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.43"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.17"
+                ],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
     },
     "3.34": {
       "data_version": "3",
@@ -14180,8 +15236,1064 @@
           }
         }
       ],
-      "reference_retrieval_plan": [],
-      "reference_targets": []
+      "reference_retrieval_plan": [
+        {
+          "sequence": 1,
+          "page_role": "start",
+          "page": {
+            "pdf_page_index": 165,
+            "pdf_page_number": 166,
+            "printed_page_label": "164"
+          },
+          "content_window": {
+            "start_at": {
+              "kind": "heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+            },
+            "end_before": null
+          },
+          "queries": [
+            "+(text tions in intensity Because random noise typically consists of sharp transitions in) +(printed page 164) --QDF=0",
+            "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "164",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "tions in intensity. Because random noise typically consists of sharp transitions in",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+            ],
+            "figure_ids": [],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 2,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 166,
+            "pdf_page_number": 167,
+            "printed_page_label": "165"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text kernel being affected significantly more Such features include the thinner lines in the image and the) +(printed page 165) --QDF=0",
+            "+(kernel being affected significantly more Such features include the thinner lines in the image and the) +(text) +(printed page 165) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "165",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "kernel being affected signiﬁcantly more. Such features include the thinner lines in the image and the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "BOX FILTER KERNELS"
+            ],
+            "figure_ids": [
+              "3.33"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.11"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 3,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 167,
+            "pdf_page_number": 168,
+            "printed_page_label": "166"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text the image during filtering When zero black padding is used the net result of smoothing at) +(printed page 166) --QDF=0",
+            "+(the image during filtering When zero black padding is used the net result of smoothing at) +(text) +(printed page 166) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "166",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "the image during ﬁltering. When zero (black) padding is used, the net result of smoothing at or near the",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "LOWPASS GAUSSIAN FILTER KERNELS"
+            ],
+            "figure_ids": [
+              "3.33"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.14",
+              "3.13"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 4,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 168,
+            "pdf_page_number": 169,
+            "printed_page_label": "167"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text odd kernel sizes the centers of such kernels fall on integer values and it follows that) +(printed page 167) --QDF=0",
+            "+(odd kernel sizes the centers of such kernels fall on integer values and it follows that) +(text) +(printed page 167) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "167",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "odd kernel sizes, the centers of such kernels fall on integer values, and it follows that",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.34"
+            ],
+            "equation_ids": [
+              "3-45",
+              "3-46"
+            ],
+            "example_ids": [
+              "3.13"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 5,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 169,
+            "pdf_page_number": 170,
+            "printed_page_label": "168"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text tion LMc is used to denote the ceiling of c that is the smallest integer not) +(printed page 168) --QDF=0",
+            "+(tion LMc is used to denote the ceiling of c that is the smallest integer not) +(text) +(printed page 168) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "168",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "tion LMc is used to denote the ceiling of c; that is, the smallest integer not less than",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.35"
+            ],
+            "equation_ids": [
+              "3-47",
+              "3-45",
+              "3-42"
+            ],
+            "example_ids": [],
+            "table_ids": [
+              "3.6"
+            ]
+          }
+        },
+        {
+          "sequence": 6,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 170,
+            "pdf_page_number": 171,
+            "printed_page_label": "169"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(printed page 169) --QDF=0",
+            "+(result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(text) +(printed page 169) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "169",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "result of lowpass ﬁltering the test pattern with this kernel. Comparing this result with Fig. 3.33(d), we see",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.36",
+              "3.37"
+            ],
+            "equation_ids": [
+              "3-45",
+              "3-46",
+              "3-43"
+            ],
+            "example_ids": [
+              "3.12",
+              "3.11"
+            ],
+            "table_ids": [
+              "3.6",
+              "3"
+            ]
+          }
+        },
+        {
+          "sequence": 7,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 171,
+            "pdf_page_number": 172,
+            "printed_page_label": "170"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text identical their maximum difference being 0.75 which is less than one level out of 256 these) +(printed page 170) --QDF=0",
+            "+(identical their maximum difference being 0.75 which is less than one level out of 256 these) +(text) +(printed page 170) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "170",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "identical, their maximum difference being 0.75, which is less than one level out of 256 (these are 8-bit",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.38",
+              "3.36",
+              "3.37"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.13"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 8,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 172,
+            "pdf_page_number": 173,
+            "printed_page_label": "171"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text produced linear smoothing with the transition from black to white i.e at an edge having the) +(printed page 171) --QDF=0",
+            "+(produced linear smoothing with the transition from black to white i.e at an edge having the) +(text) +(printed page 171) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "171",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "produced linear smoothing, with the transition from black to white (i.e., at an edge) having the shape",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.39",
+              "3.38"
+            ],
+            "equation_ids": [],
+            "example_ids": [],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 9,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 173,
+            "pdf_page_number": 174,
+            "printed_page_label": "172"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text pixels four times larger in each dimension than before Figure 3.40 b shows the result of) +(printed page 172) --QDF=0",
+            "+(pixels four times larger in each dimension than before Figure 3.40 b shows the result of) +(text) +(printed page 172) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "172",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "pixels, four times larger in each dimension than before. Figure 3.40(b) shows the result of ﬁltering this",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.40",
+              "3.39"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.14"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 10,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 174,
+            "pdf_page_number": 175,
+            "printed_page_label": "173"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(printed page 173) --QDF=0",
+            "+(ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(text) +(printed page 173) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "173",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "ing with a Gaussian kernel. (c) Result of thresholding the ﬁltered image (intensities were scaled to the range [0, 1]).",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.40",
+              "3.41"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.15",
+              "3.16"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 11,
+          "page_role": "body",
+          "page": {
+            "pdf_page_index": 175,
+            "pdf_page_number": 176,
+            "printed_page_label": "174"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": null
+          },
+          "queries": [
+            "+(text patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(printed page 174) --QDF=0",
+            "+(patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(text) +(printed page 174) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "174",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "patterns obtained using lowpass ﬁltering. (c) Result of dividing (a) by (b). (See Section 9.8 for a morphological",
+              "verification_mode": "text_or_visual"
+            }
+          ],
+          "coverage": {
+            "subheadings": [
+              "ORDER-STATISTIC (NONLINEAR) FILTERS"
+            ],
+            "figure_ids": [
+              "3.42"
+            ],
+            "equation_ids": [
+              "3-44"
+            ],
+            "example_ids": [
+              "2.7"
+            ],
+            "table_ids": []
+          }
+        },
+        {
+          "sequence": 12,
+          "page_role": "end",
+          "page": {
+            "pdf_page_index": 176,
+            "pdf_page_number": 177,
+            "printed_page_label": "175"
+          },
+          "content_window": {
+            "start_at": null,
+            "end_before": {
+              "kind": "heading",
+              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
+            }
+          },
+          "queries": [
+            "+(text Figure 3.43 a shows an X-ray image of a circuit board heavily corrupted by salt-and-pepper noise) +(printed page 175) --QDF=0",
+            "+(heading 3.6 SHARPENING HIGHPASS SPATIAL FILTERS) +(printed page 175) --QDF=0"
+          ],
+          "required_evidence": [
+            {
+              "kind": "printed_page_equals",
+              "value": "175",
+              "verification_mode": "visual_required"
+            },
+            {
+              "kind": "contains_text",
+              "value": "Figure 3.43(a) shows an X-ray image of a circuit board heavily corrupted by salt-and-pepper noise. To",
+              "verification_mode": "text_or_visual"
+            },
+            {
+              "kind": "contains_heading",
+              "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS",
+              "verification_mode": "visual_required"
+            }
+          ],
+          "coverage": {
+            "subheadings": [],
+            "figure_ids": [
+              "3.43"
+            ],
+            "equation_ids": [],
+            "example_ids": [
+              "3.17"
+            ],
+            "table_ids": []
+          }
+        }
+      ],
+      "reference_targets": [
+        {
+          "kind": "section",
+          "target_id": "3.5",
+          "reason": "Explicit section reference in exercise text",
+          "selected_context_pages": [],
+          "retrieval_plan": [
+            {
+              "sequence": 1,
+              "page_role": "start",
+              "page": {
+                "pdf_page_index": 165,
+                "pdf_page_number": 166,
+                "printed_page_label": "164"
+              },
+              "content_window": {
+                "start_at": {
+                  "kind": "heading",
+                  "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+                },
+                "end_before": null
+              },
+              "queries": [
+                "+(text tions in intensity Because random noise typically consists of sharp transitions in) +(printed page 164) --QDF=0",
+                "+(heading 3.5 SMOOTHING LOWPASS SPATIAL FILTERS) +(printed page 164) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "164",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "tions in intensity. Because random noise typically consists of sharp transitions in",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "3.5 SMOOTHING (LOWPASS) SPATIAL FILTERS"
+                ],
+                "figure_ids": [],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 2,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 166,
+                "pdf_page_number": 167,
+                "printed_page_label": "165"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text kernel being affected significantly more Such features include the thinner lines in the image and the) +(printed page 165) --QDF=0",
+                "+(kernel being affected significantly more Such features include the thinner lines in the image and the) +(text) +(printed page 165) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "165",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "kernel being affected signiﬁcantly more. Such features include the thinner lines in the image and the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "BOX FILTER KERNELS"
+                ],
+                "figure_ids": [
+                  "3.33"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.11"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 3,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 167,
+                "pdf_page_number": 168,
+                "printed_page_label": "166"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text the image during filtering When zero black padding is used the net result of smoothing at) +(printed page 166) --QDF=0",
+                "+(the image during filtering When zero black padding is used the net result of smoothing at) +(text) +(printed page 166) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "166",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "the image during ﬁltering. When zero (black) padding is used, the net result of smoothing at or near the",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "LOWPASS GAUSSIAN FILTER KERNELS"
+                ],
+                "figure_ids": [
+                  "3.33"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.14",
+                  "3.13"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 4,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 168,
+                "pdf_page_number": 169,
+                "printed_page_label": "167"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text odd kernel sizes the centers of such kernels fall on integer values and it follows that) +(printed page 167) --QDF=0",
+                "+(odd kernel sizes the centers of such kernels fall on integer values and it follows that) +(text) +(printed page 167) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "167",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "odd kernel sizes, the centers of such kernels fall on integer values, and it follows that",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.34"
+                ],
+                "equation_ids": [
+                  "3-45",
+                  "3-46"
+                ],
+                "example_ids": [
+                  "3.13"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 5,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 169,
+                "pdf_page_number": 170,
+                "printed_page_label": "168"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text tion LMc is used to denote the ceiling of c that is the smallest integer not) +(printed page 168) --QDF=0",
+                "+(tion LMc is used to denote the ceiling of c that is the smallest integer not) +(text) +(printed page 168) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "168",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "tion LMc is used to denote the ceiling of c; that is, the smallest integer not less than",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.35"
+                ],
+                "equation_ids": [
+                  "3-47",
+                  "3-45",
+                  "3-42"
+                ],
+                "example_ids": [],
+                "table_ids": [
+                  "3.6"
+                ]
+              }
+            },
+            {
+              "sequence": 6,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 170,
+                "pdf_page_number": 171,
+                "printed_page_label": "169"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(printed page 169) --QDF=0",
+                "+(result of lowpass filtering the test pattern with this kernel Comparing this result with Fig 3.33) +(text) +(printed page 169) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "169",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "result of lowpass ﬁltering the test pattern with this kernel. Comparing this result with Fig. 3.33(d), we see",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.36",
+                  "3.37"
+                ],
+                "equation_ids": [
+                  "3-45",
+                  "3-46",
+                  "3-43"
+                ],
+                "example_ids": [
+                  "3.12",
+                  "3.11"
+                ],
+                "table_ids": [
+                  "3.6",
+                  "3"
+                ]
+              }
+            },
+            {
+              "sequence": 7,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 171,
+                "pdf_page_number": 172,
+                "printed_page_label": "170"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text identical their maximum difference being 0.75 which is less than one level out of 256 these) +(printed page 170) --QDF=0",
+                "+(identical their maximum difference being 0.75 which is less than one level out of 256 these) +(text) +(printed page 170) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "170",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "identical, their maximum difference being 0.75, which is less than one level out of 256 (these are 8-bit",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.38",
+                  "3.36",
+                  "3.37"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.13"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 8,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 172,
+                "pdf_page_number": 173,
+                "printed_page_label": "171"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text produced linear smoothing with the transition from black to white i.e at an edge having the) +(printed page 171) --QDF=0",
+                "+(produced linear smoothing with the transition from black to white i.e at an edge having the) +(text) +(printed page 171) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "171",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "produced linear smoothing, with the transition from black to white (i.e., at an edge) having the shape",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.39",
+                  "3.38"
+                ],
+                "equation_ids": [],
+                "example_ids": [],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 9,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 173,
+                "pdf_page_number": 174,
+                "printed_page_label": "172"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text pixels four times larger in each dimension than before Figure 3.40 b shows the result of) +(printed page 172) --QDF=0",
+                "+(pixels four times larger in each dimension than before Figure 3.40 b shows the result of) +(text) +(printed page 172) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "172",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "pixels, four times larger in each dimension than before. Figure 3.40(b) shows the result of ﬁltering this",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.40",
+                  "3.39"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.14"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 10,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 174,
+                "pdf_page_number": 175,
+                "printed_page_label": "173"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(printed page 173) --QDF=0",
+                "+(ing with a Gaussian kernel c Result of thresholding the filtered image intensities were scaled to) +(text) +(printed page 173) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "173",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "ing with a Gaussian kernel. (c) Result of thresholding the ﬁltered image (intensities were scaled to the range [0, 1]).",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.40",
+                  "3.41"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.15",
+                  "3.16"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 11,
+              "page_role": "body",
+              "page": {
+                "pdf_page_index": 175,
+                "pdf_page_number": 176,
+                "printed_page_label": "174"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": null
+              },
+              "queries": [
+                "+(text patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(printed page 174) --QDF=0",
+                "+(patterns obtained using lowpass filtering c Result of dividing a by b See Section 9.8 for) +(text) +(printed page 174) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "174",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "patterns obtained using lowpass ﬁltering. (c) Result of dividing (a) by (b). (See Section 9.8 for a morphological",
+                  "verification_mode": "text_or_visual"
+                }
+              ],
+              "coverage": {
+                "subheadings": [
+                  "ORDER-STATISTIC (NONLINEAR) FILTERS"
+                ],
+                "figure_ids": [
+                  "3.42"
+                ],
+                "equation_ids": [
+                  "3-44"
+                ],
+                "example_ids": [
+                  "2.7"
+                ],
+                "table_ids": []
+              }
+            },
+            {
+              "sequence": 12,
+              "page_role": "end",
+              "page": {
+                "pdf_page_index": 176,
+                "pdf_page_number": 177,
+                "printed_page_label": "175"
+              },
+              "content_window": {
+                "start_at": null,
+                "end_before": {
+                  "kind": "heading",
+                  "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS"
+                }
+              },
+              "queries": [
+                "+(text Figure 3.43 a shows an X-ray image of a circuit board heavily corrupted by salt-and-pepper noise) +(printed page 175) --QDF=0",
+                "+(heading 3.6 SHARPENING HIGHPASS SPATIAL FILTERS) +(printed page 175) --QDF=0"
+              ],
+              "required_evidence": [
+                {
+                  "kind": "printed_page_equals",
+                  "value": "175",
+                  "verification_mode": "visual_required"
+                },
+                {
+                  "kind": "contains_text",
+                  "value": "Figure 3.43(a) shows an X-ray image of a circuit board heavily corrupted by salt-and-pepper noise. To",
+                  "verification_mode": "text_or_visual"
+                },
+                {
+                  "kind": "contains_heading",
+                  "value": "3.6 SHARPENING (HIGHPASS) SPATIAL FILTERS",
+                  "verification_mode": "visual_required"
+                }
+              ],
+              "coverage": {
+                "subheadings": [],
+                "figure_ids": [
+                  "3.43"
+                ],
+                "equation_ids": [],
+                "example_ids": [
+                  "3.17"
+                ],
+                "table_ids": []
+              }
+            }
+          ]
+        }
+      ]
     },
     "3.37": {
       "data_version": "3",
@@ -14367,7 +16479,7 @@
             }
           },
           "queries": [
-            "+(text Show that the Laplacian de ned in Eq 3-50 is) +(printed page 200) --QDF=0",
+            "+(text Show that the Laplacian defined in Eq 3-50 is) +(printed page 200) --QDF=0",
             "+(exercise 3.39) +(printed page 200) --QDF=0",
             "+(exercise 3.40) +(printed page 200) --QDF=0"
           ],
@@ -14763,7 +16875,7 @@
             }
           },
           "queries": [
-            "+(text the average image is obtained using a box lter of) +(printed page 200) --QDF=0",
+            "+(text the average image is obtained using a box filter of) +(printed page 200) --QDF=0",
             "+(exercise 3.41) +(printed page 200) --QDF=0",
             "+(exercise 3.42) +(printed page 200) --QDF=0"
           ],
@@ -15175,7 +17287,7 @@
             }
           },
           "queries": [
-            "+(text Show that the Laplacian de ned in Eq 3-50 is) +(printed page 200) --QDF=0",
+            "+(text Show that the Laplacian defined in Eq 3-50 is) +(printed page 200) --QDF=0",
             "+(exercise 3.39) +(printed page 200) --QDF=0",
             "+(exercise 3.40) +(printed page 200) --QDF=0"
           ],
@@ -15284,7 +17396,7 @@
                 }
               },
               "queries": [
-                "+(text Show that the Laplacian de ned in Eq 3-50 is) +(printed page 200) --QDF=0",
+                "+(text Show that the Laplacian defined in Eq 3-50 is) +(printed page 200) --QDF=0",
                 "+(exercise 3.39) +(printed page 200) --QDF=0",
                 "+(exercise 3.40) +(printed page 200) --QDF=0"
               ],
@@ -15406,7 +17518,7 @@
             }
           },
           "queries": [
-            "+(text kernels separable For those that are nd vectors) +(printed page 200) --QDF=0",
+            "+(text kernels separable For those that are find vectors) +(printed page 200) --QDF=0",
             "+(exercise 3.44) +(printed page 200) --QDF=0",
             "+(exercise 3.45) +(printed page 200) --QDF=0"
           ],
@@ -15844,7 +17956,7 @@
             }
           },
           "queries": [
-            "+(text values in the original and ltered images is the) +(printed page 199) --QDF=0",
+            "+(text values in the original and filtered images is the) +(printed page 199) --QDF=0",
             "+(exercise 3.31) +(printed page 199) --QDF=0",
             "+(exercise 3.32) +(printed page 199) --QDF=0"
           ],
@@ -15958,7 +18070,7 @@
                 }
               },
               "queries": [
-                "+(text values in the original and ltered images is the) +(printed page 199) --QDF=0",
+                "+(text values in the original and filtered images is the) +(printed page 199) --QDF=0",
                 "+(exercise 3.31) +(printed page 199) --QDF=0",
                 "+(exercise 3.32) +(printed page 199) --QDF=0"
               ],
@@ -16090,7 +18202,7 @@
             "end_before": null
           },
           "queries": [
-            "+(text light to arti cial lighting At no time is the scene) +(printed page 201) --QDF=0",
+            "+(text light to artificial lighting At no time is the scene) +(printed page 201) --QDF=0",
             "+(exercise 3.47) +(printed page 201) --QDF=0"
           ],
           "required_evidence": [
