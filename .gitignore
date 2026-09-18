@@ -6,3 +6,5 @@ data/
 dist/
 build/
 *.egg-info/
+.runtime/
+workspaces/

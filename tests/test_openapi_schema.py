@@ -11,7 +11,7 @@ from app.services.index_compiler import LocatorIndexCompiler
 from tests.helpers import complete_exercise_index, complete_manifest
 
 
-def test_live_openapi_contains_only_version_3_action_paths(tmp_path) -> None:
+def test_live_openapi_contains_teacher_and_tool_action_paths(tmp_path) -> None:
     app = create_app(Settings(locator_index_path=tmp_path / "unused.json", require_api_key=False))
     schema = app.openapi()
 
@@ -20,6 +20,15 @@ def test_live_openapi_contains_only_version_3_action_paths(tmp_path) -> None:
         "/gpt/section-locators/{section_id}",
         "/gpt/exercise-locators/{exercise_id}",
         "/gpt/chapters/{chapter_id}/exercises",
+        "/v1/skills/load",
+        "/v1/skills/read",
+        "/v1/workspace/prepare",
+        "/v1/workspace/command",
+        "/v1/workspace/inspect",
+        "/v1/workspace/search",
+        "/v1/workspace/read-files",
+        "/v1/workspace/write-file",
+        "/v1/workspace/apply-patch",
     }
     operations = {
         operation["operationId"] for path in schema["paths"].values() for operation in path.values()
@@ -29,6 +38,15 @@ def test_live_openapi_contains_only_version_3_action_paths(tmp_path) -> None:
         "gptGetSectionLocator",
         "gptGetExerciseLocator",
         "gptListChapterExercises",
+        "loadSkills",
+        "readSkillContent",
+        "prepareWorkspace",
+        "workspaceCommand",
+        "workspaceInspect",
+        "workspaceSearch",
+        "workspaceReadFiles",
+        "workspaceWriteFile",
+        "workspaceApplyPatch",
     }
 
 
@@ -41,6 +59,15 @@ def test_curated_action_schema_matches_public_operations() -> None:
         "/gpt/section-locators/{section_id}",
         "/gpt/exercise-locators/{exercise_id}",
         "/gpt/chapters/{chapter_id}/exercises",
+        "/v1/skills/load",
+        "/v1/skills/read",
+        "/v1/workspace/prepare",
+        "/v1/workspace/command",
+        "/v1/workspace/inspect",
+        "/v1/workspace/search",
+        "/v1/workspace/read-files",
+        "/v1/workspace/write-file",
+        "/v1/workspace/apply-patch",
     }
     operations = {
         operation["operationId"]
@@ -51,6 +78,15 @@ def test_curated_action_schema_matches_public_operations() -> None:
         "gptGetSectionLocator",
         "gptGetExerciseLocator",
         "gptListChapterExercises",
+        "loadSkills",
+        "readSkillContent",
+        "prepareWorkspace",
+        "workspaceCommand",
+        "workspaceInspect",
+        "workspaceSearch",
+        "workspaceReadFiles",
+        "workspaceWriteFile",
+        "workspaceApplyPatch",
     }
     serialized = path.read_text(encoding="utf-8")
     for forbidden in (

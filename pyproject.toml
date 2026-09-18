@@ -28,10 +28,13 @@ dev = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["app*"]
+include = ["app*", "skill_temple*"]
 
 [tool.ruff]
 line-length = 100
 
 [tool.ruff.lint.per-file-ignores]
 "scripts/*.py" = ["E402"]
+"skill_temple/app.py" = ["SIM102"]
+"skill_temple/workspace_files.py" = ["BLE001"]
+"skill_temple/workspace_operations.py" = ["BLE001", "S110"]
