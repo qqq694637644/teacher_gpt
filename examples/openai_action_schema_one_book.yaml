@@ -183,6 +183,386 @@
           }
         }
       }
+    },
+    "/v1/skills/load": {
+      "post": {
+        "summary": "Load selected Skills.",
+        "description": "Load complete SKILL.md files after the prompt catalog selects matching ids. Returns each Skill body, content hash, and referenced_paths for optional follow-up.",
+        "operationId": "loadSkills",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoadSkillsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoadSkillsResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StructuredErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
+    },
+    "/v1/skills/read": {
+      "post": {
+        "summary": "Read a referenced file from a selected Skill.",
+        "description": "Read an exact referenced path from a loaded Skill. Returns bounded content, hash, truncated, and next_start_line for continuation.",
+        "operationId": "readSkillContent",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReadSkillContentRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadSkillContentResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StructuredErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
+    },
+    "/v1/workspace/prepare": {
+      "post": {
+        "summary": "Create or reuse a persistent workspace.",
+        "description": "Create an empty persistent workspace or reuse an existing workspace_id. Returns workspace_id plus created/empty; repo and branch state remain unmanaged.",
+        "operationId": "prepareWorkspace",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PrepareWorkspaceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PrepareWorkspaceResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
+    },
+    "/v1/workspace/command": {
+      "post": {
+        "summary": "Start or manage a PowerShell workspace command.",
+        "description": "Run or manage asynchronous PowerShell 7 work. start returns an operation; follow with get/logs until a terminal state before treating the command as complete.",
+        "operationId": "workspaceCommand",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkspaceCommandRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WorkspaceCommandResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
+    },
+    "/v1/workspace/inspect": {
+      "post": {
+        "summary": "Discover an unfamiliar workspace before choosing exact paths.",
+        "description": "First pass for unfamiliar paths. Returns a bounded tree plus optional literal search matches and matching file snippets; truncated means discovery is incomplete.",
+        "operationId": "workspaceInspect",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkspaceInspectRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WorkspaceInspectResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
+    },
+    "/v1/workspace/search": {
+      "post": {
+        "summary": "Locate code and text in known workspace paths with ripgrep.",
+        "description": "Primary locator when the exact file or impact location is unknown, or when tracing references. Returns path/line/snippet matches; truncated means results are incomplete.",
+        "operationId": "workspaceSearch",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkspaceSearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WorkspaceSearchResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
+    },
+    "/v1/workspace/read-files": {
+      "post": {
+        "summary": "Read selected UTF-8 files after their exact paths are known.",
+        "description": "Read bounded content from exact known files. Returns numbered content, hashes, and next_start_line when a file is truncated; use inspect/search for discovery.",
+        "operationId": "workspaceReadFiles",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkspaceReadFilesRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WorkspaceReadFilesResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
+    },
+    "/v1/workspace/write-file": {
+      "post": {
+        "summary": "Write one UTF-8 text file.",
+        "description": "Create or replace one known text file in the workspace. Returns hashes, changed_files, and diff_stat; this does not commit or publish changes.",
+        "operationId": "workspaceWriteFile",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkspaceWriteFileRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WorkspaceWriteFileResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
+    },
+    "/v1/workspace/apply-patch": {
+      "post": {
+        "summary": "Apply a controlled Codex text patch.",
+        "description": "Apply a multi-file text patch with dry-run and rollback on failure. Returns changed_files and diff_stat; this does not commit or publish changes.",
+        "operationId": "workspaceApplyPatch",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkspaceApplyPatchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WorkspaceApplyPatchResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-openai-isConsequential": false
+      }
     }
   },
   "components": {
@@ -215,6 +595,57 @@
           "value"
         ],
         "title": "BoundaryAnchor"
+      },
+      "ChangedFile": {
+        "properties": {
+          "path": {
+            "type": "string",
+            "title": "Path"
+          },
+          "operation": {
+            "type": "string",
+            "title": "Operation"
+          },
+          "status": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Status"
+          },
+          "previous_path": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Previous Path"
+          },
+          "additions": {
+            "type": "integer",
+            "title": "Additions",
+            "default": 0
+          },
+          "deletions": {
+            "type": "integer",
+            "title": "Deletions",
+            "default": 0
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "path",
+          "operation"
+        ],
+        "title": "ChangedFile"
       },
       "ChapterExerciseSummary": {
         "properties": {
@@ -296,6 +727,29 @@
         "additionalProperties": false,
         "type": "object",
         "title": "ContentWindow"
+      },
+      "ErrorDetail": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "suggested_next_action": {
+            "type": "string",
+            "title": "Suggested Next Action"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message",
+          "suggested_next_action"
+        ],
+        "title": "ErrorDetail"
       },
       "EvidenceRequirement": {
         "properties": {
@@ -593,6 +1047,94 @@
         ],
         "title": "HealthResponse"
       },
+      "LoadSkillsRequest": {
+        "properties": {
+          "skill_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Skill Ids",
+            "description": "Exact Skill ids already selected from the catalog in GPT Instructions."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "skill_ids"
+        ],
+        "title": "LoadSkillsRequest"
+      },
+      "LoadSkillsResponse": {
+        "properties": {
+          "skills": {
+            "items": {
+              "$ref": "#/components/schemas/LoadedSkillPacket"
+            },
+            "type": "array",
+            "title": "Skills"
+          },
+          "loaded_skill_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Loaded Skill Ids"
+          }
+        },
+        "type": "object",
+        "required": [
+          "skills",
+          "loaded_skill_ids"
+        ],
+        "title": "LoadSkillsResponse"
+      },
+      "LoadedSkillPacket": {
+        "properties": {
+          "skill_id": {
+            "type": "string",
+            "title": "Skill Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "source_path": {
+            "type": "string",
+            "title": "Source Path"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content"
+          },
+          "content_hash": {
+            "type": "string",
+            "title": "Content Hash"
+          },
+          "referenced_paths": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Referenced Paths"
+          }
+        },
+        "type": "object",
+        "required": [
+          "skill_id",
+          "name",
+          "description",
+          "source_path",
+          "content",
+          "content_hash"
+        ],
+        "title": "LoadedSkillPacket"
+      },
       "PageCoverage": {
         "properties": {
           "subheadings": {
@@ -761,6 +1303,154 @@
         ],
         "title": "PageRetrievalStep"
       },
+      "PrepareWorkspaceRequest": {
+        "properties": {
+          "idempotency_key": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200,
+                "minLength": 8
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Idempotency Key"
+          },
+          "workspace_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^ws_[0-9a-f]{16}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Workspace Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "PrepareWorkspaceRequest"
+      },
+      "PrepareWorkspaceResponse": {
+        "properties": {
+          "workspace_id": {
+            "type": "string",
+            "title": "Workspace Id"
+          },
+          "created": {
+            "type": "boolean",
+            "title": "Created"
+          },
+          "empty": {
+            "type": "boolean",
+            "title": "Empty"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "workspace_id",
+          "created",
+          "empty"
+        ],
+        "title": "PrepareWorkspaceResponse"
+      },
+      "ReadSkillContentRequest": {
+        "properties": {
+          "skill_id": {
+            "type": "string",
+            "title": "Skill Id"
+          },
+          "path": {
+            "type": "string",
+            "title": "Path",
+            "description": "Exact relative path referenced by the selected Skill."
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Start Line",
+            "default": 1
+          },
+          "max_lines": {
+            "type": "integer",
+            "maximum": 10000.0,
+            "minimum": 1.0,
+            "title": "Max Lines",
+            "default": 2000
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "skill_id",
+          "path"
+        ],
+        "title": "ReadSkillContentRequest"
+      },
+      "ReadSkillContentResponse": {
+        "properties": {
+          "skill_id": {
+            "type": "string",
+            "title": "Skill Id"
+          },
+          "path": {
+            "type": "string",
+            "title": "Path"
+          },
+          "start_line": {
+            "type": "integer",
+            "title": "Start Line"
+          },
+          "end_line": {
+            "type": "integer",
+            "title": "End Line"
+          },
+          "total_lines": {
+            "type": "integer",
+            "title": "Total Lines"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content"
+          },
+          "content_hash": {
+            "type": "string",
+            "title": "Content Hash"
+          },
+          "truncated": {
+            "type": "boolean",
+            "title": "Truncated"
+          },
+          "next_start_line": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Next Start Line"
+          }
+        },
+        "type": "object",
+        "required": [
+          "skill_id",
+          "path",
+          "start_line",
+          "end_line",
+          "total_lines",
+          "content",
+          "content_hash",
+          "truncated"
+        ],
+        "title": "ReadSkillContentResponse"
+      },
       "SectionLocator": {
         "properties": {
           "data_version": {
@@ -888,6 +1578,18 @@
         ],
         "title": "SectionNotFoundResponse"
       },
+      "StructuredErrorResponse": {
+        "properties": {
+          "error": {
+            "$ref": "#/components/schemas/ErrorDetail"
+          }
+        },
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "title": "StructuredErrorResponse"
+      },
       "ValidationError": {
         "properties": {
           "loc": {
@@ -927,6 +1629,1150 @@
           "type"
         ],
         "title": "ValidationError"
+      },
+      "WorkspaceApplyPatchRequest": {
+        "properties": {
+          "workspace_id": {
+            "type": "string",
+            "pattern": "^ws_[0-9a-f]{16}$",
+            "title": "Workspace Id"
+          },
+          "patch": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Patch"
+          },
+          "dry_run": {
+            "type": "boolean",
+            "title": "Dry Run",
+            "default": false
+          },
+          "allow_delete": {
+            "type": "boolean",
+            "title": "Allow Delete",
+            "default": false
+          },
+          "max_changed_files": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Changed Files"
+          },
+          "max_patch_bytes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Patch Bytes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "workspace_id",
+          "patch"
+        ],
+        "title": "WorkspaceApplyPatchRequest"
+      },
+      "WorkspaceApplyPatchResponse": {
+        "properties": {
+          "applied": {
+            "type": "boolean",
+            "title": "Applied"
+          },
+          "dry_run": {
+            "type": "boolean",
+            "title": "Dry Run"
+          },
+          "changed_files": {
+            "items": {
+              "$ref": "#/components/schemas/ChangedFile"
+            },
+            "type": "array",
+            "title": "Changed Files"
+          },
+          "diff_stat": {
+            "type": "string",
+            "title": "Diff Stat"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "applied",
+          "dry_run",
+          "changed_files",
+          "diff_stat"
+        ],
+        "title": "WorkspaceApplyPatchResponse"
+      },
+      "WorkspaceCommandRequest": {
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "start",
+              "get",
+              "logs",
+              "cancel",
+              "list"
+            ],
+            "title": "Action",
+            "description": "start launches a command; get reads status; logs reads output; cancel stops it; list enumerates operations."
+          },
+          "idempotency_key": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200,
+                "minLength": 8
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Idempotency Key"
+          },
+          "workspace_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^ws_[0-9a-f]{16}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Workspace Id"
+          },
+          "script": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 20000,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Script"
+          },
+          "timeout_seconds": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Timeout Seconds"
+          },
+          "max_output_bytes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Output Bytes"
+          },
+          "plain_output": {
+            "type": "boolean",
+            "title": "Plain Output",
+            "default": false
+          },
+          "utf8_output": {
+            "type": "boolean",
+            "title": "Utf8 Output",
+            "default": true
+          },
+          "operation_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^op_[0-9a-f]{16}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Operation Id"
+          },
+          "stdout_offset": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Stdout Offset",
+            "default": 0
+          },
+          "stderr_offset": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Stderr Offset",
+            "default": 0
+          },
+          "max_bytes": {
+            "type": "integer",
+            "maximum": 500000.0,
+            "minimum": 1.0,
+            "title": "Max Bytes",
+            "default": 50000
+          },
+          "state": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "running",
+                  "succeeded",
+                  "failed",
+                  "timed_out",
+                  "canceled",
+                  "interrupted"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "State"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "action"
+        ],
+        "title": "WorkspaceCommandRequest"
+      },
+      "WorkspaceCommandResponse": {
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "start",
+              "get",
+              "logs",
+              "cancel",
+              "list"
+            ],
+            "title": "Action"
+          },
+          "operation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/WorkspaceOperationSummary"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "operations": {
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceOperationSummary"
+            },
+            "type": "array",
+            "title": "Operations"
+          },
+          "stdout": {
+            "type": "string",
+            "title": "Stdout",
+            "default": ""
+          },
+          "stderr": {
+            "type": "string",
+            "title": "Stderr",
+            "default": ""
+          },
+          "next_stdout_offset": {
+            "type": "integer",
+            "title": "Next Stdout Offset",
+            "default": 0
+          },
+          "next_stderr_offset": {
+            "type": "integer",
+            "title": "Next Stderr Offset",
+            "default": 0
+          },
+          "stdout_eof": {
+            "type": "boolean",
+            "title": "Stdout Eof",
+            "default": false
+          },
+          "stderr_eof": {
+            "type": "boolean",
+            "title": "Stderr Eof",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "action"
+        ],
+        "title": "WorkspaceCommandResponse"
+      },
+      "WorkspaceFileContent": {
+        "properties": {
+          "path": {
+            "type": "string",
+            "title": "Path"
+          },
+          "start_line": {
+            "type": "integer",
+            "title": "Start Line"
+          },
+          "end_line": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "End Line"
+          },
+          "total_lines": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Total Lines"
+          },
+          "bytes": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bytes"
+          },
+          "sha256": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sha256"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content",
+            "default": ""
+          },
+          "truncated": {
+            "type": "boolean",
+            "title": "Truncated",
+            "default": false
+          },
+          "next_start_line": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Next Start Line"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "path",
+          "start_line"
+        ],
+        "title": "WorkspaceFileContent"
+      },
+      "WorkspaceInspectRequest": {
+        "properties": {
+          "workspace_id": {
+            "type": "string",
+            "pattern": "^ws_[0-9a-f]{16}$",
+            "title": "Workspace Id"
+          },
+          "paths": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 50,
+            "minItems": 1,
+            "title": "Paths",
+            "description": "Existing workspace file or directory paths to inspect. Values are literal paths, not glob patterns."
+          },
+          "queries": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 10,
+            "title": "Queries",
+            "description": "Up to 10 literal case-insensitive search strings used during inspection. Regular expressions are not supported here; use workspaceSearch with regex=true instead."
+          },
+          "max_depth": {
+            "type": "integer",
+            "maximum": 10.0,
+            "minimum": 1.0,
+            "title": "Max Depth",
+            "default": 2
+          },
+          "max_tree_entries": {
+            "type": "integer",
+            "maximum": 5000.0,
+            "minimum": 1.0,
+            "title": "Max Tree Entries",
+            "default": 200
+          },
+          "context_lines": {
+            "type": "integer",
+            "maximum": 20.0,
+            "minimum": 0.0,
+            "title": "Context Lines",
+            "default": 2
+          },
+          "max_search_matches": {
+            "type": "integer",
+            "maximum": 1000.0,
+            "minimum": 1.0,
+            "title": "Max Search Matches",
+            "default": 50
+          },
+          "max_read_files": {
+            "type": "integer",
+            "maximum": 50.0,
+            "minimum": 0.0,
+            "title": "Max Read Files",
+            "default": 10
+          },
+          "max_file_lines": {
+            "type": "integer",
+            "maximum": 5000.0,
+            "minimum": 1.0,
+            "title": "Max File Lines",
+            "default": 120
+          },
+          "max_bytes_per_file": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Bytes Per File"
+          },
+          "max_bytes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1024.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Bytes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "workspace_id"
+        ],
+        "title": "WorkspaceInspectRequest"
+      },
+      "WorkspaceInspectResponse": {
+        "properties": {
+          "tree": {
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceTreeEntry"
+            },
+            "type": "array",
+            "title": "Tree"
+          },
+          "tree_truncated": {
+            "type": "boolean",
+            "title": "Tree Truncated",
+            "default": false
+          },
+          "searches": {
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceInspectSearchResult"
+            },
+            "type": "array",
+            "title": "Searches"
+          },
+          "files": {
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceFileContent"
+            },
+            "type": "array",
+            "title": "Files"
+          },
+          "truncated": {
+            "type": "boolean",
+            "title": "Truncated",
+            "description": "True when any bounded inspect section was truncated.",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "tree"
+        ],
+        "title": "WorkspaceInspectResponse"
+      },
+      "WorkspaceInspectSearchResult": {
+        "properties": {
+          "query": {
+            "type": "string",
+            "title": "Query"
+          },
+          "engine": {
+            "type": "string",
+            "const": "ripgrep",
+            "title": "Engine"
+          },
+          "matches": {
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceSearchMatch"
+            },
+            "type": "array",
+            "title": "Matches"
+          },
+          "match_count": {
+            "type": "integer",
+            "title": "Match Count"
+          },
+          "truncated": {
+            "type": "boolean",
+            "title": "Truncated",
+            "description": "True when match-count or response-byte limits prevented returning all results.",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "query",
+          "engine",
+          "matches",
+          "match_count"
+        ],
+        "title": "WorkspaceInspectSearchResult"
+      },
+      "WorkspaceOperationSummary": {
+        "properties": {
+          "operation_id": {
+            "type": "string",
+            "title": "Operation Id"
+          },
+          "workspace_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Workspace Id"
+          },
+          "script_sha256": {
+            "type": "string",
+            "title": "Script Sha256"
+          },
+          "script_summary": {
+            "type": "string",
+            "title": "Script Summary"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "running",
+              "succeeded",
+              "failed",
+              "timed_out",
+              "canceled",
+              "interrupted"
+            ],
+            "title": "State"
+          },
+          "root_pid": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Root Pid"
+          },
+          "job_assigned": {
+            "type": "boolean",
+            "title": "Job Assigned",
+            "default": false
+          },
+          "started_at": {
+            "type": "string",
+            "title": "Started At"
+          },
+          "deadline_at": {
+            "type": "string",
+            "title": "Deadline At"
+          },
+          "finished_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Finished At"
+          },
+          "duration_ms": {
+            "type": "integer",
+            "title": "Duration Ms",
+            "default": 0
+          },
+          "exit_code": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Exit Code"
+          },
+          "stdout_bytes": {
+            "type": "integer",
+            "title": "Stdout Bytes",
+            "default": 0
+          },
+          "stderr_bytes": {
+            "type": "integer",
+            "title": "Stderr Bytes",
+            "default": 0
+          },
+          "stdout_truncated": {
+            "type": "boolean",
+            "title": "Stdout Truncated",
+            "default": false
+          },
+          "stderr_truncated": {
+            "type": "boolean",
+            "title": "Stderr Truncated",
+            "default": false
+          },
+          "error_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Code"
+          },
+          "error_message": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Message"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "operation_id",
+          "script_sha256",
+          "script_summary",
+          "state",
+          "started_at",
+          "deadline_at"
+        ],
+        "title": "WorkspaceOperationSummary"
+      },
+      "WorkspaceReadFilesRequest": {
+        "properties": {
+          "workspace_id": {
+            "type": "string",
+            "pattern": "^ws_[0-9a-f]{16}$",
+            "title": "Workspace Id"
+          },
+          "paths": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 50,
+            "minItems": 1,
+            "title": "Paths",
+            "description": "Exact existing file paths already identified by the user, inspect, or search."
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Start Line",
+            "default": 1
+          },
+          "max_lines": {
+            "type": "integer",
+            "maximum": 5000.0,
+            "minimum": 1.0,
+            "title": "Max Lines",
+            "default": 200
+          },
+          "max_bytes_per_file": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Bytes Per File"
+          },
+          "max_bytes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1024.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Bytes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "workspace_id",
+          "paths"
+        ],
+        "title": "WorkspaceReadFilesRequest"
+      },
+      "WorkspaceReadFilesResponse": {
+        "properties": {
+          "files": {
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceFileContent"
+            },
+            "type": "array",
+            "title": "Files"
+          },
+          "truncated": {
+            "type": "boolean",
+            "title": "Truncated",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "files"
+        ],
+        "title": "WorkspaceReadFilesResponse"
+      },
+      "WorkspaceSearchMatch": {
+        "properties": {
+          "path": {
+            "type": "string",
+            "title": "Path"
+          },
+          "line_number": {
+            "type": "integer",
+            "title": "Line Number"
+          },
+          "column": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Column"
+          },
+          "line": {
+            "type": "string",
+            "title": "Line"
+          },
+          "snippet": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Snippet"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "path",
+          "line_number",
+          "line"
+        ],
+        "title": "WorkspaceSearchMatch"
+      },
+      "WorkspaceSearchRequest": {
+        "properties": {
+          "workspace_id": {
+            "type": "string",
+            "pattern": "^ws_[0-9a-f]{16}$",
+            "title": "Workspace Id"
+          },
+          "query": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Query",
+            "description": "Literal text by default, or a ripgrep pattern when regex=true."
+          },
+          "regex": {
+            "type": "boolean",
+            "title": "Regex",
+            "description": "False uses ripgrep --fixed-strings. True uses ripgrep's default regular-expression engine; PCRE2-specific syntax is not enabled by this Action.",
+            "default": false
+          },
+          "case_sensitive": {
+            "type": "boolean",
+            "title": "Case Sensitive",
+            "description": "False adds ripgrep --ignore-case; true preserves case sensitivity.",
+            "default": false
+          },
+          "paths": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 50,
+            "minItems": 1,
+            "title": "Paths",
+            "description": "Existing workspace file or directory paths to search. Values are literal paths, not glob patterns."
+          },
+          "context_lines": {
+            "type": "integer",
+            "maximum": 20.0,
+            "minimum": 0.0,
+            "title": "Context Lines",
+            "default": 2
+          },
+          "max_matches": {
+            "type": "integer",
+            "maximum": 1000.0,
+            "minimum": 1.0,
+            "title": "Max Matches",
+            "default": 100
+          },
+          "max_bytes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1024.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Bytes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "workspace_id",
+          "query"
+        ],
+        "title": "WorkspaceSearchRequest"
+      },
+      "WorkspaceSearchResponse": {
+        "properties": {
+          "query": {
+            "type": "string",
+            "title": "Query"
+          },
+          "engine": {
+            "type": "string",
+            "const": "ripgrep",
+            "title": "Engine"
+          },
+          "matches": {
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceSearchMatch"
+            },
+            "type": "array",
+            "title": "Matches"
+          },
+          "match_count": {
+            "type": "integer",
+            "title": "Match Count"
+          },
+          "truncated": {
+            "type": "boolean",
+            "title": "Truncated",
+            "description": "True when match-count or response-byte limits prevented returning all results.",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "query",
+          "engine",
+          "matches",
+          "match_count"
+        ],
+        "title": "WorkspaceSearchResponse"
+      },
+      "WorkspaceTreeEntry": {
+        "properties": {
+          "path": {
+            "type": "string",
+            "title": "Path"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "file",
+              "dir"
+            ],
+            "title": "Type"
+          },
+          "depth": {
+            "type": "integer",
+            "title": "Depth"
+          },
+          "bytes": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bytes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "path",
+          "type",
+          "depth"
+        ],
+        "title": "WorkspaceTreeEntry"
+      },
+      "WorkspaceWriteFileRequest": {
+        "properties": {
+          "workspace_id": {
+            "type": "string",
+            "pattern": "^ws_[0-9a-f]{16}$",
+            "title": "Workspace Id"
+          },
+          "path": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Path"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "create_only",
+              "overwrite",
+              "overwrite_if_sha256_matches"
+            ],
+            "title": "Mode",
+            "default": "create_only"
+          },
+          "encoding": {
+            "type": "string",
+            "const": "utf-8",
+            "title": "Encoding",
+            "default": "utf-8"
+          },
+          "line_ending": {
+            "type": "string",
+            "enum": [
+              "preserve",
+              "lf",
+              "crlf"
+            ],
+            "title": "Line Ending",
+            "default": "preserve"
+          },
+          "expected_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 64,
+                "minLength": 64
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Expected Sha256"
+          },
+          "dry_run": {
+            "type": "boolean",
+            "title": "Dry Run",
+            "default": false
+          },
+          "max_bytes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Bytes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "workspace_id",
+          "path",
+          "content"
+        ],
+        "title": "WorkspaceWriteFileRequest"
+      },
+      "WorkspaceWriteFileResponse": {
+        "properties": {
+          "written": {
+            "type": "boolean",
+            "title": "Written"
+          },
+          "dry_run": {
+            "type": "boolean",
+            "title": "Dry Run"
+          },
+          "path": {
+            "type": "string",
+            "title": "Path"
+          },
+          "operation": {
+            "type": "string",
+            "title": "Operation"
+          },
+          "previous_sha256": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Previous Sha256"
+          },
+          "new_sha256": {
+            "type": "string",
+            "title": "New Sha256"
+          },
+          "bytes": {
+            "type": "integer",
+            "title": "Bytes"
+          },
+          "changed_files": {
+            "items": {
+              "$ref": "#/components/schemas/ChangedFile"
+            },
+            "type": "array",
+            "title": "Changed Files"
+          },
+          "diff_stat": {
+            "type": "string",
+            "title": "Diff Stat"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "written",
+          "dry_run",
+          "path",
+          "operation",
+          "new_sha256",
+          "bytes",
+          "changed_files",
+          "diff_stat"
+        ],
+        "title": "WorkspaceWriteFileResponse"
       }
     }
   },

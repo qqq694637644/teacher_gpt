@@ -22,6 +22,15 @@ def main() -> None:
         "/gpt/section-locators/{section_id}",
         "/gpt/exercise-locators/{exercise_id}",
         "/gpt/chapters/{chapter_id}/exercises",
+        "/v1/skills/load",
+        "/v1/skills/read",
+        "/v1/workspace/prepare",
+        "/v1/workspace/command",
+        "/v1/workspace/inspect",
+        "/v1/workspace/search",
+        "/v1/workspace/read-files",
+        "/v1/workspace/write-file",
+        "/v1/workspace/apply-patch",
     )
     schema["paths"] = {path: schema["paths"][path] for path in action_paths}
 
