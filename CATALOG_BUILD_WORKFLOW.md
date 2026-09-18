@@ -425,7 +425,6 @@ python tools/compile_exercise_index.py \
 python -m pytest -q
 python -m ruff check .
 python -m ruff format --check .
-python tools/validate_prompt.py
 ```
 
 ## 17. 当前验收基线

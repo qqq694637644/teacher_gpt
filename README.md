@@ -295,14 +295,6 @@ normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local so
 verification and byte-for-byte repeatability passed; real GPT file-search retrieval
 remains `not_tested`.
 
-### 4. Validate GPT instructions
-
-```bash
-python tools/validate_prompt.py
-```
-
-`PROMPT.md` must remain under 8000 characters and may reference only the real Action and file-search tools.
-
 ## Local development
 
 Workspace command/search Actions expect PowerShell 7 (`pwsh`) and ripgrep (`rg`) on the host
@@ -385,7 +377,6 @@ tools/
   build_dip4e_manifest.py
   compile_exercise_index.py
   compile_locator_index.py
-  validate_prompt.py
 scripts/
   export_action_schema.py
 tests/
