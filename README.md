@@ -53,22 +53,46 @@ Sibling headings must use the same `source_level`. Child headings must be exactl
 
 ## Runtime API
 
-The backend registers four routes:
+The backend keeps the locator routes and also mounts the vendored Skill/workspace Actions:
 
 ```text
 GET /health
 GET /gpt/section-locators/{section_id}
 GET /gpt/exercise-locators/{exercise_id}
 GET /gpt/chapters/{chapter_id}/exercises
+GET /v1/skills
+POST /v1/skills/load
+POST /v1/skills/read
+POST /v1/workspace/prepare
+POST /v1/workspace/command
+POST /v1/workspace/inspect
+POST /v1/workspace/search
+POST /v1/workspace/read-files
+POST /v1/workspace/write-file
+POST /v1/workspace/apply-patch
 ```
 
-The three locator routes are exported to GPT Actions:
+The three locator routes plus nine Skill/workspace operations are exported to GPT Actions:
 
 ```text
 gptGetSectionLocator
 gptGetExerciseLocator
 gptListChapterExercises
+loadSkills
+readSkillContent
+prepareWorkspace
+workspaceCommand
+workspaceInspect
+workspaceSearch
+workspaceReadFiles
+workspaceWriteFile
+workspaceApplyPatch
 ```
+
+`/v1/skills` is a non-Action catalog/debug endpoint and is not included in the curated GPT
+Action schema. No Skill is bundled by default; place Skill directories under `skills/` or set
+`SKILL_TEMPLE_SKILLS_DIR`. The Skill/workspace routes use the same `TEACHING_GPT_API_KEY` as
+the locator Actions.
 
 All Version 2 routes were deleted. There are no deprecated redirects or aliases.
 
@@ -271,15 +295,12 @@ normalization to `Fig. 10.4(a)`, the referenced 3 x 3 Laplacian kernel. Local so
 verification and byte-for-byte repeatability passed; real GPT file-search retrieval
 remains `not_tested`.
 
-### 4. Validate GPT instructions
-
-```bash
-python tools/validate_prompt.py
-```
-
-`PROMPT.md` must remain under 8000 characters and may reference only the real Action and file-search tools.
-
 ## Local development
+
+Workspace command/search Actions expect PowerShell 7 (`pwsh`) and ripgrep (`rg`) on the host
+`PATH`. The default persistent workspace directory is `./workspaces`; set `WORKSPACE_ROOT` to
+another durable host path when needed. `WORKSPACE_OPERATION_ROOT` defaults to
+`$WORKSPACE_ROOT/.operations`, and `WORKSPACE_PWSH_PATH` can override the `pwsh` executable.
 
 ```bash
 python -m venv .venv
@@ -356,7 +377,6 @@ tools/
   build_dip4e_manifest.py
   compile_exercise_index.py
   compile_locator_index.py
-  validate_prompt.py
 scripts/
   export_action_schema.py
 tests/

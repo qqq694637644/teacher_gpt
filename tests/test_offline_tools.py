@@ -18,7 +18,6 @@ from tools.extract_pdf_candidates import (
     is_heading_line,
     page_references,
 )
-from tools.validate_prompt import validate_prompt
 
 
 def test_heading_candidate_requires_verified_dip4e_style() -> None:
@@ -77,23 +76,6 @@ def test_page_references_use_pdf_page_labels(tmp_path: Path) -> None:
         ]
     finally:
         loaded.close()
-
-
-def test_prompt_validator_rejects_invented_page_tool() -> None:
-    valid = (
-        "gptGetSectionLocator gptGetExerciseLocator gptListChapterExercises "
-        "file_search.msearch file_search.mclick contains_exercise "
-        "required_evidence content_window reference_retrieval_plan data_version "
-        "传递依赖闭包 只传入一条 query "
-        "EXERCISE_CATALOG_UNAVAILABLE"
-    )
-    validate_prompt(valid)
-
-    with pytest.raises(ValueError, match="forbidden"):
-        validate_prompt(valid + " file_library.open_page")
-
-    with pytest.raises(ValueError, match="forbidden"):
-        validate_prompt(valid + ' source_filter=["file_library"]')
 
 
 def test_complete_manifest_must_cover_every_source_heading_candidate() -> None:

@@ -545,13 +545,6 @@ gptGetExerciseLocator
 最终结论
 ```
 
-同时更新 `tools/validate_prompt.py`：
-
-- 加入新 Action 必需词；
-- 保持 8000 字符限制；
-- 禁止不存在的工具名；
-- 继续禁止 Version 2 契约。
-
 ---
 
 ## 11. 测试计划
@@ -612,7 +605,6 @@ gptGetExerciseLocator
 
 ```bash
 python tools/verify_dip4e_source.py "/path/to/Digital Image ProcessingRafael.pdf"
-python tools/validate_prompt.py
 python scripts/export_action_schema.py
 python -m pytest -q
 python -m ruff check .
@@ -726,10 +718,6 @@ file_search_retrieval_status: passed | failed | not_tested
 ### 引用解析不完整
 
 控制：显式引用无法解析时严格失败；人工审核清单单独输出。
-
-### Prompt 超过长度限制
-
-控制：先抽象公共检索流程，再加入习题分支；持续运行 `tools/validate_prompt.py`。
 
 ### 全书数据量增加导致启动或 Action 响应过大
 

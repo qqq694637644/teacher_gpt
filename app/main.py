@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, RedirectResponse
 
 from app.api.routes import router
+from app.api.tooling import install_skill_workspace_actions
 from app.core.config import Settings, get_settings
 from app.core.errors import (
     ExerciseCatalogUnavailableError,
@@ -50,7 +51,12 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 )
         app.state.locator_repository = locator_repository
         app.state.exercise_repository = exercise_repository
-        yield
+        try:
+            yield
+        finally:
+            workspace_service = getattr(app.state, "local_workspace_service", None)
+            if workspace_service is not None:
+                await workspace_service.shutdown()
 
     app = FastAPI(
         title="Teacher GPT Locator API",
@@ -66,10 +72,11 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         CORSMiddleware,
         allow_origins=resolved_settings.cors_allow_origins,
         allow_credentials=True,
-        allow_methods=["GET"],
+        allow_methods=["GET", "POST"],
         allow_headers=["Authorization", "X-API-Key", "Content-Type"],
     )
     app.include_router(router)
+    install_skill_workspace_actions(app)
 
     @app.exception_handler(SectionNotFoundError)
     async def section_not_found_handler(
