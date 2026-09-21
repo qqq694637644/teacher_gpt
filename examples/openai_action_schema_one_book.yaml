@@ -327,7 +327,7 @@
     "/v1/workspace/command": {
       "post": {
         "summary": "Start or manage a PowerShell workspace command.",
-        "description": "Run or manage asynchronous PowerShell 7 work. start returns an operation; follow with get/logs until a terminal state before treating the command as complete.",
+        "description": "Run PowerShell 7 work. start returns output if the command finishes quickly; when it returns a running operation_id, follow with get/logs until a terminal state.",
         "operationId": "workspaceCommand",
         "requestBody": {
           "content": {
@@ -1729,7 +1729,7 @@
               "list"
             ],
             "title": "Action",
-            "description": "start launches a command; get reads status; logs reads output; cancel stops it; list enumerates operations."
+            "description": "start executes a command and returns output when it finishes quickly; when it returns a running operation_id, get reads status, logs reads output, cancel stops it, and list enumerates operations."
           },
           "idempotency_key": {
             "anyOf": [

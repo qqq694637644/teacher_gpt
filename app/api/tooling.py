@@ -12,7 +12,7 @@ from app.core.security import require_api_key
 from skill_temple.runtime import env_value_from_environment_or_dotenv
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[2]
-_TOOL_PATH_PREFIXES = ("/v1/skills", "/v1/workspace")
+_TOOL_PATH_PREFIXES = ("/v1/skills", "/v1/workspace", "/v1/action-logs")
 
 
 def _configured_path(name: str, default: Path) -> Path:

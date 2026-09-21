@@ -71,6 +71,34 @@ def test_skill_actions_load_and_read_without_prompt_changes(tmp_path, monkeypatc
     assert read.json()["next_start_line"] == 3
 
 
+def test_skill_catalog_rescans_and_action_logs_are_mounted(tmp_path, monkeypatch) -> None:
+    skills_root = tmp_path / "skills"
+    _write_demo_skill(skills_root)
+    monkeypatch.setenv("SKILL_TEMPLE_SKILLS_DIR", str(skills_root))
+    monkeypatch.setenv("WORKSPACE_ROOT", str(tmp_path / "workspaces"))
+    monkeypatch.setenv("WORKSPACE_OPERATION_ROOT", str(tmp_path / "operations"))
+
+    client = TestClient(create_app(_settings(tmp_path)))
+    first = client.get("/v1/skills")
+    assert first.status_code == 200, first.text
+    assert {item["skill_id"] for item in first.json()["skills"]} == {"demo"}
+
+    added = skills_root / "later"
+    added.mkdir(parents=True)
+    (added / "SKILL.md").write_text(
+        "---\nname: later\ndescription: Added after startup.\n---\n\n# Later\n",
+        encoding="utf-8",
+    )
+    refreshed = client.get("/v1/skills")
+    assert refreshed.status_code == 200, refreshed.text
+    assert {item["skill_id"] for item in refreshed.json()["skills"]} == {"demo", "later"}
+
+    _prepare(client, "action-log-workspace")
+    events = client.get("/v1/action-logs", params={"wait": 0})
+    assert events.status_code == 200, events.text
+    assert any("ACTION prepareWorkspace" in item["text"] for item in events.json()["items"])
+
+
 def test_tool_actions_reuse_teacher_api_key(tmp_path, monkeypatch) -> None:
     monkeypatch.setenv("WORKSPACE_ROOT", str(tmp_path / "workspaces"))
     monkeypatch.setenv("WORKSPACE_OPERATION_ROOT", str(tmp_path / "operations"))
@@ -146,7 +174,10 @@ def test_workspace_command_runs_pwsh(tmp_path, monkeypatch) -> None:
             },
         )
         assert started.status_code == 200, started.text
-        operation_id = started.json()["operation"]["operation_id"]
+        started_body = started.json()
+        operation_id = started_body["operation"]["operation_id"]
+        assert started_body["operation"]["state"] == "succeeded"
+        assert "pwsh-ok" in started_body["stdout"]
 
         operation = None
         for _ in range(100):
