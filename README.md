@@ -95,10 +95,14 @@ Action schema. No Skill is bundled by default; place Skill directories under `sk
 the locator Actions.
 
 `/v1/action-logs` is also a non-Action endpoint. It exposes the bounded Action event stream used
-by the GPT Action monitor and uses the same API key. `workspaceCommand` is sync-first: `start`
-waits briefly (5 seconds by default) and returns stdout/stderr immediately when a command reaches a
-terminal state; longer commands still return a running `operation_id` for `get`/`logs` follow-up.
-Set `WORKSPACE_COMMAND_SYNC_WAIT_SECONDS` to tune that wait.
+by the GPT Action monitor and uses the same API key. Events now include a structured `event` payload
+with a stable activity id, activity kind, lifecycle phase, timestamp, and kind-specific payload while
+retaining the legacy `text` field for compatibility. `workspaceCommand` publishes live
+`started`/`updated`/`completed`/`failed` activity directly from the operation runner, including
+redacted bounded output and a three-line terminal preview. `workspaceCommand` remains sync-first:
+`start` waits briefly (5 seconds by default) and returns stdout/stderr immediately when a command
+reaches a terminal state; longer commands still return a running `operation_id` for `get`/`logs`
+follow-up. Set `WORKSPACE_COMMAND_SYNC_WAIT_SECONDS` to tune that wait.
 
 All Version 2 routes were deleted. There are no deprecated redirects or aliases.
 
