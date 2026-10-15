@@ -1,4 +1,4 @@
 Upstream: https://github.com/qqq694637644/github_skills_action
-Commit: 2b7414e7ec8092c31760673e15e0e107bd57c5ac
+Commit: b7f6e23cb5d642d6d0086d9a9419ffd1150cd1ed
 Vendored scope: skill runtime and workspace/PowerShell Action implementation.
 Example Skills are intentionally not vendored.

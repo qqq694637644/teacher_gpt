@@ -96,7 +96,11 @@ def test_skill_catalog_rescans_and_action_logs_are_mounted(tmp_path, monkeypatch
     _prepare(client, "action-log-workspace")
     events = client.get("/v1/action-logs", params={"wait": 0})
     assert events.status_code == 200, events.text
-    assert any("ACTION prepareWorkspace" in item["text"] for item in events.json()["items"])
+    items = events.json()["items"]
+    prepared = next(item for item in items if "ACTION prepareWorkspace" in item["text"])
+    assert prepared["event"]["kind"] == "generic"
+    assert prepared["event"]["phase"] == "completed"
+    assert prepared["event"]["payload"]["operation"] == "prepare_workspace"
 
 
 def test_tool_actions_reuse_teacher_api_key(tmp_path, monkeypatch) -> None:
@@ -199,6 +203,19 @@ def test_workspace_command_runs_pwsh(tmp_path, monkeypatch) -> None:
         )
         assert logs.status_code == 200, logs.text
         assert "pwsh-ok" in logs.json()["stdout"]
+
+        activity_items = client.get(
+            "/v1/action-logs", params={"after": 0, "wait": 0, "limit": 100}
+        ).json()["items"]
+        command_events = [
+            item["event"]
+            for item in activity_items
+            if item.get("event", {}).get("activity_id") == f"command:{operation_id}"
+        ]
+        assert command_events[0]["phase"] == "started"
+        assert command_events[-1]["phase"] == "completed"
+        assert command_events[-1]["payload"]["state"] == "succeeded"
+        assert command_events[-1]["payload"]["stdout_preview"] == ["pwsh-ok"]
 
 
 @pytest.mark.skipif(shutil.which("rg") is None, reason="ripgrep is required")
